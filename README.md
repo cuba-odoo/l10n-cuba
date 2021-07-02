@@ -1,7 +1,9 @@
 # l10n-cuba
-Localización cubana para odoo
+##Localización cubana para odoo
 
-TODO: add repo description.
+Repositorio de código del proyecto de localización cubana para el software de gestión integral Odoo. 
+
+Mantenido  por la Comunidad Cubana de Odoo, con participacion de entidades estatales miembros oficiales de la comunidad cubana de Odoo.
 
 <!-- /!\ do not modify below this line -->
 
@@ -9,9 +11,9 @@ TODO: add repo description.
 
 [//]: # (addons)
 
-Available addons
+Addons disponibles
 ----------------
-addon | version | summary
+addon | versión | resumen
 --- | --- | ---
 [l10n_cu_address](l10n_cu_address/) | 14.0.1.0.0 | 
 [l10n_cu_banks](l10n_cu_banks/) | 14.0.1.0.0 | 
@@ -20,16 +22,10 @@ addon | version | summary
 
 <!-- prettier-ignore-end -->
 
-## Licenses
+## Licencias
 
-This repository is licensed under [AGPL-3.0](LICENSE).
-
-However, each module can have a totally different license, as long as they adhere to Cuban odoo community
-policy. Consult each module's `__manifest__.py` file, which contains a `license` key
-that explains its license.
+Este repositorio esta bajo la licencia [AGPL-3.0](LICENSE).
 
 ----
 
-COC, or the [Cuban Odoo Community](http://cuban-community.cu/), is a nonprofit
-organization whose mission is to support the collaborative development of Odoo features
-and promote its widespread use.
+CCO,  o [Comunidad Cubana de Odoo ](http://cuban-community.cu/), tiene como misión el soporte y desarrollo colaborativo de funcionalidades para Odoo con el fin de promover y diversificar su uso.
