@@ -9,17 +9,19 @@
 
 {
     'name': 'Cuba - Accounting',
-    'version': '0.1',
-    'author': 'Idola Odoo Team',
-    'category': 'Accounting/Localizations/Account Charts/Cuba',
+    'version': '14.0.1.0.0',
+    'author': 'Idola Odoo Team, Comunidad cubana de Odoo ',
+    'category': 'Accounting/Localizations/Account Charts',
     'description': """
-Cuban charts of accounts.
-========================================
+        Cuban charts of accounts.
+        ========================================
 
-    * Defines the following chart of account templates:
-        * Cuban general chart of accounts by 494/2016 modified by 407/2019: "Nomenclador de Cuentas para la Actividad Empresarial, Unidades Presupuestadas de Tratamiento Especial y el Sector Cooperativo Agropecuario y no Agropecuario"
-        * Cuban general chart of accounts for freelance workers
-""",
+            * Defines the following chart of account templates:
+                * Cuban general chart of accounts by 494/2016 modified by 407/2019
+                * Cuban general chart of accounts for Actividad Empresarial
+                * Cuban general chart of accounts for Unidades Presupuestadas de Tratamiento Especial 
+                * Cuban general chart of accounts for Sector Cooperativo Agropecuario y no Agropecuario"
+    """,
     'depends': [
         'account',
     ],
