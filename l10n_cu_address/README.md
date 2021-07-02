@@ -1,6 +1,4 @@
-===================
-Topónimos cubanos
-===================
+# Topónimos cubanos
 
 Provincias, municipios y códigos postales de Cuba.
 
