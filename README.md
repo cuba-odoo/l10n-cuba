@@ -15,8 +15,8 @@ Addons disponibles
 ----------------
 addon | versión | resumen
 --- | --- | ---
-[l10n_cu_address](l10n_cu_address/) | 13.0.1.0.0 | 
-[l10n_cu_banks](l10n_cu_banks/) | 13.0.1.0.0 | 
+[l10n_cu_address](l10n_cu_address/) | 13.0.1.0.0 | Topónimos cubanos
+[l10n_cu_banks](l10n_cu_banks/) | 13.0.1.0.0 | Define las sucursales bancarias.
 
 [//]: # (end addons)
 
