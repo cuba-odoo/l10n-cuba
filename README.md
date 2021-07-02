@@ -1,5 +1,5 @@
 # l10n-cuba
-##Localización cubana para odoo
+## Localización cubana para odoo
 
 Repositorio de código del proyecto de localización cubana para el software de gestión integral Odoo. 
 
@@ -24,7 +24,7 @@ addon | versión | resumen
 
 ## Licencias
 
-Este repositorio esta bajo la licencia [AGPL-3.0](LICENSE).
+Este repositorio esta bajo la licencia [GPL-3.0](LICENSE).
 
 ----
 
