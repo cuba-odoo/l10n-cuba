@@ -1,17 +1,31 @@
 # l10n-cuba
 ## Localización cubana para odoo
 
-Repositorio de código del proyecto de la localización cubana para el software de gestión integral Odoo.
+Repositorio de código del proyecto de localización cubana para el software de gestión integral Odoo. 
 
-La localización cubana de Odoo incluye:
+Mantenido  por la Comunidad Cubana de Odoo, con participacion de entidades estatales miembros oficiales de la comunidad cubana de Odoo.
 
-    Módulos para adaptar el sistema a los requisitos fiscales y contables en Cuba. según las regulaciones emitidas por
-    el Ministerio de Finanzas y Precios de Cuba. y la ONAT (Organizacion Nacional de Administración Tributaria )
-    Traducciones a la lengua oficial del país. y otras herramientas necesarias para el uso correcto y funcional de
-    Odoo en Cuba..
+<!-- /!\ do not modify below this line -->
 
-Hecha por la Comunidad Cubana de Odoo.. con participacion de entidades estatales miembros oficiales de la comunidad cubana de Odoo.
+<!-- prettier-ignore-start -->
 
+[//]: # (addons)
 
+Addons disponibles
+----------------
+addon | versión | resumen
+--- | --- | ---
+[l10n_cu_address](l10n_cu_address/) | 14.0.1.0.0 | 
+[l10n_cu_banks](l10n_cu_banks/) | 14.0.1.0.0 | 
 
-Para dudas funcionales o soporte de la comunidad, dirigirse a:
+[//]: # (end addons)
+
+<!-- prettier-ignore-end -->
+
+## Licencias
+
+Este repositorio esta bajo la licencia [GPL-3.0](LICENSE).
+
+----
+
+CCO,  o [Comunidad Cubana de Odoo ](http://cuban-community.cu/), tiene como misión el soporte y desarrollo colaborativo de funcionalidades para Odoo con el fin de promover y diversificar su uso.
