@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+    
+        <record id="action_list_municipios" model="ir.actions.act_window">
+            <field name="name">Municipios</field>
+            <field name="res_model">res.state.municipality</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">Municipios</p>
+            </field>
+        </record>
+
+        <!-- Extend partner view -->
+        <record id="view_form_partner_inherited" model="ir.ui.view">
+            <field name="name">view_partner_municipaly_form</field> 
+            <field name="model">res.partner</field> 
+            <field name="inherit_id" ref="base.view_partner_form"/> 
+            <field name="arch" type="xml"> 
+
+                <xpath expr="//field[@name='street2']" position="after">
+                    <field name="municipality_id"  placeholder="Municipality..." context="{'state_id': state_id, 'default_state_id': state_id}"/>
+                </xpath>
+
+            </field>
+        </record>
+
+    </data>
+</odoo>

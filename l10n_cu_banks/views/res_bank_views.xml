@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <!-- Inherit Form View to Modify it -->
+        <record id="bank_form_view_inherit" model="ir.ui.view">
+            <field name="name">res.bank.form.inherit</field>
+            <field name="model">res.bank</field>
+            <field name="inherit_id" ref="base.view_res_bank_form"/>
+            <field name="arch" type="xml">
+
+                <field name="city" position="before">
+                    <field name="municipality" placeholder="Municipality" class="o_address_municipality"/>
+                </field>
+
+            </field>
+        </record>
+
+        <record id="view_res_bank_tree_inherit" model="ir.ui.view">
+            <field name="name">res.bank.tree.inherit</field>
+            <field name="model">res.bank</field>
+            <field name="inherit_id" ref="base.view_res_bank_tree"/>
+            <field name="arch" type="xml">
+                <field name="country" position="before">
+                    <field name="municipality"/>
+                    <field name="state"/>
+                </field>
+            </field>
+        </record>
+
+        <record id="res_bank_view_search_inherit" model="ir.ui.view">
+            <field name="name">res.bank.view.search.inherit</field>
+            <field name="model">res.bank</field>
+            <field name="inherit_id" ref="base.res_bank_view_search"/>
+            <field name="arch" type="xml">
+                <field name="name" position="after">
+                    <field name="municipality"/>
+                    <field name="state"/>
+                </field>
+
+                <filter name="inactive" position="after">
+                    <group expand="1" string="Group By">
+                        <filter string="Municipality" name="group_by_municipality" context="{'group_by': 'municipality'}"/>
+                        <filter string="State" name="group_by_state" context="{'group_by': 'state'}"/>
+                    </group>
+                </filter>
+            </field>
+        </record>
+
+    </data>
+</odoo>
