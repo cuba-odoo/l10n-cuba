@@ -7,22 +7,20 @@
 # Yeniel León Ferrer
 
 {
-    'name': 'Cuba - Banks',
-    'version': '0.1',
-    'author': 'Idola Odoo Team',
-    'category': 'Cuba',
+    'name': 'Bancos Cubanos',
+    'version': '13.0.1.0.0',
+    'author': 'Idola Odoo Team, Comunidad cubana de Odoo',
+    'category': 'Localization',
     'description': """
-Cuban charts of accounts.
-========================================
-
-    * Define las sucursales bancarias del país incluida su dirección y teléfono
-""",
+        * Define las sucursales bancarias del país incluida su dirección y teléfono
+    """,
     'depends': [
         'base',
-        'address_cu',
+        'l10n_cu_address',
     ],
+    "license": "AGPL-3",
     'data': [
         'data/res_bank_data.xml',
-        'views/res_bank_views.xml',
     ],
+    "installable": True,
 }

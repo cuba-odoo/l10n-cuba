@@ -1,2 +1,5 @@
-Direcciones en Cuba
-Este módulo crea los campos de direcciones y carga todos los datos para Cuba. Los datos incluyen provicias, municipios, códigos postales y ciudades 
+Topónimos cubanos
+
+Provincias, municipios y códigos postales de Cuba.
+
+    * Crea los campos de direcciones y carga todos los datos para Cuba. 
