@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+        <!-- Chart Template -->
+        <record id="l10n_cu_chart_template" model="account.chart.template">
+            <field name="name">Cuba - Generic Chart of Accounts</field>
+            <field name="use_anglo_saxon" eval="True"/>
+            <field name="complete_tax_set" eval="False"/>
+            <field name="code_digits">7</field>
+            <!-- Diarios de Banco y Caja por defecto -->
+            <field name="cash_account_code_prefix">101</field>
+            <field name="bank_account_code_prefix">109</field>
+            <field name="transfer_account_code_prefix">110</field>
+            <!-- Moneda -->
+            <field name="currency_id" ref="base.CUP"/>
+        </record>
+
+</odoo>

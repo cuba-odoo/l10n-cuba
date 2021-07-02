@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- Impuestos a los TCP sobre ventas resolución 298-2011 -->
+    <record id="iv_tax_tcp_10" model="account.tax.template">
+        <field name="chart_template_id" ref="l10n_cu_chart_template"/>
+        <field name="name">Impuestos sobre ventas al 10%</field>
+        <field name="amount">10</field>
+        <field name="amount_type">percent</field>            
+        <field name="tax_group_id" ref="tax_group_tcp"/>
+        <field name="type_tax_use">sale</field>
+        <field name="price_include" eval="False"/>
+    </record>
+
+    <record id="iv_tax_tcp_5" model="account.tax.template">
+        <field name="chart_template_id" ref="l10n_cu_chart_template"/>
+        <field name="name">Impuestos sobre ventas al 5%</field>
+        <field name="amount">5</field>
+        <field name="amount_type">percent</field>            
+        <field name="tax_group_id" ref="tax_group_tcp"/>
+        <field name="type_tax_use">sale</field>
+        <field name="price_include" eval="False"/>
+    </record>
+
+    <!-- Impuestos a los TCP sobre ventas servicios resolución 298-2011 -->
+    <record id="is_tax_tcp_10" model="account.tax.template">
+        <field name="chart_template_id" ref="l10n_cu_chart_template"/>
+        <field name="name">Impuestos sobre los servicios al 10%</field>
+        <field name="amount">10</field>
+        <field name="amount_type">percent</field>            
+        <field name="tax_group_id" ref="tax_group_tcp"/>
+        <field name="type_tax_use">sale</field>
+        <field name="price_include" eval="False"/>
+    </record>
+</odoo>
