@@ -15,8 +15,10 @@ Addons disponibles
 ----------------
 addon | versión | resumen
 --- | --- | ---
+[l10n_cu](l10n_cu/) | 14.0.1.0.0 | Módulo Base de la localización cubana
 [l10n_cu_address](l10n_cu_address/) | 14.0.1.0.0 | Topónimos cubanos
 [l10n_cu_banks](l10n_cu_banks/) | 14.0.1.0.0 | Define las sucursales bancarias.
+[l10n_cu_saclap](l10n_cu_saclap/) | 14.0.1.0.0 | Sistema Armonizado de Clasificación de Productos.
 
 [//]: # (end addons)
 
