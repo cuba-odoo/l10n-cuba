@@ -20,6 +20,7 @@
     ],
     "license": "AGPL-3",
     'data': [
+        'views/res_bank_view.xml',
         'data/res_bank_data.xml',
     ],
     "installable": True,
