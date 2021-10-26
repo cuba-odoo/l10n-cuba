@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <data>
-        <record id="l10n_cu_chart_template" model="account.chart.template"> 
+        <record id="l10n_cu_chart_template_common" model="account.chart.template"> 
             <!-- Define receivable/payable accounts. Cuentas por Cobrar/Pagar -->
             <field name="property_account_receivable_id" ref="account_1350000"/>
             <field name="property_account_payable_id" ref="account_4050000"/>
@@ -14,8 +14,8 @@
             <!-- Define an account template for stock valuation. (Mercancias para la venta) -->
             <field name="property_stock_valuation_account_id" ref="account_1890000"/> 
             <!-- Define input/output accounts for stock valuation. (Temporales de entrada/salida) -->
-            <field name="property_stock_account_input_categ_id" ref="account_6990100"/>
-            <field name="property_stock_account_output_categ_id" ref="account_6990200"/>
+            <!-- <field name="property_stock_account_input_categ_id" ref="account_6990100"/>
+            <field name="property_stock_account_output_categ_id" ref="account_6990200"/> -->
         </record>
 
     </data>

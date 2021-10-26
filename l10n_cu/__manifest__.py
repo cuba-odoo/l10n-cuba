@@ -14,8 +14,6 @@
     'category': 'Accounting/Localizations/Account Charts',
     'description': """
         Cuban charts of accounts.
-        ========================================
-
             * Defines the following chart of account templates:
                 * Cuban general chart of accounts by 494/2016 modified by 407/2019
                 * Cuban general chart of accounts for Actividad Empresarial
@@ -27,8 +25,10 @@
     ],
     'data': [
         'data/l10n_cu_chart_data.xml',
-        #'data/account.account.template-tcp.csv',
-        'data/account.account.template-company.csv',
+        'data/account.account.template-tcp.csv',
+        'data/account.account.template-common.csv',
+        'data/account.account.template-private.csv',
+        'data/account.account.template-public.csv',
         'data/account_chart_data.xml',
         'data/account_tax_group_data.xml',
         'data/account_tax_data.xml',
