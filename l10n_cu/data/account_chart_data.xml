@@ -16,6 +16,8 @@
             <!-- Define input/output accounts for stock valuation. (Temporales de entrada/salida) -->
             <!-- <field name="property_stock_account_input_categ_id" ref="account_6990100"/>
             <field name="property_stock_account_output_categ_id" ref="account_6990200"/> -->
+            <!-- Define Efectivo (Configuracion del POS) -->
+            <field name="default_pos_receivable_account_id" ref="account_1300000"/>
         </record>
 
     </data>
