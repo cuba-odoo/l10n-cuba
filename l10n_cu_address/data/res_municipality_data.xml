@@ -1193,6 +1193,7 @@
         <!-- res.city Especial Isla de la Juventud-->
         <record id="municipio_4001" model="res.municipality">
             <field name="code">4001</field>
+            <field name="state_id" ref="state_40"/>
             <field name="name">Isla de la Juventud</field>
             <field name="country_id" ref="base.cu"/>
         </record>
