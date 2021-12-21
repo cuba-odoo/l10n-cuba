@@ -1,6 +1,9 @@
+<<<<<<< HEAD
 # List of contributors:
 # Segu S.U.R.L
 
+=======
+>>>>>>> a542a08a032458fdb0e64cc66de48d4ecf9d2a35
 {
      'name': 'Cuba - Accounting PDF Reports',
      'version': '0.1',
@@ -8,7 +11,11 @@
      'summary': """
         Proformas Estados Financieros para las MIPYME en Cuba.
      """,
+<<<<<<< HEAD
      'author': 'Comunidad Cubana de Odoo',
+=======
+     'author': 'Segu',
+>>>>>>> a542a08a032458fdb0e64cc66de48d4ecf9d2a35
      'depends': ["accounting_pdf_reports", "l10n_cu"],
      'data': [
           "data/account_financial_report_es.xml",
