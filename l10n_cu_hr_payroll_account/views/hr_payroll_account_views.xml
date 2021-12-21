@@ -1,0 +1,26 @@
+<odoo>
+	<data>
+		<record id="account_journal_nomina" model="account.journal">
+            <field name="name">Nóminas</field>
+            <field name="code">NOMINA</field>
+            <field name="type">general</field>
+        </record>
+        <record id="hr_payroll_community.action_hr_payslip_run_tree" model="ir.actions.act_window">
+            <field name="context" eval="{'default_journal_id': ref('account_journal_nomina')}"/>
+        </record>
+        <record id="hr_contract.action_hr_contract" model="ir.actions.act_window">
+            <field name="context" eval="{'search_default_current':1, 'search_default_group_by_state': 1,
+            'default_journal_id': ref('account_journal_nomina')}"/>
+        </record>
+		<record id="view_hr_payslip_tree_inherit" model="ir.ui.view">
+			<field name="name">view.hr.payslip.tree.inherit</field>
+			<field name="model">hr.payslip</field>
+			<field name="inherit_id" ref="hr_payroll_community.view_hr_payslip_tree"/>
+			<field name="arch" type="xml">
+				<field name="total" position="before">
+					<field name="paid"/>
+                </field>
+			</field>
+		</record>
+	</data>
+</odoo>
