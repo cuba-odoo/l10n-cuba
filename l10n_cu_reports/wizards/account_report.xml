@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="report_ncif" model="ir.ui.view">
+        <field name="name">Reporte Financiero Externo</field>
+        <field name="model">accounting.report</field>
+        <field name="arch" type="xml">
+            <form string="Report Options">
+                <group col="4">
+                    <field name="date_from"/>
+                    <field name="date_to"/>
+                    <field name="target_move" widget="radio"/>
+                    <field name="display_account" widget="radio"/>
+                    <field name="display_detail" widget="radio"/>
+                    <field name="account_report_id" invisible="1"/>
+                </group>
+                <footer>
+                    <button name="check_report" string="Print" type="object" default_focus="1" class="oe_highlight"/>
+                    <button string="Cancel" class="btn btn-secondary" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+    <record id="accounting_pdf_reports.action_account_report_bs" model="ir.actions.act_window">
+        <field name="res_model">accounting.report</field>
+        <field name="view_id" ref="report_ncif"/>
+        <field name="context" eval="{'default_account_report_id':ref('ncc_financial_report_es'), 'efc': 'bs'}"/>
+    </record>
+    <record id="accounting_pdf_reports.action_account_report_pl" model="ir.actions.act_window">
+        <field name="res_model">accounting.report</field>
+        <field name="view_id" ref="report_ncif"/>
+        <field name="context" eval="{'default_account_report_id':ref('ncc_financial_report_er'), 'efc': 'pl'}"/>
+    </record>
+    <record id="action_account_report_ege" model="ir.actions.act_window">
+        <field name="name">Estado de Gastos pos Elementos</field>
+        <field name="res_model">accounting.report</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="view_mode">form</field>
+        <field name="view_id" ref="report_ncif"/>
+        <field name="target">new</field>
+        <field name="context" eval="{'default_account_report_id':ref('ncc_financial_report_ege'), 'efc': 'ege'}"/>
+    </record>
+<!--    <record id="action_account_report_ei" model="ir.actions.act_window">-->
+<!--        <field name="name">Estado de Inversiones</field>-->
+<!--        <field name="res_model">accounting.report</field>-->
+<!--        <field name="type">ir.actions.act_window</field>-->
+<!--        <field name="view_mode">form</field>-->
+<!--        <field name="view_id" ref="report_ncif"/>-->
+<!--        <field name="target">new</field>-->
+<!--        <field name="context" eval="{'default_account_report_id':ref('ncc_financial_report_ei'), 'efc': 'ei'}"/>-->
+<!--    </record>-->
+
+
+
+    <menuitem id="menu_account_report_ege"
+              action="action_account_report_ege"
+              parent="accounting_pdf_reports.menu_finance_legal_statement"
+              groups="account.group_account_user"/>
+<!--    <menuitem id="menu_account_report_ei"-->
+<!--              action="action_account_report_ei"-->
+<!--              parent="accounting_pdf_reports.menu_finance_legal_statement"-->
+<!--              groups="account.group_account_user"/>-->
+</odoo>

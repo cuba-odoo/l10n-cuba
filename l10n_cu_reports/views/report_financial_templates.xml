@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="report_financial_bs">
+        <t t-call="web.html_container">
+<!--            <t t-foreach="docs" t-as="o">-->
+                <t t-call="web.basic_layout">
+                    <div class="page">
+                        <div class="header">
+                            <t t-call="l10n_cu_reports.internal_financial_layout_header">
+                                <strong>(5920-04)</strong>
+                            </t>
+                        </div>
+                        <table class="table table-sm mt-5" style="margin: 0px !important;">
+                            <thead>
+                                <tr>
+                                    <th style="vertical-align:middle; width: 65%;border-bottom: 1px solid black !important; border-left: 1px solid black !important;border-right: 1px solid black !important;">
+                                        <strong>CONCEPTOS</strong>
+                                    </th>
+                                    <th class="text-center"
+                                        style="vertical-align:middle; border-bottom: 1px solid black !important;border-left: 1px solid black !important;border-right: 1px solid black !important;">
+                                        <strong>Filas</strong>
+                                    </th>
+                                    <th class="text-center"
+                                        style="vertical-align:middle; border-bottom: 1px solid black !important;border-left: 1px solid black !important;border-right: 1px solid black !important;">
+                                        <strong>N</strong>
+                                    </th>
+                                    <th class="text-center"
+                                        style="vertical-align:middle; border-bottom: 1px solid black !important;border-left: 1px solid black !important;border-right: 1px solid black !important;">
+                                        <strong>Plan Anual</strong>
+                                    </th>
+                                    <th class="text-center"
+                                        style="vertical-align:middle; border-bottom: 1px solid black !important;border-left: 1px solid black !important;border-right: 1px solid black !important;">
+                                        <strong>Apertura</strong>
+                                    </th>
+                                    <th class="text-center"
+                                        style="vertical-align:middle; border-bottom: 1px solid black !important;border-left: 1px solid black !important;border-right: 1px solid black !important;">
+                                        <strong>Real hasta la fecha</strong>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr t-foreach="get_account_lines" t-as="a">
+                                    <t t-if="a['level'] != 0 and a['name'] != 'ESTADO DE SITUACIÓN'">
+                                        <t t-if="int(a.get('level')) &gt; 3">
+                                            <t t-set="style" t-value="'font-weight: normal;'"/>
+                                        </t>
+                                        <t t-if="not int(a.get('level')) &gt; 3">
+                                            <t t-set="style" t-value="'font-weight: bold;'"/>
+                                        </t>
+                                        <td style="width: 65%; border-bottom: 1px solid black !important;border-top: 1px solid black !important;border-left: 1px solid black !important;border-right: 1px solid black !important;">
+                                            <span style="color: white;" t-esc="'..' * int(a.get('level', 0))"/>
+                                            <span t-att-style="style" t-esc="a.get('name')"/>
+                                        </td>
+                                        <td class="text-right"
+                                            style="border-bottom: 1px solid black !important;border-top: 1px solid black !important;border-left: 1px solid black !important;border-right: 1px solid black !important;">
+                                            <t t-if="a.get('name') not in ('ACTIVO', 'PASIVO', 'PATRIMONIO')">
+                                                <span t-if="not int(a.get('level')) &gt; 3"
+                                                      t-esc="a.get('sequence')"/>
+                                            </t>
+                                        </td>
+                                        <td class="text-right"
+                                            style="border-bottom: 1px solid black !important;border-top: 1px solid black !important;border-left: 1px solid black !important;border-right: 1px solid black !important;">
+                                            <span style="color: white;">........</span>
+                                        </td>
+                                        <td class="text-right"
+                                            style="border-bottom: 1px solid black !important;border-top: 1px solid black !important;border-left: 1px solid black !important;border-right: 1px solid black !important;">
+                                            <t t-if="a.get('name') not in ('ACTIVO', 'PASIVO', 'PATRIMONIO') and a.get('plan_anual')">
+                                                <span t-if="not int(a.get('level')) &gt; 3"
+                                                      t-esc="a.get('plan_anual')"
+                                                      t-options="{'widget': 'monetary', 'display_currency': res_company.currency_id}"/>
+                                            </t>
+                                        </td>
+                                        <td class="text-right"
+                                            style="border-bottom: 1px solid black !important;border-top: 1px solid black !important;border-left: 1px solid black !important;border-right: 1px solid black !important;">
+                                            <t t-if="a.get('name') not in ('ACTIVO', 'PASIVO', 'PATRIMONIO') and a.get('apertura')">
+                                                <span t-if="not int(a.get('level')) &gt; 3"
+                                                      t-esc="a.get('apertura')"
+                                                      t-options="{'widget': 'monetary', 'display_currency': res_company.currency_id}"/>
+                                            </t>
+                                        </td>
+                                        <td class="text-right"
+                                            style="border-bottom: 1px solid black !important;border-top: 1px solid black !important;border-left: 1px solid black !important;border-right: 1px solid black !important;">
+                                            <t t-if="a.get('name') not in ('ACTIVO', 'PASIVO', 'PATRIMONIO')">
+                                                <span t-att-style="style" t-esc="a.get('balance')"
+                                                      t-options="{'widget': 'monetary', 'display_currency': res_company.currency_id}"/>
+                                            </t>
+                                        </td>
+                                    </t>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <t t-call="l10n_cu_reports.internal_financial_layout_footer"/>
+                    </div>
+
+                </t>
+<!--            </t>-->
+        </t>
+    </template>
+    <template id="report_financial_pl">
+        <t t-call="web.html_container">
+<!--            <t t-foreach="docs" t-as="o">-->
+                <t t-call="web.basic_layout">
+                    <div class="page">
+                        <div class="header">
+                            <t t-call="l10n_cu_reports.internal_financial_layout_header">
+                                <strong>5921-04</strong>
+                            </t>
+                        </div>
+
+                        <table class="table table-sm" style="margin: 0px !important;">
+                            <thead>
+                                <tr>
+                                    <th class="text-center"
+                                        style="vertical-align:middle; width: 60%; border-bottom: 1px solid black !important;border-left: 1px solid black !important;border-right: 1px solid black !important;">
+                                        <strong>CONCEPTOS</strong>
+                                    </th>
+                                    <th class="text-center"
+                                        style="vertical-align:middle; border-bottom: 1px solid black !important;border-left: 1px solid black !important;border-right: 1px solid black !important;">
+                                        <strong>Filas</strong>
+                                    </th>
+                                    <th class="text-center"
+                                        style="vertical-align:middle; border-bottom: 1px solid black !important;border-left: 1px solid black !important;border-right: 1px solid black !important;">
+                                        <strong>N</strong>
+                                    </th>
+                                    <th class="text-center"
+                                        style="vertical-align:middle; border-bottom: 1px solid black !important;border-left: 1px solid black !important;border-right: 1px solid black !important;">
+                                        <strong>Plan Anual</strong>
+                                    </th>
+                                    <th class="text-center"
+                                        style="vertical-align:middle; border-bottom: 1px solid black !important;border-left: 1px solid black !important;border-right: 1px solid black !important;">
+                                        <strong>Plan hasta la fecha</strong>
+                                    </th>
+                                    <th class="text-center"
+                                        style="vertical-align:middle; border-bottom: 1px solid black !important;border-left: 1px solid black !important;border-right: 1px solid black !important;">
+                                        <strong>Real hasta la fecha</strong>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr t-foreach="get_account_lines" t-as="a">
+                                    <t t-if="a['level'] != 0 and a['name'] != 'ESTADO DE RESULTADO'">
+                                        <t t-if="int(a.get('level')) &gt; 3">
+                                            <t t-set="style" t-value="'font-weight: normal;'"/>
+                                        </t>
+                                        <t t-if="not int(a.get('level')) &gt; 3">
+                                            <t t-set="style" t-value="'font-weight: bold;'"/>
+                                        </t>
+
+                                        <td style="width: 60%; border-bottom: 1px solid black !important;border-top: 1px solid black !important;border-left: 1px solid black !important;border-right: 1px solid black !important;">
+                                            <span style="color: white;" t-esc="'..' * int(a.get('level', 0))"/>
+                                            <span t-att-style="style" t-esc="a.get('name')"/>
+                                        </td>
+                                        <td class="text-right"
+                                            style="border-bottom: 1px solid black !important;border-top: 1px solid black !important;border-left: 1px solid black !important;border-right: 1px solid black !important;">
+                                            <span t-if="not int(a.get('level')) &gt; 3" t-esc="a.get('sequence')"/>
+                                        </td>
+                                        <td class="text-right"
+                                            style="border-bottom: 1px solid black !important;border-top: 1px solid black !important;border-left: 1px solid black !important;border-right: 1px solid black !important;">
+                                            <span style="color: white;">........</span>
+                                        </td>
+                                        <td class="text-right"
+                                            style="border-bottom: 1px solid black !important;border-top: 1px solid black !important;border-left: 1px solid black !important;border-right: 1px solid black !important;">
+                                            <span t-if="not int(a.get('level')) &gt; 3" t-esc="a.get('plan_anual')"
+                                                  t-options="{'widget': 'monetary', 'display_currency': res_company.currency_id}"/>
+                                        </td>
+                                        <td class="text-right"
+                                            style="border-bottom: 1px solid black !important;border-top: 1px solid black !important;border-left: 1px solid black !important;border-right: 1px solid black !important;">
+                                            <t t-if="a.get('apertura')">
+                                                <span t-if="not int(a.get('level')) &gt; 3" t-esc="a.get('apertura')"
+                                                      t-options="{'widget': 'monetary', 'display_currency': res_company.currency_id}"/>
+                                            </t>
+                                        </td>
+                                        <td class="text-right"
+                                            style="border-bottom: 1px solid black !important;border-top: 1px solid black !important;border-left: 1px solid black !important;border-right: 1px solid black !important;">
+                                            <span t-att-style="style" t-esc="a.get('balance')"
+                                                  t-options="{'widget': 'monetary', 'display_currency': res_company.currency_id}"/>
+                                        </td>
+                                    </t>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <t t-call="l10n_cu_reports.internal_financial_layout_footer"/>
+                    </div>
+                </t>
+<!--            </t>-->
+        </t>
+    </template>
+    <template id="report_financial_ege">
+        <t t-call="web.html_container">
+            <t t-foreach="docs" t-as="o">
+                <t t-call="l10n_cu_reports.external_layout">
+                    <div class="page">
+                        <t t-call="l10n_cu_reports.internal_financial_layout_header">
+                            <strong>5924-04</strong>
+                        </t>
+                        <table class="table table-sm" style="margin: 0px !important;">
+                            <thead>
+                                <tr>
+                                    <td class="text-center"
+                                        style="vertical-align:middle; width: 60%;border-bottom: 1px solid black !important;border-left: 1px solid black !important;border-right: 1px solid black !important;">
+                                        <strong>CONCEPTOS</strong>
+                                    </td>
+                                    <td class="text-center"
+                                        style="vertical-align:middle; border-bottom: 1px solid black !important;border-left: 1px solid black !important;border-right: 1px solid black !important;">
+                                        <strong>Filas</strong>
+                                    </td>
+                                    <td class="text-center"
+                                        style="vertical-align:middle; border-bottom: 1px solid black !important;border-left: 1px solid black !important;border-right: 1px solid black !important;">
+                                        <strong>N</strong>
+                                    </td>
+                                    <td class="text-center"
+                                        style="vertical-align:middle; border-bottom: 1px solid black !important;border-left: 1px solid black !important;border-right: 1px solid black !important;">
+                                        <strong>Plan Anual</strong>
+                                    </td>
+                                    <td class="text-center"
+                                        style="vertical-align:middle; border-bottom: 1px solid black !important;border-left: 1px solid black !important;border-right: 1px solid black !important;">
+                                        <strong>Plan hasta la fecha</strong>
+                                    </td>
+                                    <td class="text-center"
+                                        style="vertical-align:middle; border-bottom: 1px solid black !important;border-left: 1px solid black !important;border-right: 1px solid black !important;">
+                                        <strong>Real hasta la fecha</strong>
+                                    </td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr t-foreach="get_account_lines" t-as="a">
+                                    <t t-if="a['level'] != 0">
+                                        <t t-if="int(a.get('level')) &gt; 3">
+                                            <t t-set="style" t-value="'font-weight: normal;'"/>
+                                        </t>
+                                        <t t-if="not int(a.get('level')) &gt; 3">
+                                            <t t-set="style" t-value="'font-weight: bold;'"/>
+                                        </t>
+
+                                        <td style="width: 60%; border-bottom: 1px solid black !important;border-top: 1px solid black !important;border-left: 1px solid black !important;border-right: 1px solid black !important;">
+                                            <span style="color: white;" t-esc="'..' * int(a.get('level', 0))"/>
+                                            <span t-att-style="style" t-esc="a.get('name')"/>
+                                        </td>
+                                        <td class="text-right"
+                                            style="border-bottom: 1px solid black !important;border-top: 1px solid black !important;border-left: 1px solid black !important;border-right: 1px solid black !important;">
+                                            <span t-att-style="style" t-esc="a.get('sequence')"/>
+                                        </td>
+                                        <td class="text-right"
+                                            style="border-bottom: 1px solid black !important;border-top: 1px solid black !important;border-left: 1px solid black !important;border-right: 1px solid black !important;">
+                                            <span style="color: white;">........</span>
+                                        </td>
+                                        <td class="text-right"
+                                            style="border-bottom: 1px solid black !important;border-top: 1px solid black !important;border-left: 1px solid black !important;border-right: 1px solid black !important;">
+                                            <span t-esc="a.get('plan_anual')"/>
+                                        </td>
+                                        <td class="text-right"
+                                            style="border-bottom: 1px solid black !important;border-top: 1px solid black !important;border-left: 1px solid black !important;border-right: 1px solid black !important;">
+                                            <span t-esc="a.get('apertura')"/>
+                                        </td>
+                                        <td class="text-right"
+                                            style="border-bottom: 1px solid black !important;border-top: 1px solid black !important;border-left: 1px solid black !important;border-right: 1px solid black !important;">
+                                            <span t-att-style="style" t-esc="a.get('balance')"
+                                                  t-options="{'widget': 'monetary', 'display_currency': res_company.currency_id}"/>
+                                        </td>
+                                    </t>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <t t-call="l10n_cu_reports.internal_financial_layout_footer"/>
+                    </div>
+                </t>
+            </t>
+        </t>
+    </template>
+    <!--    <template id="report_financial_ei">-->
+    <!--        <t t-call="web.html_container">-->
+    <!--            <t t-foreach="docs" t-as="o">-->
+    <!--                <t t-call="l10n_cu_reports.external_layout">-->
+    <!--                    <div class="page">-->
+    <!--                        <t t-call="l10n_cu_reports.internal_financial_layout_header">-->
+    <!--                            <strong>5925-04</strong>-->
+    <!--                        </t>-->
+    <!--                        <table class="table table-sm" style="margin: 0px !important;">-->
+    <!--                            <thead>-->
+    <!--                                <tr>-->
+    <!--                                    <td class="text-center" style="vertical-align:middle; width: 60%; border-bottom: 1px solid black !important;border-left: 1px solid black !important;border-right: 1px solid black !important;">-->
+    <!--                                        <strong>CONCEPTOS</strong>-->
+    <!--                                    </td>-->
+    <!--                                    <td class="text-center" style="vertical-align:middle; border-bottom: 1px solid black !important;border-left: 1px solid black !important;border-right: 1px solid black !important;">-->
+    <!--                                        <strong>Filas</strong>-->
+    <!--                                    </td>-->
+    <!--                                    <td class="text-center" style="vertical-align:middle; border-bottom: 1px solid black !important;border-left: 1px solid black !important;border-right: 1px solid black !important;">-->
+    <!--                                        <strong>N</strong>-->
+    <!--                                    </td>-->
+    <!--                                    <td class="text-center" style="vertical-align:middle; border-bottom: 1px solid black !important;border-left: 1px solid black !important;border-right: 1px solid black !important;">-->
+    <!--                                        <strong>Plan Anual</strong>-->
+    <!--                                    </td>-->
+    <!--                                    <td class="text-center" style="vertical-align:middle; border-bottom: 1px solid black !important;border-left: 1px solid black !important;border-right: 1px solid black !important;">-->
+    <!--                                        <strong>Plan hasta la fecha</strong>-->
+    <!--                                    </td>-->
+    <!--                                    <td class="text-center" style="vertical-align:middle; border-bottom: 1px solid black !important;border-left: 1px solid black !important;border-right: 1px solid black !important;">-->
+    <!--                                        <strong>Ejecución del Año hasta la fecha</strong>-->
+    <!--                                    </td>-->
+    <!--                                </tr>-->
+    <!--                            </thead>-->
+    <!--                            <tbody>-->
+    <!--                                <tr t-foreach="get_account_lines" t-as="a">-->
+    <!--                                    <t t-if="a['level'] != 0">-->
+    <!--                                        <t t-if="int(a.get('level')) &gt; 3"><t t-set="style" t-value="'font-weight: normal;'"/></t>-->
+    <!--                                        <t t-if="not int(a.get('level')) &gt; 3"><t t-set="style" t-value="'font-weight: bold;'"/></t>-->
+
+    <!--                                        <td style="width: 60%; border-bottom: 1px solid black !important;border-top: 1px solid black !important;border-left: 1px solid black !important;border-right: 1px solid black !important;">-->
+    <!--                                            <span style="color: white;" t-esc="'..' * int(a.get('level', 0))"/>-->
+    <!--                                            <span t-att-style="style" t-esc="a.get('name')"/>-->
+    <!--                                        </td>-->
+    <!--                                        <td class="text-right" style="border-bottom: 1px solid black !important;border-top: 1px solid black !important;border-left: 1px solid black !important;border-right: 1px solid black !important;">-->
+    <!--                                            <span t-att-style="style" t-esc="a.get('sequence')"/>-->
+    <!--                                        </td>-->
+    <!--                                        <td class="text-right" style="border-bottom: 1px solid black !important;border-top: 1px solid black !important;border-left: 1px solid black !important;border-right: 1px solid black !important;">-->
+    <!--                                            <span style="color: white;">........</span>-->
+    <!--                                        </td>-->
+    <!--                                        <td class="text-right" style="border-bottom: 1px solid black !important;border-top: 1px solid black !important;border-left: 1px solid black !important;border-right: 1px solid black !important;">-->
+    <!--                                            <span t-esc="a.get('plan_anual')"/>-->
+    <!--                                        </td>-->
+    <!--                                        <td class="text-right" style="border-bottom: 1px solid black !important;border-top: 1px solid black !important;border-left: 1px solid black !important;border-right: 1px solid black !important;">-->
+    <!--                                            <span t-esc="a.get('apertura')"/>-->
+    <!--                                        </td>-->
+    <!--                                        <td class="text-right" style="border-bottom: 1px solid black !important;border-top: 1px solid black !important;border-left: 1px solid black !important;border-right: 1px solid black !important;">-->
+    <!--                                            <span t-att-style="style" t-esc="a.get('balance')" t-options="{'widget': 'monetary', 'display_currency': res_company.currency_id}"/>-->
+    <!--                                        </td>-->
+    <!--                                    </t>-->
+    <!--                                </tr>-->
+    <!--                            </tbody>-->
+    <!--                        </table>-->
+    <!--                        <t t-call="l10n_cu_reports.internal_financial_layout_footer"/>-->
+    <!--                    </div>-->
+    <!--                </t>-->
+    <!--            </t>-->
+    <!--        </t>-->
+    <!--    </template>-->
+
+</odoo>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+<!--        Estado de gastos por elementos-->
+        <record id="ncc_financial_report_ege" model="account.financial.report">
+            <field name="name">ESTADO DE GASTOS POR ELEMENTOS</field>
+            <field name="sign">1</field>
+            <field name="type">sum</field>
+            <field name="sequence">0</field>
+        </record>
+        <record id="ncc_financial_report_ege_01" model="account.financial.report">
+            <field name="name">Materias Primas y Materiales</field>
+            <field name="sign">-1</field>
+            <field name="type">accounts</field>
+            <field name="sequence">1</field>
+            <field name="display_detail">no_detail</field>
+            <field name="parent_id" ref="ncc_financial_report_ege"/>
+        </record>
+        <record id="ncc_financial_report_ege_02" model="account.financial.report">
+            <field name="name">Combustibles y Lubricantes</field>
+            <field name="sign">-1</field>
+            <field name="type">accounts</field>
+            <field name="sequence">2</field>
+            <field name="display_detail">no_detail</field>
+            <field name="parent_id" ref="ncc_financial_report_ege"/>
+        </record>
+        <record id="ncc_financial_report_ege_03" model="account.financial.report">
+            <field name="name">Energía</field>
+            <field name="sign">-1</field>
+            <field name="type">accounts</field>
+            <field name="sequence">3</field>
+            <field name="display_detail">no_detail</field>
+            <field name="parent_id" ref="ncc_financial_report_ege"/>
+        </record>
+        <record id="ncc_financial_report_ege_04" model="account.financial.report">
+            <field name="name">Salario</field>
+            <field name="sign">-1</field>
+            <field name="type">accounts</field>
+            <field name="sequence">4</field>
+            <field name="display_detail">no_detail</field>
+            <field name="parent_id" ref="ncc_financial_report_ege"/>
+        </record>
+        <record id="ncc_financial_report_ege_05" model="account.financial.report">
+            <field name="name">Salario Escala</field>
+            <field name="sign">-1</field>
+            <field name="type">accounts</field>
+            <field name="sequence">5</field>
+            <field name="display_detail">no_detail</field>
+            <field name="parent_id" ref="ncc_financial_report_ege"/>
+        </record>
+        <record id="ncc_financial_report_ege_06" model="account.financial.report">
+            <field name="name">Pagos Adicional del Perfeccionamiento Empresarial</field>
+            <field name="sign">-1</field>
+            <field name="type">accounts</field>
+            <field name="sequence">6</field>
+            <field name="display_detail">no_detail</field>
+            <field name="parent_id" ref="ncc_financial_report_ege"/>
+        </record>
+        <record id="ncc_financial_report_ege_07" model="account.financial.report">
+            <field name="name">Otros Pagos Adicionales</field>
+            <field name="sign">-1</field>
+            <field name="type">accounts</field>
+            <field name="sequence">7</field>
+            <field name="display_detail">no_detail</field>
+            <field name="parent_id" ref="ncc_financial_report_ege"/>
+        </record>
+        <record id="ncc_financial_report_ege_08" model="account.financial.report">
+            <field name="name">Pago por Resultado</field>
+            <field name="sign">-1</field>
+            <field name="type">accounts</field>
+            <field name="sequence">8</field>
+            <field name="display_detail">no_detail</field>
+            <field name="parent_id" ref="ncc_financial_report_ege"/>
+        </record>
+        <record id="ncc_financial_report_ege_09" model="account.financial.report">
+            <field name="name">Acumulación de Vacaciones (9.09 %)</field>
+            <field name="sign">-1</field>
+            <field name="type">accounts</field>
+            <field name="sequence">9</field>
+            <field name="display_detail">no_detail</field>
+            <field name="parent_id" ref="ncc_financial_report_ege"/>
+        </record>
+        <record id="ncc_financial_report_ege_10" model="account.financial.report">
+            <field name="name">Depreciación y Amortización</field>
+            <field name="sign">-1</field>
+            <field name="type">accounts</field>
+            <field name="sequence">10</field>
+            <field name="display_detail">no_detail</field>
+            <field name="parent_id" ref="ncc_financial_report_ege"/>
+        </record>
+        <record id="ncc_financial_report_ege_11" model="account.financial.report">
+            <field name="name">Otros Gastos Monetarios</field>
+            <field name="sign">-1</field>
+            <field name="type">accounts</field>
+            <field name="sequence">11</field>
+            <field name="display_detail">no_detail</field>
+            <field name="parent_id" ref="ncc_financial_report_ege"/>
+        </record>
+        <record id="ncc_financial_report_ege_12" model="account.financial.report">
+            <field name="name">Servicios Comprados entre entidades</field>
+            <field name="sign">-1</field>
+            <field name="type">accounts</field>
+            <field name="sequence">12</field>
+            <field name="display_detail">no_detail</field>
+            <field name="parent_id" ref="ncc_financial_report_ege"/>
+        </record>
+        <record id="ncc_financial_report_ege_13" model="account.financial.report">
+            <field name="name">Servicios de Mantenimiento y Reparación Constructivo</field>
+            <field name="sign">-1</field>
+            <field name="type">accounts</field>
+            <field name="sequence">13</field>
+            <field name="display_detail">no_detail</field>
+            <field name="parent_id" ref="ncc_financial_report_ege"/>
+        </record>
+        <record id="ncc_financial_report_ege_14" model="account.financial.report">
+            <field name="name">Reparación y Mantenimiento de Viales</field>
+            <field name="sign">-1</field>
+            <field name="type">accounts</field>
+            <field name="sequence">14</field>
+            <field name="display_detail">no_detail</field>
+            <field name="parent_id" ref="ncc_financial_report_ege"/>
+        </record>
+        <record id="ncc_financial_report_ege_15" model="account.financial.report">
+            <field name="name">Otros Servicios de Mantenimiento y Reparaciones Corrientes</field>
+            <field name="sign">-1</field>
+            <field name="type">accounts</field>
+            <field name="sequence">15</field>
+            <field name="display_detail">no_detail</field>
+            <field name="parent_id" ref="ncc_financial_report_ege"/>
+        </record>
+        <record id="ncc_financial_report_ege_16" model="account.financial.report">
+            <field name="name">Gastos por importación de servicios</field>
+            <field name="sign">-1</field>
+            <field name="type">accounts</field>
+            <field name="sequence">16</field>
+            <field name="display_detail">no_detail</field>
+            <field name="parent_id" ref="ncc_financial_report_ege"/>
+        </record>
+        <record id="ncc_financial_report_ege_17" model="account.financial.report">
+            <field name="name">Viáticos</field>
+            <field name="sign">-1</field>
+            <field name="type">accounts</field>
+            <field name="sequence">17</field>
+            <field name="display_detail">no_detail</field>
+            <field name="parent_id" ref="ncc_financial_report_ege"/>
+        </record>
+        <record id="ncc_financial_report_ege_18" model="account.financial.report">
+            <field name="name">TOTAL DE GASTOS POR ELEMENTOS</field>
+            <field name="sign">-1</field>
+            <field name="type">accounts</field>
+            <field name="sequence">18</field>
+            <field name="display_detail">no_detail</field>
+            <field name="parent_id" ref="ncc_financial_report_ege"/>
+        </record>
+    </data>
+</odoo>
