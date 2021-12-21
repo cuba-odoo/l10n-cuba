@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+    <!--Estado de Resultado-->
+        <record id="ncc_financial_report_er" model="account.financial.report">
+            <field name="name">ESTADO DE RESULTADO</field>
+            <field name="sign">1</field>
+            <field name="type">sum</field>
+            <field name="sequence">0</field>
+        </record>
+        <record id="ncc_financial_report_er_01" model="account.financial.report">
+            <field name="name">Ventas (900 - 913)</field>
+            <field name="sign">-1</field>
+            <field name="type">accounts</field>
+            <field name="sequence">1</field>
+            <field name="display_detail">detail_with_hierarchy</field>
+            <field name="account_ids" search="[('code', 'like', '900%')]"/>
+            <field name="parent_id" ref="ncc_financial_report_er"/>
+        </record>
+        <record id="ncc_financial_report_er_02" model="account.financial.report">
+            <field name="name">Ventas de Bienes con destino a la Exportación (914)</field>
+            <field name="sign">-1</field>
+            <field name="type">accounts</field>
+            <field name="sequence">2</field>
+            <field name="display_detail">detail_with_hierarchy</field>
+            <field name="parent_id" ref="ncc_financial_report_er"/>
+        </record>
+        <record id="ncc_financial_report_er_03" model="account.financial.report">
+            <field name="name">Ventas por Exportación de Servicios (915)</field>
+            <field name="sign">-1</field>
+            <field name="type">accounts</field>
+            <field name="sequence">3</field>
+            <field name="display_detail">detail_with_hierarchy</field>
+            <field name="parent_id" ref="ncc_financial_report_er"/>
+        </record>
+        <record id="ncc_financial_report_er_04" model="account.financial.report">
+            <field name="name">Subvenciones (916 - 919)</field>
+            <field name="sign">1</field>
+            <field name="type">accounts</field>
+            <field name="sequence">4</field>
+            <field name="display_detail">detail_with_hierarchy</field>
+            <field name="parent_id" ref="ncc_financial_report_er"/>
+        </record>
+        <record id="ncc_financial_report_er_05" model="account.financial.report">
+            <field name="name">- Devoluciones y Rebajas en Ventas (800 - 804)</field>
+            <field name="sign">1</field>
+            <field name="type">accounts</field>
+            <field name="sequence">5</field>
+            <field name="display_detail">detail_with_hierarchy</field>
+            <field name="parent_id" ref="ncc_financial_report_er"/>
+            <field name="account_ids" search="[('code', 'like', '800%')]"/>
+        </record>
+        <record id="ncc_financial_report_er_06" model="account.financial.report">
+            <field name="name">- Impuesto por las Ventas (805 – 809)</field>
+            <field name="sign">1</field>
+            <field name="type">accounts</field>
+            <field name="sequence">6</field>
+            <field name="display_detail">detail_with_hierarchy</field>
+            <field name="parent_id" ref="ncc_financial_report_er"/>
+            <field name="account_ids" search="[('code', 'like', '805%')]"/>
+        </record>
+        <record id="ncc_financial_report_er_07" model="account.financial.report">
+            <field name="name">= Ventas Netas</field>
+            <field name="sign">-1</field>
+            <field name="type">accounts</field>
+            <field name="sequence">7</field>
+            <field name="display_detail">no_detail</field>
+            <field name="parent_id" ref="ncc_financial_report_er"/>
+            <field name="account_ids" search="[
+            '|', '|',
+            ('code', 'like', '900%'),
+            ('code', 'like', '800%'),
+            ('code', 'like', '805%')
+            ]"/>
+        </record>
+        <record id="ncc_financial_report_er_08" model="account.financial.report">
+            <field name="name">- Costo de Ventas de la Producción (810 - 813)</field>
+            <field name="sign">1</field>
+            <field name="type">accounts</field>
+            <field name="sequence">8</field>
+            <field name="display_detail">detail_with_hierarchy</field>
+            <field name="account_ids" search="[('code', 'like', '810%')]"/>
+            <field name="parent_id" ref="ncc_financial_report_er"/>
+        </record>
+        <record id="ncc_financial_report_er_09" model="account.financial.report">
+            <field name="name">- Costo de Ventas de Mercancías (814 - 817)</field>
+            <field name="sign">1</field>
+            <field name="type">accounts</field>
+            <field name="sequence">9</field>
+            <field name="display_detail">detail_with_hierarchy</field>
+            <field name="parent_id" ref="ncc_financial_report_er"/>
+            <field name="account_ids" search="[('code', 'like', '814%')]"/>
+        </record>
+        <record id="ncc_financial_report_er_10" model="account.financial.report">
+            <field name="name">- Costo por Exportación de Servicios (818)</field>
+            <field name="sign">1</field>
+            <field name="type">accounts</field>
+            <field name="sequence">10</field>
+            <field name="display_detail">detail_with_hierarchy</field>
+            <field name="parent_id" ref="ncc_financial_report_er"/>
+        </record>
+        <record id="ncc_financial_report_er_11" model="account.financial.report">
+            <field name="name">= Utilidad o Pérdida Bruta en Ventas</field>
+            <field name="sign">-1</field>
+            <field name="type">accounts</field>
+            <field name="sequence">11</field>
+            <field name="display_detail">no_detail</field>
+            <field name="parent_id" ref="ncc_financial_report_er"/>
+            <field name="account_ids" search="[
+            '|','|','|','|','|',
+            ('code', 'like', '900%'),
+            ('code', 'like', '800%'),
+            ('code', 'like', '805%'),
+            ('code', 'like', '810%'),
+            ('code', 'like', '814%'),
+            ('code', 'like', '818%')
+            ]"/>
+        </record>
+        <record id="ncc_financial_report_er_12" model="account.financial.report">
+            <field name="name">- Gastos de Distribución y Ventas (819 - 821)</field>
+            <field name="sign">1</field>
+            <field name="type">accounts</field>
+            <field name="sequence">12</field>
+            <field name="display_detail">detail_with_hierarchy</field>
+            <field name="parent_id" ref="ncc_financial_report_er"/>
+            <field name="account_ids" search="[('code', 'like', '819%')]"/>
+        </record>
+        <record id="ncc_financial_report_er_13" model="account.financial.report">
+            <field name="name">= Utilidad o Pérdida Neta en Ventas</field>
+            <field name="sign">-1</field>
+            <field name="type">accounts</field>
+            <field name="sequence">13</field>
+            <field name="display_detail">no_detail</field>
+            <field name="parent_id" ref="ncc_financial_report_er"/>
+            <field name="account_ids" search="[
+            '|','|','|','|','|','|',
+            ('code', 'like', '900%'),
+            ('code', 'like', '800%'),
+            ('code', 'like', '805%'),
+            ('code', 'like', '810%'),
+            ('code', 'like', '814%'),
+            ('code', 'like', '818%'),
+            ('code', 'like', '819%')
+            ]"/>
+        </record>
+        <record id="ncc_financial_report_er_14" model="account.financial.report">
+            <field name="name">- Gastos Generales y de Administración (822 - 824)</field>
+            <field name="sign">1</field>
+            <field name="type">accounts</field>
+            <field name="sequence">14</field>
+            <field name="display_detail">detail_with_hierarchy</field>
+            <field name="parent_id" ref="ncc_financial_report_er"/>
+            <field name="account_ids" search="[('code', 'like', '822%')]"/>
+        </record>
+        <record id="ncc_financial_report_er_15" model="account.financial.report">
+            <field name="name">- Gastos de Operación (826 - 833)</field>
+            <field name="sign">1</field>
+            <field name="type">accounts</field>
+            <field name="sequence">15</field>
+            <field name="display_detail">detail_with_hierarchy</field>
+            <field name="parent_id" ref="ncc_financial_report_er"/>
+            <field name="account_ids" search="[('code', 'like', '826%')]"/>
+        </record>
+        <record id="ncc_financial_report_er_17" model="account.financial.report">
+            <field name="name">= Utilidad o Pérdida en Operaciones</field>
+            <field name="sign">-1</field>
+            <field name="type">accounts</field>
+            <field name="sequence">17</field>
+            <field name="display_detail">no_detail</field>
+            <field name="parent_id" ref="ncc_financial_report_er"/>
+            <field name="account_ids" search="[
+            '|','|','|','|','|','|','|','|',
+            ('code', 'like', '900%'),
+            ('code', 'like', '800%'),
+            ('code', 'like', '805%'),
+            ('code', 'like', '810%'),
+            ('code', 'like', '814%'),
+            ('code', 'like', '818%'),
+            ('code', 'like', '819%'),
+            ('code', 'like', '822%'),
+            ('code', 'like', '826%')
+            ]"/>
+        </record>
+        <record id="ncc_financial_report_er_18" model="account.financial.report">
+            <field name="name">- Gastos de Proyectos (825)</field>
+            <field name="sign">1</field>
+            <field name="type">accounts</field>
+            <field name="sequence">18</field>
+            <field name="display_detail">detail_with_hierarchy</field>
+            <field name="parent_id" ref="ncc_financial_report_er"/>
+        </record>
+        <record id="ncc_financial_report_er_19" model="account.financial.report">
+            <field name="name">- Gastos Financieros (835 - 838)</field>
+            <field name="sign">1</field>
+            <field name="type">accounts</field>
+            <field name="sequence">19</field>
+            <field name="display_detail">detail_with_hierarchy</field>
+            <field name="parent_id" ref="ncc_financial_report_er"/>
+        </record>
+        <record id="ncc_financial_report_er_20" model="account.financial.report">
+            <field name="name">- Gastos por Pérdidas en Tasa de Cambio (839)</field>
+            <field name="sign">1</field>
+            <field name="type">accounts</field>
+            <field name="sequence">20</field>
+            <field name="display_detail">detail_with_hierarchy</field>
+            <field name="parent_id" ref="ncc_financial_report_er"/>
+            <field name="account_ids" search="[('code', 'like', '839%')]"/>
+        </record>
+        <record id="ncc_financial_report_er_24" model="account.financial.report">
+            <field name="name">- Gastos por Pérdidas (845 - 848)</field>
+            <field name="sign">1</field>
+            <field name="type">accounts</field>
+            <field name="sequence">24</field>
+            <field name="display_detail">detail_with_hierarchy</field>
+            <field name="parent_id" ref="ncc_financial_report_er"/>
+            <field name="account_ids" search="[('code', 'like', '845%')]"/>
+        </record>
+        <record id="ncc_financial_report_er_25" model="account.financial.report">
+            <field name="name">- Gastos por Pérdidas-Desastres (849)</field>
+            <field name="sign">1</field>
+            <field name="type">accounts</field>
+            <field name="sequence">25</field>
+            <field name="display_detail">detail_with_hierarchy</field>
+            <field name="parent_id" ref="ncc_financial_report_er"/>
+            <field name="account_ids" search="[('code', 'like', '849%')]"/>
+        </record>
+        <record id="ncc_financial_report_er_26" model="account.financial.report">
+            <field name="name">- Gastos por Faltantes de Bienes (850 - 854)</field>
+            <field name="sign">1</field>
+            <field name="type">accounts</field>
+            <field name="sequence">26</field>
+            <field name="display_detail">detail_with_hierarchy</field>
+            <field name="parent_id" ref="ncc_financial_report_er"/>
+            <field name="account_ids" search="[('code', 'like', '850%')]"/>
+        </record>
+        <record id="ncc_financial_report_er_27" model="account.financial.report">
+            <field name="name">- Otros Impuestos, Tasas y Contribuciones (855 - 864)</field>
+            <field name="sign">1</field>
+            <field name="type">accounts</field>
+            <field name="sequence">27</field>
+            <field name="display_detail">detail_with_hierarchy</field>
+            <field name="parent_id" ref="ncc_financial_report_er"/>
+            <field name="account_ids" search="[('code', 'like', '855%')]"/>
+        </record>
+        <record id="ncc_financial_report_er_28" model="account.financial.report">
+            <field name="name">- Otros Gastos (865 - 866)</field>
+            <field name="sign">1</field>
+            <field name="type">accounts</field>
+            <field name="sequence">28</field>
+            <field name="display_detail">detail_with_hierarchy</field>
+            <field name="parent_id" ref="ncc_financial_report_er"/>
+            <field name="account_ids" search="[('code', 'like', '865%')]"/>
+        </record>
+        <record id="ncc_financial_report_er_29" model="account.financial.report">
+            <field name="name">- Gastos de Eventos (867)</field>
+            <field name="sign">1</field>
+            <field name="type">accounts</field>
+            <field name="sequence">29</field>
+            <field name="display_detail">detail_with_hierarchy</field>
+            <field name="parent_id" ref="ncc_financial_report_er"/>
+            <field name="account_ids" search="[('code', 'like', '867%')]"/>
+        </record>
+        <record id="ncc_financial_report_er_30" model="account.financial.report">
+            <field name="name">- Gastos de Recuperación de Desastres (873)</field>
+            <field name="sign">1</field>
+            <field name="type">accounts</field>
+            <field name="sequence">30</field>
+            <field name="display_detail">detail_with_hierarchy</field>
+            <field name="parent_id" ref="ncc_financial_report_er"/>
+            <field name="account_ids" search="[('code', 'like', '873%')]"/>
+        </record>
+        <record id="ncc_financial_report_er_31" model="account.financial.report">
+            <field name="name">Ingresos Financieros (920 - 922)</field>
+            <field name="sign">-1</field>
+            <field name="type">accounts</field>
+            <field name="sequence">31</field>
+            <field name="display_detail">detail_with_hierarchy</field>
+            <field name="parent_id" ref="ncc_financial_report_er"/>
+            <field name="account_ids" search="[('code', 'like', '920%')]"/>
+        </record>
+        <record id="ncc_financial_report_er_32" model="account.financial.report">
+            <field name="name">Financiamiento Recibido de las Empresas (923)</field>
+            <field name="sign">-1</field>
+            <field name="type">accounts</field>
+            <field name="sequence">32</field>
+            <field name="display_detail">detail_with_hierarchy</field>
+            <field name="parent_id" ref="ncc_financial_report_er"/>
+            <field name="account_ids" search="[('code', 'like', '923%')]"/>
+        </record>
+        <record id="ncc_financial_report_er_33" model="account.financial.report">
+            <field name="name">Ingresos por Variación de Tasa de Cambio (924)</field>
+            <field name="sign">-1</field>
+            <field name="type">accounts</field>
+            <field name="sequence">33</field>
+            <field name="display_detail">detail_with_hierarchy</field>
+            <field name="parent_id" ref="ncc_financial_report_er"/>
+            <field name="account_ids" search="[('code', 'like', '924%')]"/>
+        </record>
+        <record id="ncc_financial_report_er_34" model="account.financial.report">
+            <field name="name">Ingresos por Dividendos Ganados (925)</field>
+            <field name="sign">-1</field>
+            <field name="type">accounts</field>
+            <field name="sequence">34</field>
+            <field name="display_detail">detail_with_hierarchy</field>
+            <field name="parent_id" ref="ncc_financial_report_er"/>
+            <field name="account_ids" search="[('code', 'like', '925%')]"/>
+        </record>
+        <record id="ncc_financial_report_er_37" model="account.financial.report">
+            <field name="name">Ingresos por Sobrantes (930 - 939)</field>
+            <field name="sign">-1</field>
+            <field name="type">accounts</field>
+            <field name="sequence">37</field>
+            <field name="display_detail">detail_with_hierarchy</field>
+            <field name="parent_id" ref="ncc_financial_report_er"/>
+            <field name="account_ids" search="[('code', 'like', '930%')]"/>
+        </record>
+        <record id="ncc_financial_report_er_38" model="account.financial.report">
+            <field name="name">Otros Ingresos (950 - 952)</field>
+            <field name="sign">-1</field>
+            <field name="type">accounts</field>
+            <field name="sequence">38</field>
+            <field name="display_detail">detail_with_hierarchy</field>
+            <field name="parent_id" ref="ncc_financial_report_er"/>
+            <field name="account_ids" search="[('code', 'like', '950%')]"/>
+        </record>
+        <record id="ncc_financial_report_er_39" model="account.financial.report">
+            <field name="name">Ingresos por Donaciones Recibidas (953)</field>
+            <field name="sign">-1</field>
+            <field name="type">accounts</field>
+            <field name="sequence">39</field>
+            <field name="display_detail">detail_with_hierarchy</field>
+            <field name="parent_id" ref="ncc_financial_report_er"/>
+            <field name="account_ids" search="[('code', 'like', '953%')]"/>
+        </record>
+        <record id="ncc_financial_report_er_40" model="account.financial.report">
+            <field name="name">= Utilidad o Pérdida antes del Impuesto</field>
+            <field name="sign">-1</field>
+            <field name="type">accounts</field>
+            <field name="sequence">40</field>
+            <field name="display_detail">no_detail</field>
+            <field name="parent_id" ref="ncc_financial_report_er"/>
+            <field name="account_ids" search="[
+            '|','|','|','|','|','|','|','|','|','|','|','|','|','|','|','|','|','|','|','|','|','|',
+            ('code', 'like', '900%'),
+            ('code', 'like', '920%'),
+            ('code', 'like', '923%'),
+            ('code', 'like', '925%'),
+            ('code', 'like', '930%'),
+            ('code', 'like', '950%'),
+            ('code', 'like', '953%'),
+
+            ('code', 'like', '800%'),
+            ('code', 'like', '805%'),
+            ('code', 'like', '810%'),
+            ('code', 'like', '814%'),
+            ('code', 'like', '818%'),
+            ('code', 'like', '819%'),
+            ('code', 'like', '822%'),
+            ('code', 'like', '826%'),
+            ('code', 'like', '839%'),
+            ('code', 'like', '845%'),
+            ('code', 'like', '849%'),
+            ('code', 'like', '850%'),
+            ('code', 'like', '855%'),
+            ('code', 'like', '865%'),
+            ('code', 'like', '867%'),
+            ('code', 'like', '873%')
+            ]"/>
+        </record>
+    </data>
+</odoo>

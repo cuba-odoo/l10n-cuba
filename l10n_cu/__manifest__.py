@@ -6,6 +6,7 @@
 # Yunior Rafael Hernández Cabrera <yunior@idola.it>
 # Yusnel Rojas Garcia
 # Julio Smith
+# Segu S.U.R.L
 
 {
     'name': 'Cuba - Accounting',
@@ -24,15 +25,17 @@
         'account',
     ],
     'data': [
-        'data/l10n_cu_chart_data.xml',
+        'data/account_chart_data.xml',
         'data/account.account.template-tcp.csv',
         'data/account.account.template-common.csv',
         'data/account.account.template-private.csv',
         'data/account.account.template-public.csv',
-        'data/account_chart_data.xml',
-        'data/account_tax_group_data.xml',
+
+        'data/account_chart_post_data.xml',
+        'data/account_group_data.xml',
         'data/account_tax_data.xml',
         'data/account_fiscal_position_template_data.xml',
         'data/account_chart_template_data.xml',
+        "views/account_views.xml",
     ],
 }

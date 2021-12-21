@@ -1,13 +1,21 @@
-"id","name","code","user_type_id:id","chart_template_id:id","reconcile","note"
-"account_1200000","Inversiones a Corto Plazo o Temporales","1200000","account.data_account_type_current_assets","l10n_cu_chart_template_common",0,"Activo Circulante"
-"account_1300000","Efectos por Cobrar a Corto Plazo","1300000","account.data_account_type_receivable","l10n_cu_chart_template_common",1,"Activo Circulante"
-"account_1300010","Dentro del Órgano u Organismo","1300010","account.data_account_type_receivable","l10n_cu_chart_template_common",1,"Activo Circulante"
-"account_1300020","Fuera del Órgano u Organismo","1300020","account.data_account_type_receivable","l10n_cu_chart_template_common",1,"Activo Circulante"
-"account_1300030","En el Extranjero","1300030","account.data_account_type_receivable","l10n_cu_chart_template_common",1,"Activo Circulante"
-"account_1300040","Dentro del Grupo Empresarial","1300040","account.data_account_type_receivable","l10n_cu_chart_template_common",1,"Activo Circulante"
-"account_1300050","Sector Cooperativo","1300050","account.data_account_type_receivable","l10n_cu_chart_template_common",1,"Activo Circulante"
-"account_1300060","Personas Naturales","1300060","account.data_account_type_receivable","l10n_cu_chart_template_common",1,"Activo Circulante"
-"account_1340000","Cuenta en Participación","1340000","account.data_account_type_current_assets","l10n_cu_chart_template_common",0,"Activo Circulante"
+"id","name","code","user_type_id/id","chart_template_id/id","reconcile","note"
+"a120","Inversiones a corto plazo o temporales","120","account.data_account_type_current_assets","l10n_cu_chart_template_common",,"0","Activo Circulante"
+"a130_001","Efectos por cobrar a corto plazo. Dentro del Órgano u Organismo","130.001","account.data_account_type_receivable","l10n_cu_chart_template_common","1","Activo Circulante"
+"a130_002","Efectos por cobrar a corto plazo. Fuera del Órgano u Organismo","130.002","account.data_account_type_receivable","l10n_cu_chart_template_common","1","Activo Circulante"
+"a130_003","Efectos por cobrar a corto plazo. En el Extranjero","130.003","account.data_account_type_receivable","l10n_cu_chart_template_common","1","Activo Circulante"
+"a130_004","Efectos por cobrar a corto plazo. Dentro del Grupo Empresarial","130.004","account.data_account_type_receivable","l10n_cu_chart_template_common","1","Activo Circulante"
+"a130_005","Efectos por cobrar a corto plazo. Sector Cooperativo","130.005","account.data_account_type_receivable","l10n_cu_chart_template_common","1","Activo Circulante"
+"a130_006","Efectos por cobrar a corto plazo. Personas Naturales","130.006","account.data_account_type_receivable","l10n_cu_chart_template_common","1","Activo Circulante"
+"a134","Cuenta en Participación","134","account.data_account_type_current_assets","l10n_cu_chart_template_common",,"1","Activo Circulante"
+"a135","Cuentas por cobrar a corto plazo","135","account.data_account_type_receivable","l10n_cu_chart_template_common","1","Activo Circulante"
+"a405","Cuentas por Pagar a Corto Plazo","405","account.data_account_type_payable","l10n_cu_chart_template_common","1","Grupo de Activos (10) - Activos Circulantes (10.1)"
+
+"a731","Gastos Asociados a la Producción","731","account.data_account_type_expenses","l10n_cu_chart_template_common","1","Gastos de Producción"
+
+"a900","Ventas","900","account.data_account_type_revenue","l10n_cu_chart_template_common","0","Cuentas Nominales Acreedoras"
+
+
+
 "account_1350000","Cuentas por Cobrar a Corto Plazo","1350000","account.data_account_type_receivable","l10n_cu_chart_template_common",1,"Activo Circulante"
 "account_1350010","Dentro del Órgano u Organismo","1350010","account.data_account_type_receivable","l10n_cu_chart_template_common",1,"Activo Circulante"
 "account_1350020","Fuera del Órgano u Organismo","1350020","account.data_account_type_receivable","l10n_cu_chart_template_common",1,"Activo Circulante"
@@ -247,7 +255,6 @@
 "account_4010040","Dentro del Grupo Empresarial","4010040","account.data_account_type_current_assets","l10n_cu_chart_template_common",0,"Pasivos Circulantes"
 "account_4010050","Sector Cooperativo","4010050","account.data_account_type_expenses","l10n_cu_chart_template_common",0,"Pasivos Circulantes"
 "account_4010060","Personas Naturales","4010060","account.data_account_type_expenses","l10n_cu_chart_template_common",0,"Pasivos Circulantes"
-"account_4050000","Cuentas por Pagar a Corto Plazo","4050000","account.data_account_type_payable","l10n_cu_chart_template_common",1,"Grupo de Activos (10) - Activos Circulantes (10.1)"
 "account_4050010","Dentro del Órgano u Organismo","4050010","account.data_account_type_fixed_assets","l10n_cu_chart_template_common",0,"Pasivos Circulantes"
 "account_4050020","Fuera del Órgano u Organismo","4050020","account.data_account_type_current_assets","l10n_cu_chart_template_common",0,"Pasivos Circulantes"
 "account_4050030","En el Extranjero","4050030","account.data_account_type_current_assets","l10n_cu_chart_template_common",0,"Pasivos Circulantes"
@@ -274,6 +281,22 @@
 "account_4300000","Cobros Anticipados","4300000","account.data_account_type_current_assets","l10n_cu_chart_template_common",0,"Pasivos Circulantes"
 "account_4340000","Materiales Recibidos de Forma Anticipada","4340000","account.data_account_type_current_assets","l10n_cu_chart_template_common",0,"Pasivos Circulantes"
 "account_4350000","Depósitos Recibidos","4350000","account.data_account_type_current_assets","l10n_cu_chart_template_common",0,"Pasivos Circulantes"
+
+
+"a440_01_01","Obligaciones con el Presupuesto del Estado. MIPYME. 35% de las Utilidades parrafo 040072","440.01.01","account.data_account_type_current_liabilities","l10n_cu_chart_template_common","0","Pasivos Circulantes"
+"a440_01_02","Obligaciones con el Presupuesto del Estado. MIPYME. 10% de las Ventas parrfo 011482","440.01.02","account.data_account_type_current_liabilities","l10n_cu_chart_template_common","0","Pasivos Circulantes"
+"a440_01_03","Obligaciones con el Presupuesto del Estado. MIPYME. 5% Fuerza de Trab.Remun Empleados parrafo 061012","440.01.03","account.data_account_type_current_liabilities","l10n_cu_chart_template_common","0","Pasivos Circulantes"
+"a440_01_04","Obligaciones con el Presupuesto del Estado. MIPYME. 1% Cont Des. Local parrafo 074012","440.01.04","account.data_account_type_current_liabilities","l10n_cu_chart_template_common","0","Pasivos Circulantes"
+"a440_01_05","Obligaciones con el Presupuesto del Estado. MIPYME. 12.5% Cont SS Pers Contrat parrafo 081013","440.01.05","account.data_account_type_current_liabilities","l10n_cu_chart_template_common","0","Pasivos Circulantes"
+"a440_01_06","Obligaciones con el Presupuesto del Estado. MIPYME. Otros Imp y Contrib.","440.01.06","account.data_account_type_current_liabilities","l10n_cu_chart_template_common","0","Pasivos Circulantes"
+"a440_02_01","Obligaciones con el Presupuesto del Estado. Socios. Contrib. Espc. S. Social Socios parrafo 082023","440.02.01","account.data_account_type_current_liabilities","l10n_cu_chart_template_common","0","Pasivos Circulantes"
+"a440_02_02","Obligaciones con el Presupuesto del Estado. Socios. Imp sobre Ing. Pers. Liq adic (DJ)Socios parrafo 053032","440.02.02","account.data_account_type_current_liabilities","l10n_cu_chart_template_common","0","Pasivos Circulantes"
+"a440_02_03","Obligaciones con el Presupuesto del Estado. Socios. Imp sobre Ing. Pers. Imp sobre Ing. Pers. 5 % Dist antic Socios parrafo 052032","440.02.03","account.data_account_type_current_liabilities","l10n_cu_chart_template_common","0","Pasivos Circulantes"
+"a440_03_01","Obligaciones con el Presupuesto del Estado. Empleados. Cont Esp SS 5% Total remuneraciones Empleados parrafo 082023","440.03.01","account.data_account_type_current_liabilities","l10n_cu_chart_template_common","0","Pasivos Circulantes"
+"a440_03_02","Obligaciones con el Presupuesto del Estado. Empleados. Imp sobre Ingresos personales Empleados. Superior a 3260.00. parrafo 052042","440.03.02","account.data_account_type_current_liabilities","l10n_cu_chart_template_common","0","Pasivos Circulantes"
+
+
+
 "account_4400000","Obligaciones con el Presupuesto del Estado","4400000","account.data_account_type_current_assets","l10n_cu_chart_template_common",0,"Pasivos Circulantes"
 "account_4400001","Impuesto sobre Ventas","4400001","account.data_account_type_current_assets","l10n_cu_chart_template_common",0,"Pasivos Circulantes"
 "account_4400002","Impuesto sobre los Servicios Públicos","4400002","account.data_account_type_current_assets","l10n_cu_chart_template_common",0,"Pasivos Circulantes"
@@ -398,14 +421,25 @@
 "account_7280010","Saldo al Inicio del Año","7280010","account.data_account_type_expenses","l10n_cu_chart_template_common",0,"Gastos de Producción"
 "account_7280020","Gastos del Período","7280020","account.data_account_type_expenses","l10n_cu_chart_template_common",0,"Gastos de Producción"
 "account_7280050","Traspaso a Inversiones en Proceso","7280050","account.data_account_type_expenses","l10n_cu_chart_template_common",0,"Gastos de Producción"
-"account_7310000","Gastos Asociados a la Producción","7310000","account.data_account_type_expenses","l10n_cu_chart_template_common",0,"Gastos de Producción"
 "account_8000000","Devoluciones y Rebajas en Ventas","8000000","account.data_account_type_expenses","l10n_cu_chart_template_common",0,"Cuentas Nominales Deudoras"
-"account_8050000","Impuesto por las Ventas","8050000","account.data_account_type_expenses","l10n_cu_chart_template_common",0,"Cuentas Nominales Deudoras"
+
+"a805","Impuesto por las Ventas","805","account.data_account_type_expenses","l10n_cu_chart_template_common",0,"Cuentas Nominales Deudoras"
+
 "account_8100000","Costo de Ventas de la Producción","8100000","account.data_account_type_expenses","l10n_cu_chart_template_common",0,"Cuentas Nominales Deudoras"
 "account_8140000","Costo de Ventas de Mercancías","8140000","account.data_account_type_expenses","l10n_cu_chart_template_common",0,"Cuentas Nominales Deudoras"
 "account_8180000","Costo por Exportación de Servicios","8180000","account.data_account_type_expenses","l10n_cu_chart_template_common",0,"Cuentas Nominales Deudoras"
 "account_8190000","Gastos de Distribución y Ventas","8190000","account.data_account_type_expenses","l10n_cu_chart_template_common",0,"Cuentas Nominales Deudoras"
 "account_8220000","Gastos Generales y de Administración","8220000","account.data_account_type_expenses","l10n_cu_chart_template_common",0,"Cuentas Nominales Deudoras"
+
+
+"a822_01","Gastos Generales y de Administración. Suministro de oficina","822.01","account.data_account_type_expenses","l10n_cu_chart_template_common","0"
+"a822_02","Gastos Generales y de Administración. Sueldos y Salarios","822.02","account.data_account_type_expenses","l10n_cu_chart_template_common","0"
+"a822_03","Gastos Generales y de Administración. Servicios recibidos","822.03","account.data_account_type_expenses","l10n_cu_chart_template_common","0"
+"a822_04","Gastos Generales y de Administración. Comunicaciones","822.04","account.data_account_type_expenses","l10n_cu_chart_template_common","0"
+"a822_05","Gastos Generales y de Administración. Prestaciones sociales","822.05","account.data_account_type_expenses","l10n_cu_chart_template_common","0"
+"a822_06","Gastos Generales y de Administración. Provisiones","822.06","account.data_account_type_expenses","l10n_cu_chart_template_common","0"
+"a826_03","Gastos de Operación. Energía","826.03","account.data_account_type_expenses","l10n_cu_chart_template_common","0"
+
 "account_8250000","Gastos de Proyectos","8250000","account.data_account_type_expenses","l10n_cu_chart_template_common",0,"Cuentas Nominales Deudoras"
 "account_8260000","Gastos de Operación","8260000","account.data_account_type_expenses","l10n_cu_chart_template_common",0,"Cuentas Nominales Deudoras"
 "account_8340000","Gastos de Administración de la OSDE","8340000","account.data_account_type_expenses","l10n_cu_chart_template_common",0,"Cuentas Nominales Deudoras"
@@ -421,7 +455,6 @@
 "account_8650000","Otros Gastos","8650000","account.data_account_type_expenses","l10n_cu_chart_template_common",0,"Cuentas Nominales Deudoras"
 "account_8670000","Gastos de Eventos","8670000","account.data_account_type_expenses","l10n_cu_chart_template_common",0,"Cuentas Nominales Deudoras"
 "account_8730000","Gastos de Recuperación de Desastres","8730000","account.data_account_type_expenses","l10n_cu_chart_template_common",0,"Cuentas Nominales Deudoras"
-"account_9000000","Ventas","9000000","account.data_account_type_revenue","l10n_cu_chart_template_common",0,"Cuentas Nominales Acreedoras"
 "account_9140000","Ventas de Bienes con destino a la Exportación","9140000","account.data_account_type_revenue","l10n_cu_chart_template_common",0,"Cuentas Nominales Acreedoras"
 "account_9140010","Ventas de Bienes con Destino a la Exportación - Productores","9140100","account.data_account_type_revenue","l10n_cu_chart_template_common",0,"Cuentas Nominales Acreedoras"
 "account_914020","Ventas de Bienes con Destino a la Exportación - Exportadores","9140200","account.data_account_type_revenue","l10n_cu_chart_template_common",0,"Cuentas Nominales Acreedoras"

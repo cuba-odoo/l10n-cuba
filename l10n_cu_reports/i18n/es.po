@@ -1,0 +1,1645 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* ncif_accounting_pdf_reports
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 12.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-09-25 14:00+0000\n"
+"PO-Revision-Date: 2021-09-25 10:04-0400\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"Language: es\n"
+"X-Generator: Poedit 2.3\n"
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_er_09
+msgid "- Costo de Ventas de Mercancías (814 - 817)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_er_08
+msgid "- Costo de Ventas de la Producción (810 - 813)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_er_10
+msgid "- Costo por Exportación de Servicios (818)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_er_05
+msgid "- Devoluciones y Rebajas en Ventas (800 - 804)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_er_19
+msgid "- Gastos Financieros (835 - 838)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_er_14
+msgid "- Gastos Generales y de Administración (822 - 824)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_er_12
+msgid "- Gastos de Distribución y Ventas (819 - 821)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_er_29
+msgid "- Gastos de Eventos (867)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_er_15
+msgid "- Gastos de Operación (826 - 833)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_er_18
+msgid "- Gastos de Proyectos (825)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_er_30
+msgid "- Gastos de Recuperación de Desastres (873)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_er_26
+msgid "- Gastos por Faltantes de Bienes (850 - 854)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_er_24
+msgid "- Gastos por Pérdidas (845 - 848)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_er_20
+msgid "- Gastos por Pérdidas en Tasa de Cambio (839)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_er_25
+msgid "- Gastos por Pérdidas-Desastres (849)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_er_06
+msgid "- Impuesto por las Ventas (805 – 809)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_er_28
+msgid "- Otros Gastos (865 - 866)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_er_27
+msgid "- Otros Impuestos, Tasas y Contribuciones (855 - 864)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model_terms:ir.ui.view,arch_db:ncif_accounting_pdf_reports.internal_financial_layout_footer
+msgid "<span align=\"center\"> AÑO </span><br/>"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model_terms:ir.ui.view,arch_db:ncif_accounting_pdf_reports.internal_financial_layout_footer
+msgid "<span> DÍA </span> <br/>"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model_terms:ir.ui.view,arch_db:ncif_accounting_pdf_reports.internal_financial_layout_footer
+msgid "<span> MES </span><br/>"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model_terms:ir.ui.view,arch_db:ncif_accounting_pdf_reports.internal_financial_layout_footer
+msgid ""
+"<span>APROBADO POR:</span> <br/>\n"
+"                            _____________________ <br/>\n"
+"                            <span>FIRMA:</span> <br/>\n"
+"                            _____________________"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model_terms:ir.ui.view,arch_db:ncif_accounting_pdf_reports.internal_financial_layout_footer
+msgid ""
+"<span>Certificamos que los datos contenidos en este estado financiero se corresponden\n"
+"                            con las anotaciones contables de acuerdo con las regulaciones vigentes.</span>"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model_terms:ir.ui.view,arch_db:ncif_accounting_pdf_reports.internal_financial_layout_header
+msgid "<span>Código Entidad</span>"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model_terms:ir.ui.view,arch_db:ncif_accounting_pdf_reports.internal_financial_layout_header
+msgid "<span>D.P.A</span>"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model_terms:ir.ui.view,arch_db:ncif_accounting_pdf_reports.internal_financial_layout_footer
+msgid "<span>FECHA:</span> <br/>"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model_terms:ir.ui.view,arch_db:ncif_accounting_pdf_reports.internal_financial_layout_footer
+msgid ""
+"<span>HECHO POR:</span> <br/>\n"
+"                            _____________________ <br/>\n"
+"                            <span>FIRMA:</span> <br/>\n"
+"                            _____________________"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model_terms:ir.ui.view,arch_db:ncif_accounting_pdf_reports.internal_financial_layout_header
+msgid "<span>N.A.E</span>"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model_terms:ir.ui.view,arch_db:ncif_accounting_pdf_reports.internal_financial_layout_header
+msgid "<strong>5920</strong>"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model_terms:ir.ui.view,arch_db:ncif_accounting_pdf_reports.report_financial_bs
+msgid "<strong>Apertura</strong>"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model_terms:ir.ui.view,arch_db:ncif_accounting_pdf_reports.report_financial_bs
+#: model_terms:ir.ui.view,arch_db:ncif_accounting_pdf_reports.report_financial_ege
+#: model_terms:ir.ui.view,arch_db:ncif_accounting_pdf_reports.report_financial_ei
+#: model_terms:ir.ui.view,arch_db:ncif_accounting_pdf_reports.report_financial_pl
+msgid "<strong>CONCEPTOS</strong>"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model_terms:ir.ui.view,arch_db:ncif_accounting_pdf_reports.internal_financial_layout_header
+msgid "<strong>ESTADOS FINANCIEROS</strong>"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model_terms:ir.ui.view,arch_db:ncif_accounting_pdf_reports.report_financial_ei
+msgid "<strong>Ejecución del Año hasta la fecha</strong>"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model_terms:ir.ui.view,arch_db:ncif_accounting_pdf_reports.internal_financial_layout_header
+msgid "<strong>Fecha desde :</strong>"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model_terms:ir.ui.view,arch_db:ncif_accounting_pdf_reports.internal_financial_layout_header
+msgid "<strong>Fecha hasta :</strong>"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model_terms:ir.ui.view,arch_db:ncif_accounting_pdf_reports.report_financial_bs
+#: model_terms:ir.ui.view,arch_db:ncif_accounting_pdf_reports.report_financial_ege
+#: model_terms:ir.ui.view,arch_db:ncif_accounting_pdf_reports.report_financial_ei
+#: model_terms:ir.ui.view,arch_db:ncif_accounting_pdf_reports.report_financial_pl
+msgid "<strong>Filas</strong>"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model_terms:ir.ui.view,arch_db:ncif_accounting_pdf_reports.internal_financial_layout_header
+msgid "<strong>INFORME ACUMULADO HASTA:</strong> <br/>"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model_terms:ir.ui.view,arch_db:ncif_accounting_pdf_reports.report_financial_bs
+#: model_terms:ir.ui.view,arch_db:ncif_accounting_pdf_reports.report_financial_ege
+#: model_terms:ir.ui.view,arch_db:ncif_accounting_pdf_reports.report_financial_ei
+#: model_terms:ir.ui.view,arch_db:ncif_accounting_pdf_reports.report_financial_pl
+msgid "<strong>Plan Anual</strong>"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model_terms:ir.ui.view,arch_db:ncif_accounting_pdf_reports.report_financial_ege
+#: model_terms:ir.ui.view,arch_db:ncif_accounting_pdf_reports.report_financial_ei
+#: model_terms:ir.ui.view,arch_db:ncif_accounting_pdf_reports.report_financial_pl
+msgid "<strong>Plan hasta la fecha</strong>"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model_terms:ir.ui.view,arch_db:ncif_accounting_pdf_reports.report_financial_bs
+#: model_terms:ir.ui.view,arch_db:ncif_accounting_pdf_reports.report_financial_ege
+#: model_terms:ir.ui.view,arch_db:ncif_accounting_pdf_reports.report_financial_pl
+msgid "<strong>Real hasta la fecha</strong>"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model_terms:ir.ui.view,arch_db:ncif_accounting_pdf_reports.internal_financial_layout_header
+msgid ""
+"<strong>UNIDAD DE MEDIDA:</strong> <br/>\n"
+"                                Pesos cubanos con dos decimales"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_er_11
+msgid "= Utilidad o Pérdida Bruta en Ventas"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_er_13
+msgid "= Utilidad o Pérdida Neta en Ventas"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_er_40
+msgid "= Utilidad o Pérdida antes del Impuesto"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_er_17
+msgid "= Utilidad o Pérdida en Operaciones"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_er_07
+msgid "= Ventas Netas"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_es_activo
+msgid "ACTIVO"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:ir.actions.act_window,name:ncif_accounting_pdf_reports.action_account_dj_report_mipyme
+#: model:ir.ui.menu,name:ncif_accounting_pdf_reports.menu_account_dj_report_mipyme
+msgid "Account DJ Report MIPYME"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:ir.model,name:ncif_accounting_pdf_reports.model_account_financial_report
+msgid "Account Report"
+msgstr "Informe financiero"
+
+#. module: ncif_accounting_pdf_reports
+#: model:ir.model.fields,field_description:ncif_accounting_pdf_reports.field_accounting_report_ext__account_report_id
+msgid "Account Reports"
+msgstr "Informes financieros"
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_es_01
+msgid "Activos Circulantes"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_es_69
+msgid "Activos Diferidos"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_es_56
+msgid "Activos Fijos"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_es_63
+msgid "Activos Fijos Intangibles (255-263)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_es_64
+msgid "Activos Fijos Intangibles en Proceso (264)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_es_57
+msgid "Activos Fijos Tangibles (240-251)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_es_51
+msgid "Activos a Largo Plazo"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_ege_09
+msgid "Acumulación de Vacaciones (9.09 %)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_es_18
+msgid "Adeudos del Presupuesto del Estado (164-166)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_es_19
+msgid "Adeudos del Órgano u Organismo (167-170)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_ei_12
+msgid "Adquisición de Activos Fijos Tangibles Nuevos (290 - 0100 y 0300)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_es_38
+msgid "Alimentos (193)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: selection:accounting.report.ext,display_account:0
+msgid "All"
+msgstr "Todos"
+
+#. module: ncif_accounting_pdf_reports
+#: selection:accounting.report.ext,target_move:0
+msgid "All Entries"
+msgstr "Todos los asientos"
+
+#. module: ncif_accounting_pdf_reports
+#: selection:accounting.report.ext,target_move:0
+msgid "All Posted Entries"
+msgstr "Todos los asientos asentados"
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_es_65
+msgid "Amortización de Activos Fijos Intangibles (390-399)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_es_17
+msgid "Anticipos a Justificar (161-163)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:ir.model.fields,field_description:ncif_accounting_pdf_reports.field_account_financial_report__apertura
+msgid "Apertura"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_es_34
+msgid "Base Material de Estudio (191)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_es_117
+msgid "Bonos Suscritos (541)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_es_116
+msgid "Bonos por Pagar (540)-(144)-(363)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model_terms:ir.ui.view,arch_db:ncif_accounting_pdf_reports.internal_financial_layout_header
+msgid "CLASE"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model_terms:ir.ui.view,arch_db:ncif_accounting_pdf_reports.view_account_dj_report_mipyme_form
+msgid "Calcular"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: selection:account.dj.report.mipyme,state:0
+#: selection:account.dj.report.socio,state:0
+#: code:addons/ncif_accounting_pdf_reports/models/account.py:22
+#: code:addons/ncif_accounting_pdf_reports/models/account.py:30
+#, python-format
+msgid "Calculate"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model_terms:ir.ui.view,arch_db:ncif_accounting_pdf_reports.report_ncif
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_es_97
+msgid "Cobros Anticipados (430-433)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_es_92
+msgid "Cobros por Cuenta de Terceros (416)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:ir.model.fields,field_description:ncif_accounting_pdf_reports.field_accounting_report_ext__label_filter
+msgid "Column Label"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_ege_02
+msgid "Combustibles y Lubricantes"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_es_25
+msgid "Combustibles y Lubricantes (184)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:ir.model.fields,field_description:ncif_accounting_pdf_reports.field_accounting_report_ext__company_id
+msgid "Company"
+msgstr "Compañía"
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_ei_14
+msgid "Compra de Activos Fijos Intangibles (292 - 0100 y 0300)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_ei_13
+msgid "Compra de Activos Fijos Tangibles de Uso (291 - 0100 y 0300)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_ei_03
+msgid "Construcción y Montaje (0010)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:ir.model.fields,field_description:ncif_accounting_pdf_reports.field_account_dj_report_mipyme__create_uid
+#: model:ir.model.fields,field_description:ncif_accounting_pdf_reports.field_account_dj_report_socio__create_uid
+#: model:ir.model.fields,field_description:ncif_accounting_pdf_reports.field_accounting_report_ext__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: ncif_accounting_pdf_reports
+#: model:ir.model.fields,field_description:ncif_accounting_pdf_reports.field_account_dj_report_mipyme__create_date
+#: model:ir.model.fields,field_description:ncif_accounting_pdf_reports.field_account_dj_report_socio__create_date
+#: model:ir.model.fields,field_description:ncif_accounting_pdf_reports.field_accounting_report_ext__create_date
+msgid "Created on"
+msgstr "Creado el"
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_es_50
+msgid "Créditos Documentarios (211)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_es_07
+msgid "Cuenta en Participación (134)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_es_78
+msgid "Cuentas por Cobrar - Compra de Monedas (342)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_es_77
+msgid "Cuentas por Cobrar Diversas-Operaciones Corrientes (334-341)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_es_08
+msgid "Cuentas por Cobrar a Corto Plazo (135-139 y 154)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_es_53
+msgid "Cuentas por Cobrar a Largo Plazo (218-220)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_es_79
+msgid "Cuentas por Cobrar del Proceso Inversionista (343-345)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_es_81
+msgid "Cuentas por Cobrar en Litigio (347)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_es_83
+msgid "Cuentas por Cobrar en Proceso Judicial (349)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_es_95
+msgid "Cuentas por Pagar - Activos Fijos Tangibles (421-424)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_es_123
+msgid "Cuentas por Pagar Diversas (565-568)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_es_91
+msgid "Cuentas por Pagar a Corto Plazo (405-415)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_es_112
+msgid "Cuentas por Pagar a Largo Plazo (515-518)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_es_96
+msgid "Cuentas por Pagar del Proceso Inversionista (425-429)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_es_124
+msgid "Cuentas por Pagar – Compra de Monedas (569)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model_terms:ir.ui.view,arch_db:ncif_accounting_pdf_reports.internal_financial_layout_header
+msgid "CÓDIGO"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model_terms:ir.ui.view,arch_db:ncif_accounting_pdf_reports.internal_financial_layout_header
+msgid "DIVISIÓN"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: selection:accounting.report.ext,filter_cmp:0
+msgid "Date"
+msgstr "Fecha"
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_es_58
+msgid "Depreciación de Activos Fijos Tangibles (375-388)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_ege_10
+msgid "Depreciación y Amortización"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_es_99
+msgid "Depósitos Recibidos (435-439)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_es_84
+msgid "Depósitos y Fianzas (354-355)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_es_32
+msgid "Descuento Comercial e Impuesto (370-372)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_es_35
+msgid "Desgaste de Base Material de Estudio (366)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_es_61
+msgid "Desgaste de Medios y Equipos para Alquilar (389)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_es_37
+msgid "Desgaste de Vestuario y Lencería (367)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_es_29
+msgid "Desgaste de Útiles y Herramientas (373)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:ir.model.fields,field_description:ncif_accounting_pdf_reports.field_accounting_report_ext__display_account
+msgid "Display Accounts"
+msgstr "Mostrar cuentas"
+
+#. module: ncif_accounting_pdf_reports
+#: model:ir.model.fields,field_description:ncif_accounting_pdf_reports.field_accounting_report_ext__debit_credit
+msgid "Display Debit/Credit Columns"
+msgstr "Mostrar columnas Debe/Haber"
+
+#. module: ncif_accounting_pdf_reports
+#: model:ir.model.fields,field_description:ncif_accounting_pdf_reports.field_account_dj_report_mipyme__display_name
+#: model:ir.model.fields,field_description:ncif_accounting_pdf_reports.field_account_dj_report_socio__display_name
+#: model:ir.model.fields,field_description:ncif_accounting_pdf_reports.field_accounting_report_ext__display_name
+#: model:ir.model.fields,field_description:ncif_accounting_pdf_reports.field_report_ncif_accounting_pdf_reports_report_financial_bs__display_name
+#: model:ir.model.fields,field_description:ncif_accounting_pdf_reports.field_report_ncif_accounting_pdf_reports_report_financial_ege__display_name
+#: model:ir.model.fields,field_description:ncif_accounting_pdf_reports.field_report_ncif_accounting_pdf_reports_report_financial_ei__display_name
+#: model:ir.model.fields,field_description:ncif_accounting_pdf_reports.field_report_ncif_accounting_pdf_reports_report_financial_pl__display_name
+msgid "Display Name"
+msgstr "Nombre mostrado"
+
+#. module: ncif_accounting_pdf_reports
+#: selection:accounting.report.ext,display_detail:0
+msgid "Display children with hierarchy"
+msgstr "Mostrar hijos con jerarquía"
+
+#. module: ncif_accounting_pdf_reports
+#: model:ir.model.fields,field_description:ncif_accounting_pdf_reports.field_accounting_report_ext__display_detail
+msgid "Display details"
+msgstr "Mostrar detalles"
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_es_21
+msgid "Dividendos y Participaciones por Cobrar (181)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_es_93
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_es_94
+msgid "Dividendos y Participaciones por Pagar (417)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_es_141
+msgid "Donaciones Entregadas - Exterior (627)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_es_140
+msgid "Donaciones Entregadas - Nacionales (626)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: selection:account.dj.report.mipyme,state:0
+#: selection:account.dj.report.socio,state:0
+#: code:addons/ncif_accounting_pdf_reports/models/account.py:22
+#: code:addons/ncif_accounting_pdf_reports/models/account.py:30
+#, python-format
+msgid "Done"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: selection:account.dj.report.mipyme,state:0
+#: selection:account.dj.report.socio,state:0
+#: code:addons/ncif_accounting_pdf_reports/models/account.py:22
+#: code:addons/ncif_accounting_pdf_reports/models/account.py:30
+#, python-format
+msgid "Draft"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_ege
+msgid "ESTADO DE GASTOS POR ELEMENTOS"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_ei
+msgid "ESTADO DE INVERSIONES"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_er
+msgid "ESTADO DE RESULTADO"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_es
+msgid "ESTADO DE SITUACIÓN"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_es_03
+msgid "Efectivo en Banco y en Otras Instituciones (109-119)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_es_02
+msgid "Efectivo en Caja (101-108)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_es_06
+msgid "Efectos por Cobrar Descontados (365)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_es_82
+msgid "Efectos por Cobrar Protestados (348)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_es_05
+msgid "Efectos por Cobrar a Corto Plazo (130-133)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_es_52
+msgid "Efectos por Cobrar a Largo Plazo (215-217)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_es_80
+msgid "Efectos por Cobrar en Litigio (346)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_es_90
+msgid "Efectos por Pagar a Corto Plazo (401-404)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_es_111
+msgid "Efectos por Pagar a Largo Plazo (510-514)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:ir.model.fields,field_description:ncif_accounting_pdf_reports.field_accounting_report_ext__enable_filter
+msgid "Enable Comparison"
+msgstr "Habilitar comprobación"
+
+#. module: ncif_accounting_pdf_reports
+#: model:ir.model.fields,field_description:ncif_accounting_pdf_reports.field_accounting_report_ext__date_to
+#: model:ir.model.fields,field_description:ncif_accounting_pdf_reports.field_accounting_report_ext__date_to_cmp
+msgid "End Date"
+msgstr "Fecha finalización"
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_ege_03
+msgid "Energía"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model_terms:ir.ui.view,arch_db:ncif_accounting_pdf_reports.internal_financial_layout_header
+msgid "Entidad:"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_es_27
+msgid "Envases y Embalajes (186)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_ei_04
+msgid "Equipos (0020)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_es_68
+msgid "Equipos por Instalar y Materiales para el Proceso Inversionista (280-289)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:ir.actions.report,name:ncif_accounting_pdf_reports.action_ncc_accounting_pdf_reports_report_ege
+msgid "Estado de Gasto por Elemento"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:ir.actions.act_window,name:ncif_accounting_pdf_reports.action_account_report_ege
+#: model:ir.ui.menu,name:ncif_accounting_pdf_reports.menu_account_report_ege
+msgid "Estado de Gastos pos Elementos"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:ir.actions.act_window,name:ncif_accounting_pdf_reports.action_account_report_ei
+#: model:ir.ui.menu,name:ncif_accounting_pdf_reports.menu_account_report_ei
+msgid "Estado de Inversiones"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:ir.actions.report,name:ncif_accounting_pdf_reports.action_ncc_accounting_pdf_reports_report_ei
+msgid "Estado de Inversión"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:ir.actions.report,name:ncif_accounting_pdf_reports.action_ncc_accounting_pdf_reports_report_bs
+msgid "Estado de Situación"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_es_76
+msgid "Faltantes de Bienes en Investigación (332-333)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:ir.model.fields,field_description:ncif_accounting_pdf_reports.field_accounting_report_ext__filter_cmp
+msgid "Filter by"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_er_32
+msgid "Financiamiento Recibido de las Empresas (923)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_ei_06
+msgid "Fomentos Agrícolas (0050)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_ei_08
+msgid "Fomentos y Desarrollo Forestales (0070)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_ei_07
+msgid "Fomentos y Desarrollo Mineros (0060)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_es_85
+msgid "Fondo de Amortización de Bonos-Efectivo y Valores (364)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_es_109
+msgid "Fondo de Compensación para Desbalances Financieros (501) uso exclusivo de las OSDE"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_ei_10
+msgid "Fondo de Fomento Desarrollo Ganadero (0200)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_es_59
+msgid "Fondos Bibliotecarios (252)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_es_105
+msgid "Gastos Acumulados por Pagar (480-489)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_es_71
+msgid "Gastos Financieros Diferidos (306-307)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_es_70
+msgid "Gastos de Producción y Servicios Diferidos (300-305)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_es_72
+msgid "Gastos del Proceso Inversionista Diferidos (310-311)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_es_73
+msgid "Gastos por Faltantes y Pérdidas Diferidos (312)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:ir.model.fields,field_description:ncif_accounting_pdf_reports.field_account_dj_report_mipyme__id
+#: model:ir.model.fields,field_description:ncif_accounting_pdf_reports.field_account_dj_report_socio__id
+#: model:ir.model.fields,field_description:ncif_accounting_pdf_reports.field_accounting_report_ext__id
+#: model:ir.model.fields,field_description:ncif_accounting_pdf_reports.field_report_ncif_accounting_pdf_reports_report_financial_bs__id
+#: model:ir.model.fields,field_description:ncif_accounting_pdf_reports.field_report_ncif_accounting_pdf_reports_report_financial_ege__id
+#: model:ir.model.fields,field_description:ncif_accounting_pdf_reports.field_report_ncif_accounting_pdf_reports_report_financial_ei__id
+#: model:ir.model.fields,field_description:ncif_accounting_pdf_reports.field_report_ncif_accounting_pdf_reports_report_financial_pl__id
+msgid "ID"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:ir.model.fields,field_description:ncif_accounting_pdf_reports.field_account_dj_report_mipyme__tax_id
+msgid "Impuesto"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model_terms:ir.ui.view,arch_db:ncif_accounting_pdf_reports.view_account_financial_report_form_inherit
+msgid "Informe"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:ir.actions.act_window,name:ncif_accounting_pdf_reports.action_account_report_general
+#: model:ir.ui.menu,name:ncif_accounting_pdf_reports.menu_account_report_general
+msgid "Informes financieros"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_es_20
+msgid "Ingresos Acumulados por Cobrar (173-180)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_es_22
+msgid "Ingresos Acumulados por Cobrar-Reaseguros Aceptados (182)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_es_119
+msgid "Ingresos Diferidos (545-548)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_es_120
+msgid "Ingresos Diferidos por Donaciones Recibidas (549)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_er_31
+msgid "Ingresos Financieros (920 - 922)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_es_125
+msgid "Ingresos de Períodos Futuros (570-574)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_er_34
+msgid "Ingresos por Dividendos Ganados (925)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_er_39
+msgid "Ingresos por Donaciones Recibidas (953)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_er_37
+msgid "Ingresos por Sobrantes (930 - 939)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_er_33
+msgid "Ingresos por Variación de Tasa de Cambio (924)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_es_43
+msgid "Inventarios Ociosos (208)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_es_44
+msgid "Inventarios de Lento Movimiento (209)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_es_40
+msgid "Inventarios de Mercancías de Exportación (195)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_es_39
+msgid "Inventarios de Mercancías de Importación (194)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_es_04
+msgid "Inversiones a Corto Plazo O Temporales (120-129)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_ege_16
+msgid "Inversiones a Largo Plazo o Permanentes (225 - 234)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_es_55
+msgid "Inversiones a Largo Plazo o Permanentes (225-234)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_es_49
+msgid "Inversiones con Medios Propios (728)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_es_48
+msgid "Inversiones con Medios Propios Activos Fijos Intangibles (727)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_ei_02
+msgid "Inversiones en Proceso (265 - 278)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_es_66
+msgid "Inversiones en Proceso (265-278)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:ir.model.fields,field_description:ncif_accounting_pdf_reports.field_accounting_report_ext__journal_ids
+msgid "Journals"
+msgstr "Diarios"
+
+#. module: ncif_accounting_pdf_reports
+#: model:ir.model.fields,field_description:ncif_accounting_pdf_reports.field_account_dj_report_mipyme____last_update
+#: model:ir.model.fields,field_description:ncif_accounting_pdf_reports.field_account_dj_report_socio____last_update
+#: model:ir.model.fields,field_description:ncif_accounting_pdf_reports.field_accounting_report_ext____last_update
+#: model:ir.model.fields,field_description:ncif_accounting_pdf_reports.field_report_ncif_accounting_pdf_reports_report_financial_bs____last_update
+#: model:ir.model.fields,field_description:ncif_accounting_pdf_reports.field_report_ncif_accounting_pdf_reports_report_financial_ege____last_update
+#: model:ir.model.fields,field_description:ncif_accounting_pdf_reports.field_report_ncif_accounting_pdf_reports_report_financial_ei____last_update
+#: model:ir.model.fields,field_description:ncif_accounting_pdf_reports.field_report_ncif_accounting_pdf_reports_report_financial_pl____last_update
+msgid "Last Modified on"
+msgstr "Última modificación en"
+
+#. module: ncif_accounting_pdf_reports
+#: model:ir.model.fields,field_description:ncif_accounting_pdf_reports.field_account_dj_report_mipyme__write_uid
+#: model:ir.model.fields,field_description:ncif_accounting_pdf_reports.field_account_dj_report_socio__write_uid
+#: model:ir.model.fields,field_description:ncif_accounting_pdf_reports.field_accounting_report_ext__write_uid
+msgid "Last Updated by"
+msgstr "Última actualización por"
+
+#. module: ncif_accounting_pdf_reports
+#: model:ir.model.fields,field_description:ncif_accounting_pdf_reports.field_account_dj_report_mipyme__write_date
+#: model:ir.model.fields,field_description:ncif_accounting_pdf_reports.field_account_dj_report_socio__write_date
+#: model:ir.model.fields,field_description:ncif_accounting_pdf_reports.field_accounting_report_ext__write_date
+msgid "Last Updated on"
+msgstr "Última actualización el"
+
+#. module: ncif_accounting_pdf_reports
+#: model_terms:ir.ui.view,arch_db:ncif_accounting_pdf_reports.internal_financial_layout_header
+msgid "Logo"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model_terms:ir.ui.view,arch_db:ncif_accounting_pdf_reports.internal_financial_layout_header
+msgid "MUNICIPIO"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_es_16
+msgid "Materiales Anticipados Inversionista (153)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_es_98
+msgid "Materiales Recibidos de Forma Anticipada (434)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_ege_01
+msgid "Materias Primas y Materiales"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_es_24
+msgid "Materias Primas y Materiales (183)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_es_33
+msgid "Medicamentos (190)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_es_60
+msgid "Medios y Equipos para Alquilar (253)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_es_31
+msgid "Mercancías para la Venta (189)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model_terms:ir.ui.view,arch_db:ncif_accounting_pdf_reports.internal_financial_layout_header
+msgid "Ministerio de Finanzas y Precios"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_es_62
+msgid "Monumentos y Obras de Arte (254)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:ir.model.fields,field_description:ncif_accounting_pdf_reports.field_account_dj_report_mipyme__name
+#: model:ir.model.fields,field_description:ncif_accounting_pdf_reports.field_account_dj_report_socio__name
+msgid "Name"
+msgstr "Nombre"
+
+#. module: ncif_accounting_pdf_reports
+#: selection:accounting.report.ext,filter_cmp:0
+msgid "No Filters"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: selection:accounting.report.ext,display_detail:0
+msgid "No detail"
+msgstr "Sin detalles"
+
+#. module: ncif_accounting_pdf_reports
+#: model:ir.model.fields,field_description:ncif_accounting_pdf_reports.field_account_dj_report_mipyme__notes
+msgid "Notas"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_es_102
+msgid "Nóminas por Pagar (455-459)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model_terms:ir.ui.view,arch_db:ncif_accounting_pdf_reports.internal_financial_layout_header
+msgid "ORG."
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_es_114
+msgid "Obligaciones a Largo Plazo (525-532)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_es_100
+msgid "Obligaciones con el Presupuesto del Estado (440-449)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_es_101
+msgid "Obligaciones con el Órgano u Organismo (450-453)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_es_126
+msgid "Obligación con el Presupuesto del Estado por Garantía Activada (575)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_es_107
+msgid "Otras Provisiones Operacionales (493-499)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_es_86
+msgid "Otras Provisiones Reguladoras de Activos (374)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_es_115
+msgid "Otras Provisiones a Largo Plazo (533-539)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_es_137
+msgid "Otras Reservas Patrimoniales (646-654)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_es_74
+msgid "Otros Activos"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_ei_05
+msgid "Otros Gastos (0030)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_ege_11
+msgid "Otros Gastos Monetarios"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_er_38
+msgid "Otros Ingresos (950 - 952)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_es_42
+msgid "Otros Inventarios (205-207)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_ei_09
+msgid "Otros No Especificados (0100)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_ege_07
+msgid "Otros Pagos Adicionales"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_es_121
+msgid "Otros Pasivos"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_ege_15
+msgid "Otros Servicios de Mantenimiento y Reparaciones Corrientes"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_es_pasivo
+msgid "PASIVO"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_es_patrimonio
+msgid "PATRIMONIO"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model_terms:ir.ui.view,arch_db:ncif_accounting_pdf_reports.internal_financial_layout_header
+msgid "PROVINCIA"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_es_142
+msgid "Pago a Cuenta de las Utilidades (690)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_es_143
+msgid "Pago a Cuenta de los Dividendos (691)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_ege_08
+msgid "Pago por Resultado"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_ege_06
+msgid "Pagos Adicional del Perfeccionamiento Empresarial"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_es_14
+msgid "Pagos Anticipados a Suministradores (146-149)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_es_15
+msgid "Pagos Anticipados del Proceso Inversionista (150-152)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_es_10
+msgid "Pagos por Cuenta de Terceros (140)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_es_26
+msgid "Partes y Piezas de Repuesto (185)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_es_11
+msgid "Participación de Reaseguradores Siniestros Pendientes (141)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_es_88
+msgid "Pasivos Circulantes"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_es_118
+msgid "Pasivos Diferidos"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_es_110
+msgid "Pasivos a Largo Plazo"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_es_129
+msgid "Patrimonio y Fondo Común (600)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:ir.model.fields,field_description:ncif_accounting_pdf_reports.field_account_financial_report__plan_anual
+msgid "Plan Anual"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_es_67
+msgid "Plan de Preparación de Inversiones (279)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_ei_11
+msgid "Plan de preparación de Inversiones (279 - 0010, 0020, 0030)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model_terms:ir.ui.view,arch_db:ncif_accounting_pdf_reports.report_ncif
+msgid "Print"
+msgstr "Imprimir"
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_es_41
+msgid "Producciones para Insumo o Autoconsumo (196)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_es_46
+msgid "Producción Propia para Insumos (725)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_es_30
+msgid "Producción Terminada (188)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_es_45
+msgid "Producción en Proceso (700-724)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_es_09
+msgid "Provisión para Cuentas Incobrables (369)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_es_108
+msgid "Provisión para Pagos de los Subsidios de Seguridad Social a Corto Plazo (500)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_es_106
+msgid "Provisión para Vacaciones (492)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_es_54
+msgid "Préstamos Concedidos a Cobrar a Largo Plazo (221-224)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_es_113
+msgid "Préstamos Recibidos por Pagar a Largo Plazo (520-524)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_es_104
+msgid "Préstamos Recibidos y Otras Operaciones Crediticias por Pagar (470-479)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_es_12
+msgid "Préstamos y Otras Operaciones Crediticias a Cobrar a Corto Plazo (142)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_es_144
+msgid "Pérdida (640-644)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_es_75
+msgid "Pérdidas en Investigación (330-331)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:ir.actions.report,name:ncif_accounting_pdf_reports.action_ncc_accounting_pdf_reports_report_pl
+msgid "Pérdidas y Ganancias"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_es_47
+msgid "Reparaciones Capitales con Medios Propios (726)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_ege_14
+msgid "Reparación y Mantenimiento de Viales"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model_terms:ir.ui.view,arch_db:ncif_accounting_pdf_reports.view_account_financial_report_form_inherit
+msgid "Report"
+msgstr "Informe"
+
+#. module: ncif_accounting_pdf_reports
+#: model_terms:ir.ui.view,arch_db:ncif_accounting_pdf_reports.report_ncif
+msgid "Report Options"
+msgstr "Opciones del informe"
+
+#. module: ncif_accounting_pdf_reports
+#: model:ir.model.fields,field_description:ncif_accounting_pdf_reports.field_account_dj_report_mipyme__report_expense_deductible_id
+msgid "Reporte de gastos deducibles"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:ir.model.fields,field_description:ncif_accounting_pdf_reports.field_account_dj_report_mipyme__report_expense_undeductible_id
+msgid "Reporte de gastos no deducibles"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:ir.model.fields,field_description:ncif_accounting_pdf_reports.field_account_dj_report_mipyme__report_income_id
+msgid "Reporte de ingresos"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:ir.ui.menu,name:ncif_accounting_pdf_reports.menu_account_report_oficials
+msgid "Reportes oficiales"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_es_136
+msgid "Reservas para Contingencias (645)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_es_103
+msgid "Retenciones por Pagar (460-469)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_es_145
+msgid "Revalorización de Activos Fijos Tangibles (613 - 615)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_ei_01
+msgid "SECCIÓN I : INVERSIONES"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_ei_15
+msgid "SECCIÓN II: INVERSIONES FINANCIERAS"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model_terms:ir.ui.view,arch_db:ncif_accounting_pdf_reports.internal_financial_layout_header
+msgid "SUB"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_ege_04
+msgid "Salario"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_ege_05
+msgid "Salario Escala"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_ege_12
+msgid "Servicios Comprados entre entidades"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_ege_13
+msgid "Servicios de Mantenimiento y Reparación Constructivo"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_es_122
+msgid "Sobrantes en Investigación (555-564)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_es_89
+msgid "Sobregiro Bancario (400)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:ir.model.fields,field_description:ncif_accounting_pdf_reports.field_accounting_report_ext__date_from
+#: model:ir.model.fields,field_description:ncif_accounting_pdf_reports.field_accounting_report_ext__date_from_cmp
+msgid "Start Date"
+msgstr "Fecha de inicio"
+
+#. module: ncif_accounting_pdf_reports
+#: model:ir.model.fields,field_description:ncif_accounting_pdf_reports.field_account_dj_report_mipyme__state
+#: model:ir.model.fields,field_description:ncif_accounting_pdf_reports.field_account_dj_report_socio__state
+msgid "State"
+msgstr "Provincia"
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_er_04
+msgid "Subvenciones (916 - 919)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_es_135
+msgid "Subvención por Pérdida (635-639)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_es_13
+msgid "Suscriptores de Bonos (143)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_ege_18
+msgid "TOTAL DE GASTOS POR ELEMENTOS"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_es_150
+msgid "TOTAL DE PATRIMONIO NETO"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_es_87
+msgid "TOTAL DEL ACTIVO"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_es_127
+msgid "TOTAL DEL PASIVO"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_es_151
+msgid "TOTAL DEL PASIVO Y PATRIMONIO NETO O CAPITAL CONTABLE"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:ir.model.fields,field_description:ncif_accounting_pdf_reports.field_accounting_report_ext__target_move
+msgid "Target Moves"
+msgstr "Movimientos destino"
+
+#. module: ncif_accounting_pdf_reports
+#: model:ir.model.fields,help:ncif_accounting_pdf_reports.field_accounting_report_ext__label_filter
+msgid "This label will be displayed on report to show the balance computed for the given comparison filter."
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:ir.model.fields,help:ncif_accounting_pdf_reports.field_accounting_report_ext__debit_credit
+msgid "This option allows you to get more details about the way your balances are computed. Because it is space consuming, we do not allow to use it while doing a comparison."
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_es_23
+msgid "Total de Inventarios"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_es_134
+msgid "Utilidades Retenidas (630-634)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_er_01
+msgid "Ventas (900 - 913)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_er_02
+msgid "Ventas de Bienes con destino a la Exportación (914)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_er_03
+msgid "Ventas por Exportación de Servicios (915)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_es_36
+msgid "Vestuario y Lencería (192)"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_ege_17
+msgid "Viáticos"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: selection:accounting.report.ext,display_account:0
+msgid "With balance is not equal to 0"
+msgstr "Con saldo distinto a 0"
+
+#. module: ncif_accounting_pdf_reports
+#: model:ir.model,name:ncif_accounting_pdf_reports.model_account_dj_report_mipyme
+msgid "account.dj.report.mipyme"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:ir.model,name:ncif_accounting_pdf_reports.model_account_dj_report_socio
+msgid "account.dj.report.socio"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:ir.model,name:ncif_accounting_pdf_reports.model_accounting_report_ext
+msgid "accounting.report.ext"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:ir.model,name:ncif_accounting_pdf_reports.model_report_accounting_pdf_reports_report_financial
+msgid "report.accounting_pdf_reports.report_financial"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:ir.model,name:ncif_accounting_pdf_reports.model_report_ncif_accounting_pdf_reports_report_financial_bs
+msgid "report.ncif_accounting_pdf_reports.report_financial_bs"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:ir.model,name:ncif_accounting_pdf_reports.model_report_ncif_accounting_pdf_reports_report_financial_ege
+msgid "report.ncif_accounting_pdf_reports.report_financial_ege"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:ir.model,name:ncif_accounting_pdf_reports.model_report_ncif_accounting_pdf_reports_report_financial_ei
+msgid "report.ncif_accounting_pdf_reports.report_financial_ei"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:ir.model,name:ncif_accounting_pdf_reports.model_report_ncif_accounting_pdf_reports_report_financial_pl
+msgid "report.ncif_accounting_pdf_reports.report_financial_pl"
+msgstr ""
+
+#. module: ncif_accounting_pdf_reports
+#: model:account.financial.report,name:ncif_accounting_pdf_reports.ncc_financial_report_es_28
+msgid "Útiles, Herramientas y Otros (187)"
+msgstr ""

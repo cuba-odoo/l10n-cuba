@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="internal_financial_layout_header">
+        <table class="table table-sm" style="margin: 0px !important;">
+            <thead>
+                <tr>
+                    <td style="width: 40%; border-bottom: 1px solid black !important;border-top: 1px solid black !important;border-left: 1px solid black !important;border-right: 1px solid black !important;"
+                        colspan="3">
+                        <div class="mb4">
+                            <img t-att-src="'/l10n_cu_reports/static/src/img/escudo_nacional.png'"
+                                 style="max-height: 45px;" alt="Logo"/>
+                        </div>
+                        <span>Ministerio de Finanzas y Precios</span>
+                    </td>
+                    <th style="vertical-align:middle; width: 20%; border-bottom: 1px solid black !important;border-top: 1px solid black !important; border-left: 1px solid black !important;border-right: 1px solid black !important;"
+                        colspan="2">
+                        <strong>ESTADOS FINANCIEROS</strong>
+                    </th>
+                    <th style="vertical-align:middle; width: 20%; border-bottom: 1px solid black !important;border-top: 1px solid black !important; border-left: 1px solid black !important;border-right: 1px solid black !important;"
+                        colspan="2">
+                        <strong t-esc="data['account_report_id'][1]"/>
+                    </th>
+                    <th style="vertical-align:middle; width: 20%; border-bottom: 1px solid black !important;border-top: 1px solid black !important; border-left: 1px solid black !important;border-right: 1px solid black !important;">
+                        <ul class="list-inline">
+                            Página
+                            <li class="list-inline-item">
+                                <span class="page"/>
+                            </li>
+                            <li class="list-inline-item">de</li>
+                            <li class="list-inline-item">
+                                <span class="topage"/>
+                            </li>
+                        </ul>
+                        <t t-raw="0"/>
+                    </th>
+                </tr>
+                <!--            </thead>-->
+                <!--            <tbody>-->
+                <tr>
+                    <td colspan="4"
+                        style="border-bottom: 1px solid black !important;border-top: 1px solid black !important; border-left: 1px solid black !important;border-right: 1px solid black !important;">
+                        <strong>INFORME ACUMULADO HASTA:</strong>
+                        <br/>
+                        <span>
+                            <t t-if="data['date_to']">
+                                <!--                                <strong>Fecha hasta :</strong>-->
+                                <!--                                <span t-esc="data['date_to']"/>-->
+                                <span t-esc="time.strftime('%d-%m-%Y', time.strptime(data['date_to'],'%Y-%m-%d'))"/>
+
+                            </t>
+                        </span>
+                    </td>
+                    <td colspan="4"
+                        style="border-bottom: 1px solid black !important;border-top: 1px solid black !important; border-left: 1px solid black !important;border-right: 1px solid black !important;">
+                        <strong>UNIDAD DE MEDIDA:</strong>
+                        <br/>
+                        Pesos cubanos con dos decimales
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="8"
+                        style="border-bottom: 1px solid black !important;border-top: 1px solid black !important; border-left: 1px solid black !important;border-right: 1px solid black !important;">
+                        Entidad:
+                        <span t-esc="res_company.name"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3" class="text-center"
+                        style="border-bottom: 1px solid black !important;border-top: 1px solid black !important; border-left: 1px solid black !important;border-right: 1px solid black !important;">
+                        <span>Código Entidad</span>
+                    </td>
+                    <td colspan="3" class="text-center"
+                        style="border-bottom: 1px solid black !important;border-top: 1px solid black !important; border-left: 1px solid black !important;border-right: 1px solid black !important;">
+                        <span>N.A.E</span>
+                    </td>
+                    <td colspan="2" class="text-center"
+                        style="border-bottom: 1px solid black !important;border-top: 1px solid black !important; border-left: 1px solid black !important;border-right: 1px solid black !important;">
+                        <span>D.P.A</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="border-bottom: 1px solid black !important;border-top: 1px solid black !important;border-left: 1px solid black !important;border-right: 1px solid black !important;">
+                        ORG.
+                    </td>
+                    <td style="border-bottom: 1px solid black !important;border-top: 1px solid black !important;border-left: 1px solid black !important;border-right: 1px solid black !important;">
+                        SUB
+                    </td>
+                    <td style="border-bottom: 1px solid black !important;border-top: 1px solid black !important;border-left: 1px solid black !important;border-right: 1px solid black !important;">
+                        CÓDIGO
+                    </td>
+                    <td style="border-bottom: 1px solid black !important;border-top: 1px solid black !important;border-left: 1px solid black !important;border-right: 1px solid black !important;"
+                        colspan="2">DIVISIÓN
+                    </td>
+                    <td style="border-bottom: 1px solid black !important;border-top: 1px solid black !important;border-left: 1px solid black !important;border-right: 1px solid black !important;">
+                        CLASE
+                    </td>
+                    <td style="border-bottom: 1px solid black !important;border-top: 1px solid black !important;border-left: 1px solid black !important;border-right: 1px solid black !important;">
+                        PROVINCIA
+                    </td>
+                    <td style="border-bottom: 1px solid black !important;border-top: 1px solid black !important;border-left: 1px solid black !important;border-right: 1px solid black !important;">
+                        MUNICIPIO
+                    </td>
+                </tr>
+                <tr>
+                    <td style="border-bottom: 1px solid black !important;border-top: 1px solid black !important;border-left: 1px solid black !important;border-right: 1px solid black !important;"></td>
+                    <td style="border-bottom: 1px solid black !important;border-top: 1px solid black !important;border-left: 1px solid black !important;border-right: 1px solid black !important;"></td>
+                    <td style="border-bottom: 1px solid black !important;border-top: 1px solid black !important;border-left: 1px solid black !important;border-right: 1px solid black !important;">
+                        <span t-esc="res_company.company_registry"/>
+                    </td>
+                    <td style="border-bottom: 1px solid black !important;border-top: 1px solid black !important;border-left: 1px solid black !important;border-right: 1px solid black !important;"
+                        colspan="2"></td>
+                    <td style="border-bottom: 1px solid black !important;border-top: 1px solid black !important;border-left: 1px solid black !important;border-right: 1px solid black !important;"></td>
+                    <td style="border-bottom: 1px solid black !important;border-top: 1px solid black !important;border-left: 1px solid black !important;border-right: 1px solid black !important;">
+                        <span t-esc="res_company.state_id.name"/>
+                    </td>
+                    <td style="border-bottom: 1px solid black !important;border-top: 1px solid black !important;border-left: 1px solid black !important;border-right: 1px solid black !important;">
+                        <span t-esc="res_company.city"/>
+                    </td>
+                </tr>
+            </thead>
+        </table>
+    </template>
+
+    <template id="internal_financial_layout_footer">
+        <div>
+            <table class="table table-sm" style="margin: 0px !important;">
+                <tr>
+                    <td class="text-justify"
+                        style="width: 25%;border-bottom: 1px solid black !important;border-left: 1px solid black !important;border-right: 1px solid black !important;">
+                        <span>Certificamos que los datos contenidos en este estado financiero se corresponden
+                            con las anotaciones contables de acuerdo con las regulaciones vigentes.
+                        </span>
+                    </td>
+                    <td style="width: 25%;border-bottom: 1px solid black !important;border-left: 1px solid black !important;border-right: 1px solid black !important;">
+                        <span>HECHO POR:</span>
+                        <br/>
+                        _______________________________
+                        <br/>
+                        <span>FIRMA:</span>
+                        <br/>
+                        _______________________________
+                    </td>
+                    <td style="width: 25%;border-bottom: 1px solid black !important;border-left: 1px solid black !important;border-right: 1px solid black !important;">
+                        <span>APROBADO POR:</span>
+                        <br/>
+                        _______________________________
+                        <br/>
+                        <span>FIRMA:</span>
+                        <br/>
+                        _______________________________
+                    </td>
+                    <td style="width: 20%;border-bottom: 1px solid black !important;border-left: 1px solid black !important;border-right: 1px solid black !important;">
+                        <t t-set="date" t-value="context_timestamp(datetime.datetime.now())"></t>
+                        <table>
+                            <tr>
+                                <td colspan="3">
+                                    <span>FECHA:</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span>DÍA</span>
+                                    <br/>
+                                    <span t-esc="date.strftime('%d')"/>
+                                </td>
+                                <td>
+                                    <span>MES</span>
+                                    <br/>
+                                    <span t-esc="date.strftime('%m')"/>
+                                </td>
+                                <td>
+                                    <span align="center">AÑO</span>
+                                    <br/>
+                                    <span t-esc="date.strftime('%Y')"/>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </template>
+</odoo>

@@ -1,24 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <data>
-        <record id="l10n_cu_chart_template_common" model="account.chart.template"> 
-            <!-- Define receivable/payable accounts. Cuentas por Cobrar/Pagar -->
-            <field name="property_account_receivable_id" ref="account_1350000"/>
-            <field name="property_account_payable_id" ref="account_4050000"/>
-            <!-- Define categories of expense/income account. Gastos de operación/Ventas -->
-            <field name="property_account_expense_categ_id" ref="account_7310000"/>
-            <field name="property_account_income_categ_id" ref="account_9000000"/>
-            <!-- Define loss/gain exchange rate accounts. ?? -->
-            <field name="income_currency_exchange_account_id" ref="account_9500000"/> 
-            <field name="expense_currency_exchange_account_id" ref="account_8650000"/>
-            <!-- Define an account template for stock valuation. (Mercancias para la venta) -->
-            <field name="property_stock_valuation_account_id" ref="account_1890000"/> 
-            <!-- Define input/output accounts for stock valuation. (Temporales de entrada/salida) -->
-            <!-- <field name="property_stock_account_input_categ_id" ref="account_6990100"/>
-            <field name="property_stock_account_output_categ_id" ref="account_6990200"/> -->
-            <!-- Define Efectivo (Configuracion del POS) -->
-            <field name="default_pos_receivable_account_id" ref="account_1300000"/>
-        </record>
+    <!--
+        CoA Base (Chart of Account - PLan de cuentas para todos los actores económicos)
+    -->
 
-    </data>
+
+    <!-- Chart Template for Freelace (TCP)-->
+    <record id="l10n_cu_chart_template_freelance" model="account.chart.template">
+        <field name="name">Cuba - Plan Contable TCP</field>
+<!--        <field name="use_anglo_saxon" eval="True"/>-->
+        <field name="complete_tax_set" eval="False"/>
+        <field name="code_digits">3</field>
+        <field name="cash_account_code_prefix">101.</field>
+        <field name="bank_account_code_prefix">110.</field>
+        <field name="transfer_account_code_prefix">100.</field>
+        <field name="currency_id" ref="base.CUP"/>
+    </record>
+
+    <!-- Commmon Chart of Account  -->
+    <record id="l10n_cu_chart_template_common" model="account.chart.template">
+        <field name="name">Cuba - Plan Contable Común (494/2016 modified by 407/2019)</field>
+        <field name="visible" eval="0"/>
+<!--        <field name="use_anglo_saxon" eval="True"/>-->
+        <field name="complete_tax_set" eval="False"/>
+        <field name="code_digits">3</field>
+        <field name="cash_account_code_prefix">101.</field>
+        <field name="bank_account_code_prefix">110.</field>
+        <field name="transfer_account_code_prefix">100.</field>
+        <field name="currency_id" ref="base.CUP"/>
+    </record>
+
+    <!-- Chart of Account for Public Company, except for Insurance's Company -->
+    <record id="l10n_cu_chart_template_public" model="account.chart.template">
+        <field name="name">Cuba - Plan Contable Empresas Públicas</field>
+<!--        <field name="use_anglo_saxon" eval="True"/>-->
+        <field name="complete_tax_set" eval="False"/>
+        <field name="code_digits">3</field>
+        <field name="cash_account_code_prefix">101.</field>
+        <field name="bank_account_code_prefix">110.</field>
+        <field name="transfer_account_code_prefix">100.</field>
+        <field name="parent_id" ref="l10n_cu_chart_template_common"/>
+        <field name="currency_id" ref="base.CUP"/>
+    </record>
+
+    <!-- Chart of Account for Private Company and Cooperative Sector -->
+    <record id="l10n_cu_chart_template_private" model="account.chart.template">
+        <field name="name">Cuba - Plan Contable Sector Privado y Cooperativo</field>
+<!--        <field name="use_anglo_saxon" eval="True"/>-->
+        <field name="complete_tax_set" eval="False"/>
+        <field name="code_digits">3</field>
+        <field name="cash_account_code_prefix">101</field>
+        <field name="bank_account_code_prefix">110</field>
+        <field name="transfer_account_code_prefix">100</field>
+        <field name="parent_id" ref="l10n_cu_chart_template_common"/>
+        <field name="currency_id" ref="base.CUP"/>
+    </record>
+
 </odoo>

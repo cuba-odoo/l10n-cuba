@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <!-- Account Group -->
+        <record id="account_group_1" model="account.group">
+            <field name="name">GRUPO DE ACTIVOS</field>
+            <field name="code_prefix_start">101</field>
+            <field name="code_prefix_end">399</field>
+        </record>
+        <record id="account_group_2" model="account.group">
+            <field name="name">GRUPO DE PASIVOS</field>
+            <field name="code_prefix_start">400</field>
+            <field name="code_prefix_end">580</field>
+        </record>
+        <record id="account_group_3" model="account.group">
+            <field name="name">GRUPO DE CAPITAL</field>
+            <field name="code_prefix_start">600</field>
+            <field name="code_prefix_end">697</field>
+        </record>
+        <record id="account_group_4" model="account.group">
+            <field name="name">GRUPO DE CUENTAS NOMINALES</field>
+            <field name="code_prefix_start">800</field>
+            <field name="code_prefix_end">873</field>
+        </record>
+
+<!--        <record id="account_group_6" model="account.group">-->
+<!--            <field name="name">PATRIMONIO</field>-->
+<!--            <field name="code_prefix">6</field>-->
+<!--        </record>-->
+
+<!--        <record id="account_group_7" model="account.group">-->
+<!--            <field name="name">DEPRECIACION Y AMORTIZACION</field>-->
+<!--            <field name="code_prefix">7</field>-->
+<!--        </record>-->
+
+        <record id="account_group_8" model="account.group">
+            <field name="name">CUENTAS NOMINALES DEUDORAS</field>
+            <field name="code_prefix_start">900</field>
+            <field name="code_prefix_end">953</field>
+        </record>
+        <record id="account_group_9" model="account.group">
+            <field name="name">CUENTA DE CIERRE</field>
+            <field name="code_prefix_start">999</field>
+            <field name="code_prefix_end">999</field>
+        </record>
+    </data>
+</odoo>

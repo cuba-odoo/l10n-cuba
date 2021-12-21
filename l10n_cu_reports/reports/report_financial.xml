@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="paperformat_horizontal" model="report.paperformat">
+        <field name="name">Reporte Simple Horizontal</field>
+        <field name="orientation">Portrait</field>
+        <field name="margin_top">68</field>
+        <field name="margin_bottom">10</field>
+        <field name="header_spacing">58</field>
+        <field name="format">A4</field>
+    </record>
+    <record id="action_ncc_accounting_pdf_reports_report_bs" model="ir.actions.report">
+        <field name="name">Estado de Situación</field>
+        <field name="model">account.financial.report</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">l10n_cu_reports.report_financial_bs</field>
+        <field name="report_file">l10n_cu_reports.report_financial_bs</field>
+        <field name="paperformat_id" ref="paperformat_horizontal"/>
+    </record>
+    <record id="action_ncc_accounting_pdf_reports_report_pl" model="ir.actions.report">
+        <field name="name">Pérdidas y Ganancias</field>
+        <field name="model">account.financial.report</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">l10n_cu_reports.report_financial_pl</field>
+        <field name="report_file">l10n_cu_reports.report_financial_pl</field>
+        <field name="paperformat_id" ref="paperformat_horizontal"/>
+    </record>
+    <record id="action_ncc_accounting_pdf_reports_report_ege" model="ir.actions.report">
+        <field name="name">Estado de Gasto por Elemento</field>
+        <field name="model">account.financial.report</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">l10n_cu_reports.report_financial_ege</field>
+        <field name="report_file">l10n_cu_reports.report_financial_ege</field>
+    </record>
+<!--    <record id="action_ncc_accounting_pdf_reports_report_ei" model="ir.actions.report">-->
+<!--        <field name="name">Estado de Inversión</field>-->
+<!--        <field name="model">account.financial.report</field>-->
+<!--        <field name="report_type">qweb-pdf</field>-->
+<!--        <field name="report_name">l10n_cu_reports.report_financial_ei</field>-->
+<!--        <field name="report_file">l10n_cu_reports.report_financial_ei</field>-->
+<!--    </record>-->
+<!--    <record id="action_accounting_report_dj" model="ir.actions.report">-->
+<!--        <field name="name">Declaración Jurada</field>-->
+<!--        <field name="model">accounting.report.dj</field>-->
+<!--        <field name="report_type">qweb-pdf</field>-->
+<!--        <field name="report_name">l10n_cu_reports.report_financial_dj</field>-->
+<!--        <field name="report_file">l10n_cu_reports.report_financial_dj</field>-->
+<!--        <field name="binding_model_id" ref="l10n_cu_hr_payroll.model_hr_payslip_projection"/>-->
+<!--		<field name="binding_type">report</field>-->
+<!--    </record>-->
+
+
+</odoo>
