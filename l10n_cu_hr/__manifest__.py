@@ -9,7 +9,7 @@
         RRHH para las MIPYME en Cuba.
      """,
      'author': 'Comunidad Cubana de Odoo',
-     'depends': ["hr", "date_range"],
+     'depends': ["hr"],
      'auto_install': True,     
      'data': [
           "data/hr_data.xml",
