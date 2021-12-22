@@ -69,17 +69,24 @@ class ReportFinancial(models.AbstractModel):
 
 class ReportFinancialBs(models.AbstractModel):
     _name = 'report.l10n_cu_reports.report_financial_bs'
+    _description = 'Balance de Situación'
     _inherit = 'report.accounting_pdf_reports.report_financial'
 
 class ReportFinancialPl(models.AbstractModel):
     _name = 'report.l10n_cu_reports.report_financial_pl'
+    _description = 'Pérdidas y Ganancias'
     _inherit = 'report.accounting_pdf_reports.report_financial'
 
 class ReportFinancialEge(models.AbstractModel):
     _name = 'report.l10n_cu_reports.report_financial_ege'
+    _description = 'Estado de Gasto por Elemento'
     _inherit = 'report.accounting_pdf_reports.report_financial'
 
 class ReportFinancialEi(models.AbstractModel):
     _name = 'report.l10n_cu_reports.report_financial_ei'
+    _description = 'Estado de Inversiones'
     _inherit = 'report.accounting_pdf_reports.report_financial'
-
+class ReportFinancialEvab(models.AbstractModel):
+    _name = 'report.l10n_cu_reports.report_financial_evab'
+    _description = 'Estado de Valor Agregado Bruto'
+    _inherit = 'report.accounting_pdf_reports.report_financial'

@@ -6,7 +6,7 @@
         <field name="arch" type="xml">
             <form string="Report Options">
                 <group col="4">
-                    <field name="date_from"/>
+                    <!-- <field name="date_from"/> -->
                     <field name="date_to"/>
                     <field name="target_move" widget="radio"/>
                     <field name="display_account" widget="radio"/>
@@ -31,7 +31,7 @@
         <field name="context" eval="{'default_account_report_id':ref('ncc_financial_report_er'), 'efc': 'pl'}"/>
     </record>
     <record id="action_account_report_ege" model="ir.actions.act_window">
-        <field name="name">Estado de Gastos pos Elementos</field>
+        <field name="name">Estado de Gastos por Elementos</field>
         <field name="res_model">accounting.report</field>
         <field name="type">ir.actions.act_window</field>
         <field name="view_mode">form</field>

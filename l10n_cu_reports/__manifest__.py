@@ -15,6 +15,7 @@
           "data/account_financial_report_er.xml",
           "data/account_financial_report_ege.xml",
           # "data/account_financial_report_ei.xml",
+          # "data/account_financial_report_evab.xml",
           "reports/report_financial.xml",
           "reports/report_partner_balance.xml",
           "views/account_views.xml",
@@ -24,6 +25,7 @@
           "views/report_financial_ei_templates.xml",
           "views/report_financial_er_templates.xml",
           "views/report_financial_es_templates.xml",
+          "views/report_financial_evab_templates.xml",
           "wizards/account_report.xml",
           "wizards/report_partner_balance.xml",
           "security/ir.model.access.csv"

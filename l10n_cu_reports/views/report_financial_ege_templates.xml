@@ -2,12 +2,13 @@
 <odoo>
     <template id="report_financial_ege">
         <t t-call="web.html_container">
-<!--            <t t-foreach="docs" t-as="o">-->
                 <t t-call="web.basic_layout">
                     <div class="page">
-                        <t t-call="l10n_cu_reports.internal_financial_layout_header">
-                            <strong>(5924-04)</strong>
-                        </t>
+                        <div class="header">
+                            <t t-call="l10n_cu_reports.internal_financial_layout_header">
+                                <strong>(5924-04)</strong>
+                            </t>
+                        </div>
                         <table class="table table-sm" style="margin: 0px !important;">
                             <thead>
                                 <tr>
@@ -79,7 +80,6 @@
                         <t t-call="l10n_cu_reports.internal_financial_layout_footer"/>
                     </div>
                 </t>
-<!--            </t>-->
         </t>
     </template>
 </odoo>

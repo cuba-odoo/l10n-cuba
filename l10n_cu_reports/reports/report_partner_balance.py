@@ -4,6 +4,7 @@ from odoo import fields, models, api, _
 
 class PartnerBalance(models.AbstractModel):
     _name = 'report.l10n_cu_reports.report_partnerbalance'
+    _description = 'Partner Balance'
 
     def _lines(self, data):
         tables_where_params = self.env['account.move.line'].with_context(data['form'].get('used_context', {}))._query_get()

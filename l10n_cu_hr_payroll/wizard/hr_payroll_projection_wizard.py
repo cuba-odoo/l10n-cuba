@@ -8,7 +8,8 @@ import babel
 
 class HrPayslipProjectionWizard(models.TransientModel):
     _name = 'hr.payslip.projection.wizard'
-
+    _description = 'Payslip Projection Wizard'
+    
     date_from = fields.Date(string='Date From', required=True, help="Start date",
                             default=lambda self: fields.Date.to_string(date.today().replace(day=1)))
     date_to = fields.Date(string='Date To', required=True, help="End date",
