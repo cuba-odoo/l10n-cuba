@@ -1,16 +1,16 @@
 <odoo>
-	<!-- <template id="report_header_payroll">
+	<template id="report_header_payroll">
 		<div class="row mb-5">
-			<div class="col-4">
+			<!-- <div class="col-4">
 				<strong>Fecha:</strong>
 				<span t-field="doc.date"/>
-			</div>
+			</div> -->
 			<div class="col-4 text-center">
 				<strong>Nombre:</strong>
 				<span t-field="doc.name"/>
 			</div>
 		</div>
-	</template> -->
+	</template>
 
 	<template id="report_payslip">
 		<t t-call="web.html_container">
@@ -61,13 +61,13 @@
 									<th>
 										<strong>NET</strong>
 									</th>
-									<th t-if="doc.journal_id.type == 'cash'">
+									<!-- <th t-if="doc.journal_id.type == 'cash'">
 										<strong>FIRMA</strong>
-									</th>
+									</th> -->
 								</tr>
 							</thead>
 							<tbody>
-								<t t-foreach="doc.payslip_line_ids" t-as="payslip">
+								<t t-foreach="doc.slip_ids" t-as="payslip">
 									<tr>
 										<td>
 											<span t-esc="payslip_index + 1"/>
@@ -105,7 +105,7 @@
 										<td class="text-right">
 											<span t-esc="'%0.{}f'.format(get_decimal_precision('Payroll')) % get_line_by_code(payslip.id, 'NET') or 0"/>
 										</td>
-										<td t-if="doc.journal_id.type == 'cash'"/>
+										<!-- <td t-if="doc.journal_id.type == 'cash'"/> -->
 									</tr>
 								</t>
 							</tbody>
@@ -138,7 +138,7 @@
 								</td>
 							</tr>
 						</table>
-						<div class="footer">
+						<!-- <div class="footer">
 							<div class="row">
 								<div class="col-4 pull-left text-center" style="border-top: 1px solid black;">
 									<p>Hecho por:</p>
@@ -150,8 +150,8 @@
 									<p>Aprobado por:</p>
 								</div>
 							</div>
-						</div>
-						<div style="page-break-before: always" class="mb 8"></div>
+						</div> -->
+						<!-- <div style="page-break-before: always" class="mb 8"></div> -->
 					</div>
 				</t>
 			</t>

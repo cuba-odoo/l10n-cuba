@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-	<record id="action_report_payslip" model="ir.actions.report">
+	<record id="action_report_payslip_payment" model="ir.actions.report">
 		<field name="name">Nóminas</field>
 		<field name="model">hr.payslip.payment</field>
 		<field name="report_type">qweb-pdf</field>

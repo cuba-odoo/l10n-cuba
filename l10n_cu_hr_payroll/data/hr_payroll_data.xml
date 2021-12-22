@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <data noupdate="1">
+
+
+    <!-- Registro de contribución MIPIME-->
         <record id="contrib_register_mipyme" model="hr.contribution.register">
             <field name="name">Empresa</field>
             <field name="partner_id" eval="False"/>
@@ -10,7 +13,7 @@
             <field name="partner_id" eval="False"/>
         </record>
 
-    <!-- HR SALARY RULE CATEGORIES-->
+    <!-- Categorías salariales MIPIME-->
         <record id="hr_salary_rule_category_otros" model="hr.salary.rule.category">
             <field name="name">Otros</field>
             <field name="code">OTROS</field>
@@ -32,7 +35,7 @@
             <field name="code">ASIGN</field>
         </record>
 
-    <!-- HR SALARY RULE-->
+    <!-- Reglas salariales MYPIME-->
         <record id="hr_payroll_community.hr_rule_basic" model="hr.salary.rule">
             <field name="name">SALARIO BASICO</field>
             <field name="amount_select">code</field>
@@ -539,7 +542,7 @@ except:
             <field name="register_id" eval="False"/>
         </record>
 
-    <!-- HR PAYROLL STRUCTURE-->
+    <!-- Estructuras salariales MYPIME-->
         <record id="hr_payroll_community.structure_base" model="hr.payroll.structure">
             <field name="rule_ids" eval="[(6, 0, [
                 ref('hr_payroll_rules_work100'),
