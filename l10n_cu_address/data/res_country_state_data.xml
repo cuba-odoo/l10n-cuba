@@ -94,7 +94,7 @@
 	</record>
 
 	<record id="state_40" model="res.country.state">
-		<field name="code">35</field>
+		<field name="code">36</field>
 		<field name="name">Isla de la Juventud</field>
 		<field name="country_id" ref="base.cu"/>
 	</record>

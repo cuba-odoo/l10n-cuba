@@ -4,11 +4,7 @@
         <table class="table table-sm" style="margin: 0px !important;">
             <thead>
                 <tr>
-<<<<<<< HEAD
                     <td style="width: 40%; border-bottom: 1px solid black !important;border-top: 1px solid black !important;border-left: 1px solid black !important;border-right: 1px solid black !important;"
-=======
-                    <td style="width: 45%; border-bottom: 1px solid black !important;border-top: 1px solid black !important;border-left: 1px solid black !important;border-right: 1px solid black !important;"
->>>>>>> a542a08a032458fdb0e64cc66de48d4ecf9d2a35
                         colspan="3">
                         <div class="mb4">
                             <img t-att-src="'/l10n_cu_reports/static/src/img/escudo_nacional.png'"
@@ -24,11 +20,7 @@
                         colspan="2">
                         <strong t-esc="data['account_report_id'][1]"/>
                     </th>
-<<<<<<< HEAD
                     <th style="vertical-align:middle; width: 20%; border-bottom: 1px solid black !important;border-top: 1px solid black !important; border-left: 1px solid black !important;border-right: 1px solid black !important;">
-=======
-                    <th style="vertical-align:middle; width: 15%; border-bottom: 1px solid black !important;border-top: 1px solid black !important; border-left: 1px solid black !important;border-right: 1px solid black !important;">
->>>>>>> a542a08a032458fdb0e64cc66de48d4ecf9d2a35
                         <ul class="list-inline">
                             Página
                             <li class="list-inline-item">
@@ -50,16 +42,6 @@
                         <strong>INFORME ACUMULADO HASTA:</strong>
                         <br/>
                         <span>
-<<<<<<< HEAD
-=======
-                            <t t-if="data['date_from']">
-                                <!--                                <strong>Fecha desde :</strong>-->
-                                <!--                                <span t-esc="data['date_from']"/>-->
-                                <span t-esc="time.strftime('%d-%m-%Y', time.strptime(data['date_from'],'%Y-%m-%d'))"/>
-
-                            </t>
-                            al
->>>>>>> a542a08a032458fdb0e64cc66de48d4ecf9d2a35
                             <t t-if="data['date_to']">
                                 <!--                                <strong>Fecha hasta :</strong>-->
                                 <!--                                <span t-esc="data['date_to']"/>-->

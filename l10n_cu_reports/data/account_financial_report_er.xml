@@ -3,7 +3,7 @@
     <data noupdate="1">
     <!--Estado de Resultado-->
         <record id="ncc_financial_report_er" model="account.financial.report">
-            <field name="name">ESTADO DE RESULTADO</field>
+            <field name="name">ESTADO DE RENDIMIENTO FINANCIERO</field>
             <field name="sign">1</field>
             <field name="type">sum</field>
             <field name="sequence">0</field>

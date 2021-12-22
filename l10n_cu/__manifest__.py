@@ -6,7 +6,7 @@
 # Yunior Rafael Hernández Cabrera <yunior@idola.it>
 # Yusnel Rojas Garcia
 # Julio Smith
-# Segu S.U.R.L...
+# Segu S.U.R.L
 
 {
     'name': 'Cuba - Accounting',

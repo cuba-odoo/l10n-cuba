@@ -1,9 +1,6 @@
-<<<<<<< HEAD
 # List of contributors:
 # Segu S.U.R.L
 
-=======
->>>>>>> a542a08a032458fdb0e64cc66de48d4ecf9d2a35
 {
      'name': 'Cuba - Nóminas',
      'version': '0.1',
@@ -12,11 +9,7 @@
      'summary': """
         Nóminas para las MIPYME en Cuba.
      """,
-<<<<<<< HEAD
      'author': 'Comunidad Cubana de Odoo',
-=======
-     'author': 'Segu',
->>>>>>> a542a08a032458fdb0e64cc66de48d4ecf9d2a35
      'depends': ["l10n_cu_hr","hr_payroll_community","date_range"],
      'data': [
           "data/hr_payroll_data.xml",
