@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-	<record id="hr_contract_report" model="ir.actions.report">
-        <field name="name">Contrato</field>
-        <field name="model">hr.contract</field>
-        <field name="report_type">qweb-pdf</field>
-        <field name="report_name">l10n_cu_hr_contract.report_contract</field>
-        <field name="report_file">l10n_cu_hr_contract.report_contract</field>
-		<field name="binding_model_id" ref="hr_contract.model_hr_contract"/>
-		<field name="binding_type">report</field>
+    <record id="hr_contract_report" model="ir.actions.report">
+      <field name="name">Contrato</field>
+      <field name="model">hr.contract</field>
+      <field name="report_type">qweb-pdf</field>
+      <field name="report_name">l10n_cu_hr_contract.report_contract</field>
+      <field name="report_file">l10n_cu_hr_contract.report_contract</field>
+      <field name="binding_model_id" ref="hr_contract.model_hr_contract"/>
+      <field name="binding_type">report</field>
     </record>
 </odoo>

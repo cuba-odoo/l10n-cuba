@@ -9,8 +9,9 @@
      'author': 'Comunidad Cubana de Odoo',
      'depends': ["hr_contract", "l10n_cu_hr_payroll"],
      'auto_install': True,
-     'data': [
-          "reports/hr_contract_report.xml",
+     'data': [          
           "views/hr_contract_views.xml",
+          "views/hr_contract_template.xml",
+          "reports/hr_contract_report.xml",
      ],
 }
