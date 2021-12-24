@@ -19,6 +19,8 @@ addon | versión | resumen
 [l10n_cu_address](l10n_cu_address/) | 14.0.1.0.0 | Topónimos cubanos
 [l10n_cu_banks](l10n_cu_banks/) | 14.0.1.0.0 | Define las sucursales bancarias.
 [l10n_cu_saclap](l10n_cu_saclap/) | 14.0.1.0.0 | Sistema Armonizado de Clasificación de Productos.
+[l10n_cu_hr](l10n_cu_hr/) |14.0.1.0.0 | Subsistema de Nominas para localizacion Cubana
+
 
 [//]: # (end addons)
 
