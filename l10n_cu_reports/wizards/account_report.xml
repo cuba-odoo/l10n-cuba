@@ -51,10 +51,10 @@
 
 
 
-    <menuitem id="menu_account_report_ege"
+    <!-- <menuitem id="menu_account_report_ege"
               action="action_account_report_ege"
               parent="accounting_pdf_reports.menu_finance_legal_statement"
-              groups="account.group_account_user"/>
+              groups="account.group_account_user"/> -->
 <!--    <menuitem id="menu_account_report_ei"-->
 <!--              action="action_account_report_ei"-->
 <!--              parent="accounting_pdf_reports.menu_finance_legal_statement"-->
