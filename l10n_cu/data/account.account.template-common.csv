@@ -109,13 +109,6 @@
 "account_2250000","Inversiones a Largo Plazo o Permanentes","225.0000","account.data_account_type_current_assets","l10n_cu_chart_template_common",0,"Activo a Largo Plazo"
 "account_2400000","Activos Fijos Tangibles","240.0000","account.data_account_type_fixed_assets","l10n_cu_chart_template_common",0,"Activos Fijos"
 
-"account_2400101","Activos Fijos Tangibles. Grupo I Edificios y otras contrucciones. Madera o plástico 6%","240.01.01","account.data_account_type_fixed_assets","l10n_cu_chart_template_common","0","Activos Fijos"
-"account_2400102","Activos Fijos Tangibles. Grupo I Edificios y otras contrucciones. Panelería 5%","240.01.02","account.data_account_type_fixed_assets","l10n_cu_chart_template_common","0","Activos Fijos"
-"account_2400103","Activos Fijos Tangibles. Grupo I Edificios y otras contrucciones. Mampost y otros mat. 3%","240.01.03","account.data_account_type_fixed_assets","l10n_cu_chart_template_common","0","Activos Fijos"
-"account_2400201","Activos Fijos Tangibles. Grupo II Muebles - enseres y equipos de oficina. Muebles y estantes 10%","240.02.01","account.data_account_type_fixed_assets","l10n_cu_chart_template_common","0","Activos Fijos"
-"account_2400202","Activos Fijos Tangibles. Grupo II Muebles - enseres y equipos de oficina. Enseres y equipos de oficina 15%","240.02.02","account.data_account_type_fixed_assets","l10n_cu_chart_template_common","0","Activos Fijos"
-"account_2400203","Activos Fijos Tangibles. Grupo II Muebles - enseres y equipos de oficina. Equipos de computación 25%","240.02.03","account.data_account_type_fixed_assets","l10n_cu_chart_template_common","0","Activos Fijos"
-"account_2400300","Activos Fijos Tangibles. Grupo IV Maquinaria en general 6%","240.03","account.data_account_type_fixed_assets","l10n_cu_chart_template_common","0","Activos Fijos"
 
 "account_2520000","Fondos Bibliotecarios","252.0000","account.data_account_type_fixed_assets","l10n_cu_chart_template_common",0,"Activos Fijos"
 "account_2530000","Medios y Equipos para Alquilar","253.0000","account.data_account_type_fixed_assets","l10n_cu_chart_template_common",0,"Activos Fijos"
@@ -422,13 +415,6 @@
 "account_8190000","Gastos de Distribución y Ventas","819.0000","account.data_account_type_expenses","l10n_cu_chart_template_common",0,"Cuentas Nominales Deudoras"
 "account_8220000","Gastos Generales y de Administración","822.0000","account.data_account_type_expenses","l10n_cu_chart_template_common",0,"Cuentas Nominales Deudoras"
 
-
-"account_8220001","Gastos Generales y de Administración. Suministro de oficina","822.0001","account.data_account_type_expenses","l10n_cu_chart_template_common","0","Cuentas Nominales Deudoras"
-"account_8220002","Gastos Generales y de Administración. Sueldos y Salarios","822.0002","account.data_account_type_expenses","l10n_cu_chart_template_common","0","Cuentas Nominales Deudoras"
-"account_8220003","Gastos Generales y de Administración. Servicios recibidos","822.0003","account.data_account_type_expenses","l10n_cu_chart_template_common","0","Cuentas Nominales Deudoras"
-"account_8220004","Gastos Generales y de Administración. Comunicaciones","822.0004","account.data_account_type_expenses","l10n_cu_chart_template_common","0","Cuentas Nominales Deudoras"
-"account_8220005","Gastos Generales y de Administración. Prestaciones sociales","822.0005","account.data_account_type_expenses","l10n_cu_chart_template_common","0","Cuentas Nominales Deudoras"
-"account_8220006","Gastos Generales y de Administración. Provisiones","822.0006","account.data_account_type_expenses","l10n_cu_chart_template_common","0","Cuentas Nominales Deudoras"
 
 "account_8250000","Gastos de Proyectos","825.0000","account.data_account_type_expenses","l10n_cu_chart_template_common",0,"Cuentas Nominales Deudoras"
 "account_8260000","Gastos de Operación","826.0000","account.data_account_type_expenses","l10n_cu_chart_template_common",0,"Cuentas Nominales Deudoras"

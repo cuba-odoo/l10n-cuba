@@ -5,7 +5,7 @@
             <t t-call="web.basic_layout">
                 <div class="page">
                     <t t-call="l10n_cu_reports.internal_financial_layout_header">
-                        <strong>5925-04</strong>
+                        <strong>(5925-04)</strong>
                     </t>
                     <table class="table table-sm" style="margin: 0px !important;">
                         <thead>
