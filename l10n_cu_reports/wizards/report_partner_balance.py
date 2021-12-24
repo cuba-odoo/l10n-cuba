@@ -10,7 +10,11 @@ class PartnerBalanceWizard(models.TransientModel):
     _description = 'Print Account Partner Balance'
     
     display_partner = fields.Selection([('non-zero_balance', 'With balance is not equal to 0'), ('all', 'All Partners')], 'Display Partners', default='non-zero_balance')
-    result_selection = fields.Selection(default='customer_supplier')
+    result_selection = fields.Selection(default='customer_supplier', selection=[('customer', 'Receivable Accounts'),
+                                         ('supplier', 'Payable Accounts'),
+                                         ('customer_supplier',
+                                          'Receivable and Payable Accounts')
+                                         ])
 
     @api.model
     def default_get(self, fields_list):

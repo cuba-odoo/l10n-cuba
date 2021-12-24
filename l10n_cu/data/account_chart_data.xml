@@ -10,9 +10,9 @@
         <field name="name">Cuba - Plan Contable TCP</field>
 <!--        <field name="use_anglo_saxon" eval="True"/>-->
         <field name="complete_tax_set" eval="False"/>
-        <field name="code_digits">3</field>
+        <field name="code_digits">6</field>
         <field name="cash_account_code_prefix">101.</field>
-        <field name="bank_account_code_prefix">110.</field>
+        <field name="bank_account_code_prefix">109.</field>
         <field name="transfer_account_code_prefix">100.</field>
         <field name="currency_id" ref="base.CUP"/>
     </record>
@@ -23,9 +23,9 @@
         <field name="visible" eval="0"/>
 <!--        <field name="use_anglo_saxon" eval="True"/>-->
         <field name="complete_tax_set" eval="False"/>
-        <field name="code_digits">3</field>
+        <field name="code_digits">8</field>
         <field name="cash_account_code_prefix">101.</field>
-        <field name="bank_account_code_prefix">110.</field>
+        <field name="bank_account_code_prefix">109.</field>
         <field name="transfer_account_code_prefix">100.</field>
         <field name="currency_id" ref="base.CUP"/>
     </record>
@@ -35,9 +35,9 @@
         <field name="name">Cuba - Plan Contable Empresas Públicas</field>
 <!--        <field name="use_anglo_saxon" eval="True"/>-->
         <field name="complete_tax_set" eval="False"/>
-        <field name="code_digits">3</field>
+        <field name="code_digits">8</field>
         <field name="cash_account_code_prefix">101.</field>
-        <field name="bank_account_code_prefix">110.</field>
+        <field name="bank_account_code_prefix">109.</field>
         <field name="transfer_account_code_prefix">100.</field>
         <field name="parent_id" ref="l10n_cu_chart_template_common"/>
         <field name="currency_id" ref="base.CUP"/>
@@ -48,10 +48,10 @@
         <field name="name">Cuba - Plan Contable Sector Privado y Cooperativo</field>
 <!--        <field name="use_anglo_saxon" eval="True"/>-->
         <field name="complete_tax_set" eval="False"/>
-        <field name="code_digits">3</field>
-        <field name="cash_account_code_prefix">101</field>
-        <field name="bank_account_code_prefix">110</field>
-        <field name="transfer_account_code_prefix">100</field>
+        <field name="code_digits">8</field>
+        <field name="cash_account_code_prefix">101.</field>
+        <field name="bank_account_code_prefix">109.</field>
+        <field name="transfer_account_code_prefix">100.</field>
         <field name="parent_id" ref="l10n_cu_chart_template_common"/>
         <field name="currency_id" ref="base.CUP"/>
     </record>

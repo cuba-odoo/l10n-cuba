@@ -7,7 +7,7 @@
      'category': 'Human Resources',
      # 'description': 'Nóminas para las MIPYME en Cuba.',
      'summary': """
-        Nóminas para las MIPYME en Cuba.
+        Nóminas - Cuba.
      """,
      'author': 'Comunidad Cubana de Odoo',
      'depends': ["l10n_cu_hr","hr_payroll_community","date_range"],

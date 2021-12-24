@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 14.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-22 01:32+0000\n"
-"PO-Revision-Date: 2021-12-21 20:38-0500\n"
+"POT-Creation-Date: 2021-12-24 16:07+0000\n"
+"PO-Revision-Date: 2021-12-24 11:09-0500\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -20,7 +20,7 @@ msgstr ""
 #. module: l10n_cu_reports
 #: model_terms:ir.ui.view,arch_db:l10n_cu_reports.report_partnerbalance
 msgid "(Account/Partner) Name"
-msgstr ""
+msgstr "(Cuenta/Partner) Nombre"
 
 #. module: l10n_cu_reports
 #: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_er_09
@@ -198,6 +198,7 @@ msgid "<strong>(5920-04)</strong>"
 msgstr ""
 
 #. module: l10n_cu_reports
+#: model_terms:ir.ui.view,arch_db:l10n_cu_reports.report_financial_evab
 #: model_terms:ir.ui.view,arch_db:l10n_cu_reports.report_financial_pl
 msgid "<strong>(5921-04)</strong>"
 msgstr ""
@@ -221,6 +222,7 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:l10n_cu_reports.report_financial_bs
 #: model_terms:ir.ui.view,arch_db:l10n_cu_reports.report_financial_ege
 #: model_terms:ir.ui.view,arch_db:l10n_cu_reports.report_financial_ei
+#: model_terms:ir.ui.view,arch_db:l10n_cu_reports.report_financial_evab
 #: model_terms:ir.ui.view,arch_db:l10n_cu_reports.report_financial_pl
 msgid "<strong>CONCEPTOS</strong>"
 msgstr ""
@@ -239,6 +241,7 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:l10n_cu_reports.report_financial_bs
 #: model_terms:ir.ui.view,arch_db:l10n_cu_reports.report_financial_ege
 #: model_terms:ir.ui.view,arch_db:l10n_cu_reports.report_financial_ei
+#: model_terms:ir.ui.view,arch_db:l10n_cu_reports.report_financial_evab
 #: model_terms:ir.ui.view,arch_db:l10n_cu_reports.report_financial_pl
 msgid "<strong>Filas</strong>"
 msgstr ""
@@ -254,6 +257,7 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:l10n_cu_reports.report_financial_bs
 #: model_terms:ir.ui.view,arch_db:l10n_cu_reports.report_financial_ege
 #: model_terms:ir.ui.view,arch_db:l10n_cu_reports.report_financial_ei
+#: model_terms:ir.ui.view,arch_db:l10n_cu_reports.report_financial_evab
 #: model_terms:ir.ui.view,arch_db:l10n_cu_reports.report_financial_pl
 msgid "<strong>Plan Anual</strong>"
 msgstr ""
@@ -261,6 +265,7 @@ msgstr ""
 #. module: l10n_cu_reports
 #: model_terms:ir.ui.view,arch_db:l10n_cu_reports.report_financial_ege
 #: model_terms:ir.ui.view,arch_db:l10n_cu_reports.report_financial_ei
+#: model_terms:ir.ui.view,arch_db:l10n_cu_reports.report_financial_evab
 #: model_terms:ir.ui.view,arch_db:l10n_cu_reports.report_financial_pl
 msgid "<strong>Plan hasta la fecha</strong>"
 msgstr ""
@@ -268,6 +273,7 @@ msgstr ""
 #. module: l10n_cu_reports
 #: model_terms:ir.ui.view,arch_db:l10n_cu_reports.report_financial_bs
 #: model_terms:ir.ui.view,arch_db:l10n_cu_reports.report_financial_ege
+#: model_terms:ir.ui.view,arch_db:l10n_cu_reports.report_financial_evab
 #: model_terms:ir.ui.view,arch_db:l10n_cu_reports.report_financial_pl
 msgid "<strong>Real hasta la fecha</strong>"
 msgstr ""
@@ -403,6 +409,11 @@ msgstr ""
 #. module: l10n_cu_reports
 #: model_terms:ir.ui.view,arch_db:l10n_cu_reports.report_partnerbalance
 msgid "Balance"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:ir.model,name:l10n_cu_reports.model_report_l10n_cu_reports_report_financial_bs
+msgid "Balance de Situación"
 msgstr ""
 
 #. module: l10n_cu_reports
@@ -623,6 +634,7 @@ msgstr "Mostrar cuentas"
 #: model:ir.model.fields,field_description:l10n_cu_reports.field_report_l10n_cu_reports_report_financial_bs__display_name
 #: model:ir.model.fields,field_description:l10n_cu_reports.field_report_l10n_cu_reports_report_financial_ege__display_name
 #: model:ir.model.fields,field_description:l10n_cu_reports.field_report_l10n_cu_reports_report_financial_ei__display_name
+#: model:ir.model.fields,field_description:l10n_cu_reports.field_report_l10n_cu_reports_report_financial_evab__display_name
 #: model:ir.model.fields,field_description:l10n_cu_reports.field_report_l10n_cu_reports_report_financial_pl__display_name
 #: model:ir.model.fields,field_description:l10n_cu_reports.field_report_l10n_cu_reports_report_partnerbalance__display_name
 msgid "Display Name"
@@ -752,19 +764,29 @@ msgid ""
 msgstr ""
 
 #. module: l10n_cu_reports
-#: model:ir.actions.report,name:l10n_cu_reports.action_ncc_accounting_pdf_reports_report_ege
+#: model:ir.model,name:l10n_cu_reports.model_report_l10n_cu_reports_report_financial_ege
 msgid "Estado de Gasto por Elemento"
 msgstr ""
 
 #. module: l10n_cu_reports
 #: model:ir.actions.act_window,name:l10n_cu_reports.action_account_report_ege
-#: model:ir.ui.menu,name:l10n_cu_reports.menu_account_report_ege
-msgid "Estado de Gastos pos Elementos"
+msgid "Estado de Gastos por Elementos"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:ir.model,name:l10n_cu_reports.model_report_l10n_cu_reports_report_financial_ei
+msgid "Estado de Inversiones"
 msgstr ""
 
 #. module: l10n_cu_reports
 #: model:ir.actions.report,name:l10n_cu_reports.action_ncc_accounting_pdf_reports_report_bs
 msgid "Estado de Situación"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:ir.actions.report,name:l10n_cu_reports.action_ncc_accounting_pdf_reports_report_ege
+#: model:ir.model,name:l10n_cu_reports.model_report_l10n_cu_reports_report_financial_evab
+msgid "Estado de Valor Agregado Bruto"
 msgstr ""
 
 #. module: l10n_cu_reports
@@ -830,6 +852,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:l10n_cu_reports.field_report_l10n_cu_reports_report_financial_bs__id
 #: model:ir.model.fields,field_description:l10n_cu_reports.field_report_l10n_cu_reports_report_financial_ege__id
 #: model:ir.model.fields,field_description:l10n_cu_reports.field_report_l10n_cu_reports_report_financial_ei__id
+#: model:ir.model.fields,field_description:l10n_cu_reports.field_report_l10n_cu_reports_report_financial_evab__id
 #: model:ir.model.fields,field_description:l10n_cu_reports.field_report_l10n_cu_reports_report_financial_pl__id
 #: model:ir.model.fields,field_description:l10n_cu_reports.field_report_l10n_cu_reports_report_partnerbalance__id
 msgid "ID"
@@ -948,6 +971,7 @@ msgstr "Diarios"
 #: model:ir.model.fields,field_description:l10n_cu_reports.field_report_l10n_cu_reports_report_financial_bs____last_update
 #: model:ir.model.fields,field_description:l10n_cu_reports.field_report_l10n_cu_reports_report_financial_ege____last_update
 #: model:ir.model.fields,field_description:l10n_cu_reports.field_report_l10n_cu_reports_report_financial_ei____last_update
+#: model:ir.model.fields,field_description:l10n_cu_reports.field_report_l10n_cu_reports_report_financial_evab____last_update
 #: model:ir.model.fields,field_description:l10n_cu_reports.field_report_l10n_cu_reports_report_financial_pl____last_update
 #: model:ir.model.fields,field_description:l10n_cu_reports.field_report_l10n_cu_reports_report_partnerbalance____last_update
 msgid "Last Modified on"
@@ -1171,6 +1195,7 @@ msgstr ""
 #. module: l10n_cu_reports
 #: model:ir.actions.act_window,name:l10n_cu_reports.action_account_partner_balance
 #: model:ir.actions.report,name:l10n_cu_reports.action_report_partner_balance
+#: model:ir.model,name:l10n_cu_reports.model_report_l10n_cu_reports_report_partnerbalance
 #: model:ir.ui.menu,name:l10n_cu_reports.menu_account_partner_balance
 #: model_terms:ir.ui.view,arch_db:l10n_cu_reports.report_partnerbalance
 msgid "Partner Balance"
@@ -1200,6 +1225,11 @@ msgstr ""
 #: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_es_129
 msgid "Patrimonio y Fondo Común (600)"
 msgstr ""
+
+#. module: l10n_cu_reports
+#: model:ir.model.fields.selection,name:l10n_cu_reports.selection__account_partner_balance__result_selection__supplier
+msgid "Payable Accounts"
+msgstr "Cuentas por pagar"
 
 #. module: l10n_cu_reports
 #: model:ir.model.fields,field_description:l10n_cu_reports.field_account_financial_report__plan_anual
@@ -1301,8 +1331,19 @@ msgstr ""
 
 #. module: l10n_cu_reports
 #: model:ir.actions.report,name:l10n_cu_reports.action_ncc_accounting_pdf_reports_report_pl
+#: model:ir.model,name:l10n_cu_reports.model_report_l10n_cu_reports_report_financial_pl
 msgid "Pérdidas y Ganancias"
 msgstr ""
+
+#. module: l10n_cu_reports
+#: model:ir.model.fields.selection,name:l10n_cu_reports.selection__account_partner_balance__result_selection__customer
+msgid "Receivable Accounts"
+msgstr "Cuentas por cobrar"
+
+#. module: l10n_cu_reports
+#: model:ir.model.fields.selection,name:l10n_cu_reports.selection__account_partner_balance__result_selection__customer_supplier
+msgid "Receivable and Payable Accounts"
+msgstr "Cuentas cobrar o pagar"
 
 #. module: l10n_cu_reports
 #: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_es_47
@@ -1322,7 +1363,7 @@ msgstr "Reporte"
 #. module: l10n_cu_reports
 #: model_terms:ir.ui.view,arch_db:l10n_cu_reports.report_ncif
 msgid "Report Options"
-msgstr ""
+msgstr "Opciones de reporte"
 
 #. module: l10n_cu_reports
 #: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_es_136
@@ -1376,7 +1417,6 @@ msgstr ""
 
 #. module: l10n_cu_reports
 #: model:ir.model.fields,field_description:l10n_cu_reports.field_account_partner_balance__date_from
-#: model:ir.model.fields,field_description:l10n_cu_reports.field_accounting_report__date_from
 msgid "Start Date"
 msgstr "Fecha de inicio"
 
@@ -1434,7 +1474,7 @@ msgstr ""
 #: code:addons/l10n_cu_reports/reports/report_partner_balance.py:0
 #, python-format
 msgid "Unknown Partner"
-msgstr "Empresa desconocida"
+msgstr "Desconocido Partner"
 
 #. module: l10n_cu_reports
 #: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_es_134
@@ -1475,31 +1515,6 @@ msgstr "Con balance distinto a 0"
 #. module: l10n_cu_reports
 #: model_terms:ir.ui.view,arch_db:l10n_cu_reports.internal_financial_layout_header
 msgid "de"
-msgstr ""
-
-#. module: l10n_cu_reports
-#: model:ir.model,name:l10n_cu_reports.model_report_l10n_cu_reports_report_financial_bs
-msgid "report.l10n_cu_reports.report_financial_bs"
-msgstr ""
-
-#. module: l10n_cu_reports
-#: model:ir.model,name:l10n_cu_reports.model_report_l10n_cu_reports_report_financial_ege
-msgid "report.l10n_cu_reports.report_financial_ege"
-msgstr ""
-
-#. module: l10n_cu_reports
-#: model:ir.model,name:l10n_cu_reports.model_report_l10n_cu_reports_report_financial_ei
-msgid "report.l10n_cu_reports.report_financial_ei"
-msgstr ""
-
-#. module: l10n_cu_reports
-#: model:ir.model,name:l10n_cu_reports.model_report_l10n_cu_reports_report_financial_pl
-msgid "report.l10n_cu_reports.report_financial_pl"
-msgstr ""
-
-#. module: l10n_cu_reports
-#: model:ir.model,name:l10n_cu_reports.model_report_l10n_cu_reports_report_partnerbalance
-msgid "report.l10n_cu_reports.report_partnerbalance"
 msgstr ""
 
 #. module: l10n_cu_reports

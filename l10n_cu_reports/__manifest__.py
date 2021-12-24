@@ -6,7 +6,7 @@
      'version': '0.1',
      'category': 'Generic Modules/Reporting',
      'summary': """
-        Proformas Estados Financieros para las MIPYME en Cuba.
+        Proformas Estados Financieros (Sector Empresarial) - Cuba.
      """,
      'author': 'Comunidad Cubana de Odoo',
      'depends': ["accounting_pdf_reports", "l10n_cu"],

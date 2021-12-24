@@ -23,7 +23,7 @@
         <field name="target">new</field>
         <field name="binding_model_id" ref="account.model_account_account"/>
         <field name="binding_type">report</field>
-        <field name="help">Primero agrupa por cuanta y luego por cliente/proveedor.</field>
+        <field name="help">Primero agrupa por cuenta y luego por cliente/proveedor.</field>
     </record>
     <menuitem id="menu_account_partner_balance"
               action="action_account_partner_balance"
