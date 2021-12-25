@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
+        <!-- account.tax.group -->
+        <record id="cu_tax_group_sale" model="account.tax.group">
+            <field name="name">Impuestos sobre las ventas</field>
+        </record>
 
 <!--    &lt;!&ndash; Impuestos a los TCP sobre ventas resolución 298-2011 &ndash;&gt;-->
 <!--    <record id="iv_tax_tcp_10" model="account.tax.template">-->
@@ -37,21 +41,12 @@
 <!--        Definir impuestos TCP aqui-->
 
 
+
 <!--        Definir impuestos CNA aqui-->
 
 
 
-        <!-- Impuestos sobre las ventas (MIPYME) -->
-        <record id="cu_tax_group_sale" model="account.tax.group">
-            <field name="name">Impuestos sobre las ventas (MIPYME)</field>
-        </record>
-        <record id="cu_tax2_untax" model="account.tax.template">
-            <field name="chart_template_id" ref="l10n_cu_chart_template_private"/>
-            <field name="name">EXENTO (VENTAS)</field>
-            <field name="amount">0</field>
-            <field name="amount_type">percent</field>
-            <field name="type_tax_use">sale</field>
-        </record>
+
 
         <record id="cu_tax1_sale" model="account.tax.template">
             <field name="chart_template_id" ref="l10n_cu_chart_template_private"/>
@@ -194,5 +189,12 @@
             <field name="amount">0.0</field>
             <field name="amount_type">group</field>
             <field name="children_tax_ids" eval="[(6, 0, [ref('cu_tax10_sale'), ref('cu_tax10_sale_reverse')])]"/>
+        </record>
+        <record id="cu_tax2_untax" model="account.tax.template">
+            <field name="chart_template_id" ref="l10n_cu_chart_template_private"/>
+            <field name="name">EXENTO (VENTAS)</field>
+            <field name="amount">0</field>
+            <field name="amount_type">percent</field>
+            <field name="type_tax_use">sale</field>
         </record>
 </odoo>
