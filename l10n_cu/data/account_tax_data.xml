@@ -63,7 +63,7 @@
                 (0,0, {
                     'factor_percent': 100,
                     'repartition_type': 'tax',
-                    'account_id': ref('account_4400104'),
+                    'account_id': ref('account_private_4400104'),
                 }),
             ]"/>
             <field name="refund_repartition_line_ids" eval="[(5, 0, 0),
@@ -75,7 +75,7 @@
                 (0,0, {
                     'factor_percent': 100,
                     'repartition_type': 'tax',
-                    'account_id': ref('account_4400104'),
+                    'account_id': ref('account_private_4400104'),
                 }),
             ]"/>
             <field name="tax_group_id" ref="cu_tax_group_sale"/>
@@ -95,7 +95,7 @@
                 (0,0, {
                     'factor_percent': 100,
                     'repartition_type': 'tax',
-                    'account_id': ref('account_4400102'),
+                    'account_id': ref('account_private_4400102'),
                 }),
             ]"/>
             <field name="refund_repartition_line_ids" eval="[(5, 0, 0),
@@ -107,7 +107,7 @@
                 (0,0, {
                     'factor_percent': 100,
                     'repartition_type': 'tax',
-                    'account_id': ref('account_4400102'),
+                    'account_id': ref('account_private_4400102'),
                 }),
             ]"/>
             <field name="tax_group_id" ref="cu_tax_group_sale"/>
@@ -127,7 +127,7 @@
                 (0,0, {
                     'factor_percent': 100,
                     'repartition_type': 'tax',
-                    'account_id': ref('account_8050000'),
+                    'account_id': ref('account_common_8050000'),
                 }),
             ]"/>
             <field name="refund_repartition_line_ids" eval="[(5, 0, 0),
@@ -139,7 +139,7 @@
                 (0,0, {
                     'factor_percent': 100,
                     'repartition_type': 'tax',
-                    'account_id': ref('account_8050000'),
+                    'account_id': ref('account_common_8050000'),
                 }),
             ]"/>
         </record>
@@ -158,7 +158,7 @@
                 (0,0, {
                     'factor_percent': 100,
                     'repartition_type': 'tax',
-                    'account_id': ref('account_8050000'),
+                    'account_id': ref('account_common_8050000'),
                 }),
             ]"/>
             <field name="refund_repartition_line_ids" eval="[(5, 0, 0),
@@ -170,7 +170,7 @@
                 (0,0, {
                     'factor_percent': 100,
                     'repartition_type': 'tax',
-                    'account_id': ref('account_8050000'),
+                    'account_id': ref('account_common_8050000'),
                 }),
             ]"/>
         </record>
