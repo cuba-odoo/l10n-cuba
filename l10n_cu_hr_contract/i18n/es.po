@@ -1,0 +1,484 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* l10n_cu_hr_contract
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-26 14:37+0000\n"
+"PO-Revision-Date: 2021-12-26 09:38-0500\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"Language: es\n"
+"X-Generator: Poedit 2.3\n"
+
+#. module: l10n_cu_hr_contract
+#: model_terms:ir.ui.view,arch_db:l10n_cu_hr_contract.report_contract
+msgid ""
+",\n"
+"                                    Municipio:"
+msgstr ""
+
+#. module: l10n_cu_hr_contract
+#: model_terms:ir.ui.view,arch_db:l10n_cu_hr_contract.report_contract
+msgid ""
+",\n"
+"                                    No. Expediente laboral:"
+msgstr ""
+
+#. module: l10n_cu_hr_contract
+#: model_terms:ir.ui.view,arch_db:l10n_cu_hr_contract.report_contract
+msgid ""
+",\n"
+"                                    Provincia:"
+msgstr ""
+
+#. module: l10n_cu_hr_contract
+#: model_terms:ir.ui.view,arch_db:l10n_cu_hr_contract.report_contract
+msgid ""
+",\n"
+"                                    con una frecuencia de pago:"
+msgstr ""
+
+#. module: l10n_cu_hr_contract
+#: model_terms:ir.ui.view,arch_db:l10n_cu_hr_contract.report_contract
+msgid ",a nombre y en representación de la entidad denominada :"
+msgstr ""
+
+#. module: l10n_cu_hr_contract
+#: model_terms:ir.ui.view,arch_db:l10n_cu_hr_contract.report_contract
+msgid ""
+".\n"
+"                                    NIT:"
+msgstr ""
+
+#. module: l10n_cu_hr_contract
+#: model_terms:ir.ui.view,arch_db:l10n_cu_hr_contract.report_contract
+msgid ""
+".\n"
+"                                    Provincia:"
+msgstr ""
+
+#. module: l10n_cu_hr_contract
+#: model_terms:ir.ui.view,arch_db:l10n_cu_hr_contract.report_contract
+msgid ". Municipio:"
+msgstr ""
+
+#. module: l10n_cu_hr_contract
+#: model:ir.model.fields.selection,name:l10n_cu_hr_contract.selection__hr_contract__regimen_contribution__2000
+msgid "2000"
+msgstr ""
+
+#. module: l10n_cu_hr_contract
+#: model:ir.model.fields.selection,name:l10n_cu_hr_contract.selection__hr_contract__regimen_contribution__2500
+msgid "2500"
+msgstr ""
+
+#. module: l10n_cu_hr_contract
+#: model:ir.model.fields.selection,name:l10n_cu_hr_contract.selection__hr_contract__regimen_contribution__2700
+msgid "2700"
+msgstr ""
+
+#. module: l10n_cu_hr_contract
+#: model:ir.model.fields.selection,name:l10n_cu_hr_contract.selection__hr_contract__regimen_contribution__3000
+msgid "3000"
+msgstr ""
+
+#. module: l10n_cu_hr_contract
+#: model:ir.model.fields.selection,name:l10n_cu_hr_contract.selection__hr_contract__regimen_contribution__3500
+msgid "3500"
+msgstr ""
+
+#. module: l10n_cu_hr_contract
+#: model:ir.model.fields.selection,name:l10n_cu_hr_contract.selection__hr_contract__regimen_contribution__4000
+msgid "4000"
+msgstr ""
+
+#. module: l10n_cu_hr_contract
+#: model:ir.model.fields.selection,name:l10n_cu_hr_contract.selection__hr_contract__regimen_contribution__4500
+msgid "4500"
+msgstr ""
+
+#. module: l10n_cu_hr_contract
+#: model:ir.model.fields.selection,name:l10n_cu_hr_contract.selection__hr_contract__regimen_contribution__5000
+msgid "5000"
+msgstr ""
+
+#. module: l10n_cu_hr_contract
+#: model:ir.model.fields.selection,name:l10n_cu_hr_contract.selection__hr_contract__regimen_contribution__5500
+msgid "5500"
+msgstr ""
+
+#. module: l10n_cu_hr_contract
+#: model:ir.model.fields.selection,name:l10n_cu_hr_contract.selection__hr_contract__regimen_contribution__6000
+msgid "6000"
+msgstr ""
+
+#. module: l10n_cu_hr_contract
+#: model:ir.model.fields.selection,name:l10n_cu_hr_contract.selection__hr_contract__regimen_contribution__6500
+msgid "6500"
+msgstr ""
+
+#. module: l10n_cu_hr_contract
+#: model:ir.model.fields.selection,name:l10n_cu_hr_contract.selection__hr_contract__regimen_contribution__7000
+msgid "7000"
+msgstr ""
+
+#. module: l10n_cu_hr_contract
+#: model:ir.model.fields.selection,name:l10n_cu_hr_contract.selection__hr_contract__regimen_contribution__7500
+msgid "7500"
+msgstr ""
+
+#. module: l10n_cu_hr_contract
+#: model:ir.model.fields.selection,name:l10n_cu_hr_contract.selection__hr_contract__regimen_contribution__8000
+msgid "8000"
+msgstr ""
+
+#. module: l10n_cu_hr_contract
+#: model:ir.model.fields.selection,name:l10n_cu_hr_contract.selection__hr_contract__regimen_contribution__8500
+msgid "8500"
+msgstr ""
+
+#. module: l10n_cu_hr_contract
+#: model:ir.model.fields.selection,name:l10n_cu_hr_contract.selection__hr_contract__regimen_contribution__9000
+msgid "9000"
+msgstr ""
+
+#. module: l10n_cu_hr_contract
+#: model:ir.model.fields.selection,name:l10n_cu_hr_contract.selection__hr_contract__regimen_contribution__9500
+msgid "9500"
+msgstr ""
+
+#. module: l10n_cu_hr_contract
+#: model_terms:ir.ui.view,arch_db:l10n_cu_hr_contract.report_contract
+msgid "<strong>CONTRATO DE TRABAJO POR TIEMPO INDETERMINADO</strong>"
+msgstr ""
+
+#. module: l10n_cu_hr_contract
+#: model_terms:ir.ui.view,arch_db:l10n_cu_hr_contract.report_contract
+msgid "<strong>CONVIENEN</strong>"
+msgstr ""
+
+#. module: l10n_cu_hr_contract
+#: model_terms:ir.ui.view,arch_db:l10n_cu_hr_contract.report_contract
+msgid ""
+"<strong>Cuarto.</strong>\n"
+"                                    El horario de trabajo acordado será de"
+msgstr ""
+
+#. module: l10n_cu_hr_contract
+#: model_terms:ir.ui.view,arch_db:l10n_cu_hr_contract.report_contract
+msgid "<strong>DE OTRA PARTE:</strong>"
+msgstr ""
+
+#. module: l10n_cu_hr_contract
+#: model_terms:ir.ui.view,arch_db:l10n_cu_hr_contract.report_contract
+msgid "<strong>DE UNA PARTE:</strong>"
+msgstr ""
+
+#. module: l10n_cu_hr_contract
+#: model_terms:ir.ui.view,arch_db:l10n_cu_hr_contract.report_contract
+msgid ""
+"<strong>Décimo.</strong>\n"
+"                                    El presente Contrato de Trabajo comenzará a regir a partir del día\n"
+"                                    de la firma por ambas partes concurrentes, copia del mismo se le entregará al\n"
+"                                    trabajador contratado."
+msgstr ""
+
+#. module: l10n_cu_hr_contract
+#: model_terms:ir.ui.view,arch_db:l10n_cu_hr_contract.report_contract
+msgid ""
+"<strong>Noveno.</strong>\n"
+"                                    La realización de trabajo termina por las siguientes causas:"
+msgstr ""
+
+#. module: l10n_cu_hr_contract
+#: model_terms:ir.ui.view,arch_db:l10n_cu_hr_contract.report_contract
+msgid ""
+"<strong>Octavo.</strong>\n"
+"                                    El empleador, se compromete a abonar al Trabajador su salario\n"
+"                                    en la forma establecida en el presente contrato, garantizará las condiciones\n"
+"                                    laborales\n"
+"                                    seguras e higiénicas, y las dispisiciones vigentes en materia laboral."
+msgstr ""
+
+#. module: l10n_cu_hr_contract
+#: model_terms:ir.ui.view,arch_db:l10n_cu_hr_contract.report_contract
+msgid ""
+"<strong>Primero.</strong>\n"
+"                                    La jornada de trabajo será de"
+msgstr ""
+
+#. module: l10n_cu_hr_contract
+#: model_terms:ir.ui.view,arch_db:l10n_cu_hr_contract.report_contract
+msgid ""
+"<strong>Quinto.</strong>\n"
+"                                    La remuneración se realizará"
+msgstr ""
+
+#. module: l10n_cu_hr_contract
+#: model_terms:ir.ui.view,arch_db:l10n_cu_hr_contract.report_contract
+msgid ""
+"<strong>Segundo.</strong>\n"
+"                                    El trabajador tendrá un día de descanso semanal."
+msgstr ""
+
+#. module: l10n_cu_hr_contract
+#: model_terms:ir.ui.view,arch_db:l10n_cu_hr_contract.report_contract
+msgid ""
+"<strong>Sexto.</strong>\n"
+"                                    El trabajador, durante el desempeño de su cargo, disfrutará de\n"
+"                                    los veneficios de las vacaciones anuales pagadas y de la seguridad social, siempre\n"
+"                                    que\n"
+"                                    en ambos casos cumpla con los requisitos establecidos por disposiciones vigentes\n"
+"                                    sobre\n"
+"                                    estas materias, y tendrá los mismos derechos laborales enmarcados en la legislación\n"
+"                                    vigente."
+msgstr ""
+
+#. module: l10n_cu_hr_contract
+#: model_terms:ir.ui.view,arch_db:l10n_cu_hr_contract.report_contract
+msgid ""
+"<strong>Séptimo.</strong>\n"
+"                                    El trabajador se compromete a cumplir con el contenido de trabajo\n"
+"                                    que aparece descrito en este contrato, a obedecir las órdenes que les sean\n"
+"                                    impartidas\n"
+"                                    por los superiores que estén debidamente facultados para ellos y acatar el\n"
+"                                    Reglamento Interno de\n"
+"                                    la Entidad, así como las demás disposiciones vigentes que rigen las materias de\n"
+"                                    organización\n"
+"                                    del trabajo y seguridad y salud de trabajo."
+msgstr ""
+
+#. module: l10n_cu_hr_contract
+#: model_terms:ir.ui.view,arch_db:l10n_cu_hr_contract.report_contract
+msgid ""
+"<strong>Tercero.</strong>\n"
+"                                    El trabajo será ejecutado en"
+msgstr ""
+
+#. module: l10n_cu_hr_contract
+#: model_terms:ir.ui.view,arch_db:l10n_cu_hr_contract.report_contract
+msgid ""
+"<strong>Unidécimo.</strong>\n"
+"                                    Las partes que firman el presente,\n"
+"                                    <strong>CONVENIO</strong>\n"
+"                                    en lo expresado en el presente Contrato de Trabajo, cumplir estrictamente cada\n"
+"                                    unas de las disposiciones expresadas."
+msgstr ""
+
+#. module: l10n_cu_hr_contract
+#: model_terms:ir.ui.view,arch_db:l10n_cu_hr_contract.report_contract
+msgid "Acuerdos de las partes"
+msgstr ""
+
+#. module: l10n_cu_hr_contract
+#: model_terms:ir.ui.view,arch_db:l10n_cu_hr_contract.report_contract
+msgid ""
+"Al efecto de suscribir el presente Contrato de Trabajo, el que tiene toda la fuerza\n"
+"                                    legal\n"
+"                                    que en el derecho se requiere, comparecen:"
+msgstr ""
+
+#. module: l10n_cu_hr_contract
+#: model_terms:ir.ui.view,arch_db:l10n_cu_hr_contract.report_contract
+msgid "Ambas partes, libres y voluntariamente"
+msgstr ""
+
+#. module: l10n_cu_hr_contract
+#: model:ir.model.fields.selection,name:l10n_cu_hr_contract.selection__hr_contract__schedule_pay__annually
+msgid "Annually"
+msgstr "Anual"
+
+#. module: l10n_cu_hr_contract
+#: model:ir.model.fields.selection,name:l10n_cu_hr_contract.selection__hr_contract__schedule_pay__bi-monthly
+msgid "Bi-monthly"
+msgstr ""
+
+#. module: l10n_cu_hr_contract
+#: model:ir.model.fields.selection,name:l10n_cu_hr_contract.selection__hr_contract__schedule_pay__bi-weekly
+msgid "Bi-weekly"
+msgstr ""
+
+#. module: l10n_cu_hr_contract
+#: model:ir.actions.report,name:l10n_cu_hr_contract.hr_contract_report
+msgid "Contrato"
+msgstr ""
+
+#. module: l10n_cu_hr_contract
+#: model:ir.model.fields,help:l10n_cu_hr_contract.field_hr_contract__schedule_pay
+msgid "Defines the frequency of the wage payment."
+msgstr "Defina la frecuencia del pago de salario."
+
+#. module: l10n_cu_hr_contract
+#: model_terms:ir.ui.view,arch_db:l10n_cu_hr_contract.report_contract
+msgid "Dirección:"
+msgstr ""
+
+#. module: l10n_cu_hr_contract
+#: model:ir.model.fields,field_description:l10n_cu_hr_contract.field_hr_contract__display_name
+msgid "Display Name"
+msgstr "Nombre mostrado"
+
+#. module: l10n_cu_hr_contract
+#: model_terms:ir.ui.view,arch_db:l10n_cu_hr_contract.report_contract
+msgid "Empleador"
+msgstr ""
+
+#. module: l10n_cu_hr_contract
+#: model:ir.model,name:l10n_cu_hr_contract.model_hr_contract
+msgid "Employee Contract"
+msgstr ""
+
+#. module: l10n_cu_hr_contract
+#: model_terms:ir.ui.view,arch_db:l10n_cu_hr_contract.report_contract
+msgid "Extinción legal de la empresa, y"
+msgstr ""
+
+#. module: l10n_cu_hr_contract
+#: model:ir.model.fields,field_description:l10n_cu_hr_contract.field_hr_contract__id
+msgid "ID"
+msgstr ""
+
+#. module: l10n_cu_hr_contract
+#: model_terms:ir.ui.view,arch_db:l10n_cu_hr_contract.report_contract
+msgid "Iniciativas de unas de las partes"
+msgstr ""
+
+#. module: l10n_cu_hr_contract
+#: model_terms:ir.ui.view,arch_db:l10n_cu_hr_contract.report_contract
+msgid "Jubilación o muerte del trabajador."
+msgstr ""
+
+#. module: l10n_cu_hr_contract
+#: model:ir.model.fields,field_description:l10n_cu_hr_contract.field_hr_contract____last_update
+msgid "Last Modified on"
+msgstr "Última modificación el"
+
+#. module: l10n_cu_hr_contract
+#: model:ir.model.fields.selection,name:l10n_cu_hr_contract.selection__hr_contract__schedule_pay__monthly
+msgid "Monthly"
+msgstr "Mensual"
+
+#. module: l10n_cu_hr_contract
+#: model_terms:ir.ui.view,arch_db:l10n_cu_hr_contract.report_contract
+msgid "Observación:"
+msgstr ""
+
+#. module: l10n_cu_hr_contract
+#: model:ir.model.fields,field_description:l10n_cu_hr_contract.field_hr_contract__multi_job
+msgid "Pluriempleo"
+msgstr ""
+
+#. module: l10n_cu_hr_contract
+#: model:ir.model.fields.selection,name:l10n_cu_hr_contract.selection__hr_contract__schedule_pay__quarterly
+msgid "Quarterly"
+msgstr "Trimestral"
+
+#. module: l10n_cu_hr_contract
+#: model_terms:ir.ui.view,arch_db:l10n_cu_hr_contract.report_contract
+msgid ""
+"Que en lo sucesivo, y a los efectos del presente documento se denominará\n"
+"                                    <strong>TRABAJADOR.</strong>"
+msgstr ""
+
+#. module: l10n_cu_hr_contract
+#: model:ir.model.fields,field_description:l10n_cu_hr_contract.field_hr_contract__regimen_contribution
+msgid "Regimen Contribution"
+msgstr ""
+
+#. module: l10n_cu_hr_contract
+#: model:ir.model.fields,help:l10n_cu_hr_contract.field_hr_contract__regimen_contribution
+msgid "Régimen de contribución para los socios."
+msgstr ""
+
+#. module: l10n_cu_hr_contract
+#: model:ir.model.fields,field_description:l10n_cu_hr_contract.field_hr_contract__schedule_pay
+msgid "Scheduled Pay"
+msgstr "Pago planificado"
+
+#. module: l10n_cu_hr_contract
+#: model_terms:ir.ui.view,arch_db:l10n_cu_hr_contract.hr_contract_view_form_inherit
+msgid "Seguridad Social"
+msgstr ""
+
+#. module: l10n_cu_hr_contract
+#: model:ir.model.fields.selection,name:l10n_cu_hr_contract.selection__hr_contract__schedule_pay__semi-annually
+msgid "Semi-annually"
+msgstr "Semestral"
+
+#. module: l10n_cu_hr_contract
+#: model_terms:ir.ui.view,arch_db:l10n_cu_hr_contract.report_contract
+msgid "Teléfono:"
+msgstr ""
+
+#. module: l10n_cu_hr_contract
+#: model_terms:ir.ui.view,arch_db:l10n_cu_hr_contract.report_contract
+msgid "Terminación del contrato pactado"
+msgstr ""
+
+#. module: l10n_cu_hr_contract
+#: model_terms:ir.ui.view,arch_db:l10n_cu_hr_contract.report_contract
+msgid "Trabajador"
+msgstr ""
+
+#. module: l10n_cu_hr_contract
+#: model:ir.model.fields.selection,name:l10n_cu_hr_contract.selection__hr_contract__schedule_pay__weekly
+msgid "Weekly"
+msgstr "Semanal"
+
+#. module: l10n_cu_hr_contract
+#: model_terms:ir.ui.view,arch_db:l10n_cu_hr_contract.report_contract
+msgid ""
+"Y PARA QUE ASI CONSTE, se extiende el presente Contrato de trabajo, que suscriben las\n"
+"                                    partes\n"
+"                                    de común acuerdo, en original y dos copias, en el municipio: ___________________\n"
+"                                    a los ________ días del mes de ________________________________ de\n"
+"                                    __________________."
+msgstr ""
+
+#. module: l10n_cu_hr_contract
+#: model_terms:ir.ui.view,arch_db:l10n_cu_hr_contract.report_contract
+msgid ""
+"diarias y puede llegar en\n"
+"                                    determinados días de la semana a una hora adicional, siempre que no exceda el límite\n"
+"                                    de\n"
+"                                    cuarenta y cuatro (44) horas."
+msgstr ""
+
+#. module: l10n_cu_hr_contract
+#: model_terms:ir.ui.view,arch_db:l10n_cu_hr_contract.report_contract
+msgid "fecha de nacimiento:"
+msgstr ""
+
+#. module: l10n_cu_hr_contract
+#: model_terms:ir.ui.view,arch_db:l10n_cu_hr_contract.report_contract
+msgid "profesión u oficio:"
+msgstr ""
+
+#. module: l10n_cu_hr_contract
+#: model_terms:ir.ui.view,arch_db:l10n_cu_hr_contract.report_contract
+msgid ""
+"que en lo sucesivo, a los efectos del presente contrato, se denominará <strong>\n"
+"                                    EMPLEADOR</strong>,\n"
+"                                    cuyos datos fundamentales de identificación son los siguientes:\n"
+"                                    <br/>\n"
+"                                    Dirección:"
+msgstr ""
+
+#. module: l10n_cu_hr_contract
+#: model_terms:ir.ui.view,arch_db:l10n_cu_hr_contract.report_contract
+msgid "quien ocupa el cargo de:"
+msgstr ""
+
+#. module: l10n_cu_hr_contract
+#: model_terms:ir.ui.view,arch_db:l10n_cu_hr_contract.report_contract
+msgid ""
+"quién concurre por su propio derecho y cuyos datos personales son:\n"
+"                                    CI:"
+msgstr ""

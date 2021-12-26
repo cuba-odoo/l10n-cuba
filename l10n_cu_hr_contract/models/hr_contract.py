@@ -8,5 +8,13 @@ class HrContract(models.Model):
     ('3500','3500'),('4000','4000'),('4500','4500'),('5000','5000'),('5500','5500'),('6000','6000'),('6500','6500'),
     ('7000','7000'),('7500','7500'),('8000','8000'),('8500','8500'),('9000','9000'),('9500','9500')],
                                             string='Regimen Contribution', help="Régimen de contribución para los socios.")
-
     multi_job = fields.Boolean("Pluriempleo")
+    schedule_pay = fields.Selection(selection=[
+        ('monthly', 'Monthly'),
+        ('quarterly', 'Quarterly'),
+        ('semi-annually', 'Semi-annually'),
+        ('annually', 'Annually'),
+        ('weekly', 'Weekly'),
+        ('bi-weekly', 'Bi-weekly'),
+        ('bi-monthly', 'Bi-monthly'),
+    ])
