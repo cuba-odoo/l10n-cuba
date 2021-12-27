@@ -40,7 +40,7 @@
             <field name="sequence">3</field>
             <field name="display_detail">detail_with_hierarchy</field>
             <field name="parent_id" ref="ncc_financial_report_es_01"/>
-            <field name="account_ids" search="[('code', 'like', '110%')]"/>
+            <field name="account_ids" search="[('code', 'like', '109%')]"/>
             <field name="style_overwrite">2</field>
         </record>
         <record id="ncc_financial_report_es_04" model="account.financial.report">
