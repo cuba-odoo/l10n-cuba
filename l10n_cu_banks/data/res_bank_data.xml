@@ -637,6 +637,143 @@
             <field name="zip">40100</field>
         </record>
 
+        <!-- BANDEC SUCURSALES Las Tunas-->
+
+        <record id="BANDEC_6241" model="res.bank">
+            <field name="name">Sucursal 6241 Manatí</field>
+            <field name="bic">BDCRCUHH</field>
+            <field name="country" ref="base.cu"/>
+            <field name="active" eval="True"/>
+            <field name="street">Orlando Canals # 22</field>
+            <field name="street2"></field>
+            <field name="res_municipality_id" ref="l10n_cu_address.municipio_3101"/>
+            <field name="state" ref="l10n_cu_address.state_31"/>
+            <field name="phone">221787 </field>
+            <field name="zip">77100</field>
+        </record>
+        <record id="BANDEC_66301" model="res.bank">
+            <field name="name">Sucursal 66301 Puerto Padre</field>
+            <field name="bic">BDCRCUHH</field>
+            <field name="country" ref="base.cu"/>
+            <field name="active" eval="True"/>
+            <field name="street">24 de Febrero # 41</field>
+            <field name="street2"></field>
+            <field name="res_municipality_id" ref="l10n_cu_address.municipio_3102"/>
+            <field name="state" ref="l10n_cu_address.state_31"/>
+            <field name="phone">515323</field>
+            <field name="zip">77200</field>
+        </record>
+        <record id="BANDEC_6341" model="res.bank">
+            <field name="name">Sucursal 6341 Jesús Menéndez</field>
+            <field name="bic">BDCRCUHH</field>
+            <field name="country" ref="base.cu"/>
+            <field name="active" eval="True"/>
+            <field name="street">Calle 1 s/n 8</field>
+            <field name="street2"></field>
+            <field name="res_municipality_id" ref="l10n_cu_address.municipio_3103"/>
+            <field name="state" ref="l10n_cu_address.state_31"/>
+            <field name="phone">582583</field>
+            <field name="zip">77300</field>
+        </record>
+        <record id="BANDEC_6381" model="res.bank">
+            <field name="name">Sucursal 6381 Majibacoa</field>
+            <field name="bic">BDCRCUHH</field>
+            <field name="country" ref="base.cu"/>
+            <field name="active" eval="True"/>
+            <field name="street">Calle 1ra No. 47</field>
+            <field name="street2"></field>
+            <field name="res_municipality_id" ref="l10n_cu_address.municipio_3104"/>
+            <field name="state" ref="l10n_cu_address.state_31"/>
+            <field name="phone">288361</field>
+            <field name="zip">77400</field>
+        </record>
+        <record id="BANDEC_6441" model="res.bank">
+            <field name="name">Sucursal 6441 Las Tunas</field>
+            <field name="bic">BDCRCUHH</field>
+            <field name="country" ref="base.cu"/>
+            <field name="active" eval="True"/>
+            <field name="street">Ave. 30 de Nov. s/n</field>
+            <field name="street2"></field>
+            <field name="res_municipality_id" ref="l10n_cu_address.municipio_3105"/>
+            <field name="state" ref="l10n_cu_address.state_31"/>
+            <field name="phone">349592</field>
+            <field name="zip">75500</field>
+        </record>
+        <record id="BANDEC_6461" model="res.bank">
+            <field name="name">Sucursal 6461 Las Tunas</field>
+            <field name="bic">BDCRCUHH</field>
+            <field name="country" ref="base.cu"/>
+            <field name="active" eval="True"/>
+            <field name="street">Ave. Vicente García # 69</field>
+            <field name="street2"></field>
+            <field name="res_municipality_id" ref="l10n_cu_address.municipio_3105"/>
+            <field name="state" ref="l10n_cu_address.state_31"/>
+            <field name="phone">348139</field>
+            <field name="zip">75500</field>
+        </record>
+        <record id="BANDEC_6481" model="res.bank">
+            <field name="name">Sucursal 6481 Jobabo</field>
+            <field name="bic">BDCRCUHH</field>
+            <field name="country" ref="base.cu"/>
+            <field name="active" eval="True"/>
+            <field name="street">Ave. Martí s/n</field>
+            <field name="street2"></field>
+            <field name="res_municipality_id" ref="l10n_cu_address.municipio_3106"/>
+            <field name="state" ref="l10n_cu_address.state_31"/>
+            <field name="phone">627512</field>
+            <field name="zip">77500</field>
+        </record>
+        <record id="BANDEC_6521" model="res.bank">
+            <field name="name">Sucursal 6521 Colombia</field>
+            <field name="bic">BDCRCUHH</field>
+            <field name="country" ref="base.cu"/>
+            <field name="active" eval="True"/>
+            <field name="street">Cándido Glez # 173</field>
+            <field name="street2"></field>
+            <field name="res_municipality_id" ref="l10n_cu_address.municipio_3107"/>
+            <field name="state" ref="l10n_cu_address.state_31"/>
+            <field name="phone">625636</field>
+            <field name="zip">77600</field>
+        </record>
+        <record id="BANDEC_6561" model="res.bank">
+            <field name="name">Sucursal 6561 Amancio Rodríguez</field>
+            <field name="bic">BDCRCUHH</field>
+            <field name="country" ref="base.cu"/>
+            <field name="active" eval="True"/>
+            <field name="street">Sergio Reynó # 17</field>
+            <field name="street2"></field>
+            <field name="res_municipality_id" ref="l10n_cu_address.municipio_3108"/>
+            <field name="state" ref="l10n_cu_address.state_31"/>
+            <field name="phone">692283</field>
+            <field name="zip">77700</field>
+        </record>
+        <record id="BANDEC_6621" model="res.bank">
+            <field name="name">Sucursal 6621 MININT Las Tunas</field>
+            <field name="bic">BDCRCUHH</field>
+            <field name="country" ref="base.cu"/>
+            <field name="active" eval="True"/>
+            <field name="street">Camilo Cienfuegos. MININT</field>
+            <field name="street2"></field>
+            <field name="res_municipality_id" ref="l10n_cu_address.municipio_3105"/>
+            <field name="state" ref="l10n_cu_address.state_31"/>
+            <field name="phone">371585</field>
+            <field name="zip">75500</field>
+        </record>
+        <record id="BANDEC_6631" model="res.bank">
+            <field name="name">Sucursal 6631 Las Tunas</field>
+            <field name="bic">BDCRCUHH</field>
+            <field name="country" ref="base.cu"/>
+            <field name="active" eval="True"/>
+            <field name="street">Ave. Frank País #12</field>
+            <field name="street2"></field>
+            <field name="res_municipality_id" ref="l10n_cu_address.municipio_3105"/>
+            <field name="state" ref="l10n_cu_address.state_31"/>
+            <field name="phone">349179</field>
+            <field name="zip">75500</field>
+        </record>
+
+
+
         *********************************************************************
         *                                                                   *
         *       SUCURSALES DE BANCOS DE BANCO POPULAR DE AHORRO             *

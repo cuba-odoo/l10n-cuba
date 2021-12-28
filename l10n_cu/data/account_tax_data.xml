@@ -191,7 +191,7 @@
             <field name="children_tax_ids" eval="[(6, 0, [ref('cu_tax10_sale'), ref('cu_tax10_sale_reverse')])]"/>
         </record>
         <record id="cu_tax2_untax" model="account.tax.template">
-            <field name="chart_template_id" ref="l10n_cu_chart_template_private"/>
+            <field name="chart_template_id" ref="l10n_cu_chart_template_common"/>
             <field name="name">EXENTO (VENTAS)</field>
             <field name="amount">0</field>
             <field name="amount_type">percent</field>
