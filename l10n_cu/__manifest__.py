@@ -30,7 +30,6 @@
         'data/account.account.template-common.csv',
         'data/account.account.template-private.csv',
         'data/account.account.template-public.csv',
-
         'data/account_chart_post_data.xml',
         'data/account_group_data.xml',
         'data/account_tax_data.xml',
