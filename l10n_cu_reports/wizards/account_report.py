@@ -8,10 +8,8 @@ class AccountingReport(models.TransientModel):
     _name = 'accounting.report'
     _inherit = 'accounting.report'
 
-    # date_from = fields.Date(required=True, default=lambda self: fields.Date.to_string(date.today().replace(day=1)))
-    # date_to = fields.Date(required=True, default=lambda self: fields.Date.to_string(
-    #                           (datetime.now() + relativedelta(months=+1, day=1, days=-1)).date()))
-
+    target_move = fields.Selection(selection=[('posted', 'All Posted Entries'),
+                                    ('all', 'All Entries'),])
     date_to = fields.Date(required=True, default=lambda self: datetime.now())
     
     display_account = fields.Selection(selection=[("all", "All"), ("not_zero", "With balance is not equal to 0")],

@@ -6,6 +6,7 @@ from odoo.exceptions import UserError
 
 class PayrollPaymentMassiveWizard(models.TransientModel):
     _name = 'hr.payroll.payment.massive.wizard'
+    _description = 'Payroll Payment Massive'
 
     name = fields.Char("Name", required=True)
     date = fields.Date("Date", required=True, default=fields.Datetime.now())

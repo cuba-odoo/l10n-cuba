@@ -9,7 +9,7 @@
         Pago masivo de nóminas - Cuba.
      """,
      'author': 'Comunidad Cubana de Odoo',
-     'depends': ["l10n_cu", "l10n_cu_hr","l10n_cu_hr_payroll_account"],
+     'depends': ["l10n_cu", "l10n_cu_hr", "l10n_cu_hr_payroll_account"],
      'data': [
           "security/ir.model.access.csv",
           "views/hr_payroll_payment_views.xml",
