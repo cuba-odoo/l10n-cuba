@@ -10,17 +10,16 @@
             </field>
         </field>
     </record>
-
-<!--    <record id="view_account_form_inherit" model="ir.ui.view">-->
-<!--        <field name="name">view.account.form</field>-->
-<!--        <field name="model">account.account</field>-->
-<!--        <field name="inherit_id" ref="account.view_account_form"/>-->
-<!--        <field name="arch" type="xml">-->
-<!--            <xpath expr="/form/sheet" position="inside">-->
-<!--                <field name="note"/>-->
-<!--            </xpath>-->
-<!--        </field>-->
-<!--    </record>-->
-
-
+    <record id="view_account_search_inherit" model="ir.ui.view">
+        <field name="name">view.account.search.inherit</field>
+        <field name="model">account.account</field>
+        <field name="inherit_id" ref="account.view_account_search"/>
+        <field name="arch" type="xml">
+            <xpath expr="//searchpanel[@class='account_root']" position="replace">
+                <searchpanel>
+                    <field name="group_id" icon="fa-filter"/>
+                </searchpanel>
+            </xpath>
+        </field>
+    </record>
 </odoo>

@@ -10,8 +10,6 @@
 "account_private_4400203","Obligaciones con el Presupuesto del Estado. Socios. Imp sobre Ing. Pers. Imp sobre Ing. Pers. 5 % Dist antic Socios parrafo 052032","440.02.03","account.data_account_type_current_liabilities","l10n_cu_chart_template_common","0","Pasivos Circulantes"
 "account_private_4400301","Obligaciones con el Presupuesto del Estado. Empleados. Cont Esp SS 5% Total remuneraciones Empleados parrafo 082023","440.03.01","account.data_account_type_current_liabilities","l10n_cu_chart_template_common","0","Pasivos Circulantes"
 "account_private_4400302","Obligaciones con el Presupuesto del Estado. Empleados. Imp sobre Ingresos personales Empleados. Superior a 3260.00. parrafo 052042","440.03.02","account.data_account_type_current_liabilities","l10n_cu_chart_template_common","0","Pasivos Circulantes"
-
-
 "account_private_6000000","Patrimonio y Fondo Común","600.0000","account.data_account_type_equity","l10n_cu_chart_template_private","0","Patrimonio Neto"
 "account_private_6010000","Capital Social Autorizado","601.0000","account.data_account_type_equity","l10n_cu_chart_template_private","0","Patrimonio Neto"
 "account_private_6040000","Acciones por Emitirs","604.0000","account.data_account_type_equity","l10n_cu_chart_template_private","0","Patrimonio Neto"

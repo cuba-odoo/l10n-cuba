@@ -1,0 +1,1523 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* l10n_cu_reports
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-24 16:07+0000\n"
+"PO-Revision-Date: 2021-12-24 11:09-0500\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"Language: es\n"
+"X-Generator: Poedit 2.3\n"
+
+#. module: l10n_cu_reports
+#: model_terms:ir.ui.view,arch_db:l10n_cu_reports.report_partnerbalance
+msgid "(Account/Partner) Name"
+msgstr "(Cuenta/Partner) Nombre"
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_er_09
+msgid "- Costo de Ventas de Mercancías (814 - 817)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_er_08
+msgid "- Costo de Ventas de la Producción (810 - 813)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_er_10
+msgid "- Costo por Exportación de Servicios (818)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_er_05
+msgid "- Devoluciones y Rebajas en Ventas (800 - 804)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_er_19
+msgid "- Gastos Financieros (835 - 838)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_er_14
+msgid "- Gastos Generales y de Administración (822 - 824)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_er_12
+msgid "- Gastos de Distribución y Ventas (819 - 821)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_er_29
+msgid "- Gastos de Eventos (867)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_er_15
+msgid "- Gastos de Operación (826 - 833)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_er_18
+msgid "- Gastos de Proyectos (825)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_er_30
+msgid "- Gastos de Recuperación de Desastres (873)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_er_26
+msgid "- Gastos por Faltantes de Bienes (850 - 854)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_er_24
+msgid "- Gastos por Pérdidas (845 - 848)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_er_20
+msgid "- Gastos por Pérdidas en Tasa de Cambio (839)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_er_25
+msgid "- Gastos por Pérdidas-Desastres (849)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_er_06
+msgid "- Impuesto por las Ventas (805 – 809)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_er_28
+msgid "- Otros Gastos (865 - 866)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_er_27
+msgid "- Otros Impuestos, Tasas y Contribuciones (855 - 864)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model_terms:ir.ui.view,arch_db:l10n_cu_reports.internal_financial_layout_footer
+msgid ""
+"<span align=\"center\">AÑO</span>\n"
+"                                    <br/>"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model_terms:ir.ui.view,arch_db:l10n_cu_reports.internal_financial_layout_footer
+msgid ""
+"<span>APROBADO POR:</span>\n"
+"                        <br/>\n"
+"                        _______________________________\n"
+"                        <br/>\n"
+"                        <span>FIRMA:</span>\n"
+"                        <br/>\n"
+"                        _______________________________"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model_terms:ir.ui.view,arch_db:l10n_cu_reports.internal_financial_layout_footer
+msgid ""
+"<span>Certificamos que los datos contenidos en este estado financiero se "
+"corresponden\n"
+"                            con las anotaciones contables de acuerdo con "
+"las regulaciones vigentes.\n"
+"                        </span>"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model_terms:ir.ui.view,arch_db:l10n_cu_reports.internal_financial_layout_header
+msgid "<span>Código Entidad</span>"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model_terms:ir.ui.view,arch_db:l10n_cu_reports.internal_financial_layout_header
+msgid "<span>D.P.A</span>"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model_terms:ir.ui.view,arch_db:l10n_cu_reports.internal_financial_layout_footer
+msgid ""
+"<span>DÍA</span>\n"
+"                                    <br/>"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model_terms:ir.ui.view,arch_db:l10n_cu_reports.internal_financial_layout_footer
+msgid "<span>FECHA:</span>"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model_terms:ir.ui.view,arch_db:l10n_cu_reports.internal_financial_layout_footer
+msgid ""
+"<span>HECHO POR:</span>\n"
+"                        <br/>\n"
+"                        _______________________________\n"
+"                        <br/>\n"
+"                        <span>FIRMA:</span>\n"
+"                        <br/>\n"
+"                        _______________________________"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model_terms:ir.ui.view,arch_db:l10n_cu_reports.internal_financial_layout_footer
+msgid ""
+"<span>MES</span>\n"
+"                                    <br/>"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model_terms:ir.ui.view,arch_db:l10n_cu_reports.internal_financial_layout_header
+msgid "<span>Ministerio de Finanzas y Precios</span>"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model_terms:ir.ui.view,arch_db:l10n_cu_reports.internal_financial_layout_header
+msgid "<span>N.A.E</span>"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model_terms:ir.ui.view,arch_db:l10n_cu_reports.report_financial_bs
+msgid "<strong>(5920-04)</strong>"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model_terms:ir.ui.view,arch_db:l10n_cu_reports.report_financial_evab
+#: model_terms:ir.ui.view,arch_db:l10n_cu_reports.report_financial_pl
+msgid "<strong>(5921-04)</strong>"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model_terms:ir.ui.view,arch_db:l10n_cu_reports.report_financial_ege
+msgid "<strong>(5924-04)</strong>"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model_terms:ir.ui.view,arch_db:l10n_cu_reports.report_financial_ei
+msgid "<strong>5925-04</strong>"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model_terms:ir.ui.view,arch_db:l10n_cu_reports.report_financial_bs
+msgid "<strong>Apertura</strong>"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model_terms:ir.ui.view,arch_db:l10n_cu_reports.report_financial_bs
+#: model_terms:ir.ui.view,arch_db:l10n_cu_reports.report_financial_ege
+#: model_terms:ir.ui.view,arch_db:l10n_cu_reports.report_financial_ei
+#: model_terms:ir.ui.view,arch_db:l10n_cu_reports.report_financial_evab
+#: model_terms:ir.ui.view,arch_db:l10n_cu_reports.report_financial_pl
+msgid "<strong>CONCEPTOS</strong>"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model_terms:ir.ui.view,arch_db:l10n_cu_reports.internal_financial_layout_header
+msgid "<strong>ESTADOS FINANCIEROS</strong>"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model_terms:ir.ui.view,arch_db:l10n_cu_reports.report_financial_ei
+msgid "<strong>Ejecución del Año hasta la fecha</strong>"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model_terms:ir.ui.view,arch_db:l10n_cu_reports.report_financial_bs
+#: model_terms:ir.ui.view,arch_db:l10n_cu_reports.report_financial_ege
+#: model_terms:ir.ui.view,arch_db:l10n_cu_reports.report_financial_ei
+#: model_terms:ir.ui.view,arch_db:l10n_cu_reports.report_financial_evab
+#: model_terms:ir.ui.view,arch_db:l10n_cu_reports.report_financial_pl
+msgid "<strong>Filas</strong>"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model_terms:ir.ui.view,arch_db:l10n_cu_reports.internal_financial_layout_header
+msgid ""
+"<strong>INFORME ACUMULADO HASTA:</strong>\n"
+"                        <br/>"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model_terms:ir.ui.view,arch_db:l10n_cu_reports.report_financial_bs
+#: model_terms:ir.ui.view,arch_db:l10n_cu_reports.report_financial_ege
+#: model_terms:ir.ui.view,arch_db:l10n_cu_reports.report_financial_ei
+#: model_terms:ir.ui.view,arch_db:l10n_cu_reports.report_financial_evab
+#: model_terms:ir.ui.view,arch_db:l10n_cu_reports.report_financial_pl
+msgid "<strong>Plan Anual</strong>"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model_terms:ir.ui.view,arch_db:l10n_cu_reports.report_financial_ege
+#: model_terms:ir.ui.view,arch_db:l10n_cu_reports.report_financial_ei
+#: model_terms:ir.ui.view,arch_db:l10n_cu_reports.report_financial_evab
+#: model_terms:ir.ui.view,arch_db:l10n_cu_reports.report_financial_pl
+msgid "<strong>Plan hasta la fecha</strong>"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model_terms:ir.ui.view,arch_db:l10n_cu_reports.report_financial_bs
+#: model_terms:ir.ui.view,arch_db:l10n_cu_reports.report_financial_ege
+#: model_terms:ir.ui.view,arch_db:l10n_cu_reports.report_financial_evab
+#: model_terms:ir.ui.view,arch_db:l10n_cu_reports.report_financial_pl
+msgid "<strong>Real hasta la fecha</strong>"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model_terms:ir.ui.view,arch_db:l10n_cu_reports.internal_financial_layout_header
+msgid ""
+"<strong>UNIDAD DE MEDIDA:</strong>\n"
+"                        <br/>\n"
+"                        Pesos cubanos con dos decimales"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_er_11
+msgid "= Utilidad o Pérdida Bruta en Ventas"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_er_13
+msgid "= Utilidad o Pérdida Neta en Ventas"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_er_40
+msgid "= Utilidad o Pérdida antes del Impuesto"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_er_17
+msgid "= Utilidad o Pérdida en Operaciones"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_er_07
+msgid "= Ventas Netas"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_es_activo
+msgid "ACTIVO"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:ir.model,name:l10n_cu_reports.model_account_financial_report
+msgid "Account Report"
+msgstr "Reporte de Cuenta"
+
+#. module: l10n_cu_reports
+#: model:ir.model,name:l10n_cu_reports.model_accounting_report
+msgid "Accounting Report"
+msgstr "Reporte de Contabilidad"
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_es_01
+msgid "Activos Circulantes"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_es_69
+msgid "Activos Diferidos"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_es_56
+msgid "Activos Fijos"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_es_63
+msgid "Activos Fijos Intangibles (255-263)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_es_64
+msgid "Activos Fijos Intangibles en Proceso (264)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_es_57
+msgid "Activos Fijos Tangibles (240-251)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_es_51
+msgid "Activos a Largo Plazo"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_ege_09
+msgid "Acumulación de Vacaciones (9.09 %)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_es_18
+msgid "Adeudos del Presupuesto del Estado (164-166)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_es_19
+msgid "Adeudos del Órgano u Organismo (167-170)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_es_38
+msgid "Alimentos (193)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:ir.model.fields.selection,name:l10n_cu_reports.selection__accounting_report__display_account__all
+msgid "All"
+msgstr "Todos"
+
+#. module: l10n_cu_reports
+#: model:ir.model.fields.selection,name:l10n_cu_reports.selection__account_partner_balance__display_partner__all
+msgid "All Partners"
+msgstr "Todas las empresas"
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_es_65
+msgid "Amortización de Activos Fijos Intangibles (390-399)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_es_17
+msgid "Anticipos a Justificar (161-163)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:ir.model.fields,field_description:l10n_cu_reports.field_account_financial_report__apertura
+msgid "Apertura"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model_terms:ir.ui.view,arch_db:l10n_cu_reports.report_partnerbalance
+msgid "Balance"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:ir.model,name:l10n_cu_reports.model_report_l10n_cu_reports_report_financial_bs
+msgid "Balance de Situación"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_es_34
+msgid "Base Material de Estudio (191)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_es_117
+msgid "Bonos Suscritos (541)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_es_116
+msgid "Bonos por Pagar (540)-(144)-(363)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model_terms:ir.ui.view,arch_db:l10n_cu_reports.internal_financial_layout_header
+msgid "CLASE"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model_terms:ir.ui.view,arch_db:l10n_cu_reports.report_ncif
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_es_97
+msgid "Cobros Anticipados (430-433)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_es_92
+msgid "Cobros por Cuenta de Terceros (416)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model_terms:ir.ui.view,arch_db:l10n_cu_reports.report_partnerbalance
+msgid "Code"
+msgstr "Código"
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_ege_02
+msgid "Combustibles y Lubricantes"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_es_25
+msgid "Combustibles y Lubricantes (184)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:ir.model.fields,field_description:l10n_cu_reports.field_account_partner_balance__company_id
+msgid "Company"
+msgstr "Compañía"
+
+#. module: l10n_cu_reports
+#: model:ir.model.fields,field_description:l10n_cu_reports.field_account_partner_balance__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:ir.model.fields,field_description:l10n_cu_reports.field_account_partner_balance__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model_terms:ir.ui.view,arch_db:l10n_cu_reports.report_partnerbalance
+msgid "Credit"
+msgstr "Crédito"
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_es_50
+msgid "Créditos Documentarios (211)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_es_07
+msgid "Cuenta en Participación (134)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_es_78
+msgid "Cuentas por Cobrar - Compra de Monedas (342)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_es_77
+msgid "Cuentas por Cobrar Diversas-Operaciones Corrientes (334-341)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_es_08
+msgid "Cuentas por Cobrar a Corto Plazo (135-139 y 154)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_es_53
+msgid "Cuentas por Cobrar a Largo Plazo (218-220)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_es_79
+msgid "Cuentas por Cobrar del Proceso Inversionista (343-345)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_es_81
+msgid "Cuentas por Cobrar en Litigio (347)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_es_83
+msgid "Cuentas por Cobrar en Proceso Judicial (349)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_es_95
+msgid "Cuentas por Pagar - Activos Fijos Tangibles (421-424)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_es_123
+msgid "Cuentas por Pagar Diversas (565-568)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_es_91
+msgid "Cuentas por Pagar a Corto Plazo (405-415)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_es_112
+msgid "Cuentas por Pagar a Largo Plazo (515-518)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_es_96
+msgid "Cuentas por Pagar del Proceso Inversionista (425-429)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_es_124
+msgid "Cuentas por Pagar – Compra de Monedas (569)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model_terms:ir.ui.view,arch_db:l10n_cu_reports.internal_financial_layout_header
+msgid "CÓDIGO"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model_terms:ir.ui.view,arch_db:l10n_cu_reports.internal_financial_layout_header
+msgid "DIVISIÓN"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model_terms:ir.ui.view,arch_db:l10n_cu_reports.report_partnerbalance
+msgid "Debit"
+msgstr "Débito"
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_es_58
+msgid "Depreciación de Activos Fijos Tangibles (375-388)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_ege_10
+msgid "Depreciación y Amortización"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_es_99
+msgid "Depósitos Recibidos (435-439)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_es_84
+msgid "Depósitos y Fianzas (354-355)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_es_32
+msgid "Descuento Comercial e Impuesto (370-372)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_es_35
+msgid "Desgaste de Base Material de Estudio (366)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_es_61
+msgid "Desgaste de Medios y Equipos para Alquilar (389)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_es_37
+msgid "Desgaste de Vestuario y Lencería (367)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_es_29
+msgid "Desgaste de Útiles y Herramientas (373)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:ir.model.fields,field_description:l10n_cu_reports.field_accounting_report__display_account
+msgid "Display Accounts"
+msgstr "Mostrar cuentas"
+
+#. module: l10n_cu_reports
+#: model:ir.model.fields,field_description:l10n_cu_reports.field_account_financial_report__display_name
+#: model:ir.model.fields,field_description:l10n_cu_reports.field_account_partner_balance__display_name
+#: model:ir.model.fields,field_description:l10n_cu_reports.field_accounting_report__display_name
+#: model:ir.model.fields,field_description:l10n_cu_reports.field_report_accounting_pdf_reports_report_financial__display_name
+#: model:ir.model.fields,field_description:l10n_cu_reports.field_report_l10n_cu_reports_report_financial_bs__display_name
+#: model:ir.model.fields,field_description:l10n_cu_reports.field_report_l10n_cu_reports_report_financial_ege__display_name
+#: model:ir.model.fields,field_description:l10n_cu_reports.field_report_l10n_cu_reports_report_financial_ei__display_name
+#: model:ir.model.fields,field_description:l10n_cu_reports.field_report_l10n_cu_reports_report_financial_evab__display_name
+#: model:ir.model.fields,field_description:l10n_cu_reports.field_report_l10n_cu_reports_report_financial_pl__display_name
+#: model:ir.model.fields,field_description:l10n_cu_reports.field_report_l10n_cu_reports_report_partnerbalance__display_name
+msgid "Display Name"
+msgstr "Nombre mostrado"
+
+#. module: l10n_cu_reports
+#: model:ir.model.fields,field_description:l10n_cu_reports.field_account_partner_balance__display_partner
+msgid "Display Partners"
+msgstr "Mostrar empresas"
+
+#. module: l10n_cu_reports
+#: model:ir.model.fields.selection,name:l10n_cu_reports.selection__accounting_report__display_detail__detail_with_hierarchy
+msgid "Display children with hierarchy"
+msgstr "Mostrar hijos con jerarquía"
+
+#. module: l10n_cu_reports
+#: model:ir.model.fields,field_description:l10n_cu_reports.field_accounting_report__display_detail
+msgid "Display details"
+msgstr "Mostrar detalles"
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_es_21
+msgid "Dividendos y Participaciones por Cobrar (181)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_es_93
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_es_94
+msgid "Dividendos y Participaciones por Pagar (417)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_es_141
+msgid "Donaciones Entregadas - Exterior (627)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_es_140
+msgid "Donaciones Entregadas - Nacionales (626)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_ege
+msgid "ESTADO DE GASTOS POR ELEMENTOS"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_er
+msgid "ESTADO DE RENDIMIENTO FINANCIERO"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_es
+msgid "ESTADO DE SITUACIÓN"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_es_03
+msgid "Efectivo en Banco y en Otras Instituciones (109-119)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_es_02
+msgid "Efectivo en Caja (101-108)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_es_06
+msgid "Efectos por Cobrar Descontados (365)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_es_82
+msgid "Efectos por Cobrar Protestados (348)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_es_05
+msgid "Efectos por Cobrar a Corto Plazo (130-133)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_es_52
+msgid "Efectos por Cobrar a Largo Plazo (215-217)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_es_80
+msgid "Efectos por Cobrar en Litigio (346)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_es_90
+msgid "Efectos por Pagar a Corto Plazo (401-404)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_es_111
+msgid "Efectos por Pagar a Largo Plazo (510-514)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:ir.model.fields,field_description:l10n_cu_reports.field_account_partner_balance__date_to
+#: model:ir.model.fields,field_description:l10n_cu_reports.field_accounting_report__date_to
+msgid "End Date"
+msgstr "Fecha final"
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_ege_03
+msgid "Energía"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model_terms:ir.ui.view,arch_db:l10n_cu_reports.internal_financial_layout_header
+msgid "Entidad:"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_es_27
+msgid "Envases y Embalajes (186)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_es_68
+msgid ""
+"Equipos por Instalar y Materiales para el Proceso Inversionista (280-289)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:ir.model,name:l10n_cu_reports.model_report_l10n_cu_reports_report_financial_ege
+msgid "Estado de Gasto por Elemento"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:ir.actions.act_window,name:l10n_cu_reports.action_account_report_ege
+msgid "Estado de Gastos por Elementos"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:ir.model,name:l10n_cu_reports.model_report_l10n_cu_reports_report_financial_ei
+msgid "Estado de Inversiones"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:ir.actions.report,name:l10n_cu_reports.action_ncc_accounting_pdf_reports_report_bs
+msgid "Estado de Situación"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:ir.actions.report,name:l10n_cu_reports.action_ncc_accounting_pdf_reports_report_ege
+#: model:ir.model,name:l10n_cu_reports.model_report_l10n_cu_reports_report_financial_evab
+msgid "Estado de Valor Agregado Bruto"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_es_76
+msgid "Faltantes de Bienes en Investigación (332-333)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:ir.model,name:l10n_cu_reports.model_report_accounting_pdf_reports_report_financial
+msgid "Financial Reports"
+msgstr "Reportes financieros"
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_er_32
+msgid "Financiamiento Recibido de las Empresas (923)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_es_85
+msgid "Fondo de Amortización de Bonos-Efectivo y Valores (364)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_es_59
+msgid "Fondos Bibliotecarios (252)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_es_105
+msgid "Gastos Acumulados por Pagar (480-489)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_es_71
+msgid "Gastos Financieros Diferidos (306-307)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_es_70
+msgid "Gastos de Producción y Servicios Diferidos (300-305)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_es_72
+msgid "Gastos del Proceso Inversionista Diferidos (310-311)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_es_73
+msgid "Gastos por Faltantes y Pérdidas Diferidos (312)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_ege_16
+msgid "Gastos por importación de servicios"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:ir.model.fields,field_description:l10n_cu_reports.field_account_financial_report__id
+#: model:ir.model.fields,field_description:l10n_cu_reports.field_account_partner_balance__id
+#: model:ir.model.fields,field_description:l10n_cu_reports.field_accounting_report__id
+#: model:ir.model.fields,field_description:l10n_cu_reports.field_report_accounting_pdf_reports_report_financial__id
+#: model:ir.model.fields,field_description:l10n_cu_reports.field_report_l10n_cu_reports_report_financial_bs__id
+#: model:ir.model.fields,field_description:l10n_cu_reports.field_report_l10n_cu_reports_report_financial_ege__id
+#: model:ir.model.fields,field_description:l10n_cu_reports.field_report_l10n_cu_reports_report_financial_ei__id
+#: model:ir.model.fields,field_description:l10n_cu_reports.field_report_l10n_cu_reports_report_financial_evab__id
+#: model:ir.model.fields,field_description:l10n_cu_reports.field_report_l10n_cu_reports_report_financial_pl__id
+#: model:ir.model.fields,field_description:l10n_cu_reports.field_report_l10n_cu_reports_report_partnerbalance__id
+msgid "ID"
+msgstr "ID (identificación)"
+
+#. module: l10n_cu_reports
+#: model_terms:ir.ui.view,arch_db:l10n_cu_reports.view_account_financial_report_form_inherit
+msgid "Informe"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_es_20
+msgid "Ingresos Acumulados por Cobrar (173-180)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_es_22
+msgid "Ingresos Acumulados por Cobrar-Reaseguros Aceptados (182)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_es_119
+msgid "Ingresos Diferidos (545-548)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_es_120
+msgid "Ingresos Diferidos por Donaciones Recibidas (549)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_er_31
+msgid "Ingresos Financieros (920 - 922)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_es_125
+msgid "Ingresos de Períodos Futuros (570-574)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_er_34
+msgid "Ingresos por Dividendos Ganados (925)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_er_39
+msgid "Ingresos por Donaciones Recibidas (953)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_er_37
+msgid "Ingresos por Sobrantes (930 - 939)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_er_33
+msgid "Ingresos por Variación de Tasa de Cambio (924)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_es_43
+msgid "Inventarios Ociosos (208)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_es_44
+msgid "Inventarios de Lento Movimiento (209)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_es_40
+msgid "Inventarios de Mercancías de Exportación (195)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_es_39
+msgid "Inventarios de Mercancías de Importación (194)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_es_04
+msgid "Inversiones a Corto Plazo O Temporales (120-129)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_es_55
+msgid "Inversiones a Largo Plazo o Permanentes (225-234)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_es_49
+msgid "Inversiones con Medios Propios (728)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_es_48
+msgid "Inversiones con Medios Propios Activos Fijos Intangibles (727)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_es_66
+msgid "Inversiones en Proceso (265-278)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:ir.model.fields,field_description:l10n_cu_reports.field_account_partner_balance__journal_ids
+msgid "Journals"
+msgstr "Diarios"
+
+#. module: l10n_cu_reports
+#: model:ir.model.fields,field_description:l10n_cu_reports.field_account_financial_report____last_update
+#: model:ir.model.fields,field_description:l10n_cu_reports.field_account_partner_balance____last_update
+#: model:ir.model.fields,field_description:l10n_cu_reports.field_accounting_report____last_update
+#: model:ir.model.fields,field_description:l10n_cu_reports.field_report_accounting_pdf_reports_report_financial____last_update
+#: model:ir.model.fields,field_description:l10n_cu_reports.field_report_l10n_cu_reports_report_financial_bs____last_update
+#: model:ir.model.fields,field_description:l10n_cu_reports.field_report_l10n_cu_reports_report_financial_ege____last_update
+#: model:ir.model.fields,field_description:l10n_cu_reports.field_report_l10n_cu_reports_report_financial_ei____last_update
+#: model:ir.model.fields,field_description:l10n_cu_reports.field_report_l10n_cu_reports_report_financial_evab____last_update
+#: model:ir.model.fields,field_description:l10n_cu_reports.field_report_l10n_cu_reports_report_financial_pl____last_update
+#: model:ir.model.fields,field_description:l10n_cu_reports.field_report_l10n_cu_reports_report_partnerbalance____last_update
+msgid "Last Modified on"
+msgstr "Última modificación en"
+
+#. module: l10n_cu_reports
+#: model:ir.model.fields,field_description:l10n_cu_reports.field_account_partner_balance__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:ir.model.fields,field_description:l10n_cu_reports.field_account_partner_balance__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:ir.model.fields,help:l10n_cu_reports.field_account_financial_report__plan_anual
+msgid "Lo que se definión en el presupuesto."
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model_terms:ir.ui.view,arch_db:l10n_cu_reports.internal_financial_layout_header
+msgid "Logo"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model_terms:ir.ui.view,arch_db:l10n_cu_reports.internal_financial_layout_header
+msgid "MUNICIPIO"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_es_16
+msgid "Materiales Anticipados Inversionista (153)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_es_98
+msgid "Materiales Recibidos de Forma Anticipada (434)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_ege_01
+msgid "Materias Primas y Materiales"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_es_24
+msgid "Materias Primas y Materiales (183)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_es_33
+msgid "Medicamentos (190)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_es_60
+msgid "Medios y Equipos para Alquilar (253)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_es_31
+msgid "Mercancías para la Venta (189)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_es_62
+msgid "Monumentos y Obras de Arte (254)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:ir.model.fields.selection,name:l10n_cu_reports.selection__accounting_report__display_detail__no_detail
+msgid "No detail"
+msgstr "Sin detalles"
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_es_102
+msgid "Nóminas por Pagar (455-459)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model_terms:ir.ui.view,arch_db:l10n_cu_reports.internal_financial_layout_header
+msgid "ORG."
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_es_114
+msgid "Obligaciones a Largo Plazo (525-532)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_es_100
+msgid "Obligaciones con el Presupuesto del Estado (440-449)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_es_101
+msgid "Obligaciones con el Órgano u Organismo (450-453)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_es_126
+msgid "Obligación con el Presupuesto del Estado por Garantía Activada (575)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_es_107
+msgid "Otras Provisiones Operacionales (493-499)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_es_86
+msgid "Otras Provisiones Reguladoras de Activos (374)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_es_115
+msgid "Otras Provisiones a Largo Plazo (533-539)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_es_137
+msgid "Otras Reservas Patrimoniales (646-654)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_es_74
+msgid "Otros Activos"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_ege_11
+msgid "Otros Gastos Monetarios"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_er_38
+msgid "Otros Ingresos (950 - 952)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_es_42
+msgid "Otros Inventarios (205-207)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_ege_07
+msgid "Otros Pagos Adicionales"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_es_121
+msgid "Otros Pasivos"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_ege_15
+msgid "Otros Servicios de Mantenimiento y Reparaciones Corrientes"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_es_pasivo
+msgid "PASIVO"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_es_patrimonio
+msgid "PATRIMONIO"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model_terms:ir.ui.view,arch_db:l10n_cu_reports.internal_financial_layout_header
+msgid "PROVINCIA"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_es_142
+msgid "Pago a Cuenta de las Utilidades (690)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_es_143
+msgid "Pago a Cuenta de los Dividendos (691)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_ege_08
+msgid "Pago por Resultado"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_ege_06
+msgid "Pagos Adicional del Perfeccionamiento Empresarial"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_es_14
+msgid "Pagos Anticipados a Suministradores (146-149)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_es_15
+msgid "Pagos Anticipados del Proceso Inversionista (150-152)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_es_10
+msgid "Pagos por Cuenta de Terceros (140)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_es_26
+msgid "Partes y Piezas de Repuesto (185)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_es_11
+msgid "Participación de Reaseguradores Siniestros Pendientes (141)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:ir.actions.act_window,name:l10n_cu_reports.action_account_partner_balance
+#: model:ir.actions.report,name:l10n_cu_reports.action_report_partner_balance
+#: model:ir.model,name:l10n_cu_reports.model_report_l10n_cu_reports_report_partnerbalance
+#: model:ir.ui.menu,name:l10n_cu_reports.menu_account_partner_balance
+#: model_terms:ir.ui.view,arch_db:l10n_cu_reports.report_partnerbalance
+msgid "Partner Balance"
+msgstr "Balance de empresas"
+
+#. module: l10n_cu_reports
+#: model:ir.model.fields,field_description:l10n_cu_reports.field_account_partner_balance__result_selection
+msgid "Partner's"
+msgstr "Empresas"
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_es_88
+msgid "Pasivos Circulantes"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_es_118
+msgid "Pasivos Diferidos"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_es_110
+msgid "Pasivos a Largo Plazo"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_es_129
+msgid "Patrimonio y Fondo Común (600)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:ir.model.fields.selection,name:l10n_cu_reports.selection__account_partner_balance__result_selection__supplier
+msgid "Payable Accounts"
+msgstr "Cuentas por pagar"
+
+#. module: l10n_cu_reports
+#: model:ir.model.fields,field_description:l10n_cu_reports.field_account_financial_report__plan_anual
+msgid "Plan Anual"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_es_67
+msgid "Plan de Preparación de Inversiones (279)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model_terms:ir.actions.act_window,help:l10n_cu_reports.action_account_partner_balance
+msgid "Primero agrupa por cuanta y luego por cliente/proveedor."
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model_terms:ir.ui.view,arch_db:l10n_cu_reports.report_ncif
+msgid "Print"
+msgstr "Imprimir"
+
+#. module: l10n_cu_reports
+#: model:ir.model,name:l10n_cu_reports.model_account_partner_balance
+msgid "Print Account Partner Balance"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_es_41
+msgid "Producciones para Insumo o Autoconsumo (196)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_es_46
+msgid "Producción Propia para Insumos (725)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_es_30
+msgid "Producción Terminada (188)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_es_45
+msgid "Producción en Proceso (700-724)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_es_09
+msgid "Provisión para Cuentas Incobrables (369)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_es_108
+msgid ""
+"Provisión para Pagos de los Subsidios de Seguridad Social a Corto Plazo "
+"(500)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_es_106
+msgid "Provisión para Vacaciones (492)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_es_54
+msgid "Préstamos Concedidos a Cobrar a Largo Plazo (221-224)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_es_113
+msgid "Préstamos Recibidos por Pagar a Largo Plazo (520-524)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_es_104
+msgid ""
+"Préstamos Recibidos y Otras Operaciones Crediticias por Pagar (470-479)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_es_12
+msgid "Préstamos y Otras Operaciones Crediticias a Cobrar a Corto Plazo (142)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model_terms:ir.ui.view,arch_db:l10n_cu_reports.internal_financial_layout_header
+msgid "Página"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_es_144
+msgid "Pérdida (640-644)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_es_75
+msgid "Pérdidas en Investigación (330-331)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:ir.actions.report,name:l10n_cu_reports.action_ncc_accounting_pdf_reports_report_pl
+#: model:ir.model,name:l10n_cu_reports.model_report_l10n_cu_reports_report_financial_pl
+msgid "Pérdidas y Ganancias"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:ir.model.fields.selection,name:l10n_cu_reports.selection__account_partner_balance__result_selection__customer
+msgid "Receivable Accounts"
+msgstr "Cuentas por cobrar"
+
+#. module: l10n_cu_reports
+#: model:ir.model.fields.selection,name:l10n_cu_reports.selection__account_partner_balance__result_selection__customer_supplier
+msgid "Receivable and Payable Accounts"
+msgstr "Cuentas cobrar o pagar"
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_es_47
+msgid "Reparaciones Capitales con Medios Propios (726)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_ege_14
+msgid "Reparación y Mantenimiento de Viales"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model_terms:ir.ui.view,arch_db:l10n_cu_reports.view_account_financial_report_form_inherit
+msgid "Report"
+msgstr "Reporte"
+
+#. module: l10n_cu_reports
+#: model_terms:ir.ui.view,arch_db:l10n_cu_reports.report_ncif
+msgid "Report Options"
+msgstr "Opciones de reporte"
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_es_136
+msgid "Reservas para Contingencias (645)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_es_103
+msgid "Retenciones por Pagar (460-469)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_es_145
+msgid "Revalorización de Activos Fijos Tangibles (613 - 615)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model_terms:ir.ui.view,arch_db:l10n_cu_reports.internal_financial_layout_header
+msgid "SUB"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_ege_04
+msgid "Salario"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_ege_05
+msgid "Salario Escala"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_ege_12
+msgid "Servicios Comprados entre entidades"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_ege_13
+msgid "Servicios de Mantenimiento y Reparación Constructivo"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_es_122
+msgid "Sobrantes en Investigación (555-564)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_es_89
+msgid "Sobregiro Bancario (400)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:ir.model.fields,field_description:l10n_cu_reports.field_account_partner_balance__date_from
+msgid "Start Date"
+msgstr "Fecha de inicio"
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_er_04
+msgid "Subvenciones (916 - 919)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_es_135
+msgid "Subvención por Pérdida (635-639)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_es_13
+msgid "Suscriptores de Bonos (143)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_ege_18
+msgid "TOTAL DE GASTOS POR ELEMENTOS"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_es_150
+msgid "TOTAL DE PATRIMONIO NETO"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_es_87
+msgid "TOTAL DEL ACTIVO"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_es_127
+msgid "TOTAL DEL PASIVO"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_es_151
+msgid "TOTAL DEL PASIVO Y PATRIMONIO NETO O CAPITAL CONTABLE"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:ir.model.fields,field_description:l10n_cu_reports.field_account_partner_balance__target_move
+msgid "Target Moves"
+msgstr "Movimientos destino"
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_es_23
+msgid "Total de Inventarios"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: code:addons/l10n_cu_reports/reports/report_partner_balance.py:0
+#, python-format
+msgid "Unknown Partner"
+msgstr "Desconocido Partner"
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_es_134
+msgid "Utilidades Retenidas (630-634)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_er_01
+msgid "Ventas (900 - 913)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_er_02
+msgid "Ventas de Bienes con destino a la Exportación (914)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_er_03
+msgid "Ventas por Exportación de Servicios (915)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_es_36
+msgid "Vestuario y Lencería (192)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_ege_17
+msgid "Viáticos"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:ir.model.fields.selection,name:l10n_cu_reports.selection__account_partner_balance__display_partner__non-zero_balance
+#: model:ir.model.fields.selection,name:l10n_cu_reports.selection__accounting_report__display_account__not_zero
+msgid "With balance is not equal to 0"
+msgstr "Con balance distinto a 0"
+
+#. module: l10n_cu_reports
+#: model_terms:ir.ui.view,arch_db:l10n_cu_reports.internal_financial_layout_header
+msgid "de"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_es_28
+msgid "Útiles, Herramientas y Otros (187)"
+msgstr ""
