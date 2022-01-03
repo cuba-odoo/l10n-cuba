@@ -14,6 +14,7 @@ class ReportFinancial(models.AbstractModel):
         for report in child_reports:
             vals = {
                 'name': report.name,
+                'visible': report.visible,
                 'balance': res[report.id]['balance'] * float(report.sign),
                 'type': 'report',
                 'sequence': report.sequence,
@@ -45,6 +46,7 @@ class ReportFinancial(models.AbstractModel):
                     account = self.env['account.account'].browse(account_id)
                     vals = {
                         'name': account.code + ' ' + account.name,
+                        'visible': report.visible,
                         'balance': value['balance'] * float(report.sign) or 0.0,
                         'type': 'account',
                         'sequence': report.sequence,
@@ -82,11 +84,7 @@ class ReportFinancialEge(models.AbstractModel):
     _description = 'Estado de Gasto por Elemento'
     _inherit = 'report.accounting_pdf_reports.report_financial'
 
-class ReportFinancialEi(models.AbstractModel):
-    _name = 'report.l10n_cu_reports.report_financial_ei'
-    _description = 'Estado de Inversiones'
-    _inherit = 'report.accounting_pdf_reports.report_financial'
-class ReportFinancialEvab(models.AbstractModel):
-    _name = 'report.l10n_cu_reports.report_financial_evab'
-    _description = 'Estado de Valor Agregado Bruto'
-    _inherit = 'report.accounting_pdf_reports.report_financial'
+# class ReportFinancialEvab(models.AbstractModel):
+#     _name = 'report.l10n_cu_reports.report_financial_evab'
+#     _description = 'Estado de Valor Agregado Bruto'
+#     _inherit = 'report.accounting_pdf_reports.report_financial'
