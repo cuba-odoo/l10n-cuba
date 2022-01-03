@@ -22,13 +22,11 @@
           "views/report_partnerbalance_template.xml",
           "views/report_financial_layout.xml",
           "views/report_financial_ege_templates.xml",
-          "views/report_financial_ei_templates.xml",
           "views/report_financial_er_templates.xml",
           "views/report_financial_es_templates.xml",
-          "views/report_financial_evab_templates.xml",
+          # "views/report_financial_evab_templates.xml",
           "wizards/account_report.xml",
           "wizards/report_partner_balance.xml",
           "security/ir.model.access.csv"
      ],
-     # 'auto_install': True,
 }
