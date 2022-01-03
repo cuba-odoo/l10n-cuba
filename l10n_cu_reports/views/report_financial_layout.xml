@@ -34,8 +34,6 @@
                         <t t-raw="0"/>
                     </th>
                 </tr>
-                <!--            </thead>-->
-                <!--            <tbody>-->
                 <tr>
                     <td colspan="4"
                         style="border-bottom: 1px solid black !important;border-top: 1px solid black !important; border-left: 1px solid black !important;border-right: 1px solid black !important;">
@@ -111,7 +109,7 @@
                         colspan="2"></td>
                     <td style="border-bottom: 1px solid black !important;border-top: 1px solid black !important;border-left: 1px solid black !important;border-right: 1px solid black !important;"></td>
                     <td style="border-bottom: 1px solid black !important;border-top: 1px solid black !important;border-left: 1px solid black !important;border-right: 1px solid black !important;">
-                        <span t-esc="res_company.state_id.name"/>
+                        <span t-esc="res_company.state_id.code"/>
                     </td>
                     <td style="border-bottom: 1px solid black !important;border-top: 1px solid black !important;border-left: 1px solid black !important;border-right: 1px solid black !important;">
                         <span t-esc="res_company.city"/>

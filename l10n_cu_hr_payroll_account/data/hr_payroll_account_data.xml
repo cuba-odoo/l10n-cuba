@@ -57,5 +57,10 @@
             <field name="account_debit" search="[('code', 'like', '500%')]"/>
             <field name="account_credit" search="[('code', 'like', '455%')]"/>
         </record>
+        <record id="account_journal_nomina" model="account.journal">
+            <field name="name">Nóminas</field>
+            <field name="code">NOMINA</field>
+            <field name="type">general</field>
+        </record>
     </data>
 </odoo>

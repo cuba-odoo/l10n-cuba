@@ -14,7 +14,7 @@
                         <thead>
                             <tr>
                                 <th class="text-center"
-                                    style="vertical-align:middle; width: 60%; border-bottom: 1px solid black !important;border-left: 1px solid black !important;border-right: 1px solid black !important;">
+                                    style="height: 58px; vertical-align:middle; width: 60%; border-bottom: 1px solid black !important;border-left: 1px solid black !important;border-right: 1px solid black !important;">
                                     <strong>CONCEPTOS</strong>
                                 </th>
                                 <th class="text-center"
@@ -26,22 +26,22 @@
                                     <strong>N</strong>
                                 </th>
                                 <th class="text-center"
-                                    style="vertical-align:middle; border-bottom: 1px solid black !important;border-left: 1px solid black !important;border-right: 1px solid black !important;">
+                                    style="border-bottom: 1px solid black !important;border-left: 1px solid black !important;border-right: 1px solid black !important;">
                                     <strong>Plan Anual</strong>
                                 </th>
                                 <th class="text-center"
-                                    style="vertical-align:middle; border-bottom: 1px solid black !important;border-left: 1px solid black !important;border-right: 1px solid black !important;">
+                                    style="border-bottom: 1px solid black !important; border-left: 1px solid black !important;border-right: 1px solid black !important;">
                                     <strong>Plan hasta la fecha</strong>
                                 </th>
                                 <th class="text-center"
-                                    style="vertical-align:middle; border-bottom: 1px solid black !important;border-left: 1px solid black !important;border-right: 1px solid black !important;">
+                                    style="border-bottom: 1px solid black !important; border-left: 1px solid black !important;border-right: 1px solid black !important;">
                                     <strong>Real hasta la fecha</strong>
                                 </th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr t-foreach="get_account_lines" t-as="a">
-                                <t t-if="a['level'] != 0 and a['name'] != 'ESTADO DE RESULTADO'">
+                                <t t-if="a['visible'] == True">
                                     <t t-if="int(a.get('level')) &gt; 3">
                                         <t t-set="style" t-value="'font-weight: normal;'"/>
                                     </t>

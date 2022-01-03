@@ -2,7 +2,6 @@
 from odoo import fields, models, api
 from datetime import datetime
 from odoo.exceptions import UserError
-import base64
 DEFAULT_DIGITS = (16, 2)
 
 class HrPayslipPayment(models.Model):

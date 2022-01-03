@@ -11,6 +11,7 @@
                         <group>
                             <field name="plan_anual"/>
                             <field name="apertura"/>
+                            <field name="visible"/>
                         </group>
                     </page>
                     <page string="Report" attrs="{'invisible': [('type','not in',['accounts','account_type', 'account_report'])]}">

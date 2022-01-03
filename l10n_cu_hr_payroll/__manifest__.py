@@ -10,7 +10,7 @@
         Nóminas - Cuba.
      """,
      'author': 'Comunidad Cubana de Odoo',
-     'depends': ["l10n_cu_hr","hr_payroll_community","date_range"],
+     'depends': ["l10n_cu_hr", "hr_payroll_community"],
      'data': [
           "data/hr_payroll_data.xml",
           "data/hr.salary.rule.csv",
