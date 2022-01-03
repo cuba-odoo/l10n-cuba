@@ -40,7 +40,7 @@
                             </thead>
                             <tbody>
                                 <tr t-foreach="get_account_lines" t-as="a">
-                                    <t t-if="a['level'] != 0">
+                                    <t t-if="a['visible'] == True">
                                         <t t-if="int(a.get('level')) &gt; 3">
                                             <t t-set="style" t-value="'font-weight: normal;'"/>
                                         </t>

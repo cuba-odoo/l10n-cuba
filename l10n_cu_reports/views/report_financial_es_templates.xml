@@ -9,10 +9,11 @@
                             <strong>(5920-04)</strong>
                         </t>
                     </div>
-                    <table class="table table-sm mt-5" style="margin: 0px !important;">
+                    <table class="table table-sm" style="margin: 0px !important;">
                         <thead>
                             <tr>
-                                <th style="vertical-align:middle; width: 65%;border-bottom: 1px solid black !important; border-left: 1px solid black !important;border-right: 1px solid black !important;">
+                                <th  class="text-center"
+                                    style="vertical-align:middle; width: 65%;border-bottom: 1px solid black !important; border-left: 1px solid black !important;border-right: 1px solid black !important;">
                                     <strong>CONCEPTOS</strong>
                                 </th>
                                 <th class="text-center"
