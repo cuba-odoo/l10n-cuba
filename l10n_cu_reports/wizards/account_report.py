@@ -2,7 +2,6 @@
 
 from odoo import fields, models, api, _
 from datetime import date, datetime
-from dateutil.relativedelta import relativedelta
 
 class AccountingReport(models.TransientModel):
     _name = 'accounting.report'
@@ -34,6 +33,7 @@ class AccountingReport(models.TransientModel):
             return self.env.ref('l10n_cu_reports.action_ncc_accounting_pdf_reports_report_ege'). \
             report_action(self, data=data, config=False)
         else:
-            return self.env.ref('l10n_cu_reports.action_ncc_accounting_pdf_reports_report_ei'). \
-                report_action(self, data=data, config=False)
+            return False
+            # return self.env.ref('l10n_cu_reports.action_ncc_accounting_pdf_reports_report_ei'). \
+            #     report_action(self, data=data, config=False)
 
