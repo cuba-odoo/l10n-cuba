@@ -2,7 +2,7 @@
 <odoo>
     <data noupdate="1">
         <record id="hr_payroll_community.hr_rule_taxable" model="hr.salary.rule">
-            <field name="account_debit" search="[('code', 'like', '822.02%')]"/>
+            <field name="account_debit" search="[('code', 'like', '822%')]"/>
             <field name="account_credit" search="[('code', 'like', '455%')]"/>
         </record>    
         <record id="l10n_cu_hr_payroll.hr_payroll_rules_ft" model="hr.salary.rule">
@@ -14,7 +14,7 @@
             <field name="account_credit" search="[('code', 'like', '440.03.02%')]"/>
         </record>
         <record id="l10n_cu_hr_payroll.hr_payroll_rules_09_vacaciones" model="hr.salary.rule">
-            <field name="account_debit" search="[('code', 'like', '822.06%')]"/>
+            <field name="account_debit" search="[('code', 'like', '822%')]"/>
             <field name="account_credit" search="[('code', 'like', '492%')]"/>
         </record>
         <record id="l10n_cu_hr_payroll.hr_payroll_rules_ss_presupuesto_estado" model="hr.salary.rule">
@@ -22,7 +22,7 @@
             <field name="account_credit" search="[('code', 'like', '440.01.05%')]"/>
         </record>
         <record id="l10n_cu_hr_payroll.hr_payroll_rules_ss_prestaciones_sociales_corto_plazo" model="hr.salary.rule">
-            <field name="account_debit" search="[('code', 'like', '822.05%')]"/>
+            <field name="account_debit" search="[('code', 'like', '822%')]"/>
             <field name="account_credit" search="[('code', 'like', '500%')]"/>
         </record>
         <record id="l10n_cu_hr_payroll.hr_payroll_rules_ss_especial" model="hr.salary.rule">

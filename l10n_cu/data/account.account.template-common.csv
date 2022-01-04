@@ -18,7 +18,7 @@
 "account_common_1400000","Pagos por Cuenta de Terceros","140.0000","account.data_account_type_receivable","l10n_cu_chart_template_common",1,"Activo Circulante"
 "account_common_1410000","Participación de Reaseguradores por Siniestros Pendientes ","141.0000","account.data_account_type_receivable","l10n_cu_chart_template_common",1,"Activo Circulante"
 "account_common_1420000","Préstamos y Otras Operaciones Crediticias a Cobrar a Corto Plazo","142.0000","account.data_account_type_receivable","l10n_cu_chart_template_common",1,"Activo Circulante"
-"account_common_1430000"," Suscriptores de Bonos","143.0000","account.data_account_type_receivable","l10n_cu_chart_template_common",1,"Activo Circulante"
+"account_common_1430000","Suscriptores de Bonos","143.0000","account.data_account_type_receivable","l10n_cu_chart_template_common",1,"Activo Circulante"
 "account_common_1440000","Bonos Emitidos en Cartera","144.0000","account.data_account_type_receivable","l10n_cu_chart_template_common",1,"Activo Circulante"
 "account_common_1460000","Pagos Anticipados a Suministradores","146.0000","account.data_account_type_prepayments","l10n_cu_chart_template_common",0,"Activo Circulante"
 "account_common_1460010","Dentro del Órgano u Organismo","146.0010","account.data_account_type_prepayments","l10n_cu_chart_template_common",0,"Activo Circulante"

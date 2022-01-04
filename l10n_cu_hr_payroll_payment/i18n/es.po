@@ -220,7 +220,7 @@ msgstr ""
 #. module: l10n_cu_hr_payroll_payment
 #: model:ir.actions.act_window,name:l10n_cu_hr_payroll_payment.action_payroll_payment_run_wizard
 msgid "Payroll Payment Run Wizard"
-msgstr ""
+msgstr "Realizar pago a las nóminas"
 
 #. module: l10n_cu_hr_payroll_payment
 #: model:ir.actions.act_window,name:l10n_cu_hr_payroll_payment.action_payroll_payment_wizard
