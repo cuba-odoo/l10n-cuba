@@ -40,7 +40,7 @@
                         </thead>
                         <tbody>
                             <tr t-foreach="get_account_lines" t-as="a">
-                                <t t-if="a['level'] != 0 and a['name'] != 'ESTADO DE SITUACIÓN'">
+                                <t t-if="a['visible'] == True and a['level'] != 0">
                                     <t t-if="int(a.get('level')) &gt; 3">
                                         <t t-set="style" t-value="'font-weight: normal;'"/>
                                     </t>
@@ -91,7 +91,6 @@
                     </table>
                     <t t-call="l10n_cu_reports.internal_financial_layout_footer"/>
                 </div>
-
             </t>
         </t>
     </template>

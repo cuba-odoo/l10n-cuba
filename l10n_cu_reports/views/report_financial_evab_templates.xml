@@ -6,7 +6,7 @@
                 <div class="page">
                     <div class="header">
                         <t t-call="l10n_cu_reports.internal_financial_layout_header">
-                            <strong>(5921-04)</strong>
+                            <strong>(5926-04)</strong>
                         </t>
                     </div>
 
