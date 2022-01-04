@@ -18,6 +18,7 @@ Uso
 =====
 
 #. En el menú Facturación / Contabilidad -> Informes, encontrará las Proformas de Estados Financieros para la Actividad Empresarial.
+#. Falta por crear el infrme ESTADO DE VALOR AGREGADO BRUTO (5926-04).
 
 
 Bug Tracker
