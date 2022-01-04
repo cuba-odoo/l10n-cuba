@@ -31,7 +31,7 @@
         <field name="context" eval="{'default_account_report_id':ref('ncc_financial_report_er'), 'efc': 'pl'}"/>
     </record>
     <record id="action_account_report_ege" model="ir.actions.act_window">
-        <field name="name">Estado de Gastos por Elementos</field>
+        <field name="name">Estado de Gastos por Elementos (5924-04)</field>
         <field name="res_model">accounting.report</field>
         <field name="type">ir.actions.act_window</field>
         <field name="view_mode">form</field>
@@ -40,6 +40,23 @@
         <field name="context" eval="{'default_account_report_id':ref('ncc_financial_report_ege'), 'efc': 'ege'}"/>
     </record>
 
+    <delete id="accounting_pdf_reports.menu_account_report_bs" model="ir.ui.menu"/>
+
+    <menuitem id="menu_account_report_bs"
+              name="Estado de Situación (5920-04)"
+              sequence="5"
+              action="accounting_pdf_reports.action_account_report_bs"
+              parent="accounting_pdf_reports.menu_finance_legal_statement"
+              groups="account.group_account_user,account.group_account_manager"/>
+
+    <delete id="accounting_pdf_reports.menu_account_report_pl" model="ir.ui.menu"/>
+
+    <menuitem id="menu_account_report_pl"
+              name="Estado de Rendimiento Financiero (5921-04)"
+              sequence="5"
+              action="accounting_pdf_reports.action_account_report_pl"
+              parent="accounting_pdf_reports.menu_finance_legal_statement"
+              groups="account.group_account_user,account.group_account_manager"/>
 
     <menuitem id="menu_account_report_ege"
               action="action_account_report_ege"
