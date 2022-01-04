@@ -29,7 +29,7 @@
         </record>
         <record id="ncc_financial_report_ege_03" model="account.financial.report">
             <field name="name">Energía</field>
-            <field name="sign">-1</field>
+            <field name="sign">1</field>
             <field name="type">accounts</field>
             <field name="sequence">3</field>
             <field name="display_detail">no_detail</field>
@@ -37,7 +37,7 @@
         </record>
         <record id="ncc_financial_report_ege_04" model="account.financial.report">
             <field name="name">Salario</field>
-            <field name="sign">-1</field>
+            <field name="sign">1</field>
             <field name="type">accounts</field>
             <field name="sequence">4</field>
             <field name="display_detail">no_detail</field>
@@ -45,7 +45,7 @@
         </record>
         <record id="ncc_financial_report_ege_05" model="account.financial.report">
             <field name="name">De ellos: Salario Escala</field>
-            <field name="sign">-1</field>
+            <field name="sign">1</field>
             <field name="type">accounts</field>
             <field name="sequence">5</field>
             <field name="display_detail">no_detail</field>
@@ -53,7 +53,7 @@
         </record>
         <record id="ncc_financial_report_ege_06" model="account.financial.report">
             <field name="name">Pagos Adicional del Perfeccionamiento Empresarial</field>
-            <field name="sign">-1</field>
+            <field name="sign">1</field>
             <field name="type">accounts</field>
             <field name="sequence">6</field>
             <field name="display_detail">no_detail</field>
@@ -62,7 +62,7 @@
         </record>
         <record id="ncc_financial_report_ege_07" model="account.financial.report">
             <field name="name">Otros Pagos Adicionales</field>
-            <field name="sign">-1</field>
+            <field name="sign">1</field>
             <field name="type">accounts</field>
             <field name="sequence">7</field>
             <field name="display_detail">no_detail</field>
@@ -71,7 +71,7 @@
         </record>
         <record id="ncc_financial_report_ege_08" model="account.financial.report">
             <field name="name">Pago por Resultado</field>
-            <field name="sign">-1</field>
+            <field name="sign">1</field>
             <field name="type">accounts</field>
             <field name="sequence">8</field>
             <field name="display_detail">no_detail</field>
@@ -80,7 +80,7 @@
         </record>
         <record id="ncc_financial_report_ege_09" model="account.financial.report">
             <field name="name">Acumulación de Vacaciones (9.09 %)</field>
-            <field name="sign">-1</field>
+            <field name="sign">1</field>
             <field name="type">accounts</field>
             <field name="sequence">9</field>
             <field name="display_detail">no_detail</field>
@@ -89,7 +89,7 @@
         </record>
         <record id="ncc_financial_report_ege_10" model="account.financial.report">
             <field name="name">Depreciación y Amortización</field>
-            <field name="sign">-1</field>
+            <field name="sign">1</field>
             <field name="type">accounts</field>
             <field name="sequence">10</field>
             <field name="display_detail">no_detail</field>
@@ -97,7 +97,7 @@
         </record>
         <record id="ncc_financial_report_ege_11" model="account.financial.report">
             <field name="name">Otros Gastos Monetarios</field>
-            <field name="sign">-1</field>
+            <field name="sign">1</field>
             <field name="type">accounts</field>
             <field name="sequence">11</field>
             <field name="display_detail">no_detail</field>
@@ -105,7 +105,7 @@
         </record>
         <record id="ncc_financial_report_ege_12" model="account.financial.report">
             <field name="name">De ellos: Servicios Comprados entre entidades</field>
-            <field name="sign">-1</field>
+            <field name="sign">1</field>
             <field name="type">accounts</field>
             <field name="sequence">12</field>
             <field name="display_detail">no_detail</field>

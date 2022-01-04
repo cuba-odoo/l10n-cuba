@@ -385,7 +385,7 @@ msgstr "Todos"
 #. module: l10n_cu_reports
 #: model:ir.model.fields.selection,name:l10n_cu_reports.selection__accounting_report__target_move__all
 msgid "All Entries"
-msgstr "Todos los astientos"
+msgstr "Todos los asientos"
 
 #. module: l10n_cu_reports
 #: model:ir.model.fields.selection,name:l10n_cu_reports.selection__account_partner_balance__display_partner__all
