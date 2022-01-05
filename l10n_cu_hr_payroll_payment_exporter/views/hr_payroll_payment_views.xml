@@ -5,7 +5,8 @@
 		<field name="inherit_id" ref="l10n_cu_hr_payroll_payment.hr_payslip_payment_view_form"/>
 		<field name="arch" type="xml">
 			<xpath expr="//button[@name='action_paid']" position="after">
-                <button string="Generar TXT" name="action_generate_txt" states="paid" type="object" class="oe_highlight"/>
+				<button string="Validar" name="action_validate" type="object" states="draft" class="oe_highlight"/>
+                <button string="Generar dbf" name="action_generate_txt" states="paid" type="object" class="oe_highlight"/>
             </xpath>
 			<field name="journal_id" position="after">
 				<field name="archive" readonly="1" filename="filename" attrs="{'invisible':['|',('archive','=',False),('state','=','draft')]}"/>
