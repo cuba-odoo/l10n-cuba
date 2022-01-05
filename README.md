@@ -44,3 +44,4 @@ CCO,  o [Comunidad Cubana de Odoo ](http://cuban-community.cu/), tiene como misi
 ## Próximos cambios.
 
 Desarrollo de módulos como métodos de pago con las pasarelas de pagos vigentes en el país (enzona) en desarrollo y próximo a su lanzamiento con la Beta de la Localización Cubana. 
+test
