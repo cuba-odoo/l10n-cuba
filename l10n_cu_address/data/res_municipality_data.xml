@@ -257,7 +257,7 @@
 
         <record id="municipio_2314" model="res.municipality">
             <field name="code">2314</field>
-            <field name="name">Arrojo Naranjo</field>
+            <field name="name">Arroyo Naranjo</field>
             <field name="state_id" ref="state_23"/>
             <field name="country_id" ref="base.cu"/>
         </record>
