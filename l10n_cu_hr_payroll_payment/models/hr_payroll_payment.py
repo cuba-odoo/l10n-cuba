@@ -42,20 +42,6 @@ class HrPayslipPayment(models.Model):
     def action_draft(self):
         self.state = 'draft'
 
-    def action_validate(self):
-        """ Validar los requisitos del banco. """
-        self.ensure_one()
-        if not self.total:
-            raise UserError("No existen lineas de nóminas para este pago.")
-
-        for line in self.payslip_line_ids:
-            if line.total_on_payable:
-                raise UserError("El total a pagar de la nómina %s debe ser superior a 0." % line.name)
-            if line.state != 'done':
-                raise UserError("La nómina %s tiene que estar en estado de Confirmada" % line.name)
-
-        self.state = 'validate'
-
     def action_paid(self):
         """ Resgistra los pagos y genera los asientos contables. """
         self.ensure_one()
