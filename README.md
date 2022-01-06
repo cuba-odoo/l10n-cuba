@@ -27,6 +27,9 @@ addon | versión | resumen
 [l10n_cu_hr_payroll_payment](l10n_cu_hr_payroll_payment/) |14.0.1.0.0| Módulo para control de los pagos de Nóminas
 [l10n_cu_reports](l10n_cu_reports/) |14.0.1.0.0| Módulo para Proformas de los reportes de estados financieros y demás documentos establecidos por la legislación vigente para sistemas contables en Cuba.
 
+Addons complementarios para la localización cubana.
+
+Se deben instalar los addons complementarios, como dependencias de los módulos de la localización. [Addons complementarios](https://github.com/cuba-odoo/extra_addons).
 
 [//]: # (end addons)
 
