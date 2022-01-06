@@ -9,7 +9,6 @@
                             <strong>(5926-04)</strong>
                         </t>
                     </div>
-
                     <table class="table table-sm" style="margin: 0px !important;">
                         <thead>
                             <tr>
@@ -41,14 +40,13 @@
                         </thead>
                         <tbody>
                             <tr t-foreach="get_account_lines" t-as="a">
-                                <t t-if="a['level'] != 0 and a['name'] != 'ESTADO DE RESULTADO'">
+                                <t t-if="a['visible'] == True and a['level'] != 0">
                                     <t t-if="int(a.get('level')) &gt; 3">
                                         <t t-set="style" t-value="'font-weight: normal;'"/>
                                     </t>
                                     <t t-if="not int(a.get('level')) &gt; 3">
                                         <t t-set="style" t-value="'font-weight: bold;'"/>
                                     </t>
-
                                     <td style="width: 60%; border-bottom: 1px solid black !important;border-top: 1px solid black !important;border-left: 1px solid black !important;border-right: 1px solid black !important;">
                                         <span style="color: white;" t-esc="'..' * int(a.get('level', 0))"/>
                                         <span t-att-style="style" t-esc="a.get('name')"/>

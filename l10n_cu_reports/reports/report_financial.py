@@ -66,7 +66,6 @@ class ReportFinancial(models.AbstractModel):
                     if flag:
                         sub_lines.append(vals)
                 lines += sorted(sub_lines, key=lambda sub_line: sub_line['name'])
-        # print(lines)
         return lines
 
 class ReportFinancialBs(models.AbstractModel):
@@ -84,7 +83,7 @@ class ReportFinancialEge(models.AbstractModel):
     _description = 'Estado de Gasto por Elemento'
     _inherit = 'report.accounting_pdf_reports.report_financial'
 
-# class ReportFinancialEvab(models.AbstractModel):
-#     _name = 'report.l10n_cu_reports.report_financial_evab'
-#     _description = 'Estado de Valor Agregado Bruto'
-#     _inherit = 'report.accounting_pdf_reports.report_financial'
+class ReportFinancialEvab(models.AbstractModel):
+    _name = 'report.l10n_cu_reports.report_financial_evab'
+    _description = 'Estado de Valor Agregado Bruto'
+    _inherit = 'report.accounting_pdf_reports.report_financial'

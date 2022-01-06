@@ -33,7 +33,5 @@ class AccountingReport(models.TransientModel):
             return self.env.ref('l10n_cu_reports.action_ncc_accounting_pdf_reports_report_ege'). \
             report_action(self, data=data, config=False)
         else:
-            return False
-            # return self.env.ref('l10n_cu_reports.action_ncc_accounting_pdf_reports_report_ei'). \
-            #     report_action(self, data=data, config=False)
-
+            return self.env.ref('l10n_cu_reports.action_ncc_accounting_pdf_reports_report_evab'). \
+            report_action(self, data=data, config=False)

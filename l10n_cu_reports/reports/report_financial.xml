@@ -24,14 +24,6 @@
         <field name="report_file">l10n_cu_reports.report_financial_pl</field>
         <field name="paperformat_id" ref="paperformat_horizontal"/>
     </record>
-<!--    <record id="action_ncc_accounting_pdf_reports_report_ege" model="ir.actions.report">-->
-<!--        <field name="name">Estado de Valor Agregado Bruto</field>-->
-<!--        <field name="model">account.financial.report</field>-->
-<!--        <field name="report_type">qweb-pdf</field>-->
-<!--        <field name="report_name">l10n_cu_reports.report_financial_evab</field>-->
-<!--        <field name="report_file">l10n_cu_reports.report_financial_evab</field>-->
-<!--        <field name="paperformat_id" ref="paperformat_horizontal"/>-->
-<!--    </record>-->
     <record id="action_ncc_accounting_pdf_reports_report_ege" model="ir.actions.report">
         <field name="name">Estado de Gasto por Elemento</field>
         <field name="model">account.financial.report</field>
@@ -40,14 +32,16 @@
         <field name="report_file">l10n_cu_reports.report_financial_ege</field>
         <field name="paperformat_id" ref="paperformat_horizontal"/>
     </record>
+    <record id="action_ncc_accounting_pdf_reports_report_evab" model="ir.actions.report">
+        <field name="name">Estado de Valor Agregado Bruto</field>
+        <field name="model">account.financial.report</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">l10n_cu_reports.report_financial_evab</field>
+        <field name="report_file">l10n_cu_reports.report_financial_evab</field>
+        <field name="paperformat_id" ref="paperformat_horizontal"/>
+    </record>
 
-<!--    <record id="action_ncc_accounting_pdf_reports_report_ei" model="ir.actions.report">-->
-<!--        <field name="name">Estado de Inversión</field>-->
-<!--        <field name="model">account.financial.report</field>-->
-<!--        <field name="report_type">qweb-pdf</field>-->
-<!--        <field name="report_name">l10n_cu_reports.report_financial_ei</field>-->
-<!--        <field name="report_file">l10n_cu_reports.report_financial_ei</field>-->
-<!--    </record>-->
+
 <!--    <record id="action_accounting_report_dj" model="ir.actions.report">-->
 <!--        <field name="name">Declaración Jurada</field>-->
 <!--        <field name="model">accounting.report.dj</field>-->
@@ -57,6 +51,5 @@
 <!--        <field name="binding_model_id" ref="l10n_cu_hr_payroll.model_hr_payslip_projection"/>-->
 <!--		<field name="binding_type">report</field>-->
 <!--    </record>-->
-
 
 </odoo>
