@@ -225,7 +225,7 @@ msgstr "Realizar pago a las nóminas"
 #. module: l10n_cu_hr_payroll_payment
 #: model:ir.actions.act_window,name:l10n_cu_hr_payroll_payment.action_payroll_payment_wizard
 msgid "Payroll Payment Wizard"
-msgstr ""
+msgstr "Realizar pago a nómina"
 
 #. module: l10n_cu_hr_payroll_payment
 #: model:ir.model.fields,field_description:l10n_cu_hr_payroll_payment.field_hr_payslip_payment__payslip_line_ids

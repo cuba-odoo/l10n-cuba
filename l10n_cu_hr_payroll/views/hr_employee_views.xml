@@ -5,7 +5,7 @@
         <field name="inherit_id" ref="hr.view_employee_form"/>
         <field name="arch" type="xml">
             <xpath expr="//page[@name='hr_settings']" position="after">
-                <page name="hr_other_input" string="Other Inputs" groups="hr.group_hr_user">
+                <page name="hr_other_input" string="Otras entradas" groups="hr.group_hr_user">
                     <field name="other_input_id">
                         <tree editable="bottom">
                             <field name="rule_input_id"/>

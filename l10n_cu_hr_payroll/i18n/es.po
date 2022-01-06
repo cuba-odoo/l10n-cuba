@@ -436,11 +436,6 @@ msgid "Octubre"
 msgstr ""
 
 #. module: l10n_cu_hr_payroll
-#: model_terms:ir.ui.view,arch_db:l10n_cu_hr_payroll.view_employee_form_inherit
-msgid "Other Input"
-msgstr "Otra entrada"
-
-#. module: l10n_cu_hr_payroll
 #: model:ir.model.fields,field_description:l10n_cu_hr_payroll.field_hr_employee__other_input_id
 msgid "Other Inputs"
 msgstr "Otras entradas"
