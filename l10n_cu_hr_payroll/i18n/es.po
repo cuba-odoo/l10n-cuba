@@ -558,8 +558,8 @@ msgstr ""
 
 #. module: l10n_cu_hr_payroll
 #: model:ir.model.fields,field_description:l10n_cu_hr_payroll.field_hr_payslip_employees__struct_id
-msgid "Estructuras salariales"
-msgstr ""
+msgid "Salary Structure"
+msgstr "Estructuras salariales"
 
 #. module: l10n_cu_hr_payroll
 #: model:hr.salary.rule,name:l10n_cu_hr_payroll.hr_payroll_rules_ss_presupuesto_estado
@@ -578,8 +578,8 @@ msgstr ""
 
 #. module: l10n_cu_hr_payroll
 #: model:ir.model.fields,field_description:l10n_cu_hr_payroll.field_hr_payslip_projection_line__sequence
-msgid "Secuencia"
-msgstr ""
+msgid "Sequence"
+msgstr "Secuencia"
 
 #. module: l10n_cu_hr_payroll
 #: model_terms:ir.actions.act_window,help:l10n_cu_hr_payroll.hr_payslip_projection_action
