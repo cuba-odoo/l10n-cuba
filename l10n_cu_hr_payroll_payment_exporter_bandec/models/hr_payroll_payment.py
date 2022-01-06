@@ -26,7 +26,7 @@ class HrPayslipPayment(models.Model):
 
         message_bytes = arch.encode('ascii')
         base64_bytes = base64.b64encode(message_bytes)
-        self.write({'archive': base64_bytes, 'filename': '%s.txt' % self.name})
+        self.write({'archive': base64_bytes, 'filename': '%s.dbf' % self.name})
 
         return {
             'type': 'ir.actions.act_window',

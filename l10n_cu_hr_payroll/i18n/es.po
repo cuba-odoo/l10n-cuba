@@ -436,11 +436,6 @@ msgid "Octubre"
 msgstr ""
 
 #. module: l10n_cu_hr_payroll
-#: model_terms:ir.ui.view,arch_db:l10n_cu_hr_payroll.view_employee_form_inherit
-msgid "Other Input"
-msgstr "Otra entrada"
-
-#. module: l10n_cu_hr_payroll
 #: model:ir.model.fields,field_description:l10n_cu_hr_payroll.field_hr_employee__other_input_id
 msgid "Other Inputs"
 msgstr "Otras entradas"
@@ -563,7 +558,7 @@ msgstr ""
 
 #. module: l10n_cu_hr_payroll
 #: model:ir.model.fields,field_description:l10n_cu_hr_payroll.field_hr_payslip_employees__struct_id
-msgid "Salary Structure"
+msgid "Estructuras salariales"
 msgstr ""
 
 #. module: l10n_cu_hr_payroll
@@ -583,7 +578,7 @@ msgstr ""
 
 #. module: l10n_cu_hr_payroll
 #: model:ir.model.fields,field_description:l10n_cu_hr_payroll.field_hr_payslip_projection_line__sequence
-msgid "Sequence"
+msgid "Secuencia"
 msgstr ""
 
 #. module: l10n_cu_hr_payroll
@@ -616,7 +611,7 @@ msgstr "Fecha inicio"
 #. module: l10n_cu_hr_payroll
 #: model:ir.model.fields,help:l10n_cu_hr_payroll.field_hr_payslip_projection_wizard__date_from
 msgid "Start date"
-msgstr "Fecha fin"
+msgstr "Fecha inicio"
 
 #. module: l10n_cu_hr_payroll
 #: model:ir.model.constraint,message:l10n_cu_hr_payroll.constraint_hr_payslip_projection_employee_id_unique
