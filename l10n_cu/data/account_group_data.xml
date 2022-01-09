@@ -1,37 +1,115 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <data>
-        <record id="account_group_1" model="account.group.template">
+    <data noupdate="1">
+        <record id="account_group_10" model="account.group.template">
             <field name="chart_template_id" ref="l10n_cu_chart_template_common"/>
-            <field name="code_prefix_start">101</field>
-            <field name="code_prefix_end">399</field>
             <field name="name">GRUPO DE ACTIVOS</field>
         </record>
-        <record id="account_group_2" model="account.group.template">
+        <record id="account_group_10_1" model="account.group.template">
             <field name="chart_template_id" ref="l10n_cu_chart_template_common"/>
-            <field name="code_prefix_start">400</field>
-            <field name="code_prefix_end">580</field>
+            <field name="code_prefix_start">101</field>
+            <field name="code_prefix_end">211</field>
+            <field name="parent_id" ref="account_group_10"/>
+            <field name="name">ACTIVO CIRCULANTE</field>
+        </record>
+        <record id="account_group_10_2" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_cu_chart_template_common"/>
+            <field name="code_prefix_start">215</field>
+            <field name="code_prefix_end">234</field>
+            <field name="parent_id" ref="account_group_10"/>
+            <field name="name">ACTIVO A LARGO PLAZO</field>
+        </record>
+        <record id="account_group_10_3" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_cu_chart_template_common"/>
+            <field name="code_prefix_start">240</field>
+            <field name="code_prefix_end">299</field>
+            <field name="parent_id" ref="account_group_10"/>
+            <field name="name">ACTIVOS FIJO</field>
+        </record>
+        <record id="account_group_10_4" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_cu_chart_template_common"/>
+            <field name="code_prefix_start">300</field>
+            <field name="code_prefix_end">312</field>
+            <field name="parent_id" ref="account_group_10"/>
+            <field name="name">ACTIVOS DIFERIDOS</field>
+        </record>
+        <record id="account_group_10_5" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_cu_chart_template_common"/>
+            <field name="code_prefix_start">330</field>
+            <field name="code_prefix_end">364</field>
+            <field name="parent_id" ref="account_group_10"/>
+            <field name="name">OTROS ACTIVOS</field>
+        </record>
+        <record id="account_group_10_6" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_cu_chart_template_common"/>
+            <field name="code_prefix_start">365</field>
+            <field name="code_prefix_end">399</field>
+            <field name="parent_id" ref="account_group_10"/>
+            <field name="name">CUENTAS REGULADORAS DE ACTIVOS</field>
+        </record>
+        <record id="account_group_20" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_cu_chart_template_common"/>
             <field name="name">GRUPO DE PASIVOS</field>
         </record>
-        <record id="account_group_3" model="account.group.template">
+        <record id="account_group_20_1" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_cu_chart_template_common"/>
+            <field name="code_prefix_start">400</field>
+            <field name="code_prefix_end">501</field>
+            <field name="parent_id" ref="account_group_20"/>
+            <field name="name">PASIVOS CIRCULANTES</field>
+        </record>
+        <record id="account_group_20_2" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_cu_chart_template_common"/>
+            <field name="code_prefix_start">510</field>
+            <field name="code_prefix_end">541</field>
+            <field name="parent_id" ref="account_group_20"/>
+            <field name="name">PASIVOS A LARGO PLAZO</field>
+        </record>
+        <record id="account_group_20_3" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_cu_chart_template_common"/>
+            <field name="code_prefix_start">545</field>
+            <field name="code_prefix_end">549</field>
+            <field name="parent_id" ref="account_group_20"/>
+            <field name="name">PASIVOS DIFERIDOS</field>
+        </record>
+        <record id="account_group_20_4" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_cu_chart_template_common"/>
+            <field name="code_prefix_start">555</field>
+            <field name="code_prefix_end">575</field>
+            <field name="parent_id" ref="account_group_20"/>
+            <field name="name">OTROS PASIVOS</field>
+        </record>
+        <record id="account_group_30" model="account.group.template">
             <field name="chart_template_id" ref="l10n_cu_chart_template_private"/>
             <field name="code_prefix_start">600</field>
-            <field name="code_prefix_end">697</field>
+            <field name="code_prefix_end">699</field>
             <field name="name">GRUPO DE CAPITAL</field>
         </record>
-        <record id="account_group_4" model="account.group.template">
+        <record id="account_group_40" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_cu_chart_template_common"/>
+            <field name="code_prefix_start">700</field>
+            <field name="code_prefix_end">739</field>
+            <field name="name">GASTOS DE PRODUCCIÓN</field>
+        </record>
+        <record id="account_group_50" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_cu_chart_template_private"/>
+            <field name="name">GRUPO DE CUENTAS NOMINALES</field>
+        </record>
+        <record id="account_group_50_1" model="account.group.template">
             <field name="chart_template_id" ref="l10n_cu_chart_template_private"/>
             <field name="code_prefix_start">800</field>
             <field name="code_prefix_end">873</field>
-            <field name="name">GRUPO DE CUENTAS NOMINALES</field>
+            <field name="parent_id" ref="account_group_50"/>
+            <field name="name">CUENTAS NOMINALES DEUDORAS</field>
         </record>
-        <record id="account_group_8" model="account.group.template">
-            <field name="chart_template_id" ref="l10n_cu_chart_template_common"/>
+        <record id="account_group_50_2" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_cu_chart_template_private"/>
             <field name="code_prefix_start">900</field>
             <field name="code_prefix_end">953</field>
-            <field name="name">GRUPO DE CAPITAL</field>
+            <field name="parent_id" ref="account_group_50"/>
+            <field name="name">CUENTAS NOMINALES ACREEDORAS</field>
         </record>
-        <record id="account_group_9" model="account.group.template">
+        <record id="account_group_60" model="account.group.template">
             <field name="chart_template_id" ref="l10n_cu_chart_template_common"/>
             <field name="code_prefix_start">999</field>
             <field name="code_prefix_end">999</field>
