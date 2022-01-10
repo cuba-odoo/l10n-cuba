@@ -1,9 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <data noupdate="1">
-        <record id="fp_nacional" model="account.fiscal.position.template">
-            <field name="name">Régimen Nacional</field>
+        <record id="account_fiscal_position_mayorista" model="account.fiscal.position.template">
+            <field name="name">Ventas Mayoristas</field>
             <field name="chart_template_id" ref="l10n_cu_chart_template_common"/>
         </record>
+<!--        <record id="fiscal_position_tax_template_mayorista_untax" model="account.fiscal.position.tax.template">-->
+<!--            <field name="position_id" ref="account_fiscal_position_mayorista" />-->
+<!--            <field name="tax_src_id" ref="cu_tax1_sale_all" />-->
+<!--            <field name="tax_dest_id" ref="cu_tax2_untax" />-->
+<!--        </record>-->
+
+        <record id="account_fiscal_position_servicio_persona_jurid" model="account.fiscal.position.template">
+            <field name="name">Servicios Personas Juridicas</field>
+            <field name="chart_template_id" ref="l10n_cu_chart_template_common"/>
+        </record>
+<!--        <record id="fiscal_position_tax_template__servicio_persona_jurid_untax" model="account.fiscal.position.tax.template">-->
+<!--            <field name="position_id" ref="account_fiscal_position_servicio_persona_jurid" />-->
+<!--            <field name="tax_src_id" ref="cu_tax10_sale_all" />-->
+<!--            <field name="tax_dest_id" ref="cu_tax2_untax" />-->
+<!--        </record>-->
     </data>
 </odoo>
