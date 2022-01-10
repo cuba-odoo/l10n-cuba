@@ -1243,6 +1243,36 @@
             <field name="account_ids" search="[('code', 'like', '600%')]"/>
             <field name="style_overwrite">1</field>
         </record>
+        <record id="ncc_financial_report_es_130" model="account.financial.report">
+            <field name="name">Capital Social Suscrito y Pagado</field>
+            <field name="sign">-1</field>
+            <field name="type">accounts</field>
+            <field name="sequence">130</field>
+            <field name="display_detail">detail_with_hierarchy</field>
+            <field name="parent_id" ref="ncc_financial_report_es_patrimonio"/>
+            <field name="account_ids" search="[('code', 'like', '601%')]"/>
+            <field name="style_overwrite">1</field>
+        </record>
+        <record id="ncc_financial_report_es_132" model="account.financial.report">
+            <field name="name">Donaciones Recibidas – Nacionales (620)</field>
+            <field name="sign">-1</field>
+            <field name="type">accounts</field>
+            <field name="sequence">132</field>
+            <field name="display_detail">detail_with_hierarchy</field>
+            <field name="parent_id" ref="ncc_financial_report_es_patrimonio"/>
+            <field name="account_ids" search="[('code', 'like', '620%')]"/>
+            <field name="style_overwrite">1</field>
+        </record>
+        <record id="ncc_financial_report_es_133" model="account.financial.report">
+            <field name="name">Donaciones Recibidas – Exterior (621)</field>
+            <field name="sign">-1</field>
+            <field name="type">accounts</field>
+            <field name="sequence">133</field>
+            <field name="display_detail">detail_with_hierarchy</field>
+            <field name="parent_id" ref="ncc_financial_report_es_patrimonio"/>
+            <field name="account_ids" search="[('code', 'like', '621%')]"/>
+            <field name="style_overwrite">1</field>
+        </record>
         <record id="ncc_financial_report_es_134" model="account.financial.report">
             <field name="name">Utilidades Retenidas (630-634)</field>
             <field name="sign">-1</field>
