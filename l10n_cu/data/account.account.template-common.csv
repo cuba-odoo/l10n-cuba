@@ -418,7 +418,6 @@
 
 "account_common_8250000","Gastos de Proyectos","825.0000","account.data_account_type_expenses","l10n_cu_chart_template_common",0,"Cuentas Nominales Deudoras"
 "account_common_8260000","Gastos de Operación","826.0000","account.data_account_type_expenses","l10n_cu_chart_template_common",0,"Cuentas Nominales Deudoras"
-"account_common_8260003","Gastos de Operación. Energía","826.0003","account.data_account_type_expenses","l10n_cu_chart_template_common","0","Cuentas Nominales Deudoras"
 
 "account_common_8340000","Gastos de Administración de la OSDE","834.0000","account.data_account_type_expenses","l10n_cu_chart_template_common",0,"Cuentas Nominales Deudoras"
 "account_common_8350000","Gastos Financieros","835.0000","account.data_account_type_expenses","l10n_cu_chart_template_common",0,"Cuentas Nominales Deudoras"
