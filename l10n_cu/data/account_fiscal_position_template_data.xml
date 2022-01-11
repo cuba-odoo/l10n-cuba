@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <record id="account_fiscal_position_mayorista" model="account.fiscal.position.template">
-        <field name="name">Ventas Mayoristas</field>
-        <field name="chart_template_id" ref="l10n_cu_chart_template_common"/>
-<!--        <field name="auto_apply" eval="True"/>-->
-        <field name="note">Las ventas mayoristas no estan gravados</field>
+    <record id="private_account_fiscal_position_mayorista" model="account.fiscal.position.template">
+        <field name="name">Ventas Mayoristas (PRIVADO Y COOPERATIVO)</field>
+        <field name="chart_template_id" ref="l10n_cu_chart_template_private"/>
+        <field name="note">Las ventas mayoristas no estan gravadas.</field>
+        <field name="country_id" ref="base.cu"/>
     </record>
-    <record id="account_fiscal_position_servicio_persona_jurid" model="account.fiscal.position.template">
-        <field name="name">Servicios Personas Jurídicas</field>
-        <field name="chart_template_id" ref="l10n_cu_chart_template_common"/>
-<!--        <field name="auto_apply" eval="True"/>-->
-        <field name="note">Los servicios a personas jurídicas no estan gravados</field>
+    <record id="private_account_fiscal_position_servicio_persona_jurid" model="account.fiscal.position.template">
+        <field name="name">Servicios Personas Jurídicas (PRIVADO Y COOPERATIVO)</field>
+        <field name="chart_template_id" ref="l10n_cu_chart_template_private"/>
+        <field name="note">Los servicios a personas jurídicas no estan gravados.</field>
+        <field name="country_id" ref="base.cu"/>
     </record>
 </odoo>

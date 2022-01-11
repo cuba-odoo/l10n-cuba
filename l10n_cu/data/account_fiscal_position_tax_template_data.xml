@@ -1,14 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-<!--    <record id="fiscal_position_tax_template_mayorista_untax" model="account.fiscal.position.tax.template">-->
-<!--        <field name="position_id" ref="account_fiscal_position_mayorista" />-->
-<!--        <field name="tax_src_id" ref="cu_tax1_sale_all" />-->
-<!--        <field name="tax_dest_id" ref="cu_tax2_untax" />-->
-<!--    </record>-->
-
-<!--        <record id="fiscal_position_tax_template_servicio_persona_jurid_untax" model="account.fiscal.position.tax.template">-->
-<!--            <field name="position_id" ref="account_fiscal_position_servicio_persona_jurid" />-->
-<!--            <field name="tax_src_id" ref="cu_tax10_sale_all" />-->
-<!--            <field name="tax_dest_id" ref="cu_tax2_untax" />-->
-<!--        </record>-->
+    <record id="private_fiscal_position_tax_template_mayorista_1untax" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="private_account_fiscal_position_mayorista"/>
+        <field name="tax_src_id" ref="private_cu_tax1_sale_all"/>
+        <field name="tax_dest_id" ref="private_cu_tax0_sale"/>
+    </record>
+    <record id="private_fiscal_position_tax_template_mayorista_10untax" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="private_account_fiscal_position_mayorista"/>
+        <field name="tax_src_id" ref="private_cu_tax10_sale_all"/>
+        <field name="tax_dest_id" ref="private_cu_tax0_sale"/>
+    </record>
+    <record id="private_fiscal_position_tax_template_servicio_persona_jurid_1untax" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="private_account_fiscal_position_servicio_persona_jurid"/>
+        <field name="tax_src_id" ref="private_cu_tax1_sale_all"/>
+        <field name="tax_dest_id" ref="private_cu_tax0_sale"/>
+    </record>
+    <record id="private_fiscal_position_tax_template_servicio_persona_jurid_10untax" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="private_account_fiscal_position_servicio_persona_jurid"/>
+        <field name="tax_src_id" ref="private_cu_tax10_sale_all"/>
+        <field name="tax_dest_id" ref="private_cu_tax0_sale"/>
+    </record>
 </odoo>
