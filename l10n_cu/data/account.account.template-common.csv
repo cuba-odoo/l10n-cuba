@@ -228,7 +228,7 @@
 "account_common_3500050","Cuentas por Cobrar con Sentencia Firme - Sector Cooperativo","350.0050","account.data_account_type_non_current_assets","l10n_cu_chart_template_common",1,"Otros Activos"
 "account_common_3500060","Cuentas por Cobrar con Sentencia Firme - Personas Naturales","350.0060","account.data_account_type_non_current_assets","l10n_cu_chart_template_common",1,"Otros Activos"
 "account_common_3630000","Bonos Redimidos","363.0000","account.data_account_type_non_current_assets","l10n_cu_chart_template_common",0,"Otros Activos"
-"account_common_3640000","Fondo de Amortización de Bonos   Efectivo y Valores","364.0000","account.data_account_type_non_current_assets","l10n_cu_chart_template_common",0,"Otros Activos"
+"account_common_3640000","Fondo de Amortización de Bonos - Efectivo y Valores","364.0000","account.data_account_type_non_current_assets","l10n_cu_chart_template_common",0,"Otros Activos"
 "account_common_3650000","Efectos por Cobrar Descontados","365.0000","account.data_account_type_non_current_assets","l10n_cu_chart_template_common",0,"Cuentas Reguladoras de Activos"
 "account_common_3660000","Desgaste de Base Material de Estudio","366.0000","account.data_account_type_non_current_assets","l10n_cu_chart_template_common",0,"Cuentas Reguladoras de Activos"
 "account_common_3670000","Desgaste de Vestuario y Lencería","367.0000","account.data_account_type_non_current_assets","l10n_cu_chart_template_common",0,"Cuentas Reguladoras de Activos"
