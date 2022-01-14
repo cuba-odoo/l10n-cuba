@@ -25,6 +25,7 @@
             <field name="sequence">2</field>
             <field name="display_detail">detail_with_hierarchy</field>
             <field name="parent_id" ref="ncc_financial_report_er"/>
+            <field name="account_ids" search="[('code', 'like', '914.%')]"/>
         </record>
         <record id="ncc_financial_report_er_03" model="account.financial.report">
             <field name="name">Ventas por Exportación de Servicios (915)</field>
@@ -33,6 +34,7 @@
             <field name="sequence">3</field>
             <field name="display_detail">detail_with_hierarchy</field>
             <field name="parent_id" ref="ncc_financial_report_er"/>
+            <field name="account_ids" search="[('code', 'like', '915.%')]"/>
         </record>
         <record id="ncc_financial_report_er_04" model="account.financial.report">
             <field name="name">Subvenciones (916 - 919)</field>
@@ -41,6 +43,7 @@
             <field name="sequence">4</field>
             <field name="display_detail">detail_with_hierarchy</field>
             <field name="parent_id" ref="ncc_financial_report_er"/>
+            <field name="account_ids" search="[('code', 'like', '916.%')]"/>
         </record>
         <record id="ncc_financial_report_er_05" model="account.financial.report">
             <field name="name">- Devoluciones y Rebajas en Ventas (800 - 804)</field>
@@ -99,6 +102,7 @@
             <field name="sequence">10</field>
             <field name="display_detail">detail_with_hierarchy</field>
             <field name="parent_id" ref="ncc_financial_report_er"/>
+            <field name="account_ids" search="[('code', 'like', '818.%')]"/>
         </record>
         <record id="ncc_financial_report_er_11" model="account.financial.report">
             <field name="name">= Utilidad o Pérdida Bruta en Ventas</field>
@@ -197,6 +201,7 @@
             <field name="sequence">19</field>
             <field name="display_detail">detail_with_hierarchy</field>
             <field name="parent_id" ref="ncc_financial_report_er"/>
+            <field name="account_ids" search="[('code', 'like', '835.%')]"/>
         </record>
         <record id="ncc_financial_report_er_20" model="account.financial.report">
             <field name="name">- Gastos por Pérdidas en Tasa de Cambio (839)</field>
@@ -206,6 +211,24 @@
             <field name="display_detail">detail_with_hierarchy</field>
             <field name="parent_id" ref="ncc_financial_report_er"/>
             <field name="account_ids" search="[('code', 'like', '839.%')]"/>
+        </record>
+        <record id="ncc_financial_report_er_22" model="account.financial.report">
+            <field name="name">- Gastos por Estadía – Importadores (841)</field>
+            <field name="sign">1</field>
+            <field name="type">accounts</field>
+            <field name="sequence">21</field>
+            <field name="display_detail">detail_with_hierarchy</field>
+            <field name="parent_id" ref="ncc_financial_report_er"/>
+            <field name="account_ids" search="[('code', 'like', '841.%')]"/>
+        </record>
+        <record id="ncc_financial_report_er_23" model="account.financial.report">
+            <field name="name">-  Gastos por Estadía – Otras Entidades (843)</field>
+            <field name="sign">1</field>
+            <field name="type">accounts</field>
+            <field name="sequence">23</field>
+            <field name="display_detail">detail_with_hierarchy</field>
+            <field name="parent_id" ref="ncc_financial_report_er"/>
+            <field name="account_ids" search="[('code', 'like', '843.%')]"/>
         </record>
         <record id="ncc_financial_report_er_24" model="account.financial.report">
             <field name="name">- Gastos por Pérdidas (845 - 848)</field>
@@ -305,6 +328,24 @@
             <field name="display_detail">detail_with_hierarchy</field>
             <field name="parent_id" ref="ncc_financial_report_er"/>
             <field name="account_ids" search="[('code', 'like', '925.%')]"/>
+        </record>
+        <record id="ncc_financial_report_er_35" model="account.financial.report">
+            <field name="name">Ingresos por Estadía (navieras y operadores) (926–927)</field>
+            <field name="sign">-1</field>
+            <field name="type">accounts</field>
+            <field name="sequence">35</field>
+            <field name="display_detail">detail_with_hierarchy</field>
+            <field name="parent_id" ref="ncc_financial_report_er"/>
+            <field name="account_ids" search="[('code', 'like', '926.%')]"/>
+        </record>
+        <record id="ncc_financial_report_er_36" model="account.financial.report">
+            <field name="name"> Ingresos por Recobro de Estadía (importadores y otras entidades) (928 – 929)</field>
+            <field name="sign">-1</field>
+            <field name="type">accounts</field>
+            <field name="sequence">36</field>
+            <field name="display_detail">detail_with_hierarchy</field>
+            <field name="parent_id" ref="ncc_financial_report_er"/>
+            <field name="account_ids" search="[('code', 'like', '928.%')]"/>
         </record>
         <record id="ncc_financial_report_er_37" model="account.financial.report">
             <field name="name">Ingresos por Sobrantes (930 - 939)</field>
