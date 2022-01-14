@@ -13,7 +13,7 @@
 		<field name="name">hr.payslip.payment.view.tree</field>
 		<field name="model">hr.payslip.payment</field>
 		<field name="arch" type="xml">
-			<tree string="Payslip Payment">
+			<tree>
 				<field name="name"/>
 				<field name="date"/>
 				<field name="journal_id"/>

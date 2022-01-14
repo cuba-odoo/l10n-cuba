@@ -3,7 +3,7 @@
         <field name="name">hr.payslip.projection.view.tree</field>
         <field name="model">hr.payslip.projection</field>
         <field name="arch" type="xml">
-            <tree string="Payslip Projection">
+            <tree>
                 <field name="employee_id"/>
                 <field name="start_date"/>
                 <field name="end_date"/>
