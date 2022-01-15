@@ -772,6 +772,20 @@
             <field name="zip">75500</field>
         </record>
 
+        <!-- BANDEC SUCURSALES ISLA DE LA JUVENTUD-->
+        <record id="BANDEC_8981" model="res.bank">
+            <field name="name">BANDEC-8981</field>
+            <field name="bic">BDCRCUHH</field>
+            <field name="country" ref="base.cu"/>
+            <field name="active" eval="True"/>
+            <field name="street">39 No.1802 e/ 18 y 20, Nueva Gerona</field>
+            <field name="street2"></field>
+            <field name="res_municipality_id" ref="l10n_cu_address.municipio_4001"/>
+            <field name="state" ref="l10n_cu_address.state_40"/>
+            <field name="phone">46322256</field>
+            <field name="zip">25100</field>
+        </record>
+
 
 
         *********************************************************************
@@ -6100,6 +6114,81 @@
             <field name="phone">23504630</field>
             <field name="zip"></field>
         </record>
+
+        <!-- MUNICIPIO ESPECIAL ISLA DE LA JUVENTUD -->
+        <record id="BPA_89620" model="res.bank">
+            <field name="name">BANMET-89620</field>
+            <field name="bic">BPAHCUHH</field>
+            <field name="country" ref="base.cu"/>
+            <field name="active" eval="True"/>
+            <field name="street">Calle 7 entre 12 y 14 La Fe</field>
+            <field name="street2"></field>
+            <field name="res_municipality_id" ref="l10n_cu_address.municipio_4001"/>
+            <field name="state" ref="l10n_cu_address.state_40"/>
+            <field name="phone">46397434</field>
+            <field name="zip">27200</field>
+        </record>
+        <record id="BPA_89820" model="res.bank">
+            <field name="name">BANMET-89820</field>
+            <field name="bic">BPAHCUHH</field>
+            <field name="country" ref="base.cu"/>
+            <field name="active" eval="True"/>
+            <field name="street">Calle 18 No.4503 e/45 y 47, Nueva Gerona</field>
+            <field name="street2"></field>
+            <field name="res_municipality_id" ref="l10n_cu_address.municipio_4001"/>
+            <field name="state" ref="l10n_cu_address.state_40"/>
+            <field name="phone">46324414</field>
+            <field name="zip">25100</field>
+        </record>
+        <record id="BPA_89720" model="res.bank">
+            <field name="name">BANMET-89720</field>
+            <field name="bic">BPAHCUHH</field>
+            <field name="country" ref="base.cu"/>
+            <field name="active" eval="True"/>
+            <field name="street">Calle Martí esq. 26 No. 2602, Nueva Gerona</field>
+            <field name="street2"></field>
+            <field name="res_municipality_id" ref="l10n_cu_address.municipio_4001"/>
+            <field name="state" ref="l10n_cu_address.state_40"/>
+            <field name="phone">46322742</field>
+            <field name="zip">25100</field>
+        </record>
+        <record id="BPA_89920" model="res.bank">
+            <field name="name">BANMET-89920</field>
+            <field name="bic">BPAHCUHH</field>
+            <field name="country" ref="base.cu"/>
+            <field name="active" eval="True"/>
+            <field name="street">Calle 18 No.4503 e/45 y 47, Nueva Gerona</field>
+            <field name="street2"></field>
+            <field name="res_municipality_id" ref="l10n_cu_address.municipio_4001"/>
+            <field name="state" ref="l10n_cu_address.state_40"/>
+            <field name="phone">46326997</field>
+            <field name="zip">25100</field>
+        </record>
+        <record id="BPA_89723" model="res.bank">
+            <field name="name">BANMET-89723</field>
+            <field name="bic">BPAHCUHH</field>
+            <field name="country" ref="base.cu"/>
+            <field name="active" eval="True"/>
+            <field name="street">Calle 8 No. 326 La Demajagua</field>
+            <field name="street2"></field>
+            <field name="res_municipality_id" ref="l10n_cu_address.municipio_4001"/>
+            <field name="state" ref="l10n_cu_address.state_40"/>
+            <field name="phone">46399105</field>
+            <field name="zip">27400</field>
+        </record>
+        <record id="BANDEC_8981" model="res.bank">
+            <field name="name">BANDEC-8981</field>
+            <field name="bic">BDCRCUHH</field>
+            <field name="country" ref="base.cu"/>
+            <field name="active" eval="True"/>
+            <field name="street">39 No.1802 e/ 18 y 20, Nueva Gerona</field>
+            <field name="street2"></field>
+            <field name="res_municipality_id" ref="l10n_cu_address.municipio_4001"/>
+            <field name="state" ref="l10n_cu_address.state_40"/>
+            <field name="phone">46322256</field>
+            <field name="zip">25100</field>
+        </record>
+
 
         *********************************************************************
         *                                                                   *
