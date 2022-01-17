@@ -6117,7 +6117,7 @@
 
         <!-- MUNICIPIO ESPECIAL ISLA DE LA JUVENTUD -->
         <record id="BPA_89620" model="res.bank">
-            <field name="name">BANMET-89620</field>
+            <field name="name">BPA-89620</field>
             <field name="bic">BPAHCUHH</field>
             <field name="country" ref="base.cu"/>
             <field name="active" eval="True"/>
@@ -6129,7 +6129,7 @@
             <field name="zip">27200</field>
         </record>
         <record id="BPA_89820" model="res.bank">
-            <field name="name">BANMET-89820</field>
+            <field name="name">BPA-89820</field>
             <field name="bic">BPAHCUHH</field>
             <field name="country" ref="base.cu"/>
             <field name="active" eval="True"/>
@@ -6141,7 +6141,7 @@
             <field name="zip">25100</field>
         </record>
         <record id="BPA_89720" model="res.bank">
-            <field name="name">BANMET-89720</field>
+            <field name="name">BPA-89720</field>
             <field name="bic">BPAHCUHH</field>
             <field name="country" ref="base.cu"/>
             <field name="active" eval="True"/>
@@ -6153,7 +6153,7 @@
             <field name="zip">25100</field>
         </record>
         <record id="BPA_89920" model="res.bank">
-            <field name="name">BANMET-89920</field>
+            <field name="name">BPA-89920</field>
             <field name="bic">BPAHCUHH</field>
             <field name="country" ref="base.cu"/>
             <field name="active" eval="True"/>
@@ -6165,7 +6165,7 @@
             <field name="zip">25100</field>
         </record>
         <record id="BPA_89723" model="res.bank">
-            <field name="name">BANMET-89723</field>
+            <field name="name">BPA-89723</field>
             <field name="bic">BPAHCUHH</field>
             <field name="country" ref="base.cu"/>
             <field name="active" eval="True"/>
@@ -6177,7 +6177,7 @@
             <field name="zip">27400</field>
         </record>
         <record id="BANDEC_8981" model="res.bank">
-            <field name="name">BANDEC-8981</field>
+            <field name="name">BPA-8981</field>
             <field name="bic">BDCRCUHH</field>
             <field name="country" ref="base.cu"/>
             <field name="active" eval="True"/>
