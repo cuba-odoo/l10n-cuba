@@ -23,7 +23,7 @@
                 (0,0, {
                     'factor_percent': 100,
                     'repartition_type': 'tax',
-                    'account_id': ref('account_tcp_81010'),
+                    'account_id': ref('account_tcp_8101000'),
                 }),
             ]"/>
             <field name="refund_repartition_line_ids" eval="[(5, 0, 0),
@@ -35,7 +35,7 @@
                 (0,0, {
                     'factor_percent': 100,
                     'repartition_type': 'tax',
-                    'account_id': ref('account_tcp_81010'),
+                    'account_id': ref('account_tcp_8101000'),
                 }),
             ]"/>
             <field name="tax_group_id" ref="cu_tax_group_sale"/>

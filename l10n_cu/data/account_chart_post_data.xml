@@ -7,4 +7,11 @@
         <field name="property_account_income_categ_id" ref="account_common_9000000"/>
         <field name="default_pos_receivable_account_id" ref="account_common_1300006"/>
     </record>
+    <record id="l10n_cu_chart_template_freelance" model="account.chart.template">
+        <field name="property_account_receivable_id" ref="account_tcp_1350000"/>
+        <field name="property_account_payable_id" ref="account_tcp_4050000"/>
+        <field name="property_account_expense_categ_id" ref="account_tcp_7000000"/>
+        <field name="property_account_income_categ_id" ref="account_tcp_9000000"/>
+        <field name="default_pos_receivable_account_id" ref="account_tcp_1350000"/>
+    </record>
 </odoo>
