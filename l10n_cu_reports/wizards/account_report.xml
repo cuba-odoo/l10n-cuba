@@ -6,7 +6,6 @@
         <field name="arch" type="xml">
             <form string="Report Options">
                 <group col="4">
-                    <!-- <field name="date_from"/> -->
                     <field name="date_to"/>
                     <field name="target_move" widget="radio"/>
                     <field name="display_account" widget="radio"/>
@@ -49,13 +48,15 @@
         <field name="context" eval="{'default_account_report_id':ref('financial_report_evab'), 'efc': 'evab'}"/>
     </record>
 
+<!--    Overwrite menu-->
+    <delete id="accounting_pdf_reports.menu_account_report_bs" model="ir.ui.menu"/>
     <menuitem id="accounting_pdf_reports.menu_account_report_bs"
               name="Estado de Situación (5920-04)"
               sequence="5"
               action="accounting_pdf_reports.action_account_report_bs"
               parent="accounting_pdf_reports.menu_finance_legal_statement"
               groups="account.group_account_user,account.group_account_manager"/>
-
+    <delete id="accounting_pdf_reports.menu_account_report_pl" model="ir.ui.menu"/>
     <menuitem id="accounting_pdf_reports.menu_account_report_pl"
               name="Estado de Rendimiento Financiero (5921-04)"
               sequence="6"
@@ -76,30 +77,31 @@
               groups="account.group_account_user"/>
 
     <menuitem id="accounting_pdf_reports.menu_finance_partner_reports"
-                  name="Reporte de Empresas"
-                  sequence="20"
-                  parent="account.menu_finance_reports"/>
+              name="Reporte de Empresas"
+              sequence="20"
+              parent="account.menu_finance_reports"/>
 
     <menuitem id="accounting_pdf_reports.menu_aged_receivable"
-        name="Saldo vencido por cobrar"
-        sequence="20"
-        action="accounting_pdf_reports.action_account_aged_receivable"
-        parent="accounting_pdf_reports.menu_finance_partner_reports"/>
+              name="Saldo vencido por cobrar"
+              sequence="20"
+              action="accounting_pdf_reports.action_account_aged_receivable"
+              parent="accounting_pdf_reports.menu_finance_partner_reports"/>
 
     <menuitem id="accounting_pdf_reports.menu_aged_payable"
-        name="Saldo vencido por pagar"
-        sequence="30"
-        action="accounting_pdf_reports.action_account_aged_payable"
-        parent="accounting_pdf_reports.menu_finance_partner_reports"/>
+              name="Saldo vencido por pagar"
+              sequence="30"
+              action="accounting_pdf_reports.action_account_aged_payable"
+              parent="accounting_pdf_reports.menu_finance_partner_reports"/>
 
     <menuitem id="accounting_pdf_reports.menu_finance_audit_reports"
-                  name="Informes de Auditoría"
-                  sequence="30"
-                  parent="account.menu_finance_reports"/>
+              name="Informes de Auditoría"
+              sequence="30"
+              parent="account.menu_finance_reports"/>
+
     <menuitem id="accounting_pdf_reports.menu_general_balance_report"
-        name="Balance de comprobación"
-        sequence="20"
-        parent="accounting_pdf_reports.menu_finance_audit_reports"
-        action="accounting_pdf_reports.action_account_balance_menu"
-        groups="account.group_account_user,account.group_account_manager"/>
+              name="Balance de comprobación"
+              sequence="20"
+              parent="accounting_pdf_reports.menu_finance_audit_reports"
+              action="accounting_pdf_reports.action_account_balance_menu"
+              groups="account.group_account_user,account.group_account_manager"/>
 </odoo>
