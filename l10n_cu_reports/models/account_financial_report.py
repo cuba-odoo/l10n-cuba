@@ -7,4 +7,11 @@ class AccountFinancialReport(models.Model):
     plan_anual = fields.Float("Plan Anual", help="Lo que se definión en el presupuesto.")
     apertura = fields.Float("Apertura")
     visible = fields.Boolean('Visible', default=True)
+    type = fields.Selection(selection=[
+        ('sum', 'View'),
+        ('accounts', 'Accounts'),
+        ('account_group', 'Account Group'),
+        ('account_type', 'Account Type'),
+        ('account_report', 'Report Value'),
+    ])
 
