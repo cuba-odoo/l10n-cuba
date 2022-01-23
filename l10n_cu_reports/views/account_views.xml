@@ -6,23 +6,19 @@
         <field name="inherit_id" ref="accounting_pdf_reports.view_account_financial_report_form"/>
         <field name="arch" type="xml">
             <xpath expr="//notebook" position="inside">
-<!--                <notebook>-->
-                    <page string="General">
-                        <group>
-                            <field name="plan_anual"/>
-                            <field name="apertura"/>
-                            <field name="visible"/>
-                        </group>
-                    </page>
-<!--                    <page string="Report" attrs="{'invisible': [('type','not in',['accounts','account_type', 'account_report'])]}">-->
-<!--                        <group>-->
-<!--                            <field name="display_detail" attrs="{'invisible': [('type','not in',['accounts','account_type'])]}"/>-->
-<!--                            <field name="account_report_id" attrs="{'invisible': [('type', '!=', 'account_report')]}"/>-->
-<!--                        </group>-->
-<!--                        <field name="account_ids" attrs="{'invisible': [('type', '!=', 'accounts')]}"/>-->
-<!--                        <field name="account_type_ids" attrs="{'invisible': [('type', '!=', 'account_type')]}"/>-->
-<!--                    </page>-->
-<!--                </notebook>-->
+                <page string="General">
+                    <group>
+                        <field name="plan_anual"/>
+                        <field name="apertura"/>
+                        <field name="visible"/>
+                    </group>
+                </page>
+            </xpath>
+            <xpath expr="//notebook" position="attributes">
+                <attribute name="attrs">{'invisible': [('type','not in',['accounts','account_type', 'account_report', 'account_reports'])]}</attribute>
+            </xpath>
+            <xpath expr="//notebook/page/group" position="inside">
+                <field name="account_report_ids" attrs="{'invisible': [('type', '!=', 'account_reports')]}"/>
             </xpath>
         </field>
     </record>
