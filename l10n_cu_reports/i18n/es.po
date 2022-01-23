@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 14.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-01-02 17:08+0000\n"
-"PO-Revision-Date: 2022-01-02 17:08+0000\n"
+"POT-Creation-Date: 2022-01-23 21:07+0000\n"
+"PO-Revision-Date: 2022-01-23 21:07+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -16,9 +16,21 @@ msgstr ""
 "Plural-Forms: \n"
 
 #. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_er_36
+msgid ""
+" Ingresos por Recobro de Estadía (importadores y otras entidades) (928 – "
+"929)"
+msgstr ""
+
+#. module: l10n_cu_reports
 #: model_terms:ir.ui.view,arch_db:l10n_cu_reports.report_partnerbalance
 msgid "(Account/Partner) Name"
 msgstr "(Cuenta/Partner) Nombre"
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_er_23
+msgid "-  Gastos por Estadía – Otras Entidades (843)"
+msgstr ""
 
 #. module: l10n_cu_reports
 #: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_er_09
@@ -73,6 +85,11 @@ msgstr ""
 #. module: l10n_cu_reports
 #: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_er_30
 msgid "- Gastos de Recuperación de Desastres (873)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_er_22
+msgid "- Gastos por Estadía – Importadores (841)"
 msgstr ""
 
 #. module: l10n_cu_reports
@@ -194,7 +211,6 @@ msgid "<strong>(5920-04)</strong>"
 msgstr ""
 
 #. module: l10n_cu_reports
-#: model_terms:ir.ui.view,arch_db:l10n_cu_reports.report_financial_evab
 #: model_terms:ir.ui.view,arch_db:l10n_cu_reports.report_financial_pl
 msgid "<strong>(5921-04)</strong>"
 msgstr ""
@@ -205,8 +221,8 @@ msgid "<strong>(5924-04)</strong>"
 msgstr ""
 
 #. module: l10n_cu_reports
-#: model_terms:ir.ui.view,arch_db:l10n_cu_reports.report_financial_ei
-msgid "<strong>(5925-04)</strong>"
+#: model_terms:ir.ui.view,arch_db:l10n_cu_reports.report_financial_evab
+msgid "<strong>(5926-04)</strong>"
 msgstr ""
 
 #. module: l10n_cu_reports
@@ -217,7 +233,6 @@ msgstr ""
 #. module: l10n_cu_reports
 #: model_terms:ir.ui.view,arch_db:l10n_cu_reports.report_financial_bs
 #: model_terms:ir.ui.view,arch_db:l10n_cu_reports.report_financial_ege
-#: model_terms:ir.ui.view,arch_db:l10n_cu_reports.report_financial_ei
 #: model_terms:ir.ui.view,arch_db:l10n_cu_reports.report_financial_evab
 #: model_terms:ir.ui.view,arch_db:l10n_cu_reports.report_financial_pl
 msgid "<strong>CONCEPTOS</strong>"
@@ -229,14 +244,8 @@ msgid "<strong>ESTADOS FINANCIEROS</strong>"
 msgstr ""
 
 #. module: l10n_cu_reports
-#: model_terms:ir.ui.view,arch_db:l10n_cu_reports.report_financial_ei
-msgid "<strong>Ejecución del Año hasta la fecha</strong>"
-msgstr ""
-
-#. module: l10n_cu_reports
 #: model_terms:ir.ui.view,arch_db:l10n_cu_reports.report_financial_bs
 #: model_terms:ir.ui.view,arch_db:l10n_cu_reports.report_financial_ege
-#: model_terms:ir.ui.view,arch_db:l10n_cu_reports.report_financial_ei
 #: model_terms:ir.ui.view,arch_db:l10n_cu_reports.report_financial_evab
 #: model_terms:ir.ui.view,arch_db:l10n_cu_reports.report_financial_pl
 msgid "<strong>Filas</strong>"
@@ -252,7 +261,6 @@ msgstr ""
 #. module: l10n_cu_reports
 #: model_terms:ir.ui.view,arch_db:l10n_cu_reports.report_financial_bs
 #: model_terms:ir.ui.view,arch_db:l10n_cu_reports.report_financial_ege
-#: model_terms:ir.ui.view,arch_db:l10n_cu_reports.report_financial_ei
 #: model_terms:ir.ui.view,arch_db:l10n_cu_reports.report_financial_evab
 #: model_terms:ir.ui.view,arch_db:l10n_cu_reports.report_financial_pl
 msgid "<strong>Plan Anual</strong>"
@@ -260,7 +268,6 @@ msgstr ""
 
 #. module: l10n_cu_reports
 #: model_terms:ir.ui.view,arch_db:l10n_cu_reports.report_financial_ege
-#: model_terms:ir.ui.view,arch_db:l10n_cu_reports.report_financial_ei
 #: model_terms:ir.ui.view,arch_db:l10n_cu_reports.report_financial_evab
 #: model_terms:ir.ui.view,arch_db:l10n_cu_reports.report_financial_pl
 msgid "<strong>Plan hasta la fecha</strong>"
@@ -318,9 +325,19 @@ msgid "Account Report"
 msgstr "Reporte de Cuenta"
 
 #. module: l10n_cu_reports
+#: model:ir.model.fields.selection,name:l10n_cu_reports.selection__account_financial_report__type__account_type
+msgid "Account Type"
+msgstr "Tipo de Cuenta"
+
+#. module: l10n_cu_reports
 #: model:ir.model,name:l10n_cu_reports.model_accounting_report
 msgid "Accounting Report"
 msgstr "Reporte de Contabilidad"
+
+#. module: l10n_cu_reports
+#: model:ir.model.fields.selection,name:l10n_cu_reports.selection__account_financial_report__type__accounts
+msgid "Accounts"
+msgstr "Cuentas"
 
 #. module: l10n_cu_reports
 #: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_es_01
@@ -446,6 +463,11 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:l10n_cu_reports.report_ncif
 msgid "Cancel"
 msgstr "Cancelar"
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_es_130
+msgid "Capital Social Suscrito y Pagado"
+msgstr ""
 
 #. module: l10n_cu_reports
 #: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_es_97
@@ -578,6 +600,16 @@ msgid "DIVISIÓN"
 msgstr ""
 
 #. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_ege_05
+msgid "De ellos: Salario Escala"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_ege_12
+msgid "De ellos: Servicios Comprados entre entidades"
+msgstr ""
+
+#. module: l10n_cu_reports
 #: model_terms:ir.ui.view,arch_db:l10n_cu_reports.report_partnerbalance
 msgid "Debit"
 msgstr "Débito"
@@ -639,7 +671,6 @@ msgstr "Mostrar cuentas"
 #: model:ir.model.fields,field_description:l10n_cu_reports.field_report_accounting_pdf_reports_report_financial__display_name
 #: model:ir.model.fields,field_description:l10n_cu_reports.field_report_l10n_cu_reports_report_financial_bs__display_name
 #: model:ir.model.fields,field_description:l10n_cu_reports.field_report_l10n_cu_reports_report_financial_ege__display_name
-#: model:ir.model.fields,field_description:l10n_cu_reports.field_report_l10n_cu_reports_report_financial_ei__display_name
 #: model:ir.model.fields,field_description:l10n_cu_reports.field_report_l10n_cu_reports_report_financial_evab__display_name
 #: model:ir.model.fields,field_description:l10n_cu_reports.field_report_l10n_cu_reports_report_financial_pl__display_name
 #: model:ir.model.fields,field_description:l10n_cu_reports.field_report_l10n_cu_reports_report_partnerbalance__display_name
@@ -683,6 +714,16 @@ msgid "Donaciones Entregadas - Nacionales (626)"
 msgstr ""
 
 #. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_es_133
+msgid "Donaciones Recibidas – Exterior (621)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_es_132
+msgid "Donaciones Recibidas – Nacionales (620)"
+msgstr ""
+
+#. module: l10n_cu_reports
 #: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_ege
 msgid "ESTADO DE GASTOS POR ELEMENTOS"
 msgstr ""
@@ -695,6 +736,11 @@ msgstr ""
 #. module: l10n_cu_reports
 #: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_es
 msgid "ESTADO DE SITUACIÓN"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.financial_report_evab
+msgid "ESTADO DE VALOR AGREGADO BRUTO"
 msgstr ""
 
 #. module: l10n_cu_reports
@@ -770,6 +816,7 @@ msgid ""
 msgstr ""
 
 #. module: l10n_cu_reports
+#: model:ir.actions.report,name:l10n_cu_reports.action_ncc_accounting_pdf_reports_report_ege
 #: model:ir.model,name:l10n_cu_reports.model_report_l10n_cu_reports_report_financial_ege
 msgid "Estado de Gasto por Elemento"
 msgstr ""
@@ -780,8 +827,8 @@ msgid "Estado de Gastos por Elementos"
 msgstr ""
 
 #. module: l10n_cu_reports
-#: model:ir.model,name:l10n_cu_reports.model_report_l10n_cu_reports_report_financial_ei
-msgid "Estado de Inversiones"
+#: model:ir.ui.menu,name:l10n_cu_reports.menu_account_report_ege
+msgid "Estado de Gastos por Elementos (5924-04)"
 msgstr ""
 
 #. module: l10n_cu_reports
@@ -790,9 +837,15 @@ msgid "Estado de Situación"
 msgstr ""
 
 #. module: l10n_cu_reports
-#: model:ir.actions.report,name:l10n_cu_reports.action_ncc_accounting_pdf_reports_report_ege
+#: model:ir.actions.act_window,name:l10n_cu_reports.action_account_report_evab
+#: model:ir.actions.report,name:l10n_cu_reports.action_ncc_accounting_pdf_reports_report_evab
 #: model:ir.model,name:l10n_cu_reports.model_report_l10n_cu_reports_report_financial_evab
 msgid "Estado de Valor Agregado Bruto"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:ir.ui.menu,name:l10n_cu_reports.menu_account_report_evab
+msgid "Estado de Valor Agregado Bruto (5926-04)"
 msgstr ""
 
 #. module: l10n_cu_reports
@@ -806,6 +859,7 @@ msgid "Financial Reports"
 msgstr "Reportes financieros"
 
 #. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.financial_report_evab_02
 #: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_er_32
 msgid "Financiamiento Recibido de las Empresas (923)"
 msgstr ""
@@ -818,6 +872,11 @@ msgstr ""
 #. module: l10n_cu_reports
 #: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_es_59
 msgid "Fondos Bibliotecarios (252)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.financial_report_evab_18
+msgid "Gasto Material"
 msgstr ""
 
 #. module: l10n_cu_reports
@@ -851,23 +910,27 @@ msgid "Gastos por importación de servicios"
 msgstr ""
 
 #. module: l10n_cu_reports
+#: model_terms:ir.ui.view,arch_db:l10n_cu_reports.view_account_financial_report_form_inherit
+msgid "General"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:ir.model.fields,help:l10n_cu_reports.field_account_financial_report__account_report_ids
+msgid "Hola"
+msgstr ""
+
+#. module: l10n_cu_reports
 #: model:ir.model.fields,field_description:l10n_cu_reports.field_account_financial_report__id
 #: model:ir.model.fields,field_description:l10n_cu_reports.field_account_partner_balance__id
 #: model:ir.model.fields,field_description:l10n_cu_reports.field_accounting_report__id
 #: model:ir.model.fields,field_description:l10n_cu_reports.field_report_accounting_pdf_reports_report_financial__id
 #: model:ir.model.fields,field_description:l10n_cu_reports.field_report_l10n_cu_reports_report_financial_bs__id
 #: model:ir.model.fields,field_description:l10n_cu_reports.field_report_l10n_cu_reports_report_financial_ege__id
-#: model:ir.model.fields,field_description:l10n_cu_reports.field_report_l10n_cu_reports_report_financial_ei__id
 #: model:ir.model.fields,field_description:l10n_cu_reports.field_report_l10n_cu_reports_report_financial_evab__id
 #: model:ir.model.fields,field_description:l10n_cu_reports.field_report_l10n_cu_reports_report_financial_pl__id
 #: model:ir.model.fields,field_description:l10n_cu_reports.field_report_l10n_cu_reports_report_partnerbalance__id
 msgid "ID"
 msgstr "ID (identificación)"
-
-#. module: l10n_cu_reports
-#: model_terms:ir.ui.view,arch_db:l10n_cu_reports.view_account_financial_report_form_inherit
-msgid "Informe"
-msgstr ""
 
 #. module: l10n_cu_reports
 #: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_es_20
@@ -907,6 +970,11 @@ msgstr ""
 #. module: l10n_cu_reports
 #: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_er_39
 msgid "Ingresos por Donaciones Recibidas (953)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_er_35
+msgid "Ingresos por Estadía (navieras y operadores) (926–927)"
 msgstr ""
 
 #. module: l10n_cu_reports
@@ -976,7 +1044,6 @@ msgstr "Diarios"
 #: model:ir.model.fields,field_description:l10n_cu_reports.field_report_accounting_pdf_reports_report_financial____last_update
 #: model:ir.model.fields,field_description:l10n_cu_reports.field_report_l10n_cu_reports_report_financial_bs____last_update
 #: model:ir.model.fields,field_description:l10n_cu_reports.field_report_l10n_cu_reports_report_financial_ege____last_update
-#: model:ir.model.fields,field_description:l10n_cu_reports.field_report_l10n_cu_reports_report_financial_ei____last_update
 #: model:ir.model.fields,field_description:l10n_cu_reports.field_report_l10n_cu_reports_report_financial_evab____last_update
 #: model:ir.model.fields,field_description:l10n_cu_reports.field_report_l10n_cu_reports_report_financial_pl____last_update
 #: model:ir.model.fields,field_description:l10n_cu_reports.field_report_l10n_cu_reports_report_partnerbalance____last_update
@@ -995,7 +1062,7 @@ msgstr ""
 
 #. module: l10n_cu_reports
 #: model:ir.model.fields,help:l10n_cu_reports.field_account_financial_report__plan_anual
-msgid "Lo que se definión en el presupuesto."
+msgid "Lo que se definió en el presupuesto."
 msgstr ""
 
 #. module: l10n_cu_reports
@@ -1039,6 +1106,37 @@ msgid "Medios y Equipos para Alquilar (253)"
 msgstr ""
 
 #. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.financial_report_evab_07
+msgid ""
+"Menos: Aumento de la existencia de Producción Terminada por\n"
+"conceptos distintos al de producción y entrega (188 – 0040)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.financial_report_evab_12
+msgid ""
+"Menos: Gastos incorporados a las producciones en proceso\n"
+"proveniente del almacén de las producciones de insumo o autoconsumo (196 – 0030)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.financial_report_evab_06
+msgid "Menos: Saldo de la Cuenta Producción Terminada al Inicio del Año (188)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.financial_report_evab_04
+msgid ""
+"Menos: Saldo de la Cuenta Producción en Proceso al Inicio del Año (700 – "
+"724)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.financial_report_evab_16
+msgid "Menos: Saldo de la cuenta Costo de Ventas de Mercancías (814 – 817)"
+msgstr ""
+
+#. module: l10n_cu_reports
 #: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_es_31
 msgid "Mercancías para la Venta (189)"
 msgstr ""
@@ -1046,6 +1144,59 @@ msgstr ""
 #. module: l10n_cu_reports
 #: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_es_62
 msgid "Monumentos y Obras de Arte (254)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.financial_report_evab_08
+msgid ""
+"Más: Disminución de la existencia de Producción Terminada por\n"
+"conceptos distintos al de producción y entrega (188 – 0050)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.financial_report_evab_13
+msgid ""
+"Más: Gastos del período de Reparaciones Capitales con Medios Propios (726 – "
+"0020)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.financial_report_evab_14
+msgid ""
+"Más: Gastos del período de las Inversiones con Medios Propios Activos Fijos "
+"Intangibles (727 - 0020)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.financial_report_evab_10
+msgid ""
+"Más: Gastos del período de las producciones destinadas al insumo (725 – "
+"0020)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.financial_report_evab_15
+msgid ""
+"Más: Gastos del período por Inversiones con Medios Propios (728 – 0020)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.financial_report_evab_09
+msgid ""
+"Más: Gastos diferidos del período relacionados con procesos\n"
+"productivos y de servicios (300 – 305 – 0020)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.financial_report_evab_03
+msgid "Más: Saldo de la Cuenta Producción en Proceso (700 – 724)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.financial_report_evab_11
+msgid ""
+"Más: Saldo de las cuentas de Otros Ingresos e Ingresos Financieros\n"
+"(Excepto variación de tasas de cambio y los dividendos) (920 – 922 + 950 – 952)"
 msgstr ""
 
 #. module: l10n_cu_reports
@@ -1109,6 +1260,7 @@ msgid "Otros Activos"
 msgstr ""
 
 #. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.financial_report_evab_19
 #: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_ege_11
 msgid "Otros Gastos Monetarios"
 msgstr ""
@@ -1362,14 +1514,20 @@ msgid "Reparación y Mantenimiento de Viales"
 msgstr ""
 
 #. module: l10n_cu_reports
-#: model_terms:ir.ui.view,arch_db:l10n_cu_reports.view_account_financial_report_form_inherit
-msgid "Report"
-msgstr "Reporte"
-
-#. module: l10n_cu_reports
 #: model_terms:ir.ui.view,arch_db:l10n_cu_reports.report_ncif
 msgid "Report Options"
 msgstr "Opciones de reporte"
+
+#. module: l10n_cu_reports
+#: model:ir.model.fields,field_description:l10n_cu_reports.field_account_financial_report__account_report_ids
+#: model:ir.model.fields.selection,name:l10n_cu_reports.selection__account_financial_report__type__account_report
+msgid "Report Value"
+msgstr "Valor del Informe"
+
+#. module: l10n_cu_reports
+#: model:ir.model.fields.selection,name:l10n_cu_reports.selection__account_financial_report__type__account_reports
+msgid "Reports Value"
+msgstr "Valor de los Informes"
 
 #. module: l10n_cu_reports
 #: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_es_136
@@ -1397,13 +1555,8 @@ msgid "Salario"
 msgstr ""
 
 #. module: l10n_cu_reports
-#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_ege_05
-msgid "Salario Escala"
-msgstr ""
-
-#. module: l10n_cu_reports
-#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_ege_12
-msgid "Servicios Comprados entre entidades"
+#: model:account.financial.report,name:l10n_cu_reports.financial_report_evab_05
+msgid "Saldo de la Cuenta Producción Terminada (188)"
 msgstr ""
 
 #. module: l10n_cu_reports
@@ -1425,6 +1578,11 @@ msgstr ""
 #: model:ir.model.fields,field_description:l10n_cu_reports.field_account_partner_balance__date_from
 msgid "Start Date"
 msgstr "Fecha de inicio"
+
+#. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_ege_00
+msgid "Subtotal de gastos por elementos"
+msgstr ""
 
 #. module: l10n_cu_reports
 #: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_er_04
@@ -1478,6 +1636,11 @@ msgid "Total de Inventarios"
 msgstr ""
 
 #. module: l10n_cu_reports
+#: model:ir.model.fields,field_description:l10n_cu_reports.field_account_financial_report__type
+msgid "Type"
+msgstr "Tipo"
+
+#. module: l10n_cu_reports
 #: code:addons/l10n_cu_reports/reports/report_partner_balance.py:0
 #, python-format
 msgid "Unknown Partner"
@@ -1499,6 +1662,11 @@ msgid "Ventas de Bienes con destino a la Exportación (914)"
 msgstr ""
 
 #. module: l10n_cu_reports
+#: model:account.financial.report,name:l10n_cu_reports.financial_report_evab_01
+msgid "Ventas o Ingresos Netos"
+msgstr ""
+
+#. module: l10n_cu_reports
 #: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_er_03
 msgid "Ventas por Exportación de Servicios (915)"
 msgstr ""
@@ -1506,6 +1674,16 @@ msgstr ""
 #. module: l10n_cu_reports
 #: model:account.financial.report,name:l10n_cu_reports.ncc_financial_report_es_36
 msgid "Vestuario y Lencería (192)"
+msgstr ""
+
+#. module: l10n_cu_reports
+#: model:ir.model.fields.selection,name:l10n_cu_reports.selection__account_financial_report__type__sum
+msgid "View"
+msgstr "Ver"
+
+#. module: l10n_cu_reports
+#: model:ir.model.fields,field_description:l10n_cu_reports.field_account_financial_report__visible
+msgid "Visible"
 msgstr ""
 
 #. module: l10n_cu_reports

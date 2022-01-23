@@ -20,9 +20,10 @@
         <record id="financial_report_evab_02" model="account.financial.report">
             <field name="name">Financiamiento Recibido de las Empresas (923)</field>
             <field name="sign">1</field>
-            <field name="type">account_report</field>
+            <field name="type">accounts</field>
             <field name="sequence">2</field>
-            <field name="account_report_id" ref="ncc_financial_report_er_32"/>
+            <field name="display_detail">detail_with_hierarchy</field>
+            <field name="account_ids" search="[('code', 'like', '923.%')]"/>
             <field name="parent_id" ref="financial_report_evab"/>
         </record>
         <record id="financial_report_evab_03" model="account.financial.report">
@@ -104,9 +105,7 @@ productivos y de servicios (300 – 305 – 0020)</field>
             <field name="sign">-1</field>
             <field name="type">account_reports</field>
             <field name="sequence">11</field>
-<!--            <field name="display_detail">detail_with_hierarchy</field>-->
             <field name="parent_id" ref="financial_report_evab"/>
-<!--            <field name="account_ids" search="[('code', 'like', '920.%'), ('code', 'like', '950.%')]"/>-->
             <field name="account_report_ids" eval="[(6, 0, [ref('ncc_financial_report_er_31'),
                                                     ref('ncc_financial_report_er_38')])]"/>
         </record>
@@ -161,6 +160,34 @@ proveniente del almacén de las producciones de insumo o autoconsumo (196 – 00
 <!--            <field name="type">account_reports</field>-->
 <!--            <field name="sequence">17</field>-->
 <!--&lt;!&ndash;            <field name="display_detail">detail_with_hierarchy</field>&ndash;&gt;-->
+<!--            <field name="parent_id" ref="financial_report_evab"/>-->
+<!--            <field name="account_report_ids" eval="[(6, 0, [ref('financial_report_evab_01'),-->
+<!--                                                    ref('financial_report_evab_02'),-->
+<!--                                                    ref('financial_report_evab_03')])]"/>-->
+<!--        </record>-->
+        <record id="financial_report_evab_18" model="account.financial.report">
+            <field name="name">Gasto Material</field>
+            <field name="sign">1</field>
+            <field name="type">account_reports</field>
+            <field name="sequence">18</field>
+            <field name="parent_id" ref="financial_report_evab"/>
+            <field name="account_report_ids" eval="[(6, 0, [ref('ncc_financial_report_ege_01'),
+                                                    ref('ncc_financial_report_ege_02'),
+                                                    ref('ncc_financial_report_ege_03')])]"/>
+        </record>
+        <record id="financial_report_evab_19" model="account.financial.report">
+            <field name="name">Otros Gastos Monetarios</field>
+            <field name="sign">1</field>
+            <field name="type">account_report</field>
+            <field name="sequence">19</field>
+            <field name="parent_id" ref="financial_report_evab"/>
+            <field name="account_report_id" ref="ncc_financial_report_ege_11"/>
+        </record>
+<!--        <record id="financial_report_evab_22" model="account.financial.report">-->
+<!--            <field name="name">VALOR AGREGADO BRUTO CREADO</field>-->
+<!--            <field name="sign">1</field>-->
+<!--            <field name="type">account_reports</field>-->
+<!--            <field name="sequence">22</field>-->
 <!--            <field name="parent_id" ref="financial_report_evab"/>-->
 <!--            <field name="account_report_ids" eval="[(6, 0, [ref('financial_report_evab_01'),-->
 <!--                                                    ref('financial_report_evab_02'),-->

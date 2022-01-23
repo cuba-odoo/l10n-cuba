@@ -17,4 +17,3 @@ class AccountFinancialReport(models.Model):
     ])
     account_report_ids = fields.Many2many('account.financial.report', 'rel_account_report', 'account_report_id',
                                           'account_report_rel_id', string='Report Value', help="Hola")
-
