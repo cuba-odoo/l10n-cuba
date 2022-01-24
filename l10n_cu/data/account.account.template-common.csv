@@ -376,7 +376,7 @@
 "account_common_5800060","Personas Naturales","580.0060","account.data_account_type_payable","l10n_cu_chart_template_common",1,"Otros Pasivos"
 "account_common_7000000","Producción en Proceso","700.0000","account.data_account_type_expenses","l10n_cu_chart_template_common",0,"Gastos de Producción"
 "account_common_7000010","Saldo al Inicio del Año","700.0010","account.data_account_type_expenses","l10n_cu_chart_template_common",0,"Gastos de Producción"
-"account_common_7000020","Gastos del Período","7000.020","account.data_account_type_expenses","l10n_cu_chart_template_common",0,"Gastos de Producción"
+"account_common_7000020","Gastos del Período","7000.0020","account.data_account_type_expenses","l10n_cu_chart_template_common",0,"Gastos de Producción"
 "account_common_7000030","Aumento","700.0030","account.data_account_type_expenses","l10n_cu_chart_template_common",0,"Gastos de Producción"
 "account_common_7000040","Disminución","700.0040","account.data_account_type_expenses","l10n_cu_chart_template_common",0,"Gastos de Producción"
 "account_common_7000050","Traspaso a Producción Terminada","700.0050","account.data_account_type_expenses","l10n_cu_chart_template_common",0,"Gastos de Producción"
