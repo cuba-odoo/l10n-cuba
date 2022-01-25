@@ -193,6 +193,7 @@
             <field name="sequence">18</field>
             <field name="display_detail">detail_with_hierarchy</field>
             <field name="parent_id" ref="ncc_financial_report_er"/>
+            <field name="account_ids" search="[('code', 'like', '825.%')]"/>
         </record>
         <record id="ncc_financial_report_er_19" model="account.financial.report">
             <field name="name">- Gastos Financieros (835 - 838)</field>
@@ -222,7 +223,7 @@
             <field name="account_ids" search="[('code', 'like', '841.%')]"/>
         </record>
         <record id="ncc_financial_report_er_23" model="account.financial.report">
-            <field name="name">-  Gastos por Estadía – Otras Entidades (843)</field>
+            <field name="name">- Gastos por Estadía – Otras Entidades (843)</field>
             <field name="sign">1</field>
             <field name="type">accounts</field>
             <field name="sequence">23</field>

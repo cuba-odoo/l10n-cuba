@@ -107,7 +107,7 @@ productivos y de servicios (300 – 305 – 0020)</field>
             <field name="sequence">11</field>
             <field name="parent_id" ref="financial_report_evab"/>
             <field name="account_report_ids" eval="[(6, 0, [ref('ncc_financial_report_er_31'),
-                                                    ref('ncc_financial_report_er_38')])]"/>
+                                                            ref('ncc_financial_report_er_38')])]"/>
         </record>
         <record id="financial_report_evab_12" model="account.financial.report">
             <field name="name">Menos: Gastos incorporados a las producciones en proceso
@@ -161,20 +161,20 @@ proveniente del almacén de las producciones de insumo o autoconsumo (196 – 00
             <field name="sequence">17</field>
             <field name="parent_id" ref="financial_report_evab"/>
             <field name="account_report_ids" eval="[(6, 0, [ref('financial_report_evab_01'),
-                                                    ref('financial_report_evab_02'),
-                                                    ref('financial_report_evab_03'),
-                                                    ref('financial_report_evab_04'),
-                                                    ref('financial_report_evab_05'),
-                                                    ref('financial_report_evab_06'),
-                                                    ref('financial_report_evab_07'),
-                                                    ref('financial_report_evab_08'),
-                                                    ref('financial_report_evab_09'),
-                                                    ref('financial_report_evab_10'),
-                                                    ref('financial_report_evab_11'),
-                                                    ref('financial_report_evab_12'),
-                                                    ref('financial_report_evab_13'),
-                                                    ref('financial_report_evab_15'),
-                                                    ref('financial_report_evab_16')])]"/>
+                                                            ref('financial_report_evab_02'),
+                                                            ref('financial_report_evab_03'),
+                                                            ref('financial_report_evab_04'),
+                                                            ref('financial_report_evab_05'),
+                                                            ref('financial_report_evab_06'),
+                                                            ref('financial_report_evab_07'),
+                                                            ref('financial_report_evab_08'),
+                                                            ref('financial_report_evab_09'),
+                                                            ref('financial_report_evab_10'),
+                                                            ref('financial_report_evab_11'),
+                                                            ref('financial_report_evab_12'),
+                                                            ref('financial_report_evab_13'),
+                                                            ref('financial_report_evab_15'),
+                                                            ref('financial_report_evab_16')])]"/>
         </record>
         <record id="financial_report_evab_18" model="account.financial.report">
             <field name="name">Gasto Material</field>
@@ -183,8 +183,8 @@ proveniente del almacén de las producciones de insumo o autoconsumo (196 – 00
             <field name="sequence">18</field>
             <field name="parent_id" ref="financial_report_evab"/>
             <field name="account_report_ids" eval="[(6, 0, [ref('ncc_financial_report_ege_01'),
-                                                    ref('ncc_financial_report_ege_02'),
-                                                    ref('ncc_financial_report_ege_03')])]"/>
+                                                            ref('ncc_financial_report_ege_02'),
+                                                            ref('ncc_financial_report_ege_03')])]"/>
         </record>
         <record id="financial_report_evab_19" model="account.financial.report">
             <field name="name">Otros Gastos Monetarios</field>
