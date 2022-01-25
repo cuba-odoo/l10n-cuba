@@ -156,13 +156,25 @@ proveniente del almacén de las producciones de insumo o autoconsumo (196 – 00
         </record>
         <record id="financial_report_evab_17" model="account.financial.report">
             <field name="name">PRODUCCIÓN DE BIENES Y SERVICIOS</field>
-            <field name="sign">1</field>
+            <field name="sign">-1</field>
             <field name="type">account_reports</field>
             <field name="sequence">17</field>
             <field name="parent_id" ref="financial_report_evab"/>
-<!--            <field name="account_report_ids" eval="[(6, 0, [ref('financial_report_evab_01'),-->
-<!--                                                    ref('financial_report_evab_02'),-->
-<!--                                                    ref('financial_report_evab_03')])]"/>-->
+            <field name="account_report_ids" eval="[(6, 0, [ref('financial_report_evab_01'),
+                                                    ref('financial_report_evab_02'),
+                                                    ref('financial_report_evab_03'),
+                                                    ref('financial_report_evab_04'),
+                                                    ref('financial_report_evab_05'),
+                                                    ref('financial_report_evab_06'),
+                                                    ref('financial_report_evab_07'),
+                                                    ref('financial_report_evab_08'),
+                                                    ref('financial_report_evab_09'),
+                                                    ref('financial_report_evab_10'),
+                                                    ref('financial_report_evab_11'),
+                                                    ref('financial_report_evab_12'),
+                                                    ref('financial_report_evab_13'),
+                                                    ref('financial_report_evab_15'),
+                                                    ref('financial_report_evab_16')])]"/>
         </record>
         <record id="financial_report_evab_18" model="account.financial.report">
             <field name="name">Gasto Material</field>
@@ -182,15 +194,23 @@ proveniente del almacén de las producciones de insumo o autoconsumo (196 – 00
             <field name="parent_id" ref="financial_report_evab"/>
             <field name="account_report_id" ref="ncc_financial_report_ege_11"/>
         </record>
-<!--        <record id="financial_report_evab_22" model="account.financial.report">-->
-<!--            <field name="name">VALOR AGREGADO BRUTO CREADO</field>-->
-<!--            <field name="sign">1</field>-->
-<!--            <field name="type">account_reports</field>-->
-<!--            <field name="sequence">22</field>-->
-<!--            <field name="parent_id" ref="financial_report_evab"/>-->
-<!--            <field name="account_report_ids" eval="[(6, 0, [ref('financial_report_evab_01'),-->
-<!--                                                    ref('financial_report_evab_02'),-->
-<!--                                                    ref('financial_report_evab_03')])]"/>-->
-<!--        </record>-->
+        <record id="financial_report_evab_21" model="account.financial.report">
+            <field name="name">CONSUMO INTERMEDIO</field>
+            <field name="sign">1</field>
+            <field name="type">account_reports</field>
+            <field name="sequence">21</field>
+            <field name="parent_id" ref="financial_report_evab"/>
+            <field name="account_report_ids" eval="[(6, 0, [ref('financial_report_evab_18'),
+                                                            ref('financial_report_evab_19')])]"/>
+        </record>
+        <record id="financial_report_evab_22" model="account.financial.report">
+            <field name="name">VALOR AGREGADO BRUTO CREADO</field>
+            <field name="sign">-1</field>
+            <field name="type">account_reports</field>
+            <field name="sequence">22</field>
+            <field name="parent_id" ref="financial_report_evab"/>
+            <field name="account_report_ids" eval="[(6, 0, [ref('financial_report_evab_17'),
+                                                            ref('financial_report_evab_21')])]"/>
+        </record>
     </data>
 </odoo>
