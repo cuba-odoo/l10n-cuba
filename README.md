@@ -15,17 +15,17 @@ Addons disponibles
 ----------------
 addon | versión | resumen
 --- | --- | ---
-[l10n_cu](l10n_cu/) | 14.0.1.0.0 | Módulo Base de la localización cubana.
-[l10n_cu_address](l10n_cu_address/) | 14.0.1.0.0 | Topónimos cubanos.
-[l10n_cu_banks](l10n_cu_banks/) | 14.0.1.0.0 | Define las sucursales bancarias.
-[l10n_cu_saclap](l10n_cu_saclap/) | 14.0.1.0.0 | Sistema Armonizado de Clasificación de Productos.
-[l10n_cu_hr](l10n_cu_hr/) |14.0.1.0.0 | Subsistema de Nóminas para localización cubana.
-[l10n_cu_hr_contract](l10n_cu_hr_contract/) |14.0.1.0.0| Módulo de contratos de empleados para la localización cubana. 
-[l10n_cu_hr_holidays](l10n_cu_hr_holidays/) |14.0.1.0.0| Módulo de control de vacaciones para la localización cubana. 
-[l10n_cu_hr_payroll](l10n_cu_hr_payroll/) |14.0.1.0.0| Módulo para control de los pagos de nóminas.
-[l10n_cu_hr_payroll_account](l10n_cu_hr_payroll_account/) |14.0.1.0.0| Módulo para control de los pagos de nóminas.
-[l10n_cu_hr_payroll_payment](l10n_cu_hr_payroll_payment/) |14.0.1.0.0| Módulo para control de los pagos de nóminas.
-[l10n_cu_reports](l10n_cu_reports/) |14.0.1.0.0| Módulo para Proformas de los reportes de estados financieros y demás documentos establecidos por la legislación vigente para sistemas contables en Cuba.
+[l10n_cu](l10n_cu/) | 15.0.1.0.0 | Módulo Base de la localización cubana.
+[l10n_cu_address](l10n_cu_address/) | 15.0.1.0.0 | Topónimos cubanos.
+[l10n_cu_banks](l10n_cu_banks/) | 15.0.1.0.0 | Define las sucursales bancarias.
+[l10n_cu_saclap](l10n_cu_saclap/) | 15.0.1.0.0 | Sistema Armonizado de Clasificación de Productos.
+[l10n_cu_hr](l10n_cu_hr/) |15.0.1.0.0 | Subsistema de Nóminas para localización cubana.
+[l10n_cu_hr_contract](l10n_cu_hr_contract/) |15.0.1.0.0| Módulo de contratos de empleados para la localización cubana. 
+[l10n_cu_hr_holidays](l10n_cu_hr_holidays/) |15.0.1.0.0| Módulo de control de vacaciones para la localización cubana. 
+[l10n_cu_hr_payroll](l10n_cu_hr_payroll/) |15.0.1.0.0| Módulo para control de los pagos de nóminas.
+[l10n_cu_hr_payroll_account](l10n_cu_hr_payroll_account/) |15.0.1.0.0| Módulo para control de los pagos de nóminas.
+[l10n_cu_hr_payroll_payment](l10n_cu_hr_payroll_payment/) |15.0.1.0.0| Módulo para control de los pagos de nóminas.
+[l10n_cu_reports](l10n_cu_reports/) |15.0.1.0.0| Módulo para Proformas de los reportes de estados financieros y demás documentos establecidos por la legislación vigente para sistemas contables en Cuba.
 
 Addons complementarios para la localización cubana.
 
