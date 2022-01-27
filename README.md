@@ -1,5 +1,9 @@
+## No apta aun para su uso . es una rama en desarrollo . 
+La comunidad Cubana de odoo no se hace responsable con el uso de
+los modulos de esta rama en desarrollo..
+
 # l10n-cuba
-## Localización cubana para odoo
+## Localización cubana para odoo V15 
 
 Repositorio de código del proyecto de localización cubana para el software de gestión integral Odoo. 
 
