@@ -1,8 +1,6 @@
-## Rama en desarrollo aun . no está funcional aun 
-La comunidad cubana de odoo no se hace responsable con los daños por el uso de los modulos de esta rama .
 
 # l10n-cuba
-## Localización cubana para odoo Version 15 en desarrollo.
+## Localización cubana para odoo
 No está funcional aun para odoo 15, estaremos informando el estado de esta version según vallamos sacando la misma.
 
 Repositorio de código del proyecto de localización cubana para el software de gestión integral Odoo. 
