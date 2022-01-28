@@ -36,6 +36,9 @@
         'data/account_fiscal_position_template_data.xml',
         'data/account_fiscal_position_tax_template_data.xml',
         'data/account_chart_template_data.xml',
+        'data/res_cnae_data.xml',
         "views/account_views.xml",
+        "views/res_company_views.xml",
+        "security/ir.model.access.csv"
     ],
 }

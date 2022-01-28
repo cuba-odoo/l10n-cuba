@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="l10n_cu_cnae_5610" model="res.cnae">
+            <field name="code">5610</field>
+            <field name="name">ACTIVIDADES DE RESTAURANTES Y DE SERVICIOS MÓVIL DE COMIDAS</field>
+        </record>
+        <record id="l10n_cu_cnae_6201" model="res.cnae">
+            <field name="code">6201</field>
+            <field name="name">ACTIVIDADES DE PROGRAMACIÓN INFORMÁTICA</field>
+        </record>
+    </data>
+</odoo>
