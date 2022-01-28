@@ -1,1 +1,0 @@
-from . import assistance_cards

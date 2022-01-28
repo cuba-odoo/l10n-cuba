@@ -13,6 +13,7 @@
         <field name="bank_account_code_prefix">109.</field>
         <field name="transfer_account_code_prefix">100.</field>
         <field name="currency_id" ref="base.CUP"/>
+        <field name="country_id" ref="base.cu"/>
     </record>
 
     <!-- Commmon Chart of Account  -->
@@ -24,6 +25,7 @@
         <field name="bank_account_code_prefix">109.</field>
         <field name="transfer_account_code_prefix">100.</field>
         <field name="currency_id" ref="base.CUP"/>
+        <field name="country_id" ref="base.cu"/>
     </record>
 
     <!-- Chart of Account for Public Company, except for Insurance's Company -->
@@ -36,6 +38,7 @@
         <field name="transfer_account_code_prefix">100.</field>
         <field name="parent_id" ref="l10n_cu_chart_template_common"/>
         <field name="currency_id" ref="base.CUP"/>
+        <field name="country_id" ref="base.cu"/>
     </record>
 
     <!-- Chart of Account for Private Company and Cooperative Sector -->
@@ -48,5 +51,6 @@
         <field name="transfer_account_code_prefix">100.</field>
         <field name="parent_id" ref="l10n_cu_chart_template_common"/>
         <field name="currency_id" ref="base.CUP"/>
+        <field name="country_id" ref="base.cu"/>
     </record>
 </odoo>
