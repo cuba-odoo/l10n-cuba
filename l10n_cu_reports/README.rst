@@ -27,11 +27,10 @@ Bug Tracker
 
 
 Authors
-=============
-
+==========
 * Comunidad Cubana de Odoo
 
 Contributors
 =============
 
-* Segu S.U.R.L
+* Segu 
