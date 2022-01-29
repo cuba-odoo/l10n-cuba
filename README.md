@@ -1,5 +1,7 @@
+
 # l10n-cuba
 ## Localización cubana para odoo
+
 
 Repositorio de código del proyecto de localización cubana para el software de gestión integral Odoo. 
 
