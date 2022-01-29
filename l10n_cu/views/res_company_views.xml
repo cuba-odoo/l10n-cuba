@@ -6,7 +6,6 @@
         <field name="inherit_id" ref="base.view_company_form"/>
         <field name="arch" type="xml">
             <field name="vat" position="after">
-<!--                <field name="l10n_cu_cnae" attrs="{'invisible':[('country_code', '!=', 'cu')]}"/>-->
                 <field name="l10n_cu_cnae_ids">
                     <tree editable="bottom">
                         <field name="sequence" widget="handle"/>
