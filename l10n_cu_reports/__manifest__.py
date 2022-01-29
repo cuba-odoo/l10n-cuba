@@ -2,7 +2,7 @@
 # Segu
 
 {
-     'name': 'Cuba - Accounting PDF Reports',
+     'name': 'Cuba - Accounting Financial Reports',
      'version': '15.0.1.0.0',
      'category': 'Generic Modules/Reporting',
      'summary': """
