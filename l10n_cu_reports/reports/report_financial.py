@@ -133,3 +133,4 @@ class ReportFinancialEvab(models.AbstractModel):
     _name = 'report.l10n_cu_reports.report_financial_evab'
     _description = 'Estado de Valor Agregado Bruto'
     _inherit = 'report.accounting_pdf_reports.report_financial'
+
