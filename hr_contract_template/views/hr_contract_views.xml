@@ -1,0 +1,20 @@
+<odoo>
+    <record id="hr_contract_view_form_inherit" model="ir.ui.view">
+        <field name="name">hr.contract.view.form.inherit</field>
+        <field name="model">hr.contract</field>
+        <field name="inherit_id" ref="hr_contract.hr_contract_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//div[@name='title']" position="after">
+                <group name="ct">
+<!--                    <group>-->
+
+<!--                    </group>-->
+                    <group>
+                        <field name="contract_template_id"/>
+                        <field name="print_template"/>
+                    </group>
+                </group>
+            </xpath>
+        </field>
+    </record>
+</odoo>

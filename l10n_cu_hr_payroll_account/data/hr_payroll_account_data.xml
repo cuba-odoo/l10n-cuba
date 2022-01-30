@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="om_hr_payroll.hr_rule_taxable" model="hr.salary.rule">
+            <field name="account_debit" search="[('code', 'like', '822%')]"/>
+            <field name="account_credit" search="[('code', 'like', '455%')]"/>
+        </record>    
+        <record id="l10n_cu_hr_payroll.hr_payroll_rules_ft" model="hr.salary.rule">
+            <field name="account_debit" search="[('code', 'like', '855%')]"/>
+            <field name="account_credit" search="[('code', 'like', '440.01.03%')]"/>
+        </record>
+        <record id="l10n_cu_hr_payroll.hr_payroll_rules_impuesto_ingresos_personales_trabajador" model="hr.salary.rule">
+            <field name="account_debit" search="[('code', 'like', '455%')]"/>
+            <field name="account_credit" search="[('code', 'like', '440.03.02%')]"/>
+        </record>
+        <record id="l10n_cu_hr_payroll.hr_payroll_rules_09_vacaciones" model="hr.salary.rule">
+            <field name="account_debit" search="[('code', 'like', '822%')]"/>
+            <field name="account_credit" search="[('code', 'like', '492%')]"/>
+        </record>
+        <record id="l10n_cu_hr_payroll.hr_payroll_rules_ss_presupuesto_estado" model="hr.salary.rule">
+            <field name="account_debit" search="[('code', 'like', '855%')]"/>
+            <field name="account_credit" search="[('code', 'like', '440.01.05%')]"/>
+        </record>
+        <record id="l10n_cu_hr_payroll.hr_payroll_rules_ss_prestaciones_sociales_corto_plazo" model="hr.salary.rule">
+            <field name="account_debit" search="[('code', 'like', '822%')]"/>
+            <field name="account_credit" search="[('code', 'like', '500%')]"/>
+        </record>
+        <record id="l10n_cu_hr_payroll.hr_payroll_rules_ss_especial" model="hr.salary.rule">
+            <field name="account_debit" search="[('code', 'like', '455%')]"/>
+            <field name="account_credit" search="[('code', 'like', '440.03.01%')]"/>
+        </record>
+        <record id="l10n_cu_hr_payroll.hr_payroll_rules_socios_impuesto_dividendos_anticipados" model="hr.salary.rule">
+            <field name="account_debit" search="[('code', 'like', '417%')]"/>
+            <field name="account_credit" search="[('code', 'like', '440.02.03%')]"/>
+        </record>
+        <record id="l10n_cu_hr_payroll.hr_payroll_rules_socios_contribucion_especial" model="hr.salary.rule">
+            <field name="account_debit" search="[('code', 'like', '417%')]"/>
+            <field name="account_credit" search="[('code', 'like', '440.02.01%')]"/>
+        </record>
+        <record id="l10n_cu_hr_payroll.hr_payroll_rules_socios_contribucion_especial_corto_plazo" model="hr.salary.rule">
+            <field name="account_debit" search="[('code', 'like', '417%')]"/>
+            <field name="account_credit" search="[('code', 'like', '500%')]"/>
+        </record>
+        <record id="l10n_cu_hr_payroll.hr_rule_socio_taxable" model="hr.salary.rule">
+            <field name="account_debit" search="[('code', 'like', '691%')]"/>
+            <field name="account_credit" search="[('code', 'like', '417%')]"/>
+        </record>
+        <record id="l10n_cu_hr_payroll.hr_payroll_rules_socios_ingresos_personales_anuales" model="hr.salary.rule">
+            <field name="account_debit" search="[('code', 'like', '417%')]"/>
+            <field name="account_credit" search="[('code', 'like', '440.02.02%')]"/>
+        </record>
+        <record id="l10n_cu_hr_payroll.hr_payroll_rules_asig_vacaciones" model="hr.salary.rule">
+            <field name="account_debit" search="[('code', 'like', '492%')]"/>
+            <field name="account_credit" search="[('code', 'like', '455%')]"/>
+        </record>
+        <record id="l10n_cu_hr_payroll.hr_payroll_rules_asig_prov" model="hr.salary.rule">
+            <field name="account_debit" search="[('code', 'like', '500%')]"/>
+            <field name="account_credit" search="[('code', 'like', '455%')]"/>
+        </record>
+        <record id="account_journal_nomina" model="account.journal">
+            <field name="name">Nóminas</field>
+            <field name="code">NOMINA</field>
+            <field name="type">general</field>
+        </record>
+    </data>
+</odoo>

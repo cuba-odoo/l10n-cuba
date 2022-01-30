@@ -1,0 +1,15 @@
+<odoo>
+    <record id="hr_contract_view_form_inherit" model="ir.ui.view">
+        <field name="name">hr.contract.view.form.inherit</field>
+        <field name="model">hr.contract</field>
+        <field name="inherit_id" ref="hr_contract.hr_contract_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//group[@name='top_info_left']" position="inside">
+<!--                <group name="social_security" string="Seguridad Social">-->
+                    <field name="multi_job"/>
+                    <field name="regimen_contribution" attrs="{'invisible': [('multi_job', '=', True)]}"/>
+<!--                </group>-->
+            </xpath>
+       </field>
+    </record>
+</odoo>

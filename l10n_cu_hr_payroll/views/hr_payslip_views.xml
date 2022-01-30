@@ -1,0 +1,112 @@
+<odoo>
+    <record id="hr_payroll_view_hr_payslip_tree_inherit" model="ir.ui.view">
+        <field name="name">hr.payslip.tree.inherit</field>
+        <field name="model">hr.payslip</field>
+        <field name="inherit_id" ref="om_hr_payroll.view_hr_payslip_tree"/>
+        <field name="arch" type="xml">
+            <tree position="attributes">
+                <attribute name="decoration-danger">total_on_payable == True</attribute>
+            </tree>
+            <xpath expr="//field[@name='date_to']" position="after">
+                <field name="total"/>
+                <field name="total_on_payable" invisible="1"/>
+            </xpath>
+        </field>
+    </record>
+    <record id="view_hr_payslip_filter_inherit" model="ir.ui.view">
+        <field name="name">view.hr.payslip.filter.inherit</field>
+        <field name="model">hr.payslip</field>
+        <field name="inherit_id" ref="om_hr_payroll.view_hr_payslip_filter"/>
+        <field name="arch" type="xml">
+            <xpath expr="//filter[@name='payslip_run_id']" position="replace">
+                <filter string="PaySlip Batch" name="payslip_run" context="{'group_by':'payslip_run_id'}"/>
+            </xpath>
+        </field>
+    </record>
+    <record id="hr_payroll_view_hr_payslip_form_inherit" model="ir.ui.view">
+        <field name="name">hr.payslip.form.inherit</field>
+        <field name="model">hr.payslip</field>
+        <field name="inherit_id" ref="om_hr_payroll.view_hr_payslip_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='credit_note']" position="before">
+                <field name="total" readonly="1"/>
+            </xpath>
+            <xpath expr="//button[@name='action_payslip_cancel']" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
+            <xpath expr="//button[@name='action_payslip_draft']" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
+        </field>
+    </record>
+    <record id="hr_payslip_run_form_inherit" model="ir.ui.view">
+        <field name="name">hr.payslip.run.form.inherit</field>
+        <field name="model">hr.payslip.run</field>
+        <field name="inherit_id" ref="om_hr_payroll.hr_payslip_run_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//button[@type='action']" position="after">
+                <button string="Calcular Hoja" name="calculate_slips_total" type="object" states="draft,calculate"
+                        class="oe_highlight"/>
+            </xpath>
+            <xpath expr="/form/sheet/label[@for='name']" position="before">
+                <div name="button_box" class="oe_button_box">
+                    <button class="oe_stat_button"
+                            type="action" icon="fa-tasks"
+                            name="%(om_hr_payroll.action_view_hr_payslip_form)d"
+                            context="{'search_default_payslip_run_id': active_id,
+					'default_payslip_run_id': active_id}" help="Nóminas del procesamiento">
+                        <field string="Payslips" name="qty_payslip"
+                               widget="statinfo"/>
+                    </button>
+                </div>
+            </xpath>
+            <field name="credit_note" position="after">
+                <field name="total" readonly="1"/>
+            </field>
+            <field name="slip_ids" position="replace">
+                <field name="slip_ids" readonly="1"/>
+            </field>
+        </field>
+    </record>
+    <record id="hr_payslip_line_view_tree" model="ir.ui.view">
+        <field name="name">hr.payslip.line.view.tree</field>
+        <field name="model">hr.payslip.line</field>
+        <field name="arch" type="xml">
+            <tree string="Payslip Lines">
+                <field name="employee_id"/>
+                <field name="code"/>
+                <field name="name"/>
+                <field name="quantity"/>
+                <field name="amount"/>
+                <field name="category_id"/>
+                <field name="slip_id"/>
+            </tree>
+        </field>
+    </record>
+    <record id="hr_payslip_line_view_pivot" model="ir.ui.view">
+        <field name="name">hr.payslip.line.view.pivot</field>
+        <field name="model">hr.payslip.line</field>
+        <field name="priority">20</field>
+        <field name="arch" type="xml">
+            <pivot string="Payslip Line" sample="1">
+                <field name="employee_id" type="row"/>
+                <field name="amount" type="measure"/>
+            </pivot>
+        </field>
+    </record>
+    <record id="hr_payslip_line_action" model="ir.actions.act_window">
+        <field name="name">Payslips Line</field>
+        <field name="res_model">hr.payslip.line</field>
+        <field name="view_mode">tree,pivot</field>
+        <field name="view_id" ref="hr_payslip_line_view_tree"/>
+    </record>
+
+    <menuitem id="menu_hr_payslip_line_report"
+              name="Reportes"
+              sequence="16"
+              parent="om_hr_payroll.menu_hr_payroll_root"/>
+    <menuitem id="menu_hr_payslip_line"
+              action="hr_payslip_line_action"
+              parent="menu_hr_payslip_line_report"/>
+
+</odoo>

@@ -1,0 +1,194 @@
+<odoo>
+    <template id="report_contract">
+        <t t-call="web.html_container">
+            <t t-call="web.internal_layout">
+                <t t-foreach="docs" t-as="doc">
+                    <div class="page">
+                        <div class="row mb-5">
+                            <div class="col-12 text-center">
+                                <h4>
+                                    <strong>CONTRATO DE TRABAJO POR TIEMPO INDETERMINADO</strong>
+                                </h4>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 text-justify">
+                                <!--								<t t-set="employer" t-value="env['hr.employee'].search([('parent_id', '=', False)], limit=1)"/>-->
+                                <t t-set="employer" t-value="env.ref('hr.employee_admin')"/>
+                                <p>Al efecto de suscribir el presente Contrato de Trabajo, el que tiene toda la fuerza
+                                    legal
+                                    que en el derecho se requiere, comparecen:
+                                </p>
+                                <p>
+                                    <strong>DE UNA PARTE:</strong>
+                                    <t t-esc="employer.name"/>
+                                    quien ocupa el cargo de:
+                                    <t t-esc="employer.job_title"/>
+                                    ,a nombre y en representación de la entidad denominada :
+                                    <span t-esc="res_company.name"/>
+                                    que en lo sucesivo, a los efectos del presente contrato, se denominará <strong>
+                                    EMPLEADOR</strong>,
+                                    cuyos datos fundamentales de identificación son los siguientes:
+                                    <br/>
+                                    Dirección:<span t-esc="res_company.street"/>.
+                                    Provincia:<span t-esc="res_company.state_id.name"/>. Municipio:<span
+                                        t-esc="res_company.city"/>.
+                                    NIT:<span t-esc="res_company.vat"/>.
+                                </p>
+                                <p>
+                                    <strong>DE OTRA PARTE:</strong>
+                                    <t t-esc="doc.employee_id.name"/>
+                                    quién concurre por su propio derecho y cuyos datos personales son:
+                                    CI:
+                                    <t t-esc="doc.employee_id.identification_id"/>
+                                    fecha de nacimiento:
+                                    <span t-field="doc.employee_id.birthday"/>
+                                    profesión u oficio:
+                                    <t t-esc="doc.employee_id.study_field"/>
+                                    Dirección:<t
+                                        t-esc="doc.employee_id.address_home_id and doc.employee_id.address_home_id.street"/>
+                                    ,
+                                    Municipio:<t
+                                        t-esc="doc.employee_id.address_home_id and doc.employee_id.address_home_id.city"/>
+                                    ,
+                                    Provincia:<t
+                                        t-esc="doc.employee_id.address_home_id and doc.employee_id.address_home_id.state_id.name"/>
+                                    ,
+                                    No. Expediente laboral:
+                                    <t t-esc="doc.employee_id.identification_id"/>
+                                    Teléfono:
+                                    <t t-esc="doc.employee_id.address_home_id and doc.employee_id.address_home_id.phone"/>
+                                    Que en lo sucesivo, y a los efectos del presente documento se denominará
+                                    <strong>TRABAJADOR.</strong>
+                                </p>
+                                <p>Ambas partes, libres y voluntariamente</p>
+                            </div>
+                        </div>
+                        <br/>
+                        <div class="row">
+                            <div class="col-12 text-center">
+                                <h4>
+                                    <strong>CONVIENEN</strong>
+                                </h4>
+                            </div>
+                        </div>
+                        <br/>
+                        <div class="row">
+                            <div class="col-12 text-justify">
+                                <p>
+                                    <strong>Primero.</strong>
+                                    La jornada de trabajo será de
+                                    <t t-esc="doc.resource_calendar_id.hours_per_day"></t>
+                                    diarias y puede llegar en
+                                    determinados días de la semana a una hora adicional, siempre que no exceda el límite
+                                    de
+                                    cuarenta y cuatro (44) horas.
+                                </p>
+                                <p>
+                                    <strong>Segundo.</strong>
+                                    El trabajador tendrá un día de descanso semanal.
+                                </p>
+                                <p>
+                                    <strong>Tercero.</strong>
+                                    El trabajo será ejecutado en
+                                    <t t-esc="doc.job_id.name"/>.
+                                </p>
+                                <p>
+                                    <strong>Cuarto.</strong>
+                                    El horario de trabajo acordado será de
+                                    <t t-esc="doc.resource_calendar_id.name"/>.
+                                </p>
+                                <p>
+                                    <strong>Quinto.</strong>
+                                    La remuneración se realizará<t t-esc="doc.wage"/>,
+                                    con una frecuencia de pago:<span t-field="doc.schedule_pay"/>.
+                                </p>
+                                <p>
+                                    <strong>Sexto.</strong>
+                                    El trabajador, durante el desempeño de su cargo, disfrutará de
+                                    los veneficios de las vacaciones anuales pagadas y de la seguridad social, siempre
+                                    que
+                                    en ambos casos cumpla con los requisitos establecidos por disposiciones vigentes
+                                    sobre
+                                    estas materias, y tendrá los mismos derechos laborales enmarcados en la legislación
+                                    vigente.
+                                </p>
+                                <p>
+                                    <strong>Séptimo.</strong>
+                                    El trabajador se compromete a cumplir con el contenido de trabajo
+                                    que aparece descrito en este contrato, a obedecir las órdenes que les sean
+                                    impartidas
+                                    por los superiores que estén debidamente facultados para ellos y acatar el
+                                    Reglamento Interno de
+                                    la Entidad, así como las demás disposiciones vigentes que rigen las materias de
+                                    organización
+                                    del trabajo y seguridad y salud de trabajo.
+                                </p>
+                                <p>
+                                    <strong>Octavo.</strong>
+                                    El empleador, se compromete a abonar al Trabajador su salario
+                                    en la forma establecida en el presente contrato, garantizará las condiciones
+                                    laborales
+                                    seguras e higiénicas, y las dispisiciones vigentes en materia laboral.
+                                </p>
+                                <div style="page-break-before: always" class="mb 8"></div>
+                                <p>
+                                    <strong>Noveno.</strong>
+                                    La realización de trabajo termina por las siguientes causas:
+                                </p>
+                                <ul>
+                                    <li>Acuerdos de las partes</li>
+                                    <li>Iniciativas de unas de las partes</li>
+                                    <li>Terminación del contrato pactado</li>
+                                    <li>Extinción legal de la empresa, y</li>
+                                    <li>Jubilación o muerte del trabajador.</li>
+                                </ul>
+                                <p>
+                                    <strong>Décimo.</strong>
+                                    El presente Contrato de Trabajo comenzará a regir a partir del día
+                                    de la firma por ambas partes concurrentes, copia del mismo se le entregará al
+                                    trabajador contratado.
+                                </p>
+                                <p>
+                                    <strong>Unidécimo.</strong>
+                                    Las partes que firman el presente,
+                                    <strong>CONVENIO</strong>
+                                    en lo expresado en el presente Contrato de Trabajo, cumplir estrictamente cada
+                                    unas de las disposiciones expresadas.
+                                </p>
+                            </div>
+                        </div>
+                        <br/>
+                        <div class="row">
+                            <div class="col-12">
+                                <p>Y PARA QUE ASI CONSTE, se extiende el presente Contrato de trabajo, que suscriben las
+                                    partes
+                                    de común acuerdo, en original y dos copias, en el municipio: ___________________
+                                    a los ________ días del mes de ________________________________ de
+                                    __________________.
+                                </p>
+                                <p>Observación:
+                                    <t t-esc="doc.notes"/>
+                                </p>
+                            </div>
+                        </div>
+
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <div class="footer22">
+                            <div class="col-4 text-center pull-left" style="border-top: 1px solid black !important;">
+                                <p>Empleador</p>
+                            </div>
+                            <div class="col-4 text-center pull-right text-right"
+                                 style="border-top: 1px solid black !important;">
+                                <p>Trabajador</p>
+                            </div>
+                        </div>
+                    </div>
+                </t>
+            </t>
+        </t>
+    </template>
+</odoo>

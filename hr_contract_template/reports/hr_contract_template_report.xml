@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<record id="action_hr_contract_template_report" model="ir.actions.report">
+		<field name="name">Plantilla de contrato</field>
+		<field name="model">hr.contract.template</field>
+		<field name="report_type">qweb-pdf</field>
+		<field name="report_name">hr_contract_template.report_contract_template</field>
+		<field name="report_file">hr_contract_template.report_contract_template</field>
+		<field name="binding_model_id" ref="model_hr_contract_template"/>
+		<field name="binding_type">report</field>
+	</record>
+</odoo>

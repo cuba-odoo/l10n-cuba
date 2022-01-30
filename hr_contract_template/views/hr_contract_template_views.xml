@@ -1,0 +1,43 @@
+<odoo>
+    <record model="ir.ui.view" id="hr_contract_template_view_list">
+        <field name="name">hr.contract.template.view.list</field>
+        <field name="model">hr.contract.template</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="struct_id"/>
+                <field name="resource_calendar_id"/>
+                <field name="wage"/>
+            </tree>
+        </field>
+    </record>
+    <record model="ir.ui.view" id="hr_contract_template_view_form">
+        <field name="name">hr.contract.template.view.form</field>
+        <field name="model">hr.contract.template</field>
+        <field name="arch" type="xml">
+            <form string="Contract Template">
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="name"/>
+                            <field name="struct_id"/>
+                        </group>
+                        <group>
+                            <field name="resource_calendar_id"/>
+                            <field name="wage"/>
+                        </group>
+                    </group>
+                    <field name="body"/>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <record model="ir.actions.act_window" id="hr_contract_template_action">
+        <field name="name">Contract Template</field>
+        <field name="res_model">hr.contract.template</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+    <menuitem id="menu_hr_contract_template"
+              action="hr_contract_template_action"
+              parent="hr.menu_human_resources_configuration"/>
+</odoo>
