@@ -36,8 +36,4 @@ class AccountingReport(models.TransientModel):
             return self.env.ref('l10n_cu_reports.action_ncc_accounting_pdf_reports_report_evab'). \
             report_action(self, data=data, config=False)
 
-    def export_report_xls(self):
-        # return 1
-        data = []
-        return self.env.ref('l10n_cu_reports.action_ncc_accounting_xls_reports_report_evab'). \
-            report_action(self, data=data, config=False)
+    
