@@ -33,7 +33,7 @@ addon | versión | resumen
 
 Addons complementarios para la localización cubana.
 
-Se deben instalar los addons complementarios, como dependencias de los módulos de la localización. [Addons complementarios](https://github.com/cuba-odoo/extra_addons).
+Se deben instalar los addons complementarios, como dependencias de los módulos de la localización. [Addons complementarios](https://github.com/odoomates/odooapps).
 
 [//]: # (end addons)
 
