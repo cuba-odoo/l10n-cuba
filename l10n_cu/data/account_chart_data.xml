@@ -38,9 +38,9 @@
         <field name="currency_id" ref="base.CUP"/>
     </record>
 
-    <!-- Chart of Account for Private Company and Cooperative Sector -->
-    <record id="l10n_cu_chart_template_private" model="account.chart.template">
-        <field name="name">Cuba - Plan Contable Sector Privado y Cooperativo</field>
+    <!-- Chart of Account for Governmental -->
+    <record id="l10n_cu_chart_template_government" model="account.chart.template">
+        <field name="name">Cuba - Plan Contable Gubernamental</field>
         <field name="complete_tax_set" eval="True"/>
         <field name="code_digits">8</field>
         <field name="cash_account_code_prefix">101.</field>
