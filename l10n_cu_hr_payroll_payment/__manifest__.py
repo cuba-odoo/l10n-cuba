@@ -1,5 +1,5 @@
 # List of contributors:
-# Segu S.U.R.L
+# Segu
 
 {
      'name': 'Cuba - Pago de Nóminas',
