@@ -5,6 +5,9 @@
      'name': 'Cuba - HR Contratos',
      'version': '0.1',
      'category': 'Human Resources',
+     'summary': """
+        Contratos de empleados, reportes de contratos, régimen de contrubución.
+     """,
      'description': 'Contratos de trabajadores - Cuba.',
      'author': 'Comunidad Cubana de Odoo',
      'depends': ["hr_contract", "l10n_cu_hr_payroll"],

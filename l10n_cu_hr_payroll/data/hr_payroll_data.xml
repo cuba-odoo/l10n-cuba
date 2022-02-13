@@ -89,7 +89,7 @@ else:
             <field name="sequence">6</field>
             <field name="amount_select">code</field>
             <field name="amount_python_compute">
-result = (BASIC / 26) * WORK100
+result = (BASIC / 24) * WORK100
             </field>
         </record>
         <record id="hr_payroll_rules_ft" model="hr.salary.rule">
