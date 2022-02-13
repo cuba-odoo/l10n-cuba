@@ -6,6 +6,7 @@ from odoo import models, fields
 
 class ResCnae(models.Model):
     _name = 'res.cnae'
+    _description = "CNAE"
 
     def name_get(self):
         return [(record.id, "%s - %s" % (record.code, record.name)) for record in self]
@@ -16,6 +17,7 @@ class ResCnae(models.Model):
 
 class ResCnaeLine(models.Model):
     _name = 'res.cnae.line'
+    _description = "CNAE Line"
     _sql_constraints = [
         ('check_cnae_id', 'unique(cnae_id)',
          'Las actividades economicas deben ser unicas.!')

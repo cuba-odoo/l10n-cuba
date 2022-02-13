@@ -143,7 +143,7 @@ result = ret
             <field name="sequence">9</field>
             <field name="amount_select">code</field>
              <field name="amount_python_compute">
-result = GROSS and (GROSS * 0.09) or 0
+result = GROSS and (GROSS * 0.0909) or 0
             </field>
             <field name="appears_on_payslip" eval="True"/>
             <field name="register_id" ref="contrib_register_mipyme"/>
