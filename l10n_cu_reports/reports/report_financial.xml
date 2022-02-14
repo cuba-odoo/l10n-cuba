@@ -41,15 +41,7 @@
         <field name="paperformat_id" ref="paperformat_horizontal"/>
     </record>
 
+   
 
-<!--    <record id="action_accounting_report_dj" model="ir.actions.report">-->
-<!--        <field name="name">Declaración Jurada</field>-->
-<!--        <field name="model">accounting.report.dj</field>-->
-<!--        <field name="report_type">qweb-pdf</field>-->
-<!--        <field name="report_name">l10n_cu_reports.report_financial_dj</field>-->
-<!--        <field name="report_file">l10n_cu_reports.report_financial_dj</field>-->
-<!--        <field name="binding_model_id" ref="l10n_cu_hr_payroll.model_hr_payslip_projection"/>-->
-<!--		<field name="binding_type">report</field>-->
-<!--    </record>-->
 
 </odoo>

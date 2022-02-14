@@ -28,7 +28,7 @@
         'data/account_chart_data.xml',
         'data/account.account.template-tcp.csv',
         'data/account.account.template-common.csv',
-        'data/account.account.template-private.csv',        
+        'data/account.account.template-private.csv',
         'data/account.account.template-public.csv',
         'data/account.account.template-government.csv',
         'data/account_chart_post_data.xml',

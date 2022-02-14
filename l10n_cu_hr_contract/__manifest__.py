@@ -6,7 +6,7 @@
      'version': '0.1',
      'category': 'Human Resources',
      'summary': """
-        Contratos de empleados, reportes de contratos, régimen de contrubución.
+        Contratos de empleados, reportes de contratos, régimen de contribución.
      """,
      'description': 'Contratos de trabajadores - Cuba.',
      'author': 'Comunidad Cubana de Odoo',
