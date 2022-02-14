@@ -1,10 +1,198 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <data noupdate="1">
+        <record id="l10n_cu_cnae_0113" model="res.cnae">
+            <field name="code">0113</field>
+            <field name="name">CULTIVO DE HORTALIZAS Y MELONES, RAÍCES Y TUBÉRCULOS</field>
+        </record>
+        <record id="l10n_cu_cnae_0311" model="res.cnae">
+            <field name="code">0311</field>
+            <field name="name">PESCA MARINA</field>
+        </record>
+        <record id="l10n_cu_cnae_0322" model="res.cnae">
+            <field name="code">0322</field>
+            <field name="name">ACUICULTURA DE AGUA DULCE</field>
+        </record>
+        <record id="l10n_cu_cnae_1010" model="res.cnae">
+            <field name="code">1010</field>
+            <field name="name">ELABORACIÓN Y CONSERVACIÓN DE CARNE</field>
+        </record>
+        <record id="l10n_cu_cnae_1030" model="res.cnae">
+            <field name="code">1030</field>
+            <field name="name">ELABORACIÓN Y CONSERVACIÓN DE FRUTAS LEGUMBRES Y HORTALIZAS</field>
+        </record>
+        <record id="l10n_cu_cnae_1050" model="res.cnae">
+            <field name="code">1050</field>
+            <field name="name">ELABORACIÓN DE PRODUCTOS LÁCTEOS</field>
+        </record>
+        <record id="l10n_cu_cnae_1071" model="res.cnae">
+            <field name="code">1071</field>
+            <field name="name">ELABORACIÓN DE PRODUCTOS DE PANADERÍA</field>
+        </record>
+        <record id="l10n_cu_cnae_1073" model="res.cnae">
+            <field name="code">1073</field>
+            <field name="name">ELABORACIÓN DE CACAO Y CHOCOLATE Y DE PRODUCTOS DE CONFITERÍA</field>
+        </record>
+        <record id="l10n_cu_cnae_1074" model="res.cnae">
+            <field name="code">1074</field>
+            <field name="name">ELABORACIÓN DE MACARRONES, FIDEOS, ALCUZCUZ Y PRODUCTOS FARINÁCEOS SIMILARES</field>
+        </record>
+        <record id="l10n_cu_cnae_1075" model="res.cnae">
+            <field name="code">1075</field>
+            <field name="name">ELABORACIÓN DE COMIDAS Y PLATOS PREPARADOS</field>
+        </record>
+        <record id="l10n_cu_cnae_1079" model="res.cnae">
+            <field name="code">1079</field>
+            <field name="name">ELABORACIÓN DE OTROS PRODUCTOS ALIMENTICIOS N.C.P.</field>
+        </record>
+        <record id="l10n_cu_cnae_1080" model="res.cnae">
+            <field name="code">1080</field>
+            <field name="name">ELABORACIÓN DE PIENSOS PREPARADOS PARA ANIMALES</field>
+        </record>
+        <record id="l10n_cu_cnae_1102" model="res.cnae">
+            <field name="code">1102</field>
+            <field name="name">ELABORACIÓN DE VINOS</field>
+        </record>
+        <record id="l10n_cu_cnae_1103" model="res.cnae">
+            <field name="code">1103</field>
+            <field name="name">ELABORACIÓN DE BEBIDAS MALTEADAS Y DE MALTA</field>
+        </record>
+        <record id="l10n_cu_cnae_1104" model="res.cnae">
+            <field name="code">1104</field>
+            <field name="name">ELABORACIÓN DE BEBIDAS NO ALCOHÓLICAS; PRODUCCIÓN DE AGUAS MINERALES Y OTRAS AGUAS EMBOTELLADAS</field>
+        </record>
+        <record id="l10n_cu_cnae_1410" model="res.cnae">
+            <field name="code">1410</field>
+            <field name="name">FABRICACIÓN DE PRENDAS DE VESTIR, EXCEPTO PRENDAS DE PIEL</field>
+        </record>
+        <record id="l10n_cu_cnae_1520" model="res.cnae">
+            <field name="code">1520</field>
+            <field name="name">FABRICACIÓN DE CALZADO</field>
+        </record>
+        <record id="l10n_cu_cnae_1622" model="res.cnae">
+            <field name="code">1622</field>
+            <field name="name">FABRICACIÓN DE PARTES Y PIEZAS DE CARPINTERÍA PARA EDIFICIOS Y CONSTRUCCIONES</field>
+        </record>
+        <record id="l10n_cu_cnae_1812" model="res.cnae">
+            <field name="code">1812</field>
+            <field name="name">ACTIVIDADES DE SERVICIOS RELACIONADAS CON LA IMPRESIÓN</field>
+        </record>
+        <record id="l10n_cu_cnae_2013" model="res.cnae">
+            <field name="code">2013</field>
+            <field name="name">FABRICACIÓN  DE PLÁSTICOS Y CAUCHO SINTÉTICO EN FORMAS PRIMARIAS</field>
+        </record>
+        <record id="l10n_cu_cnae_2022" model="res.cnae">
+            <field name="code">2022</field>
+            <field name="name">FABRICACIÓN  DE PINTURAS, BARNICES Y PRODUCTOS DE REVESTIMIENTO SIMILARES, TINTAS DE IMPRENTA Y MASILLAS</field>
+        </record>
+        <record id="l10n_cu_cnae_2023" model="res.cnae">
+            <field name="code">2023</field>
+            <field name="name">FABRICACIÓN  DE JABONES Y DETERGENTES; PREPARADOS PARA LIMPIAR Y PULIR; PERFUMES Y PREPARADOS DE TOCADOR</field>
+        </record>
+        <record id="l10n_cu_cnae_2219" model="res.cnae">
+            <field name="code">2219</field>
+            <field name="name">FABRICACIÓN  DE OTROS PRODUCTOS DE CAUCHO</field>
+        </record>
+        <record id="l10n_cu_cnae_2220" model="res.cnae">
+            <field name="code">2220</field>
+            <field name="name">FABRICACIÓN  DE PRODUCTOS DE PLÁSTICO</field>
+        </record>
+        <record id="l10n_cu_cnae_2394" model="res.cnae">
+            <field name="code">2394</field>
+            <field name="name">FABRICACIÓN DE CEMENTO, CAL Y YESO</field>
+        </record>
+        <record id="l10n_cu_cnae_2395" model="res.cnae">
+            <field name="code">2395</field>
+            <field name="name">FABRICACIÓN DE ARTÍCULOS DE HORMIGÓN, CEMENTO Y YESO</field>
+        </record>
+        <record id="l10n_cu_cnae_2620" model="res.cnae">
+            <field name="code">2620</field>
+            <field name="name">FABRICACIÓNDE ORDENADORES Y EQUIPO PERIFÉRICO</field>
+        </record>
+        <record id="l10n_cu_cnae_2651" model="res.cnae">
+            <field name="code">2651</field>
+            <field name="name">FABRICACIÓN DE EQUIPO DE MEDICIÓN, PRUEBA, NAVEGACIÓN Y CONTROL</field>
+        </record>
+        <record id="l10n_cu_cnae_2930" model="res.cnae">
+            <field name="code">2930</field>
+            <field name="name">FABRICACIÓN DE PARTES, PIEZAS Y ACCESORIOS PARA VEHÍCULOS AUTOMOTORES</field>
+        </record>
+        <record id="l10n_cu_cnae_3100" model="res.cnae">
+            <field name="code">3100</field>
+            <field name="name">FABRICACIÓN DE MUEBLES</field>
+        </record>
+        <record id="l10n_cu_cnae_3312" model="res.cnae">
+            <field name="code">3312</field>
+            <field name="name">REPARACIÓN DE MAQUINARIA</field>
+        </record>
+        <record id="l10n_cu_cnae_3314" model="res.cnae">
+            <field name="code">3314</field>
+            <field name="name">REPARACIÓN DE EQUIPO ELÉCTRICO</field>
+        </record>
+        <record id="l10n_cu_cnae_3320" model="res.cnae">
+            <field name="code">3320</field>
+            <field name="name">INSTALACIÓN DE MAQUINARIA Y EQUIPO INDUSTRIALES</field>
+        </record>
+        <record id="l10n_cu_cnae_3830" model="res.cnae">
+            <field name="code">3830</field>
+            <field name="name">RECUPERACIÓN DE MATERIALES</field>
+        </record>
+        <record id="l10n_cu_cnae_4290" model="res.cnae">
+            <field name="code">4290</field>
+            <field name="name">CONSTRUCCIÓN DE OTRAS OBRAS DE INGENIERÍA CIVIL</field>
+        </record>
+        <record id="l10n_cu_cnae_4322" model="res.cnae">
+            <field name="code">4322</field>
+            <field name="name">INSTALACIONES DE FONTANERÍA Y AIRE ACONDICIONADO</field>
+        </record>
+        <record id="l10n_cu_cnae_4520" model="res.cnae">
+            <field name="code">4520</field>
+            <field name="name">MANTENIMIENTO Y REPARACIÓN DE VEHÍCULOS AUTOMOTORES</field>
+        </record>
+        <record id="l10n_cu_cnae_4530" model="res.cnae">
+            <field name="code">4530</field>
+            <field name="name">VENTA DE PARTES, PIEZAS Y ACCESORIOS PARA VEHÍCULOS AUTOMOTORES</field>
+        </record>
+        <record id="l10n_cu_cnae_4620" model="res.cnae">
+            <field name="code">4620</field>
+            <field name="name">VENTA AL POR MAYOR DE MATERIAS PRIMAS AGROPECUARIAS Y ANIMALES VIVOS</field>
+        </record>
+        <record id="l10n_cu_cnae_4630" model="res.cnae">
+            <field name="code">4630</field>
+            <field name="name">VENTA AL POR MAYOR DE ALIMENTOS, BEBIDAS Y TABACO</field>
+        </record>
+        <record id="l10n_cu_cnae_4659" model="res.cnae">
+            <field name="code">4659</field>
+            <field name="name">VENTA AL POR MAYOR DE OTROS TIPOS DE MAQUINARIA Y EQUIPO</field>
+        </record>
+        <record id="l10n_cu_cnae_4791" model="res.cnae">
+            <field name="code">4791</field>
+            <field name="name">VENTA AL POR MENOR POR CORREO Y POR INTERNET</field>
+        </record>
+        <record id="l10n_cu_cnae_4922" model="res.cnae">
+            <field name="code">4922</field>
+            <field name="name">OTRAS ACTIVIDADES DE TRANSPORTE DE PASAJEROS POR VÍA TERRESTRE</field>
+        </record>
+        <record id="l10n_cu_cnae_4923" model="res.cnae">
+            <field name="code">4923</field>
+            <field name="name">TRANSPORTE DE CARGA POR CARRETERA</field>
+        </record>
+        <record id="l10n_cu_cnae_5299" model="res.cnae">
+            <field name="code">5299</field>
+            <field name="name">OTRAS ACTIVIDADES DE APOYO AL TRANSPORTE</field>
+        </record>
+        <record id="l10n_cu_cnae_5320" model="res.cnae">
+            <field name="code">5320</field>
+            <field name="name">ACTIVIDADES DE MENSAJERÍA</field>
+        </record>
         <record id="l10n_cu_cnae_5610" model="res.cnae">
             <field name="code">5610</field>
             <field name="name">ACTIVIDADES DE RESTAURANTES Y DE SERVICIOS MÓVIL DE COMIDAS</field>
         </record>
+
+
+
+
         <record id="l10n_cu_cnae_6201" model="res.cnae">
             <field name="code">6201</field>
             <field name="name">ACTIVIDADES DE PROGRAMACIÓN INFORMÁTICA</field>

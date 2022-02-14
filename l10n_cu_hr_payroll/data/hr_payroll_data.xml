@@ -89,7 +89,7 @@ else:
             <field name="sequence">6</field>
             <field name="amount_select">code</field>
             <field name="amount_python_compute">
-result = (BASIC / 26) * WORK100
+result = (BASIC / 24) * WORK100
             </field>
         </record>
         <record id="hr_payroll_rules_ft" model="hr.salary.rule">
@@ -134,7 +134,7 @@ result = ret
             </field>
             <field name="appears_on_payslip" eval="True"/>
             <field name="register_id" ref="om_hr_payroll.contrib_register_employees"/>
-            <field name="note">Se paga dentro de lo 10 primeros dias habiles de cada mes..</field>
+            <field name="note">Se paga dentro de lo 10 primeros dias habiles de cada mes.</field>
         </record>
         <record id="hr_payroll_rules_09_vacaciones" model="hr.salary.rule">
             <field name="category_id" ref="hr_salary_rule_category_provisiones_prestaciones_company"/>
@@ -143,7 +143,7 @@ result = ret
             <field name="sequence">9</field>
             <field name="amount_select">code</field>
              <field name="amount_python_compute">
-result = GROSS and (GROSS * 0.09) or 0
+result = GROSS and (GROSS * 0.0909) or 0
             </field>
             <field name="appears_on_payslip" eval="True"/>
             <field name="register_id" ref="contrib_register_mipyme"/>

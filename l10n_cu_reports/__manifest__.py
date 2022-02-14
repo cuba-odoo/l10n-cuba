@@ -2,8 +2,8 @@
 # Segu
 
 {
-     'name': 'Cuba - Accounting Financial Reports',
-     'version': '15.0.1.0.0',
+     'name': 'Cuba - Contabilidad PDF reportes',
+     'version': '0.1',
      'category': 'Generic Modules/Reporting',
      'summary': """
         Proformas Estados Financieros (Sector Empresarial) - Cuba.

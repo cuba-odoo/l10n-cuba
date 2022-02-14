@@ -9,8 +9,8 @@
 # Segu
 
 {
-    'name': 'Cuba - Accounting',
-    'version': '15.0.1.0.0',
+    'name': 'Cuba - Contabilidad',
+    'version': '14.0.1.0.0',
     'author': 'Idola Odoo Team, Comunidad cubana de Odoo ',
     'category': 'Accounting/Localizations/Account Charts',
     'description': """

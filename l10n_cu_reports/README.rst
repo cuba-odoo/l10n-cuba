@@ -29,11 +29,10 @@ Dependencias de terceros
 Odoo Mates: https://github.com/odoomates/odooapps
 
 Authors
-=============
-
+==========
 * Comunidad Cubana de Odoo
 
 Contributors
 =============
 
-* Segu S.U.R.L
+* Segu 
