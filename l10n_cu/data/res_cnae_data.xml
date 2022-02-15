@@ -189,13 +189,53 @@
             <field name="code">5610</field>
             <field name="name">ACTIVIDADES DE RESTAURANTES Y DE SERVICIOS MÓVIL DE COMIDAS</field>
         </record>
-
-
-
-
+        <record id="l10n_cu_cnae_5630" model="res.cnae">
+            <field name="code">5630</field>
+            <field name="name">ACTIVIDADES DE SERVICIO DE BEBIDAS</field>
+        </record>
+        <record id="l10n_cu_cnae_6110" model="res.cnae">
+            <field name="code">6110</field>
+            <field name="name">ACTIVIDADES DE TELECOMUNICACIONES ALÁMBRICAS</field>
+        </record>
         <record id="l10n_cu_cnae_6201" model="res.cnae">
             <field name="code">6201</field>
             <field name="name">ACTIVIDADES DE PROGRAMACIÓN INFORMÁTICA</field>
+        </record>
+        <record id="l10n_cu_cnae_6202" model="res.cnae">
+            <field name="code">6202</field>
+            <field name="name">ACTIVIDADES DE CONSULTORÍA DE INFORMÁTICA Y DE GESTIÓN DE INSTALACIONES INFORMÁTICAS</field>
+        </record>
+        <record id="l10n_cu_cnae_6209" model="res.cnae">
+            <field name="code">6209</field>
+            <field name="name">OTRAS ACTIVIDADES DE TECNOLOGÍA DE LA INFORMACIÓN Y DE SERVICIOS INFORMÁTICOS</field>
+        </record>
+        <record id="l10n_cu_cnae_6920" model="res.cnae">
+            <field name="code">6920</field>
+            <field name="name">ACTIVIDADES DE CONTABILIDAD, AUDITORIA  Y ASESORAMIENTO EN MATERIA DE IMPUESTOS</field>
+        </record>
+        <record id="l10n_cu_cnae_6920" model="res.cnae">
+            <field name="code">6920</field>
+            <field name="name">ACTIVIDADES DE CONTABILIDAD, TENEDURÍA DE LIBROS Y AUDITORÍA; CONSULTORÍA FISCAL</field>
+        </record>
+        <record id="l10n_cu_cnae_8130" model="res.cnae">
+            <field name="code">8130</field>
+            <field name="name">ACTIVIDADES DE PAISAJISMO Y SERVICIOS DE MANTENIMIENTO CONEXOS</field>
+        </record>
+        <record id="l10n_cu_cnae_9321" model="res.cnae">
+            <field name="code">9321</field>
+            <field name="name">ACTIVIDADES DE PARQUES DE ATRACCIONES Y PARQUES TEMÁTICOS</field>
+        </record>
+        <record id="l10n_cu_cnae_9329" model="res.cnae">
+            <field name="code">9329</field>
+            <field name="name">OTRAS ACTIVIDADES DE ESPARCIMIENTO Y RECREATIVAS N.C.P</field>
+        </record>
+        <record id="l10n_cu_cnae_9511" model="res.cnae">
+            <field name="code">9511</field>
+            <field name="name">REPARACIÓN DE ORDENADORES Y EQUIPO PERIFÉRICO</field>
+        </record>
+        <record id="l10n_cu_cnae_9529" model="res.cnae">
+            <field name="code">9529</field>
+            <field name="name">REPARACIÓN DE OTROS EFECTOS PERSONALES Y ENSERES DOMÉSTICOS</field>
         </record>
     </data>
 </odoo>
