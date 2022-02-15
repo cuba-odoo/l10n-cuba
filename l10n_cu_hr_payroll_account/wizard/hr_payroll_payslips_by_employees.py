@@ -9,8 +9,7 @@ class HrPayslipEmployees(models.TransientModel):
 
     struct_id = fields.Many2one('hr.payroll.structure', string='Salary Structure', required=True,
                                 help="Si lo que desea es relizar una nómina por días trabajados seleccione (operativa o "
-                                     "administrativa) si lo que desea es asignarle vacaciones o prestaciones sociales, "
-                                     "seleccione (asignaciones). Si desea pagar utilidades selecciones (utilidades)")
+                                     "administrativa).")
 
     def compute_sheet(self):
         """Override"""
