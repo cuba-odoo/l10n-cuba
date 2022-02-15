@@ -12,4 +12,5 @@
      'data': [
           "data/hr_holidays_data.xml",
      ],
+     'license': 'LGPL-3',
 }

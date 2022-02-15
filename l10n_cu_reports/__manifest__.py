@@ -28,4 +28,5 @@
           "wizards/report_partner_balance.xml",
           "security/ir.model.access.csv"
      ],
+     'license': 'LGPL-3',
 }

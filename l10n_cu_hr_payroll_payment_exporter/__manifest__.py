@@ -10,4 +10,5 @@
      'data': [
           "views/hr_payroll_payment_views.xml",
      ],
+     'license': 'LGPL-3',
 }

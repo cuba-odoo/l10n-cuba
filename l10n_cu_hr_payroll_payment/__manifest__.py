@@ -17,4 +17,5 @@
           "reports/payroll_payment_report.xml",
           "wizard/payroll_payment_massive_wizard.xml",
      ],
+     'license': 'LGPL-3',
 }

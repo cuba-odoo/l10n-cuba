@@ -14,4 +14,5 @@ Accounting Data for Cuba Payroll Rules.
         'data/hr_payroll_account_data.xml',
         'views/hr_payroll_account_views.xml',
     ],
+    'license': 'LGPL-3',
 }

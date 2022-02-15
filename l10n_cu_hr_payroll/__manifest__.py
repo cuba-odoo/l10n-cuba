@@ -24,4 +24,5 @@
           "wizard/hr_payroll_projection_wizard.xml",
           "wizard/hr_payroll_payslips_by_employees_wizard.xml",
      ],
+     'license': 'LGPL-3',
 }
