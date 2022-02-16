@@ -14,6 +14,7 @@
      'auto_install': True,
      'data': [          
           "views/hr_contract_views.xml",
+          "data/hr_contract_type_data.xml",
      ],
      'license': 'LGPL-3',
 }
