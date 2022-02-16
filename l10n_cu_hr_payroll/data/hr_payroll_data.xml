@@ -472,7 +472,6 @@ except:
     result = 0
             </field>
             <field name="appears_on_payslip" eval="True"/>
-            <field name="register_id" ref="contrib_register_socio"/>
         </record>
         <record id="hr_payroll_rules_socios_ingresos_personales_anuales" model="hr.salary.rule">
             <field name="category_id" ref="om_hr_payroll.DED"/>
@@ -620,15 +619,25 @@ except:
             ])]"/>
             <field name="parent_id" ref="om_hr_payroll.structure_base"/>
         </record>
-        <record id="hr_payroll_salary_structure_asign" model="hr.payroll.structure">
-            <field name="code">ASIGNACIONES</field>
-            <field name="name">Asignaciones</field>
+        <record id="hr_payroll_salary_structure_operating_indeterminado" model="hr.payroll.structure">
+            <field name="code">OPERATIVAS_INDETERMINADOS</field>
+            <field name="name">Operativas indeterminados</field>
             <field name="company_id" ref="base.main_company"/>
             <field name="rule_ids" eval="[(6, 0, [
                 ref('hr_payroll_rules_asig_vacaciones'),
                 ref('hr_payroll_rules_asig_prov'),
             ])]"/>
-            <field name="parent_id" ref="om_hr_payroll.structure_base"/>
+            <field name="parent_id" ref="hr_payroll_salary_structure_operating"/>
+        </record>
+        <record id="hr_payroll_salary_structure_admon_indeterminado" model="hr.payroll.structure">
+            <field name="code">ADMINISTRATIVAS_INDETERMINADOS</field>
+            <field name="name">Administrativas indeterminados</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="rule_ids" eval="[(6, 0, [
+                ref('hr_payroll_rules_asig_vacaciones'),
+                ref('hr_payroll_rules_asig_prov'),
+            ])]"/>
+            <field name="parent_id" ref="hr_payroll_salary_structure_admon"/>
         </record>
         <record id="hr_payroll_salary_structure_utility" model="hr.payroll.structure">
             <field name="code">UTILIDAD</field>
