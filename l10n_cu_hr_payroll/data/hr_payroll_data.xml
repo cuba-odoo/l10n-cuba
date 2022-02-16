@@ -551,8 +551,9 @@ except:
             ])]"/>
         </record>
         <record id="hr_payroll_salary_structure_operating" model="hr.payroll.structure">
+            <field name="name">Operativos Determinados</field>
             <field name="code">OPERATIVAS</field>
-            <field name="name">Nómina operativas</field>
+            <field name="parent_id" ref="om_hr_payroll.structure_base"/>
             <field name="rule_ids" eval="[(6, 0, [
                 ref('om_hr_payroll.hr_rule_basic'),
                 ref('om_hr_payroll.hr_rule_taxable'),
@@ -567,11 +568,11 @@ except:
                 ref('hr_payroll_rules_base_impositiva_ss'),
             ])]"/>
             <field name="company_id" ref="base.main_company"/>
-            <field name="parent_id" ref="om_hr_payroll.structure_base"/>
         </record>
         <record id="hr_payroll_salary_structure_admon" model="hr.payroll.structure">
+            <field name="name">Administrativos Determinados</field>
             <field name="code">ADMINISTRATIVAS</field>
-            <field name="name">Nóminas administrativas</field>
+            <field name="parent_id" ref="om_hr_payroll.structure_base"/>
             <field name="rule_ids" eval="[(6, 0, [
                 ref('om_hr_payroll.hr_rule_basic'),
                 ref('om_hr_payroll.hr_rule_taxable'),
@@ -586,12 +587,10 @@ except:
                 ref('hr_payroll_rules_base_impositiva_ss'),
             ])]"/>
             <field name="company_id" ref="base.main_company"/>
-            <field name="parent_id" ref="om_hr_payroll.structure_base"/>
         </record>
         <record id="hr_payroll_salary_structure_socio" model="hr.payroll.structure">
-            <field name="code">EJECUTIVAS</field>
             <field name="name">Nóminas ejecutivas</field>
-            <field name="company_id" ref="base.main_company"/>
+            <field name="code">EJECUTIVAS</field>
             <field name="parent_id" ref="om_hr_payroll.structure_base"/>
             <field name="rule_ids" eval="[(6, 0, [
                 ref('hr_rule_socio_taxable'),
@@ -601,11 +600,12 @@ except:
                 ref('hr_payroll_rules_total_deduction'),
                 ref('hr_payroll_rules_base_impositiva_ss'),
             ])]"/>
+            <field name="company_id" ref="base.main_company"/>
         </record>
         <record id="hr_payroll_salary_structure_socio_anual" model="hr.payroll.structure">
-            <field name="code">EJECUTIVAS ANUAL</field>
             <field name="name">Nóminas ejecutivas anual</field>
-            <field name="company_id" ref="base.main_company"/>
+            <field name="code">EJECUTIVAS ANUAL</field>
+            <field name="parent_id" ref="om_hr_payroll.structure_base"/>
             <field name="rule_ids" eval="[(6, 0, [
                 ref('hr_payroll_rules_socios_pago_cuenta_dividendos'),
                 ref('hr_payroll_rules_socios_trubutos_anticipados'),
@@ -617,35 +617,35 @@ except:
                 ref('hr_payroll_rules_socios_ingresos_personales_anuales'),
                 ref('hr_payroll_rules_total_deduction'),
             ])]"/>
-            <field name="parent_id" ref="om_hr_payroll.structure_base"/>
+            <field name="company_id" ref="base.main_company"/>
         </record>
         <record id="hr_payroll_salary_structure_operating_indeterminado" model="hr.payroll.structure">
-            <field name="code">OPERATIVAS_INDETERMINADOS</field>
             <field name="name">Operativas indeterminados</field>
-            <field name="company_id" ref="base.main_company"/>
+            <field name="code">OPERATIVAS_INDETERMINADOS</field>
+            <field name="parent_id" ref="hr_payroll_salary_structure_operating"/>
             <field name="rule_ids" eval="[(6, 0, [
                 ref('hr_payroll_rules_asig_vacaciones'),
                 ref('hr_payroll_rules_asig_prov'),
             ])]"/>
-            <field name="parent_id" ref="hr_payroll_salary_structure_operating"/>
+            <field name="company_id" ref="base.main_company"/>
         </record>
         <record id="hr_payroll_salary_structure_admon_indeterminado" model="hr.payroll.structure">
-            <field name="code">ADMINISTRATIVAS_INDETERMINADOS</field>
             <field name="name">Administrativas indeterminados</field>
-            <field name="company_id" ref="base.main_company"/>
+            <field name="code">ADMINISTRATIVAS_INDETERMINADOS</field>
+            <field name="parent_id" ref="hr_payroll_salary_structure_admon"/>
             <field name="rule_ids" eval="[(6, 0, [
                 ref('hr_payroll_rules_asig_vacaciones'),
                 ref('hr_payroll_rules_asig_prov'),
             ])]"/>
-            <field name="parent_id" ref="hr_payroll_salary_structure_admon"/>
+            <field name="company_id" ref="base.main_company"/>
         </record>
         <record id="hr_payroll_salary_structure_utility" model="hr.payroll.structure">
-            <field name="code">UTILIDAD</field>
             <field name="name">Utilidad</field>
-            <field name="company_id" ref="base.main_company"/>
+            <field name="code">UTILIDAD</field>
             <field name="rule_ids" eval="[(6, 0, [
                 ref('hr_payroll_rules_utilidad')
             ])]"/>
+            <field name="company_id" ref="base.main_company"/>
         </record>
     </data>
 </odoo>
