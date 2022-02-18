@@ -22,12 +22,12 @@
     <record id="accounting_pdf_reports.action_account_report_bs" model="ir.actions.act_window">
         <field name="res_model">accounting.report</field>
         <field name="view_id" ref="report_ncif"/>
-        <field name="context" eval="{'default_account_report_id':ref('ncc_financial_report_es'), 'efc': 'bs'}"/>
+        <field name="context" eval="{'default_account_report_id':ref('ncc_financial_report_es'), 'efe': '5920-04'}"/>
     </record>
     <record id="accounting_pdf_reports.action_account_report_pl" model="ir.actions.act_window">
         <field name="res_model">accounting.report</field>
         <field name="view_id" ref="report_ncif"/>
-        <field name="context" eval="{'default_account_report_id':ref('ncc_financial_report_er'), 'efc': 'pl'}"/>
+        <field name="context" eval="{'default_account_report_id':ref('ncc_financial_report_er'), 'efe': '5921-04'}"/>
     </record>
     <record id="action_account_report_ege" model="ir.actions.act_window">
         <field name="name">Estado de Gastos por Elementos</field>
@@ -36,7 +36,7 @@
         <field name="view_mode">form</field>
         <field name="view_id" ref="report_ncif"/>
         <field name="target">new</field>
-        <field name="context" eval="{'default_account_report_id':ref('ncc_financial_report_ege'), 'efc': 'ege'}"/>
+        <field name="context" eval="{'default_account_report_id':ref('ncc_financial_report_ege'), 'efe': '5924-04'}"/>
     </record>
     <record id="action_account_report_evab" model="ir.actions.act_window">
         <field name="name">Estado de Valor Agregado Bruto</field>
@@ -45,7 +45,7 @@
         <field name="view_mode">form</field>
         <field name="view_id" ref="report_ncif"/>
         <field name="target">new</field>
-        <field name="context" eval="{'default_account_report_id':ref('financial_report_evab'), 'efc': 'evab'}"/>
+        <field name="context" eval="{'default_account_report_id':ref('financial_report_evab'), 'efe': '5926-04'}"/>
     </record>
 
 <!--    Overwrite menu-->

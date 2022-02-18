@@ -41,7 +41,4 @@
         <field name="paperformat_id" ref="paperformat_horizontal"/>
     </record>
 
-   
-
-
 </odoo>
