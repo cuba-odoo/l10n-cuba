@@ -1,14 +1,14 @@
 # -*- coding: utf-8 -*-
 
 from odoo import fields, models, api, _
-from datetime import date, datetime
+from datetime import datetime
 
 class AccountingReport(models.TransientModel):
     _name = 'accounting.report'
     _inherit = 'accounting.report'
 
     target_move = fields.Selection(selection=[('posted', 'All Posted Entries'),
-                                    ('all', 'All Entries'),])
+                                    ('all', 'All Entries')])
     date_to = fields.Date(required=True, default=lambda self: datetime.now())
     
     display_account = fields.Selection(selection=[("all", "All"), ("not_zero", "With balance is not equal to 0")],
