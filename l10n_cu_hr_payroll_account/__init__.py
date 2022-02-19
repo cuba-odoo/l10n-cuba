@@ -13,3 +13,5 @@
 #     if account and data:
 #         rule_ids = [x['res_id'] for x in data.read(['res_id'])]
 #         env['hr.salary.rule'].browse(rule_ids).write({'account_debit': account.id})
+
+from . import wizard

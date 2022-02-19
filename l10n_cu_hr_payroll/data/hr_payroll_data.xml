@@ -81,7 +81,8 @@ except:
 if contract.multi_job:
     result = 0
 else:
-    result = contract.regimen_contribution and int(contract.regimen_contribution) or GROSS
+    gross = contract.regimen_contribution and int(contract.regimen_contribution) or GROSS
+    result = gross + categories.ALW
             </field>
             <field name="appears_on_payslip" eval="False"/>
         </record>
@@ -96,7 +97,7 @@ result = (BASIC / 24) * WORK100
             <field name="category_id" ref="hr_payroll_community.COMP"/>
             <field name="name">Utilización fuerza de trabajo</field>
             <field name="code">FTE</field>
-            <field name="sequence">7</field>
+            <field name="sequence">42</field>
             <field name="amount_select">code</field>
             <field name="amount_python_compute">
 if GROSS:
@@ -111,10 +112,10 @@ else:
             <field name="category_id" ref="hr_payroll_community.DED"/>
             <field name="name">Impuesto sobre ingresos</field>
             <field name="code">IPT</field>
-            <field name="sequence">8</field>
+            <field name="sequence">40</field>
             <field name="amount_select">code</field>
              <field name="amount_python_compute">
-salary = GROSS
+salary = GROSS + categories.ALW
 MIN_EXENTO = 3260
 ret = 0
 if salary &lt;= MIN_EXENTO:
@@ -134,7 +135,7 @@ result = ret
             </field>
             <field name="appears_on_payslip" eval="True"/>
             <field name="register_id" ref="hr_payroll_community.contrib_register_employees"/>
-            <field name="note">Se paga dentro de lo 10 primeros dias habiles de cada mes..</field>
+            <field name="note">Se paga dentro de lo 10 primeros dias habiles de cada mes.</field>
         </record>
         <record id="hr_payroll_rules_09_vacaciones" model="hr.salary.rule">
             <field name="category_id" ref="hr_salary_rule_category_provisiones_prestaciones_company"/>
@@ -177,7 +178,7 @@ result = GROSS and (GROSS * 0.015) or 0
             <field name="category_id" ref="hr_payroll_community.DED"/>
             <field name="name">Seguridad Social Especial</field>
             <field name="code">SS_ESPECIALT</field>
-            <field name="sequence">43</field>
+            <field name="sequence">40</field>
             <field name="amount_select">code</field>
              <field name="amount_python_compute">
 result = BASE_IMPOSITIVA_SS and (BASE_IMPOSITIVA_SS * 0.05) or 0
@@ -187,12 +188,11 @@ result = BASE_IMPOSITIVA_SS and (BASE_IMPOSITIVA_SS * 0.05) or 0
             <field name="note">Construbución Especial a la Seguridad Social de los empleados. Se paga dentro de lo 10
             primeros dias habiles de cada mes.</field>
         </record>
-
         <record id="hr_payroll_rules_asig_vacaciones" model="hr.salary.rule">
             <field name="category_id" ref="hr_payroll_community.ALW"/>
             <field name="name">Asignación de vacaciones</field>
             <field name="code">ASIG_VACACIONES</field>
-            <field name="sequence">52</field>
+            <field name="sequence">6</field>
             <field name="condition_select">python</field>
             <field name="condition_python">
 result = inputs.ASIG_VACACIONES and inputs.ASIG_VACACIONES.amount
@@ -213,7 +213,7 @@ result = inputs.ASIG_VACACIONES and inputs.ASIG_VACACIONES.amount or 0
             <field name="category_id" ref="hr_payroll_community.ALW"/>
             <field name="name">Asignación de provisiones</field>
             <field name="code">ASIG_PROVISIONES</field>
-            <field name="sequence">53</field>
+            <field name="sequence">6</field>
             <field name="condition_select">python</field>
             <field name="condition_python">
 result = inputs.ASIG_PROVISIONES and inputs.ASIG_PROVISIONES.amount
@@ -393,7 +393,6 @@ except:
             </field>
             <field name="appears_on_payslip" eval="True"/>
         </record>
-
         <record id="hr_payroll_rules_socios_ipa_tram3" model="hr.salary.rule">
             <field name="category_id" ref="hr_salary_rule_category_escala_progresiva"/>
             <field name="name">Tramo 3. Socios</field>
@@ -445,7 +444,6 @@ except:
             </field>
             <field name="appears_on_payslip" eval="True"/>
         </record>
-
         <record id="hr_payroll_rules_socios_ipa_tram5" model="hr.salary.rule">
             <field name="category_id" ref="hr_salary_rule_category_escala_progresiva"/>
             <field name="name">Tramo 5. Socios</field>
@@ -472,7 +470,6 @@ except:
     result = 0
             </field>
             <field name="appears_on_payslip" eval="True"/>
-            <field name="register_id" ref="contrib_register_socio"/>
         </record>
         <record id="hr_payroll_rules_socios_ingresos_personales_anuales" model="hr.salary.rule">
             <field name="category_id" ref="hr_payroll_community.DED"/>
@@ -496,29 +493,28 @@ except:
             <field name="appears_on_payslip" eval="True"/>
             <field name="register_id" ref="contrib_register_socio"/>
         </record>
-        <record id="hr_payroll_rules_descuento_nomina" model="hr.salary.rule">
-            <field name="category_id" ref="hr_payroll_community.DED"/>
-            <field name="name">Descuento por nómina</field>
-            <field name="code">DESC_NOM</field>
-            <field name="sequence">99</field>
-            <field name="amount_select">code</field>
-            <field name="amount_python_compute">
-result = 0
-            </field>
-            <field name="appears_on_payslip" eval="True"/>
-        </record>
-        <record id="hr_payroll_rules_retenciones_opcionales" model="hr.salary.rule">
-            <field name="category_id" ref="hr_payroll_community.DED"/>
-            <field name="name">Deducciones por retenciones opcionales</field>
-            <field name="code">DRO</field>
-            <field name="sequence">99</field>
-            <field name="amount_select">code</field>
-             <field name="amount_python_compute">
-result = 0
-            </field>
-            <field name="appears_on_payslip" eval="True"/>
-        </record>
-
+<!--        <record id="hr_payroll_rules_descuento_nomina" model="hr.salary.rule">-->
+<!--            <field name="category_id" ref="hr_payroll_community.DED"/>-->
+<!--            <field name="name">Descuento por nómina</field>-->
+<!--            <field name="code">DESC_NOM</field>-->
+<!--            <field name="sequence">99</field>-->
+<!--            <field name="amount_select">code</field>-->
+<!--            <field name="amount_python_compute">-->
+<!--result = 0-->
+<!--            </field>-->
+<!--            <field name="appears_on_payslip" eval="True"/>-->
+<!--        </record>-->
+<!--        <record id="hr_payroll_rules_retenciones_opcionales" model="hr.salary.rule">-->
+<!--            <field name="category_id" ref="hr_payroll_community.DED"/>-->
+<!--            <field name="name">Deducciones por retenciones opcionales</field>-->
+<!--            <field name="code">DRO</field>-->
+<!--            <field name="sequence">99</field>-->
+<!--            <field name="amount_select">code</field>-->
+<!--             <field name="amount_python_compute">-->
+<!--result = 0-->
+<!--            </field>-->
+<!--            <field name="appears_on_payslip" eval="True"/>-->
+<!--        </record>-->
         <record id="hr_payroll_rules_total_deduction" model="hr.salary.rule">
             <field name="category_id" ref="hr_salary_rule_category_total_ded"/>
             <field name="name">Total deducciones</field>
@@ -546,14 +542,13 @@ except:
         <record id="hr_payroll_community.structure_base" model="hr.payroll.structure">
             <field name="rule_ids" eval="[(6, 0, [
                 ref('hr_payroll_rules_work100'),
-                ref('hr_payroll_rules_descuento_nomina'),
-                ref('hr_payroll_rules_retenciones_opcionales'),
                 ref('hr_payroll_community.hr_rule_net'),
             ])]"/>
         </record>
         <record id="hr_payroll_salary_structure_operating" model="hr.payroll.structure">
+            <field name="name">Operativos determinados</field>
             <field name="code">OPERATIVAS</field>
-            <field name="name">Nómina operativas</field>
+            <field name="parent_id" ref="hr_payroll_community.structure_base"/>
             <field name="rule_ids" eval="[(6, 0, [
                 ref('hr_payroll_community.hr_rule_basic'),
                 ref('hr_payroll_community.hr_rule_taxable'),
@@ -568,11 +563,11 @@ except:
                 ref('hr_payroll_rules_base_impositiva_ss'),
             ])]"/>
             <field name="company_id" ref="base.main_company"/>
-            <field name="parent_id" ref="hr_payroll_community.structure_base"/>
         </record>
         <record id="hr_payroll_salary_structure_admon" model="hr.payroll.structure">
+            <field name="name">Administrativos determinados</field>
             <field name="code">ADMINISTRATIVAS</field>
-            <field name="name">Nóminas administrativas</field>
+            <field name="parent_id" ref="hr_payroll_community.structure_base"/>
             <field name="rule_ids" eval="[(6, 0, [
                 ref('hr_payroll_community.hr_rule_basic'),
                 ref('hr_payroll_community.hr_rule_taxable'),
@@ -587,12 +582,10 @@ except:
                 ref('hr_payroll_rules_base_impositiva_ss'),
             ])]"/>
             <field name="company_id" ref="base.main_company"/>
-            <field name="parent_id" ref="hr_payroll_community.structure_base"/>
         </record>
         <record id="hr_payroll_salary_structure_socio" model="hr.payroll.structure">
-            <field name="code">EJECUTIVAS</field>
             <field name="name">Nóminas ejecutivas</field>
-            <field name="company_id" ref="base.main_company"/>
+            <field name="code">EJECUTIVAS</field>
             <field name="parent_id" ref="hr_payroll_community.structure_base"/>
             <field name="rule_ids" eval="[(6, 0, [
                 ref('hr_rule_socio_taxable'),
@@ -602,11 +595,12 @@ except:
                 ref('hr_payroll_rules_total_deduction'),
                 ref('hr_payroll_rules_base_impositiva_ss'),
             ])]"/>
+            <field name="company_id" ref="base.main_company"/>
         </record>
         <record id="hr_payroll_salary_structure_socio_anual" model="hr.payroll.structure">
-            <field name="code">EJECUTIVAS ANUAL</field>
             <field name="name">Nóminas ejecutivas anual</field>
-            <field name="company_id" ref="base.main_company"/>
+            <field name="code">EJECUTIVAS ANUAL</field>
+            <field name="parent_id" ref="hr_payroll_community.structure_base"/>
             <field name="rule_ids" eval="[(6, 0, [
                 ref('hr_payroll_rules_socios_pago_cuenta_dividendos'),
                 ref('hr_payroll_rules_socios_trubutos_anticipados'),
@@ -618,25 +612,35 @@ except:
                 ref('hr_payroll_rules_socios_ingresos_personales_anuales'),
                 ref('hr_payroll_rules_total_deduction'),
             ])]"/>
-            <field name="parent_id" ref="hr_payroll_community.structure_base"/>
-        </record>
-        <record id="hr_payroll_salary_structure_asign" model="hr.payroll.structure">
-            <field name="code">ASIGNACIONES</field>
-            <field name="name">Asignaciones</field>
             <field name="company_id" ref="base.main_company"/>
+        </record>
+        <record id="hr_payroll_salary_structure_operating_indeterminado" model="hr.payroll.structure">
+            <field name="name">Operativas indeterminados</field>
+            <field name="code">OPERATIVAS_INDETERMINADOS</field>
+            <field name="parent_id" ref="hr_payroll_salary_structure_operating"/>
             <field name="rule_ids" eval="[(6, 0, [
                 ref('hr_payroll_rules_asig_vacaciones'),
                 ref('hr_payroll_rules_asig_prov'),
             ])]"/>
-            <field name="parent_id" ref="hr_payroll_community.structure_base"/>
+            <field name="company_id" ref="base.main_company"/>
+        </record>
+        <record id="hr_payroll_salary_structure_admon_indeterminado" model="hr.payroll.structure">
+            <field name="name">Administrativas indeterminados</field>
+            <field name="code">ADMINISTRATIVAS_INDETERMINADOS</field>
+            <field name="parent_id" ref="hr_payroll_salary_structure_admon"/>
+            <field name="rule_ids" eval="[(6, 0, [
+                ref('hr_payroll_rules_asig_vacaciones'),
+                ref('hr_payroll_rules_asig_prov'),
+            ])]"/>
+            <field name="company_id" ref="base.main_company"/>
         </record>
         <record id="hr_payroll_salary_structure_utility" model="hr.payroll.structure">
-            <field name="code">UTILIDAD</field>
             <field name="name">Utilidad</field>
-            <field name="company_id" ref="base.main_company"/>
+            <field name="code">UTILIDAD</field>
             <field name="rule_ids" eval="[(6, 0, [
                 ref('hr_payroll_rules_utilidad')
             ])]"/>
+            <field name="company_id" ref="base.main_company"/>
         </record>
     </data>
 </odoo>

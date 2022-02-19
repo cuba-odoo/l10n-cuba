@@ -13,5 +13,6 @@ Accounting Data for Cuba Payroll Rules.
     'data': [
         'data/hr_payroll_account_data.xml',
         'views/hr_payroll_account_views.xml',
+        "wizard/hr_payroll_payslips_by_employees_wizard.xml",
     ],
 }
