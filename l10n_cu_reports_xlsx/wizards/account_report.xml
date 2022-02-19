@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="accounting_report_xlsx_view_inherit" model="ir.ui.view">
+        <field name="name">Accounting Report XLSX</field>
+        <field name="model">accounting.report</field>
+        <field name="inherit_id" ref="l10n_cu_reports.report_ncif"/>
+        <field name="arch" type="xml">
+            <xpath expr="//button[@name='check_report']" position="after">
+                <button name="check_report" string="XLSX" type="object" context="{'type': 'xlsx'}"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>
