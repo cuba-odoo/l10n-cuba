@@ -107,12 +107,12 @@
                         colspan="2"></td>
                     <td style="border-bottom: 1px solid black !important;border-top: 1px solid black !important;border-left: 1px solid black !important;border-right: 1px solid black !important;"></td>
                     <td style="border-bottom: 1px solid black !important;border-top: 1px solid black !important;border-left: 1px solid black !important;border-right: 1px solid black !important;">
-                        <span t-att-style="not res_company.state_id and 'color: white;'"
-                                t-esc="res_company.state_id and res_company.state_id.code or '.'"/>
+                        <span t-att-style="not res_company.partner_id.state_id and 'color: white;'"
+                                t-esc="res_company.partner_id.state_id and res_company.state_id.code or '.'"/>
                     </td>
                     <td style="border-bottom: 1px solid black !important;border-top: 1px solid black !important;border-left: 1px solid black !important;border-right: 1px solid black !important;">
-                        <span t-att-style="not res_company.city and 'color: white;'"
-                                t-esc="res_company.city or '.'"/>
+                        <span t-att-style="not res_company.partner_id.res_municipality_id and 'color: white;'"
+                                t-esc="res_company.partner_id.res_municipality_id and res_company.partner_id.res_municipality_id.code or '.'"/>
                     </td>
                 </tr>
             </thead>
