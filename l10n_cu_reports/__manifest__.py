@@ -2,14 +2,14 @@
 # Segu
 
 {
-     'name': 'Cuba - Contabilidad PDF reportes',
+     'name': 'Cuba - Contabilidad Reportes',
      'version': '0.1',
      'category': 'Generic Modules/Reporting',
      'summary': """
         Proformas Estados Financieros (Sector Empresarial) - Cuba.
      """,
      'author': 'Comunidad Cubana de Odoo',
-     'depends': ["accounting_pdf_reports", "l10n_cu"],
+     'depends': ["accounting_pdf_reports", "report_xlsx", "l10n_cu"],
      'data': [
           "data/account_financial_report_es.xml",
           "data/account_financial_report_er.xml",
