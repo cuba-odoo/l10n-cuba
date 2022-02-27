@@ -5,7 +5,6 @@
      'name': 'Cuba - Nóminas',
      'version': '0.1',
      'category': 'Human Resources',
-     # 'description': 'Nóminas para las MIPYME en Cuba.',
      'summary': """
         Estructuras y reglas salariales, proyecciones de salarios.
      """,
@@ -20,6 +19,7 @@
           "views/hr_projection_views.xml",
           "views/report_projection_template.xml",
           "views/report_payslip_run_template.xml",
+          "views/res_config_settings_views.xml",
           "reports/hr_payroll_report.xml",
           "wizard/hr_payroll_projection_wizard.xml",
      ],
