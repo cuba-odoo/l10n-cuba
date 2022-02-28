@@ -53,3 +53,8 @@ class HrPayslipEmployees(models.TransientModel):
 
         payslips.compute_sheet()
         return {'type': 'ir.actions.act_window_close'}
+
+    @api.onchange('struct_id')
+    def _onchange_struct(self):
+        if self.struct_id:
+            self.employee_ids = self.env["hr.employee"].search([('contract_id.struct_id', '=', self.struct_id.id)])
