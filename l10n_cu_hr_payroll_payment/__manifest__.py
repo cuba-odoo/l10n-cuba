@@ -14,7 +14,7 @@
           "security/ir.model.access.csv",
           "views/hr_payroll_payment_views.xml",
           "views/report_payroll_payment_template.xml",
-          "reports/payroll_payment_report.xml",
+          # "reports/payroll_payment_report.xml",
           "wizard/payroll_payment_massive_wizard.xml",
      ],
 }

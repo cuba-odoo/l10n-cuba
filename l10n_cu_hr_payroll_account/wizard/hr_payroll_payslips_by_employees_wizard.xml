@@ -6,8 +6,14 @@
 		<field name="inherit_id" ref="hr_payroll_community.view_hr_payslip_by_employees"/>
 		<field name="arch" type="xml">
 			<xpath expr="//form/group[1]" position="replace">
-				<group>
-					<field name="struct_id"/>
+				<h2>Estructura salarial</h2>
+				<group name="struct">
+					<div class="text-muted">
+						Seleccione la estructura salarial en base al criterio del procesamiento de nomina.
+						Debe tener en cuenta que tanto el empleado como el contrato deben estar activo para que los
+						cálculos salariales funcionen correctamente, igualmente la fecha de inicio del contrato.
+					</div>
+					<field name="struct_id" nolabel="1"/>
 				</group>
 			</xpath>
 		</field>
