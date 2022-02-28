@@ -1,17 +1,4 @@
 <odoo>
-	<!-- <template id="report_header_payroll">
-		<div class="row mb-5">
-			<div class="col-4">
-				<strong>Fecha:</strong>
-				<span t-field="doc.date"/>
-			</div>
-			<div class="col-4 text-center">
-				<strong>Nombre:</strong>
-				<span t-field="doc.name"/>
-			</div>
-		</div>
-	</template> -->
-
 	<template id="report_payslip">
 		<t t-call="web.html_container">
 			<t t-foreach="docs" t-as="doc">

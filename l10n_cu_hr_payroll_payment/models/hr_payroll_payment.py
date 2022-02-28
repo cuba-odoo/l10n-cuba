@@ -18,7 +18,7 @@ class HrPayslipPayment(models.Model):
     company_id = fields.Many2one('res.company', copy=False, default=lambda self: self.env.ref('base.main_company'))
     total = fields.Float("Total", compute="_compute_total", digits=DEFAULT_DIGITS)
     qty_paid = fields.Integer('Quantity Paid', compute="_compute_quantity_paid")
-    state = fields.Selection([('draft', 'Borrador'), ('validate', 'Validado'), ('paid', 'Pago')],
+    state = fields.Selection([('draft', 'Borrador'), ('paid', 'Pago')],
                              'Status', default="draft", readonly=True, copy=False)
 
     @api.depends('company_id')
