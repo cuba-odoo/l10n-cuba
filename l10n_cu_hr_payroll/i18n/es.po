@@ -683,12 +683,6 @@ msgid "Utilización fuerza de trabajo"
 msgstr ""
 
 #. module: l10n_cu_hr_payroll
-#: code:addons/l10n_cu_hr_payroll/wizard/hr_payroll_payslips_by_employees.py:0
-#, python-format
-msgid "You must select employee(s) to generate payslip(s)."
-msgstr ""
-
-#. module: l10n_cu_hr_payroll
 #: model:ir.model,name:l10n_cu_hr_payroll.model_report_l10n_cu_hr_payroll_report_payslip
 msgid "report.l10n_cu_hr_payroll.report_payslip"
 msgstr ""
