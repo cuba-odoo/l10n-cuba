@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 14.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-01-02 21:37+0000\n"
-"PO-Revision-Date: 2022-01-02 16:40-0500\n"
+"PO-Revision-Date: 2022-03-02 11:47-0500\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -190,7 +190,7 @@ msgstr ""
 #. module: l10n_cu_hr_payroll_payment
 #: model_terms:ir.ui.view,arch_db:l10n_cu_hr_payroll_payment.hr_payslip_payment_view_form
 msgid "Paids"
-msgstr ""
+msgstr "Pagos"
 
 #. module: l10n_cu_hr_payroll_payment
 #: model:ir.model,name:l10n_cu_hr_payroll_payment.model_hr_payslip
@@ -250,7 +250,7 @@ msgstr "Pagos de nómina"
 #. module: l10n_cu_hr_payroll_payment
 #: model:ir.model.fields,field_description:l10n_cu_hr_payroll_payment.field_hr_payslip_payment__qty_paid
 msgid "Quantity Paid"
-msgstr ""
+msgstr "Cantidad de nóminas"
 
 #. module: l10n_cu_hr_payroll_payment
 #: model:ir.model.fields,field_description:l10n_cu_hr_payroll_payment.field_hr_payslip_payment__state
