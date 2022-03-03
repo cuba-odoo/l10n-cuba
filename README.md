@@ -46,6 +46,12 @@ Este repositorio esta bajo la licencia [GPL-3.0](LICENSE).
 CCO,  o [Comunidad Cubana de Odoo ](http://cuban-community.cu/), tiene como misión el soporte y desarrollo colaborativo de funcionalidades para Odoo con el fin de promover y diversificar su uso.
 
 ----
+## En pruebas plan contable gubernamental
+
+Hemos agregado el plan contable gubernamental en fase de pruebas.
+no es un plan contable estable.
+
+----
 ## Próximos cambios.
 
 Desarrollo de módulos como métodos de pago con las pasarelas de pagos vigentes en el país (enzona) en desarrollo y próximo a su lanzamiento con la Beta de la Localización Cubana. 
