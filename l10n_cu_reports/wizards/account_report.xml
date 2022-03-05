@@ -31,7 +31,7 @@
         <field name="context" eval="{'default_account_report_id':ref('ncc_financial_report_er'), 'efe': '5921-04'}"/>
     </record>
     <record id="action_account_report_ege" model="ir.actions.act_window">
-        <field name="name">Estado de Gastos por Elementos</field>
+        <field name="name">Estado de Gastos por Elementos (5924-04)</field>
         <field name="res_model">accounting.report</field>
         <field name="type">ir.actions.act_window</field>
         <field name="view_mode">form</field>
@@ -40,13 +40,22 @@
         <field name="context" eval="{'default_account_report_id':ref('ncc_financial_report_ege'), 'efe': '5924-04'}"/>
     </record>
     <record id="action_account_report_evab" model="ir.actions.act_window">
-        <field name="name">Estado de Valor Agregado Bruto</field>
+        <field name="name">Estado de Valor Agregado Bruto (5926-04)</field>
         <field name="res_model">accounting.report</field>
         <field name="type">ir.actions.act_window</field>
         <field name="view_mode">form</field>
         <field name="view_id" ref="report_ncif"/>
         <field name="target">new</field>
         <field name="context" eval="{'default_account_report_id':ref('financial_report_evab'), 'efe': '5926-04'}"/>
+    </record>
+    <record id="action_account_report_5927_00" model="ir.actions.act_window">
+        <field name="name">Estado de pagos a personas naturales y otras formas de gestión no estatal (5927-00)</field>
+        <field name="res_model">accounting.report</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="view_mode">form</field>
+        <field name="view_id" ref="report_ncif"/>
+        <field name="target">new</field>
+        <field name="context" eval="{'default_account_report_id':ref('financial_report_5927_00'), 'efe': '5927-00'}"/>
     </record>
 
 <!--    Overwrite menu-->
@@ -66,14 +75,17 @@
               groups="account.group_account_user,account.group_account_manager"/>
 
     <menuitem id="menu_account_report_ege"
-              name="Estado de Gastos por Elementos (5924-04)"
               action="action_account_report_ege"
               parent="accounting_pdf_reports.menu_finance_legal_statement"
               groups="account.group_account_user"/>
 
     <menuitem id="menu_account_report_evab"
-              name="Estado de Valor Agregado Bruto (5926-04)"
               action="action_account_report_evab"
+              parent="accounting_pdf_reports.menu_finance_legal_statement"
+              groups="account.group_account_user"/>
+
+    <menuitem id="menu_account_report_5927_00"
+              action="action_account_report_5927_00"
               parent="accounting_pdf_reports.menu_finance_legal_statement"
               groups="account.group_account_user"/>
 
