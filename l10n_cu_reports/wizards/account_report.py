@@ -68,6 +68,13 @@ class AccountingReport(models.TransientModel):
             else:
                 return self.env.ref('l10n_cu_reports.action_ncc_accounting_pdf_reports_report_evab'). \
                     report_action(self, data=data, config=False)
+        elif context.get('efe', '') == '5927-00':
+            if context.get('type', '') == 'xlsx':
+                return self.env.ref('l10n_cu_reports.action_ncc_accounting_xls_reports_report_5927_00'). \
+                    report_action(self, data=data, config=False)
+            else:
+                return self.env.ref('l10n_cu_reports.action_ncc_accounting_pdf_reports_report_5927_00'). \
+                    report_action(self, data=data, config=False)
         else:
             return {}
 

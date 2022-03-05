@@ -134,6 +134,11 @@ class ReportFinancialEvab(models.AbstractModel):
     _description = 'Estado de Valor Agregado Bruto'
     _inherit = 'report.accounting_pdf_reports.report_financial'
 
+class ReportFinancial_5927_00(models.AbstractModel):
+    _name = 'report.l10n_cu_reports.report_financial_5927_00'
+    _description = 'Estado de pagos a personas naturales y otras formas de gestión no estatal'
+    _inherit = 'report.accounting_pdf_reports.report_financial'
+
 def layout_header(self, workbook, worksheet, data):
     normal = workbook.add_format({'bold': False, 'border': 1})
     normal.set_font_size(10)
