@@ -7,7 +7,7 @@
                     <td style="width: 40%; border-bottom: 1px solid black !important;border-top: 1px solid black !important;border-left: 1px solid black !important;border-right: 1px solid black !important;"
                         colspan="3">
                         <div class="mb4">
-                            <img t-att-src="'/l10n_cu_reports/static/src/img/escudo_nacional.png'"
+                            <img src="/l10n_cu_reports/static/src/img/escudo_nacional.png"
                                  style="max-height: 45px;" alt="Logo"/>
                         </div>
                         <span>Ministerio de Finanzas y Precios</span>

@@ -106,7 +106,7 @@
         </record>
         <record id="ncc_financial_report_er_11" model="account.financial.report">
             <field name="name">= Utilidad o Pérdida Bruta en Ventas</field>
-            <field name="sign">-1</field>
+            <field name="sign">1</field>
             <field name="type">accounts</field>
             <field name="sequence">11</field>
             <field name="display_detail">no_detail</field>
@@ -132,7 +132,7 @@
         </record>
         <record id="ncc_financial_report_er_13" model="account.financial.report">
             <field name="name">= Utilidad o Pérdida Neta en Ventas</field>
-            <field name="sign">-1</field>
+            <field name="sign">1</field>
             <field name="type">accounts</field>
             <field name="sequence">13</field>
             <field name="display_detail">no_detail</field>
@@ -168,7 +168,7 @@
         </record>
         <record id="ncc_financial_report_er_17" model="account.financial.report">
             <field name="name">= Utilidad o Pérdida en Operaciones</field>
-            <field name="sign">-1</field>
+            <field name="sign">1</field>
             <field name="type">accounts</field>
             <field name="sequence">17</field>
             <field name="display_detail">no_detail</field>
@@ -377,7 +377,7 @@
         </record>
         <record id="ncc_financial_report_er_40" model="account.financial.report">
             <field name="name">= Utilidad o Pérdida antes del Impuesto</field>
-            <field name="sign">-1</field>
+            <field name="sign">1</field>
             <field name="type">accounts</field>
             <field name="sequence">40</field>
             <field name="display_detail">no_detail</field>
