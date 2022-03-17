@@ -152,7 +152,7 @@ def layout_header(self, workbook, worksheet, data):
     worksheet.set_column(0, 50)
 
     worksheet.insert_image(0, 0,
-                           '/home/burger/src-15.0/burger/l10n_cu_reports/static/src/img/escudo_nacional.png',
+                           '/l10n_cu_reports/static/src/img/escudo_nacional.png',
                            {'x_scale': 1.7, 'y_scale': 1.7})
     cestados = workbook.add_format({'bold': True,
                                     'align': 'vcenter',
