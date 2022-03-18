@@ -4,7 +4,7 @@
         <table class="table table-sm" style="margin: 0px !important;">
             <thead>
                 <tr>
-                    <td style="width: 40%; border-bottom: 1px solid black !important;border-top: 1px solid black !important;border-left: 1px solid black !important;border-right: 1px solid black !important;"
+                    <td style="width: 40%; border: 1px solid black !important;"
                         colspan="3">
                         <div class="mb4">
                             <img src="/l10n_cu_reports/static/src/img/escudo_nacional.png"
@@ -12,15 +12,15 @@
                         </div>
                         <span>Ministerio de Finanzas y Precios</span>
                     </td>
-                    <th style="vertical-align:middle; width: 20%; border-bottom: 1px solid black !important;border-top: 1px solid black !important; border-left: 1px solid black !important;border-right: 1px solid black !important;"
+                    <th style="vertical-align:middle; width: 20%; border: 1px solid black !important;"
                         colspan="2">
                         <strong>ESTADOS FINANCIEROS</strong>
                     </th>
-                    <th style="vertical-align:middle; width: 20%; border-bottom: 1px solid black !important;border-top: 1px solid black !important; border-left: 1px solid black !important;border-right: 1px solid black !important;"
+                    <th style="vertical-align:middle; width: 20%; border: 1px solid black !important;"
                         colspan="2">
                         <strong t-esc="data['account_report_id'][1]"/>
                     </th>
-                    <th style="vertical-align:middle; width: 20%; border-bottom: 1px solid black !important;border-top: 1px solid black !important; border-left: 1px solid black !important;border-right: 1px solid black !important;">
+                    <th style="vertical-align:middle; width: 20%; border: 1px solid black !important;">
                         <ul class="list-inline">
                             Página
                             <li class="list-inline-item">
@@ -35,8 +35,7 @@
                     </th>
                 </tr>
                 <tr>
-                    <td colspan="4"
-                        style="border-bottom: 1px solid black !important;border-top: 1px solid black !important; border-left: 1px solid black !important;border-right: 1px solid black !important;">
+                    <td colspan="4" style="border: 1px solid black !important;">
                         <strong>INFORME ACUMULADO HASTA:</strong>
                         <br/>
                         <span>
@@ -45,74 +44,69 @@
                             </t>
                         </span>
                     </td>
-                    <td colspan="4"
-                        style="border-bottom: 1px solid black !important;border-top: 1px solid black !important; border-left: 1px solid black !important;border-right: 1px solid black !important;">
+                    <td colspan="4" style="border: 1px solid black !important;">
                         <strong>UNIDAD DE MEDIDA:</strong>
                         <br/>
                         Pesos cubanos con dos decimales
                     </td>
                 </tr>
                 <tr>
-                    <td colspan="8"
-                        style="border-bottom: 1px solid black !important;border-top: 1px solid black !important; border-left: 1px solid black !important;border-right: 1px solid black !important;">
+                    <td colspan="8" style="border: 1px solid black !important;">
                         Entidad:
                         <span t-esc="res_company.name"/>
                     </td>
                 </tr>
                 <tr>
-                    <td colspan="3" class="text-center"
-                        style="border-bottom: 1px solid black !important;border-top: 1px solid black !important; border-left: 1px solid black !important;border-right: 1px solid black !important;">
+                    <td colspan="3" class="text-center" style="border: 1px solid black !important;">
                         <span>Código Entidad</span>
                     </td>
-                    <td colspan="3" class="text-center"
-                        style="border-bottom: 1px solid black !important;border-top: 1px solid black !important; border-left: 1px solid black !important;border-right: 1px solid black !important;">
+                    <td colspan="3" class="text-center" style="border: 1px solid black !important;">
                         <span>N.A.E</span>
                     </td>
-                    <td colspan="2" class="text-center"
-                        style="border-bottom: 1px solid black !important;border-top: 1px solid black !important; border-left: 1px solid black !important;border-right: 1px solid black !important;">
+                    <td colspan="2" class="text-center" style="border: 1px solid black !important;">
                         <span>D.P.A</span>
                     </td>
                 </tr>
                 <tr>
-                    <td style="border-bottom: 1px solid black !important;border-top: 1px solid black !important;border-left: 1px solid black !important;border-right: 1px solid black !important;">
+                    <td style="border: 1px solid black !important;">
                         ORG.
                     </td>
-                    <td style="border-bottom: 1px solid black !important;border-top: 1px solid black !important;border-left: 1px solid black !important;border-right: 1px solid black !important;">
+                    <td style="border: 1px solid black !important;">
                         SUB
                     </td>
-                    <td style="border-bottom: 1px solid black !important;border-top: 1px solid black !important;border-left: 1px solid black !important;border-right: 1px solid black !important;">
+                    <td style="border: 1px solid black !important;">
                         CÓDIGO
                     </td>
-                    <td style="border-bottom: 1px solid black !important;border-top: 1px solid black !important;border-left: 1px solid black !important;border-right: 1px solid black !important;"
+                    <td style="border: 1px solid black !important;"
                         colspan="2">DIVISIÓN
                     </td>
-                    <td style="border-bottom: 1px solid black !important;border-top: 1px solid black !important;border-left: 1px solid black !important;border-right: 1px solid black !important;">
+                    <td style="border: 1px solid black !important;">
                         CLASE
                     </td>
-                    <td style="border-bottom: 1px solid black !important;border-top: 1px solid black !important;border-left: 1px solid black !important;border-right: 1px solid black !important;">
+                    <td style="border: 1px solid black !important;">
                         PROVINCIA
                     </td>
-                    <td style="border-bottom: 1px solid black !important;border-top: 1px solid black !important;border-left: 1px solid black !important;border-right: 1px solid black !important;">
+                    <td style="border: 1px solid black !important;">
                         MUNICIPIO
                     </td>
                 </tr>
                 <tr>
-                    <td style="border-bottom: 1px solid black !important;border-top: 1px solid black !important;border-left: 1px solid black !important;border-right: 1px solid black !important;"></td>
-                    <td style="border-bottom: 1px solid black !important;border-top: 1px solid black !important;border-left: 1px solid black !important;border-right: 1px solid black !important;"></td>
-                    <td style="border-bottom: 1px solid black !important;border-top: 1px solid black !important;border-left: 1px solid black !important;border-right: 1px solid black !important;">
+                    <td style="border: 1px solid black !important;"></td>
+                    <td style="border: 1px solid black !important;"></td>
+                    <td style="border: 1px solid black !important;">
                         <span t-att-style="not res_company.company_registry and 'color: white;'"
-                                t-esc="res_company.company_registry or '.'"/>
+                              t-esc="res_company.company_registry or '.'"/>
                     </td>
-                    <td style="border-bottom: 1px solid black !important;border-top: 1px solid black !important;border-left: 1px solid black !important;border-right: 1px solid black !important;"
+                    <td style="border: 1px solid black !important;"
                         colspan="2"></td>
-                    <td style="border-bottom: 1px solid black !important;border-top: 1px solid black !important;border-left: 1px solid black !important;border-right: 1px solid black !important;"></td>
-                    <td style="border-bottom: 1px solid black !important;border-top: 1px solid black !important;border-left: 1px solid black !important;border-right: 1px solid black !important;">
+                    <td style="border: 1px solid black !important;"></td>
+                    <td style="border: 1px solid black !important;">
                         <span t-att-style="not res_company.partner_id.state_id and 'color: white;'"
-                                t-esc="res_company.partner_id.state_id and res_company.state_id.code or '.'"/>
+                              t-esc="res_company.partner_id.state_id and res_company.state_id.code or '.'"/>
                     </td>
-                    <td style="border-bottom: 1px solid black !important;border-top: 1px solid black !important;border-left: 1px solid black !important;border-right: 1px solid black !important;">
+                    <td style="border: 1px solid black !important;">
                         <span t-att-style="not res_company.partner_id.res_municipality_id and 'color: white;'"
-                                t-esc="res_company.partner_id.res_municipality_id and res_company.partner_id.res_municipality_id.code or '.'"/>
+                              t-esc="res_company.partner_id.res_municipality_id and res_company.partner_id.res_municipality_id.code or '.'"/>
                     </td>
                 </tr>
             </thead>
@@ -124,12 +118,12 @@
             <table class="table table-sm" style="margin: 0px !important;">
                 <tr>
                     <td class="text-justify"
-                        style="width: 25%;border-bottom: 1px solid black !important;border-left: 1px solid black !important;border-right: 1px solid black !important;">
+                        style="width: 25%;border: 1px solid black !important;">
                         <span>Certificamos que los datos contenidos en este estado financiero se corresponden
                             con las anotaciones contables de acuerdo con las regulaciones vigentes.
                         </span>
                     </td>
-                    <td style="width: 25%;border-bottom: 1px solid black !important;border-left: 1px solid black !important;border-right: 1px solid black !important;">
+                    <td style="width: 25%;border: 1px solid black !important;">
                         <span>HECHO POR:</span>
                         <br/>
                         _______________________________
@@ -138,7 +132,7 @@
                         <br/>
                         _______________________________
                     </td>
-                    <td style="width: 25%;border-bottom: 1px solid black !important;border-left: 1px solid black !important;border-right: 1px solid black !important;">
+                    <td style="width: 25%;border: 1px solid black !important;">
                         <span>APROBADO POR:</span>
                         <br/>
                         _______________________________
@@ -147,7 +141,7 @@
                         <br/>
                         _______________________________
                     </td>
-                    <td style="width: 20%;border-bottom: 1px solid black !important;border-left: 1px solid black !important;border-right: 1px solid black !important;">
+                    <td style="width: 20%;border: 1px solid black !important;">
                         <t t-set="date" t-value="context_timestamp(datetime.datetime.now())"></t>
                         <table>
                             <tr>
