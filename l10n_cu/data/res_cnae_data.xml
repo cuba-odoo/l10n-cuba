@@ -67,7 +67,7 @@
         </record>
         <record id="l10n_cu_cnae_0130" model="res.cnae">
             <field name="code">0130</field>
-            <field name="name">PROPAGACIÓN DE PLANTAS </field>
+            <field name="name">PROPAGACIÓN DE PLANTAS</field>
         </record>
         <record id="l10n_cu_cnae_0141" model="res.cnae">
             <field name="code">0141</field>
@@ -387,59 +387,59 @@
         </record>
         <record id="l10n_cu_cnae_1910" model="res.cnae">
             <field name="code">1910</field>
-            <field name="name">FABRICACIÓN    DE PRODUCTOS DE HORNOS DE COQUE</field>
+            <field name="name">FABRICACIÓN DE PRODUCTOS DE HORNOS DE COQUE</field>
         </record>
         <record id="l10n_cu_cnae_1920" model="res.cnae">
             <field name="code">1920</field>
-            <field name="name">FABRICACIÓN    DE PRODUCTOS DE LA REFINACIÓN DEL PETRÓLEO</field>
+            <field name="name">FABRICACIÓN DE PRODUCTOS DE LA REFINACIÓN DEL PETRÓLEO</field>
         </record>
         <record id="l10n_cu_cnae_2011" model="res.cnae">
             <field name="code">2011</field>
-            <field name="name">FABRICACIÓN    DE SUSTANCIAS QUÍMICAS BÁSICAS</field>
+            <field name="name">FABRICACIÓN DE SUSTANCIAS QUÍMICAS BÁSICAS</field>
         </record>
         <record id="l10n_cu_cnae_2012" model="res.cnae">
             <field name="code">2012</field>
-            <field name="name">FABRICACIÓN    DE ABONOS Y COMPUESTOS DE NITRÓGENO</field>
+            <field name="name">FABRICACIÓN DE ABONOS Y COMPUESTOS DE NITRÓGENO</field>
         </record>
         <record id="l10n_cu_cnae_2013" model="res.cnae">
             <field name="code">2013</field>
-            <field name="name">FABRICACIÓN    DE PLÁSTICOS Y CAUCHO SINTÉTICO EN FORMAS PRIMARIAS</field>
+            <field name="name">FABRICACIÓN DE PLÁSTICOS Y CAUCHO SINTÉTICO EN FORMAS PRIMARIAS</field>
         </record>
         <record id="l10n_cu_cnae_2021" model="res.cnae">
             <field name="code">2021</field>
-            <field name="name">FABRICACIÓN    DE PLAGUICIDAS Y OTROS PRODUCTOS QUÍMICOS DE USO AGROPECUARIO</field>
+            <field name="name">FABRICACIÓN DE PLAGUICIDAS Y OTROS PRODUCTOS QUÍMICOS DE USO AGROPECUARIO</field>
         </record>
         <record id="l10n_cu_cnae_2022" model="res.cnae">
             <field name="code">2022</field>
-            <field name="name">FABRICACIÓN    DE PINTURAS, BARNICES Y PRODUCTOS DE REVESTIMIENTO SIMILARES, TINTAS DE IMPRENTA Y MASILLAS</field>
+            <field name="name">FABRICACIÓN DE PINTURAS, BARNICES Y PRODUCTOS DE REVESTIMIENTO SIMILARES, TINTAS DE IMPRENTA Y MASILLAS</field>
         </record>
         <record id="l10n_cu_cnae_2023" model="res.cnae">
             <field name="code">2023</field>
-            <field name="name">FABRICACIÓN    DE JABONES Y DETERGENTES; PREPARADOS PARA LIMPIAR Y PULIR; PERFUMES Y PREPARADOS DE TOCADOR</field>
+            <field name="name">FABRICACIÓN DE JABONES Y DETERGENTES; PREPARADOS PARA LIMPIAR Y PULIR; PERFUMES Y PREPARADOS DE TOCADOR</field>
         </record>
         <record id="l10n_cu_cnae_2029" model="res.cnae">
             <field name="code">2029</field>
-            <field name="name">FABRICACIÓN    DE OTROS PRODUCTOS QUÍMICOS N.C.P.</field>
+            <field name="name">FABRICACIÓN DE OTROS PRODUCTOS QUÍMICOS N.C.P.</field>
         </record>
         <record id="l10n_cu_cnae_2030" model="res.cnae">
             <field name="code">2030</field>
-            <field name="name">FABRICACIÓN    DE FIBRAS ARTIFICIALES</field>
+            <field name="name">FABRICACIÓN DE FIBRAS ARTIFICIALES</field>
         </record>
         <record id="l10n_cu_cnae_2100" model="res.cnae">
             <field name="code">2100</field>
-            <field name="name">FABRICACIÓN    DE PRODUCTOS FARMACÉUTICOS, SUSTANCIAS QUÍMICAS MEDICINALES Y PRODUCTOS BOTÁNICOS DE USO FARMACÉUTICO</field>
+            <field name="name">FABRICACIÓN DE PRODUCTOS FARMACÉUTICOS, SUSTANCIAS QUÍMICAS MEDICINALES Y PRODUCTOS BOTÁNICOS DE USO FARMACÉUTICO</field>
         </record>
         <record id="l10n_cu_cnae_2211" model="res.cnae">
             <field name="code">2211</field>
-            <field name="name">FABRICACIÓN    DE CUBIERTAS Y CÁMARAS DE CAUCHO; RECAUCHUTADO Y RENOVACIÓN DE CUBIERTAS DE CAUCHO</field>
+            <field name="name">FABRICACIÓN DE CUBIERTAS Y CÁMARAS DE CAUCHO; RECAUCHUTADO Y RENOVACIÓN DE CUBIERTAS DE CAUCHO</field>
         </record>
         <record id="l10n_cu_cnae_2219" model="res.cnae">
             <field name="code">2219</field>
-            <field name="name">FABRICACIÓN    DE OTROS PRODUCTOS DE CAUCHO</field>
+            <field name="name">FABRICACIÓN DE OTROS PRODUCTOS DE CAUCHO</field>
         </record>
         <record id="l10n_cu_cnae_2220" model="res.cnae">
             <field name="code">2220</field>
-            <field name="name">FABRICACIÓN    DE PRODUCTOS DE PLÁSTICO</field>
+            <field name="name">FABRICACIÓN DE PRODUCTOS DE PLÁSTICO</field>
         </record>
         <record id="l10n_cu_cnae_2310" model="res.cnae">
             <field name="code">2310</field>
@@ -447,11 +447,11 @@
         </record>
         <record id="l10n_cu_cnae_2391" model="res.cnae">
             <field name="code">2391</field>
-            <field name="name">FABRICACIÓN    DE PRODUCTOS REFRACTARIOS</field>
+            <field name="name">FABRICACIÓN DE PRODUCTOS REFRACTARIOS</field>
         </record>
         <record id="l10n_cu_cnae_2392" model="res.cnae">
             <field name="code">2392</field>
-            <field name="name">FABRICACIÓN    DE MATERIALES DE CONSTRUCCIÓN DE ARCILLA</field>
+            <field name="name">FABRICACIÓN DE MATERIALES DE CONSTRUCCIÓN DE ARCILLA</field>
         </record>
         <record id="l10n_cu_cnae_2393" model="res.cnae">
             <field name="code">2393</field>
@@ -551,7 +551,7 @@
         </record>
         <record id="l10n_cu_cnae_2660" model="res.cnae">
             <field name="code">2660</field>
-            <field name="name">FABRICACIÓN DE EQUIPO DE IRRADIACIÓN Y EQUIPO ELÉCTRONICO DE USO MÉDICO Y TERAPEÚTICO </field>
+            <field name="name">FABRICACIÓN DE EQUIPO DE IRRADIACIÓN Y EQUIPO ELÉCTRONICO DE USO MÉDICO Y TERAPEÚTICO</field>
         </record>
         <record id="l10n_cu_cnae_2670" model="res.cnae">
             <field name="code">2670</field>
@@ -583,7 +583,7 @@
         </record>
         <record id="l10n_cu_cnae_2740" model="res.cnae">
             <field name="code">2740</field>
-            <field name="name">FABRICACIÓN DE EQUIPO ELECTRICO DE ILUMINACIÓN </field>
+            <field name="name">FABRICACIÓN DE EQUIPO ELECTRICO DE ILUMINACIÓN</field>
         </record>
         <record id="l10n_cu_cnae_2750" model="res.cnae">
             <field name="code">2750</field>
@@ -735,7 +735,7 @@
         </record>
         <record id="l10n_cu_cnae_3311" model="res.cnae">
             <field name="code">3311</field>
-            <field name="name">REPARACIÓN DE PRODUCTOS ELABORADOS DE METAL </field>
+            <field name="name">REPARACIÓN DE PRODUCTOS ELABORADOS DE METAL</field>
         </record>
         <record id="l10n_cu_cnae_3312" model="res.cnae">
             <field name="code">3312</field>
@@ -937,10 +937,13 @@
             <field name="code">4722</field>
             <field name="name">VENTA AL POR MENOR DE BEBIDAS EN COMERCIOS ESPECIALIZADOS</field>
         </record>
-        4723     VENTA AL POR MENOR DE PRODUCTOS DE TABACO COMERCIO ESPECIALIZADOS
+        <record id="l10n_cu_cnae_4723" model="res.cnae">
+            <field name="code">4723</field>
+            <field name="name">VENTA AL POR MENOR DE PRODUCTOS DE TABACO COMERCIO ESPECIALIZADOS</field>
+        </record>
         <record id="l10n_cu_cnae_4730" model="res.cnae">
             <field name="code">4730</field>
-            <field name="name">VENTA AL POR MENOR DE COMBUSTIBLES PARA    VEHÍCULOS AUTOMOTORES EN COMERCIOS ESPECIALIZADOS</field>
+            <field name="name">VENTA AL POR MENOR DE COMBUSTIBLES PARA VEHÍCULOS AUTOMOTORES EN COMERCIOS ESPECIALIZADOS</field>
         </record>
         <record id="l10n_cu_cnae_4741" model="res.cnae">
             <field name="code">4741</field>
@@ -984,19 +987,19 @@
         </record>
         <record id="l10n_cu_cnae_4771" model="res.cnae">
             <field name="code">4771</field>
-            <field name="name">VENTA AL POR MENOR DE PRENDAS DE VESTIR, CALZADO Y ARTÍCULOS DE CUERO EN COMERCIOS ESPECIALIZADOS </field>
+            <field name="name">VENTA AL POR MENOR DE PRENDAS DE VESTIR, CALZADO Y ARTÍCULOS DE CUERO EN COMERCIOS ESPECIALIZADOS</field>
         </record>
         <record id="l10n_cu_cnae_4772" model="res.cnae">
             <field name="code">4772</field>
-            <field name="name">VENTA AL POR MENOR DE PRODUCTOS FARMACEÚTICOS Y MEDICINALES, COSMÉTICOS Y ARTÍCULOS DE TOCADOR EN COMERCIOS ESPECIALIZADOS </field>
+            <field name="name">VENTA AL POR MENOR DE PRODUCTOS FARMACEÚTICOS Y MEDICINALES, COSMÉTICOS Y ARTÍCULOS DE TOCADOR EN COMERCIOS ESPECIALIZADOS</field>
         </record>
         <record id="l10n_cu_cnae_4773" model="res.cnae">
             <field name="code">4773</field>
-            <field name="name">VENTA AL POR MENOR DE OTROS PRODUCTOS NUEVOS EN COMERCIOS ESPECIALIZADOS </field>
+            <field name="name">VENTA AL POR MENOR DE OTROS PRODUCTOS NUEVOS EN COMERCIOS ESPECIALIZADOS</field>
         </record>
         <record id="l10n_cu_cnae_4774" model="res.cnae">
             <field name="code">4774</field>
-            <field name="name">VENTA AL POR MENOR DE ARTÍCULOS DE SEGUNDA MANO </field>
+            <field name="name">VENTA AL POR MENOR DE ARTÍCULOS DE SEGUNDA MANO</field>
         </record>
         <record id="l10n_cu_cnae_4781" model="res.cnae">
             <field name="code">4781</field>
@@ -1028,7 +1031,7 @@
         </record>
         <record id="l10n_cu_cnae_4921" model="res.cnae">
             <field name="code">4921</field>
-            <field name="name">TRANSPORTE URBANO Y SUBURBANO DE PASAJEROS POR VÍA TERRESTRE </field>
+            <field name="name">TRANSPORTE URBANO Y SUBURBANO DE PASAJEROS POR VÍA TERRESTRE</field>
         </record>
         <record id="l10n_cu_cnae_4922" model="res.cnae">
             <field name="code">4922</field>
@@ -1146,28 +1149,37 @@
             <field name="code">5820</field>
             <field name="name">EDICIÓN DE PROGRAMAS INFORMÁTICOS</field>
         </record>
-        5911     ACTIVIDADES DE PRODUCCIÓN DE PELÍCULAS CINEMATOGRÁFICAS, VÍDEOS Y PROGRAMAS DE TELEVISIÓN
+        <record id="l10n_cu_cnae_5911" model="res.cnae">
+            <field name="code">5911</field>
+            <field name="name">ACTIVIDADES DE PRODUCCIÓN DE PELÍCULAS CINEMATOGRÁFICAS, VÍDEOS Y PROGRAMAS DE TELEVISIÓN</field>
+        </record>
         <record id="l10n_cu_cnae_5912" model="res.cnae">
             <field name="code">5912</field>
-            <field name="name">ACTIVIDADES DE POSTPRODUCCIÓN DE PELÍCULAS DE CINEMATOGRÁFICAS, VIDEOS Y PROGRAMAS DE TELVISIÓN </field>
+            <field name="name">ACTIVIDADES DE POSTPRODUCCIÓN DE PELÍCULAS DE CINEMATOGRÁFICAS, VIDEOS Y PROGRAMAS DE TELVISIÓN</field>
         </record>
         <record id="l10n_cu_cnae_5913" model="res.cnae">
             <field name="code">5913</field>
-            <field name="name">ACTIVIDADES DE DISTRIBUCIÓN DE PELÍCULAS CINEMATOGRÁFICAS VÍDEOS Y PROGRAMAS DE TELVISIÓN </field>
+            <field name="name">ACTIVIDADES DE DISTRIBUCIÓN DE PELÍCULAS CINEMATOGRÁFICAS VÍDEOS Y PROGRAMAS DE TELVISIÓN</field>
         </record>
-        5914     ACTIVIDADES DE EXHIBICIÓN DE PELÍCULAS CINEMATOGRÁFICAS Y CINTAS DE VÍDEO
+        <record id="l10n_cu_cnae_5914" model="res.cnae">
+            <field name="code">5914</field>
+            <field name="name">ACTIVIDADES DE EXHIBICIÓN DE PELÍCULAS CINEMATOGRÁFICAS Y CINTAS DE VÍDEO</field>
+        </record>
         <record id="l10n_cu_cnae_5920" model="res.cnae">
             <field name="code">5920</field>
             <field name="name">ACTIVIDADES DE GRABACIÓN DE SONIDO Y EDICIÓN DE MÚSICA</field>
         </record>
-        6010     TRANSMISIONES DE RADIO
+        <record id="l10n_cu_cnae_6010" model="res.cnae">
+            <field name="code">6010</field>
+            <field name="name">TRANSMISIONES DE RADIO</field>
+        </record>
         <record id="l10n_cu_cnae_6020" model="res.cnae">
             <field name="code">6020</field>
             <field name="name">PROGRAMACIÓN Y TRANSMISIONES DE TELEVISIÓN</field>
         </record>
         <record id="l10n_cu_cnae_6110" model="res.cnae">
             <field name="code">6110</field>
-            <field name="name">ACTIVIDADES DE TELECOMUNICACIONES </field>
+            <field name="name">ACTIVIDADES DE TELECOMUNICACIONES</field>
         </record>
         <record id="l10n_cu_cnae_6120" model="res.cnae">
             <field name="code">6120</field>
@@ -1241,7 +1253,10 @@
             <field name="code">6499</field>
             <field name="name">OTRAS ACTIVIDADES DE SERVICIOS FINANCIEROS EXCEPTO LAS DE SEGUROS Y FONDOS DE PENSIONES</field>
         </record>
-        6511     SEGUROS DE VIDA
+        <record id="l10n_cu_cnae_6511" model="res.cnae">
+            <field name="code">6511</field>
+            <field name="name">SEGUROS DE VIDA</field>
+        </record>
         <record id="l10n_cu_cnae_6512" model="res.cnae">
             <field name="code">6512</field>
             <field name="name">SEGUROS GENERALES</field>
@@ -1266,7 +1281,10 @@
             <field name="code">6619</field>
             <field name="name">OTRAS ACTIVIDADES AUXILIARES DE LAS ACTIVIDADES DE SERVICIOS FINANCIEROS</field>
         </record>
-        6621     EVALUACIÓN DE RIESGOS Y DAÑOS
+        <record id="l10n_cu_cnae_6621" model="res.cnae">
+            <field name="code">6621</field>
+            <field name="name">EVALUACIÓN DE RIESGOS Y DAÑOS</field>
+        </record>
         <record id="l10n_cu_cnae_6622" model="res.cnae">
             <field name="code">6622</field>
             <field name="name">ACTIVIDADES DE AGENTES Y CORREDORES DE SEGUROS</field>
@@ -1313,11 +1331,11 @@
         </record>
         <record id="l10n_cu_cnae_7210" model="res.cnae">
             <field name="code">7210</field>
-            <field name="name">INVESTIGACIONES    Y DESARROLLO EXPERIMENTAL EN EL CAMPO DE LAS CIENCIAS NATURALES Y LA INGENIERÍA</field>
+            <field name="name">INVESTIGACIONES Y DESARROLLO EXPERIMENTAL EN EL CAMPO DE LAS CIENCIAS NATURALES Y LA INGENIERÍA</field>
         </record>
         <record id="l10n_cu_cnae_7220" model="res.cnae">
             <field name="code">7220</field>
-            <field name="name">INVESTIGACIONES    Y DESARROLLO EXPERIMENTAL EN EL CAMPO DE LAS CIENCIAS SOCIALES Y LAS HUMANIDADES</field>
+            <field name="name">INVESTIGACIONES Y DESARROLLO EXPERIMENTAL EN EL CAMPO DE LAS CIENCIAS SOCIALES Y LAS HUMANIDADES</field>
         </record>
         <record id="l10n_cu_cnae_7310" model="res.cnae">
             <field name="code">7310</field>
@@ -1393,7 +1411,7 @@
         </record>
         <record id="l10n_cu_cnae_8010" model="res.cnae">
             <field name="code">8010</field>
-            <field name="name">ACTIVIDADES DE SEGURIDAD </field>
+            <field name="name">ACTIVIDADES DE SEGURIDAD</field>
         </record>
         <record id="l10n_cu_cnae_8020" model="res.cnae">
             <field name="code">8020</field>
@@ -1441,7 +1459,7 @@
         </record>
         <record id="l10n_cu_cnae_8292" model="res.cnae">
             <field name="code">8292</field>
-            <field name="name">ACTIVIDADES DE ENVASADO Y EMPAQUETADO </field>
+            <field name="name">ACTIVIDADES DE ENVASADO Y EMPAQUETADO</field>
         </record>
         <record id="l10n_cu_cnae_8299" model="res.cnae">
             <field name="code">8299</field>
@@ -1481,16 +1499,19 @@
         </record>
         <record id="l10n_cu_cnae_8510" model="res.cnae">
             <field name="code">8510</field>
-            <field name="name">EDUCACIÓN PREESCOLAR </field>
+            <field name="name">EDUCACIÓN PREESCOLAR</field>
         </record>
-        8511     EDUCACIÓN PRIMARIA
+        <record id="l10n_cu_cnae_8511" model="res.cnae">
+            <field name="code">8511</field>
+            <field name="name">EDUCACIÓN PRIMARIA</field>
+        </record>
         <record id="l10n_cu_cnae_8513" model="res.cnae">
             <field name="code">8513</field>
             <field name="name">EDUCACIÓN PRIMARIA PARA ADULTOS</field>
         </record>
         <record id="l10n_cu_cnae_8521" model="res.cnae">
             <field name="code">8521</field>
-            <field name="name">EDUCACIÓN SECUNDARIA DE FORMACIÓN    GENERAL Y PREUNIVERSITARIO</field>
+            <field name="name">EDUCACIÓN SECUNDARIA DE FORMACIÓN GENERAL Y PREUNIVERSITARIO</field>
         </record>
         <record id="l10n_cu_cnae_8522" model="res.cnae">
             <field name="code">8522</field>
@@ -1498,15 +1519,24 @@
         </record>
         <record id="l10n_cu_cnae_8523" model="res.cnae">
             <field name="code">8523</field>
-            <field name="name">EDUCACIÓN SECUNDARIA DE FORMACIÓN    GENERAL Y PREUNIVERSITARIO PARA ADULTOS</field>
+            <field name="name">EDUCACIÓN SECUNDARIA DE FORMACIÓN GENERAL Y PREUNIVERSITARIO PARA ADULTOS</field>
         </record>
         <record id="l10n_cu_cnae_8530" model="res.cnae">
             <field name="code">8530</field>
             <field name="name">EDUCACIÓN SUPERIOR</field>
         </record>
-        8541     EDUCACIÓN DEPORTIVA Y RECREATIVA
-        8542     EDUCACIÓN CULTURAL
-        8549     OTRAS ACTIVIDADES EDUCACIONALES N.C.P.
+        <record id="l10n_cu_cnae_8541" model="res.cnae">
+            <field name="code">8541</field>
+            <field name="name">EDUCACIÓN DEPORTIVA Y RECREATIVA</field>
+        </record>
+        <record id="l10n_cu_cnae_8542" model="res.cnae">
+            <field name="code">8542</field>
+            <field name="name">EDUCACIÓN CULTURAL</field>
+        </record>
+        <record id="l10n_cu_cnae_8549" model="res.cnae">
+            <field name="code">8549</field>
+            <field name="name">OTRAS ACTIVIDADES EDUCACIONALES N.C.P.</field>
+        </record>
         <record id="l10n_cu_cnae_8550" model="res.cnae">
             <field name="code">8550</field>
             <field name="name">ACTIVIDADES DE APOYO A LA EDUCACiÓN</field>
@@ -1519,16 +1549,46 @@
             <field name="code">8562</field>
             <field name="name">EDUCACIÓN MIXTA</field>
         </record>
-        8610     ACTIVIDADES DE HOSPITALES
-        8620     ACTIVIDADES DE MÉDICOS Y ODONTÓLOGOS
-        8690     OTRAS ACTIVIDADES DE ATENCIÓN DE LA SALUD HUMANA
-        8710     ACTIVIDADES DE ATENCIÓN DE ENFERMERÍA EN INSTITUCIONES
-        8720     ACTIVIDADES DE ATENCIÓN EN INSTITUCIONES PARA PERSONAS CON RETRASO MENTAL, ENFERMOS MENTALES Y TOXICÓMANOS
-        8730     ACTIVIDADES DE ATENCIÓN EN INSTITUCIONES PARA PERSONAS DE EDAD Y PERSONAS CON DISCAPACIDAD
-        8790     OTRAS ACTIVIDADES DE ATENCIÓN EN INSTITUCIONES
-        8810     ACTIVIDADES DE ASISTENCIA SOCIAL SIN ALOJAMIENTO PARA PERSONAS DE EDAD Y PERSONAS CON DISCAPACIDAD
-        8890     OTRAS ACTIVIDADES DE ASISTENCIA SOCIAL SIN ALOJAMIENTO
-        9000     ACTIVIDADES CREATIVAS, ARTÍSTICAS Y DE ENTRETENIMIENTO
+        <record id="l10n_cu_cnae_8610" model="res.cnae">
+            <field name="code">8610</field>
+            <field name="name">ACTIVIDADES DE HOSPITALES</field>
+        </record>
+        <record id="l10n_cu_cnae_8620" model="res.cnae">
+            <field name="code">8620</field>
+            <field name="name">ACTIVIDADES DE MÉDICOS Y ODONTÓLOGOS</field>
+        </record>
+        <record id="l10n_cu_cnae_8690" model="res.cnae">
+            <field name="code">8690</field>
+            <field name="name">OTRAS ACTIVIDADES DE ATENCIÓN DE LA SALUD HUMANA</field>
+        </record>
+        <record id="l10n_cu_cnae_8710" model="res.cnae">
+            <field name="code">8710</field>
+            <field name="name">ACTIVIDADES DE ATENCIÓN DE ENFERMERÍA EN INSTITUCIONES</field>
+        </record>
+        <record id="l10n_cu_cnae_8720" model="res.cnae">
+            <field name="code">8720</field>
+            <field name="name">ACTIVIDADES DE ATENCIÓN EN INSTITUCIONES PARA PERSONAS CON RETRASO MENTAL, ENFERMOS MENTALES Y TOXICÓMANOS</field>
+        </record>
+        <record id="l10n_cu_cnae_8730" model="res.cnae">
+            <field name="code">8730</field>
+            <field name="name">ACTIVIDADES DE ATENCIÓN EN INSTITUCIONES PARA PERSONAS DE EDAD Y PERSONAS CON DISCAPACIDAD</field>
+        </record>
+        <record id="l10n_cu_cnae_8790" model="res.cnae">
+            <field name="code">8790</field>
+            <field name="name">OTRAS ACTIVIDADES DE ATENCIÓN EN INSTITUCIONES</field>
+        </record>
+        <record id="l10n_cu_cnae_8810" model="res.cnae">
+            <field name="code">8810</field>
+            <field name="name">ACTIVIDADES DE ASISTENCIA SOCIAL SIN ALOJAMIENTO PARA PERSONAS DE EDAD Y PERSONAS CON DISCAPACIDAD</field>
+        </record>
+        <record id="l10n_cu_cnae_8890" model="res.cnae">
+            <field name="code">8890</field>
+            <field name="name">OTRAS ACTIVIDADES DE ASISTENCIA SOCIAL SIN ALOJAMIENTO</field>
+        </record>
+        <record id="l10n_cu_cnae_9000" model="res.cnae">
+            <field name="code">9000</field>
+            <field name="name">ACTIVIDADES CREATIVAS, ARTÍSTICAS Y DE ENTRETENIMIENTO</field>
+        </record>
         <record id="l10n_cu_cnae_9101" model="res.cnae">
             <field name="code">9101</field>
             <field name="name">ACTIVIDADES DE BIBLIOTECAS Y ARCHIVOS</field>
