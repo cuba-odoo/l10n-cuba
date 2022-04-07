@@ -82,7 +82,6 @@ class HrPayslip(models.Model):
         return res
 
 class HrPayslipRun(models.Model):
-    _name = 'hr.payslip.run'
     _inherit = "hr.payslip.run"
     _order = "date_start desc"
 
