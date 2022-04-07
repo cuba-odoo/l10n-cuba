@@ -11,6 +11,46 @@ import logging
 _logger = logging.getLogger(__name__)
 from datetime import datetime
 
+class VbStatement:
+    fecha = None
+    ref_corrie = None
+    ref_origin = None
+    observ = None
+    importe = None
+    tipo = None
+
+    def __init__(self, statement):
+        self.fecha = statement[0].text
+        self.ref_corrie = statement[1].text
+        self.ref_origin = statement[2].text
+        self.observ = statement[3].text
+        self.importe = statement[4].text
+        self.tipo = statement[5].text
+
+    def validate(self):
+        """Este metodo sera el encargado de validad sintacticamente el xml."""
+        pass
+
+    def getFecha(self): return self.fecha
+
+    def getFechaFormated(self):
+        date = datetime.strptime(str(self.fecha), "%d/%m/%Y")
+        return date
+
+    def getRefCorriente(self): return self.ref_corrie
+
+    def getRefOrigen(self): return self.ref_origin
+
+    def getObservaciones(self): return self.observ
+
+    def getImporte(self): return self.importe
+
+    def getTipo(self): return self.tipo
+
+    def getImporteByTipo(self):
+        sign = self.getTipo() == 'Db' and -1 or 1
+        return float(self.importe) * sign
+
 
 class AccountBankStatementImport(models.TransientModel):
     _inherit = 'account.bank.statement.import'
@@ -31,8 +71,7 @@ class AccountBankStatementImport(models.TransientModel):
             try:
                 root = ET.fromstring(xmlfile)
                 tipo_xml = root.tag.split('}')[-1]
-                # if root.tag.split('}')[0].find('/v4.3/') >= 0:
-                #     doc_version = 4.3
+
             except Exception as e:
                 # raise exceptions.ValidationError(e.message)
                 raise exceptions.ValidationError(str(e))
@@ -46,28 +85,21 @@ class AccountBankStatementImport(models.TransientModel):
         xmlfile = base64.b64decode(self.import_f)
         root = ET.fromstring(xmlfile)
 
-        header = root[1]
-        footer = root[-1]
-
-        balance_start_tag = header[4] #position 4 is tag importe
-        balance_start = balance_start_tag.text
-
-        balance_end_tag = footer[4] #position 4 is tag importe
-        balance_end = balance_end_tag.text
+        statement_header = VbStatement(root[1])
+        statement_footer = VbStatement(root[-1])
 
         vals_list = []
         lines = root[2:-2]
         for line in lines:
-            if line[0].text and line[3].text and line[4].text:
-                sign = line[5].text == 'Db' and -1 or 1
-
+            statement = VbStatement(line)
+            if statement.getFecha() and statement.getObservaciones() and statement.getImporte():
                 values = {
-                    'date': datetime.strptime(str(line[0].text), "%d/%m/%Y"),
-                    'payment_ref': line[3].text,
-                    'ref': line[2].text,
-                    'transaction_type': line[5].text,
-                    'amount': float(line[4].text) * sign,
-                    # 'currency_id': self.get_currency(field[5])
+                    'date': statement.getFechaFormated(),
+                    'payment_ref': statement.getObservaciones(),
+                    'ref': statement.getRefOrigen(),
+                    'transaction_type': statement.getTipo(),
+                    'amount': statement.getImporteByTipo()
+
                 }
                 vals_list.append((0, 0, values))
 
@@ -75,8 +107,8 @@ class AccountBankStatementImport(models.TransientModel):
             'name': 'Extracto de ' + str(datetime.today().date()),
             'journal_id': self.env.context.get('active_id'),
             'line_ids': vals_list,
-            'balance_start': balance_start,
-            'balance_end_real': balance_end
+            'balance_start': statement_header.getImporte(),
+            'balance_end_real': statement_footer.getImporte()
         }
         statement_id = self.env['account.bank.statement'].create(statement_vals)
 
@@ -87,4 +119,3 @@ class AccountBankStatementImport(models.TransientModel):
             'res_model': 'account.bank.statement',
             'type': 'ir.actions.act_window'
         }
-
