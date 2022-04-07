@@ -24,14 +24,16 @@ Uso
 Bug Tracker
 ===========
 
-
+Dependencias de terceros
+=============
+Odoo Mates: https://github.com/odoomates/odooapps
+OCA: https://github.com/OCA/reporting-engine
 
 Authors
-=============
-
+==========
 * Comunidad Cubana de Odoo
 
 Contributors
 =============
 
-* Segu S.U.R.L
+* Segu 

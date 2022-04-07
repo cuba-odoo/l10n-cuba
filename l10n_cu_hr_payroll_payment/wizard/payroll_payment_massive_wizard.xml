@@ -27,7 +27,7 @@
         <field name="view_mode">form</field>
         <field name="target">new</field>
         <field name="view_id" ref="view_hr_payroll_payment_form"/>
-        <field name="binding_model_id" ref="hr_payroll_community.model_hr_payslip"/>
+        <field name="binding_model_id" ref="om_hr_payroll.model_hr_payslip"/>
         <field name="binding_view_types">list</field>
     </record>
     <record id="action_payroll_payment_run_wizard" model="ir.actions.act_window">
@@ -37,7 +37,7 @@
         <field name="view_mode">form</field>
         <field name="target">new</field>
         <field name="view_id" ref="view_hr_payroll_payment_form"/>
-        <field name="binding_model_id" ref="hr_payroll_community.model_hr_payslip_run"/>
+        <field name="binding_model_id" ref="om_hr_payroll.model_hr_payslip_run"/>
         <field name="binding_view_types">form</field>
     </record>
 </odoo>

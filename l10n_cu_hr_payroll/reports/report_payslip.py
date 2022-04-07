@@ -9,6 +9,7 @@ def _get_line_by_code(self, payslip_id, code):
 
 class ReportPayslip(models.AbstractModel):
     _name = 'report.l10n_cu_hr_payroll.report_payslip'
+    _description = "Report Payslip"
 
     def _get_decimal_precision(self, code=''):
         default_digit = 2

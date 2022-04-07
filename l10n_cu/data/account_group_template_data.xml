@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <data noupdate="1">
+<!--        Sector cooperativo y privado-->
         <record id="account_group_10" model="account.group.template">
             <field name="chart_template_id" ref="l10n_cu_chart_template_common"/>
             <field name="name">GRUPO DE ACTIVOS</field>
@@ -111,6 +112,74 @@
         </record>
         <record id="account_group_60" model="account.group.template">
             <field name="chart_template_id" ref="l10n_cu_chart_template_common"/>
+            <field name="code_prefix_start">999</field>
+            <field name="code_prefix_end">999</field>
+            <field name="name">CUENTA DE CIERRE</field>
+        </record>
+
+<!--        TCP-->
+        <record id="account_group_tcp_10" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_cu_chart_template_freelance"/>
+            <field name="name">GRUPO DE ACTIVOS</field>
+        </record>
+        <record id="account_group_tcp_10_1" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_cu_chart_template_freelance"/>
+            <field name="code_prefix_start">100</field>
+            <field name="code_prefix_end">110</field>
+            <field name="parent_id" ref="account_group_tcp_10"/>
+            <field name="name">ACTIVO CIRCULANTE</field>
+        </record>
+        <record id="account_group_tcp_10_2" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_cu_chart_template_freelance"/>
+            <field name="code_prefix_start">200</field>
+            <field name="code_prefix_end">200</field>
+            <field name="parent_id" ref="account_group_tcp_10"/>
+            <field name="name">ACTIVOS FIJO</field>
+        </record>
+        <record id="account_group_tcp_10_3" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_cu_chart_template_freelance"/>
+            <field name="code_prefix_start">300</field>
+            <field name="code_prefix_end">300</field>
+            <field name="parent_id" ref="account_group_tcp_10"/>
+            <field name="name">CUENTAS REGULADORAS DE ACTIVOS</field>
+        </record>
+        <record id="account_group_tcp_20" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_cu_chart_template_freelance"/>
+            <field name="name">GRUPO DE PASIVOS</field>
+        </record>
+        <record id="account_group_tcp_20_1" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_cu_chart_template_freelance"/>
+            <field name="code_prefix_start">470</field>
+            <field name="code_prefix_end">470</field>
+            <field name="parent_id" ref="account_group_tcp_20"/>
+            <field name="name">PASIVOS CIRCULANTES</field>
+        </record>
+        <record id="account_group_tcp_30" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_cu_chart_template_freelance"/>
+            <field name="name">GRUPO DE PATRIMONIO</field>
+            <field name="code_prefix_start">600</field>
+            <field name="code_prefix_end">620</field>
+        </record>
+        <record id="account_group_tcp_40" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_cu_chart_template_freelance"/>
+            <field name="name">GRUPO DE CUENTAS NOMINALES</field>
+        </record>
+        <record id="account_group_tcp_40_1" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_cu_chart_template_freelance"/>
+            <field name="code_prefix_start">800</field>
+            <field name="code_prefix_end">810</field>
+            <field name="parent_id" ref="account_group_tcp_40"/>
+            <field name="name">CUENTAS NOMINALES DEUDORAS</field>
+        </record>
+        <record id="account_group_tcp_40_2" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_cu_chart_template_freelance"/>
+            <field name="code_prefix_start">900</field>
+            <field name="code_prefix_end">900</field>
+            <field name="parent_id" ref="account_group_tcp_40"/>
+            <field name="name">CUENTAS NOMINALES DEUDORAS</field>
+        </record>
+        <record id="account_group_tcp_50" model="account.group.template">
+            <field name="chart_template_id" ref="l10n_cu_chart_template_freelance"/>
             <field name="code_prefix_start">999</field>
             <field name="code_prefix_end">999</field>
             <field name="name">CUENTA DE CIERRE</field>

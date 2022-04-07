@@ -4,19 +4,16 @@
         <field name="name">Reporte Tributario</field>
         <field name="country_id" ref="base.cu"/>
     </record>
-
 	<record id="tax_report_impuesto_35" model="account.tax.report.line">
         <field name="name">Impuesto sobre Utilidades de la Empresa IUE (35%)</field>
         <field name="report_id" ref="tax_report"/>
         <field name="sequence" eval="1"/>
     </record>
-
     <record id="tax_report_impuesto_10" model="account.tax.report.line">
         <field name="name">Impuesto sobre las Ventas Minoristas o los Servicios a la Población I10 (10%)</field>
         <field name="report_id" ref="tax_report"/>
         <field name="sequence" eval="2"/>
     </record>
-
     <record id="tax_report_impuesto_ft" model="account.tax.report.line">
         <field name="name">Impuesto por la Utilización de la Fuerza de Trabajo FT (5% Remuneraciones pagadas a los trabajadores contratados)</field>
         <field name="report_id" ref="tax_report"/>

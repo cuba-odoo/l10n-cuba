@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <data noupdate="1">
-    <!--Estado de Resultado-->
+    <!-- Estado de Resultado (EFE 5921-04) -->
         <record id="ncc_financial_report_er" model="account.financial.report">
             <field name="name">ESTADO DE RENDIMIENTO FINANCIERO</field>
             <field name="sign">1</field>
@@ -106,7 +106,7 @@
         </record>
         <record id="ncc_financial_report_er_11" model="account.financial.report">
             <field name="name">= Utilidad o Pérdida Bruta en Ventas</field>
-            <field name="sign">-1</field>
+            <field name="sign">1</field>
             <field name="type">accounts</field>
             <field name="sequence">11</field>
             <field name="display_detail">no_detail</field>
@@ -132,7 +132,7 @@
         </record>
         <record id="ncc_financial_report_er_13" model="account.financial.report">
             <field name="name">= Utilidad o Pérdida Neta en Ventas</field>
-            <field name="sign">-1</field>
+            <field name="sign">1</field>
             <field name="type">accounts</field>
             <field name="sequence">13</field>
             <field name="display_detail">no_detail</field>
@@ -168,7 +168,7 @@
         </record>
         <record id="ncc_financial_report_er_17" model="account.financial.report">
             <field name="name">= Utilidad o Pérdida en Operaciones</field>
-            <field name="sign">-1</field>
+            <field name="sign">1</field>
             <field name="type">accounts</field>
             <field name="sequence">17</field>
             <field name="display_detail">no_detail</field>
@@ -193,6 +193,7 @@
             <field name="sequence">18</field>
             <field name="display_detail">detail_with_hierarchy</field>
             <field name="parent_id" ref="ncc_financial_report_er"/>
+            <field name="account_ids" search="[('code', 'like', '825.%')]"/>
         </record>
         <record id="ncc_financial_report_er_19" model="account.financial.report">
             <field name="name">- Gastos Financieros (835 - 838)</field>
@@ -222,7 +223,7 @@
             <field name="account_ids" search="[('code', 'like', '841.%')]"/>
         </record>
         <record id="ncc_financial_report_er_23" model="account.financial.report">
-            <field name="name">-  Gastos por Estadía – Otras Entidades (843)</field>
+            <field name="name">- Gastos por Estadía – Otras Entidades (843)</field>
             <field name="sign">1</field>
             <field name="type">accounts</field>
             <field name="sequence">23</field>
@@ -376,7 +377,7 @@
         </record>
         <record id="ncc_financial_report_er_40" model="account.financial.report">
             <field name="name">= Utilidad o Pérdida antes del Impuesto</field>
-            <field name="sign">-1</field>
+            <field name="sign">1</field>
             <field name="type">accounts</field>
             <field name="sequence">40</field>
             <field name="display_detail">no_detail</field>

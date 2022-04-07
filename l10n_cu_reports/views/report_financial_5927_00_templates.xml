@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="report_financial_5927_00">
+        <t t-call="web.html_container">
+            <t t-call="web.basic_layout">
+                <div class="page">
+                    <style>.cu_bb{
+					border-bottom: 1px solid black !important;
+					}
+                    .cu_bt{
+					border-top: 1px solid black !important;
+					}
+                    .cu_bl{
+					border-left: 1px solid black !important;
+					}
+                    .cu_br{
+					border-right: 1px solid black !important;
+					}
+					</style>
+                    <div class="header">
+                        <t t-call="l10n_cu_reports.internal_financial_layout_header">
+                            <strong>(5927-00)</strong>
+                        </t>
+                    </div>
+                    <table class="table table-sm" style="margin: 0px !important;">
+                        <thead>
+                            <tr>
+                                <th class="text-center cu_bb cu_bl cu_br"
+                                    style="vertical-align:middle; width: 60%;">
+                                    <strong>CONCEPTOS</strong>
+                                </th>
+                                <th class="text-center cu_bb cu_bl cu_br"
+                                    style="vertical-align:middle;">
+                                    <strong>Filas</strong>
+                                </th>
+                                <th class="text-center cu_bb cu_bl cu_br"
+                                    style="vertical-align:middle;">
+                                    <strong>N</strong>
+                                </th>
+                                <th class="text-center cu_bb cu_bl cu_br"
+                                    style="vertical-align:middle;">
+                                    <strong>Plan Anual</strong>
+                                </th>
+                                <th class="text-center cu_bb cu_bl cu_br"
+                                    style="vertical-align:middle;">
+                                    <strong>Plan hasta la fecha</strong>
+                                </th>
+                                <th class="text-center cu_bb cu_bl cu_br"
+                                    style="vertical-align:middle;">
+                                    <strong>Real hasta la fecha</strong>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr t-foreach="get_account_lines" t-as="a">
+                                <t t-if="a['visible'] and a['level'] != 0">
+                                    <t t-if="int(a.get('level')) &gt; 3">
+                                        <t t-set="style" t-value="'font-weight: normal;'"/>
+                                    </t>
+                                    <t t-if="not int(a.get('level')) &gt; 3">
+                                        <t t-set="style" t-value="'font-weight: bold;'"/>
+                                    </t>
+                                    <td style="width: 60%; border: 1px solid black !important;">
+                                        <span style="color: white;" t-esc="'..' * int(a.get('level', 0))"/>
+                                        <span t-att-style="style" t-esc="a.get('name')"/>
+                                    </td>
+                                    <td class="text-right"
+                                        style="border: 1px solid black !important;">
+                                        <span t-if="not int(a.get('level')) &gt; 3" t-esc="a.get('sequence')"/>
+                                    </td>
+                                    <td class="text-right"
+                                        style="border: 1px solid black !important;">
+                                        <span style="color: white;">........</span>
+                                    </td>
+                                    <td class="text-right"
+                                        style="border: 1px solid black !important;">
+                                        <span t-if="not int(a.get('level')) &gt; 3" t-esc="a.get('plan_anual')"
+                                                t-options="{'widget': 'monetary', 'display_currency': res_company.currency_id}"/>
+                                    </td>
+                                    <td class="text-right"
+                                        style="border: 1px solid black !important;">
+                                        <t t-if="a.get('apertura')">
+                                            <span t-if="not int(a.get('level')) &gt; 3" t-esc="a.get('apertura')"
+                                                    t-options="{'widget': 'monetary', 'display_currency': res_company.currency_id}"/>
+                                        </t>
+                                    </td>
+                                    <td class="text-right"
+                                        style="border: 1px solid black !important;">
+                                        <span t-att-style="style" t-esc="a.get('balance')"
+                                                t-options="{'widget': 'monetary', 'display_currency': res_company.currency_id}"/>
+                                    </td>
+                                </t>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <t t-call="l10n_cu_reports.internal_financial_layout_footer"/>
+                </div>
+            </t>
+        </t>
+    </template>
+</odoo>

@@ -85,7 +85,39 @@
             <field name="children_tax_ids" eval="[(6, 0, [ref('tcp_cu_tax10_sale'), ref('tcp_cu_tax10_sale_reverse')])]"/>
             <field name="tax_group_id" ref="cu_tax_group_sale"/>
         </record>
+        <record id="tcp_cu_tax0_sale" model="account.tax.template">
+            <field name="sequence">4</field>
+            <field name="chart_template_id" ref="l10n_cu_chart_template_freelance"/>
+            <field name="name">0% TCP (VENTAS)</field>
+            <field name="description">0% VENTAS TCP</field>
+            <field name="amount">0</field>
+            <field name="amount_type">percent</field>
+            <field name="type_tax_use">sale</field>
+            <field name="invoice_repartition_line_ids" eval="[(5, 0, 0),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                }),
 
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                }),
+            ]"/>
+            <field name="refund_repartition_line_ids" eval="[(5, 0, 0),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                }),
+
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                }),
+            ]"/>
+            <field name="tax_group_id" ref="cu_tax_group_sale"/>
+            <field name="active" eval="True"/>
+        </record>
 
 
 <!--        Impuestos PRIVADO-COOPERATIVO -->
@@ -250,7 +282,7 @@
         <record id="private_cu_tax0_sale" model="account.tax.template">
             <field name="sequence">16</field>
             <field name="chart_template_id" ref="l10n_cu_chart_template_private"/>
-            <field name="name">EXENTO PRIVADO-COOPERATIVO (VENTAS)</field>
+            <field name="name">0% PRIVADO-COOPERATIVO (VENTAS)</field>
             <field name="description">0% VENTAS SECTOR PRIVADO Y COOPERATIVO</field>
             <field name="amount">0</field>
             <field name="amount_type">percent</field>

@@ -1,5 +1,5 @@
 <odoo>
-    <record id="hr_payroll_community.action_hr_payslip_run_tree" model="ir.actions.act_window">
+    <record id="om_hr_payroll.action_hr_payslip_run_tree" model="ir.actions.act_window">
         <field name="context" eval="{'default_journal_id': ref('account_journal_nomina')}"/>
     </record>
     <record id="hr_contract.action_hr_contract" model="ir.actions.act_window">
@@ -9,7 +9,7 @@
     <record id="view_hr_payslip_tree_inherit" model="ir.ui.view">
         <field name="name">view.hr.payslip.tree.inherit</field>
         <field name="model">hr.payslip</field>
-        <field name="inherit_id" ref="hr_payroll_community.view_hr_payslip_tree"/>
+        <field name="inherit_id" ref="om_hr_payroll.view_hr_payslip_tree"/>
         <field name="arch" type="xml">
             <field name="total" position="before">
                 <field name="paid"/>

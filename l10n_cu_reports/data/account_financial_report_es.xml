@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <data noupdate="1">
-        <!--Estado de Situacion-->
+        <!-- Estado de Situacion (EFE 5920 – 04) -->
         <record id="ncc_financial_report_es" model="account.financial.report">
             <field name="name">ESTADO DE SITUACIÓN</field>
             <field name="sign">1</field>

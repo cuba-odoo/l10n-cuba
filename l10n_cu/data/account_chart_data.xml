@@ -8,11 +8,12 @@
     <record id="l10n_cu_chart_template_freelance" model="account.chart.template">
         <field name="name">Cuba - Plan Contable TCP</field>
         <field name="complete_tax_set" eval="True"/>
-        <field name="code_digits">6</field>
+        <field name="code_digits">8</field>
         <field name="cash_account_code_prefix">101.</field>
         <field name="bank_account_code_prefix">109.</field>
         <field name="transfer_account_code_prefix">100.</field>
         <field name="currency_id" ref="base.CUP"/>
+        <field name="country_id" ref="base.cu"/>
     </record>
 
     <!-- Commmon Chart of Account  -->
@@ -24,6 +25,7 @@
         <field name="bank_account_code_prefix">109.</field>
         <field name="transfer_account_code_prefix">100.</field>
         <field name="currency_id" ref="base.CUP"/>
+        <field name="country_id" ref="base.cu"/>
     </record>
 
     <!-- Chart of Account for Public Company, except for Insurance's Company -->
@@ -36,11 +38,25 @@
         <field name="transfer_account_code_prefix">100.</field>
         <field name="parent_id" ref="l10n_cu_chart_template_common"/>
         <field name="currency_id" ref="base.CUP"/>
+        <field name="country_id" ref="base.cu"/>
     </record>
 
     <!-- Chart of Account for Private Company and Cooperative Sector -->
     <record id="l10n_cu_chart_template_private" model="account.chart.template">
         <field name="name">Cuba - Plan Contable Sector Privado y Cooperativo</field>
+        <field name="complete_tax_set" eval="True"/>
+        <field name="code_digits">8</field>
+        <field name="cash_account_code_prefix">101.</field>
+        <field name="bank_account_code_prefix">109.</field>
+        <field name="transfer_account_code_prefix">100.</field>
+        <field name="parent_id" ref="l10n_cu_chart_template_common"/>
+        <field name="currency_id" ref="base.CUP"/>
+        <field name="country_id" ref="base.cu"/>
+    </record>
+
+    <!-- Chart of Account for Governmental -->
+    <record id="l10n_cu_chart_template_government" model="account.chart.template">
+        <field name="name">Cuba - Plan Contable Gubernamental</field>
         <field name="complete_tax_set" eval="True"/>
         <field name="code_digits">8</field>
         <field name="cash_account_code_prefix">101.</field>

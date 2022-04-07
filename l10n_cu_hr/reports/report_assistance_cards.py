@@ -4,7 +4,7 @@ from odoo import fields, models, api, _
 
 class AssistanceCard(models.AbstractModel):
     _name = 'report.l10n_cu_hr.report_assistance_cards'
-    _description = 'Assistence Card'
+    _description = 'Report Assistence Card'
 
     @api.model
     def _get_report_values(self, docids, data=None):

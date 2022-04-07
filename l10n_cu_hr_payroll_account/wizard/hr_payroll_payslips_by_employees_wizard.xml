@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_hr_payslip_by_employees_inherit" model="ir.ui.view">
+		<field name="name">view.hr.payslip.by.employees.inherit</field>
+		<field name="model">hr.payslip.employees</field>
+		<field name="inherit_id" ref="om_hr_payroll.view_hr_payslip_by_employees"/>
+		<field name="arch" type="xml">
+			<xpath expr="//form/group[1]" position="replace">
+				<h2>Estructura salarial</h2>
+				<group name="struct">
+					<div class="text-muted">
+						Seleccione la estructura salarial en base al criterio del procesamiento de nomina.
+						Debe tener en cuenta que tanto el empleado como el contrato deben estar activo para que los
+						cálculos salariales funcionen correctamente, igualmente la fecha de inicio del contrato.
+					</div>
+					<field name="struct_id" nolabel="1"/>
+				</group>
+			</xpath>
+		</field>
+	</record>
+</odoo>

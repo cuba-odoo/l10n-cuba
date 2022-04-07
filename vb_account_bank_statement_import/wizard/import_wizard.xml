@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="vb_account_bank_statement_import_view_inherit" model="ir.ui.view">
+        <field name="name">vb_account_bank_statement_import_view_inherit</field>
+        <field name="model">account.bank.statement.import</field>
+        <field name="inherit_id" ref="om_account_bank_statement_import.om_account_bank_statement_import_view"/>
+        <field name="arch" type="xml">
+            <xpath expr="//form/h2" position="after">
+                <p>Descargue un extracto bancario desde VirtualBandec e impórtelo aquí. Formatos permitidos:</p>
+            </xpath>
+            <xpath expr="//form/ul[@id='statement_format']" position="inside">
+                <li>Lenguaje de Marcado Extensible (XML)</li>
+            </xpath>
+            <xpath expr="//field[@name='attachment_ids']" position="replace">
+                <field name="import_f" filename="import_file_name"/>
+                <field name="import_file_name" readonly="1" invisible="True"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>

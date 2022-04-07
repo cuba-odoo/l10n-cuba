@@ -8,7 +8,8 @@ class HrContract(models.Model):
     ('3500','3500'),('4000','4000'),('4500','4500'),('5000','5000'),('5500','5500'),('6000','6000'),('6500','6500'),
     ('7000','7000'),('7500','7500'),('8000','8000'),('8500','8500'),('9000','9000'),('9500','9500')],
                                             string='Regimen Contribution', help="Régimen de contribución para los socios.")
-    multi_job = fields.Boolean("Pluriempleo")
+    multi_job = fields.Boolean("Pluriempleo", help="Indica si ya eres contribuyente o jubilado. En cualquiera de"
+                                                   " los casos, este campo habilitado significa que no tendrá Base Impositiva la Seguridad Social.")
     schedule_pay = fields.Selection(selection=[
         ('monthly', 'Monthly'),
         ('quarterly', 'Quarterly'),
