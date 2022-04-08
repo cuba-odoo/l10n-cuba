@@ -11,13 +11,8 @@ import logging
 _logger = logging.getLogger(__name__)
 from datetime import datetime
 
+
 class VbStatement:
-    fecha = None
-    ref_corrie = None
-    ref_origin = None
-    observ = None
-    importe = None
-    tipo = None
 
     def __init__(self, statement):
         self.fecha = statement[0].text
