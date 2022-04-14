@@ -108,7 +108,6 @@ class AccountBankStatementImport(models.TransientModel):
         statement_id = self.env['account.bank.statement'].create(statement_vals)
 
         return {
-            'view_type': 'list',
             'res_id': statement_id.id,
             'view_mode': 'form',
             'res_model': 'account.bank.statement',
