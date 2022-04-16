@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 
 from odoo import api, models, _
+import os
 
 class ReportFinancial(models.AbstractModel):
     _inherit = 'report.accounting_pdf_reports.report_financial'
@@ -150,9 +151,10 @@ def layout_header(self, workbook, worksheet, data):
 
     worksheet.set_row(0, 50)
     worksheet.set_column(0, 50)
-
+    SITE_ROOT = os.path.dirname(os.path.realpath(__file__))
+    PARENT_ROOT = os.path.abspath(os.path.join(SITE_ROOT, os.pardir))
     worksheet.insert_image(0, 0,
-                           '/l10n_cu_reports/static/src/img/escudo_nacional.png',
+                           PARENT_ROOT + '/static/src/img/escudo_nacional.png',
                            {'x_scale': 1.7, 'y_scale': 1.7})
     cestados = workbook.add_format({'bold': True,
                                     'align': 'vcenter',
