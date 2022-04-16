@@ -45,7 +45,7 @@ class HrPayslipProjection(models.Model):
         rule_ids = self.env['hr.payroll.structure'].browse(structure_ids).get_all_rules()
 
         rules = self.env['hr.salary.rule'].browse(id for id, sequence in sorted(rule_ids, key=lambda x: x[1])).filtered(
-            lambda l: l.appears_on_payslip == True
+            lambda l: l.appears_on_payslip
         )
 
         for rule in rules:

@@ -12,12 +12,7 @@ _logger = logging.getLogger(__name__)
 from datetime import datetime
 
 class VbStatement:
-    fecha = None
-    ref_corrie = None
-    ref_origin = None
-    observ = None
-    importe = None
-    tipo = None
+
 
     def __init__(self, statement):
         self.fecha = statement[0].text
@@ -113,7 +108,6 @@ class AccountBankStatementImport(models.TransientModel):
         statement_id = self.env['account.bank.statement'].create(statement_vals)
 
         return {
-            'view_type': 'list',
             'res_id': statement_id.id,
             'view_mode': 'form',
             'res_model': 'account.bank.statement',
