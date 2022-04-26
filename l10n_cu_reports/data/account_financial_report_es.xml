@@ -31,8 +31,18 @@
             <field name="sequence">2</field>
             <field name="display_detail">detail_with_hierarchy</field>
             <field name="parent_id" ref="ncc_financial_report_es_01"/>
-            <field name="account_ids" search="[('code', 'like', '101.%')]"/>
             <field name="style_overwrite">2</field>
+            <field name="account_ids" search="[
+            '|', '|', '|', '|','|', '|', '|',
+            ('code', '=like', '101%'),
+            ('code', '=like', '102%'),
+            ('code', '=like', '103%'),
+            ('code', '=like', '104%'),
+            ('code', '=like', '105%'),
+            ('code', '=like', '106%'),
+            ('code', '=like', '107%'),
+            ('code', '=like', '108%')
+            ]"/>
         </record>
         <record id="ncc_financial_report_es_03" model="account.financial.report">
             <field name="name">Efectivo en Banco y en Otras Instituciones (109-119)</field>
@@ -41,8 +51,21 @@
             <field name="sequence">3</field>
             <field name="display_detail">detail_with_hierarchy</field>
             <field name="parent_id" ref="ncc_financial_report_es_01"/>
-            <field name="account_ids" search="[('code', 'like', '109.%')]"/>
             <field name="style_overwrite">2</field>
+            <field name="account_ids" search="[
+            '|', '|', '|', '|','|', '|', '|',  '|', '|', '|',
+            ('code', '=like', '109%'),
+            ('code', '=like', '110%'),
+            ('code', '=like', '111%'),
+            ('code', '=like', '112%'),
+            ('code', '=like', '113%'),
+            ('code', '=like', '114%'),
+            ('code', '=like', '115%'),
+            ('code', '=like', '116%'),
+            ('code', '=like', '117%'),
+            ('code', '=like', '118%'),
+            ('code', '=like', '119%')
+            ]"/>
         </record>
         <record id="ncc_financial_report_es_04" model="account.financial.report">
             <field name="name">Inversiones a Corto Plazo O Temporales (120-129)</field>
@@ -51,7 +74,7 @@
             <field name="sequence">4</field>
             <field name="display_detail">detail_with_hierarchy</field>
             <field name="parent_id" ref="ncc_financial_report_es_01"/>
-            <field name="account_ids" search="[('code', 'like', '120.%')]"/>
+            <field name="account_ids" search="[('code', '=like', '12%')]"/>
             <field name="style_overwrite">2</field>
         </record>
         <record id="ncc_financial_report_es_05" model="account.financial.report">
@@ -61,8 +84,14 @@
             <field name="sequence">5</field>
             <field name="display_detail">detail_with_hierarchy</field>
             <field name="parent_id" ref="ncc_financial_report_es_01"/>
-            <field name="account_ids" search="[('code', 'like', '130.%')]"/>
             <field name="style_overwrite">2</field>
+            <field name="account_ids" search="[
+            '|', '|', '|',
+            ('code', '=like', '130%'),
+            ('code', '=like', '131%'),
+            ('code', '=like', '132%'),
+            ('code', '=like', '133%')
+            ]"/>
         </record>
         <record id="ncc_financial_report_es_06" model="account.financial.report">
             <field name="name">Efectos por Cobrar Descontados (365)</field>
@@ -71,7 +100,7 @@
             <field name="sequence">6</field>
             <field name="display_detail">detail_with_hierarchy</field>
             <field name="parent_id" ref="ncc_financial_report_es_01"/>
-            <field name="account_ids" search="[('code', 'like', '365.%')]"/>
+            <field name="account_ids" search="[('code', '=like', '365%')]"/>
             <field name="style_overwrite">2</field>
         </record>
         <record id="ncc_financial_report_es_07" model="account.financial.report">
@@ -81,7 +110,7 @@
             <field name="sequence">7</field>
             <field name="display_detail">detail_with_hierarchy</field>
             <field name="parent_id" ref="ncc_financial_report_es_01"/>
-            <field name="account_ids" search="[('code', 'like', '134.%')]"/>
+            <field name="account_ids" search="[('code', '=like', '134%')]"/>
             <field name="style_overwrite">2</field>
         </record>
         <record id="ncc_financial_report_es_08" model="account.financial.report">
@@ -91,8 +120,16 @@
             <field name="sequence">8</field>
             <field name="display_detail">detail_with_hierarchy</field>
             <field name="parent_id" ref="ncc_financial_report_es_01"/>
-            <field name="account_ids" search="[('code', 'like', '135.%')]"/>
             <field name="style_overwrite">2</field>
+            <field name="account_ids" search="[
+            '|', '|', '|', '|','|',
+            ('code', '=like', '135%'),
+            ('code', '=like', '136%'),
+            ('code', '=like', '137%'),
+            ('code', '=like', '138%'),
+            ('code', '=like', '139%'),
+            ('code', '=like', '154%')
+            ]"/>
         </record>
         <record id="ncc_financial_report_es_09" model="account.financial.report">
             <field name="name">Provisión para Cuentas Incobrables (369)</field>
@@ -101,7 +138,7 @@
             <field name="sequence">9</field>
             <field name="display_detail">detail_with_hierarchy</field>
             <field name="parent_id" ref="ncc_financial_report_es_01"/>
-            <field name="account_ids" search="[('code', 'like', '369.%')]"/>
+            <field name="account_ids" search="[('code', '=like', '369%')]"/>
             <field name="style_overwrite">2</field>
         </record>
         <record id="ncc_financial_report_es_10" model="account.financial.report">
@@ -111,7 +148,7 @@
             <field name="sequence">10</field>
             <field name="display_detail">detail_with_hierarchy</field>
             <field name="parent_id" ref="ncc_financial_report_es_01"/>
-            <field name="account_ids" search="[('code', 'like', '140.%')]"/>
+            <field name="account_ids" search="[('code', '=like', '140%')]"/>
             <field name="style_overwrite">2</field>
         </record>
         <record id="ncc_financial_report_es_11" model="account.financial.report">
@@ -121,7 +158,7 @@
             <field name="sequence">11</field>
             <field name="display_detail">detail_with_hierarchy</field>
             <field name="parent_id" ref="ncc_financial_report_es_01"/>
-            <field name="account_ids" search="[('code', 'like', '141.%')]"/>
+            <field name="account_ids" search="[('code', '=like', '141%')]"/>
             <field name="style_overwrite">2</field>
         </record>
         <record id="ncc_financial_report_es_12" model="account.financial.report">
@@ -131,7 +168,7 @@
             <field name="sequence">12</field>
             <field name="display_detail">detail_with_hierarchy</field>
             <field name="parent_id" ref="ncc_financial_report_es_01"/>
-            <field name="account_ids" search="[('code', 'like', '142.%')]"/>
+            <field name="account_ids" search="[('code', '=like', '142%')]"/>
             <field name="style_overwrite">2</field>
         </record>
         <record id="ncc_financial_report_es_13" model="account.financial.report">
@@ -141,7 +178,7 @@
             <field name="sequence">13</field>
             <field name="display_detail">detail_with_hierarchy</field>
             <field name="parent_id" ref="ncc_financial_report_es_01"/>
-            <field name="account_ids" search="[('code', 'like', '143.%')]"/>
+            <field name="account_ids" search="[('code', '=like', '143%')]"/>
             <field name="style_overwrite">2</field>
         </record>
         <record id="ncc_financial_report_es_14" model="account.financial.report">
@@ -151,8 +188,14 @@
             <field name="sequence">14</field>
             <field name="display_detail">detail_with_hierarchy</field>
             <field name="parent_id" ref="ncc_financial_report_es_01"/>
-            <field name="account_ids" search="[('code', 'like', '146.%')]"/>
             <field name="style_overwrite">2</field>
+            <field name="account_ids" search="[
+            '|', '|', '|',
+            ('code', '=like', '146%'),
+            ('code', '=like', '147%'),
+            ('code', '=like', '148%'),
+            ('code', '=like', '149%')
+            ]"/>
         </record>
         <record id="ncc_financial_report_es_15" model="account.financial.report">
             <field name="name">Pagos Anticipados del Proceso Inversionista (150-152)</field>
@@ -161,7 +204,12 @@
             <field name="sequence">15</field>
             <field name="display_detail">detail_with_hierarchy</field>
             <field name="parent_id" ref="ncc_financial_report_es_01"/>
-            <field name="account_ids" search="[('code', 'like', '150.%')]"/>
+            <field name="account_ids" search="[
+            '|', '|',
+            ('code', '=like', '150%'),
+            ('code', '=like', '151%'),
+            ('code', '=like', '152%')
+            ]"/>
             <field name="style_overwrite">2</field>
         </record>
         <record id="ncc_financial_report_es_16" model="account.financial.report">
@@ -171,7 +219,7 @@
             <field name="sequence">16</field>
             <field name="display_detail">detail_with_hierarchy</field>
             <field name="parent_id" ref="ncc_financial_report_es_01"/>
-            <field name="account_ids" search="[('code', 'like', '153.%')]"/>
+            <field name="account_ids" search="[('code', '=like', '153%')]"/>
             <field name="style_overwrite">2</field>
         </record>
         <record id="ncc_financial_report_es_17" model="account.financial.report">
@@ -181,8 +229,13 @@
             <field name="sequence">17</field>
             <field name="display_detail">detail_with_hierarchy</field>
             <field name="parent_id" ref="ncc_financial_report_es_01"/>
-            <field name="account_ids" search="[('code', 'like', '161.%')]"/>
             <field name="style_overwrite">2</field>
+            <field name="account_ids" search="[
+            '|', '|',
+            ('code', '=like', '161%'),
+            ('code', '=like', '162%'),
+            ('code', '=like', '163%')
+            ]"/>
         </record>
         <record id="ncc_financial_report_es_18" model="account.financial.report">
             <field name="name">Adeudos del Presupuesto del Estado (164-166)</field>
@@ -191,8 +244,13 @@
             <field name="sequence">18</field>
             <field name="display_detail">detail_with_hierarchy</field>
             <field name="parent_id" ref="ncc_financial_report_es_01"/>
-            <field name="account_ids" search="[('code', 'like', '164.%')]"/>
             <field name="style_overwrite">2</field>
+            <field name="account_ids" search="[
+            '|', '|',
+            ('code', '=like', '164%'),
+            ('code', '=like', '165%'),
+            ('code', '=like', '166%')
+             ]"/>
         </record>
         <record id="ncc_financial_report_es_19" model="account.financial.report">
             <field name="name">Adeudos del Órgano u Organismo (167-170)</field>
@@ -201,8 +259,14 @@
             <field name="sequence">19</field>
             <field name="display_detail">detail_with_hierarchy</field>
             <field name="parent_id" ref="ncc_financial_report_es_01"/>
-            <field name="account_ids" search="[('code', 'like', '167.%')]"/>
             <field name="style_overwrite">2</field>
+            <field name="account_ids" search="[
+            '|', '|', '|',
+            ('code', '=like', '167%'),
+            ('code', '=like', '168%'),
+            ('code', '=like', '169%'),
+            ('code', '=like', '170%')
+             ]"/>
         </record>
         <record id="ncc_financial_report_es_20" model="account.financial.report">
             <field name="name">Ingresos Acumulados por Cobrar (173-180)</field>
@@ -211,8 +275,18 @@
             <field name="sequence">20</field>
             <field name="display_detail">detail_with_hierarchy</field>
             <field name="parent_id" ref="ncc_financial_report_es_01"/>
-            <field name="account_ids" search="[('code', 'like', '173.%')]"/>
             <field name="style_overwrite">2</field>
+            <field name="account_ids" search="[
+            '|', '|', '|', '|','|', '|','|',
+            ('code', '=like', '173%'),
+            ('code', '=like', '174%'),
+            ('code', '=like', '175%'),
+            ('code', '=like', '176%'),
+            ('code', '=like', '177%'),
+            ('code', '=like', '178%'),
+            ('code', '=like', '179%'),
+            ('code', '=like', '180%')
+            ]"/>
         </record>
         <record id="ncc_financial_report_es_21" model="account.financial.report">
             <field name="name">Dividendos y Participaciones por Cobrar (181)</field>
@@ -221,7 +295,7 @@
             <field name="sequence">21</field>
             <field name="display_detail">detail_with_hierarchy</field>
             <field name="parent_id" ref="ncc_financial_report_es_01"/>
-            <field name="account_ids" search="[('code', 'like', '181.%')]"/>
+            <field name="account_ids" search="[('code', '=like', '181%')]"/>
             <field name="style_overwrite">2</field>
         </record>
         <record id="ncc_financial_report_es_22" model="account.financial.report">
@@ -231,7 +305,7 @@
             <field name="sequence">22</field>
             <field name="display_detail">detail_with_hierarchy</field>
             <field name="parent_id" ref="ncc_financial_report_es_01"/>
-            <field name="account_ids" search="[('code', 'like', '182.%')]"/>
+            <field name="account_ids" search="[('code', '=like', '182%')]"/>
             <field name="style_overwrite">2</field>
         </record>
         <record id="ncc_financial_report_es_23" model="account.financial.report">
@@ -249,7 +323,7 @@
             <field name="sequence">24</field>
             <field name="display_detail">detail_with_hierarchy</field>
             <field name="parent_id" ref="ncc_financial_report_es_23"/>
-            <field name="account_ids" search="[('code', 'like', '183.%')]"/>
+            <field name="account_ids" search="[('code', '=like', '183%')]"/>
             <field name="style_overwrite">2</field>
         </record>
         <record id="ncc_financial_report_es_25" model="account.financial.report">
@@ -259,7 +333,7 @@
             <field name="sequence">25</field>
             <field name="display_detail">detail_with_hierarchy</field>
             <field name="parent_id" ref="ncc_financial_report_es_23"/>
-            <field name="account_ids" search="[('code', 'like', '184.%')]"/>
+            <field name="account_ids" search="[('code', '=like', '184%')]"/>
             <field name="style_overwrite">2</field>
         </record>
         <record id="ncc_financial_report_es_26" model="account.financial.report">
@@ -269,7 +343,7 @@
             <field name="sequence">26</field>
             <field name="display_detail">detail_with_hierarchy</field>
             <field name="parent_id" ref="ncc_financial_report_es_23"/>
-            <field name="account_ids" search="[('code', 'like', '185.%')]"/>
+            <field name="account_ids" search="[('code', '=like', '185%')]"/>
             <field name="style_overwrite">2</field>
         </record>
         <record id="ncc_financial_report_es_27" model="account.financial.report">
@@ -279,7 +353,7 @@
             <field name="sequence">27</field>
             <field name="display_detail">detail_with_hierarchy</field>
             <field name="parent_id" ref="ncc_financial_report_es_23"/>
-            <field name="account_ids" search="[('code', 'like', '186.%')]"/>
+            <field name="account_ids" search="[('code', '=like', '186%')]"/>
             <field name="style_overwrite">2</field>
         </record>
         <record id="ncc_financial_report_es_28" model="account.financial.report">
@@ -289,7 +363,7 @@
             <field name="sequence">28</field>
             <field name="display_detail">detail_with_hierarchy</field>
             <field name="parent_id" ref="ncc_financial_report_es_23"/>
-            <field name="account_ids" search="[('code', 'like', '187.%')]"/>
+            <field name="account_ids" search="[('code', '=like', '187%')]"/>
             <field name="style_overwrite">2</field>
         </record>
         <record id="ncc_financial_report_es_29" model="account.financial.report">
@@ -299,7 +373,7 @@
             <field name="sequence">29</field>
             <field name="display_detail">detail_with_hierarchy</field>
             <field name="parent_id" ref="ncc_financial_report_es_23"/>
-            <field name="account_ids" search="[('code', 'like', '373.%')]"/>
+            <field name="account_ids" search="[('code', '=like', '373%')]"/>
             <field name="style_overwrite">2</field>
         </record>
         <record id="ncc_financial_report_es_30" model="account.financial.report">
@@ -309,7 +383,7 @@
             <field name="sequence">30</field>
             <field name="display_detail">detail_with_hierarchy</field>
             <field name="parent_id" ref="ncc_financial_report_es_23"/>
-            <field name="account_ids" search="[('code', 'like', '188.%')]"/>
+            <field name="account_ids" search="[('code', '=like', '188%')]"/>
             <field name="style_overwrite">2</field>
         </record>
         <record id="ncc_financial_report_es_31" model="account.financial.report">
@@ -319,7 +393,7 @@
             <field name="sequence">31</field>
             <field name="display_detail">detail_with_hierarchy</field>
             <field name="parent_id" ref="ncc_financial_report_es_23"/>
-            <field name="account_ids" search="[('code', 'like', '189.%')]"/>
+            <field name="account_ids" search="[('code', '=like', '189%')]"/>
             <field name="style_overwrite">2</field>
         </record>
         <record id="ncc_financial_report_es_32" model="account.financial.report">
@@ -329,8 +403,13 @@
             <field name="sequence">32</field>
             <field name="display_detail">detail_with_hierarchy</field>
             <field name="parent_id" ref="ncc_financial_report_es_23"/>
-            <field name="account_ids" search="[('code', 'like', '370.%')]"/>
             <field name="style_overwrite">2</field>
+            <field name="account_ids" search="[
+            '|', '|',
+            ('code', '=like', '370%'),
+            ('code', '=like', '371%'),
+            ('code', '=like', '372%')
+            ]"/>
         </record>
         <record id="ncc_financial_report_es_33" model="account.financial.report">
             <field name="name">Medicamentos (190)</field>
@@ -339,7 +418,7 @@
             <field name="sequence">33</field>
             <field name="display_detail">detail_with_hierarchy</field>
             <field name="parent_id" ref="ncc_financial_report_es_23"/>
-            <field name="account_ids" search="[('code', 'like', '190.%')]"/>
+            <field name="account_ids" search="[('code', '=like', '190%')]"/>
             <field name="style_overwrite">2</field>
         </record>
         <record id="ncc_financial_report_es_34" model="account.financial.report">
@@ -349,7 +428,7 @@
             <field name="sequence">34</field>
             <field name="display_detail">detail_with_hierarchy</field>
             <field name="parent_id" ref="ncc_financial_report_es_23"/>
-            <field name="account_ids" search="[('code', 'like', '191.%')]"/>
+            <field name="account_ids" search="[('code', '=like', '191%')]"/>
             <field name="style_overwrite">2</field>
         </record>
         <record id="ncc_financial_report_es_35" model="account.financial.report">
@@ -359,7 +438,7 @@
             <field name="sequence">35</field>
             <field name="display_detail">detail_with_hierarchy</field>
             <field name="parent_id" ref="ncc_financial_report_es_23"/>
-            <field name="account_ids" search="[('code', 'like', '366.%')]"/>
+            <field name="account_ids" search="[('code', '=like', '366%')]"/>
             <field name="style_overwrite">2</field>
         </record>
         <record id="ncc_financial_report_es_36" model="account.financial.report">
@@ -369,7 +448,7 @@
             <field name="sequence">36</field>
             <field name="display_detail">detail_with_hierarchy</field>
             <field name="parent_id" ref="ncc_financial_report_es_23"/>
-            <field name="account_ids" search="[('code', 'like', '192.%')]"/>
+            <field name="account_ids" search="[('code', '=like', '192%')]"/>
             <field name="style_overwrite">2</field>
         </record>
         <record id="ncc_financial_report_es_37" model="account.financial.report">
@@ -379,7 +458,7 @@
             <field name="sequence">37</field>
             <field name="display_detail">detail_with_hierarchy</field>
             <field name="parent_id" ref="ncc_financial_report_es_23"/>
-            <field name="account_ids" search="[('code', 'like', '367.%')]"/>
+            <field name="account_ids" search="[('code', '=like', '367%')]"/>
             <field name="style_overwrite">2</field>
         </record>
         <record id="ncc_financial_report_es_38" model="account.financial.report">
@@ -389,7 +468,7 @@
             <field name="sequence">37</field>
             <field name="display_detail">detail_with_hierarchy</field>
             <field name="parent_id" ref="ncc_financial_report_es_23"/>
-            <field name="account_ids" search="[('code', 'like', '193.%')]"/>
+            <field name="account_ids" search="[('code', '=like', '193%')]"/>
             <field name="style_overwrite">2</field>
         </record>
         <record id="ncc_financial_report_es_39" model="account.financial.report">
@@ -399,7 +478,7 @@
             <field name="sequence">39</field>
             <field name="display_detail">detail_with_hierarchy</field>
             <field name="parent_id" ref="ncc_financial_report_es_23"/>
-            <field name="account_ids" search="[('code', 'like', '194.%')]"/>
+            <field name="account_ids" search="[('code', '=like', '194%')]"/>
             <field name="style_overwrite">2</field>
         </record>
         <record id="ncc_financial_report_es_40" model="account.financial.report">
@@ -409,7 +488,7 @@
             <field name="sequence">40</field>
             <field name="display_detail">detail_with_hierarchy</field>
             <field name="parent_id" ref="ncc_financial_report_es_23"/>
-            <field name="account_ids" search="[('code', 'like', '195.%')]"/>
+            <field name="account_ids" search="[('code', '=like', '195%')]"/>
             <field name="style_overwrite">2</field>
         </record>
         <record id="ncc_financial_report_es_41" model="account.financial.report">
@@ -419,7 +498,7 @@
             <field name="sequence">41</field>
             <field name="display_detail">detail_with_hierarchy</field>
             <field name="parent_id" ref="ncc_financial_report_es_23"/>
-            <field name="account_ids" search="[('code', 'like', '196.%')]"/>
+            <field name="account_ids" search="[('code', '=like', '196%')]"/>
             <field name="style_overwrite">2</field>
         </record>
         <record id="ncc_financial_report_es_42" model="account.financial.report">
@@ -429,8 +508,13 @@
             <field name="sequence">42</field>
             <field name="display_detail">detail_with_hierarchy</field>
             <field name="parent_id" ref="ncc_financial_report_es_23"/>
-            <field name="account_ids" search="[('code', 'like', '205.%')]"/>
             <field name="style_overwrite">2</field>
+            <field name="account_ids" search="[
+            '|', '|',
+            ('code', '=like', '205%'),
+            ('code', '=like', '206%'),
+            ('code', '=like', '207%')
+            ]"/>
         </record>
         <record id="ncc_financial_report_es_43" model="account.financial.report">
             <field name="name">Inventarios Ociosos (208)</field>
@@ -439,7 +523,7 @@
             <field name="sequence">43</field>
             <field name="display_detail">detail_with_hierarchy</field>
             <field name="parent_id" ref="ncc_financial_report_es_23"/>
-            <field name="account_ids" search="[('code', 'like', '208.%')]"/>
+            <field name="account_ids" search="[('code', '=like', '208%')]"/>
             <field name="style_overwrite">2</field>
         </record>
         <record id="ncc_financial_report_es_44" model="account.financial.report">
@@ -449,7 +533,7 @@
             <field name="sequence">44</field>
             <field name="display_detail">detail_with_hierarchy</field>
             <field name="parent_id" ref="ncc_financial_report_es_23"/>
-            <field name="account_ids" search="[('code', 'like', '209.%')]"/>
+            <field name="account_ids" search="[('code', '=like', '209%')]"/>
             <field name="style_overwrite">2</field>
         </record>
         <record id="ncc_financial_report_es_45" model="account.financial.report">
@@ -459,8 +543,17 @@
             <field name="sequence">45</field>
             <field name="display_detail">detail_with_hierarchy</field>
             <field name="parent_id" ref="ncc_financial_report_es_23"/>
-            <field name="account_ids" search="[('code', 'like', '700.%')]"/>
             <field name="style_overwrite">2</field>
+            <field name="account_ids" search="[
+            '|', '|', '|', '|','|', '|',
+            ('code', '=like', '70%'),
+            ('code', '=like', '71%'),
+            ('code', '=like', '720%'),
+            ('code', '=like', '721%'),
+            ('code', '=like', '722%'),
+            ('code', '=like', '723%'),
+            ('code', '=like', '724%')
+            ]"/>
         </record>
         <record id="ncc_financial_report_es_46" model="account.financial.report">
             <field name="name">Producción Propia para Insumos (725)</field>
@@ -469,7 +562,7 @@
             <field name="sequence">46</field>
             <field name="display_detail">detail_with_hierarchy</field>
             <field name="parent_id" ref="ncc_financial_report_es_23"/>
-            <field name="account_ids" search="[('code', 'like', '725.%')]"/>
+            <field name="account_ids" search="[('code', '=like', '725%')]"/>
             <field name="style_overwrite">2</field>
         </record>
         <record id="ncc_financial_report_es_47" model="account.financial.report">
@@ -479,7 +572,7 @@
             <field name="sequence">47</field>
             <field name="display_detail">detail_with_hierarchy</field>
             <field name="parent_id" ref="ncc_financial_report_es_23"/>
-            <field name="account_ids" search="[('code', 'like', '726.%')]"/>
+            <field name="account_ids" search="[('code', '=like', '726%')]"/>
             <field name="style_overwrite">2</field>
         </record>
         <record id="ncc_financial_report_es_48" model="account.financial.report">
@@ -489,7 +582,7 @@
             <field name="sequence">48</field>
             <field name="display_detail">detail_with_hierarchy</field>
             <field name="parent_id" ref="ncc_financial_report_es_23"/>
-            <field name="account_ids" search="[('code', 'like', '727.%')]"/>
+            <field name="account_ids" search="[('code', '=like', '727%')]"/>
             <field name="style_overwrite">2</field>
         </record>
         <record id="ncc_financial_report_es_49" model="account.financial.report">
@@ -499,7 +592,7 @@
             <field name="sequence">49</field>
             <field name="display_detail">detail_with_hierarchy</field>
             <field name="parent_id" ref="ncc_financial_report_es_23"/>
-            <field name="account_ids" search="[('code', 'like', '728.%')]"/>
+            <field name="account_ids" search="[('code', '=like', '728%')]"/>
             <field name="style_overwrite">2</field>
         </record>
         <record id="ncc_financial_report_es_50" model="account.financial.report">
@@ -509,7 +602,7 @@
             <field name="sequence">50</field>
             <field name="display_detail">detail_with_hierarchy</field>
             <field name="parent_id" ref="ncc_financial_report_es_23"/>
-            <field name="account_ids" search="[('code', 'like', '211.%')]"/>
+            <field name="account_ids" search="[('code', '=like', '211%')]"/>
             <field name="style_overwrite">2</field>
         </record>
         <record id="ncc_financial_report_es_51" model="account.financial.report">
@@ -527,8 +620,13 @@
             <field name="sequence">52</field>
             <field name="display_detail">detail_with_hierarchy</field>
             <field name="parent_id" ref="ncc_financial_report_es_51"/>
-            <field name="account_ids" search="[('code', 'like', '215.%')]"/>
             <field name="style_overwrite">2</field>
+            <field name="account_ids" search="[
+            '|', '|',
+            ('code', '=like', '215%'),
+            ('code', '=like', '216%'),
+            ('code', '=like', '217%')
+            ]"/>
         </record>
         <record id="ncc_financial_report_es_53" model="account.financial.report">
             <field name="name">Cuentas por Cobrar a Largo Plazo (218-220)</field>
@@ -537,8 +635,13 @@
             <field name="sequence">53</field>
             <field name="display_detail">detail_with_hierarchy</field>
             <field name="parent_id" ref="ncc_financial_report_es_51"/>
-            <field name="account_ids" search="[('code', 'like', '218.%')]"/>
             <field name="style_overwrite">2</field>
+            <field name="account_ids" search="[
+            '|', '|',
+            ('code', '=like', '218%'),
+            ('code', '=like', '219%'),
+            ('code', '=like', '220%')
+            ]"/>
         </record>
         <record id="ncc_financial_report_es_54" model="account.financial.report">
             <field name="name">Préstamos Concedidos a Cobrar a Largo Plazo (221-224)</field>
@@ -547,8 +650,14 @@
             <field name="sequence">54</field>
             <field name="display_detail">detail_with_hierarchy</field>
             <field name="parent_id" ref="ncc_financial_report_es_51"/>
-            <field name="account_ids" search="[('code', 'like', '221.%')]"/>
             <field name="style_overwrite">2</field>
+            <field name="account_ids" search="[
+            '|', '|', '|',
+            ('code', '=like', '221%'),
+            ('code', '=like', '222%'),
+            ('code', '=like', '223%'),
+            ('code', '=like', '224%')
+            ]"/>
         </record>
         <record id="ncc_financial_report_es_55" model="account.financial.report">
             <field name="name">Inversiones a Largo Plazo o Permanentes (225-234)</field>
@@ -557,8 +666,20 @@
             <field name="sequence">55</field>
             <field name="display_detail">detail_with_hierarchy</field>
             <field name="parent_id" ref="ncc_financial_report_es_51"/>
-            <field name="account_ids" search="[('code', 'like', '225.%')]"/>
             <field name="style_overwrite">2</field>
+            <field name="account_ids" search="[
+            '|', '|',  '|', '|', '|', '|', '|', '|', '|',
+            ('code', '=like', '225%'),
+            ('code', '=like', '226%'),
+            ('code', '=like', '227%'),
+            ('code', '=like', '228%'),
+            ('code', '=like', '229%'),
+            ('code', '=like', '230%'),
+            ('code', '=like', '231%'),
+            ('code', '=like', '232%'),
+            ('code', '=like', '233%'),
+            ('code', '=like', '234%')
+            ]"/>
         </record>
         <record id="ncc_financial_report_es_56" model="account.financial.report">
             <field name="name">Activos Fijos</field>
@@ -575,8 +696,13 @@
             <field name="sequence">57</field>
             <field name="display_detail">detail_with_hierarchy</field>
             <field name="parent_id" ref="ncc_financial_report_es_56"/>
-            <field name="account_ids" search="[('code', 'like', '240.%')]"/>
             <field name="style_overwrite">2</field>
+            <field name="account_ids" search="[
+            '|', '|',
+            ('code', '=like', '24%'),
+            ('code', '=like', '250%'),
+            ('code', '=like', '251%')
+            ]"/>
         </record>
         <record id="ncc_financial_report_es_58" model="account.financial.report">
             <field name="name">Depreciación de Activos Fijos Tangibles (375-388)</field>
@@ -585,8 +711,14 @@
             <field name="sequence">58</field>
             <field name="display_detail">detail_with_hierarchy</field>
             <field name="parent_id" ref="ncc_financial_report_es_56"/>
-            <field name="account_ids" search="[('code', 'like', '375.%')]"/>
             <field name="style_overwrite">2</field>
+            <field name="account_ids" search="[
+            '|', '|', '|',
+            ('code', '=like', '375%'),
+            ('code', '=like', '376%'),
+            ('code', '=like', '377%'),
+            ('code', '=like', '378%')
+            ]"/>
         </record>
         <record id="ncc_financial_report_es_59" model="account.financial.report">
             <field name="name">Fondos Bibliotecarios (252)</field>
@@ -604,7 +736,7 @@
             <field name="sequence">60</field>
             <field name="display_detail">detail_with_hierarchy</field>
             <field name="parent_id" ref="ncc_financial_report_es_56"/>
-            <field name="account_ids" search="[('code', 'like', '253.%')]"/>
+            <field name="account_ids" search="[('code', '=like', '253%')]"/>
             <field name="style_overwrite">2</field>
         </record>
         <record id="ncc_financial_report_es_61" model="account.financial.report">
@@ -614,7 +746,7 @@
             <field name="sequence">61</field>
             <field name="display_detail">detail_with_hierarchy</field>
             <field name="parent_id" ref="ncc_financial_report_es_56"/>
-            <field name="account_ids" search="[('code', 'like', '389.%')]"/>
+            <field name="account_ids" search="[('code', '=like', '389%')]"/>
             <field name="style_overwrite">2</field>
         </record>
         <record id="ncc_financial_report_es_62" model="account.financial.report">
@@ -633,8 +765,19 @@
             <field name="sequence">63</field>
             <field name="display_detail">detail_with_hierarchy</field>
             <field name="parent_id" ref="ncc_financial_report_es_56"/>
-            <field name="account_ids" search="[('code', 'like', '255.%')]"/>
             <field name="style_overwrite">2</field>
+            <field name="account_ids" search="[
+            '|', '|','|', '|','|', '|', '|', '|',
+            ('code', '=like', '255%'),
+            ('code', '=like', '256%'),
+            ('code', '=like', '257%'),
+            ('code', '=like', '258%'),
+            ('code', '=like', '259%'),
+            ('code', '=like', '260%'),
+            ('code', '=like', '261%'),
+            ('code', '=like', '262%'),
+            ('code', '=like', '263%')
+            ]"/>
         </record>
         <record id="ncc_financial_report_es_64" model="account.financial.report">
             <field name="name">Activos Fijos Intangibles en Proceso (264)</field>
@@ -643,7 +786,7 @@
             <field name="sequence">64</field>
             <field name="display_detail">detail_with_hierarchy</field>
             <field name="parent_id" ref="ncc_financial_report_es_56"/>
-            <field name="account_ids" search="[('code', 'like', '264.%')]"/>
+            <field name="account_ids" search="[('code', '=like', '264%')]"/>
             <field name="style_overwrite">2</field>
         </record>
         <record id="ncc_financial_report_es_65" model="account.financial.report">
@@ -653,7 +796,7 @@
             <field name="sequence">65</field>
             <field name="display_detail">detail_with_hierarchy</field>
             <field name="parent_id" ref="ncc_financial_report_es_56"/>
-            <field name="account_ids" search="[('code', 'like', '390.%')]"/>
+            <field name="account_ids" search="[('code', '=like', '39%')]"/>
             <field name="style_overwrite">2</field>
         </record>
         <record id="ncc_financial_report_es_66" model="account.financial.report">
@@ -663,8 +806,24 @@
             <field name="sequence">66</field>
             <field name="display_detail">detail_with_hierarchy</field>
             <field name="parent_id" ref="ncc_financial_report_es_56"/>
-            <field name="account_ids" search="[('code', 'like', '265.%')]"/>
             <field name="style_overwrite">2</field>
+            <field name="account_ids" search="[
+            '|', '|','|', '|','|', '|','|', '|','|', '|','|', '|', '|',
+            ('code', '=like', '265%'),
+            ('code', '=like', '266%'),
+            ('code', '=like', '267%'),
+            ('code', '=like', '268%'),
+            ('code', '=like', '269%'),
+            ('code', '=like', '270%'),
+            ('code', '=like', '271%'),
+            ('code', '=like', '272%'),
+            ('code', '=like', '273%'),
+            ('code', '=like', '274%'),
+            ('code', '=like', '275%'),
+            ('code', '=like', '276%'),
+            ('code', '=like', '277%'),
+            ('code', '=like', '278%')
+            ]"/>
         </record>
         <record id="ncc_financial_report_es_67" model="account.financial.report">
             <field name="name">Plan de Preparación de Inversiones (279)</field>
@@ -673,7 +832,7 @@
             <field name="sequence">67</field>
             <field name="display_detail">detail_with_hierarchy</field>
             <field name="parent_id" ref="ncc_financial_report_es_56"/>
-            <field name="account_ids" search="[('code', 'like', '279.%')]"/>
+            <field name="account_ids" search="[('code', '=like', '279%')]"/>
             <field name="style_overwrite">2</field>
         </record>
         <record id="ncc_financial_report_es_68" model="account.financial.report">
@@ -683,7 +842,7 @@
             <field name="sequence">68</field>
             <field name="display_detail">detail_with_hierarchy</field>
             <field name="parent_id" ref="ncc_financial_report_es_56"/>
-            <field name="account_ids" search="[('code', 'like', '280.%')]"/>
+            <field name="account_ids" search="[('code', '=like', '28%')]"/>
             <field name="style_overwrite">2</field>
         </record>
         <record id="ncc_financial_report_es_69" model="account.financial.report">
@@ -701,8 +860,16 @@
             <field name="sequence">70</field>
             <field name="display_detail">detail_with_hierarchy</field>
             <field name="parent_id" ref="ncc_financial_report_es_69"/>
-            <field name="account_ids" search="[('code', 'like', '300.%')]"/>
             <field name="style_overwrite">2</field>
+            <field name="account_ids" search="[
+            '|', '|','|', '|','|',
+            ('code', '=like', '300%'),
+            ('code', '=like', '301%'),
+            ('code', '=like', '302%'),
+            ('code', '=like', '303%'),
+            ('code', '=like', '304%'),
+            ('code', '=like', '305%')
+            ]"/>
         </record>
         <record id="ncc_financial_report_es_71" model="account.financial.report">
             <field name="name">Gastos Financieros Diferidos (306-307)</field>
@@ -711,8 +878,12 @@
             <field name="sequence">71</field>
             <field name="display_detail">detail_with_hierarchy</field>
             <field name="parent_id" ref="ncc_financial_report_es_69"/>
-            <field name="account_ids" search="[('code', 'like', '306.%')]"/>
             <field name="style_overwrite">2</field>
+            <field name="account_ids" search="[
+            '|',
+            ('code', '=like', '306%'),
+            ('code', '=like', '307%')
+            ]"/>
         </record>
         <record id="ncc_financial_report_es_72" model="account.financial.report">
             <field name="name">Gastos del Proceso Inversionista Diferidos (310-311)</field>
@@ -721,7 +892,7 @@
             <field name="sequence">72</field>
             <field name="display_detail">detail_with_hierarchy</field>
             <field name="parent_id" ref="ncc_financial_report_es_69"/>
-            <field name="account_ids" search="[('code', 'like', '310.%')]"/>
+            <field name="account_ids" search="[('code', '=like', '310%')]"/>
             <field name="style_overwrite">2</field>
         </record>
         <record id="ncc_financial_report_es_73" model="account.financial.report">
@@ -731,7 +902,7 @@
             <field name="sequence">73</field>
             <field name="display_detail">detail_with_hierarchy</field>
             <field name="parent_id" ref="ncc_financial_report_es_69"/>
-            <field name="account_ids" search="[('code', 'like', '312.%')]"/>
+            <field name="account_ids" search="[('code', '=like', '312%')]"/>
             <field name="style_overwrite">2</field>
         </record>
         <record id="ncc_financial_report_es_74" model="account.financial.report">
@@ -749,8 +920,12 @@
             <field name="sequence">75</field>
             <field name="display_detail">detail_with_hierarchy</field>
             <field name="parent_id" ref="ncc_financial_report_es_74"/>
-            <field name="account_ids" search="[('code', 'like', '330.%')]"/>
             <field name="style_overwrite">2</field>
+            <field name="account_ids" search="[
+            '|',
+            ('code', '=like', '330%'),
+            ('code', '=like', '331%')
+            ]"/>
         </record>
         <record id="ncc_financial_report_es_76" model="account.financial.report">
             <field name="name">Faltantes de Bienes en Investigación (332-333)</field>
@@ -759,8 +934,12 @@
             <field name="sequence">76</field>
             <field name="display_detail">detail_with_hierarchy</field>
             <field name="parent_id" ref="ncc_financial_report_es_74"/>
-            <field name="account_ids" search="[('code', 'like', '332.%')]"/>
             <field name="style_overwrite">2</field>
+            <field name="account_ids" search="[
+            '|',
+            ('code', '=like', '332%'),
+            ('code', '=like', '333%')
+            ]"/>
         </record>
         <record id="ncc_financial_report_es_77" model="account.financial.report">
             <field name="name">Cuentas por Cobrar Diversas-Operaciones Corrientes (334-341)</field>
@@ -769,8 +948,18 @@
             <field name="sequence">77</field>
             <field name="display_detail">detail_with_hierarchy</field>
             <field name="parent_id" ref="ncc_financial_report_es_74"/>
-            <field name="account_ids" search="[('code', 'like', '334.%')]"/>
             <field name="style_overwrite">2</field>
+            <field name="account_ids" search="[
+            '|', '|', '|', '|', '|', '|', '|',
+            ('code', '=like', '334%'),
+            ('code', '=like', '335%'),
+            ('code', '=like', '336%'),
+            ('code', '=like', '337%'),
+            ('code', '=like', '338%'),
+            ('code', '=like', '339%'),
+            ('code', '=like', '340%'),
+            ('code', '=like', '341%')
+            ]"/>
         </record>
         <record id="ncc_financial_report_es_78" model="account.financial.report">
             <field name="name">Cuentas por Cobrar - Compra de Monedas (342)</field>
@@ -779,7 +968,7 @@
             <field name="sequence">78</field>
             <field name="display_detail">detail_with_hierarchy</field>
             <field name="parent_id" ref="ncc_financial_report_es_74"/>
-            <field name="account_ids" search="[('code', 'like', '342.%')]"/>
+            <field name="account_ids" search="[('code', '=like', '342%')]"/>
             <field name="style_overwrite">2</field>
         </record>
         <record id="ncc_financial_report_es_79" model="account.financial.report">
@@ -789,8 +978,13 @@
             <field name="sequence">79</field>
             <field name="display_detail">detail_with_hierarchy</field>
             <field name="parent_id" ref="ncc_financial_report_es_74"/>
-            <field name="account_ids" search="[('code', 'like', '343.%')]"/>
             <field name="style_overwrite">2</field>
+            <field name="account_ids" search="[
+            '|', '|',
+            ('code', '=like', '343%'),
+            ('code', '=like', '344%'),
+            ('code', '=like', '345%')
+            ]"/>
         </record>
         <record id="ncc_financial_report_es_80" model="account.financial.report">
             <field name="name">Efectos por Cobrar en Litigio (346)</field>
@@ -799,7 +993,7 @@
             <field name="sequence">80</field>
             <field name="display_detail">detail_with_hierarchy</field>
             <field name="parent_id" ref="ncc_financial_report_es_74"/>
-            <field name="account_ids" search="[('code', 'like', '346..%')]"/>
+            <field name="account_ids" search="[('code', '=like', '346%')]"/>
             <field name="style_overwrite">2</field>
         </record>
         <record id="ncc_financial_report_es_81" model="account.financial.report">
@@ -809,7 +1003,7 @@
             <field name="sequence">81</field>
             <field name="display_detail">detail_with_hierarchy</field>
             <field name="parent_id" ref="ncc_financial_report_es_74"/>
-            <field name="account_ids" search="[('code', 'like', '347.%')]"/>
+            <field name="account_ids" search="[('code', '=like', '347%')]"/>
             <field name="style_overwrite">2</field>
         </record>
         <record id="ncc_financial_report_es_82" model="account.financial.report">
@@ -819,7 +1013,7 @@
             <field name="sequence">82</field>
             <field name="display_detail">detail_with_hierarchy</field>
             <field name="parent_id" ref="ncc_financial_report_es_74"/>
-            <field name="account_ids" search="[('code', 'like', '348.%')]"/>
+            <field name="account_ids" search="[('code', '=like', '348%')]"/>
             <field name="style_overwrite">2</field>
         </record>
         <record id="ncc_financial_report_es_83" model="account.financial.report">
@@ -829,7 +1023,7 @@
             <field name="sequence">83</field>
             <field name="display_detail">detail_with_hierarchy</field>
             <field name="parent_id" ref="ncc_financial_report_es_74"/>
-            <field name="account_ids" search="[('code', 'like', '349.%')]"/>
+            <field name="account_ids" search="[('code', '=like', '349%')]"/>
             <field name="style_overwrite">2</field>
         </record>
         <record id="ncc_financial_report_es_84" model="account.financial.report">
@@ -839,8 +1033,12 @@
             <field name="sequence">84</field>
             <field name="display_detail">detail_with_hierarchy</field>
             <field name="parent_id" ref="ncc_financial_report_es_74"/>
-            <field name="account_ids" search="[('code', 'like', '354.%')]"/>
             <field name="style_overwrite">2</field>
+            <field name="account_ids" search="[
+            '|',
+            ('code', '=like', '354%'),
+            ('code', '=like', '355%'),
+            ]"/>
         </record>
         <record id="ncc_financial_report_es_85" model="account.financial.report">
             <field name="name">Fondo de Amortización de Bonos-Efectivo y Valores (364)</field>
@@ -849,7 +1047,7 @@
             <field name="sequence">85</field>
             <field name="display_detail">detail_with_hierarchy</field>
             <field name="parent_id" ref="ncc_financial_report_es_74"/>
-            <field name="account_ids" search="[('code', 'like', '364.%')]"/>
+            <field name="account_ids" search="[('code', '=like', '364%')]"/>
             <field name="style_overwrite">2</field>
         </record>
         <record id="ncc_financial_report_es_86" model="account.financial.report">
@@ -859,7 +1057,7 @@
             <field name="sequence">86</field>
             <field name="display_detail">detail_with_hierarchy</field>
             <field name="parent_id" ref="ncc_financial_report_es_74"/>
-            <field name="account_ids" search="[('code', 'like', '374.%')]"/>
+            <field name="account_ids" search="[('code', '=like', '374%')]"/>
             <field name="style_overwrite">2</field>
         </record>
         <record id="ncc_financial_report_es_87" model="account.financial.report">
@@ -892,7 +1090,7 @@
             <field name="sequence">89</field>
             <field name="display_detail">detail_with_hierarchy</field>
             <field name="parent_id" ref="ncc_financial_report_es_88"/>
-            <field name="account_ids" search="[('code', 'like', '400.%')]"/>
+            <field name="account_ids" search="[('code', '=like', '400%')]"/>
             <field name="style_overwrite">2</field>
         </record>
         <record id="ncc_financial_report_es_90" model="account.financial.report">
@@ -902,8 +1100,13 @@
             <field name="sequence">90</field>
             <field name="display_detail">detail_with_hierarchy</field>
             <field name="parent_id" ref="ncc_financial_report_es_88"/>
-            <field name="account_ids" search="[('code', 'like', '401.%')]"/>
             <field name="style_overwrite">2</field>
+            <field name="account_ids" search="[
+            '|', '|',
+            ('code', '=like', '401%'),
+            ('code', '=like', '402%'),
+            ('code', '=like', '403%')
+            ]"/>
         </record>
         <record id="ncc_financial_report_es_91" model="account.financial.report">
             <field name="name">Cuentas por Pagar a Corto Plazo (405-415)</field>
@@ -912,8 +1115,21 @@
             <field name="sequence">91</field>
             <field name="display_detail">detail_with_hierarchy</field>
             <field name="parent_id" ref="ncc_financial_report_es_88"/>
-            <field name="account_ids" search="[('code', 'like', '405.%')]"/>
             <field name="style_overwrite">2</field>
+            <field name="account_ids" search="[
+            '|', '|', '|', '|', '|', '|', '|', '|', '|', '|',
+            ('code', '=like', '405%'),
+            ('code', '=like', '406%'),
+            ('code', '=like', '407%'),
+            ('code', '=like', '408%'),
+            ('code', '=like', '409%'),
+            ('code', '=like', '410%'),
+            ('code', '=like', '411%'),
+            ('code', '=like', '412%'),
+            ('code', '=like', '413%'),
+            ('code', '=like', '414%'),
+            ('code', '=like', '415%')
+            ]"/>
         </record>
         <record id="ncc_financial_report_es_92" model="account.financial.report">
             <field name="name">Cobros por Cuenta de Terceros (416)</field>
@@ -922,7 +1138,7 @@
             <field name="sequence">92</field>
             <field name="display_detail">detail_with_hierarchy</field>
             <field name="parent_id" ref="ncc_financial_report_es_88"/>
-            <field name="account_ids" search="[('code', 'like', '416.%')]"/>
+            <field name="account_ids" search="[('code', '=like', '416%')]"/>
             <field name="style_overwrite">2</field>
         </record>
         <record id="ncc_financial_report_es_93" model="account.financial.report">
@@ -932,18 +1148,23 @@
             <field name="sequence">93</field>
             <field name="display_detail">detail_with_hierarchy</field>
             <field name="parent_id" ref="ncc_financial_report_es_88"/>
-            <field name="account_ids" search="[('code', 'like', '417.%')]"/>
+            <field name="account_ids" search="[('code', '=like', '417%')]"/>
             <field name="style_overwrite">2</field>
         </record>
         <record id="ncc_financial_report_es_94" model="account.financial.report">
-            <field name="name">Dividendos y Participaciones por Pagar (417)</field>
+            <field name="name">Cuentas en Participación (418-420)</field>
             <field name="sign">-1</field>
             <field name="type">accounts</field>
             <field name="sequence">94</field>
             <field name="display_detail">detail_with_hierarchy</field>
             <field name="parent_id" ref="ncc_financial_report_es_88"/>
-            <field name="account_ids" search="[('code', 'like', '418.%')]"/>
             <field name="style_overwrite">2</field>
+            <field name="account_ids" search="[
+            '|', '|',
+            ('code', '=like', '418%'),
+            ('code', '=like', '419%'),
+            ('code', '=like', '420%'),
+            ]"/>
         </record>
         <record id="ncc_financial_report_es_95" model="account.financial.report">
             <field name="name">Cuentas por Pagar - Activos Fijos Tangibles (421-424)</field>
@@ -952,8 +1173,14 @@
             <field name="sequence">95</field>
             <field name="display_detail">detail_with_hierarchy</field>
             <field name="parent_id" ref="ncc_financial_report_es_88"/>
-            <field name="account_ids" search="[('code', 'like', '421.%')]"/>
             <field name="style_overwrite">2</field>
+            <field name="account_ids" search="[
+            '|', '|', '|',
+            ('code', '=like', '421%'),
+            ('code', '=like', '422%'),
+            ('code', '=like', '423%'),
+            ('code', '=like', '424%')
+            ]"/>
         </record>
         <record id="ncc_financial_report_es_96" model="account.financial.report">
             <field name="name">Cuentas por Pagar del Proceso Inversionista (425-429)</field>
@@ -962,8 +1189,15 @@
             <field name="sequence">96</field>
             <field name="display_detail">detail_with_hierarchy</field>
             <field name="parent_id" ref="ncc_financial_report_es_88"/>
-            <field name="account_ids" search="[('code', 'like', '425.%')]"/>
             <field name="style_overwrite">2</field>
+            <field name="account_ids" search="[
+            '|', '|', '|', '|',
+            ('code', '=like', '425%'),
+            ('code', '=like', '426%'),
+            ('code', '=like', '427%'),
+            ('code', '=like', '428%'),
+            ('code', '=like', '429%')
+            ]"/>
         </record>
         <record id="ncc_financial_report_es_97" model="account.financial.report">
             <field name="name">Cobros Anticipados (430-433)</field>
@@ -972,8 +1206,14 @@
             <field name="sequence">97</field>
             <field name="display_detail">detail_with_hierarchy</field>
             <field name="parent_id" ref="ncc_financial_report_es_88"/>
-            <field name="account_ids" search="[('code', 'like', '430.%')]"/>
             <field name="style_overwrite">2</field>
+            <field name="account_ids" search="[
+            '|', '|', '|',
+            ('code', '=like', '430%'),
+            ('code', '=like', '431%'),
+            ('code', '=like', '432%'),
+            ('code', '=like', '433%')
+            ]"/>
         </record>
         <record id="ncc_financial_report_es_98" model="account.financial.report">
             <field name="name">Materiales Recibidos de Forma Anticipada (434)</field>
@@ -982,7 +1222,7 @@
             <field name="sequence">98</field>
             <field name="display_detail">detail_with_hierarchy</field>
             <field name="parent_id" ref="ncc_financial_report_es_88"/>
-            <field name="account_ids" search="[('code', 'like', '434.%')]"/>
+            <field name="account_ids" search="[('code', '=like', '434%')]"/>
             <field name="style_overwrite">2</field>
         </record>
         <record id="ncc_financial_report_es_99" model="account.financial.report">
@@ -992,8 +1232,15 @@
             <field name="sequence">99</field>
             <field name="display_detail">detail_with_hierarchy</field>
             <field name="parent_id" ref="ncc_financial_report_es_88"/>
-            <field name="account_ids" search="[('code', 'like', '435.%')]"/>
             <field name="style_overwrite">2</field>
+            <field name="account_ids" search="[
+            '|', '|', '|', '|',
+            ('code', '=like', '435%'),
+            ('code', '=like', '436%'),
+            ('code', '=like', '437%'),
+            ('code', '=like', '438%'),
+            ('code', '=like', '439%')
+            ]"/>
         </record>
         <record id="ncc_financial_report_es_100" model="account.financial.report">
             <field name="name">Obligaciones con el Presupuesto del Estado (440-449)</field>
@@ -1002,7 +1249,7 @@
             <field name="sequence">100</field>
             <field name="display_detail">detail_with_hierarchy</field>
             <field name="parent_id" ref="ncc_financial_report_es_88"/>
-            <field name="account_ids" search="[('code', 'like', '440.%')]"/>
+            <field name="account_ids" search="[('code', '=like', '44%')]"/>
             <field name="style_overwrite">2</field>
         </record>
         <record id="ncc_financial_report_es_101" model="account.financial.report">
@@ -1013,6 +1260,13 @@
             <field name="display_detail">detail_with_hierarchy</field>
             <field name="parent_id" ref="ncc_financial_report_es_88"/>
             <field name="style_overwrite">2</field>
+            <field name="account_ids" search="[
+            '|', '|', '|',
+            ('code', '=like', '450%'),
+            ('code', '=like', '451%'),
+            ('code', '=like', '452%'),
+            ('code', '=like', '453%')
+            ]"/>
         </record>
         <record id="ncc_financial_report_es_102" model="account.financial.report">
             <field name="name">Nóminas por Pagar (455-459)</field>
@@ -1021,8 +1275,15 @@
             <field name="sequence">102</field>
             <field name="display_detail">detail_with_hierarchy</field>
             <field name="parent_id" ref="ncc_financial_report_es_88"/>
-            <field name="account_ids" search="[('code', 'like', '455.%')]"/>
             <field name="style_overwrite">2</field>
+            <field name="account_ids" search="[
+            '|', '|', '|', '|',
+            ('code', '=like', '455%'),
+            ('code', '=like', '456%'),
+            ('code', '=like', '457%'),
+            ('code', '=like', '458%'),
+            ('code', '=like', '459%')
+            ]"/>
         </record>
         <record id="ncc_financial_report_es_103" model="account.financial.report">
             <field name="name">Retenciones por Pagar (460-469)</field>
@@ -1031,7 +1292,7 @@
             <field name="sequence">103</field>
             <field name="display_detail">detail_with_hierarchy</field>
             <field name="parent_id" ref="ncc_financial_report_es_88"/>
-            <field name="account_ids" search="[('code', 'like', '460.%')]"/>
+            <field name="account_ids" search="[('code', '=like', '46%')]"/>
             <field name="style_overwrite">2</field>
         </record>
         <record id="ncc_financial_report_es_104" model="account.financial.report">
@@ -1041,7 +1302,7 @@
             <field name="sequence">104</field>
             <field name="display_detail">detail_with_hierarchy</field>
             <field name="parent_id" ref="ncc_financial_report_es_88"/>
-            <field name="account_ids" search="[('code', 'like', '470.%')]"/>
+            <field name="account_ids" search="[('code', '=like', '47%')]"/>
             <field name="style_overwrite">2</field>
         </record>
         <record id="ncc_financial_report_es_105" model="account.financial.report">
@@ -1051,7 +1312,7 @@
             <field name="sequence">105</field>
             <field name="display_detail">detail_with_hierarchy</field>
             <field name="parent_id" ref="ncc_financial_report_es_88"/>
-            <field name="account_ids" search="[('code', 'like', '480.%')]"/>
+            <field name="account_ids" search="[('code', '=like', '48%')]"/>
             <field name="style_overwrite">2</field>
         </record>
         <record id="ncc_financial_report_es_106" model="account.financial.report">
@@ -1061,7 +1322,7 @@
             <field name="sequence">106</field>
             <field name="display_detail">detail_with_hierarchy</field>
             <field name="parent_id" ref="ncc_financial_report_es_88"/>
-            <field name="account_ids" search="[('code', 'like', '492.%')]"/>
+            <field name="account_ids" search="[('code', '=like', '49%')]"/>
             <field name="style_overwrite">2</field>
         </record>
         <record id="ncc_financial_report_es_107" model="account.financial.report">
@@ -1071,8 +1332,17 @@
             <field name="sequence">107</field>
             <field name="display_detail">detail_with_hierarchy</field>
             <field name="parent_id" ref="ncc_financial_report_es_88"/>
-            <field name="account_ids" search="[('code', 'like', '493%')]"/>
             <field name="style_overwrite">2</field>
+            <field name="account_ids" search="[
+            '|', '|', '|', '|', '|', '|',
+            ('code', '=like', '493%'),
+            ('code', '=like', '494%'),
+            ('code', '=like', '495%'),
+            ('code', '=like', '496%'),
+            ('code', '=like', '497%'),
+            ('code', '=like', '498%'),
+            ('code', '=like', '499%')
+            ]"/>
         </record>
         <record id="ncc_financial_report_es_108" model="account.financial.report">
             <field name="name">Provisión para Pagos de los Subsidios de Seguridad Social a Corto Plazo (500)</field>
@@ -1081,7 +1351,7 @@
             <field name="sequence">108</field>
             <field name="display_detail">detail_with_hierarchy</field>
             <field name="parent_id" ref="ncc_financial_report_es_88"/>
-            <field name="account_ids" search="[('code', 'like', '500%')]"/>
+            <field name="account_ids" search="[('code', '=like', '500%')]"/>
             <field name="style_overwrite">2</field>
         </record>
         <record id="ncc_financial_report_es_110" model="account.financial.report">
@@ -1099,8 +1369,15 @@
             <field name="sequence">111</field>
             <field name="display_detail">detail_with_hierarchy</field>
             <field name="parent_id" ref="ncc_financial_report_es_110"/>
-            <field name="account_ids" search="[('code', 'like', '510%')]"/>
             <field name="style_overwrite">2</field>
+            <field name="account_ids" search="[
+            '|', '|', '|', '|',
+            ('code', '=like', '510%'),
+            ('code', '=like', '511%'),
+            ('code', '=like', '512%'),
+            ('code', '=like', '513%'),
+            ('code', '=like', '514%')
+            ]"/>
         </record>
         <record id="ncc_financial_report_es_112" model="account.financial.report">
             <field name="name">Cuentas por Pagar a Largo Plazo (515-518)</field>
@@ -1109,8 +1386,14 @@
             <field name="sequence">112</field>
             <field name="display_detail">detail_with_hierarchy</field>
             <field name="parent_id" ref="ncc_financial_report_es_110"/>
-            <field name="account_ids" search="[('code', 'like', '515%')]"/>
             <field name="style_overwrite">2</field>
+            <field name="account_ids" search="[
+            '|', '|', '|',
+            ('code', '=like', '515%'),
+            ('code', '=like', '516%'),
+            ('code', '=like', '517%'),
+            ('code', '=like', '518%')
+            ]"/>
         </record>
         <record id="ncc_financial_report_es_113" model="account.financial.report">
             <field name="name">Préstamos Recibidos por Pagar a Largo Plazo (520-524)</field>
@@ -1119,8 +1402,15 @@
             <field name="sequence">113</field>
             <field name="display_detail">detail_with_hierarchy</field>
             <field name="parent_id" ref="ncc_financial_report_es_110"/>
-            <field name="account_ids" search="[('code', 'like', '520%')]"/>
             <field name="style_overwrite">2</field>
+            <field name="account_ids" search="[
+            '|', '|', '|', '|',
+            ('code', '=like', '520%'),
+            ('code', '=like', '521%'),
+            ('code', '=like', '522%'),
+            ('code', '=like', '523%'),
+            ('code', '=like', '524%')
+            ]"/>
         </record>
         <record id="ncc_financial_report_es_114" model="account.financial.report">
             <field name="name">Obligaciones a Largo Plazo (525-532)</field>
@@ -1129,8 +1419,18 @@
             <field name="sequence">114</field>
             <field name="display_detail">detail_with_hierarchy</field>
             <field name="parent_id" ref="ncc_financial_report_es_110"/>
-            <field name="account_ids" search="[('code', 'like', '525%')]"/>
             <field name="style_overwrite">2</field>
+            <field name="account_ids" search="[
+            '|', '|', '|', '|', '|', '|', '|',
+            ('code', '=like', '525%'),
+            ('code', '=like', '526%'),
+            ('code', '=like', '527%'),
+            ('code', '=like', '528%'),
+            ('code', '=like', '529%'),
+            ('code', '=like', '530%'),
+            ('code', '=like', '531%'),
+            ('code', '=like', '532%')
+            ]"/>
         </record>
         <record id="ncc_financial_report_es_115" model="account.financial.report">
             <field name="name">Otras Provisiones a Largo Plazo (533-539)</field>
@@ -1139,8 +1439,17 @@
             <field name="sequence">115</field>
             <field name="display_detail">detail_with_hierarchy</field>
             <field name="parent_id" ref="ncc_financial_report_es_110"/>
-            <field name="account_ids" search="[('code', 'like', '533%')]"/>
             <field name="style_overwrite">2</field>
+            <field name="account_ids" search="[
+            '|', '|', '|', '|', '|', '|',
+            ('code', '=like', '533%'),
+            ('code', '=like', '534%'),
+            ('code', '=like', '535%'),
+            ('code', '=like', '536%'),
+            ('code', '=like', '537%'),
+            ('code', '=like', '538%'),
+            ('code', '=like', '539%')
+            ]"/>
         </record>
         <record id="ncc_financial_report_es_116" model="account.financial.report">
             <field name="name">Bonos por Pagar (540)-(144)-(363)</field>
@@ -1150,6 +1459,12 @@
             <field name="display_detail">detail_with_hierarchy</field>
             <field name="parent_id" ref="ncc_financial_report_es_110"/>
             <field name="style_overwrite">2</field>
+            <field name="account_ids" search="[
+            '|', '|',
+            ('code', '=like', '540%'),
+            ('code', '=like', '144%'),
+            ('code', '=like', '363%')
+            ]"/>
         </record>
         <record id="ncc_financial_report_es_117" model="account.financial.report">
             <field name="name">Bonos Suscritos (541)</field>
@@ -1159,6 +1474,7 @@
             <field name="display_detail">detail_with_hierarchy</field>
             <field name="parent_id" ref="ncc_financial_report_es_110"/>
             <field name="style_overwrite">2</field>
+            <field name="account_ids" search="[('code', '=like', '541%')]"/>
         </record>
         <record id="ncc_financial_report_es_118" model="account.financial.report">
             <field name="name">Pasivos Diferidos</field>
@@ -1175,8 +1491,14 @@
             <field name="sequence">119</field>
             <field name="display_detail">detail_with_hierarchy</field>
             <field name="parent_id" ref="ncc_financial_report_es_118"/>
-            <field name="account_ids" search="[('code', 'like', '545%')]"/>
             <field name="style_overwrite">2</field>
+            <field name="account_ids" search="[
+            '|', '|', '|',
+            ('code', '=like', '545%'),
+            ('code', '=like', '546%'),
+            ('code', '=like', '547%'),
+            ('code', '=like', '548%')
+            ]"/>
         </record>
         <record id="ncc_financial_report_es_120" model="account.financial.report">
             <field name="name">Ingresos Diferidos por Donaciones Recibidas (549)</field>
@@ -1185,7 +1507,7 @@
             <field name="sequence">120</field>
             <field name="display_detail">detail_with_hierarchy</field>
             <field name="parent_id" ref="ncc_financial_report_es_118"/>
-            <field name="account_ids" search="[('code', 'like', '549.%')]"/>
+            <field name="account_ids" search="[('code', '=like', '549%')]"/>
             <field name="style_overwrite">2</field>
         </record>
         <record id="ncc_financial_report_es_121" model="account.financial.report">
@@ -1203,8 +1525,20 @@
             <field name="sequence">122</field>
             <field name="display_detail">detail_with_hierarchy</field>
             <field name="parent_id" ref="ncc_financial_report_es_121"/>
-            <field name="account_ids" search="[('code', 'like', '555%')]"/>
             <field name="style_overwrite">2</field>
+            <field name="account_ids" search="[
+            '|', '|', '|', '|', '|', '|', '|', '|', '|',
+            ('code', '=like', '555%'),
+            ('code', '=like', '556%'),
+            ('code', '=like', '557%'),
+            ('code', '=like', '558%'),
+            ('code', '=like', '559%'),
+            ('code', '=like', '560%'),
+            ('code', '=like', '561%'),
+            ('code', '=like', '562%'),
+            ('code', '=like', '563%'),
+            ('code', '=like', '564%')
+            ]"/>
         </record>
         <record id="ncc_financial_report_es_123" model="account.financial.report">
             <field name="name">Cuentas por Pagar Diversas (565-568)</field>
@@ -1213,8 +1547,14 @@
             <field name="sequence">123</field>
             <field name="display_detail">detail_with_hierarchy</field>
             <field name="parent_id" ref="ncc_financial_report_es_121"/>
-            <field name="account_ids" search="[('code', 'like', '565%')]"/>
             <field name="style_overwrite">2</field>
+            <field name="account_ids" search="[
+            '|', '|', '|',
+            ('code', '=like', '565%'),
+            ('code', '=like', '566%'),
+            ('code', '=like', '567%'),
+            ('code', '=like', '568%')
+            ]"/>
         </record>
         <record id="ncc_financial_report_es_124" model="account.financial.report">
             <field name="name">Cuentas por Pagar – Compra de Monedas (569)</field>
@@ -1223,7 +1563,7 @@
             <field name="sequence">124</field>
             <field name="display_detail">detail_with_hierarchy</field>
             <field name="parent_id" ref="ncc_financial_report_es_121"/>
-            <field name="account_ids" search="[('code', 'like', '569.%')]"/>
+            <field name="account_ids" search="[('code', '=like', '569%')]"/>
             <field name="style_overwrite">2</field>
         </record>
         <record id="ncc_financial_report_es_125" model="account.financial.report">
@@ -1233,8 +1573,15 @@
             <field name="sequence">125</field>
             <field name="display_detail">detail_with_hierarchy</field>
             <field name="parent_id" ref="ncc_financial_report_es_121"/>
-            <field name="account_ids" search="[('code', 'like', '570%')]"/>
             <field name="style_overwrite">2</field>
+            <field name="account_ids" search="[
+            '|', '|', '|', '|',
+            ('code', '=like', '570%'),
+            ('code', '=like', '571%'),
+            ('code', '=like', '572%'),
+            ('code', '=like', '573%'),
+            ('code', '=like', '574%')
+            ]"/>
         </record>
         <record id="ncc_financial_report_es_126" model="account.financial.report">
             <field name="name">Obligación con el Presupuesto del Estado por Garantía Activada (575)</field>
@@ -1243,7 +1590,7 @@
             <field name="sequence">126</field>
             <field name="display_detail">detail_with_hierarchy</field>
             <field name="parent_id" ref="ncc_financial_report_es_121"/>
-            <field name="account_ids" search="[('code', 'like', '575.%')]"/>
+            <field name="account_ids" search="[('code', '=like', '575%')]"/>
             <field name="style_overwrite">2</field>
         </record>
         <record id="ncc_financial_report_es_127" model="account.financial.report">
@@ -1268,7 +1615,7 @@
             <field name="sequence">129</field>
             <field name="display_detail">detail_with_hierarchy</field>
             <field name="parent_id" ref="ncc_financial_report_es_patrimonio"/>
-            <field name="account_ids" search="[('code', 'like', '600%')]"/>
+            <field name="account_ids" search="[('code', '=like', '600%')]"/>
             <field name="style_overwrite">1</field>
         </record>
         <record id="ncc_financial_report_es_130" model="account.financial.report">
@@ -1278,7 +1625,7 @@
             <field name="sequence">130</field>
             <field name="display_detail">detail_with_hierarchy</field>
             <field name="parent_id" ref="ncc_financial_report_es_patrimonio"/>
-            <field name="account_ids" search="[('code', 'like', '601%')]"/>
+            <field name="account_ids" search="[('code', '=like', '601%')]"/>
             <field name="style_overwrite">1</field>
         </record>
         <record id="ncc_financial_report_es_132" model="account.financial.report">
@@ -1288,7 +1635,7 @@
             <field name="sequence">132</field>
             <field name="display_detail">detail_with_hierarchy</field>
             <field name="parent_id" ref="ncc_financial_report_es_patrimonio"/>
-            <field name="account_ids" search="[('code', 'like', '620%')]"/>
+            <field name="account_ids" search="[('code', '=like', '620%')]"/>
             <field name="style_overwrite">1</field>
         </record>
         <record id="ncc_financial_report_es_133" model="account.financial.report">
@@ -1298,7 +1645,7 @@
             <field name="sequence">133</field>
             <field name="display_detail">detail_with_hierarchy</field>
             <field name="parent_id" ref="ncc_financial_report_es_patrimonio"/>
-            <field name="account_ids" search="[('code', 'like', '621%')]"/>
+            <field name="account_ids" search="[('code', '=like', '621%')]"/>
             <field name="style_overwrite">1</field>
         </record>
         <record id="ncc_financial_report_es_134" model="account.financial.report">
@@ -1308,8 +1655,15 @@
             <field name="sequence">134</field>
             <field name="display_detail">detail_with_hierarchy</field>
             <field name="parent_id" ref="ncc_financial_report_es_patrimonio"/>
-            <field name="account_ids" search="[('code', 'like', '630%')]"/>
             <field name="style_overwrite">1</field>
+            <field name="account_ids" search="[
+            '|', '|', '|', '|',
+            ('code', '=like', '630%'),
+            ('code', '=like', '631%'),
+            ('code', '=like', '632%'),
+            ('code', '=like', '633%'),
+            ('code', '=like', '634%')
+            ]"/>
         </record>
         <record id="ncc_financial_report_es_135" model="account.financial.report">
             <field name="name">Subvención por Pérdida (635-639)</field>
@@ -1318,8 +1672,15 @@
             <field name="sequence">135</field>
             <field name="display_detail">detail_with_hierarchy</field>
             <field name="parent_id" ref="ncc_financial_report_es_patrimonio"/>
-            <field name="account_ids" search="[('code', 'like', '635.%')]"/>
             <field name="style_overwrite">1</field>
+            <field name="account_ids" search="[
+            '|', '|', '|', '|',
+            ('code', '=like', '635%'),
+            ('code', '=like', '636%'),
+            ('code', '=like', '637%'),
+            ('code', '=like', '638%'),
+            ('code', '=like', '639%')
+            ]"/>
         </record>
         <record id="ncc_financial_report_es_136" model="account.financial.report">
             <field name="name">Reservas para Contingencias (645)</field>
@@ -1328,7 +1689,7 @@
             <field name="sequence">136</field>
             <field name="display_detail">detail_with_hierarchy</field>
             <field name="parent_id" ref="ncc_financial_report_es_patrimonio"/>
-            <field name="account_ids" search="[('code', 'like', '645%')]"/>
+            <field name="account_ids" search="[('code', '=like', '645%')]"/>
             <field name="style_overwrite">1</field>
         </record>
         <record id="ncc_financial_report_es_137" model="account.financial.report">
@@ -1338,8 +1699,19 @@
             <field name="sequence">137</field>
             <field name="display_detail">detail_with_hierarchy</field>
             <field name="parent_id" ref="ncc_financial_report_es_patrimonio"/>
-            <field name="account_ids" search="[('code', 'like', '646%')]"/>
             <field name="style_overwrite">1</field>
+            <field name="account_ids" search="[
+            '|', '|', '|', '|','|', '|', '|', '|',
+            ('code', '=like', '646%'),
+            ('code', '=like', '647%'),
+            ('code', '=like', '648%'),
+            ('code', '=like', '649%'),
+            ('code', '=like', '650%'),
+            ('code', '=like', '651%'),
+            ('code', '=like', '652%'),
+            ('code', '=like', '653%'),
+            ('code', '=like', '654%')
+            ]"/>
         </record>
         <record id="ncc_financial_report_es_140" model="account.financial.report">
             <field name="name">Donaciones Entregadas - Nacionales (626)</field>
@@ -1348,7 +1720,7 @@
             <field name="sequence">140</field>
             <field name="display_detail">detail_with_hierarchy</field>
             <field name="parent_id" ref="ncc_financial_report_es_patrimonio"/>
-            <field name="account_ids" search="[('code', 'like', '626%')]"/>
+            <field name="account_ids" search="[('code', '=like', '626%')]"/>
             <field name="style_overwrite">1</field>
         </record>
         <record id="ncc_financial_report_es_141" model="account.financial.report">
@@ -1358,7 +1730,7 @@
             <field name="sequence">141</field>
             <field name="display_detail">detail_with_hierarchy</field>
             <field name="parent_id" ref="ncc_financial_report_es_patrimonio"/>
-            <field name="account_ids" search="[('code', 'like', '627%')]"/>
+            <field name="account_ids" search="[('code', '=like', '627%')]"/>
             <field name="style_overwrite">1</field>
         </record>
         <record id="ncc_financial_report_es_142" model="account.financial.report">
@@ -1368,7 +1740,7 @@
             <field name="sequence">142</field>
             <field name="display_detail">detail_with_hierarchy</field>
             <field name="parent_id" ref="ncc_financial_report_es_patrimonio"/>
-            <field name="account_ids" search="[('code', 'like', '690%')]"/>
+            <field name="account_ids" search="[('code', '=like', '690%')]"/>
             <field name="style_overwrite">1</field>
         </record>
         <record id="ncc_financial_report_es_143" model="account.financial.report">
@@ -1378,7 +1750,7 @@
             <field name="sequence">143</field>
             <field name="display_detail">detail_with_hierarchy</field>
             <field name="parent_id" ref="ncc_financial_report_es_patrimonio"/>
-            <field name="account_ids" search="[('code', 'like', '691%')]"/>
+            <field name="account_ids" search="[('code', '=like', '691%')]"/>
             <field name="style_overwrite">1</field>
         </record>
         <record id="ncc_financial_report_es_144" model="account.financial.report">
@@ -1388,8 +1760,15 @@
             <field name="sequence">144</field>
             <field name="display_detail">detail_with_hierarchy</field>
             <field name="parent_id" ref="ncc_financial_report_es_patrimonio"/>
-            <field name="account_ids" search="[('code', 'like', '640%')]"/>
             <field name="style_overwrite">1</field>
+            <field name="account_ids" search="[
+            '|', '|', '|', '|',
+            ('code', '=like', '640%'),
+            ('code', '=like', '641%'),
+            ('code', '=like', '642%'),
+            ('code', '=like', '643%'),
+            ('code', '=like', '644%')
+            ]"/>
         </record>
         <record id="ncc_financial_report_es_145" model="account.financial.report">
             <field name="name">Revalorización de Activos Fijos Tangibles (613 - 615)</field>
@@ -1398,8 +1777,13 @@
             <field name="sequence">145</field>
             <field name="display_detail">detail_with_hierarchy</field>
             <field name="parent_id" ref="ncc_financial_report_es_patrimonio"/>
-            <field name="account_ids" search="[('code', 'like', '613%')]"/>
             <field name="style_overwrite">1</field>
+            <field name="account_ids" search="[
+            '|', '|',
+            ('code', '=like', '613%'),
+            ('code', '=like', '614%'),
+            ('code', '=like', '615%')
+            ]"/>
         </record>
         <record id="ncc_financial_report_es_150" model="account.financial.report">
             <field name="name">TOTAL DE PATRIMONIO NETO</field>
@@ -1415,8 +1799,6 @@
             <field name="type">account_report</field>
             <field name="sequence">151</field>
             <field name="account_report_id" ref="accounting_pdf_reports.account_financial_report_liabilitysum0"/>
-    <!--            <field name="account_type_ids" eval="[(4,ref('account.data_account_type_payable')), (4,ref('account.data_account_type_equity')), (4,ref('account.data_account_type_current_liabilities')), (4,ref('account.data_account_type_non_current_liabilities'))]"/>-->
-            <field name="parent_id" ref="ncc_financial_report_es"/>
         </record>
 
     </data>
