@@ -17,7 +17,7 @@
             <field name="display_detail">detail_with_hierarchy</field>
             <field name="account_ids" search="[
             '|', '|', '|', '|',
-            ('code', '=like', '900%'),
+            ('code', '=like', '90%'),
             ('code', '=like', '910%'),
             ('code', '=like', '911%'),
             ('code', '=like', '912%'),
@@ -468,7 +468,7 @@
             <field name="sequence">37</field>
             <field name="display_detail">detail_with_hierarchy</field>
             <field name="parent_id" ref="ncc_financial_report_er"/>
-            <field name="account_ids" search="[('code', '=like', '930%')]"/>
+            <field name="account_ids" search="[('code', '=like', '93%')]"/>
         </record>
         <record id="ncc_financial_report_er_38" model="account.financial.report">
             <field name="name">Otros Ingresos (950 - 952)</field>
