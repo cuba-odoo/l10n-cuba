@@ -19,7 +19,6 @@
                     'factor_percent': 100,
                     'repartition_type': 'base',
                 }),
-
                 (0,0, {
                     'factor_percent': 100,
                     'repartition_type': 'tax',
@@ -31,7 +30,6 @@
                     'factor_percent': 100,
                     'repartition_type': 'base',
                 }),
-
                 (0,0, {
                     'factor_percent': 100,
                     'repartition_type': 'tax',
@@ -53,7 +51,6 @@
                     'factor_percent': 100,
                     'repartition_type': 'base',
                 }),
-
                 (0,0, {
                     'factor_percent': 100,
                     'repartition_type': 'tax',
@@ -65,7 +62,6 @@
                     'factor_percent': 100,
                     'repartition_type': 'base',
                 }),
-
                 (0,0, {
                     'factor_percent': 100,
                     'repartition_type': 'tax',
@@ -98,7 +94,6 @@
                     'factor_percent': 100,
                     'repartition_type': 'base',
                 }),
-
                 (0,0, {
                     'factor_percent': 100,
                     'repartition_type': 'tax',
@@ -109,7 +104,6 @@
                     'factor_percent': 100,
                     'repartition_type': 'base',
                 }),
-
                 (0,0, {
                     'factor_percent': 100,
                     'repartition_type': 'tax',
@@ -118,7 +112,6 @@
             <field name="tax_group_id" ref="cu_tax_group_sale"/>
             <field name="active" eval="True"/>
         </record>
-
 
 <!--        Impuestos PRIVADO-COOPERATIVO -->
         <record id="private_cu_tax1_sale" model="account.tax.template">
@@ -134,7 +127,6 @@
                     'factor_percent': 100,
                     'repartition_type': 'base',
                 }),
-
                 (0,0, {
                     'factor_percent': 100,
                     'repartition_type': 'tax',
@@ -146,7 +138,6 @@
                     'factor_percent': 100,
                     'repartition_type': 'base',
                 }),
-
                 (0,0, {
                     'factor_percent': 100,
                     'repartition_type': 'tax',
@@ -168,7 +159,6 @@
                     'factor_percent': 100,
                     'repartition_type': 'base',
                 }),
-
                 (0,0, {
                     'factor_percent': 100,
                     'repartition_type': 'tax',
@@ -180,7 +170,6 @@
                     'factor_percent': 100,
                     'repartition_type': 'base',
                 }),
-
                 (0,0, {
                     'factor_percent': 100,
                     'repartition_type': 'tax',
@@ -202,7 +191,6 @@
                     'factor_percent': 100,
                     'repartition_type': 'base',
                 }),
-
                 (0,0, {
                     'factor_percent': 100,
                     'repartition_type': 'tax',
@@ -214,7 +202,6 @@
                     'factor_percent': 100,
                     'repartition_type': 'base',
                 }),
-
                 (0,0, {
                     'factor_percent': 100,
                     'repartition_type': 'tax',
@@ -236,7 +223,6 @@
                     'factor_percent': 100,
                     'repartition_type': 'base',
                 }),
-
                 (0,0, {
                     'factor_percent': 100,
                     'repartition_type': 'tax',
@@ -248,7 +234,6 @@
                     'factor_percent': 100,
                     'repartition_type': 'base',
                 }),
-
                 (0,0, {
                     'factor_percent': 100,
                     'repartition_type': 'tax',
@@ -292,7 +277,6 @@
                     'factor_percent': 100,
                     'repartition_type': 'base',
                 }),
-
                 (0,0, {
                     'factor_percent': 100,
                     'repartition_type': 'tax',
@@ -303,7 +287,6 @@
                     'factor_percent': 100,
                     'repartition_type': 'base',
                 }),
-
                 (0,0, {
                     'factor_percent': 100,
                     'repartition_type': 'tax',
