@@ -15,6 +15,7 @@ Bug Tracker
 Dependencias de terceros
 =============
 
+Odoo Mates: https://github.com/odoomates/odooapps
 
 
 Authors

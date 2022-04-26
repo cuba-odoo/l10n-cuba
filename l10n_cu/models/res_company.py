@@ -51,4 +51,3 @@ class ResPartner(models.Model):
                 res.industry_id = res.l10n_cu_cnae_ids[0].cnae_id.industry_id
             else:
                 res.industry_id = False
-

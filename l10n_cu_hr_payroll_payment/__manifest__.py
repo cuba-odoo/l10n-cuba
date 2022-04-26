@@ -3,7 +3,7 @@
 
 {
      'name': 'Cuba - Pago de Nóminas',
-     'version': '0.1',
+     'version': '15.0',
      'category': 'Human Resources',
      'summary': """
         Pago masivo de nóminas.
@@ -17,4 +17,5 @@
           # "reports/payroll_payment_report.xml",
           "wizard/payroll_payment_massive_wizard.xml",
      ],
+     'license': 'LGPL-3',
 }

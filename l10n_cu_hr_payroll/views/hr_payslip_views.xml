@@ -2,7 +2,7 @@
     <record id="hr_payroll_view_hr_payslip_tree_inherit" model="ir.ui.view">
         <field name="name">hr.payslip.tree.inherit</field>
         <field name="model">hr.payslip</field>
-        <field name="inherit_id" ref="hr_payroll_community.view_hr_payslip_tree"/>
+        <field name="inherit_id" ref="om_hr_payroll.view_hr_payslip_tree"/>
         <field name="arch" type="xml">
             <tree position="attributes">
                 <attribute name="decoration-danger">total_on_payable == True</attribute>
@@ -16,7 +16,7 @@
     <record id="view_hr_payslip_filter_inherit" model="ir.ui.view">
         <field name="name">view.hr.payslip.filter.inherit</field>
         <field name="model">hr.payslip</field>
-        <field name="inherit_id" ref="hr_payroll_community.view_hr_payslip_filter"/>
+        <field name="inherit_id" ref="om_hr_payroll.view_hr_payslip_filter"/>
         <field name="arch" type="xml">
             <xpath expr="//filter[@name='payslip_run_id']" position="replace">
                 <filter string="PaySlip Batch" name="payslip_run" context="{'group_by':'payslip_run_id'}"/>
@@ -26,7 +26,7 @@
     <record id="hr_payroll_view_hr_payslip_form_inherit" model="ir.ui.view">
         <field name="name">hr.payslip.form.inherit</field>
         <field name="model">hr.payslip</field>
-        <field name="inherit_id" ref="hr_payroll_community.view_hr_payslip_form"/>
+        <field name="inherit_id" ref="om_hr_payroll.view_hr_payslip_form"/>
         <field name="arch" type="xml">
             <xpath expr="//field[@name='credit_note']" position="before">
                 <field name="total" readonly="1"/>
@@ -42,7 +42,7 @@
     <record id="hr_payslip_run_form_inherit" model="ir.ui.view">
         <field name="name">hr.payslip.run.form.inherit</field>
         <field name="model">hr.payslip.run</field>
-        <field name="inherit_id" ref="hr_payroll_community.hr_payslip_run_form"/>
+        <field name="inherit_id" ref="om_hr_payroll.hr_payslip_run_form"/>
         <field name="arch" type="xml">
             <xpath expr="//button[@type='action']" position="after">
                 <button string="Calcular Hoja" name="calculate_slips_total" type="object" states="draft,calculate"
@@ -52,7 +52,7 @@
                 <div name="button_box" class="oe_button_box">
                     <button class="oe_stat_button"
                             type="action" icon="fa-tasks"
-                            name="%(hr_payroll_community.action_view_hr_payslip_form)d"
+                            name="%(om_hr_payroll.action_view_hr_payslip_form)d"
                             context="{'search_default_payslip_run_id': active_id,
 					'default_payslip_run_id': active_id}" help="Nóminas del procesamiento">
                         <field string="Payslips" name="qty_payslip"
@@ -104,7 +104,7 @@
     <menuitem id="menu_hr_payslip_line_report"
               name="Reportes"
               sequence="16"
-              parent="hr_payroll_community.menu_hr_payroll_community_root"/>
+              parent="om_hr_payroll.menu_hr_payroll_root"/>
     <menuitem id="menu_hr_payslip_line"
               action="hr_payslip_line_action"
               parent="menu_hr_payslip_line_report"/>

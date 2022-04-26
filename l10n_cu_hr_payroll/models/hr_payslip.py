@@ -28,7 +28,7 @@ class HrPayslip(models.Model):
                 res = {'name': "Asignando vacaciones a %s" % line.employee_id.name, 'number_of_days': line.total,
                            'employee_id': line.employee_id.id, 'holiday_status_id': holiday_status_cl.id}
                 allocation = self.env["hr.leave.allocation"].create(res)
-                allocation.action_approve()
+                allocation.action_confirm()
                 allocation.action_validate()
 
         return res
@@ -82,7 +82,6 @@ class HrPayslip(models.Model):
         return res
 
 class HrPayslipRun(models.Model):
-    _name = 'hr.payslip.run'
     _inherit = "hr.payslip.run"
     _order = "date_start desc"
 
