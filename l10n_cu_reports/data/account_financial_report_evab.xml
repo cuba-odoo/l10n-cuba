@@ -23,7 +23,7 @@
             <field name="type">accounts</field>
             <field name="sequence">2</field>
             <field name="display_detail">detail_with_hierarchy</field>
-            <field name="account_ids" search="[('code', 'like', '923.%')]"/>
+            <field name="account_ids" search="[('code', '=like', '923%')]"/>
             <field name="parent_id" ref="financial_report_evab"/>
         </record>
         <record id="financial_report_evab_03" model="account.financial.report">
@@ -39,7 +39,7 @@
             <field name="sign">1</field>
             <field name="type">accounts</field>
             <field name="sequence">4</field>
-            <field name="account_ids" search="[('code', 'like', '700.001%')]"/>
+            <field name="account_ids" search="[('code', '=like', '700.001%')]"/>
             <field name="display_detail">detail_with_hierarchy</field>
             <field name="parent_id" ref="financial_report_evab"/>
         </record>
@@ -56,7 +56,7 @@
             <field name="sign">1</field>
             <field name="type">accounts</field>
             <field name="sequence">6</field>
-            <field name="account_ids" search="[('code', 'like', '188.001%')]"/>
+            <field name="account_ids" search="[('code', '=like', '188.001%')]"/>
             <field name="display_detail">detail_with_hierarchy</field>
             <field name="parent_id" ref="financial_report_evab"/>
         </record>
@@ -68,7 +68,7 @@ conceptos distintos al de producción y entrega (188 – 0040)</field>
             <field name="sequence">7</field>
             <field name="display_detail">detail_with_hierarchy</field>
             <field name="parent_id" ref="financial_report_evab"/>
-            <field name="account_ids" search="[('code', 'like', '188.004%')]"/>
+            <field name="account_ids" search="[('code', '=like', '188.004%')]"/>
         </record>
         <record id="financial_report_evab_08" model="account.financial.report">
             <field name="name">Más: Disminución de la existencia de Producción Terminada por
@@ -78,7 +78,7 @@ conceptos distintos al de producción y entrega (188 – 0050)</field>
             <field name="sequence">8</field>
             <field name="display_detail">detail_with_hierarchy</field>
             <field name="parent_id" ref="financial_report_evab"/>
-            <field name="account_ids" search="[('code', 'like', '188.005%')]"/>
+            <field name="account_ids" search="[('code', '=like', '188.005%')]"/>
         </record>
         <record id="financial_report_evab_09" model="account.financial.report">
             <field name="name">Más: Gastos diferidos del período relacionados con procesos
@@ -88,7 +88,7 @@ productivos y de servicios (300 – 305 – 0020)</field>
             <field name="sequence">9</field>
             <field name="display_detail">detail_with_hierarchy</field>
             <field name="parent_id" ref="financial_report_evab"/>
-            <field name="account_ids" search="[('code', 'like', '300.002%')]"/>
+            <field name="account_ids" search="[('code', '=like', '300.002%')]"/>
         </record>
         <record id="financial_report_evab_10" model="account.financial.report">
             <field name="name">Más: Gastos del período de las producciones destinadas al insumo (725 – 0020)</field>
@@ -97,7 +97,7 @@ productivos y de servicios (300 – 305 – 0020)</field>
             <field name="sequence">10</field>
             <field name="display_detail">detail_with_hierarchy</field>
             <field name="parent_id" ref="financial_report_evab"/>
-            <field name="account_ids" search="[('code', 'like', '725.002%')]"/>
+            <field name="account_ids" search="[('code', '=like', '725.002%')]"/>
         </record>
         <record id="financial_report_evab_11" model="account.financial.report">
             <field name="name">Más: Saldo de las cuentas de Otros Ingresos e Ingresos Financieros
@@ -117,7 +117,7 @@ proveniente del almacén de las producciones de insumo o autoconsumo (196 – 00
             <field name="sequence">12</field>
             <field name="display_detail">detail_with_hierarchy</field>
             <field name="parent_id" ref="financial_report_evab"/>
-            <field name="account_ids" search="[('code', 'like', '196.003%')]"/>
+            <field name="account_ids" search="[('code', '=like', '196.003%')]"/>
         </record>
         <record id="financial_report_evab_13" model="account.financial.report">
             <field name="name">Más: Gastos del período de Reparaciones Capitales con Medios Propios (726 – 0020)</field>
@@ -126,7 +126,7 @@ proveniente del almacén de las producciones de insumo o autoconsumo (196 – 00
             <field name="sequence">13</field>
             <field name="display_detail">detail_with_hierarchy</field>
             <field name="parent_id" ref="financial_report_evab"/>
-            <field name="account_ids" search="[('code', 'like', '726.002%')]"/>
+            <field name="account_ids" search="[('code', '=like', '726.002%')]"/>
         </record>
         <record id="financial_report_evab_14" model="account.financial.report">
             <field name="name">Más: Gastos del período de las Inversiones con Medios Propios Activos Fijos Intangibles (727 - 0020)</field>
@@ -135,7 +135,7 @@ proveniente del almacén de las producciones de insumo o autoconsumo (196 – 00
             <field name="sequence">14</field>
             <field name="display_detail">detail_with_hierarchy</field>
             <field name="parent_id" ref="financial_report_evab"/>
-            <field name="account_ids" search="[('code', 'like', '727.002%')]"/>
+            <field name="account_ids" search="[('code', '=like', '727.002%')]"/>
         </record>
         <record id="financial_report_evab_15" model="account.financial.report">
             <field name="name">Más: Gastos del período por Inversiones con Medios Propios (728 – 0020)</field>
@@ -144,7 +144,7 @@ proveniente del almacén de las producciones de insumo o autoconsumo (196 – 00
             <field name="sequence">15</field>
             <field name="display_detail">detail_with_hierarchy</field>
             <field name="parent_id" ref="financial_report_evab"/>
-            <field name="account_ids" search="[('code', 'like', '728.002%')]"/>
+            <field name="account_ids" search="[('code', '=like', '728.002%')]"/>
         </record>
         <record id="financial_report_evab_16" model="account.financial.report">
             <field name="name">Menos: Saldo de la cuenta Costo de Ventas de Mercancías (814 – 817)</field>
