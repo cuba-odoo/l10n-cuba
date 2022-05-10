@@ -9,16 +9,16 @@ class PartnerBalanceWizard(models.TransientModel):
     _name = 'account.partner.balance'
     _description = 'Print Account Partner Balance'
     
-    display_partner = fields.Selection([('non-zero_balance', 'With balance is not equal to 0'), ('all', 'All Partners')], 'Display Partners', default='non-zero_balance')
+    display_partner = fields.Selection(string='Display Partners', default='non-zero_balance',
+                                       selection=[('non-zero_balance', 'With balance is not equal to 0'),
+                                                  ('all', 'All Partners')])
     result_selection = fields.Selection(default='customer_supplier', selection=[('customer', 'Receivable Accounts'),
-                                         ('supplier', 'Payable Accounts'),
-                                         ('customer_supplier',
-                                          'Receivable and Payable Accounts')
-                                         ])
+                                                                                ('supplier', 'Payable Accounts'),
+                                                                                ('customer_supplier',
+                                                                                 'Receivable and Payable Accounts')])
 
     @api.model
     def default_get(self, fields_list):
-        # OVERRIDE
         res = super().default_get(fields_list)
 
         active_model = self._context.get('active_model')
