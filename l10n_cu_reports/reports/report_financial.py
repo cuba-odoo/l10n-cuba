@@ -7,7 +7,7 @@ class ReportFinancial(models.AbstractModel):
     _inherit = 'report.accounting_pdf_reports.report_financial'
 
     def _compute_report_balance(self, reports):
-        # Overwrite
+        # Redefinicion
         res = {}
         fields = ['credit', 'debit', 'balance']
         for report in reports:
@@ -48,7 +48,7 @@ class ReportFinancial(models.AbstractModel):
         return res
 
     def get_account_lines(self, data):
-        # Overwrite
+        # Redefinicion
         lines = []
         account_report = self.env['account.financial.report'].search([('id', '=', data['account_report_id'][0])])
         child_reports = account_report._get_children_by_order()

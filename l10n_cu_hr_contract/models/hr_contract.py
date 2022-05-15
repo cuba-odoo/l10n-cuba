@@ -10,12 +10,12 @@ class HrContract(models.Model):
                                             string='Regimen Contribution', help="Régimen de contribución para los socios.")
     multi_job = fields.Boolean("Pluriempleo", help="Indica si ya eres contribuyente o jubilado. En cualquiera de"
                                                    " los casos, este campo habilitado significa que no tendrá Base Impositiva la Seguridad Social.")
-    schedule_pay = fields.Selection(selection=[
-        ('monthly', 'Monthly'),
-        ('quarterly', 'Quarterly'),
-        ('semi-annually', 'Semi-annually'),
-        ('annually', 'Annually'),
-        ('weekly', 'Weekly'),
-        ('bi-weekly', 'Bi-weekly'),
-        ('bi-monthly', 'Bi-monthly'),
-    ])
+    # schedule_pay = fields.Selection(selection=[
+    #     ('monthly', 'Monthly'),
+    #     ('quarterly', 'Quarterly'),
+    #     ('semi-annually', 'Semi-annually'),
+    #     ('annually', 'Annually'),
+    #     ('weekly', 'Weekly'),
+    #     ('bi-weekly', 'Bi-weekly'),
+    #     ('bi-monthly', 'Bi-monthly'),
+    # ])

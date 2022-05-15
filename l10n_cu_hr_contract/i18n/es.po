@@ -291,21 +291,6 @@ msgid "Ambas partes, libres y voluntariamente"
 msgstr ""
 
 #. module: l10n_cu_hr_contract
-#: model:ir.model.fields.selection,name:l10n_cu_hr_contract.selection__hr_contract__schedule_pay__annually
-msgid "Annually"
-msgstr "Anual"
-
-#. module: l10n_cu_hr_contract
-#: model:ir.model.fields.selection,name:l10n_cu_hr_contract.selection__hr_contract__schedule_pay__bi-monthly
-msgid "Bi-monthly"
-msgstr ""
-
-#. module: l10n_cu_hr_contract
-#: model:ir.model.fields.selection,name:l10n_cu_hr_contract.selection__hr_contract__schedule_pay__bi-weekly
-msgid "Bi-weekly"
-msgstr ""
-
-#. module: l10n_cu_hr_contract
 #: model:ir.actions.report,name:l10n_cu_hr_contract.hr_contract_report
 msgid "Contrato"
 msgstr ""
@@ -376,11 +361,6 @@ msgid "Pluriempleo"
 msgstr ""
 
 #. module: l10n_cu_hr_contract
-#: model:ir.model.fields.selection,name:l10n_cu_hr_contract.selection__hr_contract__schedule_pay__quarterly
-msgid "Quarterly"
-msgstr "Trimestral"
-
-#. module: l10n_cu_hr_contract
 #: model_terms:ir.ui.view,arch_db:l10n_cu_hr_contract.report_contract
 msgid ""
 "Que en lo sucesivo, y a los efectos del presente documento se denominará\n"
@@ -408,11 +388,6 @@ msgid "Seguridad Social"
 msgstr ""
 
 #. module: l10n_cu_hr_contract
-#: model:ir.model.fields.selection,name:l10n_cu_hr_contract.selection__hr_contract__schedule_pay__semi-annually
-msgid "Semi-annually"
-msgstr "Semestral"
-
-#. module: l10n_cu_hr_contract
 #: model_terms:ir.ui.view,arch_db:l10n_cu_hr_contract.report_contract
 msgid "Teléfono:"
 msgstr ""
@@ -427,10 +402,6 @@ msgstr ""
 msgid "Trabajador"
 msgstr ""
 
-#. module: l10n_cu_hr_contract
-#: model:ir.model.fields.selection,name:l10n_cu_hr_contract.selection__hr_contract__schedule_pay__weekly
-msgid "Weekly"
-msgstr "Semanal"
 
 #. module: l10n_cu_hr_contract
 #: model_terms:ir.ui.view,arch_db:l10n_cu_hr_contract.report_contract
