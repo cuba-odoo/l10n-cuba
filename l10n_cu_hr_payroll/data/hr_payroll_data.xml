@@ -501,28 +501,7 @@ except:
             <field name="appears_on_payslip" eval="True"/>
             <field name="register_id" ref="contrib_register_socio"/>
         </record>
-        <!--        <record id="hr_payroll_rules_descuento_nomina" model="hr.salary.rule">-->
-        <!--            <field name="category_id" ref="om_hr_payroll.DED"/>-->
-        <!--            <field name="name">Descuento por nómina</field>-->
-        <!--            <field name="code">DESC_NOM</field>-->
-        <!--            <field name="sequence">99</field>-->
-        <!--            <field name="amount_select">code</field>-->
-        <!--            <field name="amount_python_compute">-->
-        <!--result = 0-->
-        <!--            </field>-->
-        <!--            <field name="appears_on_payslip" eval="True"/>-->
-        <!--        </record>-->
-        <!--        <record id="hr_payroll_rules_retenciones_opcionales" model="hr.salary.rule">-->
-        <!--            <field name="category_id" ref="om_hr_payroll.DED"/>-->
-        <!--            <field name="name">Deducciones por retenciones opcionales</field>-->
-        <!--            <field name="code">DRO</field>-->
-        <!--            <field name="sequence">99</field>-->
-        <!--            <field name="amount_select">code</field>-->
-        <!--             <field name="amount_python_compute">-->
-        <!--result = 0-->
-        <!--            </field>-->
-        <!--            <field name="appears_on_payslip" eval="True"/>-->
-        <!--        </record>-->
+        
         <record id="hr_payroll_rules_total_deduction" model="hr.salary.rule">
             <field name="category_id" ref="hr_salary_rule_category_total_ded"/>
             <field name="name">Total deducciones</field>
