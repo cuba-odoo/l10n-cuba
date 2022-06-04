@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "VB - Importar extractos bancarios",
+    'name': "Cuba - VB Importar extractos bancarios",
     'summary': """
         Importar extractos bancarios de BANDEC.""",
     'author': "Comunidad Cubana de Odoo",
