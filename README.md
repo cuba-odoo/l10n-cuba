@@ -4,7 +4,7 @@
 
 Repositorio de código del proyecto de localización cubana para el software de gestión integral Odoo. 
 
-Mantenido por la Comunidad Cubana de Odoo, con participación de entidades estatales miembros oficiales de la comunidad cubana de Odoo.
+Mantenido por la Comunidad Cubana de Odoo (https://cco-web.odoo.com), con participación de entidades estatales miembros oficiales de la comunidad cubana de Odoo.
 
 <!-- /!\ do not modify below this line -->
 
@@ -25,6 +25,8 @@ addon | versión | resumen
 [l10n_cu_hr_payroll](l10n_cu_hr_payroll/) |15.0.1.0.0| Módulo de nóminas.
 [l10n_cu_hr_payroll_account](l10n_cu_hr_payroll_account/) |15.0.1.0.0| Módulo de nóminas con contabilidad.
 [l10n_cu_reports](l10n_cu_reports/) |15.0.1.0.0| Módulo para las proformas de los reportes de estados financieros según las Normas Cubanas de Información Financiera.
+[l10n_cu_vb_account_bank_statement_import](l10n_cu_reports/) |15.0.1.0.0| Módulo para importar extractos bancarios de Virtual Bandec.
+
 
 [Addons complementarios]
 
