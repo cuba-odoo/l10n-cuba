@@ -1,0 +1,590 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="fiscal_localizations_15">
+        <t t-call="website.layout">
+            <div id="wrap" class="oe_structure oe_empty">
+                <section class="s_text_image pt32 pb32 o_colored_level" data-snippet="s_text_image"
+                         data-name="Text - Image" style="background-image: none;">
+                    <div class="container">
+                        <div class="row align-items-start">
+                            <div class="col-lg-8 pt16 pb16" data-original-title="" title=""
+                                 aria-describedby="tooltip270875" style="">
+                                <section id="cuba">
+                                    <h1>Localización Cubana en Odoo
+<!--                                        <a class="headerlink" href="#mexico"-->
+<!--                                           title="Enlazar permanentemente con este título">¶-->
+<!--                                        </a>-->
+                                    </h1>
+                                </section>
+
+                                <section id="introduction">
+                                    <h2>Introducción
+<!--                                        <a class="headerlink" href="#introduction"-->
+<!--                                           title="Enlazar permanentemente con este título">-->
+<!--                                            ¶-->
+<!--                                        </a>-->
+                                    </h2>
+                                    <p>Con la Localización Cubana en Odoo no solo podrá cumplir con los
+                                        requisitos legales para facturar en Cuba, sino que también lo
+                                        utilizarás como tu sistema contable, satisfaciendo las necesidades
+                                        normales del mercado. Esto convierte a Odoo en la solución perfecta para
+                                        administrar su negocio en Cuba.
+                                    </p>
+                                </section>
+
+                                <section id="pre-requirements">
+                                    <h2>Pre requisitos
+<!--                                        <a class="headerlink" href="#pre-requirements"-->
+<!--                                           title="Enlazar permanentemente con este título">¶-->
+<!--                                        </a>-->
+                                    </h2>
+                                    <p>Antes de instalar los módulos y realizar las configuraciones
+                                        necesarias para tener la localización cubana en Odoo, es necesario
+                                        cumplir con los siguientes requisitos:
+                                    </p>
+                                    <ol class="arabic simple">
+                                        <li>
+                                            <p>Cuente con el conocimiento y la experiencia en facturación,
+                                                ventas y contabilidad en Odoo. Esta documentación contiene solo la
+                                                información necesaria para permitir el uso de Odoo en una empresa que
+                                                trabaje en Cuba
+                                            </p>
+                                        </li>
+                                    </ol>
+                                </section>
+
+                                <section id="modules">
+                                    <h2>Módulos
+<!--                                        <a class="headerlink" href="#modules"-->
+<!--                                           title="Enlazar permanentemente con este título">-->
+<!--                                            ¶-->
+<!--                                        </a>-->
+                                    </h2>
+                                    <p>Para instalar el módulo de localización cubana, vaya a <span
+                                            class="menuselection">
+                                        Aplicaciones</span>, luego elimine el filtro predeterminado «Aplicaciones» y
+                                        busque
+                                        <code class="docutils literal notranslate">
+                                            <span class="pre">l10n_cu</span>
+                                        </code>
+                                        .
+                                    </p>
+                                    <img alt="Installation of the Cuban localization module in Odoo Apps"
+                                         class="align-center img-fluid"
+                                         src="/web_documentation/static/src/img/cu_mo_01.png"/>
+                                </section>
+                                <br/>
+                                <p>Los siguientes módulos son necesarios para todas las bases de datos que requieren
+                                    localización cubana:
+                                </p>
+                                <ol class="arabic">
+                                    <li>
+                                        <div class="line-block">
+                                            <div class="line">
+                                                <strong>Cuba - Contabilidad (l10n_cu)</strong>
+                                            </div>
+                                            <div class="line">Todos los datos básicos para gestionar la
+                                                contabilidad, los impuestos, posiciones fiscales y el plan de cuentas.
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="line-block">
+                                            <div class="line">
+                                                <strong>Topónimos Cubanos (l10n_cu_address)</strong>
+                                            </div>
+                                            <div class="line">Division Politica Administrativa del pais.
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="line-block">
+                                            <div class="line">
+                                                <strong>Bancos Cubanos (l10n_cu_banks)</strong>
+                                            </div>
+                                            <div class="line">Sucursales de todos los bancos del pais.
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ol>
+                                <p>Los siguientes módulos son opcionales y deben instalarse solo si
+                                    cumplen con un requisito específico de la organización o en dependencia del actor
+                                    economico.
+                                    No se recomienda instalar estos módulos a menos que esté seguro de que son
+                                    necesarios.
+                                </p>
+                                <ol class="arabic">
+                                    <li>
+                                        <div class="line-block">
+                                            <div class="line">
+                                                <strong>Cuba - Nóminas (l10n_cu_hr_payroll)</strong>
+                                            </div>
+                                            <div class="line">Estructuras y reglas salariales.
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="line-block">
+                                            <div class="line">
+                                                <strong>Cuba - Nóminas con contabilidad (l10n_cu_hr_payroll_account)
+                                                </strong>
+                                            </div>
+                                            <div class="line">Nóminas con contabilidad.
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="line-block">
+                                            <div class="line">
+                                                <strong>Cuba - Contabilidad Reportes (l10n_cu_reports)</strong>
+                                            </div>
+                                            <div class="line">Proformas de los reportes de estados financieros según las
+                                                Normas Cubanas de Información Financiera.
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="line-block">
+                                            <div class="line">
+                                                <strong>Cuba - VB Importar extractos bancarios
+                                                    (l10n_cu_vb_account_bank_statement_import)
+                                                </strong>
+                                            </div>
+                                            <div class="line">Importar extractos bancarios de Virtual Bandec.
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ol>
+
+                                <section id="configuration">
+                                    <h2>Configuración
+<!--                                        <a class="headerlink" href="#configuration"-->
+<!--                                           title="Enlazar permanentemente con este título">-->
+<!--                                            ¶-->
+<!--                                        </a>-->
+                                    </h2>
+                                </section>
+                                <section id="enable-chart">
+                                    <strong>Localización Fiscal
+<!--                                        <a class="headerlink" href="#enable-chart"-->
+<!--                                           title="Enlazar permanentemente con este título">¶-->
+<!--                                        </a>-->
+                                    </strong>
+                                    <p>Vaya a <span class="menuselection">Facturacion / Contabilidad ‣ Configuracion ‣
+                                        Ajustes</span>, y
+                                        seleccione su actor economico. Odoo instala automáticamente el paquete Cuba -
+                                        Plan Contable Sector Privado y Cooperativo.
+                                    </p>
+                                    <div class="alert alert-warning">
+                                        <p class="alert-title">
+                                            Importante
+                                        </p>
+                                        <p>Siempre que no haya publicado ningún asiento, aún puede seleccionar otro
+                                            paquete.
+                                        </p>
+                                    </div>
+                                    <img alt="Steps to enable electronic invoicing" class="align-center img-fluid"
+                                         src="/web_documentation/static/src/img/cu_co_01.png"/>
+                                </section>
+                                <br/>
+                                <section id="enable-taxes">
+                                    <strong>Impuestos
+<!--                                        <a class="headerlink" href="#enable-taxes"-->
+<!--                                           title="Enlazar permanentemente con este título">¶-->
+<!--                                        </a>-->
+                                    </strong>
+                                    <p>En dependencia de paquete seleccionado seran los impuestos. La Localizacion
+                                        Cubana maneja impuestos sobre las ventas y se direferncia porque terminan en la palabra (IMPUESTO),
+                                        tenga en cuenta que los demas impuestos que aparecen son meramente auxiliares.
+                                    </p>
+                                    <img alt="Steps to enable electronic invoicing" class="align-center img-fluid"
+                                         src="/web_documentation/static/src/img/cu_co_02.png"/>
+                                </section>
+
+                                <section id="enable-fiscal-position">
+                                    <strong>Posiciones fiscales
+<!--                                        <a class="headerlink" href="#enable-fiscal-position"-->
+<!--                                           title="Enlazar permanentemente con este título">¶-->
+<!--                                        </a>-->
+                                    </strong>
+                                    <p>Los impuestos y las cuentas predeterminadas se establecen en los productos y los
+                                        clientes para crear nuevas transacciones al instante. Sin embargo, es posible que tenga
+                                        que utilizar diferentes impuestos y registrar las transacciones en diferentes cuentas, de
+                                        acuerdo con las ubicaciones y tipos de negocio que tengan sus clientes y proveedores. En el menu
+                                        Facturacion / Contabilidad ‣ Configuracion ‣ Posiciones fiscales
+                                    </p>
+                                    <p>Las <strong>Posiciones fiscales</strong> permiten crear conjuntos de reglas que
+                                        adaptan automáticamente los impuestos y las cuentas utilizadas para una transacción.
+                                        Ejemplo la posicion fiscal Ventas Mayoristas (PRIVADO Y COOPERATIVO) cuando se
+                                        aplique enuna orden de venta o en una factura podra anular el impuesto sobre las ventas.
+                                    </p>
+                                    <img alt="Steps to enable electronic invoicing" class="align-center img-fluid"
+                                         src="/web_documentation/static/src/img/cu_co_03.png"/>
+                                </section>
+                                <br/>
+                                <section id="enable-fiscal-position">
+                                    <strong>Actividad economica
+<!--                                        <a class="headerlink" href="#enable-fiscal-position"-->
+<!--                                           title="Enlazar permanentemente con este título">¶-->
+<!--                                        </a>-->
+                                    </strong>
+                                    <p>En la pestaña "Venta y compra" del formulario de Clientes y Proveedores podra
+                                        seleccionar la clase económica a la que pertenece (CNAE). La clases economica que aparesca
+                                        en la primera posicion sera la actividad principal y las demas seran secundarias.
+                                    </p>
+                                    <img alt="Steps to enable electronic invoicing" class="align-center img-fluid"
+                                         src="/web_documentation/static/src/img/cu_co_04.png"/>
+                                </section>
+                                <br/>
+                                <section id="enable-fiscal-position">
+                                    <strong>Salario minimo
+<!--                                        <a class="headerlink" href="#enable-min_salary"-->
+<!--                                           title="Enlazar permanentemente con este título">¶-->
+<!--                                        </a>-->
+                                    </strong>
+                                    <p>Vaya a <span class="menuselection">Nómina ‣ Configuracion ‣
+                                        Configuracion</span>, y defina el salario minimo aprobado en el pais.
+                                    </p>
+                                    <img alt="Steps to enable electronic invoicing" class="align-center img-fluid"
+                                         src="/web_documentation/static/src/img/cu_co_05.png"/>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+
+            <!--            <div id="wrap" class="oe_structure oe_empty">-->
+            <!--                <main class="container-fluid ">-->
+            <!--                    <div class="row">-->
+            <!--                        <article id="o_content" class="doc-body">-->
+            <!--                            <div role="main">-->
+            <!--                                <section id="cuba">-->
+            <!--                                    <h1>Documentacion funcional de la LC-->
+            <!--                                        <a class="headerlink" href="#mexico"-->
+            <!--                                           title="Enlazar permanentemente con este título">¶-->
+            <!--                                        </a>-->
+            <!--                                    </h1>-->
+            <!--                                </section>-->
+            <!--                                <section id="introduction">-->
+            <!--                                    <h2>Introducción-->
+            <!--                                        <a class="headerlink" href="#introduction"-->
+            <!--                                           title="Enlazar permanentemente con este título">-->
+            <!--                                            ¶-->
+            <!--                                        </a>-->
+            <!--                                    </h2>-->
+            <!--                                    <p>Con la ubicación cubana en Odoo no solo podrá cumplir con los-->
+            <!--                                        requisitos legales para facturar en Cuba, sino que también lo-->
+            <!--                                        utilizarás como tu sistema contable, satisfaciendo las necesidades-->
+            <!--                                        normales del mercado. Esto convierte a Odoo en la solución perfecta para-->
+            <!--                                        administrar su negocio en Cuba.-->
+            <!--                                    </p>-->
+            <!--                                </section>-->
+
+            <!--                                <section id="pre-requirements">-->
+            <!--                                    <h2>Pre requisitos-->
+            <!--                                        <a class="headerlink" href="#pre-requirements"-->
+            <!--                                           title="Enlazar permanentemente con este título">¶-->
+            <!--                                        </a>-->
+            <!--                                    </h2>-->
+            <!--                                    <p>Antes de instalar los módulos y realizar las configuraciones-->
+            <!--                                        necesarias para tener la localización cubana en Odoo, es necesario-->
+            <!--                                        cumplir con los siguientes requisitos:-->
+            <!--                                    </p>-->
+            <!--                                    <ol class="arabic simple">-->
+            <!--                                        <li>-->
+            <!--                                            <p>Cuente con el conocimiento y la experiencia en facturación,-->
+            <!--                                                ventas y contabilidad en Odoo. Esta documentación contiene solo la-->
+            <!--                                                información necesaria para permitir el uso de Odoo en una empresa que-->
+            <!--                                                trabaje en Cuba-->
+            <!--                                            </p>-->
+            <!--                                        </li>-->
+            <!--                                    </ol>-->
+            <!--                                </section>-->
+
+            <!--                                <section id="modules">-->
+            <!--                                    <h2>Módulos-->
+            <!--                                        <a class="headerlink" href="#modules"-->
+            <!--                                           title="Enlazar permanentemente con este título">-->
+            <!--                                            ¶-->
+            <!--                                        </a>-->
+            <!--                                    </h2>-->
+            <!--                                    <p>Para instalar el módulo de localización cubana, vaya a <span-->
+            <!--                                            class="menuselection">-->
+            <!--                                        Aplicaciones</span>, luego elimine el filtro predeterminado «Aplicaciones» y-->
+            <!--                                        busque-->
+            <!--                                        <code class="docutils literal notranslate">-->
+            <!--                                            <span class="pre">l10n_cu</span>-->
+            <!--                                        </code>-->
+            <!--                                        .-->
+            <!--                                    </p>-->
+            <!--                                    <img alt="Installation of the Cuban localization module in Odoo Apps"-->
+            <!--                                         class="align-center img-fluid"-->
+            <!--                                         src="/web_documentation/static/src/img/cu_mo_01.png"/>-->
+            <!--                                </section>-->
+            <!--                                <br/>-->
+            <!--                                <p>Los siguientes módulos son necesarios para todas las bases de datos que requieren-->
+            <!--                                    localización cubana:-->
+            <!--                                </p>-->
+            <!--                                <ol class="arabic">-->
+            <!--                                    <li>-->
+            <!--                                        <div class="line-block">-->
+            <!--                                            <div class="line">-->
+            <!--                                                <strong>Cuba - Contabilidad (l10n_cu)</strong>-->
+            <!--                                            </div>-->
+            <!--                                            <div class="line">Todos los datos básicos para gestionar la-->
+            <!--                                                contabilidad, los impuestos, posiciones fiscales y el plan de cuentas.-->
+            <!--                                            </div>-->
+            <!--                                        </div>-->
+            <!--                                    </li>-->
+            <!--                                    <li>-->
+            <!--                                        <div class="line-block">-->
+            <!--                                            <div class="line">-->
+            <!--                                                <strong>Topónimos cubanos (l10n_cu_address)</strong>-->
+            <!--                                            </div>-->
+            <!--                                            <div class="line">Division POlitica Administrativa del pais.-->
+            <!--                                            </div>-->
+            <!--                                        </div>-->
+            <!--                                    </li>-->
+            <!--                                    <li>-->
+            <!--                                        <div class="line-block">-->
+            <!--                                            <div class="line">-->
+            <!--                                                <strong>Bancos Cubanos (l10n_cu_banks)</strong>-->
+            <!--                                            </div>-->
+            <!--                                            <div class="line">Sucursales de todos los bancos del pais.-->
+            <!--                                            </div>-->
+            <!--                                        </div>-->
+            <!--                                    </li>-->
+            <!--                                </ol>-->
+            <!--                                <p>Los siguientes módulos son opcionales y deben instalarse solo si-->
+            <!--                                    cumplen con un requisito específico de la organización o en dependencia del actor-->
+            <!--                                    economico.-->
+            <!--                                    No se recomienda instalar estos módulos a menos que esté seguro de que son-->
+            <!--                                    necesarios.-->
+            <!--                                </p>-->
+            <!--                                <ol class="arabic">-->
+            <!--                                    <li>-->
+            <!--                                        <div class="line-block">-->
+            <!--                                            <div class="line">-->
+            <!--                                                <strong>Cuba - Nóminas (l10n_cu_hr_payroll)</strong>-->
+            <!--                                            </div>-->
+            <!--                                            <div class="line">Estructuras y reglas salariales.-->
+            <!--                                            </div>-->
+            <!--                                        </div>-->
+            <!--                                    </li>-->
+            <!--                                    <li>-->
+            <!--                                        <div class="line-block">-->
+            <!--                                            <div class="line">-->
+            <!--                                                <strong>Cuba - Nóminas con contabilidad (l10n_cu_hr_payroll_account)-->
+            <!--                                                </strong>-->
+            <!--                                            </div>-->
+            <!--                                            <div class="line">Nóminas con contabilidad.-->
+            <!--                                            </div>-->
+            <!--                                        </div>-->
+            <!--                                    </li>-->
+            <!--                                    <li>-->
+            <!--                                        <div class="line-block">-->
+            <!--                                            <div class="line">-->
+            <!--                                                <strong>Cuba - Contabilidad Reportes (l10n_cu_reports)</strong>-->
+            <!--                                            </div>-->
+            <!--                                            <div class="line">Proformas de los reportes de estados financieros según las-->
+            <!--                                                Normas-->
+            <!--                                                Cubanas de Información Financiera.-->
+            <!--                                            </div>-->
+            <!--                                        </div>-->
+            <!--                                    </li>-->
+            <!--                                    <li>-->
+            <!--                                        <div class="line-block">-->
+            <!--                                            <div class="line">-->
+            <!--                                                <strong>Cuba - VB Importar extractos bancarios-->
+            <!--                                                    (l10n_cu_vb_account_bank_statement_import)-->
+            <!--                                                </strong>-->
+            <!--                                            </div>-->
+            <!--                                            <div class="line">Importar extractos bancarios de Virtual Bandec.-->
+            <!--                                            </div>-->
+            <!--                                        </div>-->
+            <!--                                    </li>-->
+            <!--                                </ol>-->
+
+            <!--                                <section id="configuration">-->
+            <!--                                    <h2>Configuración-->
+            <!--                                        <a class="headerlink" href="#configuration"-->
+            <!--                                           title="Enlazar permanentemente con este título">-->
+            <!--                                            ¶-->
+            <!--                                        </a>-->
+            <!--                                    </h2>-->
+            <!--                                </section>-->
+            <!--                                <section id="enable-chart">-->
+            <!--                                    <h3>Localización Fiscal-->
+            <!--                                        <a class="headerlink" href="#enable-chart"-->
+            <!--                                           title="Enlazar permanentemente con este título">¶-->
+            <!--                                        </a>-->
+            <!--                                    </h3>-->
+            <!--                                    <p>Vaya a <span class="menuselection">Facturacion / Contabilidad ‣ Configuracion ‣-->
+            <!--                                        Ajustes</span>, y-->
+            <!--                                        seleccione su actor economico. Odoo instala automáticamente el paquete Cuba - -->
+            <!--                                        Plan-->
+            <!--                                        Contable-->
+            <!--                                        Sector Privado y Cooperativo.-->
+            <!--                                    </p>-->
+            <!--                                    <div class="alert alert-warning">-->
+            <!--                                        <p class="alert-title">-->
+            <!--                                            Importante-->
+            <!--                                        </p>-->
+            <!--                                        <p>Siempre que no haya publicado ningún asiento, aún puede seleccionar otro-->
+            <!--                                            paquete.-->
+            <!--                                        </p>-->
+            <!--                                    </div>-->
+            <!--                                    <img alt="Steps to enable electronic invoicing" class="align-center img-fluid"-->
+            <!--                                         src="/web_documentation/static/src/img/cu_co_01.png"/>-->
+            <!--                                </section>-->
+            <!--                                <br/>-->
+            <!--                                <section id="enable-taxes">-->
+            <!--                                    <h3>Impuestos-->
+            <!--                                        <a class="headerlink" href="#enable-taxes"-->
+            <!--                                           title="Enlazar permanentemente con este título">¶-->
+            <!--                                        </a>-->
+            <!--                                    </h3>-->
+            <!--                                    <p>En dependencia de paquete seleccionado seran los impuestos. La Localizacion-->
+            <!--                                        Cubana-->
+            <!--                                        maneja-->
+            <!--                                        impuestos-->
+            <!--                                        sobre las ventas y se direferncia porque terminan en la palabra (IMPUESTO),-->
+            <!--                                        tenga en-->
+            <!--                                        cuenta-->
+            <!--                                        que-->
+            <!--                                        los demas impuestos que aparecen son meramente auxiliares.-->
+            <!--                                    </p>-->
+            <!--                                </section>-->
+
+            <!--                                <section id="enable-fiscal-position">-->
+            <!--                                    <h3>Posiciones fiscales-->
+            <!--                                        <a class="headerlink" href="#enable-fiscal-position"-->
+            <!--                                           title="Enlazar permanentemente con este título">¶-->
+            <!--                                        </a>-->
+            <!--                                    </h3>-->
+            <!--                                    <p>Los impuestos y las cuentas predeterminadas se establecen en los productos y los-->
+            <!--                                        clientes-->
+            <!--                                        para crear nuevas transacciones al instante. Sin embargo, es posible que tenga-->
+            <!--                                        que-->
+            <!--                                        utilizar-->
+            <!--                                        diferentes impuestos y registrar las transacciones en diferentes cuentas, de-->
+            <!--                                        acuerdo-->
+            <!--                                        con-->
+            <!--                                        las-->
+            <!--                                        ubicaciones y tipos de negocio que tengan sus clientes y proveedores. En el menu-->
+            <!--                                        Facturacion / Contabilidad ‣ Configuracion ‣ Posiciones fiscales-->
+            <!--                                    </p>-->
+            <!--                                    <p>Las <strong>Posiciones fiscales</strong> permiten crear conjuntos de reglas que-->
+            <!--                                        adaptan-->
+            <!--                                        automáticamente los impuestos y las cuentas utilizadas para una transacción.-->
+            <!--                                        Ejemplo la posicion fiscal Ventas Mayoristas (PRIVADO Y COOPERATIVO) cuando se-->
+            <!--                                        aplique-->
+            <!--                                        en-->
+            <!--                                        una orden de venta o en una factura podra anular el impuesto sobre las ventas.-->
+            <!--                                    </p>-->
+            <!--                                    <img alt="Steps to enable electronic invoicing" class="align-center img-fluid"-->
+            <!--                                         src="/web_documentation/static/src/img/cu_co_02.png"/>-->
+            <!--                                </section>-->
+            <!--                                <br/>-->
+            <!--                                <section id="enable-fiscal-position">-->
+            <!--                                    <h3>Actividad economica-->
+            <!--                                        <a class="headerlink" href="#enable-fiscal-position"-->
+            <!--                                           title="Enlazar permanentemente con este título">¶-->
+            <!--                                        </a>-->
+            <!--                                    </h3>-->
+            <!--                                    <p>En la pestaña "Venta y compra" del formulario de Clientes y Proveedores podra-->
+            <!--                                        seleccionar-->
+            <!--                                        la clase económica a la que pertenece (CNAE). La clases economica que aparesca-->
+            <!--                                        en la-->
+            <!--                                        primera posicion sera la actividad principal y las demas seran secundarias.-->
+            <!--                                    </p>-->
+            <!--                                    <img alt="Steps to enable electronic invoicing" class="align-center img-fluid"-->
+            <!--                                         src="/web_documentation/static/src/img/cu_co_03.png"/>-->
+            <!--                                </section>-->
+            <!--                            </div>-->
+            <!--                        </article>-->
+            <!--                    </div>-->
+            <!--                </main>-->
+
+            <!--&lt;!&ndash;                <aside id="o_page_toc" class="o_page_toc">&ndash;&gt;-->
+            <!--&lt;!&ndash;                    <div class="o_page_toc_nav mt-1">&ndash;&gt;-->
+            <!--&lt;!&ndash;                        <h3>En esta página</h3>&ndash;&gt;-->
+            <!--&lt;!&ndash;                        <ul>&ndash;&gt;-->
+            <!--&lt;!&ndash;                            <li class="o_active_toc_entry">&ndash;&gt;-->
+            <!--&lt;!&ndash;                                <div class="o_toc_entry_wrapper o_page_toc_title">&ndash;&gt;-->
+            <!--&lt;!&ndash;                                    <i data-bs-target="#o_target_161" data-bs-toggle="collapse"&ndash;&gt;-->
+            <!--&lt;!&ndash;                                       class="i-chevron-right"&ndash;&gt;-->
+            <!--&lt;!&ndash;                                       aria-expanded="false"></i>&ndash;&gt;-->
+            <!--&lt;!&ndash;                                    <a class="reference internal" href="#" data-bs-target="#o_target_161"&ndash;&gt;-->
+            <!--&lt;!&ndash;                                       data-bs-toggle="collapse">Cuba&ndash;&gt;-->
+            <!--&lt;!&ndash;                                    </a>&ndash;&gt;-->
+            <!--&lt;!&ndash;                                </div>&ndash;&gt;-->
+            <!--&lt;!&ndash;                                <ul id="o_target_161" class="collapse show">&ndash;&gt;-->
+            <!--&lt;!&ndash;                                    <li class="o_active_toc_entry">&ndash;&gt;-->
+            <!--&lt;!&ndash;                                        <a class="reference internal" href="#introduction">Introducción</a>&ndash;&gt;-->
+            <!--&lt;!&ndash;                                    </li>&ndash;&gt;-->
+            <!--&lt;!&ndash;                                    <li>&ndash;&gt;-->
+            <!--&lt;!&ndash;                                        <a class="reference internal" href="#pre-requirements">Pre requisitos</a>&ndash;&gt;-->
+            <!--&lt;!&ndash;                                    </li>&ndash;&gt;-->
+            <!--&lt;!&ndash;                                    <li>&ndash;&gt;-->
+            <!--&lt;!&ndash;                                        <a class="reference internal" href="#modules">Módulos</a>&ndash;&gt;-->
+            <!--&lt;!&ndash;                                    </li>&ndash;&gt;-->
+            <!--&lt;!&ndash;                                    &lt;!&ndash;                                    <li>&ndash;&gt;&ndash;&gt;-->
+            <!--&lt;!&ndash;                                    &lt;!&ndash;                                        <div class="o_toc_entry_wrapper">&ndash;&gt;&ndash;&gt;-->
+            <!--&lt;!&ndash;                                    &lt;!&ndash;                                            <i data-bs-target="#o_target_162" data-bs-toggle="collapse"&ndash;&gt;&ndash;&gt;-->
+            <!--&lt;!&ndash;                                    &lt;!&ndash;                                               class="i-chevron-right" aria-expanded="false"></i>&ndash;&gt;&ndash;&gt;-->
+            <!--&lt;!&ndash;                                    &lt;!&ndash;                                            <a class="reference internal" href="#configuration">Configuración</a>&ndash;&gt;&ndash;&gt;-->
+            <!--&lt;!&ndash;                                    &lt;!&ndash;                                        </div>&ndash;&gt;&ndash;&gt;-->
+            <!--&lt;!&ndash;                                    &lt;!&ndash;                                        <ul id="o_target_162" class="collapse">&ndash;&gt;&ndash;&gt;-->
+            <!--&lt;!&ndash;                                    &lt;!&ndash;                                            <li>&ndash;&gt;&ndash;&gt;-->
+            <!--&lt;!&ndash;                                    &lt;!&ndash;                                                <a class="reference internal" href="#enable-fiscal-position">&ndash;&gt;&ndash;&gt;-->
+            <!--&lt;!&ndash;                                    &lt;!&ndash;                                                    Habilitar la facturación electrónica&ndash;&gt;&ndash;&gt;-->
+            <!--&lt;!&ndash;                                    &lt;!&ndash;                                                </a>&ndash;&gt;&ndash;&gt;-->
+            <!--&lt;!&ndash;                                    &lt;!&ndash;                                            </li>&ndash;&gt;&ndash;&gt;-->
+            <!--&lt;!&ndash;                                    &lt;!&ndash;                                            <li>&ndash;&gt;&ndash;&gt;-->
+            <!--&lt;!&ndash;                                    &lt;!&ndash;                                                <a class="reference internal" href="#enter-legal-information">Ingresar&ndash;&gt;&ndash;&gt;-->
+            <!--&lt;!&ndash;                                    &lt;!&ndash;                                                    información legal&ndash;&gt;&ndash;&gt;-->
+            <!--&lt;!&ndash;                                    &lt;!&ndash;                                                </a>&ndash;&gt;&ndash;&gt;-->
+            <!--&lt;!&ndash;                                    &lt;!&ndash;                                            </li>&ndash;&gt;&ndash;&gt;-->
+            <!--&lt;!&ndash;                                    &lt;!&ndash;                                            <li>&ndash;&gt;&ndash;&gt;-->
+            <!--&lt;!&ndash;                                    &lt;!&ndash;                                                <a class="reference internal"&ndash;&gt;&ndash;&gt;-->
+            <!--&lt;!&ndash;                                    &lt;!&ndash;                                                   href="#set-the-fiscal-regime-of-the-company">Establecer el régimen&ndash;&gt;&ndash;&gt;-->
+            <!--&lt;!&ndash;                                    &lt;!&ndash;                                                    fiscal de la empresa&ndash;&gt;&ndash;&gt;-->
+            <!--&lt;!&ndash;                                    &lt;!&ndash;                                                </a>&ndash;&gt;&ndash;&gt;-->
+            <!--&lt;!&ndash;                                    &lt;!&ndash;                                            </li>&ndash;&gt;&ndash;&gt;-->
+            <!--&lt;!&ndash;                                    &lt;!&ndash;                                            <li>&ndash;&gt;&ndash;&gt;-->
+            <!--&lt;!&ndash;                                    &lt;!&ndash;                                                <a class="reference internal" href="#contacts-configuration">&ndash;&gt;&ndash;&gt;-->
+            <!--&lt;!&ndash;                                    &lt;!&ndash;                                                    Configuración de contactos&ndash;&gt;&ndash;&gt;-->
+            <!--&lt;!&ndash;                                    &lt;!&ndash;                                                </a>&ndash;&gt;&ndash;&gt;-->
+            <!--&lt;!&ndash;                                    &lt;!&ndash;                                            </li>&ndash;&gt;&ndash;&gt;-->
+            <!--&lt;!&ndash;                                    &lt;!&ndash;                                            <li>&ndash;&gt;&ndash;&gt;-->
+            <!--&lt;!&ndash;                                    &lt;!&ndash;                                                <a class="reference internal" href="#taxes-configuration">Configuración&ndash;&gt;&ndash;&gt;-->
+            <!--&lt;!&ndash;                                    &lt;!&ndash;                                                    de impuestos&ndash;&gt;&ndash;&gt;-->
+            <!--&lt;!&ndash;                                    &lt;!&ndash;                                                </a>&ndash;&gt;&ndash;&gt;-->
+            <!--&lt;!&ndash;                                    &lt;!&ndash;                                            </li>&ndash;&gt;&ndash;&gt;-->
+            <!--&lt;!&ndash;                                    &lt;!&ndash;                                            <li>&ndash;&gt;&ndash;&gt;-->
+            <!--&lt;!&ndash;                                    &lt;!&ndash;                                                <a class="reference internal" href="#products-configuration">&ndash;&gt;&ndash;&gt;-->
+            <!--&lt;!&ndash;                                    &lt;!&ndash;                                                    Configuración de productos&ndash;&gt;&ndash;&gt;-->
+            <!--&lt;!&ndash;                                    &lt;!&ndash;                                                </a>&ndash;&gt;&ndash;&gt;-->
+            <!--&lt;!&ndash;                                    &lt;!&ndash;                                            </li>&ndash;&gt;&ndash;&gt;-->
+            <!--&lt;!&ndash;                                    &lt;!&ndash;                                            <li>&ndash;&gt;&ndash;&gt;-->
+            <!--&lt;!&ndash;                                    &lt;!&ndash;                                                <a class="reference internal"&ndash;&gt;&ndash;&gt;-->
+            <!--&lt;!&ndash;                                    &lt;!&ndash;                                                   href="#pac-configuration-to-sign-invoices">Configuración de PAC para&ndash;&gt;&ndash;&gt;-->
+            <!--&lt;!&ndash;                                    &lt;!&ndash;                                                    firmar facturas&ndash;&gt;&ndash;&gt;-->
+            <!--&lt;!&ndash;                                    &lt;!&ndash;                                                </a>&ndash;&gt;&ndash;&gt;-->
+            <!--&lt;!&ndash;                                    &lt;!&ndash;                                            </li>&ndash;&gt;&ndash;&gt;-->
+            <!--&lt;!&ndash;                                    &lt;!&ndash;                                        </ul>&ndash;&gt;&ndash;&gt;-->
+            <!--&lt;!&ndash;                                    &lt;!&ndash;                                    </li>&ndash;&gt;&ndash;&gt;-->
+
+            <!--&lt;!&ndash;                                </ul>&ndash;&gt;-->
+            <!--&lt;!&ndash;                            </li>&ndash;&gt;-->
+            <!--&lt;!&ndash;                        </ul>&ndash;&gt;-->
+            <!--&lt;!&ndash;                    </div>&ndash;&gt;-->
+            <!--&lt;!&ndash;                </aside>&ndash;&gt;-->
+            <!--            </div>-->
+
+        </t>
+    </template>
+</odoo>

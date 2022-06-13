@@ -1,0 +1,37 @@
+
+.alert.alert-warning, .alert.warning {
+  border-color: #f39c1e;
+}
+.alert {
+  position: relative;
+  display: inline-block;
+  border-radius: 0;
+  border-width: 0 0 0 3px;
+  width: 100%;
+  font-size: 0.875rem;
+}
+
+aside.o_page_toc h3, aside.o_page_toc .h3 {
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #282F33;
+  padding-left: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+section > h1 {
+  color: #7A436B;
+  font-weight: 700;
+}
+#wrap main article.doc-body section a.headerlink {
+  text-decoration: none;
+  font-size: 0;
+  visibility: hidden !important;
+}
+
+#wrap section div div div section > h2 {
+  color: #282F33;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  padding-bottom: .3rem;
+  border-bottom: 1px solid #d5d5d5;
+}
