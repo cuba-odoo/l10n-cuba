@@ -7,7 +7,7 @@
 
 
 {
-    "name" : "Topónimos cubanos",
+    "name" : "Topónimos Cubanos",
     "version" : "15.0",
     "author" : "Idola Odoo Team, Comunidad cubana de Odoo",
     "category": "Localization",
