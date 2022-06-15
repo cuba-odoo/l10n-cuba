@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "Cuba - Documentacion",
+    'name': "Cuba - Documentación",
     'summary': """
-        Documentacion funcional de la Localizacion Cubana.""",
+        Documentación funcional de la Localización Cubana.""",
     'author': "Comunidad Cubana de Odoo",
     'category': 'Accounting',
     'version': '0.1',
