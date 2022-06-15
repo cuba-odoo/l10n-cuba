@@ -8,6 +8,7 @@ class ResCnae(models.Model):
     _name = 'res.cnae'
     _description = "CNAE"
     _rec_name = "complete_name"
+    _order = "code"
 
     def name_get(self):
         return [(record.id, "%s - %s" % (record.code, record.name)) for record in self]
