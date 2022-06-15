@@ -25,7 +25,7 @@ addon | versión | resumen
 [l10n_cu_hr_payroll](l10n_cu_hr_payroll/) |15.0.1.0.0| Módulo de nóminas.
 [l10n_cu_hr_payroll_account](l10n_cu_hr_payroll_account/) |15.0.1.0.0| Módulo de nóminas con contabilidad.
 [l10n_cu_reports](l10n_cu_reports/) |15.0.1.0.0| Módulo para las proformas de los reportes de estados financieros según las Normas Cubanas de Información Financiera.
-[l10n_cu_vb_account_bank_statement_import](l10n_cu_reports/) |15.0.1.0.0| Módulo para importar extractos bancarios de Virtual Bandec.
+[web_documentation](web_documentation/) |15.0.1.0.0| Documentación funcional de la Localización Cubana.
 
 
 [Addons complementarios]
