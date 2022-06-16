@@ -29,7 +29,7 @@ class ResCnaeLine(models.Model):
     _name = 'res.cnae.line'
     _description = "CNAE Line"
     _sql_constraints = [
-        ('check_cnae_id', 'unique(cnae_id)',
+        ('check_cnae_id', 'unique(partner_id, cnae_id)',
          'Las actividades economicas deben ser unicas.!')
     ]
 
