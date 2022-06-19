@@ -11,7 +11,7 @@
         </record>
         <record id="l10n_cu_hr_payroll.hr_payroll_rules_impuesto_ingresos_personales_trabajador" model="hr.salary.rule">
             <field name="account_debit" search="[('code', 'like', '455%')]"/>
-            <field name="account_credit" search="[('code', 'like', '440.03.02%')]"/>
+            <field name="account_credit" search="[('code', 'like', '460.03.02%')]"/>
         </record>
         <record id="l10n_cu_hr_payroll.hr_payroll_rules_09_vacaciones" model="hr.salary.rule">
             <field name="account_debit" search="[('code', 'like', '822%')]"/>
@@ -27,7 +27,7 @@
         </record>
         <record id="l10n_cu_hr_payroll.hr_payroll_rules_ss_especial" model="hr.salary.rule">
             <field name="account_debit" search="[('code', 'like', '455%')]"/>
-            <field name="account_credit" search="[('code', 'like', '440.03.01%')]"/>
+            <field name="account_credit" search="[('code', 'like', '460.03.01%')]"/>
         </record>
         <record id="l10n_cu_hr_payroll.hr_payroll_rules_socios_impuesto_dividendos_anticipados" model="hr.salary.rule">
             <field name="account_debit" search="[('code', 'like', '417%')]"/>
