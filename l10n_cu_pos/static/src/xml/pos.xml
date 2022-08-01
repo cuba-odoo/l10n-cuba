@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+    <t t-name="l10n_cu_pos.ClientDetailsEdit" t-inherit="point_of_sale.ClientDetailsEdit" t-inherit-mode="extension">
+        <xpath expr="//section/div/div[hasclass('client-details-left')]" position="inside">
+            <div class='client-detail'>
+                <span class='label'>Company</span>
+                <input  t-model="state.is_company"
+                        type='checkbox'
+                        class='detail o_checkbox checkbox is_company'
+                        name='is_company'
+                />
+            </div>
+            <div class='client-detail' style="display: block;" id="div_cnae" t-if="state.is_company">
+                <span class='label'>Actividad principal CNAE</span>
+                <select class='client-detail' name='cnae' id="cnae_id">
+                    <option value=''>None</option>
+                    <t t-foreach='env.pos.cnaes' t-as='cnae' t-key="cnae.id">
+                            <option t-att-value='cnae.code'
+                                    t-att-selected="props.partner.cnae_primary ? ((cnae.code === props.partner.cnae_primary) ? true : undefined) : undefined">
+                            <t t-esc="cnae.code + ' - ' + cnae.name"/>
+                        </option>
+                    </t>
+                </select>
+            </div>
+        </xpath>
+    </t>
+</templates>
