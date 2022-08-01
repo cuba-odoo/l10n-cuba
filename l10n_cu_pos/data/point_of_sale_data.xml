@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <delete model="pos.bill" search="[('id', '=', ref('point_of_sale.0_01'))]"/>
+    <delete model="pos.bill" search="[('id', '=', ref('point_of_sale.0_02'))]"/>
+    <delete model="pos.bill" search="[('id', '=', ref('point_of_sale.0_05'))]"/>
+
+    <data noupdate="1">
+
+        <record model="pos.bill" id="1000_00">
+            <field name="name">1000.00</field>
+            <field name="value">1000.00</field>
+            <field name="pos_config_ids" eval="[(6, False, [ref('point_of_sale.pos_config_main')])]"/>
+        </record>
+    </data>
+</odoo>
