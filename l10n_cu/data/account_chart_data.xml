@@ -7,7 +7,7 @@
     <!-- Chart Template for Freelace (TCP)-->
     <record id="l10n_cu_chart_template_freelance" model="account.chart.template">
         <field name="name">Cuba - Plan Contable TCP</field>
-        <field name="complete_tax_set" eval="True"/>
+<!--        <field name="complete_tax_set" eval="True"/>-->
         <field name="code_digits">8</field>
         <field name="cash_account_code_prefix">101.</field>
         <field name="bank_account_code_prefix">109.</field>
@@ -31,7 +31,7 @@
     <!-- Chart of Account for Public Company, except for Insurance's Company -->
     <record id="l10n_cu_chart_template_public" model="account.chart.template">
         <field name="name">Cuba - Plan Contable Empresas Públicas</field>
-        <field name="complete_tax_set" eval="True"/>
+<!--        <field name="complete_tax_set" eval="True"/>-->
         <field name="code_digits">8</field>
         <field name="cash_account_code_prefix">101.</field>
         <field name="bank_account_code_prefix">109.</field>
@@ -44,7 +44,7 @@
     <!-- Chart of Account for Private Company and Cooperative Sector -->
     <record id="l10n_cu_chart_template_private" model="account.chart.template">
         <field name="name">Cuba - Plan Contable Sector Privado y Cooperativo</field>
-        <field name="complete_tax_set" eval="True"/>
+<!--        <field name="complete_tax_set" eval="True"/>-->
         <field name="code_digits">8</field>
         <field name="cash_account_code_prefix">101.</field>
         <field name="bank_account_code_prefix">109.</field>
