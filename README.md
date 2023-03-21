@@ -29,3 +29,5 @@ Este repositorio esta bajo la licencia [GPL-3.0](LICENSE).
 ----
 
 CCO,  o [Comunidad Cubana de Odoo ](http://cuban-community.cu/), tiene como misión el soporte y desarrollo colaborativo de funcionalidades para Odoo con el fin de promover y diversificar su uso.
+
+---
