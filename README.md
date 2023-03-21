@@ -2,6 +2,8 @@
 # l10n-cuba
 ## Localización cubana para odoo V16 
 
+### Esta Rama  aun está en fase de desarrollos y pruebas. no es liberada aun.
+
 Repositorio de código del proyecto de localización cubana para el software de gestión integral Odoo. 
 
 Mantenido por la Comunidad Cubana de Odoo (https://cco-web.odoo.com), con participación de entidades estatales miembros oficiales de la comunidad cubana de Odoo.
