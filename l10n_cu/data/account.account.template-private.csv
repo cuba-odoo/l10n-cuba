@@ -1,40 +1,39 @@
-"id","name","code","account_type","chart_template_id/id","reconcile","note"
-"account_private_4400101","Obligaciones con el Presupuesto del Estado - MIPYME - 35% de las Utilidades parrafo 040072","440.01.01","liability_current","l10n_cu_chart_template_common","0","Pasivos Circulantes"
-"account_private_4400102","Obligaciones con el Presupuesto del Estado - MIPYME - 10% de las Ventas parrfo 011482","440.01.02","liability_current","l10n_cu_chart_template_common","0","Pasivos Circulantes"
-"account_private_4400103","Obligaciones con el Presupuesto del Estado - MIPYME - 5% Fuerza de Trab.Remun Empleados parrafo 061012","440.01.03","liability_current","l10n_cu_chart_template_common","0","Pasivos Circulantes"
-"account_private_4400104","Obligaciones con el Presupuesto del Estado - MIPYME - 1% Cont Des. Local parrafo 074012","440.01.04","liability_current","l10n_cu_chart_template_common","0","Pasivos Circulantes"
-"account_private_4400105","Obligaciones con el Presupuesto del Estado - MIPYME - 12.5% Cont SS Pers Contrat parrafo 081013","440.01.05","liability_current","l10n_cu_chart_template_common","0","Pasivos Circulantes"
-"account_private_4400106","Obligaciones con el Presupuesto del Estado - MIPYME - Otros Imp y Contrib.","440.01.06","liability_current","l10n_cu_chart_template_common","0","Pasivos Circulantes"
-"account_private_4400201","Obligaciones con el Presupuesto del Estado - Socios - Contrib. Espc. S. Social Socios parrafo 082023","440.02.01","liability_current","l10n_cu_chart_template_common","0","Pasivos Circulantes"
-"account_private_4400202","Obligaciones con el Presupuesto del Estado - Socios - Imp sobre Ing. Pers. Liq adic (DJ) Socios parrafo 053032","440.02.02","liability_current","l10n_cu_chart_template_common","0","Pasivos Circulantes"
-"account_private_4400203","Obligaciones con el Presupuesto del Estado - Socios - Imp sobre Ing. Pers. Imp sobre Ing. Pers. 5 % Dist antic Socios parrafo 052032","440.02.03","liability_current","l10n_cu_chart_template_common","0","Pasivos Circulantes"
-"account_private_4600301","Retenciones por pagar - Empleados - Cont Esp SS 5% Total remuneraciones Empleados parrafo 082023","460.03.01","liability_current","l10n_cu_chart_template_common","0","Pasivos Circulantes"
-"account_private_4600302","Retenciones por pagar - Empleados - Imp sobre Ingresos personales Empleados. Superior a 3260.00. parrafo 052042","460.03.02","liability_current","l10n_cu_chart_template_common","0","Pasivos Circulantes"
-"account_private_6000000","Patrimonio y Fondo Común","600.0000","equity","l10n_cu_chart_template_private","0","Patrimonio Neto"
-"account_private_6010000","Capital Social Autorizado","601.0000","equity","l10n_cu_chart_template_private","0","Patrimonio Neto"
-"account_private_6040000","Acciones por Emitirs","604.0000","equity","l10n_cu_chart_template_private","0","Patrimonio Neto"
-"account_private_6070000","Acciones Suscritas","607.0000","equity","l10n_cu_chart_template_private","0","Patrimonio Neto"
-"account_private_6100000","Subscriptores de Acciones","610.0000","equity","l10n_cu_chart_template_private","0","Patrimonio Neto"
-"account_private_6110000","Acciones en Tesorería","611.0000","equity","l10n_cu_chart_template_private","0","Patrimonio Neto"
-"account_private_6130000","Revalorización de Activos Fijos Tangibles","613.0000","equity","l10n_cu_chart_template_private","0","Patrimonio Neto"
-"account_private_6160000","Otras Operaciones de Capital","616.0000","equity","l10n_cu_chart_template_private","0","Patrimonio Neto"
-"account_private_6200000","Donaciones Recibidas-Nacionales","620.0000","equity","l10n_cu_chart_template_private","0","Patrimonio Neto"
-"account_private_6210000","Donaciones Recibidas-Exterior","621.0000","equity","l10n_cu_chart_template_private","0","Patrimonio Neto"
-"account_private_6260000","Donaciones Entregadas-Nacionales","626.0000","equity","l10n_cu_chart_template_private","0","Patrimonio Neto"
-"account_private_6270000","Donaciones Recibidas-Exterior","627.0000","equity","l10n_cu_chart_template_private","0","Patrimonio Neto"
-"account_private_6300000","Utilidades Retenidas","630.0000","equity","l10n_cu_chart_template_private","0","Patrimonio Neto"
-"account_private_6350000","Subvención por Pérdida","635.0000","equity","l10n_cu_chart_template_private","0","Patrimonio Neto"
-"account_private_6400000","Pérdida","640.0000","equity","l10n_cu_chart_template_private","0","Patrimonio Neto"
-"account_private_6450000","Reservas para Contingencias","645.0000","equity","l10n_cu_chart_template_private","0","Patrimonio Neto"
-"account_private_6460000","Otras Reservas Patrimoniales","646.0000","equity","l10n_cu_chart_template_private","0","Patrimonio Neto"
-"account_private_6880000","Fondo de Contravalor para Proyectos de Inversión","688.0000","equity","l10n_cu_chart_template_private","0","Patrimonio Neto"
-"account_private_6900000","Pago a Cuentas de las Utilidades Sociedades Mercantiles","690.0000","equity","l10n_cu_chart_template_private","0","Patrimonio Neto"
-"account_private_6910000","Pago a Cuenta de los Dividendos","691.0000","equity","l10n_cu_chart_template_private","0","Patrimonio Neto"
-"account_private_6930000","Pago a Cuenta de Utilidades Sector Cooperativo","693.0000","equity","l10n_cu_chart_template_private","0","Patrimonio Neto"
-"account_private_6930010","Pago a Cuenta de Utilidades Sector Cooperativo - Anticipo a Cooperativistas","693.0010","equity","l10n_cu_chart_template_private","0","Patrimonio Neto"
-"account_private_6930020","Pago a Cuenta de Utilidades Sector Cooperativo - Pago de Tributos","693.0020","equity","l10n_cu_chart_template_private","0","Patrimonio Neto"
-"account_private_6930030","Pago a Cuenta de Utilidades Sector Cooperativo - Otros","693.0030","equity","l10n_cu_chart_template_private","0","Patrimonio Neto"
-"account_private_6960000","Operaciones entre Dependencias","696.0000","equity","l10n_cu_chart_template_private","0","Patrimonio Neto"
-"account_private_6970000","Revaluación de Inventarios","697.0000","equity","l10n_cu_chart_template_private","0","Patrimonio Neto"
-"account_private_6980000","Ganancia o Pérdida no Realizada","698.0000","equity","l10n_cu_chart_template_private","0","Patrimonio Neto"
-"account_private_6990000","Transitoria del Sistema Automatizado","699.0000","equity","l10n_cu_chart_template_private","0","Patrimonio Neto"
+id,name,code,account_type,chart_template_id/id,reconcile,note
+account_private_4400101,Obligaciones con el Presupuesto del Estado - MIPYME - 35% de las Utilidades parrafo 040072,440.0101,liability_current,l10n_cu_chart_template_common,0,Pasivos Circulantes
+account_private_4400102,Obligaciones con el Presupuesto del Estado - MIPYME - 10% de las Ventas parrfo 011482,440.0102,liability_current,l10n_cu_chart_template_common,0,Pasivos Circulantes
+account_private_4400103,Obligaciones con el Presupuesto del Estado - MIPYME - 5% Fuerza de Trab.Remun Empleados parrafo 061012,440.0103,liability_current,l10n_cu_chart_template_common,0,Pasivos Circulantes
+account_private_4400104,Obligaciones con el Presupuesto del Estado - MIPYME - 1% Cont Des. Local parrafo 074012,440.0104,liability_current,l10n_cu_chart_template_common,0,Pasivos Circulantes
+account_private_4400105,Obligaciones con el Presupuesto del Estado - MIPYME - 12.5% Cont SS Pers Contrat parrafo 081013,440.0105,liability_current,l10n_cu_chart_template_common,0,Pasivos Circulantes
+account_private_4400106,Obligaciones con el Presupuesto del Estado - MIPYME - Otros Imp y Contrib.,440.0106,liability_current,l10n_cu_chart_template_common,0,Pasivos Circulantes
+account_private_4400201,Obligaciones con el Presupuesto del Estado - Socios - Contrib. Espc. S. Social Socios parrafo 082023,440.0201,liability_current,l10n_cu_chart_template_common,0,Pasivos Circulantes
+account_private_4400202,Obligaciones con el Presupuesto del Estado - Socios - Imp sobre Ing. Pers. Liq adic (DJ) Socios parrafo 053032,440.0202,liability_current,l10n_cu_chart_template_common,0,Pasivos Circulantes
+account_private_4400203,Obligaciones con el Presupuesto del Estado - Socios - Imp sobre Ing. Pers. Imp sobre Ing. Pers. 5 % Dist antic Socios parrafo 052032,440.0203,liability_current,l10n_cu_chart_template_common,0,Pasivos Circulantes
+account_private_4600301,Retenciones por pagar - Empleados - Cont Esp SS 5% Total remuneraciones Empleados parrafo 082023,460.0301,liability_current,l10n_cu_chart_template_common,0,Pasivos Circulantes
+account_private_4600302,Retenciones por pagar - Empleados - Imp sobre Ingresos personales Empleados. Superior a 3260.00. parrafo 052042,460.0302,liability_current,l10n_cu_chart_template_common,0,Pasivos Circulantes
+account_private_600,Patrimonio y Fondo Común,600,equity,l10n_cu_chart_template_private,0,Patrimonio Neto
+account_private_601,Capital Social Autorizado,601,equity,l10n_cu_chart_template_private,0,Patrimonio Neto
+account_private_604,Acciones por Emitirs,604,equity,l10n_cu_chart_template_private,0,Patrimonio Neto
+account_private_607,Acciones Suscritas,607,equity,l10n_cu_chart_template_private,0,Patrimonio Neto
+account_private_610,Subscriptores de Acciones,610,equity,l10n_cu_chart_template_private,0,Patrimonio Neto
+account_private_611,Acciones en Tesorería,611,equity,l10n_cu_chart_template_private,0,Patrimonio Neto
+account_private_613,Revalorización de Activos Fijos Tangibles,613,equity,l10n_cu_chart_template_private,0,Patrimonio Neto
+account_private_616,Otras Operaciones de Capital,616,equity,l10n_cu_chart_template_private,0,Patrimonio Neto
+account_private_620,Donaciones Recibidas-Nacionales,620,equity,l10n_cu_chart_template_private,0,Patrimonio Neto
+account_private_621,Donaciones Recibidas-Exterior,621,equity,l10n_cu_chart_template_private,0,Patrimonio Neto
+account_private_626,Donaciones Entregadas-Nacionales,626,equity,l10n_cu_chart_template_private,0,Patrimonio Neto
+account_private_627,Donaciones Recibidas-Exterior,627,equity,l10n_cu_chart_template_private,0,Patrimonio Neto
+account_private_630,Utilidades Retenidas,630,equity,l10n_cu_chart_template_private,0,Patrimonio Neto
+account_private_635,Subvención por Pérdida,635,equity,l10n_cu_chart_template_private,0,Patrimonio Neto
+account_private_640,Pérdida,640,equity,l10n_cu_chart_template_private,0,Patrimonio Neto
+account_private_645,Reservas para Contingencias,645,equity,l10n_cu_chart_template_private,0,Patrimonio Neto
+account_private_646,Otras Reservas Patrimoniales,646,equity,l10n_cu_chart_template_private,0,Patrimonio Neto
+account_private_688,Fondo de Contravalor para Proyectos de Inversión,688,equity,l10n_cu_chart_template_private,0,Patrimonio Neto
+account_private_690,Pago a Cuentas de las Utilidades Sociedades Mercantiles,690,equity,l10n_cu_chart_template_private,0,Patrimonio Neto
+account_private_691,Pago a Cuenta de los Dividendos,691,equity,l10n_cu_chart_template_private,0,Patrimonio Neto
+account_private_693,Pago a Cuenta de Utilidades Sector Cooperativo,693,equity,l10n_cu_chart_template_private,0,Patrimonio Neto
+account_private_693001,Pago a Cuenta de Utilidades Sector Cooperativo - Anticipo a Cooperativistas,693.001,equity,l10n_cu_chart_template_private,0,Patrimonio Neto
+account_private_693002,Pago a Cuenta de Utilidades Sector Cooperativo - Pago de Tributos,693.002,equity,l10n_cu_chart_template_private,0,Patrimonio Neto
+account_private_693003,Pago a Cuenta de Utilidades Sector Cooperativo - Otros,693.003,equity,l10n_cu_chart_template_private,0,Patrimonio Neto
+account_private_696,Operaciones entre Dependencias,696,equity,l10n_cu_chart_template_private,0,Patrimonio Neto
+account_private_697,Revaluación de Inventarios,697,equity,l10n_cu_chart_template_private,0,Patrimonio Neto
+account_private_698,Ganancia o Pérdida no Realizada,698,equity,l10n_cu_chart_template_private,0,Patrimonio Neto

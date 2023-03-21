@@ -22,4 +22,81 @@
             </xpath>
         </field>
     </record>
+
+   
+    <!-- analytic.account -->
+
+    <record id="account_analytic_account_view_form_inherit" model="ir.ui.view">
+            <field name="name">account.analytic.account.form.inherit</field>
+            <field name="model">account.analytic.account</field>
+            <field name="inherit_id" ref="analytic.view_account_analytic_account_form"/>
+            <field eval="9" name="priority"/>
+            <field name="arch" type="xml">
+                <field name="plan_id" position="after">
+                    <field name="element_id" invisible="True" />
+                    <field name="element_detailed" attrs="{'invisible': [('element_id', '=', 'True')]}" widget="boolean_toggle"/>
+                </field>
+            </field>
+        </record>
+
+    <!-- account.group -->
+      
+      <record id="view_account_group_form_inherit" model="ir.ui.view">
+        <field name="name">account.group.form.inherit</field>
+        <field name="model">account.group</field>
+        <field name="inherit_id" ref="account.view_account_group_form"/>
+        <field name="arch" type="xml">
+            <field name="code_prefix_end" position="after">
+                    <field name="parent_id"/>
+                    <field name="note"/>
+                    <group string="Default account values for this group new accounts" colspan="2">
+                        <field name="account_type"/>
+                        <field name="expense_element_detailed" widget="boolean_toggle"/>
+                        <field name="reconcile" attrs="{'invisible': [('account_type', 'in', ('asset_cash', 'liability_credit_card'))]}" widget="boolean_toggle"/>
+                    </group>
+            </field>
+        </field>
+    </record> 
+       
+
+    <!-- account.account -->
+      <record id="app_view_account_list" model="ir.ui.view">
+          <field name="name">app.account.list</field>
+          <field name="model">account.account</field>
+          <field name="inherit_id" ref="account.view_account_list"/>
+          <field name="arch" type="xml">
+              <xpath expr="//tree" position="attributes">
+                  <attribute name="default_order">code</attribute>
+              </xpath>
+              <xpath expr="field[@name='account_type']" position="after">
+                  <field name="group_id"/>
+                  <field name="expense_element_detailed" widget="boolean_toggle"/>
+              
+              </xpath>
+          </field>
+      </record>
+      <record id="init_accounts_tree" model="ir.ui.view">
+          <field name="name">app.account.setup.opening.move.line.tree</field>
+          <field name="model">account.account</field>
+          <field name="inherit_id" ref="account.init_accounts_tree"/>
+          <field name="arch" type="xml">
+              <xpath expr="field[@name='account_type']" position="after">
+                  <field name="code"/>  
+                  <field name="name"/> 
+                  <field name="expense_element_detailed" widget="boolean_toggle"/>               
+              </xpath>
+          </field>
+      </record>
+      
+      <record id="app_view_account_search" model="ir.ui.view">
+          <field name="name">app.account.account.search</field>
+          <field name="model">account.account</field>
+          <field name="inherit_id" ref="account.view_account_search"/>
+          <field name="arch" type="xml">
+              <xpath expr="//group" position="inside">
+                  <filter string="Group" name="account_group" domain="" context="{'group_by':'group_id'}"/>
+              </xpath>
+          </field>
+      </record>
+    
 </odoo>

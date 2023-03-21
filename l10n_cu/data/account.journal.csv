@@ -1,0 +1,7 @@
+id,code,name,type
+account_journal_FCAMB,FCAMB,Fondo para cambios,cash
+account_journal_FPMEN,FPMEN,Fondo para pagos menores,cash
+account_journal_FNOM,FNOM,Extraído para nómina,cash
+account_journal_FSELL,FSELL,Sellos,cash
+account_journal_FPREP,FPREP,Tarjetas prepagadas,cash
+account_journal_FOTR,FOTR,Otros valores en caja,cash
