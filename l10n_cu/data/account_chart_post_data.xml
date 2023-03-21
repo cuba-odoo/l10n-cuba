@@ -1,17 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <record id="l10n_cu_chart_template_common" model="account.chart.template">
-        <field name="property_account_receivable_id" ref="account_common_1350000"/>
-        <field name="property_account_payable_id" ref="account_common_4050000"/>
-        <field name="property_account_expense_categ_id" ref="account_common_8260000"/>
-        <field name="property_account_income_categ_id" ref="account_common_9000000"/>
-        <field name="default_pos_receivable_account_id" ref="account_common_1300006"/>
+        <field name="property_account_receivable_id" ref="account_common_1350020"/>
+        <field name="property_account_payable_id" ref="account_common_4050020"/>
+        <field name="property_account_expense_categ_id" ref="account_common_826"/>
+        <field name="property_account_income_categ_id" ref="account_common_900"/>
+        <field name="default_pos_receivable_account_id" ref="account_common_1300020"/>
+        <field name="account_journal_suspense_account_id" ref="account_common_6993"/>
+        <field name="account_journal_payment_debit_account_id" ref="account_common_106"/>    
+        <field name="account_journal_payment_credit_account_id" ref="account_common_107"/>             
+        <field name="default_cash_difference_expense_account_id" ref="account_common_839"/>
+        <field name="default_cash_difference_income_account_id" ref="account_common_924"/>        
+        <field name="account_journal_early_pay_discount_loss_account_id" ref="account_common_835"/>
+        <field name="account_journal_early_pay_discount_gain_account_id" ref="account_common_920"/>        
     </record>
     <record id="l10n_cu_chart_template_freelance" model="account.chart.template">
-        <field name="property_account_receivable_id" ref="account_tcp_1350000"/>
-        <field name="property_account_payable_id" ref="account_tcp_4050000"/>
-        <field name="property_account_expense_categ_id" ref="account_tcp_8000000"/>
-        <field name="property_account_income_categ_id" ref="account_tcp_9000000"/>
-        <field name="default_pos_receivable_account_id" ref="account_tcp_1350000"/>
+        <field name="property_account_receivable_id" ref="account_tcp_135"/>
+        <field name="property_account_payable_id" ref="account_common_4050020"/>
+        <field name="property_account_expense_categ_id" ref="account_common_800"/>
+        <field name="property_account_income_categ_id" ref="account_common_900"/>
+        <field name="default_pos_receivable_account_id" ref="account_tcp_135"/>
+        <field name="account_journal_payment_debit_account_id" ref="account_common_106"/>    
+        <field name="account_journal_payment_credit_account_id" ref="account_common_107"/>     
+        <field name="default_cash_difference_expense_account_id" ref="account_common_839"/>
+        <field name="default_cash_difference_income_account_id" ref="account_common_924"/>        
+        <field name="account_journal_early_pay_discount_loss_account_id" ref="account_common_835"/>
+        <field name="account_journal_early_pay_discount_gain_account_id" ref="account_common_920"/>  
     </record>
 </odoo>
