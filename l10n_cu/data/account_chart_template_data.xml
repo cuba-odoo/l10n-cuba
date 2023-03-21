@@ -2,7 +2,7 @@
 <odoo>
     <data noupdate="1">
         <function model="account.chart.template" name="try_loading">
-            <value eval="[ref('l10n_cu.l10n_cu_chart_template_private')]"/>
+            <value eval="[ref('l10n_cu.l10n_cu_chart_template_public')]"/>
         </function>
     </data>
 </odoo>

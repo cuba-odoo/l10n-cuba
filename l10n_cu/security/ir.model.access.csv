@@ -1,3 +1,4 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
 l10n_cu.access_res_cnae,access_res_cnae,l10n_cu.model_res_cnae,base.group_user,1,1,1,1
 l10n_cu.access_res_cnae_line,access_res_cnae_line,l10n_cu.model_res_cnae_line,base.group_user,1,1,1,1
+l10n_cu.access_expense_element,access_expense_element,l10n_cu.model_expense_element,base.group_user,1,1,1,1

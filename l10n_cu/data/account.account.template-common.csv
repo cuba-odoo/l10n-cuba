@@ -1,439 +1,394 @@
-"id","name","code","account_type","chart_template_id/id","reconcile","note"
-"account_common_1200000","Inversiones a corto plazo o temporales","120.0000","asset_current","l10n_cu_chart_template_common","0","Activo Circulante"
-"account_common_1300000","Efectos por cobrar a corto plazo","130.0000","asset_receivable","l10n_cu_chart_template_common","1","Activo Circulante"
-"account_common_1300001","Efectos por cobrar a corto plazo - Dentro del Órgano u Organismo","130.0001","asset_receivable","l10n_cu_chart_template_common","1","Activo Circulante"
-"account_common_1300002","Efectos por cobrar a corto plazo - Fuera del Órgano u Organismo","130.0002","asset_receivable","l10n_cu_chart_template_common","1","Activo Circulante"
-"account_common_1300003","Efectos por cobrar a corto plazo - En el Extranjero","130.0003","asset_receivable","l10n_cu_chart_template_common","1","Activo Circulante"
-"account_common_1300004","Efectos por cobrar a corto plazo - Dentro del Grupo Empresarial","130.0004","asset_receivable","l10n_cu_chart_template_common","1","Activo Circulante"
-"account_common_1300005","Efectos por cobrar a corto plazo - Sector Cooperativo","130.0005","asset_receivable","l10n_cu_chart_template_common","1","Activo Circulante"
-"account_common_1300006","Efectos por cobrar a corto plazo - Personas Naturales","130.0006","asset_receivable","l10n_cu_chart_template_common","1","Activo Circulante"
-"account_common_1340000","Cuenta en Participación","134.0000","asset_receivable","l10n_cu_chart_template_common","1","Activo Circulante"
-"account_common_1350000","Cuentas por cobrar a corto plazo","135.0000","asset_receivable","l10n_cu_chart_template_common","1","Activo Circulante"
-"account_common_1350010","Cuentas por cobrar a corto plazo - Dentro del Órgano u Organismo","135.0010","asset_receivable","l10n_cu_chart_template_common",1,"Activo Circulante"
-"account_common_1350020","Cuentas por cobrar a corto plazo - Fuera del Órgano u Organismo","135.0020","asset_receivable","l10n_cu_chart_template_common",1,"Activo Circulante"
-"account_common_1350030","Cuentas por cobrar a corto plazo - En el Extranjero","135.0030","asset_receivable","l10n_cu_chart_template_common",1,"Activo Circulante"
-"account_common_1350040","Cuentas por cobrar a corto plazo - Dentro del Grupo Empresarial","135.0040","asset_receivable","l10n_cu_chart_template_common",1,"Activo Circulante"
-"account_common_1350050","Cuentas por cobrar a corto plazo - Sector Cooperativo","135.0050","asset_receivable","l10n_cu_chart_template_common",1,"Activo Circulante"
-"account_common_1350060","Cuentas por cobrar a corto plazo - Personas Naturales","135.0060","asset_receivable","l10n_cu_chart_template_common",1,"Activo Circulante"
-"account_common_1400000","Pagos por Cuenta de Terceros","140.0000","asset_receivable","l10n_cu_chart_template_common",1,"Activo Circulante"
-"account_common_1410000","Participación de Reaseguradores por Siniestros Pendientes ","141.0000","asset_receivable","l10n_cu_chart_template_common",1,"Activo Circulante"
-"account_common_1420000","Préstamos y Otras Operaciones Crediticias a Cobrar a Corto Plazo","142.0000","asset_receivable","l10n_cu_chart_template_common",1,"Activo Circulante"
-"account_common_1430000","Suscriptores de Bonos","143.0000","asset_receivable","l10n_cu_chart_template_common",1,"Activo Circulante"
-"account_common_1440000","Bonos Emitidos en Cartera","144.0000","asset_receivable","l10n_cu_chart_template_common",1,"Activo Circulante"
-"account_common_1460000","Pagos Anticipados a Suministradores","146.0000","asset_prepayments","l10n_cu_chart_template_common",0,"Activo Circulante"
-"account_common_1460010","Pagos Anticipados a Suministradores - Dentro del Órgano u Organismo","146.0010","asset_prepayments","l10n_cu_chart_template_common",0,"Activo Circulante"
-"account_common_1460020","Pagos Anticipados a Suministradores - Fuera del Órgano u Organismo","146.0020","asset_prepayments","l10n_cu_chart_template_common",0,"Activo Circulante"
-"account_common_1460030","Pagos Anticipados a Suministradores - En el Extranjero","146.0030","asset_prepayments","l10n_cu_chart_template_common",0,"Activo Circulante"
-"account_common_1460040","Pagos Anticipados a Suministradores - Dentro del Grupo Empresarial","146.0040","asset_prepayments","l10n_cu_chart_template_common",0,"Activo Circulante"
-"account_common_1460050","Pagos Anticipados a Suministradores - Sector Cooperativo","146.0050","asset_prepayments","l10n_cu_chart_template_common",0,"Activo Circulante"
-"account_common_1460070","Pagos Anticipados a Suministradores - Personas Naturales","146.0070","asset_prepayments","l10n_cu_chart_template_common",0,"Activo Circulante"
-"account_common_1500000","Pagos Anticipados del Proceso Inversionista","150.0000","asset_prepayments","l10n_cu_chart_template_common",0,"Activo Circulante"
-"account_common_1500010","Pagos Anticipados del Proceso Inversionista - Dentro del Órgano u Organismo","150.0010","asset_prepayments","l10n_cu_chart_template_common",0,"Activo Circulante"
-"account_common_1500020","Pagos Anticipados del Proceso Inversionista - Fuera del Órgano u Organismo","150.0020","asset_prepayments","l10n_cu_chart_template_common",0,"Activo Circulante"
-"account_common_1500030","Pagos Anticipados del Proceso Inversionista - En el Extranjero","150.0030","asset_prepayments","l10n_cu_chart_template_common",0,"Activo Circulante"
-"account_common_1500040","Pagos Anticipados del Proceso Inversionista - Dentro del Grupo Empresarial","150.0040","asset_prepayments","l10n_cu_chart_template_common",0,"Activo Circulante"
-"account_common_1500050","Pagos Anticipados del Proceso Inversionista - Sector Cooperativo","150.0050","asset_prepayments","l10n_cu_chart_template_common",0,"Activo Circulante"
-"account_common_1500060","Pagos Anticipados del Proceso Inversionista - Personas Naturales","150.0060","asset_prepayments","l10n_cu_chart_template_common",0,"Activo Circulante"
-"account_common_1610000","Anticipos a Justificar","161.0000","asset_prepayments","l10n_cu_chart_template_common",0,"Activo Circulante"
-"account_common_1640000","Adeudos del Presupuesto del Estado","164.0000","asset_current","l10n_cu_chart_template_common",0,"Activo Circulante"
-"account_common_1640001","Adeudos del Presupuesto del Estado - Impuesto sobre Ventas","164.0001","asset_current","l10n_cu_chart_template_common",0,"Activo Circulante"
-"account_common_1640002","Adeudos del Presupuesto del Estado - Impuesto sobre los Servicios Públicos","164.0002","asset_current","l10n_cu_chart_template_common",0,"Activo Circulante"
-"account_common_1640003","Adeudos del Presupuesto del Estado - Aranceles de Aduana","164.0003","asset_current","l10n_cu_chart_template_common",0,"Activo Circulante"
-"account_common_1640004","Adeudos del Presupuesto del Estado - Impuesto sobre Utilidades","164.0004","asset_current","l10n_cu_chart_template_common",0,"Activo Circulante"
-"account_common_1640005","Adeudos del Presupuesto del Estado - Impuesto sobre Ingresos Personales","164.0005","asset_current","l10n_cu_chart_template_common",0,"Activo Circulante"
-"account_common_1640006","Adeudos del Presupuesto del Estado - Impuesto sobre los Recursos","164.0006","asset_current","l10n_cu_chart_template_common",0,"Activo Circulante"
-"account_common_1640007","Adeudos del Presupuesto del Estado - Otros Impuestos","164.0007","asset_current","l10n_cu_chart_template_common",0,"Activo Circulante"
-"account_common_1640008","Adeudos del Presupuesto del Estado - Contribuciones","164.0008","asset_current","l10n_cu_chart_template_common",0,"Activo Circulante"
-"account_common_1640009","Adeudos del Presupuesto del Estado - Tasas","164.0009","asset_current","l10n_cu_chart_template_common",0,"Activo Circulante"
-"account_common_1640010","Adeudos del Presupuesto del Estado - Ingresos No tributarios","164.0010","asset_current","l10n_cu_chart_template_common",0,"Activo Circulante"
-"account_common_1640011","Adeudos del Presupuesto del Estado - Rentas de la Propiedad","164.0011","asset_current","l10n_cu_chart_template_common",0,"Activo Circulante"
-"account_common_1640012","Adeudos del Presupuesto del Estado - Transferencias Corrientes","164.0012","asset_current","l10n_cu_chart_template_common",0,"Activo Circulante"
-"account_common_1640013","Adeudos del Presupuesto del Estado - Ingresos de Operaciones","164.0013","asset_current","l10n_cu_chart_template_common",0,"Activo Circulante"
-"account_common_1640014","Adeudos del Presupuesto del Estado - Recursos Propios de Capital","164.0014","asset_current","l10n_cu_chart_template_common",0,"Activo Circulante"
-"account_common_1640015","Adeudos del Presupuesto del Estado - Transferencias de Capital","164.0015","asset_current","l10n_cu_chart_template_common",0,"Activo Circulante"
-"account_common_1640016","Adeudos del Presupuesto del Estado - Otros Recursos Financieros","164.0016","asset_current","l10n_cu_chart_template_common",0,"Activo Circulante"
-"account_common_1640020","Adeudos del Presupuesto del Estado - Invalidez Parcial","164.0020","asset_current","l10n_cu_chart_template_common",0,"Activo Circulante"
-"account_common_1640030","Adeudos del Presupuesto del Estado - Licencias de Maternidad","164.0030","asset_current","l10n_cu_chart_template_common",0,"Activo Circulante"
-"account_common_1640040","Adeudos del Presupuesto del Estado - Reintegro Aporte de Microbrigada","164.0040","asset_current","l10n_cu_chart_template_common",0,"Activo Circulante"
-"account_common_1640090","Adeudos del Presupuesto del Estado - Otros","164.0090","asset_current","l10n_cu_chart_template_common",0,"Activo Circulante"
-"account_common_1670000","Adeudos del Órgano u Organismo","167.0000","asset_current","l10n_cu_chart_template_common",0,"Activo Circulante"
-"account_common_1730000","Ingresos Acumulados por Cobrar","173.0000","asset_receivable","l10n_cu_chart_template_common",1,"Activo Circulante"
-"account_common_1810000","Dividendos y Participaciones por Cobrar","181.0000","asset_receivable","l10n_cu_chart_template_common",1,"Activo Circulante"
-"account_common_1820000","Ingresos Acumulados por Cobrar  Reaseguros Aceptados","182.0000","asset_receivable","l10n_cu_chart_template_common",1,"Activo Circulante"
-"account_common_1830000","Materias Primas y Materiales","183.0000","asset_current","l10n_cu_chart_template_common",0,"Activo Circulante"
-"account_common_1840000","Combustibles y Lubricantes","184.0000","asset_current","l10n_cu_chart_template_common",0,"Activo Circulante"
-"account_common_1850000","Partes y Piezas de Repuesto","185.0000","asset_current","l10n_cu_chart_template_common",0,"Activo Circulante"
-"account_common_1860000","Envases y Embalajes","186.0000","asset_current","l10n_cu_chart_template_common",0,"Activo Circulante"
-"account_common_1870000","Útiles, Herramientas y Otros","187.0000","asset_current","l10n_cu_chart_template_common",0,"Activo Circulante"
-"account_common_1880000","Producción Terminada","188.0000","asset_current","l10n_cu_chart_template_common",0,"Activo Circulante"
-"account_common_1880020","Producción Terminada - Producción y Ventas","188.0020","asset_current","l10n_cu_chart_template_common",0,"Activo Circulante"
-"account_common_1880040","Producción Terminada - Otros Aumentos","188.0040","asset_current","l10n_cu_chart_template_common",0,"Activo Circulante"
-"account_common_1880050","Producción Terminada - Otras Disminuciones","188.0050","asset_current","l10n_cu_chart_template_common",0,"Activo Circulante"
-"account_common_1880099","Producción Terminada - Contrapartida (Opcional)","188.0099","asset_current","l10n_cu_chart_template_common",0,"Activo Circulante"
-"account_common_1890000","Mercancías para la Venta","189.0000","asset_current","l10n_cu_chart_template_common",0,"Activo Circulante"
-"account_common_1900000","Medicamentos","190.0000","asset_current","l10n_cu_chart_template_common",0,"Activo Circulante"
-"account_common_1910000","Base Material de Estudio","191.0000","asset_current","l10n_cu_chart_template_common",0,"Activo Circulante"
-"account_common_1920000","Vestuario y Lencería","192.0000","asset_current","l10n_cu_chart_template_common",0,"Activo Circulante"
-"account_common_1930000","Alimentos","193.0000","asset_current","l10n_cu_chart_template_common",0,"Activo Circulante"
-"account_common_1940000","Inventarios de Mercancías de Importación","194.0000","asset_current","l10n_cu_chart_template_common",0,"Activo Circulante"
-"account_common_1950000","Inventarios de Mercancías de Exportación","195.0000","asset_current","l10n_cu_chart_template_common",0,"Activo Circulante"
-"account_common_1960000","Producción para Insumo o Autoconsumo","196.0000","asset_current","l10n_cu_chart_template_common",0,"Activo Circulante"
-"account_common_1960020","Producción para Insumo o Autoconsumo - Producción","196.0020","asset_current","l10n_cu_chart_template_common",0,"Activo Circulante"
-"account_common_1960030","Producción para Insumo o Autoconsumo - Traspaso a Producciones en Proceso","196.0030","asset_current","l10n_cu_chart_template_common",0,"Activo Circulante"
-"account_common_1960040","Producción para Insumo o Autoconsumo - Otros Aumentos","196.0040","asset_current","l10n_cu_chart_template_common",0,"Activo Circulante"
-"account_common_1960050","Producción para Insumo o Autoconsumo - Otras Disminuciones","196.0050","asset_current","l10n_cu_chart_template_common",0,"Activo Circulante"
-"account_common_1960099","Producción para Insumo o Autoconsumo - Contrapartida (Opcional)","196.0099","asset_current","l10n_cu_chart_template_common",0,"Activo Circulante"
-"account_common_2050000","Otros Inventarios","205.0000","asset_current","l10n_cu_chart_template_common",0,"Activo Circulante"
-"account_common_2080000","Inventarios Ociosos","208.0000","asset_current","l10n_cu_chart_template_common",0,"Activo Circulante"
-"account_common_2090000","Inventarios de Lento Movimiento","209.0000","asset_current","l10n_cu_chart_template_common",0,"Activo Circulante"
-"account_common_2110000","Créditos Documentarios","211.0000","asset_current","l10n_cu_chart_template_common",0,"Activo Circulante"
-"account_common_2150000","Efectos por Cobrar a Largo Plazo","215.0000","asset_receivable","l10n_cu_chart_template_common",1,"Activo a Largo Plazo"
-"account_common_2150010","Efectos por Cobrar a Largo Plazo - Dentro del Órgano u Organismo","215.0010","asset_receivable","l10n_cu_chart_template_common",1,"Activo a Largo Plazo"
-"account_common_2150020","Efectos por Cobrar a Largo Plazo - Fuera del Órgano u Organismo","215.0020","asset_receivable","l10n_cu_chart_template_common",1,"Activo a Largo Plazo"
-"account_common_2150030","Efectos por Cobrar a Largo Plazo - En el Extranjero","215.0030","asset_receivable","l10n_cu_chart_template_common",1,"Activo a Largo Plazo"
-"account_common_2150040","Efectos por Cobrar a Largo Plazo - Dentro del Grupo Empresarial","215.0040","asset_receivable","l10n_cu_chart_template_common",1,"Activo a Largo Plazo"
-"account_common_2150050","Efectos por Cobrar a Largo Plazo - Sector Cooperativo","215.0050","asset_receivable","l10n_cu_chart_template_common",1,"Activo a Largo Plazo"
-"account_common_2150060","Efectos por Cobrar a Largo Plazo - Personas Naturales","215.0060","asset_receivable","l10n_cu_chart_template_common",1,"Activo a Largo Plazo"
-"account_common_2180000","Cuentas por Cobrar a Largo Plazo","218.0000","asset_receivable","l10n_cu_chart_template_common",1,"Activo a Largo Plazo"
-"account_common_2180010","Cuentas por Cobrar a Largo Plazo - Dentro del Órgano u Organismo","218.0010","asset_receivable","l10n_cu_chart_template_common",1,"Activo a Largo Plazo"
-"account_common_2180020","Cuentas por Cobrar a Largo Plazo - Fuera del Órgano u Organismo","218.0020","asset_receivable","l10n_cu_chart_template_common",1,"Activo a Largo Plazo"
-"account_common_2180030","Cuentas por Cobrar a Largo Plazo - En el Extranjero","218.0030","asset_receivable","l10n_cu_chart_template_common",1,"Activo a Largo Plazo"
-"account_common_2180040","Cuentas por Cobrar a Largo Plazo - Dentro del Grupo Empresarial","218.0040","asset_receivable","l10n_cu_chart_template_common",1,"Activo a Largo Plazo"
-"account_common_2180050","Cuentas por Cobrar a Largo Plazo - Sector Cooperativo","218.0050","asset_receivable","l10n_cu_chart_template_common",1,"Activo a Largo Plazo"
-"account_common_2180060","Cuentas por Cobrar a Largo Plazo - Personas Naturales","218.0060","asset_receivable","l10n_cu_chart_template_common",1,"Activo a Largo Plazo"
-"account_common_2210000","Préstamos Concedidos a Largo Plazo","221.0000","asset_receivable","l10n_cu_chart_template_common",1,"Activo a Largo Plazo"
-"account_common_2210010","Préstamos Concedidos a Largo Plazo - Dentro del Órgano u Organismo","221.0010","asset_receivable","l10n_cu_chart_template_common",1,"Activo a Largo Plazo"
-"account_common_2210020","Préstamos Concedidos a Largo Plazo - Fuera del Órgano u Organismo","221.0020","asset_receivable","l10n_cu_chart_template_common",1,"Activo a Largo Plazo"
-"account_common_2210030","Préstamos Concedidos a Largo Plazo - En el Extranjero","221.0030","asset_receivable","l10n_cu_chart_template_common",1,"Activo a Largo Plazo"
-"account_common_2210040","Préstamos Concedidos a Largo Plazo - Dentro del Grupo Empresarial","221.0040","asset_receivable","l10n_cu_chart_template_common",1,"Activo a Largo Plazo"
-"account_common_2250000","Inversiones a Largo Plazo o Permanentes","225.0000","asset_non_current","l10n_cu_chart_template_common",0,"Activo a Largo Plazo"
-"account_common_2400000","Activos Fijos Tangibles","240.0000","asset_fixed","l10n_cu_chart_template_common",0,"Activos Fijos"
-"account_common_2520000","Fondos Bibliotecarios","252.0000","asset_fixed","l10n_cu_chart_template_common",0,"Activos Fijos"
-"account_common_2530000","Medios y Equipos para Alquilar","253.0000","asset_fixed","l10n_cu_chart_template_common",0,"Activos Fijos"
-"account_common_2540000","Monumentos y Obras de Arte","254.0000","asset_fixed","l10n_cu_chart_template_common",0,"Activos Fijos"
-"account_common_2550000","Activos Fijos Intangibles","255.0000","asset_fixed","l10n_cu_chart_template_common",0,"Activos Fijos"
-"account_common_2640000","Activos Fijos Intangibles en Proceso","264.0000","asset_fixed","l10n_cu_chart_template_common",0,"Activos Fijos"
-"account_common_2640001","Activos Fijos Intangibles en Proceso - Saldo al Inicio del Año","264.0001","asset_fixed","l10n_cu_chart_template_common",0,"Activos Fijos"
-"account_common_2640010","Activos Fijos Intangibles en Proceso - Operaciones del Año","264.0010","asset_fixed","l10n_cu_chart_template_common",0,"Activos Fijos"
-"account_common_2640998","Activos Fijos Intangibles en Proceso - Traspaso a Gastos por Faltantes y Pérdidas Diferidos","264.0998","asset_fixed","l10n_cu_chart_template_common",0,"Activos Fijos"
-"account_common_2640999","Activos Fijos Intangibles en Proceso - Traspaso a Activos Fijos Intangibles","264.999","asset_fixed","l10n_cu_chart_template_common",0,"Activos Fijos"
-"account_common_2650000","Inversiones en Proceso","265.0000","asset_fixed","l10n_cu_chart_template_common",0,"Activos Fijos"
-"account_common_2650001","Inversiones en Proceso - Saldo al Inicio del Año","265.0001","asset_fixed","l10n_cu_chart_template_common",0,"Activos Fijos"
-"account_common_2650010","Inversiones en Proceso - Construcción y Montaje","265.0010","asset_fixed","l10n_cu_chart_template_common",0,"Activos Fijos"
-"account_common_2650020","Inversiones en Proceso - Equipos","265.0020","asset_fixed","l10n_cu_chart_template_common",0,"Activos Fijos"
-"account_common_2650030","Inversiones en Proceso - Otros Gastos","265.0030","asset_fixed","l10n_cu_chart_template_common",0,"Activos Fijos"
-"account_common_2650050","Inversiones en Proceso - Fomentos Agrícolas","265.0050","asset_fixed","l10n_cu_chart_template_common",0,"Activos Fijos"
-"account_common_2650060","Inversiones en Proceso - Fomentos y Desarrollo Mineros","265.0060","asset_fixed","l10n_cu_chart_template_common",0,"Activos Fijos"
-"account_common_2650070","Inversiones en Proceso - Fomentos y Desarrollo Forestales","265.0070","asset_fixed","l10n_cu_chart_template_common",0,"Activos Fijos"
-"account_common_2650100","Inversiones en Proceso - Otros no Especificados","265.0100","asset_fixed","l10n_cu_chart_template_common",0,"Activos Fijos"
-"account_common_2650200","Inversiones en Proceso - Fondo de Fomento Desarrollo Ganadero","265.0200","asset_fixed","l10n_cu_chart_template_common",0,"Activos Fijos"
-"account_common_2650999","Inversiones en Proceso - Traspaso a Activos Fijos Tangibles","265.0999","asset_fixed","l10n_cu_chart_template_common",0,"Activos Fijos"
-"account_common_2790000","Plan de Preparación de Inversiones","279.0000","asset_fixed","l10n_cu_chart_template_common",0,"Activos Fijos"
-"account_common_2790001","Plan de Preparación de Inversiones - Saldo al Inicio del Año","279.0001","asset_fixed","l10n_cu_chart_template_common",0,"Activos Fijos"
-"account_common_2790010","Plan de Preparación de Inversiones - Construcción y Montaje","279.0010","asset_fixed","l10n_cu_chart_template_common",0,"Activos Fijos"
-"account_common_2790020","Plan de Preparación de Inversiones - Equipos","279.0020","asset_fixed","l10n_cu_chart_template_common",0,"Activos Fijos"
-"account_common_2790030","Plan de Preparación de Inversiones - Otros","279.0030","asset_fixed","l10n_cu_chart_template_common",0,"Activos Fijos"
-"account_common_2790998","Plan de Preparación de Inversiones - Traspaso a Gastos del Proceso Inversionista","279.0998","asset_fixed","l10n_cu_chart_template_common",0,"Activos Fijos"
-"account_common_2800000","Equipos por Instalar y Materiales para el Proceso Inversionista","280.0000","asset_fixed","l10n_cu_chart_template_common",0,"Activos Fijos"
-"account_common_2900000","Adquisición de Activos Fijos Tangibles Nuevos","290.0000","asset_fixed","l10n_cu_chart_template_common",0,"Activos Fijos"
-"account_common_2900100","Adquisición de Activos Fijos Tangibles Nuevos - Compras del Período ","290.0100","asset_fixed","l10n_cu_chart_template_common",0,"Activos Fijos"
-"account_common_2900300","Adquisición de Activos Fijos Tangibles Nuevos - Adquisición del Período por Donaciones","290.0300","asset_fixed","l10n_cu_chart_template_common",0,"Activos Fijos"
-"account_common_2900999","Adquisición de Activos Fijos Tangibles Nuevos - Traspaso a Activos Fijos Tangibles","290.0999","asset_fixed","l10n_cu_chart_template_common",0,"Activos Fijos"
-"account_common_2910000","Compra de Activos Fijos Tangibles de Uso","291.0000","asset_fixed","l10n_cu_chart_template_common",0,"Activos Fijos"
-"account_common_2910100","Compra de Activos Fijos Tangibles de Uso - Compras del Período","291.0100","asset_fixed","l10n_cu_chart_template_common",0,"Activos Fijos"
-"account_common_2910300","Compra de Activos Fijos Tangibles de Uso - Adquisición del Período por Donaciones","291.0300","asset_fixed","l10n_cu_chart_template_common",0,"Activos Fijos"
-"account_common_2910999","Compra de Activos Fijos Tangibles de Uso - Traspaso a Activos Fijos Tangibles ","291.0999","asset_fixed","l10n_cu_chart_template_common",0,"Activos Fijos"
-"account_common_2920000","Compra de Activos Fijos Intangibles","292.0000","asset_fixed","l10n_cu_chart_template_common",0,"Activos Fijos"
-"account_common_2920100","Compras del Período","292.0100","asset_fixed","l10n_cu_chart_template_common",0,"Activos Fijos"
-"account_common_2920300","Compras del Período - Adquisición del Período por Donaciones","292.0300","asset_fixed","l10n_cu_chart_template_common",0,"Activos Fijos"
-"account_common_2920999","Compras del Período - Traspaso a Activos Fijos Tangibles ","292.0999","asset_fixed","l10n_cu_chart_template_common",0,"Activos Fijos"
-"account_common_3000000","Gastos de Producción y Servicios Diferidos","300.0000","asset_current","l10n_cu_chart_template_common",0,"Activos Fijos"
-"account_common_3000010","Gastos de Producción y Servicios Diferidos - Saldo al Inicio del Año","300.0010","asset_current","l10n_cu_chart_template_common",0,"Activos Fijos"
-"account_common_3000020","Gastos de Producción y Servicios Diferidos - Gastos por Elementos del Período","300.0020","asset_current","l10n_cu_chart_template_common",0,"Activos Fijos"
-"account_common_3000030","Gastos de Producción y Servicios Diferidos - Amortización de Gastos","300.0030","asset_current","l10n_cu_chart_template_common",0,"Activos Fijos"
-"account_common_3060000","Gastos Financieros Diferidos","306.0000","asset_current","l10n_cu_chart_template_common",0,"Activos Fijos"
-"account_common_3060010","Gastos Financieros Diferidos - Saldo al Inicio del Año","306.0010","asset_current","l10n_cu_chart_template_common",0,"Activos Fijos"
-"account_common_3060020","Gastos Financieros Diferidos - Gastos por Elementos del Período","306.0020","asset_current","l10n_cu_chart_template_common",0,"Activos Fijos"
-"account_common_3060030","Gastos Financieros Diferidos - Amortización de Gastos","306.0030","asset_current","l10n_cu_chart_template_common",0,"Activos Fijos"
-"account_common_3100000","Gastos del Proceso Inversionista Diferidos","310.0000","asset_current","l10n_cu_chart_template_common",0,"Activos Fijos"
-"account_common_3100010","Gastos del Proceso Inversionista Diferidos - Saldo al Inicio del Año","310.0010","asset_current","l10n_cu_chart_template_common",0,"Activos Fijos"
-"account_common_3100020","Gastos del Proceso Inversionista Diferidos - Gastos por Elementos del Período","310.0020","asset_current","l10n_cu_chart_template_common",0,"Activos Fijos"
-"account_common_3100030","Gastos del Proceso Inversionista Diferidos - Amortización de Gastos","310.0030","asset_current","l10n_cu_chart_template_common",0,"Activos Fijos"
-"account_common_3120000","Gastos por Faltantes y Pérdidas Diferidos","312.0000","asset_current","l10n_cu_chart_template_common",0,"Activos Fijos"
-"account_common_3120010","Gastos por Faltantes y Pérdidas Diferidos - Saldo al Inicio del Año","312.0010","asset_current","l10n_cu_chart_template_common",0,"Activos Fijos"
-"account_common_3120020","Gastos por Faltantes y Pérdidas Diferidos - Gastos del Período","312.0020","asset_current","l10n_cu_chart_template_common",0,"Activos Fijos"
-"account_common_3120030","Gastos por Faltantes y Pérdidas Diferidos - Amortización de Gastos a las Cuentas de Gastos por Faltantes y Pérdidas","312.0030","asset_current","l10n_cu_chart_template_common",0,"Activos Fijos"
-"account_common_3300000","Pérdidas en Investigación","330.0000","asset_current","l10n_cu_chart_template_common",0,"Otros Activos"
-"account_common_3300010","Pérdidas en Investigación - Pérdidas por Deterioro","330.0010","asset_current","l10n_cu_chart_template_common",0,"Otros Activos"
-"account_common_3300020","Pérdidas en Investigación - Pérdidas Cosecha","330.0020","asset_current","l10n_cu_chart_template_common",0,"Otros Activos"
-"account_common_3300030","Pérdidas en Investigación - Pérdidas Cuentas por Cobrar","330.0030","asset_current","l10n_cu_chart_template_common",0,"Otros Activos"
-"account_common_3300040","Pérdidas en Investigación - Pérdidas por Siniestros","330.0040","asset_current","l10n_cu_chart_template_common",0,"Otros Activos"
-"account_common_3300050","Pérdidas en Investigación - Otros","330.0050","asset_current","l10n_cu_chart_template_common",0,"Otros Activos"
-"account_common_3320000","Faltantes de Bienes en Investigación","332.0000","asset_current","l10n_cu_chart_template_common",0,"Otros Activos"
-"account_common_3320010","Faltantes de Bienes en Investigación - Medios Monetarios","332.0010","asset_current","l10n_cu_chart_template_common",0,"Otros Activos"
-"account_common_3320020","Faltantes de Bienes en Investigación - Medios Materiales","332.0020","asset_current","l10n_cu_chart_template_common",0,"Otros Activos"
-"account_common_3320030","Faltantes de Bienes en Investigación - Activos Fijos","332.0030","asset_current","l10n_cu_chart_template_common",0,"Otros Activos"
-"account_common_3320040","Faltantes de Bienes en Investigación - Equipos por Instalar y Materiales de Construcción","332.0040","asset_current","l10n_cu_chart_template_common",0,"Otros Activos"
-"account_common_3320050","Faltantes de Bienes en Investigación - Otros","332.0050","asset_current","l10n_cu_chart_template_common",0,"Otros Activos"
-"account_common_3340000","Cuentas por Cobrar Diversas. Operaciones Corrientes","334.0000","asset_receivable","l10n_cu_chart_template_common",1,"Otros Activos"
-"account_common_3340010","Cuentas por Cobrar Diversas. Operaciones Corrientes - Ventas a Entidades","334.0010","asset_receivable","l10n_cu_chart_template_common",1,"Otros Activos"
-"account_common_3340020","Cuentas por Cobrar Diversas. Operaciones Corrientes - Deudas a Trabajadores","334.0020","asset_receivable","l10n_cu_chart_template_common",1,"Otros Activos"
-"account_common_3340030","Cuentas por Cobrar Diversas. Operaciones Corrientes - Reclamaciones","334.0030","asset_receivable","l10n_cu_chart_template_common",1,"Otros Activos"
-"account_common_3340040","Cuentas por Cobrar Diversas. Operaciones Corrientes - Responsabilidad Material","334.0040","asset_receivable","l10n_cu_chart_template_common",1,"Otros Activos"
-"account_common_3340050","Cuentas por Cobrar Diversas. Operaciones Corrientes - Sector Cooperativo","334.0050","asset_receivable","l10n_cu_chart_template_common",1,"Otros Activos"
-"account_common_3340060","Cuentas por Cobrar Diversas. Operaciones Corrientes - Personas Naturales","334.0060","asset_receivable","l10n_cu_chart_template_common",1,"Otros Activos"
-"account_common_3340099","Cuentas por Cobrar Diversas. Operaciones Corrientes - Otros","334.0099","asset_receivable","l10n_cu_chart_template_common",1,"Otros Activos"
-"account_common_3420000","Cuentas por Cobrar - Compra de Monedas","342.0000","asset_receivable","l10n_cu_chart_template_common",1,"Otros Activos"
-"account_common_3430000","Cuentas por Cobrar del Proceso Inversionista","343.0000","asset_receivable","l10n_cu_chart_template_common",1,"Otros Activos"
-"account_common_3430010","Cuentas por Cobrar del Proceso Inversionista - Dentro del Órgano u Organismo","343.0010","asset_receivable","l10n_cu_chart_template_common",1,"Otros Activos"
-"account_common_3430020","Cuentas por Cobrar del Proceso Inversionista - Fuera del Órgano u Organismo","343.0020","asset_receivable","l10n_cu_chart_template_common",1,"Otros Activos"
-"account_common_3430030","Cuentas por Cobrar del Proceso Inversionista - En el Extranjero","343.0030","asset_receivable","l10n_cu_chart_template_common",1,"Otros Activos"
-"account_common_3430040","Cuentas por Cobrar del Proceso Inversionista - Dentro del Grupo Empresarial","343.0040","asset_receivable","l10n_cu_chart_template_common",1,"Otros Activos"
-"account_common_3430050","Cuentas por Cobrar del Proceso Inversionista - Sector Cooperativo","343.0050","asset_receivable","l10n_cu_chart_template_common",1,"Otros Activos"
-"account_common_3430060","Cuentas por Cobrar del Proceso Inversionista - Personas Naturales","343.0060","asset_receivable","l10n_cu_chart_template_common",1,"Otros Activos"
-"account_common_3460000","Efectos por Cobrar en Litigio","346.0000","asset_receivable","l10n_cu_chart_template_common",1,"Otros Activos"
-"account_common_3460010","Efectos por Cobrar en Litigio - Dentro del Órgano u Organismo","346.0010","asset_receivable","l10n_cu_chart_template_common",1,"Otros Activos"
-"account_common_3460020","Efectos por Cobrar en Litigio - Fuera del Órgano u Organismo","346.0020","asset_receivable","l10n_cu_chart_template_common",1,"Otros Activos"
-"account_common_3460030","Efectos por Cobrar en Litigio - En el Extranjero","346.0030","asset_receivable","l10n_cu_chart_template_common",1,"Otros Activos"
-"account_common_3460040","Efectos por Cobrar en Litigio - Dentro del Grupo Empresarial","346.0040","asset_receivable","l10n_cu_chart_template_common",1,"Otros Activos"
-"account_common_3460050","Efectos por Cobrar en Litigio - Sector Cooperativo","346.0050","asset_receivable","l10n_cu_chart_template_common",1,"Otros Activos"
-"account_common_3460060","Efectos por Cobrar en Litigio - Personas Naturales","346.0060","asset_receivable","l10n_cu_chart_template_common",1,"Otros Activos"
-"account_common_3470000","Cuentas por Cobrar en Litigio","347.0000","asset_receivable","l10n_cu_chart_template_common",1,"Otros Activos"
-"account_common_3470010","Cuentas por Cobrar en Litigio - Dentro del Órgano u Organismo","347.0010","asset_receivable","l10n_cu_chart_template_common",1,"Otros Activos"
-"account_common_3470020","Cuentas por Cobrar en Litigio - Fuera del Órgano u Organismo","347.0020","asset_receivable","l10n_cu_chart_template_common",1,"Otros Activos"
-"account_common_3470030","Cuentas por Cobrar en Litigio - En el Extranjero","347.0030","asset_receivable","l10n_cu_chart_template_common",1,"Otros Activos"
-"account_common_3470040","Cuentas por Cobrar en Litigio - Dentro del Grupo Empresarial","347.0040","asset_receivable","l10n_cu_chart_template_common",1,"Otros Activos"
-"account_common_3470050","Cuentas por Cobrar en Litigio - Sector Cooperativo","347.0050","asset_receivable","l10n_cu_chart_template_common",1,"Otros Activos"
-"account_common_3470060","Cuentas por Cobrar en Litigio - Personas Naturales","347.0060","asset_receivable","l10n_cu_chart_template_common",1,"Otros Activos"
-"account_common_3480000","Efectos por Cobrar Protestados","348.0000","asset_receivable","l10n_cu_chart_template_common",1,"Otros Activos"
-"account_common_3480010","Efectos por Cobrar Protestados - Dentro del Órgano u Organismo","348.0010","asset_receivable","l10n_cu_chart_template_common",1,"Otros Activos"
-"account_common_3480020","Efectos por Cobrar Protestados - Fuera del Órgano u Organismo","348.0020","asset_receivable","l10n_cu_chart_template_common",1,"Otros Activos"
-"account_common_3480030","Efectos por Cobrar Protestados - En el Extranjero","348.0030","asset_receivable","l10n_cu_chart_template_common",1,"Otros Activos"
-"account_common_3480040","Efectos por Cobrar Protestados - Dentro del Grupo Empresarial","348.0040","asset_receivable","l10n_cu_chart_template_common",1,"Otros Activos"
-"account_common_3480050","Efectos por Cobrar Protestados - Sector Cooperativo","348.0050","asset_receivable","l10n_cu_chart_template_common",1,"Otros Activos"
-"account_common_3480060","Efectos por Cobrar Protestados - Personas Naturales","348.0060","asset_receivable","l10n_cu_chart_template_common",1,"Otros Activos"
-"account_common_3490000","Cuentas por Cobrar en Proceso Judicial","349.0000","asset_receivable","l10n_cu_chart_template_common",1,"Otros Activos"
-"account_common_3490010","Cuentas por Cobrar en Proceso Judicial - Dentro del Órgano u Organismo","349.0010","asset_receivable","l10n_cu_chart_template_common",1,"Otros Activos"
-"account_common_3490020","Cuentas por Cobrar en Proceso Judicial - Fuera del Órgano u Organismo","349.0020","asset_receivable","l10n_cu_chart_template_common",1,"Otros Activos"
-"account_common_3490030","Cuentas por Cobrar en Proceso Judicial - En el Extranjero","349.0030","asset_receivable","l10n_cu_chart_template_common",1,"Otros Activos"
-"account_common_3490040","Cuentas por Cobrar en Proceso Judicial - Dentro del Grupo Empresarial","349.0040","asset_receivable","l10n_cu_chart_template_common",1,"Otros Activos"
-"account_common_3490050","Cuentas por Cobrar en Proceso Judicial - Sector Cooperativo","349.0050","asset_receivable","l10n_cu_chart_template_common",1,"Otros Activos"
-"account_common_3490060","Cuentas por Cobrar en Proceso Judicial - Personas Naturales","349.0060","asset_receivable","l10n_cu_chart_template_common",1,"Otros Activos"
-"account_common_3500000","Cuentas por Cobrar con Sentencia Firme","350.0000","asset_non_current","l10n_cu_chart_template_common",1,"Otros Activos"
-"account_common_3500010","Cuentas por Cobrar con Sentencia Firme - Dentro del Órgano u Organismo","350.0010","asset_non_current","l10n_cu_chart_template_common",1,"Otros Activos"
-"account_common_3500020","Cuentas por Cobrar con Sentencia Firme - Fuera del Órgano u Organismo","350.0020","asset_non_current","l10n_cu_chart_template_common",1,"Otros Activos"
-"account_common_3500030","Cuentas por Cobrar con Sentencia Firme - En el Extranjero","350.0030","asset_non_current","l10n_cu_chart_template_common",1,"Otros Activos"
-"account_common_3500040","Cuentas por Cobrar con Sentencia Firme - Dentro del Grupo Empresarial","350.0040","asset_non_current","l10n_cu_chart_template_common",1,"Otros Activos"
-"account_common_3500050","Cuentas por Cobrar con Sentencia Firme - Sector Cooperativo","350.0050","asset_non_current","l10n_cu_chart_template_common",1,"Otros Activos"
-"account_common_3500060","Cuentas por Cobrar con Sentencia Firme - Personas Naturales","350.0060","asset_non_current","l10n_cu_chart_template_common",1,"Otros Activos"
-"account_common_3540000","Depósitos y Fianzas","354.0000","asset_non_current","l10n_cu_chart_template_common",1,"Otros Activos"
-"account_common_3630000","Bonos Redimidos","363.0000","asset_non_current","l10n_cu_chart_template_common",0,"Otros Activos"
-"account_common_3640000","Fondo de Amortización de Bonos - Efectivo y Valores","364.0000","asset_non_current","l10n_cu_chart_template_common",0,"Otros Activos"
-"account_common_3650000","Efectos por Cobrar Descontados","365.0000","asset_non_current","l10n_cu_chart_template_common",0,"Cuentas Reguladoras de Activos"
-"account_common_3660000","Desgaste de Base Material de Estudio","366.0000","asset_non_current","l10n_cu_chart_template_common",0,"Cuentas Reguladoras de Activos"
-"account_common_3670000","Desgaste de Vestuario y Lencería","367.0000","asset_non_current","l10n_cu_chart_template_common",0,"Cuentas Reguladoras de Activos"
-"account_common_3690000","Provisión para Cuentas Incobrables","369.0000","asset_non_current","l10n_cu_chart_template_common",0,"Cuentas Reguladoras de Activos"
-"account_common_3700000","Descuento Comercial e Impuesto","370.0000","asset_non_current","l10n_cu_chart_template_common",0,"Cuentas Reguladoras de Activos"
-"account_common_3730000","Desgaste de Útiles y Herramientas","373.0000","asset_non_current","l10n_cu_chart_template_common",0,"Cuentas Reguladoras de Activos"
-"account_common_3740000","Otras Provisiones Reguladoras de Activos","374.0000","asset_non_current","l10n_cu_chart_template_common",0,"Cuentas Reguladoras de Activos"
-"account_common_3750000","Depreciación de Activos Fijos Tangibles","375.0000","asset_fixed","l10n_cu_chart_template_common",0,"Cuentas Reguladoras de Activos"
-"account_common_3890000","Desgaste de Medios y Equipos para Alquilar","389.0000","asset_fixed","l10n_cu_chart_template_common",0,"Cuentas Reguladoras de Activos"
-"account_common_3900000","Amortización de Activos Fijos Intangibles","390.0000","asset_fixed","l10n_cu_chart_template_common",0,"Cuentas Reguladoras de Activos"
-"account_common_4000000","Sobregiro Bancario","400.0000","liability_payable","l10n_cu_chart_template_common",1,"Pasivos Circulantes"
-"account_common_4010000","Efectos por Pagar a Corto Plazo","401.0000","liability_payable","l10n_cu_chart_template_common",1,"Pasivos Circulantes"
-"account_common_4010010","Efectos por Pagar a Corto Plazo - Dentro del Órgano u Organismo","401.0010","liability_payable","l10n_cu_chart_template_common",1,"Pasivos Circulantes"
-"account_common_4010020","Efectos por Pagar a Corto Plazo - Fuera del Órgano u Organismo","401.0020","liability_payable","l10n_cu_chart_template_common",1,"Pasivos Circulantes"
-"account_common_4010030","Efectos por Pagar a Corto Plazo - En el Extranjero","401.0030","liability_payable","l10n_cu_chart_template_common",1,"Pasivos Circulantes"
-"account_common_4010040","Efectos por Pagar a Corto Plazo - Dentro del Grupo Empresarial","401.0040","liability_payable","l10n_cu_chart_template_common",1,"Pasivos Circulantes"
-"account_common_4010050","Efectos por Pagar a Corto Plazo - Sector Cooperativo","401.0050","liability_payable","l10n_cu_chart_template_common",1,"Pasivos Circulantes"
-"account_common_4010060","Efectos por Pagar a Corto Plazo - Personas Naturales","401.0060","liability_payable","l10n_cu_chart_template_common",1,"Pasivos Circulantes"
-"account_common_4050000","Cuentas por Pagar a Corto Plazo","405.000","liability_payable","l10n_cu_chart_template_common","1","Grupo de Activos (10) - Activos Circulantes (10.1)"
-"account_common_4050010","Cuentas por Pagar a Corto Plazo - Dentro del Órgano u Organismo","405.0010","liability_payable","l10n_cu_chart_template_common",1,"Pasivos Circulantes"
-"account_common_4050020","Cuentas por Pagar a Corto Plazo - Fuera del Órgano u Organismo","405.0020","liability_payable","l10n_cu_chart_template_common",1,"Pasivos Circulantes"
-"account_common_4050030","Cuentas por Pagar a Corto Plazo - En el Extranjero","405.0030","liability_payable","l10n_cu_chart_template_common",1,"Pasivos Circulantes"
-"account_common_4050040","Cuentas por Pagar a Corto Plazo - Dentro del Grupo Empresarial","405.0040","liability_payable","l10n_cu_chart_template_common",1,"Pasivos Circulantes"
-"account_common_4050050","Cuentas por Pagar a Corto Plazo - Sector Cooperativo","405.0050","liability_payable","l10n_cu_chart_template_common",1,"Pasivos Circulantes"
-"account_common_4050060","Cuentas por Pagar a Corto Plazo - Personas Naturales","405.0060","liability_payable","l10n_cu_chart_template_common",1,"Pasivos Circulantes"
-"account_common_4160000","Cobros por Cuenta de Terceros","416.0000","liability_payable","l10n_cu_chart_template_common",1,"Pasivos Circulantes"
-"account_common_4170000","Dividendos y Participaciones por Pagar","417.0000","liability_payable","l10n_cu_chart_template_common",1,"Pasivos Circulantes"
-"account_common_4180000","Cuentas en Participación","418.0000","liability_payable","l10n_cu_chart_template_common",1,"Pasivos Circulantes"
-"account_common_4210000","Cuentas por Pagar. Activos Fijos Tangibles","421.0000","liability_payable","l10n_cu_chart_template_common",1,"Pasivos Circulantes"
-"account_common_4210010","Cuentas por Pagar. Activos Fijos Tangibles - Dentro del Órgano u Organismo","421.0010","liability_payable","l10n_cu_chart_template_common",1,"Pasivos Circulantes"
-"account_common_4210020","Cuentas por Pagar. Activos Fijos Tangibles - Fuera del Órgano u Organismo","421.0020","liability_payable","l10n_cu_chart_template_common",1,"Pasivos Circulantes"
-"account_common_4210030","Cuentas por Pagar. Activos Fijos Tangibles - En el Extranjero","421.0030","liability_payable","l10n_cu_chart_template_common",1,"Pasivos Circulantes"
-"account_common_4210040","Cuentas por Pagar. Activos Fijos Tangibles - Dentro del Grupo Empresarial","421.0040","liability_payable","l10n_cu_chart_template_common",1,"Pasivos Circulantes"
-"account_common_4210050","Cuentas por Pagar. Activos Fijos Tangibles - Sector Cooperativo","421.0050","liability_payable","l10n_cu_chart_template_common",1,"Pasivos Circulantes"
-"account_common_4210060","Cuentas por Pagar. Activos Fijos Tangibles - Personas Naturales","421.0060","liability_payable","l10n_cu_chart_template_common",1,"Pasivos Circulantes"
-"account_common_4250000","Cuentas por Pagar del Proceso Inversionista","425.0000","liability_payable","l10n_cu_chart_template_common",1,"Pasivos Circulantes"
-"account_common_4250010","Cuentas por Pagar del Proceso Inversionista - Dentro del Órgano u Organismo","425.0010","liability_payable","l10n_cu_chart_template_common",1,"Pasivos Circulantes"
-"account_common_4250020","Cuentas por Pagar del Proceso Inversionista - Fuera del Órgano u Organismo","425.0020","liability_payable","l10n_cu_chart_template_common",1,"Pasivos Circulantes"
-"account_common_4250030","Cuentas por Pagar del Proceso Inversionista - En el Extranjero","425.0030","liability_payable","l10n_cu_chart_template_common",1,"Pasivos Circulantes"
-"account_common_4250040","Cuentas por Pagar del Proceso Inversionista - Dentro del Grupo Empresarial","425.0040","liability_payable","l10n_cu_chart_template_common",1,"Pasivos Circulantes"
-"account_common_4250050","Cuentas por Pagar del Proceso Inversionista - Sector Cooperativo","425.0050","liability_payable","l10n_cu_chart_template_common",1,"Pasivos Circulantes"
-"account_common_4250060","Cuentas por Pagar del Proceso Inversionista - Personas Naturales","425.0060","liability_payable","l10n_cu_chart_template_common",1,"Pasivos Circulantes"
-"account_common_4300000","Cobros Anticipados","430.0000","liability_payable","l10n_cu_chart_template_common",1,"Pasivos Circulantes"
-"account_common_4340000","Materiales Recibidos de Forma Anticipada","434.0000","liability_payable","l10n_cu_chart_template_common",1,"Pasivos Circulantes"
-"account_common_4350000","Depósitos Recibidos","435.0000","liability_payable","l10n_cu_chart_template_common",1,"Pasivos Circulantes"
-"account_common_4400000","Obligaciones con el Presupuesto del Estado","440.0000","liability_payable","l10n_cu_chart_template_common",1,"Pasivos Circulantes"
-"account_common_4400001","Obligaciones con el Presupuesto del Estado - Impuesto sobre Ventas","440.0001","liability_payable","l10n_cu_chart_template_common",1,"Pasivos Circulantes"
-"account_common_4400002","Obligaciones con el Presupuesto del Estado - Impuesto sobre los Servicios Públicos","440.0002","liability_payable","l10n_cu_chart_template_common",1,"Pasivos Circulantes"
-"account_common_4400003","Obligaciones con el Presupuesto del Estado - Aranceles de Aduana","440.0003","liability_payable","l10n_cu_chart_template_common",1,"Pasivos Circulantes"
-"account_common_4400004","Obligaciones con el Presupuesto del Estado - Impuesto sobre Utilidades","440.0004","liability_payable","l10n_cu_chart_template_common",1,"Pasivos Circulantes"
-"account_common_4400005","Obligaciones con el Presupuesto del Estado - Impuesto sobre Ingresos Personales","440.0005","liability_payable","l10n_cu_chart_template_common",1,"Pasivos Circulantes"
-"account_common_4400006","Obligaciones con el Presupuesto del Estado - Impuesto sobre los Recursos","440.0006","liability_payable","l10n_cu_chart_template_common",1,"Pasivos Circulantes"
-"account_common_4400007","Obligaciones con el Presupuesto del Estado - Otros Impuestos","440.0007","liability_payable","l10n_cu_chart_template_common",1,"Pasivos Circulantes"
-"account_common_4400008","Obligaciones con el Presupuesto del Estado - Contribuciones","440.0008","liability_payable","l10n_cu_chart_template_common",1,"Pasivos Circulantes"
-"account_common_4400009","Obligaciones con el Presupuesto del Estado - Tasas","440.0009","liability_payable","l10n_cu_chart_template_common",1,"Pasivos Circulantes"
-"account_common_4400010","Obligaciones con el Presupuesto del Estado - Ingresos No tributarios","440.0010","liability_payable","l10n_cu_chart_template_common",1,"Pasivos Circulantes"
-"account_common_4400011","Obligaciones con el Presupuesto del Estado - Rentas de la Propiedad","440.0011","liability_payable","l10n_cu_chart_template_common",1,"Pasivos Circulantes"
-"account_common_4400012","Obligaciones con el Presupuesto del Estado - Transferencias Corrientes","440.0012","liability_payable","l10n_cu_chart_template_common",1,"Pasivos Circulantes"
-"account_common_4400013","Obligaciones con el Presupuesto del Estado - Ingresos de Operaciones","440.0013","liability_payable","l10n_cu_chart_template_common",1,"Pasivos Circulantes"
-"account_common_4400014","Obligaciones con el Presupuesto del Estado - Recursos Propios de Capital","440.0014","liability_payable","l10n_cu_chart_template_common",1,"Pasivos Circulantes"
-"account_common_4400015","Obligaciones con el Presupuesto del Estado - Transferencias de Capital","440.0015","liability_payable","l10n_cu_chart_template_common",1,"Pasivos Circulantes"
-"account_common_4400016","Obligaciones con el Presupuesto del Estado - Otros Recursos Financieros","440.0016","liability_payable","l10n_cu_chart_template_common",1,"Pasivos Circulantes"
-"account_common_4500000","Obligaciones con el Órgano u Organismo","450.0000","liability_payable","l10n_cu_chart_template_common",1,"Pasivos Circulantes"
-"account_common_4550000","Nóminas por Pagar","455.0000","liability_payable","l10n_cu_chart_template_common",1,"Pasivos Circulantes"
-"account_common_4600000","Retenciones por Pagar","460.0000","liability_payable","l10n_cu_chart_template_common",1,"Pasivos Circulantes"
-"account_common_4700000","Préstamos Recibidos y Otras Operaciones Crediticias por Pagar","470.0000","liability_payable","l10n_cu_chart_template_common",1,"Pasivos Circulantes"
-"account_common_4800000","Gastos Acumulados por Pagar","480.0000","liability_payable","l10n_cu_chart_template_common",1,"Pasivos Circulantes"
-"account_common_4920000","Provisión para Vacaciones","492.0000","liability_payable","l10n_cu_chart_template_common",1,"Pasivos Circulantes"
-"account_common_4930000","Otras Provisiones Operacionales","493.0000","liability_current","l10n_cu_chart_template_common",1,"Pasivos Circulantes"
-"account_common_5000000","Provisión para Pagos de los Subsidios de Seguridad Social a Corto Plazo","500.0000","liability_payable","l10n_cu_chart_template_common",1,"Pasivos Circulantes"
-"account_common_5010000","Fondo de Compensación para Desbalances Financieros (uso exclusivo de la OSDE)","501.0000","liability_current","l10n_cu_chart_template_common",1,"Pasivos Circulantes"
-"account_common_5100000","Efectos por Pagar a Largo Plazo","510.0000","liability_non_current","l10n_cu_chart_template_common",1,"Pasivos a Largo Plazo"
-"account_common_5100010","Efectos por Pagar a Largo Plazo - Dentro del Órgano u Organismo","510.0010","liability_non_current","l10n_cu_chart_template_common",1,"Pasivos a Largo Plazo"
-"account_common_5100020","Efectos por Pagar a Largo Plazo - Fuera del Órgano u Organismo","510.0020","liability_non_current","l10n_cu_chart_template_common",1,"Pasivos a Largo Plazo"
-"account_common_5100030","Efectos por Pagar a Largo Plazo - En el Extranjero","510.0030","liability_non_current","l10n_cu_chart_template_common",1,"Pasivos a Largo Plazo"
-"account_common_5100040","Efectos por Pagar a Largo Plazo - Dentro del Grupo Empresarial","510.0040","liability_non_current","l10n_cu_chart_template_common",1,"Pasivos a Largo Plazo"
-"account_common_5100050","Efectos por Pagar a Largo Plazo - Sector Cooperativo","510.0050","liability_non_current","l10n_cu_chart_template_common",1,"Pasivos a Largo Plazo"
-"account_common_5100060","Efectos por Pagar a Largo Plazo - Personas Naturales","510.0060","liability_non_current","l10n_cu_chart_template_common",1,"Pasivos a Largo Plazo"
-"account_common_5150000","Cuentas por Pagar a Largo Plazo","515.0000","liability_non_current","l10n_cu_chart_template_common",1,"Pasivos a Largo Plazo"
-"account_common_5150010","Cuentas por Pagar a Largo Plazo - Dentro del Órgano u Organismo","515.0010","liability_non_current","l10n_cu_chart_template_common",1,"Pasivos a Largo Plazo"
-"account_common_5150020","Cuentas por Pagar a Largo Plazo - Fuera del Órgano u Organismo","515.0020","liability_non_current","l10n_cu_chart_template_common",1,"Pasivos a Largo Plazo"
-"account_common_5150030","Cuentas por Pagar a Largo Plazo - En el Extranjero","515.0030","liability_non_current","l10n_cu_chart_template_common",1,"Pasivos a Largo Plazo"
-"account_common_5150040","Cuentas por Pagar a Largo Plazo - Dentro del Grupo Empresarial","515.0040","liability_non_current","l10n_cu_chart_template_common",1,"Pasivos a Largo Plazo"
-"account_common_5150050","Cuentas por Pagar a Largo Plazo - Sector Cooperativo","515.0050","liability_non_current","l10n_cu_chart_template_common",1,"Pasivos a Largo Plazo"
-"account_common_5150060","Cuentas por Pagar a Largo Plazo - Personas Naturales","515.0060","liability_non_current","l10n_cu_chart_template_common",1,"Pasivos a Largo Plazo"
-"account_common_5200000","Préstamos Recibidos por Pagar a Largo Plazo","520.0000","liability_non_current","l10n_cu_chart_template_common",1,"Pasivos a Largo Plazo"
-"account_common_5250000","Obligaciones a Largo Plazo","525.0000","liability_non_current","l10n_cu_chart_template_common",1,"Pasivos a Largo Plazo"
-"account_common_5250010","Obligaciones a Largo Plazo - Dentro del Órgano u Organismo","525.0010","liability_non_current","l10n_cu_chart_template_common",1,"Pasivos a Largo Plazo"
-"account_common_5250020","Obligaciones a Largo Plazo - Fuera del Órgano u Organismo","525.0020","liability_non_current","l10n_cu_chart_template_common",1,"Pasivos a Largo Plazo"
-"account_common_5250030","Obligaciones a Largo Plazo - En el Extranjero","525.0030","liability_non_current","l10n_cu_chart_template_common",1,"Pasivos a Largo Plazo"
-"account_common_5250040","Obligaciones a Largo Plazo - Dentro del Grupo Empresarial","525.0040","liability_non_current","l10n_cu_chart_template_common",1,"Pasivos a Largo Plazo"
-"account_common_5250050","Obligaciones a Largo Plazo - Sector Cooperativo","525.0050","liability_non_current","l10n_cu_chart_template_common",1,"Pasivos a Largo Plazo"
-"account_common_5250060","Obligaciones a Largo Plazo - Personas Naturales","525.0060","liability_non_current","l10n_cu_chart_template_common",1,"Pasivos a Largo Plazo"
-"account_common_5330000","Otras Provisiones a Largo Plazo","533.0000","liability_non_current","l10n_cu_chart_template_common",0,"Pasivos a Largo Plazo"
-"account_common_5400000","Bonos por Pagar","540.0000","liability_non_current","l10n_cu_chart_template_common",0,"Pasivos a Largo Plazo"
-"account_common_5410000","Bonos Suscritos","541.0000","liability_non_current","l10n_cu_chart_template_common",0,"Pasivos a Largo Plazo"
-"account_common_5450000","Ingresos Diferidos","545.0000","liability_non_current","l10n_cu_chart_template_common",0,"Pasivos Diferidos"
-"account_common_5490000","Ingresos Diferidos por Donaciones Recibidas","549.0000","liability_non_current","l10n_cu_chart_template_common",0,"Pasivos Diferidos"
-"account_common_5550000","Sobrantes en Investigación","555.0000","liability_current","l10n_cu_chart_template_common",0,"Otros Pasivos"
-"account_common_5650000","Cuentas por Pagar Diversas","565.0000","liability_payable","l10n_cu_chart_template_common",1,"Otros Pasivos"
-"account_common_5650010","Cuentas por Pagar Diversas - Dentro del Órgano u Organismo","565.0010","liability_payable","l10n_cu_chart_template_common",1,"Otros Pasivos"
-"account_common_5650020","Cuentas por Pagar Diversas - Fuera del Órgano u Organismo","565.0020","liability_payable","l10n_cu_chart_template_common",1,"Otros Pasivos"
-"account_common_5650030","Cuentas por Pagar Diversas - En el Extranjero","565.0030","liability_payable","l10n_cu_chart_template_common",1,"Otros Pasivos"
-"account_common_5650040","Cuentas por Pagar Diversas - Dentro del Grupo Empresarial","565.0040","liability_payable","l10n_cu_chart_template_common",1,"Otros Pasivos"
-"account_common_5650050","Cuentas por Pagar Diversas - Sector Cooperativo","565.0050","liability_payable","l10n_cu_chart_template_common",1,"Otros Pasivos"
-"account_common_5650060","Cuentas por Pagar Diversas - Personas Naturales","565.0060","liability_payable","l10n_cu_chart_template_common",1,"Otros Pasivos"
-"account_common_5650070","Cuentas por Pagar Diversas - A trabajadores","565.0070","liability_payable","l10n_cu_chart_template_common",1,"Otros Pasivos"
-"account_common_5650999","Cuentas por Pagar Diversas - Otros","565.0999","liability_payable","l10n_cu_chart_template_common",1,"Otros Pasivos"
-"account_common_5690000","Cuentas por Pagar - Compra de Moneda","569.0000","liability_payable","l10n_cu_chart_template_common",1,"Otros Pasivos"
-"account_common_5700000","Ingresos de Períodos Futuros","570.0000","liability_payable","l10n_cu_chart_template_common",1,"Otros Pasivos"
-"account_common_5750000","Cuentas por Pagar Diversas","575.0000","liability_payable","l10n_cu_chart_template_common",1,"Otros Pasivos"
-"account_common_5760000","Efectos por Pagar en Litigio","576.0000","liability_payable","l10n_cu_chart_template_common",1,"Otros Pasivos"
-"account_common_5760010","Efectos por Pagar en Litigio - Dentro del Órgano u Organismo","576.0010","liability_payable","l10n_cu_chart_template_common",1,"Otros Pasivos"
-"account_common_5760020","Efectos por Pagar en Litigio - Fuera del Órgano u Organismo","576.0020","liability_payable","l10n_cu_chart_template_common",1,"Otros Pasivos"
-"account_common_5760030","Efectos por Pagar en Litigio - En el Extranjero","576.0030","liability_payable","l10n_cu_chart_template_common",1,"Otros Pasivos"
-"account_common_5760040","Efectos por Pagar en Litigio - Dentro del Grupo Empresarial","576.0040","liability_payable","l10n_cu_chart_template_common",1,"Otros Pasivos"
-"account_common_5760050","Efectos por Pagar en Litigio - Sector Cooperativo","576.0050","liability_payable","l10n_cu_chart_template_common",1,"Otros Pasivos"
-"account_common_5760060","Personas Naturales","576.0060","liability_payable","l10n_cu_chart_template_common",1,"Otros Pasivos"
-"account_common_5770000","Cuentas por Pagar en Litigio","577.0000","liability_payable","l10n_cu_chart_template_common",1,"Otros Pasivos"
-"account_common_5770010","Cuentas por Pagar en Litigio - Dentro del Órgano u Organismo","577.0010","liability_payable","l10n_cu_chart_template_common",1,"Otros Pasivos"
-"account_common_5770020","Cuentas por Pagar en Litigio - Fuera del Órgano u Organismo","577.0020","liability_payable","l10n_cu_chart_template_common",1,"Otros Pasivos"
-"account_common_5770030","Cuentas por Pagar en Litigio - En el Extranjero","577.0030","liability_payable","l10n_cu_chart_template_common",1,"Otros Pasivos"
-"account_common_5770040","Cuentas por Pagar en Litigio - Dentro del Grupo Empresarial","577.0040","liability_payable","l10n_cu_chart_template_common",1,"Otros Pasivos"
-"account_common_5770050","Cuentas por Pagar en Litigio - Sector Cooperativo","577.0050","liability_payable","l10n_cu_chart_template_common",1,"Otros Pasivos"
-"account_common_5780000","Efectos por Pagar Protestados","578.0000","liability_payable","l10n_cu_chart_template_common",1,"Otros Pasivos"
-"account_common_5780010","Efectos por Pagar Protestados - Dentro del Órgano u Organismo","578.0010","liability_payable","l10n_cu_chart_template_common",1,"Otros Pasivos"
-"account_common_5780020","Efectos por Pagar Protestados - Fuera del Órgano u Organismo","578.0020","liability_payable","l10n_cu_chart_template_common",1,"Otros Pasivos"
-"account_common_5780030","Efectos por Pagar Protestados - En el Extranjero","578.0030","liability_payable","l10n_cu_chart_template_common",1,"Otros Pasivos"
-"account_common_5780040","Efectos por Pagar Protestados - Dentro del Grupo Empresarial","578.0040","liability_payable","l10n_cu_chart_template_common",1,"Otros Pasivos"
-"account_common_5780050","Efectos por Pagar Protestados - Sector Cooperativo","578.0050","liability_payable","l10n_cu_chart_template_common",1,"Otros Pasivos"
-"account_common_5780060","Efectos por Pagar Protestados - Personas Naturales","578.0060","liability_payable","l10n_cu_chart_template_common",1,"Otros Pasivos"
-"account_common_5790000","Cuentas por Pagar en Proceso Judicial","579.0000","liability_payable","l10n_cu_chart_template_common",1,"Otros Pasivos"
-"account_common_5790010","Cuentas por Pagar en Proceso Judicial - Dentro del Órgano u Organismo","579.0010","liability_payable","l10n_cu_chart_template_common",1,"Otros Pasivos"
-"account_common_5790020","Cuentas por Pagar en Proceso Judicial - Fuera del Órgano u Organismo","579.0020","liability_payable","l10n_cu_chart_template_common",1,"Otros Pasivos"
-"account_common_5790030","Cuentas por Pagar en Proceso Judicial - En el Extranjero","579.0030","liability_payable","l10n_cu_chart_template_common",1,"Otros Pasivos"
-"account_common_5790040","Cuentas por Pagar en Proceso Judicial - Dentro del Grupo Empresarial","579.0040","liability_payable","l10n_cu_chart_template_common",1,"Otros Pasivos"
-"account_common_5790050","Cuentas por Pagar en Proceso Judicial - Sector Cooperativo","579.0050","liability_payable","l10n_cu_chart_template_common",1,"Otros Pasivos"
-"account_common_5790060","Cuentas por Pagar en Proceso Judicial - Personas Naturales","579.0060","liability_payable","l10n_cu_chart_template_common",1,"Otros Pasivos"
-"account_common_5800000","Cuentas por Pagar con Sentencia Firme","580.0000","liability_payable","l10n_cu_chart_template_common",1,"Otros Pasivos"
-"account_common_5800010","Cuentas por Pagar con Sentencia Firme - Dentro del Órgano u Organismo","580.0010","liability_payable","l10n_cu_chart_template_common",1,"Otros Pasivos"
-"account_common_5800020","Cuentas por Pagar con Sentencia Firme - Fuera del Órgano u Organismo","580.0020","liability_payable","l10n_cu_chart_template_common",1,"Otros Pasivos"
-"account_common_5800030","Cuentas por Pagar con Sentencia Firme - En el Extranjero","580.0030","liability_payable","l10n_cu_chart_template_common",1,"Otros Pasivos"
-"account_common_5800040","Cuentas por Pagar con Sentencia Firme - Dentro del Grupo Empresarial","580.0040","liability_payable","l10n_cu_chart_template_common",1,"Otros Pasivos"
-"account_common_5800050","Cuentas por Pagar con Sentencia Firme - Sector Cooperativo","580.0050","liability_payable","l10n_cu_chart_template_common",1,"Otros Pasivos"
-"account_common_5800060","Cuentas por Pagar con Sentencia Firme - Personas Naturales","580.0060","liability_payable","l10n_cu_chart_template_common",1,"Otros Pasivos"
-"account_common_7000000","Producción en Proceso","700.0000","expense","l10n_cu_chart_template_common",0,"Gastos de Producción"
-"account_common_7000010","Producción en Proceso - Saldo al Inicio del Año","700.0010","expense","l10n_cu_chart_template_common",0,"Gastos de Producción"
-"account_common_7000020","Producción en Proceso - Gastos del Período","7000.0020","expense","l10n_cu_chart_template_common",0,"Gastos de Producción"
-"account_common_7000030","Producción en Proceso - Aumento","700.0030","expense","l10n_cu_chart_template_common",0,"Gastos de Producción"
-"account_common_7000040","Producción en Proceso - Disminución","700.0040","expense","l10n_cu_chart_template_common",0,"Gastos de Producción"
-"account_common_7000050","Producción en Proceso - Traspaso a Producción Terminada","700.0050","expense","l10n_cu_chart_template_common",0,"Gastos de Producción"
-"account_common_7250000","Producción Propia para Insumos","725.0000","expense","l10n_cu_chart_template_common",0,"Gastos de Producción"
-"account_common_7250010","Producción Propia para Insumos - Saldo al Inicio del Año","725.0010","expense","l10n_cu_chart_template_common",0,"Gastos de Producción"
-"account_common_7250020","Producción Propia para Insumos - Gastos del Período","725.0020","expense","l10n_cu_chart_template_common",0,"Gastos de Producción"
-"account_common_7250030","Producción Propia para Insumos - Aumento","725.0030","expense","l10n_cu_chart_template_common",0,"Gastos de Producción"
-"account_common_7250040","Producción Propia para Insumos - Disminuciónn","725.0040","expense","l10n_cu_chart_template_common",0,"Gastos de Producción"
-"account_common_7250050","Producción Propia para Insumos - Traspaso a Producción Terminada","725.0050","expense","l10n_cu_chart_template_common",0,"Gastos de Producción"
-"account_common_7260000","Reparaciones Capitales con Medios Propios","726.0000","expense","l10n_cu_chart_template_common",0,"Gastos de Producción"
-"account_common_7260010","Reparaciones Capitales con Medios Propios - Saldo al Inicio del Año","726.0010","expense","l10n_cu_chart_template_common",0,"Gastos de Producción"
-"account_common_7260020","Reparaciones Capitales con Medios Propios - Gastos del Período","726.0020","expense","l10n_cu_chart_template_common",0,"Gastos de Producción"
-"account_common_7260050","Reparaciones Capitales con Medios Propios - Traspaso a Inversiones en Proceso","726.0050","expense","l10n_cu_chart_template_common",0,"Gastos de Producción"
-"account_common_7270000","Inversiones con Medios Propios Activos Fijos Intangibles","727.0000","expense","l10n_cu_chart_template_common",0,"Gastos de Producción"
-"account_common_7270010","Inversiones con Medios Propios Activos Fijos Intangibles - Saldo al Inicio del Año","727.0010","expense","l10n_cu_chart_template_common",0,"Gastos de Producción"
-"account_common_7270020","Inversiones con Medios Propios Activos Fijos Intangibles - Gastos del Período","727.0020","expense","l10n_cu_chart_template_common",0,"Gastos de Producción"
-"account_common_7270050","Inversiones con Medios Propios Activos Fijos Intangibles - Traspaso a Inversiones en Proceso","727.0050","expense","l10n_cu_chart_template_common",0,"Gastos de Producción"
-"account_common_7280000","Inversiones con Medios Propios","728.0000","expense","l10n_cu_chart_template_common",0,"Gastos de Producción"
-"account_common_7280010","Inversiones con Medios Propios - Saldo al Inicio del Año","728.0010","expense","l10n_cu_chart_template_common",0,"Gastos de Producción"
-"account_common_7280020","Inversiones con Medios Propios - Gastos del Período","728.0020","expense","l10n_cu_chart_template_common",0,"Gastos de Producción"
-"account_common_7280050","Inversiones con Medios Propios - Traspaso a Inversiones en Proceso","728.0050","expense","l10n_cu_chart_template_common",0,"Gastos de Producción"
-"account_common_7310000","Gastos Asociados a la Producción","731.0000","expense","l10n_cu_chart_template_common","1","Gastos de Producción"
-"account_common_8000000","Devoluciones y Rebajas en Ventas","800.0000","expense","l10n_cu_chart_template_common",0,"Cuentas Nominales Deudoras"
-"account_common_8050000","Impuesto por las Ventas","805.0000","expense","l10n_cu_chart_template_common",0,"Cuentas Nominales Deudoras"
-"account_common_8100000","Costo de Ventas de la Producción","810.0000","expense_direct_cost","l10n_cu_chart_template_common",0,"Cuentas Nominales Deudoras"
-"account_common_8140000","Costo de Ventas de Mercancías","814.0000","expense_direct_cost","l10n_cu_chart_template_common",0,"Cuentas Nominales Deudoras"
-"account_common_8180000","Costo por Exportación de Servicios","818.0000","expense_direct_cost","l10n_cu_chart_template_common",0,"Cuentas Nominales Deudoras"
-"account_common_8190000","Gastos de Distribución y Ventas","819.0000","expense","l10n_cu_chart_template_common",0,"Cuentas Nominales Deudoras"
-"account_common_8220000","Gastos Generales y de Administración","822.0000","expense","l10n_cu_chart_template_common",0,"Cuentas Nominales Deudoras"
-"account_common_8250000","Gastos de Proyectos","825.0000","expense","l10n_cu_chart_template_common",0,"Cuentas Nominales Deudoras"
-"account_common_8260000","Gastos de Operación","826.0000","expense","l10n_cu_chart_template_common",0,"Cuentas Nominales Deudoras"
-"account_common_8340000","Gastos de Administración de la OSDE","834.0000","expense","l10n_cu_chart_template_common",0,"Cuentas Nominales Deudoras"
-"account_common_8350000","Gastos Financieros","835.0000","expense","l10n_cu_chart_template_common",0,"Cuentas Nominales Deudoras"
-"account_common_8390000","Gastos por Pérdidas en Tasas de Cambio","839.0000","expense","l10n_cu_chart_template_common",0,"Cuentas Nominales Deudoras"
-"account_common_8400000","Financiamiento Entregado a la OSDE","840.0000","expense","l10n_cu_chart_template_common",0,"Cuentas Nominales Deudoras"
-"account_common_8410000","Gastos por Estadía  Importadores","841.0000","expense","l10n_cu_chart_template_common",0,"Cuentas Nominales Deudoras"
-"account_common_8430000","Gastos por Estadía  Otras Entidades","843.0000","expense","l10n_cu_chart_template_common",0,"Cuentas Nominales Deudoras"
-"account_common_8450000","Gastos por Pérdidas","845.0000","expense","l10n_cu_chart_template_common",0,"Cuentas Nominales Deudoras"
-"account_common_8490000","Gastos por Pérdidas - Desastres","849.0000","expense","l10n_cu_chart_template_common",0,"Cuentas Nominales Deudoras"
-"account_common_8500000","Gastos por Faltantes de Bienes","850.0000","expense","l10n_cu_chart_template_common",0,"Cuentas Nominales Deudoras"
-"account_common_8550000","Otros Impuestos, Tasas y Contribuciones","855.0000","expense","l10n_cu_chart_template_common",0,"Cuentas Nominales Deudoras"
-"account_common_8650000","Otros Gastos","865.0000","expense","l10n_cu_chart_template_common",0,"Cuentas Nominales Deudoras"
-"account_common_8670000","Gastos de Eventos","867.0000","expense","l10n_cu_chart_template_common",0,"Cuentas Nominales Deudoras"
-"account_common_8730000","Gastos de Recuperación de Desastres","873.0000","expense","l10n_cu_chart_template_common",0,"Cuentas Nominales Deudoras"
-"account_common_9000000","Ventas","900.0000","income","l10n_cu_chart_template_common","0","Cuentas Nominales Acreedoras"
-"account_common_9140000","Ventas de Bienes con destino a la Exportación","914.0000","income","l10n_cu_chart_template_common",0,"Cuentas Nominales Acreedoras"
-"account_common_9140010","Ventas de Bienes con Destino a la Exportación - Productores","914.0100","income","l10n_cu_chart_template_common",0,"Cuentas Nominales Acreedoras"
-"account_common_914020","Ventas de Bienes con Destino a la Exportación - Exportadores","914.0200","income","l10n_cu_chart_template_common",0,"Cuentas Nominales Acreedoras"
-"account_common_9150000","Ventas por Exportación de Servicios","915.0000","income","l10n_cu_chart_template_common",0,"Cuentas Nominales Acreedoras"
-"account_common_9160000","Subvenciones","916.0000","income","l10n_cu_chart_template_common",0,"Cuentas Nominales Acreedoras"
-"account_common_9200000","Ingresos Financieros","920.0000","income","l10n_cu_chart_template_common",0,"Cuentas Nominales Acreedoras"
-"account_common_9230000","Financiamiento Recibido de las Empresas (Uso exclusivo de la OSDE)","923.0000","income","l10n_cu_chart_template_common",0,"Cuentas Nominales Acreedoras"
-"account_common_9240000","Ingresos por Variación de Tasas de Cambio","924.0000","income","l10n_cu_chart_template_common",0,"Cuentas Nominales Acreedoras"
-"account_common_9250000","Ingresos por Dividendos Ganados","925.0000","income","l10n_cu_chart_template_common",0,"Cuentas Nominales Acreedoras"
-"account_common_9260000","Ingresos por Estadía (navieras y operadores)","926.0000","income","l10n_cu_chart_template_common",0,"Cuentas Nominales Acreedoras"
-"account_common_9280000","Ingresos por Recobro de Estadía (importadores y otras entidades)","928.0000","income","l10n_cu_chart_template_common",0,"Cuentas Nominales Acreedoras"
-"account_common_9300000","Ingresos por Sobrantes","930.0000","income","l10n_cu_chart_template_common",0,"Cuentas Nominales Acreedoras"
-"account_common_9500000","Otros Ingresos","950.0000","income","l10n_cu_chart_template_common",0,"Cuentas Nominales Acreedoras"
-"account_common_9530000","Ingresos por Donaciones Recibidas","953.0000","income","l10n_cu_chart_template_common",0,"Cuentas Nominales Acreedoras"
-"account_common_9990000","Resultados","999.0000","equity_unaffected","l10n_cu_chart_template_common",0,"Cuenta de cierre"
+id,name,code,account_type,chart_template_id/id,reconcile,note
+account_common_106,Efectivo en Caja-Ingresos  por depositar en banco,106,asset_cash,l10n_cu_chart_template_common,0
+account_common_107,Efectivo en Caja-Pagos  por depositar en banco,107,asset_cash,l10n_cu_chart_template_common,0
+account_common_120,Inversiones a corto plazo o temporales,120,asset_current,l10n_cu_chart_template_common,0,Activo Circulante
+account_common_1300010,Efectos por cobrar a corto plazo - Dentro del Organo u Organismo,130.0010,asset_receivable,l10n_cu_chart_template_common,1,Activo Circulante
+account_common_1300020,Efectos por cobrar a corto plazo - Fuera del Organo u Organismo,130.0020,asset_receivable,l10n_cu_chart_template_common,1,Activo Circulante
+account_common_1300030,Efectos por cobrar a corto plazo - En el Extranjero,130.0030,asset_receivable,l10n_cu_chart_template_common,1,Activo Circulante
+account_common_1300040,Efectos por cobrar a corto plazo - Dentro del Grupo Empresarial,130.0040,asset_receivable,l10n_cu_chart_template_common,1,Activo Circulante
+account_common_1300050,Efectos por cobrar a corto plazo - Sector Cooperativo,130.0050,asset_receivable,l10n_cu_chart_template_common,1,Activo Circulante
+account_common_1300060,Efectos por cobrar a corto plazo - Personas Naturales,130.0060,asset_receivable,l10n_cu_chart_template_common,1,Activo Circulante
+account_common_134,Cuenta en Participación,134,asset_receivable,l10n_cu_chart_template_common,1,Activo Circulante
+account_common_1350010,Cuentas por cobrar a corto plazo - Dentro del Organo u Organismo,135.0010,asset_receivable,l10n_cu_chart_template_common,1,Activo Circulante
+account_common_1350020,Cuentas por cobrar a corto plazo - Fuera del Organo u Organismo,135.0020,asset_receivable,l10n_cu_chart_template_common,1,Activo Circulante
+account_common_1350030,Cuentas por cobrar a corto plazo - En el Extranjero,135.0030,asset_receivable,l10n_cu_chart_template_common,1,Activo Circulante
+account_common_1350040,Cuentas por cobrar a corto plazo - Dentro del Grupo Empresarial,135.0040,asset_receivable,l10n_cu_chart_template_common,1,Activo Circulante
+account_common_1350050,Cuentas por cobrar a corto plazo - Sector Cooperativo,135.0050,asset_receivable,l10n_cu_chart_template_common,1,Activo Circulante
+account_common_1350060,Cuentas por cobrar a corto plazo - Personas Naturales,135.0060,asset_receivable,l10n_cu_chart_template_common,1,Activo Circulante
+account_common_140,Pagos por Cuenta de Terceros,140,asset_receivable,l10n_cu_chart_template_common,1,Activo Circulante
+account_common_141,Participación de Reaseguradores por Siniestros Pendientes ,141,asset_receivable,l10n_cu_chart_template_common,1,Activo Circulante
+account_common_142,Préstamos y Otras Operaciones Crediticias a Cobrar a Corto Plazo,142,asset_receivable,l10n_cu_chart_template_common,1,Activo Circulante
+account_common_143,Suscriptores de Bonos,143,asset_receivable,l10n_cu_chart_template_common,1,Activo Circulante
+account_common_144,Bonos Emitidos en Cartera,144,asset_receivable,l10n_cu_chart_template_common,1,Activo Circulante
+account_common_1460010,Pagos Anticipados a Suministradores - Dentro del Organo u Organismo,146.0010,asset_prepayments,l10n_cu_chart_template_common,0,Activo Circulante
+account_common_1460020,Pagos Anticipados a Suministradores - Fuera del Organo u Organismo,146.0020,asset_prepayments,l10n_cu_chart_template_common,0,Activo Circulante
+account_common_1460030,Pagos Anticipados a Suministradores - En el Extranjero,146.0030,asset_prepayments,l10n_cu_chart_template_common,0,Activo Circulante
+account_common_1460040,Pagos Anticipados a Suministradores - Dentro del Grupo Empresarial,146.0040,asset_prepayments,l10n_cu_chart_template_common,0,Activo Circulante
+account_common_1460050,Pagos Anticipados a Suministradores - Sector Cooperativo,146.0050,asset_prepayments,l10n_cu_chart_template_common,0,Activo Circulante
+account_common_1460060,Pagos Anticipados a Suministradores - Personas Naturales,146.0060,asset_prepayments,l10n_cu_chart_template_common,0,Activo Circulante
+account_common_1500010,Pagos Anticipados del Proceso Inversionista - Dentro del Organo u Organismo,150.0010,asset_prepayments,l10n_cu_chart_template_common,0,Activo Circulante
+account_common_1500020,Pagos Anticipados del Proceso Inversionista - Fuera del Organo u Organismo,150.0020,asset_prepayments,l10n_cu_chart_template_common,0,Activo Circulante
+account_common_1500030,Pagos Anticipados del Proceso Inversionista - En el Extranjero,150.0030,asset_prepayments,l10n_cu_chart_template_common,0,Activo Circulante
+account_common_1500040,Pagos Anticipados del Proceso Inversionista - Dentro del Grupo Empresarial,150.0040,asset_prepayments,l10n_cu_chart_template_common,0,Activo Circulante
+account_common_1500050,Pagos Anticipados del Proceso Inversionista - Sector Cooperativo,150.0050,asset_prepayments,l10n_cu_chart_template_common,0,Activo Circulante
+account_common_1500060,Pagos Anticipados del Proceso Inversionista - Personas Naturales,150.0060,asset_prepayments,l10n_cu_chart_template_common,0,Activo Circulante
+account_common_161,Anticipos a Justificar,161,asset_prepayments,l10n_cu_chart_template_common,0,Activo Circulante
+account_common_1640001,Adeudos del Presupuesto del Estado - Impuesto sobre Ventas,164.0001,asset_current,l10n_cu_chart_template_common,0,Activo Circulante
+account_common_1640002,Adeudos del Presupuesto del Estado - Impuesto sobre los Servicios PО“ОЉblicos,164.0002,asset_current,l10n_cu_chart_template_common,0,Activo Circulante
+account_common_1640003,Adeudos del Presupuesto del Estado - Aranceles de Aduana,164.0003,asset_current,l10n_cu_chart_template_common,0,Activo Circulante
+account_common_1640004,Adeudos del Presupuesto del Estado - Impuesto sobre Utilidades,164.0004,asset_current,l10n_cu_chart_template_common,0,Activo Circulante
+account_common_1640005,Adeudos del Presupuesto del Estado - Impuesto sobre Ingresos Personales,164.0005,asset_current,l10n_cu_chart_template_common,0,Activo Circulante
+account_common_1640006,Adeudos del Presupuesto del Estado - Impuesto sobre los Recursos,164.0006,asset_current,l10n_cu_chart_template_common,0,Activo Circulante
+account_common_1640007,Adeudos del Presupuesto del Estado - Otros Impuestos,164.0007,asset_current,l10n_cu_chart_template_common,0,Activo Circulante
+account_common_1640008,Adeudos del Presupuesto del Estado - Contribuciones,164.0008,asset_current,l10n_cu_chart_template_common,0,Activo Circulante
+account_common_1640009,Adeudos del Presupuesto del Estado - Tasas,164.0009,asset_current,l10n_cu_chart_template_common,0,Activo Circulante
+account_common_1640010,Adeudos del Presupuesto del Estado - Ingresos No tributarios,164.0010,asset_current,l10n_cu_chart_template_common,0,Activo Circulante
+account_common_1640011,Adeudos del Presupuesto del Estado - Rentas de la Propiedad,164.0011,asset_current,l10n_cu_chart_template_common,0,Activo Circulante
+account_common_1640012,Adeudos del Presupuesto del Estado - Transferencias Corrientes,164.0012,asset_current,l10n_cu_chart_template_common,0,Activo Circulante
+account_common_1640013,Adeudos del Presupuesto del Estado - Ingresos de Operaciones,164.0013,asset_current,l10n_cu_chart_template_common,0,Activo Circulante
+account_common_1640014,Adeudos del Presupuesto del Estado - Recursos Propios de Capital,164.0014,asset_current,l10n_cu_chart_template_common,0,Activo Circulante
+account_common_1640015,Adeudos del Presupuesto del Estado - Transferencias de Capital,164.0015,asset_current,l10n_cu_chart_template_common,0,Activo Circulante
+account_common_1640016,Adeudos del Presupuesto del Estado - Otros Recursos Financieros,164.0016,asset_current,l10n_cu_chart_template_common,0,Activo Circulante
+account_common_1640020,Adeudos del Presupuesto del Estado - Invalidez Parcial,164.0020,asset_current,l10n_cu_chart_template_common,0,Activo Circulante
+account_common_1640030,Adeudos del Presupuesto del Estado - Licencias de Maternidad,164.0030,asset_current,l10n_cu_chart_template_common,0,Activo Circulante
+account_common_1640040,Adeudos del Presupuesto del Estado - Reintegro Aporte de Microbrigada,164.0040,asset_current,l10n_cu_chart_template_common,0,Activo Circulante
+account_common_1640090,Adeudos del Presupuesto del Estado - Otros,164.0090,asset_current,l10n_cu_chart_template_common,0,Activo Circulante
+account_common_167,Adeudos del Organo u Organismo,167,asset_current,l10n_cu_chart_template_common,0,Activo Circulante
+account_common_173,Ingresos Acumulados por Cobrar,173,asset_receivable,l10n_cu_chart_template_common,1,Activo Circulante
+account_common_181,Dividendos y Participaciones por Cobrar,181,asset_receivable,l10n_cu_chart_template_common,1,Activo Circulante
+account_common_182,Ingresos Acumulados por Cobrar  Reaseguros Aceptados,182,asset_receivable,l10n_cu_chart_template_common,1,Activo Circulante
+account_common_183,Materias Primas y Materiales,183,asset_current,l10n_cu_chart_template_common,0,Activo Circulante
+account_common_184,Combustibles y Lubricantes,184,asset_current,l10n_cu_chart_template_common,0,Activo Circulante
+account_common_185,Partes y Piezas de Repuesto,185,asset_current,l10n_cu_chart_template_common,0,Activo Circulante
+account_common_186,Envases y Embalajes,186,asset_current,l10n_cu_chart_template_common,0,Activo Circulante
+account_common_187,"Utiles, Herramientas y Otros",187,asset_current,l10n_cu_chart_template_common,0,Activo Circulante
+account_common_1880020,Producción Terminada - Producción y Ventas,188.0020,asset_current,l10n_cu_chart_template_common,0,Activo Circulante
+account_common_1880040,Producción Terminada - Otros Aumentos,188.0040,asset_current,l10n_cu_chart_template_common,0,Activo Circulante
+account_common_1880050,Producción Terminada - Otras Disminuciones,188.0050,asset_current,l10n_cu_chart_template_common,0,Activo Circulante
+account_common_1880099,Producción Terminada - Contrapartida (Opcional),188.0099,asset_current,l10n_cu_chart_template_common,0,Activo Circulante
+account_common_189,Mercancías para la Venta,189,asset_current,l10n_cu_chart_template_common,0,Activo Circulante
+account_common_190,Medicamentos,190,asset_current,l10n_cu_chart_template_common,0,Activo Circulante
+account_common_191,Base Material de Estudio,191,asset_current,l10n_cu_chart_template_common,0,Activo Circulante
+account_common_192,Vestuario y Lencería,192,asset_current,l10n_cu_chart_template_common,0,Activo Circulante
+account_common_193,Alimentos,193,asset_current,l10n_cu_chart_template_common,0,Activo Circulante
+account_common_194,Inventarios de Mercancías de Importación,194,asset_current,l10n_cu_chart_template_common,0,Activo Circulante
+account_common_195,Inventarios de Mercancías de Exportación,195,asset_current,l10n_cu_chart_template_common,0,Activo Circulante
+account_common_1960020,Producción para Insumo o Autoconsumo - Producción,196.0020,asset_current,l10n_cu_chart_template_common,0,Activo Circulante
+account_common_1960030,Producción para Insumo o Autoconsumo - Traspaso a Producciones en Proceso,196.0030,asset_current,l10n_cu_chart_template_common,0,Activo Circulante
+account_common_1960040,Producción para Insumo o Autoconsumo - Otros Aumentos,196.0040,asset_current,l10n_cu_chart_template_common,0,Activo Circulante
+account_common_1960050,Producción para Insumo o Autoconsumo - Otras Disminuciones,196.0050,asset_current,l10n_cu_chart_template_common,0,Activo Circulante
+account_common_1960099,Producción para Insumo o Autoconsumo - Contrapartida (Opcional),196.0099,asset_current,l10n_cu_chart_template_common,0,Activo Circulante
+account_common_205,Otros Inventarios,205,asset_current,l10n_cu_chart_template_common,0,Activo Circulante
+account_common_208,Inventarios Ociosos,208,asset_current,l10n_cu_chart_template_common,0,Activo Circulante
+account_common_209,Inventarios de Lento Movimiento,209,asset_current,l10n_cu_chart_template_common,0,Activo Circulante
+account_common_211,Créditos Documentarios,211,asset_current,l10n_cu_chart_template_common,0,Activo Circulante
+account_common_2150010,Efectos por Cobrar a Largo Plazo - Dentro del Organo u Organismo,215.0010,asset_receivable,l10n_cu_chart_template_common,1,Activo a Largo Plazo
+account_common_2150020,Efectos por Cobrar a Largo Plazo - Fuera del Organo u Organismo,215.0020,asset_receivable,l10n_cu_chart_template_common,1,Activo a Largo Plazo
+account_common_2150030,Efectos por Cobrar a Largo Plazo - En el Extranjero,215.0030,asset_receivable,l10n_cu_chart_template_common,1,Activo a Largo Plazo
+account_common_2150040,Efectos por Cobrar a Largo Plazo - Dentro del Grupo Empresarial,215.0040,asset_receivable,l10n_cu_chart_template_common,1,Activo a Largo Plazo
+account_common_2150050,Efectos por Cobrar a Largo Plazo - Sector Cooperativo,215.0050,asset_receivable,l10n_cu_chart_template_common,1,Activo a Largo Plazo
+account_common_2150060,Efectos por Cobrar a Largo Plazo - Personas Naturales,215.0060,asset_receivable,l10n_cu_chart_template_common,1,Activo a Largo Plazo
+account_common_2180010,Cuentas por Cobrar a Largo Plazo - Dentro del Organo u Organismo,218.0010,asset_receivable,l10n_cu_chart_template_common,1,Activo a Largo Plazo
+account_common_2180020,Cuentas por Cobrar a Largo Plazo - Fuera del Organo u Organismo,218.0020,asset_receivable,l10n_cu_chart_template_common,1,Activo a Largo Plazo
+account_common_2180030,Cuentas por Cobrar a Largo Plazo - En el Extranjero,218.0030,asset_receivable,l10n_cu_chart_template_common,1,Activo a Largo Plazo
+account_common_2180040,Cuentas por Cobrar a Largo Plazo - Dentro del Grupo Empresarial,218.0040,asset_receivable,l10n_cu_chart_template_common,1,Activo a Largo Plazo
+account_common_2180050,Cuentas por Cobrar a Largo Plazo - Sector Cooperativo,218.0050,asset_receivable,l10n_cu_chart_template_common,1,Activo a Largo Plazo
+account_common_2180060,Cuentas por Cobrar a Largo Plazo - Personas Naturales,218.0060,asset_receivable,l10n_cu_chart_template_common,1,Activo a Largo Plazo
+account_common_2210010,Préstamos Concedidos a Largo Plazo - Dentro del Organo u Organismo,221.0010,asset_receivable,l10n_cu_chart_template_common,1,Activo a Largo Plazo
+account_common_2210020,Préstamos Concedidos a Largo Plazo - Fuera del Organo u Organismo,221.0020,asset_receivable,l10n_cu_chart_template_common,1,Activo a Largo Plazo
+account_common_2210030,Préstamos Concedidos a Largo Plazo - En el Extranjero,221.0030,asset_receivable,l10n_cu_chart_template_common,1,Activo a Largo Plazo
+account_common_2210040,Préstamos Concedidos a Largo Plazo - Dentro del Grupo Empresarial,221.0040,asset_receivable,l10n_cu_chart_template_common,1,Activo a Largo Plazo
+account_common_225,Inversiones a Largo Plazo o Permanentes,225,asset_non_current,l10n_cu_chart_template_common,0,Activo a Largo Plazo
+account_common_240,Activos Fijos Tangibles,240,asset_fixed,l10n_cu_chart_template_common,0,Activos Fijos
+account_common_252,Fondos Bibliotecarios,252,asset_fixed,l10n_cu_chart_template_common,0,Activos Fijos
+account_common_253,Medios y Equipos para Alquilar,253,asset_fixed,l10n_cu_chart_template_common,0,Activos Fijos
+account_common_254,Monumentos y Obras de Arte,254,asset_fixed,l10n_cu_chart_template_common,0,Activos Fijos
+account_common_255,Activos Fijos Intangibles,255,asset_fixed,l10n_cu_chart_template_common,0,Activos Fijos
+account_common_2640001,Activos Fijos Intangibles en Proceso - Saldo al Inicio del Año,264.0001,asset_fixed,l10n_cu_chart_template_common,0,Activos Fijos
+account_common_2640010,Activos Fijos Intangibles en Proceso - Operaciones del Año,264.0010,asset_fixed,l10n_cu_chart_template_common,0,Activos Fijos
+account_common_2640998,Activos Fijos Intangibles en Proceso - Traspaso a Gastos por Faltantes y Pérdidas Diferidos,264.0998,asset_fixed,l10n_cu_chart_template_common,0,Activos Fijos
+account_common_264999,Activos Fijos Intangibles en Proceso - Traspaso a Activos Fijos Intangibles,264.999,asset_fixed,l10n_cu_chart_template_common,0,Activos Fijos
+account_common_2650001,Inversiones en Proceso - Saldo al Inicio del Año,265.0001,asset_fixed,l10n_cu_chart_template_common,0,Activos Fijos
+account_common_2650010,Inversiones en Proceso - Construcción y Montaje,265.0010,asset_fixed,l10n_cu_chart_template_common,0,Activos Fijos
+account_common_2650020,Inversiones en Proceso - Equipos,265.0020,asset_fixed,l10n_cu_chart_template_common,0,Activos Fijos
+account_common_2650030,Inversiones en Proceso - Otros Gastos,265.0030,asset_fixed,l10n_cu_chart_template_common,0,Activos Fijos
+account_common_2650050,Inversiones en Proceso - Fomentos Agrícolas,265.0050,asset_fixed,l10n_cu_chart_template_common,0,Activos Fijos
+account_common_2650060,Inversiones en Proceso - Fomentos y Desarrollo Mineros,265.0060,asset_fixed,l10n_cu_chart_template_common,0,Activos Fijos
+account_common_2650070,Inversiones en Proceso - Fomentos y Desarrollo Forestales,265.0070,asset_fixed,l10n_cu_chart_template_common,0,Activos Fijos
+account_common_2650100,Inversiones en Proceso - Otros no Especificados,265.0100,asset_fixed,l10n_cu_chart_template_common,0,Activos Fijos
+account_common_2650200,Inversiones en Proceso - Fondo de Fomento Desarrollo Ganadero,265.0200,asset_fixed,l10n_cu_chart_template_common,0,Activos Fijos
+account_common_2650999,Inversiones en Proceso - Traspaso a Activos Fijos Tangibles,265.0999,asset_fixed,l10n_cu_chart_template_common,0,Activos Fijos
+account_common_2790001,Plan de Preparación de Inversiones - Saldo al Inicio del Año,279.0001,asset_fixed,l10n_cu_chart_template_common,0,Activos Fijos
+account_common_2790010,Plan de Preparación de Inversiones - Construcción y Montaje,279.0010,asset_fixed,l10n_cu_chart_template_common,0,Activos Fijos
+account_common_2790020,Plan de Preparación de Inversiones - Equipos,279.0020,asset_fixed,l10n_cu_chart_template_common,0,Activos Fijos
+account_common_2790030,Plan de Preparación de Inversiones - Otros,279.0030,asset_fixed,l10n_cu_chart_template_common,0,Activos Fijos
+account_common_2790998,Plan de Preparación de Inversiones - Traspaso a Gastos del Proceso Inversionista,279.0998,asset_fixed,l10n_cu_chart_template_common,0,Activos Fijos
+account_common_280,Equipos por Instalar y Materiales para el Proceso Inversionista,280,asset_fixed,l10n_cu_chart_template_common,0,Activos Fijos
+account_common_290010,Adquisición de Activos Fijos Tangibles Nuevos - Compras del Período ,29.0010,asset_fixed,l10n_cu_chart_template_common,0,Activos Fijos
+account_common_290030,Adquisición de Activos Fijos Tangibles Nuevos - Adquisición del Período por Donaciones,29.0030,asset_fixed,l10n_cu_chart_template_common,0,Activos Fijos
+account_common_2900999,Adquisición de Activos Fijos Tangibles Nuevos - Traspaso a Activos Fijos Tangibles,290.0999,asset_fixed,l10n_cu_chart_template_common,0,Activos Fijos
+account_common_2910100,Compra de Activos Fijos Tangibles de Uso - Compras del Período,291.0100,asset_fixed,l10n_cu_chart_template_common,0,Activos Fijos
+account_common_2910300,Compra de Activos Fijos Tangibles de Uso - Adquisición del Período por Donaciones,291.0300,asset_fixed,l10n_cu_chart_template_common,0,Activos Fijos
+account_common_2910999,Compra de Activos Fijos Tangibles de Uso - Traspaso a Activos Fijos Tangibles ,291.0999,asset_fixed,l10n_cu_chart_template_common,0,Activos Fijos
+account_common_2920100,Compras del Período,292.0100,asset_fixed,l10n_cu_chart_template_common,0,Activos Fijos
+account_common_2920300,Compras del Período - Adquisición del Período por Donaciones,292.0300,asset_fixed,l10n_cu_chart_template_common,0,Activos Fijos
+account_common_2920999,Compras del Período - Traspaso a Activos Fijos Tangibles ,292.0999,asset_fixed,l10n_cu_chart_template_common,0,Activos Fijos
+account_common_3000010,Gastos de Producción y Servicios Diferidos - Saldo al Inicio del Año,300.0010,asset_current,l10n_cu_chart_template_common,0,Activos Fijos
+account_common_3000020,Gastos de Producción y Servicios Diferidos - Gastos por Elementos del Período,300.0020,asset_current,l10n_cu_chart_template_common,0,Activos Fijos
+account_common_3000030,Gastos de Producción y Servicios Diferidos - Amortización de Gastos,300.0030,asset_current,l10n_cu_chart_template_common,0,Activos Fijos
+account_common_3060010,Gastos Financieros Diferidos - Saldo al Inicio del Año,306.0010,asset_current,l10n_cu_chart_template_common,0,Activos Fijos
+account_common_3060020,Gastos Financieros Diferidos - Gastos por Elementos del Período,306.0020,asset_current,l10n_cu_chart_template_common,0,Activos Fijos
+account_common_3060030,Gastos Financieros Diferidos - Amortización de Gastos,306.0030,asset_current,l10n_cu_chart_template_common,0,Activos Fijos
+account_common_3100010,Gastos del Proceso Inversionista Diferidos - Saldo al Inicio del Año,310.0010,asset_current,l10n_cu_chart_template_common,0,Activos Fijos
+account_common_3100020,Gastos del Proceso Inversionista Diferidos - Gastos por Elementos del Período,310.0020,asset_current,l10n_cu_chart_template_common,0,Activos Fijos
+account_common_3100030,Gastos del Proceso Inversionista Diferidos - Amortización de Gastos,310.0030,asset_current,l10n_cu_chart_template_common,0,Activos Fijos
+account_common_3120010,Gastos por Faltantes y Pérdidas Diferidos - Saldo al Inicio del Año,312.0010,asset_current,l10n_cu_chart_template_common,0,Activos Fijos
+account_common_3120020,Gastos por Faltantes y Pérdidas Diferidos - Gastos del Período,312.0020,asset_current,l10n_cu_chart_template_common,0,Activos Fijos
+account_common_3120030,Gastos por Faltantes y Pérdidas Diferidos - Amortización de Gastos a las Cuentas de Gastos por Faltantes y Pérdidas,3120030,asset_current,l10n_cu_chart_template_common,0,Activos Fijos
+account_common_3300010,Pérdidas en Investigación - Pérdidas por Deterioro,330.0010,asset_current,l10n_cu_chart_template_common,0,Otros Activos
+account_common_3300020,Pérdidas en Investigación - Pérdidas Cosecha,330.0020,asset_current,l10n_cu_chart_template_common,0,Otros Activos
+account_common_3300030,Pérdidas en Investigación - Pérdidas Cuentas por Cobrar,330.0030,asset_current,l10n_cu_chart_template_common,0,Otros Activos
+account_common_3300040,Pérdidas en Investigación - Pérdidas por Siniestros,330.0040,asset_current,l10n_cu_chart_template_common,0,Otros Activos
+account_common_3300050,Pérdidas en Investigación - Otros,330.0050,asset_current,l10n_cu_chart_template_common,0,Otros Activos
+account_common_332001,Faltantes de Bienes en Investigación - Medios Monetarios,332.001,asset_current,l10n_cu_chart_template_common,0,Otros Activos
+account_common_332002,Faltantes de Bienes en Investigación - Medios Materiales,332.002,asset_current,l10n_cu_chart_template_common,0,Otros Activos
+account_common_332003,Faltantes de Bienes en Investigación - Activos Fijos,332.003,asset_current,l10n_cu_chart_template_common,0,Otros Activos
+account_common_332004,Faltantes de Bienes en Investigación - Equipos por Instalar y Materiales de Construcción,332.004,asset_current,l10n_cu_chart_template_common,0,Otros Activos
+account_common_332005,Faltantes de Bienes en Investigación - Otros,332.005,asset_current,l10n_cu_chart_template_common,0,Otros Activos
+account_common_3340010,Cuentas por Cobrar Diversas. Operaciones Corrientes - Ventas a Entidades,334.0010,asset_receivable,l10n_cu_chart_template_common,1,Otros Activos
+account_common_3340020,Cuentas por Cobrar Diversas. Operaciones Corrientes - Deudas a Trabajadores,334.0020,asset_receivable,l10n_cu_chart_template_common,1,Otros Activos
+account_common_3340030,Cuentas por Cobrar Diversas. Operaciones Corrientes - Reclamaciones,334.0030,asset_receivable,l10n_cu_chart_template_common,1,Otros Activos
+account_common_3340040,Cuentas por Cobrar Diversas. Operaciones Corrientes - Responsabilidad Material,334.0040,asset_receivable,l10n_cu_chart_template_common,1,Otros Activos
+account_common_3340050,Cuentas por Cobrar Diversas. Operaciones Corrientes - Sector Cooperativo,334.0050,asset_receivable,l10n_cu_chart_template_common,1,Otros Activos
+account_common_3340060,Cuentas por Cobrar Diversas. Operaciones Corrientes - Personas Naturales,334.0060,asset_receivable,l10n_cu_chart_template_common,1,Otros Activos
+account_common_3340099,Cuentas por Cobrar Diversas. Operaciones Corrientes - Otros,334.0099,asset_receivable,l10n_cu_chart_template_common,1,Otros Activos
+account_common_342,Cuentas por Cobrar - Compra de Monedas,342,asset_receivable,l10n_cu_chart_template_common,1,Otros Activos
+account_common_3430010,Cuentas por Cobrar del Proceso Inversionista - Dentro del Organo u Organismo,343.0010,asset_receivable,l10n_cu_chart_template_common,1,Otros Activos
+account_common_3430020,Cuentas por Cobrar del Proceso Inversionista - Fuera del Organo u Organismo,343.0020,asset_receivable,l10n_cu_chart_template_common,1,Otros Activos
+account_common_3430030,Cuentas por Cobrar del Proceso Inversionista - En el Extranjero,343.0030,asset_receivable,l10n_cu_chart_template_common,1,Otros Activos
+account_common_3430040,Cuentas por Cobrar del Proceso Inversionista - Dentro del Grupo Empresarial,343.0040,asset_receivable,l10n_cu_chart_template_common,1,Otros Activos
+account_common_3430050,Cuentas por Cobrar del Proceso Inversionista - Sector Cooperativo,343.0050,asset_receivable,l10n_cu_chart_template_common,1,Otros Activos
+account_common_3430060,Cuentas por Cobrar del Proceso Inversionista - Personas Naturales,343.0060,asset_receivable,l10n_cu_chart_template_common,1,Otros Activos
+account_common_3460010,Efectos por Cobrar en Litigio - Dentro del Organo u Organismo,346.0010,asset_receivable,l10n_cu_chart_template_common,1,Otros Activos
+account_common_3460020,Efectos por Cobrar en Litigio - Fuera del Organo u Organismo,346.0020,asset_receivable,l10n_cu_chart_template_common,1,Otros Activos
+account_common_3460030,Efectos por Cobrar en Litigio - En el Extranjero,346.0030,asset_receivable,l10n_cu_chart_template_common,1,Otros Activos
+account_common_3460040,Efectos por Cobrar en Litigio - Dentro del Grupo Empresarial,346.0040,asset_receivable,l10n_cu_chart_template_common,1,Otros Activos
+account_common_3460050,Efectos por Cobrar en Litigio - Sector Cooperativo,346.0050,asset_receivable,l10n_cu_chart_template_common,1,Otros Activos
+account_common_3460060,Efectos por Cobrar en Litigio - Personas Naturales,346.0060,asset_receivable,l10n_cu_chart_template_common,1,Otros Activos
+account_common_3470010,Cuentas por Cobrar en Litigio - Dentro del Organo u Organismo,347.0010,asset_receivable,l10n_cu_chart_template_common,1,Otros Activos
+account_common_3470020,Cuentas por Cobrar en Litigio - Fuera del Organo u Organismo,347.0020,asset_receivable,l10n_cu_chart_template_common,1,Otros Activos
+account_common_3470030,Cuentas por Cobrar en Litigio - En el Extranjero,347.0030,asset_receivable,l10n_cu_chart_template_common,1,Otros Activos
+account_common_3470040,Cuentas por Cobrar en Litigio - Dentro del Grupo Empresarial,347.0040,asset_receivable,l10n_cu_chart_template_common,1,Otros Activos
+account_common_3470050,Cuentas por Cobrar en Litigio - Sector Cooperativo,347.0050,asset_receivable,l10n_cu_chart_template_common,1,Otros Activos
+account_common_3470060,Cuentas por Cobrar en Litigio - Personas Naturales,347.0060,asset_receivable,l10n_cu_chart_template_common,1,Otros Activos
+account_common_3480010,Efectos por Cobrar Protestados - Dentro del Organo u Organismo,348.0010,asset_receivable,l10n_cu_chart_template_common,1,Otros Activos
+account_common_3480020,Efectos por Cobrar Protestados - Fuera del Organo u Organismo,348.0020,asset_receivable,l10n_cu_chart_template_common,1,Otros Activos
+account_common_3480030,Efectos por Cobrar Protestados - En el Extranjero,348.0030,asset_receivable,l10n_cu_chart_template_common,1,Otros Activos
+account_common_3480040,Efectos por Cobrar Protestados - Dentro del Grupo Empresarial,348.0040,asset_receivable,l10n_cu_chart_template_common,1,Otros Activos
+account_common_3480050,Efectos por Cobrar Protestados - Sector Cooperativo,348.0050,asset_receivable,l10n_cu_chart_template_common,1,Otros Activos
+account_common_3480060,Efectos por Cobrar Protestados - Personas Naturales,348.0060,asset_receivable,l10n_cu_chart_template_common,1,Otros Activos
+account_common_3490010,Cuentas por Cobrar en Proceso Judicial - Dentro del Organo u Organismo,349.0010,asset_receivable,l10n_cu_chart_template_common,1,Otros Activos
+account_common_3490020,Cuentas por Cobrar en Proceso Judicial - Fuera del Organo u Organismo,349.0020,asset_receivable,l10n_cu_chart_template_common,1,Otros Activos
+account_common_3490030,Cuentas por Cobrar en Proceso Judicial - En el Extranjero,349.0030,asset_receivable,l10n_cu_chart_template_common,1,Otros Activos
+account_common_3490040,Cuentas por Cobrar en Proceso Judicial - Dentro del Grupo Empresarial,349.0040,asset_receivable,l10n_cu_chart_template_common,1,Otros Activos
+account_common_3490050,Cuentas por Cobrar en Proceso Judicial - Sector Cooperativo,349.0050,asset_receivable,l10n_cu_chart_template_common,1,Otros Activos
+account_common_3490060,Cuentas por Cobrar en Proceso Judicial - Personas Naturales,349.0060,asset_receivable,l10n_cu_chart_template_common,1,Otros Activos
+account_common_3500010,Cuentas por Cobrar con Sentencia Firme - Dentro del Organo u Organismo,350.0010,asset_non_current,l10n_cu_chart_template_common,1,Otros Activos
+account_common_3500020,Cuentas por Cobrar con Sentencia Firme - Fuera del Organo u Organismo,350.0020,asset_non_current,l10n_cu_chart_template_common,1,Otros Activos
+account_common_3500030,Cuentas por Cobrar con Sentencia Firme - En el Extranjero,350.0030,asset_non_current,l10n_cu_chart_template_common,1,Otros Activos
+account_common_3500040,Cuentas por Cobrar con Sentencia Firme - Dentro del Grupo Empresarial,350.0040,asset_non_current,l10n_cu_chart_template_common,1,Otros Activos
+account_common_3500050,Cuentas por Cobrar con Sentencia Firme - Sector Cooperativo,350.0050,asset_non_current,l10n_cu_chart_template_common,1,Otros Activos
+account_common_3500060,Cuentas por Cobrar con Sentencia Firme - Personas Naturales,350.0060,asset_non_current,l10n_cu_chart_template_common,1,Otros Activos
+account_common_354,Depósitos y Fianzas,354,asset_non_current,l10n_cu_chart_template_common,1,Otros Activos
+account_common_363,Bonos Redimidos,363,asset_non_current,l10n_cu_chart_template_common,0,Otros Activos
+account_common_364,Fondo de Amortización de Bonos - Efectivo y Valores,364,asset_non_current,l10n_cu_chart_template_common,0,Otros Activos
+account_common_365,Efectos por Cobrar Descontados,365,asset_non_current,l10n_cu_chart_template_common,0,Cuentas Reguladoras de Activos
+account_common_366,Desgaste de Base Material de Estudio,366,asset_non_current,l10n_cu_chart_template_common,0,Cuentas Reguladoras de Activos
+account_common_367,Desgaste de Vestuario y Lencería,367,asset_non_current,l10n_cu_chart_template_common,0,Cuentas Reguladoras de Activos
+account_common_369,Provisión para Cuentas Incobrables,369,asset_non_current,l10n_cu_chart_template_common,0,Cuentas Reguladoras de Activos
+account_common_370,Descuento Comercial e Impuesto,370,asset_non_current,l10n_cu_chart_template_common,0,Cuentas Reguladoras de Activos
+account_common_373,Desgaste de útiles y Herramientas,373,asset_non_current,l10n_cu_chart_template_common,0,Cuentas Reguladoras de Activos
+account_common_374,Otras Provisiones Reguladoras de Activos,374,asset_non_current,l10n_cu_chart_template_common,0,Cuentas Reguladoras de Activos
+account_common_375,Depreciación de Activos Fijos Tangibles,375,asset_fixed,l10n_cu_chart_template_common,0,Cuentas Reguladoras de Activos
+account_common_389,Desgaste de Medios y Equipos para Alquilar,389,asset_fixed,l10n_cu_chart_template_common,0,Cuentas Reguladoras de Activos
+account_common_390,Amortización de Activos Fijos Intangibles,390,asset_fixed,l10n_cu_chart_template_common,0,Cuentas Reguladoras de Activos
+account_common_400,Sobregiro Bancario,400,liability_payable,l10n_cu_chart_template_common,1,Pasivos Circulantes
+account_common_4010010,Efectos por Pagar a Corto Plazo - Dentro del Organo u Organismo,401.0010,liability_payable,l10n_cu_chart_template_common,1,Pasivos Circulantes
+account_common_4010020,Efectos por Pagar a Corto Plazo - Fuera del Organo u Organismo,401.0020,liability_payable,l10n_cu_chart_template_common,1,Pasivos Circulantes
+account_common_4010030,Efectos por Pagar a Corto Plazo - En el Extranjero,401.0030,liability_payable,l10n_cu_chart_template_common,1,Pasivos Circulantes
+account_common_4010040,Efectos por Pagar a Corto Plazo - Dentro del Grupo Empresarial,401.0040,liability_payable,l10n_cu_chart_template_common,1,Pasivos Circulantes
+account_common_4010050,Efectos por Pagar a Corto Plazo - Sector Cooperativo,401.0050,liability_payable,l10n_cu_chart_template_common,1,Pasivos Circulantes
+account_common_4010060,Efectos por Pagar a Corto Plazo - Personas Naturales,401.0060,liability_payable,l10n_cu_chart_template_common,1,Pasivos Circulantes
+account_common_4050010,Cuentas por Pagar a Corto Plazo - Dentro del Organo u Organismo,405.0010,liability_payable,l10n_cu_chart_template_common,1,Pasivos Circulantes
+account_common_4050020,Cuentas por Pagar a Corto Plazo - Fuera del Organo u Organismo,405.0020,liability_payable,l10n_cu_chart_template_common,1,Pasivos Circulantes
+account_common_4050030,Cuentas por Pagar a Corto Plazo - En el Extranjero,405.0030,liability_payable,l10n_cu_chart_template_common,1,Pasivos Circulantes
+account_common_4050040,Cuentas por Pagar a Corto Plazo - Dentro del Grupo Empresarial,405.0040,liability_payable,l10n_cu_chart_template_common,1,Pasivos Circulantes
+account_common_4050050,Cuentas por Pagar a Corto Plazo - Sector Cooperativo,405.0050,liability_payable,l10n_cu_chart_template_common,1,Pasivos Circulantes
+account_common_4050060,Cuentas por Pagar a Corto Plazo - Personas Naturales,405.0060,liability_payable,l10n_cu_chart_template_common,1,Pasivos Circulantes
+account_common_416,Cobros por Cuenta de Terceros,416,liability_payable,l10n_cu_chart_template_common,1,Pasivos Circulantes
+account_common_417,Dividendos y Participaciones por Pagar,417,liability_payable,l10n_cu_chart_template_common,1,Pasivos Circulantes
+account_common_418,Cuentas en Participación,418,liability_payable,l10n_cu_chart_template_common,1,Pasivos Circulantes
+account_common_4210010,Cuentas por Pagar. Activos Fijos Tangibles - Dentro del Organo u Organismo,421.0010,liability_payable,l10n_cu_chart_template_common,1,Pasivos Circulantes
+account_common_4210020,Cuentas por Pagar. Activos Fijos Tangibles - Fuera del Organo u Organismo,421.0020,liability_payable,l10n_cu_chart_template_common,1,Pasivos Circulantes
+account_common_4210030,Cuentas por Pagar. Activos Fijos Tangibles - En el Extranjero,421.0030,liability_payable,l10n_cu_chart_template_common,1,Pasivos Circulantes
+account_common_4210040,Cuentas por Pagar. Activos Fijos Tangibles - Dentro del Grupo Empresarial,421.0040,liability_payable,l10n_cu_chart_template_common,1,Pasivos Circulantes
+account_common_4210050,Cuentas por Pagar. Activos Fijos Tangibles - Sector Cooperativo,421.0050,liability_payable,l10n_cu_chart_template_common,1,Pasivos Circulantes
+account_common_4210060,Cuentas por Pagar. Activos Fijos Tangibles - Personas Naturales,421.0060,liability_payable,l10n_cu_chart_template_common,1,Pasivos Circulantes
+account_common_4250010,Cuentas por Pagar del Proceso Inversionista - Dentro del Organo u Organismo,425.0010,liability_payable,l10n_cu_chart_template_common,1,Pasivos Circulantes
+account_common_4250020,Cuentas por Pagar del Proceso Inversionista - Fuera del Organo u Organismo,425.0020,liability_payable,l10n_cu_chart_template_common,1,Pasivos Circulantes
+account_common_4250030,Cuentas por Pagar del Proceso Inversionista - En el Extranjero,425.0030,liability_payable,l10n_cu_chart_template_common,1,Pasivos Circulantes
+account_common_4250040,Cuentas por Pagar del Proceso Inversionista - Dentro del Grupo Empresarial,425.0040,liability_payable,l10n_cu_chart_template_common,1,Pasivos Circulantes
+account_common_4250050,Cuentas por Pagar del Proceso Inversionista - Sector Cooperativo,425.0050,liability_payable,l10n_cu_chart_template_common,1,Pasivos Circulantes
+account_common_4250060,Cuentas por Pagar del Proceso Inversionista - Personas Naturales,425.0060,liability_payable,l10n_cu_chart_template_common,1,Pasivos Circulantes
+account_common_430,Cobros Anticipados,430,liability_payable,l10n_cu_chart_template_common,1,Pasivos Circulantes
+account_common_434,Materiales Recibidos de Forma Anticipada,434,liability_payable,l10n_cu_chart_template_common,1,Pasivos Circulantes
+account_common_435,Depósitos Recibidos,435,liability_payable,l10n_cu_chart_template_common,1,Pasivos Circulantes
+account_common_4400001,Obligaciones con el Presupuesto del Estado - Impuesto sobre Ventas,440.0001,liability_payable,l10n_cu_chart_template_common,1,Pasivos Circulantes
+account_common_4400002,Obligaciones con el Presupuesto del Estado - Impuesto sobre los Servicios Públicos,440.0002,liability_payable,l10n_cu_chart_template_common,1,Pasivos Circulantes
+account_common_4400003,Obligaciones con el Presupuesto del Estado - Aranceles de Aduana,440.0003,liability_payable,l10n_cu_chart_template_common,1,Pasivos Circulantes
+account_common_4400004,Obligaciones con el Presupuesto del Estado - Impuesto sobre Utilidades,440.0004,liability_payable,l10n_cu_chart_template_common,1,Pasivos Circulantes
+account_common_4400005,Obligaciones con el Presupuesto del Estado - Impuesto sobre Ingresos Personales,440.0005,liability_payable,l10n_cu_chart_template_common,1,Pasivos Circulantes
+account_common_4400006,Obligaciones con el Presupuesto del Estado - Impuesto sobre los Recursos,440.0006,liability_payable,l10n_cu_chart_template_common,1,Pasivos Circulantes
+account_common_4400007,Obligaciones con el Presupuesto del Estado - Otros Impuestos,440.0007,liability_payable,l10n_cu_chart_template_common,1,Pasivos Circulantes
+account_common_4400008,Obligaciones con el Presupuesto del Estado - Contribuciones,440.0008,liability_payable,l10n_cu_chart_template_common,1,Pasivos Circulantes
+account_common_4400009,Obligaciones con el Presupuesto del Estado - Tasas,440.0009,liability_payable,l10n_cu_chart_template_common,1,Pasivos Circulantes
+account_common_4400010,Obligaciones con el Presupuesto del Estado - Ingresos No tributarios,440.0010,liability_payable,l10n_cu_chart_template_common,1,Pasivos Circulantes
+account_common_4400011,Obligaciones con el Presupuesto del Estado - Rentas de la Propiedad,440.0011,liability_payable,l10n_cu_chart_template_common,1,Pasivos Circulantes
+account_common_4400012,Obligaciones con el Presupuesto del Estado - Transferencias Corrientes,440.0012,liability_payable,l10n_cu_chart_template_common,1,Pasivos Circulantes
+account_common_4400013,Obligaciones con el Presupuesto del Estado - Ingresos de Operaciones,440.0013,liability_payable,l10n_cu_chart_template_common,1,Pasivos Circulantes
+account_common_4400014,Obligaciones con el Presupuesto del Estado - Recursos Propios de Capital,440.0014,liability_payable,l10n_cu_chart_template_common,1,Pasivos Circulantes
+account_common_4400015,Obligaciones con el Presupuesto del Estado - Transferencias de Capital,440.0015,liability_payable,l10n_cu_chart_template_common,1,Pasivos Circulantes
+account_common_4400016,Obligaciones con el Presupuesto del Estado - Otros Recursos Financieros,440.0016,liability_payable,l10n_cu_chart_template_common,1,Pasivos Circulantes
+account_common_450,Obligaciones con el Organo u Organismo,450,liability_payable,l10n_cu_chart_template_common,1,Pasivos Circulantes
+account_common_455,Nóminas por Pagar,455,liability_payable,l10n_cu_chart_template_common,1,Pasivos Circulantes
+account_common_460,Retenciones por Pagar,460,liability_current,l10n_cu_chart_template_common,0,Pasivos Circulantes
+account_common_470,Préstamos Recibidos y Otras Operaciones Crediticias por Pagar,470,liability_payable,l10n_cu_chart_template_common,1,Pasivos Circulantes
+account_common_480,Gastos Acumulados por Pagar,480,liability_payable,l10n_cu_chart_template_common,1,Pasivos Circulantes
+account_common_492,Provisión para Vacaciones,492,liability_payable,l10n_cu_chart_template_common,1,Pasivos Circulantes
+account_common_493,Otras Provisiones Operacionales,493,liability_current,l10n_cu_chart_template_common,1,Pasivos Circulantes
+account_common_500,Provisión para Pagos de los Subsidios de Seguridad Social a Corto Plazo,500,liability_payable,l10n_cu_chart_template_common,1,Pasivos Circulantes
+account_common_501,Fondo de Compensación para Desbalances Financieros (uso exclusivo de la OSDE),501,liability_current,l10n_cu_chart_template_common,1,Pasivos Circulantes
+account_common_5100010,Efectos por Pagar a Largo Plazo - Dentro del Organo u Organismo,510.0010,liability_non_current,l10n_cu_chart_template_common,1,Pasivos a Largo Plazo
+account_common_5100020,Efectos por Pagar a Largo Plazo - Fuera del Organo u Organismo,510.0020,liability_non_current,l10n_cu_chart_template_common,1,Pasivos a Largo Plazo
+account_common_5100030,Efectos por Pagar a Largo Plazo - En el Extranjero,510.0030,liability_non_current,l10n_cu_chart_template_common,1,Pasivos a Largo Plazo
+account_common_5100040,Efectos por Pagar a Largo Plazo - Dentro del Grupo Empresarial,510.0040,liability_non_current,l10n_cu_chart_template_common,1,Pasivos a Largo Plazo
+account_common_5100050,Efectos por Pagar a Largo Plazo - Sector Cooperativo,510.0050,liability_non_current,l10n_cu_chart_template_common,1,Pasivos a Largo Plazo
+account_common_5100060,Efectos por Pagar a Largo Plazo - Personas Naturales,510.0060,liability_non_current,l10n_cu_chart_template_common,1,Pasivos a Largo Plazo
+account_common_5150010,Cuentas por Pagar a Largo Plazo - Dentro del Organo u Organismo,515.0010,liability_non_current,l10n_cu_chart_template_common,1,Pasivos a Largo Plazo
+account_common_5150020,Cuentas por Pagar a Largo Plazo - Fuera del Organo u Organismo,515.0020,liability_non_current,l10n_cu_chart_template_common,1,Pasivos a Largo Plazo
+account_common_5150030,Cuentas por Pagar a Largo Plazo - En el Extranjero,515.0030,liability_non_current,l10n_cu_chart_template_common,1,Pasivos a Largo Plazo
+account_common_5150040,Cuentas por Pagar a Largo Plazo - Dentro del Grupo Empresarial,515.0040,liability_non_current,l10n_cu_chart_template_common,1,Pasivos a Largo Plazo
+account_common_5150050,Cuentas por Pagar a Largo Plazo - Sector Cooperativo,515.0050,liability_non_current,l10n_cu_chart_template_common,1,Pasivos a Largo Plazo
+account_common_5150060,Cuentas por Pagar a Largo Plazo - Personas Naturales,515.0060,liability_non_current,l10n_cu_chart_template_common,1,Pasivos a Largo Plazo
+account_common_520,Préstamos Recibidos por Pagar a Largo Plazo,520,liability_non_current,l10n_cu_chart_template_common,1,Pasivos a Largo Plazo
+account_common_5250010,Obligaciones a Largo Plazo - Dentro del Organo u Organismo,525.0010,liability_non_current,l10n_cu_chart_template_common,1,Pasivos a Largo Plazo
+account_common_5250020,Obligaciones a Largo Plazo - Fuera del Organo u Organismo,525.0020,liability_non_current,l10n_cu_chart_template_common,1,Pasivos a Largo Plazo
+account_common_5250030,Obligaciones a Largo Plazo - En el Extranjero,525.0030,liability_non_current,l10n_cu_chart_template_common,1,Pasivos a Largo Plazo
+account_common_5250040,Obligaciones a Largo Plazo - Dentro del Grupo Empresarial,525.0040,liability_non_current,l10n_cu_chart_template_common,1,Pasivos a Largo Plazo
+account_common_5250050,Obligaciones a Largo Plazo - Sector Cooperativo,525.0050,liability_non_current,l10n_cu_chart_template_common,1,Pasivos a Largo Plazo
+account_common_5250060,Obligaciones a Largo Plazo - Personas Naturales,525.0060,liability_non_current,l10n_cu_chart_template_common,1,Pasivos a Largo Plazo
+account_common_533,Otras Provisiones a Largo Plazo,533,liability_non_current,l10n_cu_chart_template_common,0,Pasivos a Largo Plazo
+account_common_540,Bonos por Pagar,540,liability_non_current,l10n_cu_chart_template_common,0,Pasivos a Largo Plazo
+account_common_541,Bonos Suscritos,541,liability_non_current,l10n_cu_chart_template_common,0,Pasivos a Largo Plazo
+account_common_545,Ingresos Diferidos,545,liability_non_current,l10n_cu_chart_template_common,0,Pasivos Diferidos
+account_common_549,Ingresos Diferidos por Donaciones Recibidas,549,liability_non_current,l10n_cu_chart_template_common,0,Pasivos Diferidos
+account_common_555,Sobrantes en Investigación,555,liability_current,l10n_cu_chart_template_common,0,Otros Pasivos
+account_common_5650010,Cuentas por Pagar Diversas - Dentro del Organo u Organismo,565.0010,liability_payable,l10n_cu_chart_template_common,1,Otros Pasivos
+account_common_5650020,Cuentas por Pagar Diversas - Fuera del Organo u Organismo,565.0020,liability_payable,l10n_cu_chart_template_common,1,Otros Pasivos
+account_common_5650030,Cuentas por Pagar Diversas - En el Extranjero,565.0030,liability_payable,l10n_cu_chart_template_common,1,Otros Pasivos
+account_common_5650040,Cuentas por Pagar Diversas - Dentro del Grupo Empresarial,565.0040,liability_payable,l10n_cu_chart_template_common,1,Otros Pasivos
+account_common_5650050,Cuentas por Pagar Diversas - Sector Cooperativo,565.0050,liability_payable,l10n_cu_chart_template_common,1,Otros Pasivos
+account_common_5650060,Cuentas por Pagar Diversas - Personas Naturales,565.0060,liability_payable,l10n_cu_chart_template_common,1,Otros Pasivos
+account_common_5650070,Cuentas por Pagar Diversas - A trabajadores,565.0070,liability_payable,l10n_cu_chart_template_common,1,Otros Pasivos
+account_common_5650999,Cuentas por Pagar Diversas - Otros,565.0999,liability_payable,l10n_cu_chart_template_common,1,Otros Pasivos
+account_common_569,Cuentas por Pagar - Compra de Moneda,569,liability_payable,l10n_cu_chart_template_common,1,Otros Pasivos
+account_common_570,Ingresos de Períodos Futuros,570,liability_payable,l10n_cu_chart_template_common,1,Otros Pasivos
+account_common_575,Cuentas por Pagar Diversas,575,liability_payable,l10n_cu_chart_template_common,1,Otros Pasivos
+account_common_5760010,Efectos por Pagar en Litigio - Dentro del Organo u Organismo,576.0010,liability_payable,l10n_cu_chart_template_common,1,Otros Pasivos
+account_common_5760020,Efectos por Pagar en Litigio - Fuera del Organo u Organismo,576.0020,liability_payable,l10n_cu_chart_template_common,1,Otros Pasivos
+account_common_5760030,Efectos por Pagar en Litigio - En el Extranjero,5760030,liability_payable,l10n_cu_chart_template_common,1,Otros Pasivos
+account_common_5760040,Efectos por Pagar en Litigio - Dentro del Grupo Empresarial,576.0040,liability_payable,l10n_cu_chart_template_common,1,Otros Pasivos
+account_common_5760050,Efectos por Pagar en Litigio - Sector Cooperativo,576.0050,liability_payable,l10n_cu_chart_template_common,1,Otros Pasivos
+account_common_5760060,Personas Naturales,576.0060,liability_payable,l10n_cu_chart_template_common,1,Otros Pasivos
+account_common_5770010,Cuentas por Pagar en Litigio - Dentro del Organo u Organismo,577.0010,liability_payable,l10n_cu_chart_template_common,1,Otros Pasivos
+account_common_5770020,Cuentas por Pagar en Litigio - Fuera del Organo u Organismo,577.0020,liability_payable,l10n_cu_chart_template_common,1,Otros Pasivos
+account_common_5770030,Cuentas por Pagar en Litigio - En el Extranjero,577.0030,liability_payable,l10n_cu_chart_template_common,1,Otros Pasivos
+account_common_5770040,Cuentas por Pagar en Litigio - Dentro del Grupo Empresarial,577.0040,liability_payable,l10n_cu_chart_template_common,1,Otros Pasivos
+account_common_5770050,Cuentas por Pagar en Litigio - Sector Cooperativo,577.0050,liability_payable,l10n_cu_chart_template_common,1,Otros Pasivos
+account_common_5780010,Efectos por Pagar Protestados - Dentro del Organo u Organismo,578.0010,liability_payable,l10n_cu_chart_template_common,1,Otros Pasivos
+account_common_5780020,Efectos por Pagar Protestados - Fuera del Organo u Organismo,578.0020,liability_payable,l10n_cu_chart_template_common,1,Otros Pasivos
+account_common_5780030,Efectos por Pagar Protestados - En el Extranjero,578.0030,liability_payable,l10n_cu_chart_template_common,1,Otros Pasivos
+account_common_5780040,Efectos por Pagar Protestados - Dentro del Grupo Empresarial,578.0040,liability_payable,l10n_cu_chart_template_common,1,Otros Pasivos
+account_common_5780050,Efectos por Pagar Protestados - Sector Cooperativo,578.0050,liability_payable,l10n_cu_chart_template_common,1,Otros Pasivos
+account_common_5780060,Efectos por Pagar Protestados - Personas Naturales,578.0060,liability_payable,l10n_cu_chart_template_common,1,Otros Pasivos
+account_common_5790010,Cuentas por Pagar en Proceso Judicial - Dentro del Organo u Organismo,579.0010,liability_payable,l10n_cu_chart_template_common,1,Otros Pasivos
+account_common_5790020,Cuentas por Pagar en Proceso Judicial - Fuera del Organo u Organismo,579.0020,liability_payable,l10n_cu_chart_template_common,1,Otros Pasivos
+account_common_5790030,Cuentas por Pagar en Proceso Judicial - En el Extranjero,579.0030,liability_payable,l10n_cu_chart_template_common,1,Otros Pasivos
+account_common_5790040,Cuentas por Pagar en Proceso Judicial - Dentro del Grupo Empresarial,579.0040,liability_payable,l10n_cu_chart_template_common,1,Otros Pasivos
+account_common_5790050,Cuentas por Pagar en Proceso Judicial - Sector Cooperativo,579.0050,liability_payable,l10n_cu_chart_template_common,1,Otros Pasivos
+account_common_5790060,Cuentas por Pagar en Proceso Judicial - Personas Naturales,579.0060,liability_payable,l10n_cu_chart_template_common,1,Otros Pasivos
+account_common_5800010,Cuentas por Pagar con Sentencia Firme - Dentro del Organo u Organismo,580.0010,liability_payable,l10n_cu_chart_template_common,1,Otros Pasivos
+account_common_5800020,Cuentas por Pagar con Sentencia Firme - Fuera del Organo u Organismo,580.0020,liability_payable,l10n_cu_chart_template_common,1,Otros Pasivos
+account_common_5800030,Cuentas por Pagar con Sentencia Firme - En el Extranjero,580.0030,liability_payable,l10n_cu_chart_template_common,1,Otros Pasivos
+account_common_5800040,Cuentas por Pagar con Sentencia Firme - Dentro del Grupo Empresarial,580.0040,liability_payable,l10n_cu_chart_template_common,1,Otros Pasivos
+account_common_5800050,Cuentas por Pagar con Sentencia Firme - Sector Cooperativo,580.0050,liability_payable,l10n_cu_chart_template_common,1,Otros Pasivos
+account_common_5800060,Cuentas por Pagar con Sentencia Firme - Personas Naturales,580.0060,liability_payable,l10n_cu_chart_template_common,1,Otros Pasivos
+account_common_6991,Transitoria del Inventario de Entrada,699.1,asset_current,l10n_cu_chart_template_common,1,Transitoria para la Entrada de Inventario
+account_common_6992,Transitoria del Inventario de Salida,699.2,asset_current,l10n_cu_chart_template_common,1,Transitoria para la Salida de Inventario
+account_common_6993,Transitoria de Base de Efectivo,699.3,asset_current,l10n_cu_chart_template_common,1,
+account_common_7000010,Producción en Proceso - Saldo al Inicio del Año,700.0010,expense,l10n_cu_chart_template_common,0,Gastos de Producción
+account_common_7000020,Producción en Proceso - Gastos del Período,700.0020,expense,l10n_cu_chart_template_common,0,Gastos de Producción
+account_common_7000030,Producción en Proceso - Aumento,700.0030,expense,l10n_cu_chart_template_common,0,Gastos de Producción
+account_common_7000040,Producción en Proceso - Disminución,700.0040,expense,l10n_cu_chart_template_common,0,Gastos de Producción
+account_common_7000050,Producción en Proceso - Traspaso a Producción Terminada,700.0050,expense,l10n_cu_chart_template_common,0,Gastos de Producción
+account_common_7250010,Producción Propia para Insumos - Saldo al Inicio del Año,725.0010,expense,l10n_cu_chart_template_common,0,Gastos de Producción
+account_common_7250020,Producción Propia para Insumos - Gastos del Período,725.0020,expense,l10n_cu_chart_template_common,0,Gastos de Producción
+account_common_7250030,Producción Propia para Insumos - Aumento,725.0030,expense,l10n_cu_chart_template_common,0,Gastos de Producción
+account_common_7250040,Producción Propia para Insumos - Disminución,725.0040,expense,l10n_cu_chart_template_common,0,Gastos de Producción
+account_common_7250050,Producción Propia para Insumos - Traspaso a Producción Terminada,725.0050,expense,l10n_cu_chart_template_common,0,Gastos de Producción
+account_common_7260010,Reparaciones Capitales con Medios Propios - Saldo al Inicio del Año,726.0010,expense,l10n_cu_chart_template_common,0,Gastos de Producción
+account_common_7260020,Reparaciones Capitales con Medios Propios - Gastos del Período,726.0020,expense,l10n_cu_chart_template_common,0,Gastos de Producción
+account_common_7260050,Reparaciones Capitales con Medios Propios - Traspaso a Inversiones en Proceso,726.0050,expense,l10n_cu_chart_template_common,0,Gastos de Producción
+account_common_7270010,Inversiones con Medios Propios Activos Fijos Intangibles - Saldo al Inicio del Año,727.0010,expense,l10n_cu_chart_template_common,0,Gastos de Producción
+account_common_7270020,Inversiones con Medios Propios Activos Fijos Intangibles - Gastos del Período,727.0020,expense,l10n_cu_chart_template_common,0,Gastos de Producción
+account_common_7270050,Inversiones con Medios Propios Activos Fijos Intangibles - Traspaso a Inversiones en Proceso,727.0050,expense,l10n_cu_chart_template_common,0,Gastos de Producción
+account_common_7280010,Inversiones con Medios Propios - Saldo al Inicio del Año,728.0010,expense,l10n_cu_chart_template_common,0,Gastos de Producción
+account_common_7280020,Inversiones con Medios Propios - Gastos del Período,728.0020,expense,l10n_cu_chart_template_common,0,Gastos de Producción
+account_common_7280050,Inversiones con Medios Propios - Traspaso a Inversiones en Proceso,728.0050,expense,l10n_cu_chart_template_common,0,Gastos de Producción
+account_common_731,Gastos Asociados a la Producción,731,expense,l10n_cu_chart_template_common,1,Gastos de Producción
+account_common_800,Devoluciones y Rebajas en Ventas,800,expense,l10n_cu_chart_template_common,0,Cuentas Nominales Deudoras
+account_common_805,Impuesto por las Ventas,805,expense,l10n_cu_chart_template_common,0,Cuentas Nominales Deudoras
+account_common_810,Costo de Ventas de la Producción,810,expense_direct_cost,l10n_cu_chart_template_common,0,Cuentas Nominales Deudoras
+account_common_814,Costo de Ventas de Mercancías,814,expense_direct_cost,l10n_cu_chart_template_common,0,Cuentas Nominales Deudoras
+account_common_818,Costo por Exportación de Servicios,818,expense_direct_cost,l10n_cu_chart_template_common,0,Cuentas Nominales Deudoras
+account_common_819,Gastos de Distribución y Ventas,819,expense,l10n_cu_chart_template_common,0,Cuentas Nominales Deudoras
+account_common_822,Gastos Generales y de Administración,822,expense,l10n_cu_chart_template_common,0,Cuentas Nominales Deudoras
+account_common_825,Gastos de Proyectos,825,expense,l10n_cu_chart_template_common,0,Cuentas Nominales Deudoras
+account_common_826,Gastos de Operación,826,expense,l10n_cu_chart_template_common,0,Cuentas Nominales Deudoras
+account_common_834,Gastos de Administración de la OSDE,834,expense,l10n_cu_chart_template_common,0,Cuentas Nominales Deudoras
+account_common_835,Gastos Financieros,835,expense,l10n_cu_chart_template_common,0,Cuentas Nominales Deudoras
+account_common_839,Gastos por Pérdidas en Tasas de Cambio,839,expense,l10n_cu_chart_template_common,0,Cuentas Nominales Deudoras
+account_common_840,Financiamiento Entregado a la OSDE,840,expense,l10n_cu_chart_template_common,0,Cuentas Nominales Deudoras
+account_common_841,Gastos por Estadía  Importadores,841,expense,l10n_cu_chart_template_common,0,Cuentas Nominales Deudoras
+account_common_843,Gastos por Estadía  Otras Entidades,843,expense,l10n_cu_chart_template_common,0,Cuentas Nominales Deudoras
+account_common_845,Gastos por Pérdidas,845,expense,l10n_cu_chart_template_common,0,Cuentas Nominales Deudoras
+account_common_849,Gastos por Pérdidas - Desastres,849,expense,l10n_cu_chart_template_common,0,Cuentas Nominales Deudoras
+account_common_850,Gastos por Faltantes de Bienes,850,expense,l10n_cu_chart_template_common,0,Cuentas Nominales Deudoras
+account_common_855,"Otros Impuestos, Tasas y Contribuciones",855,expense,l10n_cu_chart_template_common,0,Cuentas Nominales Deudoras
+account_common_865,Otros Gastos,865,expense,l10n_cu_chart_template_common,0,Cuentas Nominales Deudoras
+account_common_867,Gastos de Eventos,867,expense,l10n_cu_chart_template_common,0,Cuentas Nominales Deudoras
+account_common_873,Gastos de Recuperación de Desastres,873,expense,l10n_cu_chart_template_common,0,Cuentas Nominales Deudoras
+account_common_900,Ventas,900,income,l10n_cu_chart_template_common,0,Cuentas Nominales Acreedoras
+account_common_914,Ventas de Bienes con destino a la Exportación,914,income,l10n_cu_chart_template_common,0,Cuentas Nominales Acreedoras
+account_common_915,Ventas por Exportación de Servicios,915,income,l10n_cu_chart_template_common,0,Cuentas Nominales Acreedoras
+account_common_916,Subvenciones,916,income,l10n_cu_chart_template_common,0,Cuentas Nominales Acreedoras
+account_common_920,Ingresos Financieros,920,income,l10n_cu_chart_template_common,0,Cuentas Nominales Acreedoras
+account_common_923,Financiamiento Recibido de las Empresas (Uso exclusivo de la OSDE),923,income,l10n_cu_chart_template_common,0,Cuentas Nominales Acreedoras
+account_common_924,Ingresos por Variación de Tasas de Cambio,924,income,l10n_cu_chart_template_common,0,Cuentas Nominales Acreedoras
+account_common_925,Ingresos por Dividendos Ganados,925,income,l10n_cu_chart_template_common,0,Cuentas Nominales Acreedoras
+account_common_926,Ingresos por Estadía (navieras y operadores),926,income,l10n_cu_chart_template_common,0,Cuentas Nominales Acreedoras
+account_common_928,Ingresos por Recobro de Estadía (importadores y otras entidades),928,income,l10n_cu_chart_template_common,0,Cuentas Nominales Acreedoras
+account_common_930,Ingresos por Sobrantes,930,income,l10n_cu_chart_template_common,0,Cuentas Nominales Acreedoras
+account_common_950,Otros Ingresos,950,income,l10n_cu_chart_template_common,0,Cuentas Nominales Acreedoras
+account_common_953,Ingresos por Donaciones Recibidas,953,income,l10n_cu_chart_template_common,0,Cuentas Nominales Acreedoras
+account_common_999,Resultados,999,equity_unaffected,l10n_cu_chart_template_common,0,Cuenta de cierre

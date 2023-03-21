@@ -1,36 +1,20 @@
-"id","name","code","account_type","chart_template_id/id","reconcile","note"
-"account_tcp_1350000","Cuentas por Cobrar","135.0000","asset_receivable","l10n_cu_chart_template_freelance","True","Grupo de Activos (10) - Activos Circulantes (10.1)"
-"account_tcp_1460000","Pagos Anticipados","146.0000","asset_prepayments","l10n_cu_chart_template_freelance","True","Grupo de Activos (10) - Activos Circulantes (10.1)"
-"account_tcp_1830000","Materias Primas","183.0000","asset_current","l10n_cu_chart_template_freelance","False","Grupo de Activos (10) - Activos Circulantes (10.1)"
-"account_tcp_1870000","Útiles, Herramientas y Otros","187.0000","asset_current","l10n_cu_chart_template_freelance","False","Grupo de Activos (10) - Activos Circulantes (10.1)"
-"account_tcp_1880000","Producción Terminada","188.0000","asset_current","l10n_cu_chart_template_freelance","False","Grupo de Activos (10) - Activos Circulantes (10.1)"
-"account_tcp_1890000","Mercancias para la Venta","189.0000","asset_current","l10n_cu_chart_template_freelance","False","Grupo de Activos (10) - Activos Circulantes (10.1)"
-"account_tcp_2000000","Activos Fijos Tangibles","200.0000","asset_fixed","l10n_cu_chart_template_freelance","False","Grupo de Activos (10) - Activos Fijos (10.2)"
-"account_tcp_2550000","Activos Fijos Intangibles","255.0000","asset_fixed","l10n_cu_chart_template_freelance","False","Grupo de Activos (10) - Activos Circulantes (10.1)"
-"account_tcp_2560000","Inversiones en Proceso","256.0000","asset_current","l10n_cu_chart_template_freelance","False","Grupo de Activos (10) - Activos Fijos (10.2)"
-"account_tcp_3000000","Depreciación de Activos Fijos Tangibles","300.0000","expense_depreciation","l10n_cu_chart_template_freelance","False","Grupo de Activos (10) - Cuentas Reguladoras de Activos (10.5)"
-"account_tcp_4050000","Cuentas por Pagar","405.0000","liability_payable","l10n_cu_chart_template_freelance","True","Grupo de Activos (10) - Activos Circulantes (10.1)"
-"account_tcp_4700000","Préstamos Bancarios a Corto Plazo","470.0000","liability_current","l10n_cu_chart_template_freelance","True","Grupo de Pasivos (20) - Pasivos Circulantes (20.1)"
-"account_tcp_5200000","Préstamos Bancarios a Largo Plazo","520.0000","liability_non_current","l10n_cu_chart_template_freelance","True","Grupo de Pasivos (20) - Pasivos Circulantes (20.1)"
-"account_tcp_6001000","Saldo al inicio del ejercicio","600.0010","equity","l10n_cu_chart_template_freelance","False","Grupo de Patrimonio (30) - Patrimonio del TCP"
-"account_tcp_6002000","Incrementos de aportes del TCP en el ejercicio contable","600.0020","equity","l10n_cu_chart_template_freelance","False","Grupo de Patrimonio (30) - Patrimonio del TCP"
-"account_tcp_6003000","Erogaciones efectuadas por el TCP en el ejercicio contable","600.0030","equity","l10n_cu_chart_template_freelance","False","Grupo de Patrimonio (30) - Patrimonio del TCP"
-"account_tcp_6004000","Pagos de Cuotas del Impuesto sobre Ingresos Personales","600.0040","equity","l10n_cu_chart_template_freelance","False","Grupo de Patrimonio (30) - Patrimonio del TCP"
-"account_tcp_6005000","Contribución a la Seguridad Social","600.0050","equity","l10n_cu_chart_template_freelance","False","Grupo de Patrimonio (30) - Patrimonio del TCP"
-"account_tcp_6100000","Utilidad Retenida","610.0000","equity","l10n_cu_chart_template_freelance","False","Grupo de Patrimonio (30) - Patrimonio del TCP"
-"account_tcp_6200000","Pérdida","620.0000","equity","l10n_cu_chart_template_freelance","False","Grupo de Patrimonio (30) - Patrimonio del TCP"
-"account_tcp_6000000","Patrimonio","600.0000","equity","l10n_cu_chart_template_freelance","False","Grupo de Activos (10) - Activos Circulantes (10.1)"
-"account_tcp_6991000","Transitoria del Inventario de entrada","699.0100","asset_current","l10n_cu_chart_template_freelance","True","Grupo de Activos (10) - Activos Circulantes (10.1)"
-"account_tcp_6992000","Transitoria del Inventario de salida","699.0200","asset_current","l10n_cu_chart_template_freelance","True","Grupo de Activos (10) - Activos Circulantes (10.1)"
-"account_tcp_7000000","Producción en Proceso","700.0000","asset_current","l10n_cu_chart_template_freelance","False","Grupo de Activos (10) - Activos Circulantes (10.1)"
-"account_tcp_8000000","Gastos de Operación","800.0000","expense","l10n_cu_chart_template_freelance","False","Grupo de Activos (10) - Activos Circulantes (10.1)"
-"account_tcp_8010000","Costo de Producion y Servicios","801.0000","expense","l10n_cu_chart_template_freelance","False","Grupo de Cuentas Nominales (40) - Cuentas Nominales Deudoras (40.1)"
-"account_tcp_8101000","Impuesto sobre las Ventas","810.0010","liability_current","l10n_cu_chart_template_freelance","False","Grupo de Cuentas Nominales (40) - Cuentas Nominales Deudoras (40.1)"
-"account_tcp_8102000","Impuesto sobre los Servicios Públicos","810.0020","liability_current","l10n_cu_chart_template_freelance","False","Grupo de Cuentas Nominales (40) - Cuentas Nominales Deudoras (40.1)"
-"account_tcp_8103000","Impuesto por la Utilización de la Fuerza de Trabajo","810.0030","liability_current","l10n_cu_chart_template_freelance","False","Grupo de Cuentas Nominales (40) - Cuentas Nominales Deudoras (40.1)"
-"account_tcp_8104000","Otros Impuestos y Tasas","810.0040","liability_current","l10n_cu_chart_template_freelance","False","Grupo de Cuentas Nominales (40) - Cuentas Nominales Deudoras (40.1)"
-"account_tcp_8650000","Otros Gastos","865.0000","expense","l10n_cu_chart_template_freelance","False","Grupo de Activos (10) - Activos Circulantes (10.1)"
-"account_tcp_9000000","Ventas","900.0000","income","l10n_cu_chart_template_freelance","False","Grupo de Activos (10) - Activos Circulantes (10.1)"
-"account_tcp_9001000","Ventas en PoS","900.0100","income","l10n_cu_chart_template_freelance","False","Grupo de Activos (10) - Activos Circulantes (10.1)"
-"account_tcp_9500000","Otros Ingresos","950.0000","income","l10n_cu_chart_template_freelance","False","Grupo de Activos (10) - Activos Circulantes (10.1)"
-"account_tcp_9990000","Resultados","999.0000","equity_unaffected","l10n_cu_chart_template_freelance","False","Cuentas de Cierres"
+id,name,code,account_type,chart_template_id/id,reconcile,note
+account_tcp_135,Cuentas por Cobrar,135,asset_receivable,l10n_cu_chart_template_freelance,True,Grupo de Activos (10) - Activos Circulantes (10.1)
+account_tcp_146,Pagos Anticipados,146,asset_prepayments,l10n_cu_chart_template_freelance,True,Grupo de Activos (10) - Activos Circulantes (10.1)
+account_tcp_200,Activos Fijos Tangibles,200,asset_fixed,l10n_cu_chart_template_freelance,False,Grupo de Activos (10) - Activos Fijos (10.2)
+account_tcp_256,Inversiones en Proceso,256,asset_current,l10n_cu_chart_template_freelance,False,Grupo de Activos (10) - Activos Fijos (10.2)
+account_tcp_300,Depreciación de Activos Fijos Tangibles,300,asset_current,l10n_cu_chart_template_freelance,False,Grupo de Activos (10) - Cuentas Reguladoras de Activos (10.5)
+account_tcp_600,Patrimonio,600,asset_current,l10n_cu_chart_template_freelance,False,Grupo de Activos (10) - Activos Circulantes (10.1)
+account_tcp_600001,Saldo al inicio del ejercicio,600.001,asset_current,l10n_cu_chart_template_freelance,False,Grupo de Patrimonio (30) - Patrimonio del TCP
+account_tcp_600002,Incrementos de aportes del TCP en el ejercicio contable,600.002,asset_current,l10n_cu_chart_template_freelance,False,Grupo de Patrimonio (30) - Patrimonio del TCP
+account_tcp_600003,Erogaciones efectuadas por el TCP en el ejercicio contable,600.003,asset_current,l10n_cu_chart_template_freelance,False,Grupo de Patrimonio (30) - Patrimonio del TCP
+account_tcp_600004,Pagos de Cuotas del Impuesto sobre Ingresos Personales,600.004,asset_current,l10n_cu_chart_template_freelance,False,Grupo de Patrimonio (30) - Patrimonio del TCP
+account_tcp_600005,Contribución a la Seguridad Social,600.005,asset_current,l10n_cu_chart_template_freelance,False,Grupo de Patrimonio (30) - Patrimonio del TCP
+account_tcp_610,Utilidad Retenida,610,asset_current,l10n_cu_chart_template_freelance,False,Grupo de Patrimonio (30) - Patrimonio del TCP
+account_tcp_620,Pérdida,620,asset_current,l10n_cu_chart_template_freelance,False,Grupo de Patrimonio (30) - Patrimonio del TCP
+account_tcp_700,Producción en Proceso,700,asset_current,l10n_cu_chart_template_freelance,False,Grupo de Activos (10) - Activos Circulantes (10.1)
+account_tcp_801,Costo de Producion y Servicios,801,asset_current,l10n_cu_chart_template_freelance,False,Grupo de Cuentas Nominales (40) - Cuentas Nominales Deudoras (40.1)
+account_tcp_810001,Impuesto sobre las Ventas,810.001,asset_current,l10n_cu_chart_template_freelance,False,Grupo de Cuentas Nominales (40) - Cuentas Nominales Deudoras (40.1)
+account_tcp_810002,Impuesto sobre los Servicios Públicos,810.002,asset_current,l10n_cu_chart_template_freelance,False,Grupo de Cuentas Nominales (40) - Cuentas Nominales Deudoras (40.1)
+account_tcp_810003,Impuesto por la Utilización de la Fuerza de Trabajo,810.003,asset_current,l10n_cu_chart_template_freelance,False,Grupo de Cuentas Nominales (40) - Cuentas Nominales Deudoras (40.1)
+account_tcp_810004,Otros Impuestos y Tasas,810.004,asset_current,l10n_cu_chart_template_freelance,False,Grupo de Cuentas Nominales (40) - Cuentas Nominales Deudoras (40.1)

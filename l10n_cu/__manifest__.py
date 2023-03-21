@@ -4,10 +4,10 @@
 # List of contributors:
 # Bernardo Yaser León Ávila <bernardo@idola.it>
 # Yunior Rafael Hernández Cabrera <yunior@idola.it>
-# Fidel Jimenez Sanzano <fjsanzano85@gmail.com>
 # Yusnel Rojas Garcia
 # Julio Smith
 # Segu
+# Javier Escobar
 
 {
     'name': 'Cuba - Contabilidad',
@@ -26,20 +26,21 @@
         'account',
     ],
     'data': [
-        'data/account_chart_data.xml',
-        'data/account.account.template-tcp.csv',
+        'data/account_chart_data.xml',        
         'data/account.account.template-common.csv',
+        'data/account.account.template-tcp.csv',
         'data/account.account.template-private.csv',
         'data/account.account.template-public.csv',
         'data/account_chart_post_data.xml',
         'data/account_group_template_data.xml',
-        'data/account_tax_template_data.xml',
-        'data/account_fiscal_position_template_data.xml',
-        'data/account_fiscal_position_tax_template_data.xml',
-        'data/account_chart_template_data.xml',
-        'data/res_cnae_data.xml',
+         # 'data/account_tax_template_data.xml',
+        # 'data/account_fiscal_position_template_data.xml',
+        # 'data/account_fiscal_position_tax_template_data.xml',
+        # 'data/account_chart_template_data.xml',
+        # 'data/res_cnae_data.xml',
         "views/account_views.xml",
         "views/res_company_views.xml",
+        "views/expense_element_views.xml",
         "security/ir.model.access.csv"
     ],
     'license': 'LGPL-3',
