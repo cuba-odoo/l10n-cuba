@@ -772,6 +772,241 @@
             <field name="zip">75500</field>
         </record>
 
+        <!-- BANDEC SUCURSALES HOLGUIN -->
+        <!--  Fuente  https://portal.bandec.cu/index.php/sucursales_ctrl/listar consultado 22/01/23 -->
+
+        <!-- BANDEC SUCURSALES GIBARA -->
+        <record id="BANDEC_6661" model="res.bank">
+            <field name="name">BANDEC 6661 Gibara</field>
+            <field name="bic">BDCRCUHH</field>
+            <field name="country" ref="base.cu"/>
+            <field name="active" eval="True"/>
+            <field name="street">Independencia No. 26 esquina a J.Peralta</field>
+            <field name="street2"></field>
+            <field name="res_municipality_id" ref="l10n_cu_address.municipio_3201"/>
+            <field name="state" ref="l10n_cu_address.state_32"/>
+            <field name="phone">024844105</field>
+            <field name="zip"></field>
+        </record>
+
+        <record id="BANDEC_6671" model="res.bank">
+            <field name="name">BANDEC 6671 Gibara</field>
+            <field name="bic">BDCRCUHH</field>
+            <field name="country" ref="base.cu"/>
+            <field name="active" eval="True"/>
+            <field name="street">Ave.26 No.2910. Velasco</field>
+            <field name="street2"></field>
+            <field name="res_municipality_id" ref="l10n_cu_address.municipio_3201"/>
+            <field name="state" ref="l10n_cu_address.state_32"/>
+            <field name="phone">024864415</field>
+            <field name="zip"></field>
+        </record>
+
+        <!-- BANDEC SUCURSALES RAFAEL FREIRE -->
+        <record id="BANDEC_6701" model="res.bank">
+            <field name="name">BANDEC 6701 Rafael Freire</field>
+            <field name="bic">BDCRCUHH</field>
+            <field name="country" ref="base.cu"/>
+            <field name="active" eval="True"/>
+            <field name="street">Calle 13 No.45 e/ 12 y 14</field>
+            <field name="street2"></field>
+            <field name="res_municipality_id" ref="l10n_cu_address.municipio_3202"/>
+            <field name="state" ref="l10n_cu_address.state_32"/>
+            <field name="phone">024850595</field>
+            <field name="zip"></field>
+        </record>
+        <!-- BANDEC SUCURSALES BANES -->
+        <record id="BANDEC_6761" model="res.bank">
+            <field name="name">BANDEC 6761 Banes</field>
+            <field name="bic">BDCRCUHH</field>
+            <field name="country" ref="base.cu"/>
+            <field name="active" eval="True"/>
+            <field name="street">Gral. Marrero No.1127</field>
+            <field name="street2"></field>
+            <field name="res_municipality_id" ref="l10n_cu_address.municipio_3203"/>
+            <field name="state" ref="l10n_cu_address.state_32"/>
+            <field name="phone">024803140</field>
+            <field name="zip"></field>
+        </record>
+        <!-- BANDEC SUCURSALES ANTILLA -->
+        <record id="BANDEC_6781" model="res.bank">
+            <field name="name">BANDEC 6781 Antilla</field>
+            <field name="bic">BDCRCUHH</field>
+            <field name="country" ref="base.cu"/>
+            <field name="active" eval="True"/>
+            <field name="street">Ave. 28 de enero No.50</field>
+            <field name="street2"></field>
+            <field name="res_municipality_id" ref="l10n_cu_address.municipio_3204"/>
+            <field name="state" ref="l10n_cu_address.state_32"/>
+            <field name="phone">024888116</field>
+            <field name="zip"></field>
+        </record>
+        <!-- BANDEC SUCURSALES BAGUANOS -->
+        <record id="BANDEC_6821" model="res.bank">
+            <field name="name">BANDEC 6821 Báguanos</field>
+            <field name="bic">BDCRCUHH</field>
+            <field name="country" ref="base.cu"/>
+            <field name="active" eval="True"/>
+            <field name="street">Calle C No. 48 e/ 5 y 7</field>
+            <field name="street2"></field>
+            <field name="res_municipality_id" ref="l10n_cu_address.municipio_3205"/>
+            <field name="state" ref="l10n_cu_address.state_32"/>
+            <field name="phone">024377203</field>
+            <field name="zip"></field>
+        </record>
+        <!-- BANDEC SUCURSALES HOLGUIN -->
+        <record id="BANDEC_6651" model="res.bank">
+            <field name="name">BANDEC 6651 Holguín</field>
+            <field name="bic">BDCRCUHH</field>
+            <field name="country" ref="base.cu"/>
+            <field name="active" eval="True"/>
+            <field name="street">Maceo No. 136A esq. a Aguilera</field>
+            <field name="street2"></field>
+            <field name="res_municipality_id" ref="l10n_cu_address.municipio_3206"/>
+            <field name="state" ref="l10n_cu_address.state_32"/>
+            <field name="phone">024421127</field>
+            <field name="zip"></field>
+        </record>
+        <record id="BANDEC_6961" model="res.bank">
+            <field name="name">BANDEC 6961 Holguín</field>
+            <field name="bic">BDCRCUHH</field>
+            <field name="country" ref="base.cu"/>
+            <field name="active" eval="True"/>
+            <field name="street">Arias No. 159 (altos) e/ Libertad y Maceo</field>
+            <field name="street2"></field>
+            <field name="res_municipality_id" ref="l10n_cu_address.municipio_3206"/>
+            <field name="state" ref="l10n_cu_address.state_32"/>
+            <field name="phone">024461389</field>
+            <field name="zip"></field>
+        </record>
+        <record id="BANDEC_6971" model="res.bank">
+            <field name="name">BANDEC 6971 Holguín</field>
+            <field name="bic">BDCRCUHH</field>
+            <field name="country" ref="base.cu"/>
+            <field name="active" eval="True"/>
+            <field name="street">Ave. de los Libertadores Km 3 1/2</field>
+            <field name="street2"></field>
+            <field name="res_municipality_id" ref="l10n_cu_address.municipio_3206"/>
+            <field name="state" ref="l10n_cu_address.state_32"/>
+            <field name="phone">024482193</field>
+            <field name="zip"></field>
+        </record>
+        <record id="BANDEC_6981" model="res.bank">
+            <field name="name">BANDEC 6981 Holguín</field>
+            <field name="bic">BDCRCUHH</field>
+            <field name="country" ref="base.cu"/>
+            <field name="active" eval="True"/>
+            <field name="street">Circunvalación Carretera Guirabo</field>
+            <field name="street2"></field>
+            <field name="res_municipality_id" ref="l10n_cu_address.municipio_3206"/>
+            <field name="state" ref="l10n_cu_address.state_32"/>
+            <field name="phone">024421521</field>
+            <field name="zip"></field>
+        </record>
+        <record id="BANDEC_7001" model="res.bank">
+            <field name="name">BANDEC 7001 Holguín</field>
+            <field name="bic">BDCRCUHH</field>
+            <field name="country" ref="base.cu"/>
+            <field name="active" eval="True"/>
+            <field name="street">Avenida de los Estudiantes.Maceo</field>
+            <field name="street2"></field>
+            <field name="res_municipality_id" ref="l10n_cu_address.municipio_3206"/>
+            <field name="state" ref="l10n_cu_address.state_32"/>
+            <field name="phone">024339217</field>
+            <field name="zip"></field>
+        </record>
+        <!-- BANDEC SUCURSALES CALIXTO CARGIA -->
+        <record id="BANDEC_6951" model="res.bank">
+            <field name="name">BANDEC 6951 Calixto García</field>
+            <field name="bic">BDCRCUHH</field>
+            <field name="country" ref="base.cu"/>
+            <field name="active" eval="True"/>
+            <field name="street">Dionisio San Román No. 28 esquina a Martí</field>
+            <field name="street2"></field>
+            <field name="res_municipality_id" ref="l10n_cu_address.municipio_3207"/>
+            <field name="state" ref="l10n_cu_address.state_32"/>
+            <field name="phone">024357342</field>
+            <field name="zip"></field>
+        </record>
+         <!-- BANDEC SUCURSALES URBANO NORIS -->
+        <record id="BANDEC_7041" model="res.bank">
+            <field name="name">BANDEC 7041 Urbano Noris</field>
+            <field name="bic">BDCRCUHH</field>
+            <field name="country" ref="base.cu"/>
+            <field name="active" eval="True"/>
+            <field name="street">Calle 12 No.102 Sur</field>
+            <field name="street2"></field>
+            <field name="res_municipality_id" ref="l10n_cu_address.municipio_3209"/>
+            <field name="state" ref="l10n_cu_address.state_32"/>
+            <field name="phone">024381236</field>
+            <field name="zip"></field>
+        </record>
+         <!-- BANDEC SUCURSALES CUETO -->
+        <record id="BANDEC_7081" model="res.bank">
+            <field name="name">BANDEC 7081 Cueto</field>
+            <field name="bic">BDCRCUHH</field>
+            <field name="country" ref="base.cu"/>
+            <field name="active" eval="True"/>
+            <field name="street">Narciso Fernández</field>
+            <field name="street2"></field>
+            <field name="res_municipality_id" ref="l10n_cu_address.municipio_3210"/>
+            <field name="state" ref="l10n_cu_address.state_32"/>
+            <field name="phone">024298360</field>
+            <field name="zip"></field>
+        </record>
+         <!-- BANDEC SUCURSALES MAYARI -->
+        <record id="BANDEC_7081" model="res.bank">
+            <field name="name">BANDEC 7141 Mayarí</field>
+            <field name="bic">BDCRCUHH</field>
+            <field name="country" ref="base.cu"/>
+            <field name="active" eval="True"/>
+            <field name="street">Leyte Vidal No. 168</field>
+            <field name="street2"></field>
+            <field name="res_municipality_id" ref="l10n_cu_address.municipio_3211"/>
+            <field name="state" ref="l10n_cu_address.state_32"/>
+            <field name="phone">024502620</field>
+            <field name="zip"></field>
+        </record>
+        <!-- BANDEC SUCURSALES FRANK PAIS -->
+        <record id="BANDEC_7181" model="res.bank">
+            <field name="name">BANDEC 7181 Frank País</field>
+            <field name="bic">BDCRCUHH</field>
+            <field name="country" ref="base.cu"/>
+            <field name="active" eval="True"/>
+            <field name="street">Libertad No. 715</field>
+            <field name="street2"></field>
+            <field name="res_municipality_id" ref="l10n_cu_address.municipio_3211"/>
+            <field name="state" ref="l10n_cu_address.state_32"/>
+            <field name="phone">024588195</field>
+            <field name="zip"></field>
+        </record>
+        <!-- BANDEC SUCURSALES SAGUA -->
+        <record id="BANDEC_7241" model="res.bank">
+            <field name="name">BANDEC 7241 Sagua de Tánamo</field>
+            <field name="bic">BDCRCUHH</field>
+            <field name="country" ref="base.cu"/>
+            <field name="active" eval="True"/>
+            <field name="street">Los Maceos No. 46</field>
+            <field name="street2"></field>
+            <field name="res_municipality_id" ref="l10n_cu_address.municipio_3213"/>
+            <field name="state" ref="l10n_cu_address.state_32"/>
+            <field name="phone">024587191</field>
+            <field name="zip"></field>
+        </record>
+        <!-- BANDEC SUCURSALES MOA -->
+        <record id="BANDEC_7281" model="res.bank">
+            <field name="name">BANDEC 7281 Moa</field>
+            <field name="bic">BDCRCUHH</field>
+            <field name="country" ref="base.cu"/>
+            <field name="active" eval="True"/>
+            <field name="street">Camilo Cienfuegos s/n altos</field>
+            <field name="street2"></field>
+            <field name="res_municipality_id" ref="l10n_cu_address.municipio_3214"/>
+            <field name="state" ref="l10n_cu_address.state_32"/>
+            <field name="phone">024604446</field>
+            <field name="zip"></field>
+        </record>
+
         <!-- BANDEC SUCURSALES ISLA DE LA JUVENTUD-->
         <record id="BANDEC_8981" model="res.bank">
             <field name="name">BANDEC-8981</field>
