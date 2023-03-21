@@ -4,13 +4,14 @@
 # List of contributors:
 # Bernardo Yaser León Ávila <bernardo@idola.it>
 # Yunior Rafael Hernández Cabrera <yunior@idola.it>
+# Fidel Jimenez Sanzano <fjsanzano85@gmail.com>
 # Yusnel Rojas Garcia
 # Julio Smith
 # Segu
 
 {
     'name': 'Cuba - Contabilidad',
-    'version': '15.0',
+    'version': '16.0',
     'author': 'Idola Odoo Team, Comunidad cubana de Odoo ',
     'category': 'Accounting/Localizations/Account Charts',
     'description': """
