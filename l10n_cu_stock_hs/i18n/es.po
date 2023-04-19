@@ -1,0 +1,219 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* l10n_cu_stock_hs
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 15.0-20220520\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-03-31 18:31+0000\n"
+"PO-Revision-Date: 2023-03-31 19:50-0400\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"X-Generator: Poedit 3.2.2\n"
+
+#. module: l10n_cu_stock_hs
+#: model:ir.model.fields,field_description:l10n_cu_stock_hs.field_hs_code__type
+msgid " H.S Type"
+msgstr "Tipo de H.S."
+
+#. module: l10n_cu_stock_hs
+#: model_terms:ir.ui.view,arch_db:l10n_cu_stock_hs.hs_code_view_form
+msgid "<span class=\"o_stat_text\">Product Categs</span>"
+msgstr "<span class=\"o_stat_text\">Categorías de Producto</span>"
+
+#. module: l10n_cu_stock_hs
+#: model_terms:ir.ui.view,arch_db:l10n_cu_stock_hs.hs_code_view_form
+msgid "<span class=\"o_stat_text\">Products</span>"
+msgstr "<span class=\"o_stat_text\">Productos</span>"
+
+#. module: l10n_cu_stock_hs
+#: model:ir.model.fields,field_description:l10n_cu_stock_hs.field_hs_code__active
+msgid "Active"
+msgstr "Activo"
+
+#. module: l10n_cu_stock_hs
+#: model_terms:ir.ui.view,arch_db:l10n_cu_stock_hs.hs_code_view_search
+msgid "Archived"
+msgstr "Archivado"
+
+#. module: l10n_cu_stock_hs
+#: model:ir.model.fields,field_description:l10n_cu_stock_hs.field_hs_code__child_id
+msgid "Child Hs code"
+msgstr "Código HS Hijo"
+
+#. module: l10n_cu_stock_hs
+#: model:ir.model.fields,field_description:l10n_cu_stock_hs.field_hs_code__code
+msgid "Code"
+msgstr "Código"
+
+#. module: l10n_cu_stock_hs
+#: model:ir.model.fields,field_description:l10n_cu_stock_hs.field_hs_code__company_id
+msgid "Company"
+msgstr "Compañía"
+
+#. module: l10n_cu_stock_hs
+#: model:ir.model.fields,field_description:l10n_cu_stock_hs.field_hs_code__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: l10n_cu_stock_hs
+#: model:ir.model.fields,field_description:l10n_cu_stock_hs.field_hs_code__create_date
+msgid "Created on"
+msgstr "Creado el"
+
+#. module: l10n_cu_stock_hs
+#: model:ir.model.fields,field_description:l10n_cu_stock_hs.field_hs_code__description
+msgid "Description"
+msgstr "Descripción"
+
+#. module: l10n_cu_stock_hs
+#: model:ir.model.fields,field_description:l10n_cu_stock_hs.field_hs_code__display_name
+msgid "Display Name"
+msgstr "Nombre para Mostrar"
+
+#. module: l10n_cu_stock_hs
+#: model:ir.model.fields,field_description:l10n_cu_stock_hs.field_hs_code__general_duty
+msgid "General Duty"
+msgstr "Impuesto General"
+
+#. module: l10n_cu_stock_hs
+#: model:ir.model,name:l10n_cu_stock_hs.model_hs_code
+#: model:ir.model.fields,field_description:l10n_cu_stock_hs.field_product_category__hs_code_id
+#: model:ir.model.fields,field_description:l10n_cu_stock_hs.field_product_product__hs_code_id
+#: model:ir.model.fields,field_description:l10n_cu_stock_hs.field_product_template__hs_code_id
+#: model_terms:ir.ui.view,arch_db:l10n_cu_stock_hs.hs_code_view_form
+#: model_terms:ir.ui.view,arch_db:l10n_cu_stock_hs.product_template_search_view
+msgid "H.S. Code"
+msgstr "Código H.S."
+
+#. module: l10n_cu_stock_hs
+#: model:ir.actions.act_window,name:l10n_cu_stock_hs.hs_code_action
+#: model:ir.ui.menu,name:l10n_cu_stock_hs.hs_code_menu
+#: model_terms:ir.ui.view,arch_db:l10n_cu_stock_hs.hs_code_view_tree
+msgid "H.S. Codes"
+msgstr "Códigos H.S."
+
+#. module: l10n_cu_stock_hs
+#: model:ir.model.fields,help:l10n_cu_stock_hs.field_product_category__hs_code_id
+msgid ""
+"Harmonised System Code. If this code is not set on the product itself, it "
+"will be read here, on the related product category."
+msgstr ""
+"Código del Sistema Armonizado. Si este código no está configurado en el "
+"producto en sí, se leerá aquí, en la categoría del producto relacionado."
+
+#. module: l10n_cu_stock_hs
+#: model:ir.model.fields,help:l10n_cu_stock_hs.field_product_product__hs_code_id
+#: model:ir.model.fields,help:l10n_cu_stock_hs.field_product_template__hs_code_id
+msgid ""
+"Harmonised System Code. Nomenclature is available from the World Customs "
+"Organisation, see http://www.wcoomd.org/. You can leave this field empty "
+"and configure the H.S. code on the product category."
+msgstr ""
+"Código del Sistema Armonizado. La nomenclatura está disponible en la "
+"Organización Mundial de Aduanas, consulte http://www.wcoomd.org/. Puede "
+"dejar este campo vacío y configurar el código H.S. en la categoría del "
+"producto."
+
+#. module: l10n_cu_stock_hs
+#: model:ir.model.fields,field_description:l10n_cu_stock_hs.field_hs_code__id
+msgid "ID"
+msgstr "ID"
+
+#. module: l10n_cu_stock_hs
+#: model_terms:ir.ui.view,arch_db:l10n_cu_stock_hs.product_category_form_view
+msgid "Import/Export Properties"
+msgstr "Importar/Exportar Propiedades"
+
+#. module: l10n_cu_stock_hs
+#: model:ir.model.fields,field_description:l10n_cu_stock_hs.field_hs_code____last_update
+msgid "Last Modified on"
+msgstr "Última Modificación el"
+
+#. module: l10n_cu_stock_hs
+#: model:ir.model.fields,field_description:l10n_cu_stock_hs.field_hs_code__write_uid
+msgid "Last Updated by"
+msgstr "Última Actualización por"
+
+#. module: l10n_cu_stock_hs
+#: model:ir.model.fields,field_description:l10n_cu_stock_hs.field_hs_code__write_date
+msgid "Last Updated on"
+msgstr "Última Actualización el"
+
+#. module: l10n_cu_stock_hs
+#: model:ir.model.fields,field_description:l10n_cu_stock_hs.field_hs_code__nmf_duty
+msgid "NMF duty"
+msgstr "Impuesto NMF"
+
+#. module: l10n_cu_stock_hs
+#: model:ir.model.fields.selection,name:l10n_cu_stock_hs.selection__hs_code__type__normal
+msgid "Normal"
+msgstr "Normal"
+
+#. module: l10n_cu_stock_hs
+#: model:ir.model.fields,field_description:l10n_cu_stock_hs.field_hs_code__parent_id
+msgid "Parent Hs. code"
+msgstr "Código H.S. Padre"
+
+#. module: l10n_cu_stock_hs
+#: model:ir.model,name:l10n_cu_stock_hs.model_product_product
+msgid "Product"
+msgstr "Producto"
+
+#. module: l10n_cu_stock_hs
+#: model:ir.model.fields,field_description:l10n_cu_stock_hs.field_hs_code__product_categ_count
+msgid "Product Categ Count"
+msgstr "Cantidad de  Categorías de Productos"
+
+#. module: l10n_cu_stock_hs
+#: model:ir.actions.act_window,name:l10n_cu_stock_hs.product_categ_hs_code_action
+#: model:ir.model.fields,field_description:l10n_cu_stock_hs.field_hs_code__product_categ_ids
+msgid "Product Categories"
+msgstr "Categorías de Productos"
+
+#. module: l10n_cu_stock_hs
+#: model:ir.model,name:l10n_cu_stock_hs.model_product_category
+msgid "Product Category"
+msgstr "Categoría de producto"
+
+#. module: l10n_cu_stock_hs
+#: model:ir.model,name:l10n_cu_stock_hs.model_product_template
+msgid "Product Template"
+msgstr "Plantilla de Producto"
+
+#. module: l10n_cu_stock_hs
+#: model:ir.model.fields,field_description:l10n_cu_stock_hs.field_hs_code__product_tmpl_count
+msgid "Product Tmpl Count"
+msgstr "Cantidad de Plantillas de Productos"
+
+#. module: l10n_cu_stock_hs
+#: model:ir.actions.act_window,name:l10n_cu_stock_hs.product_template_hs_code_action
+#: model:ir.model.fields,field_description:l10n_cu_stock_hs.field_hs_code__product_tmpl_ids
+msgid "Products"
+msgstr "Productos"
+
+#. module: l10n_cu_stock_hs
+#: model_terms:ir.ui.view,arch_db:l10n_cu_stock_hs.hs_code_view_search
+msgid "Search H.S. Codes"
+msgstr "Códigos de Búsqueda H.S."
+
+#. module: l10n_cu_stock_hs
+#: model:ir.model.constraint,message:l10n_cu_stock_hs.constraint_hs_code_code_company_uniq
+msgid "This code already exists for this company !"
+msgstr "¡Este código ya existe para esta empresa!"
+
+#. module: l10n_cu_stock_hs
+#: model:ir.model.fields,field_description:l10n_cu_stock_hs.field_hs_code__UM
+msgid "UM"
+msgstr "UM"
+
+#. module: l10n_cu_stock_hs
+#: model:ir.model.fields.selection,name:l10n_cu_stock_hs.selection__hs_code__type__view
+msgid "View"
+msgstr "Vista"

@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_product_fam_recambio_manager,product_fam_recambio.product.fam.recambio,model_product_fam_recambio,stock.group_stock_manager,1,1,1,1
+access_product_material_manager,product_material.product.material,model_product_material,stock.group_stock_manager,1,1,1,1
+access_res_partner_nfm_manager,res_partner_nfm.res.partner.nfm,model_res_partner_nfm,stock.group_stock_manager,1,1,1,1

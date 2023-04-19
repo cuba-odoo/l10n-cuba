@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Odoo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+          integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+    <link href="https://apps.odoocdn.com/web/content/7247337-184ae0e/1/web.assets_frontend.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<!-- odoo description page css -->
+
+<body>
+<!-- Header -->
+<header class="py-2">
+    <div class="row align-items-center">
+        <div class="col-12 col-md-4">
+                    <span class="btn pr-2">
+                        <img alt="ksolves-logo" src="images/Ksolves_logo.png" style="height:50px">
+                    </span>
+        </div>
+        <div class="col-6 col-md">
+            <div class="text-md-right">
+                <a class="btn btn-sm py-2 px-md-3" href="https://apps.odoo.com/apps/modules/browse?search=ksolves"
+                   style="font-size: 14px; background-color: #203038;color:#fff;"
+                   target="_blank"><i class="fa fa-list-alt mr-1"></i>
+                    <span class="d-none d-sm-inline">Ksolves</span> All Apps
+                </a>
+            </div>
+        </div>
+        <div class="col-6 col-md-5 text-md-right">
+            <span class="btn btn-sm py-2 px-md-3 mr-1"
+                  style="font-size: 13px;font-size: 14px; font-weight: 500;background-color: #203038;color:#fff;"><i
+                    class="fa fa-check mr-1"></i> Community</span>
+            <span class="btn btn-sm py-2 px-md-3 mr-1"
+                  style="font-size: 13px;font-size: 14px; font-weight: 500;background-color: #203038;color:#fff;"><i
+                    class="fa fa-check mr-1"></i> Enterprise</span>
+            <!--                    <span class="btn btn-sm py-2 px-md-3" style="font-size: 13px;font-size: 14px; font-weight: 500;background-color: #203038;color:#fff;"><i class="fa fa-check mr-1"></i> Enterprise</span>-->
+        </div>
+    </div>
+    <hr class="mb-0" />
+</header>
+<div id="loempia_tabs" class="container pb-5 py-4 oe_styling_v8"
+     style="color: #0b3b52;font-family: 'Open sans','sans-serif';">
+    <div class="row mb-4">
+        <div class="col-12 col-12 text-center text-md-left">
+            <h1 class="text-center" style="color: #203038;"><u><span style="color: #232a61;">Universal</span> Discount</u></h1>
+        </div>
+        <div class="col-12 col-md-6 text-center text-md-right">
+            <img class="img-fluid" src="./img/html-css-js.png" alt="">
+        </div>
+    </div>
+    <div class="row align-items-center mb-4">
+        <div class="col-12">
+            <h2 class="pr-md-5 mb-4 text-center" style="font-size: 24px;color: #3c3c3c;">
+                This application provides Odoo users with the feature to calculate Universal Discount on
+                sale and purchase order.
+                Universal Discount can be calculated in percentage or by amount.
+                This module works on the Sale order, Purchase Order, Customer invoice, Customer Credit Note, Vendor's bill and Vendor's bill Refund.
+            </h2>
+            <h4 class="font-weight-bold mb-3" style="font-size: 20px"><span style="color:#E13B34;">Hot</span> Features</h4>
+            <ul class="list-unstyled" >
+                <li class="mb-2">
+                    <i class="fa fa-free-code-camp" style="font-size:18px;color:#E13B34;" ></i><span style="font-size:18px" class="font-weight-bold ml-2">By Percentage or Amount</span>
+                    <div style="padding-left: 31px" >Can be calculated in percentage or by amount </div>
+                </li>
+                <li class="mb-2">
+                    <i class="fa fa-free-code-camp" style="font-size:18px;color:#E13B34;" ></i><span style="font-size:18px" class="font-weight-bold ml-2">Calculation on Sale Order</span>
+                    <div style="padding-left: 31px" > Can be Calculated on Sale Order</div>
+                </li>
+                <li>
+                    <i class="fa fa-free-code-camp" style="font-size:18px;color:#E13B34;"></i><span
+                        style="font-size:18px" class="font-weight-bold ml-2">Calculation on Purchase order</span>
+                    <div style="padding-left: 31px">Can be Calculated on Purchase Order
+                    </div>
+                </li>
+                <li>
+                    <i class="fa fa-free-code-camp" style="font-size:18px;color:#E13B34;"></i><span
+                        style="font-size:18px" class="font-weight-bold ml-2">Calculation On Customer's Invoice</span>
+                    <div style="padding-left: 31px">
+                        Can be Calculated on Customer's invoice.
+                    </div>
+                </li>
+                <li>
+                    <i class="fa fa-free-code-camp" style="font-size:18px;color:#E13B34;"></i><span style="font-size:18px" class="font-weight-bold ml-2">Calculation on Customer's credit notes</span>
+                    <div style="padding-left: 31px" > Can be Calculated on Customer's credit notes</div>
+                </li>
+                <li>
+                    <i class="fa fa-free-code-camp" style="font-size:18px;color:#E13B34;"></i><span
+                        style="font-size:18px" class="font-weight-bold ml-2">Calculation on Vendor's Bills</span>
+                    <div style="padding-left: 31px">Can be Calculated on Vendor's Bills.
+                    </div>
+                </li>
+                <li>
+                    <i class="fa fa-free-code-camp" style="font-size:18px;color:#E13B34;"></i><span
+                        style="font-size:18px" class="font-weight-bold ml-2">Calculation on Vendor's bill Refund</span>
+                    <div style="padding-left: 31px">Can be Calculated on Vendor's bill Refund
+                    </div>
+                </li>
+                <li>
+                    <i class="fa fa-free-code-camp" style="font-size:18px;color:#E13B34;"></i><span
+                        style="font-size:18px" class="font-weight-bold ml-2">Unique Accounting entry in Journals</span>
+                    <div style="padding-left: 31px">Separate Accounting entry in the Journals
+                    </div>
+                </li>
+                <li>
+                    <i class="fa fa-free-code-camp" style="font-size:18px;color:#E13B34;"></i><span
+                        style="font-size:18px" class="font-weight-bold ml-2">Compatible with Ksolves' Universal Tax</span>
+                    <div style="padding-left: 31px">
+                        Fully Compatible with Ksolves' Universal Tax application
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+       <!-- tab view start -->
+    <div>
+        <div class="justify-content-center d-flex">
+            <!-- Nav pills -->
+            <ul class="nav o_tab_nav"
+                style="border: 1px solid #203038;  border-radius: 6px 6px;overflow:hidden;background-color:transparent">
+                <li class="nav-item" style="border-radius: 6px 0 0 6px;">
+                    <a class="nav-link active px-md-4 list-group-item-beta-dark list-group-item-action"
+                       data-toggle="pill" href="#Features"
+                       style="border-radius: 6px 0 0 6px; border-right: 1px solid#203038;opacity: 1;padding:16px;">Features</a>
+                </li>
+<!--                <li class="nav-item">-->
+<!--                    <a class="nav-link px-md-4 list-group-item-beta-dark list-group-item-action" data-toggle="pill"-->
+<!--                       href="#Release"-->
+<!--                       style="border-radius: 0px; border-right: 1px solid #203038;opacity: 1;padding:16px;">Releases</a>-->
+<!--                </li>-->
+                <!--          <li class="nav-item">-->
+                <!--            <a class="nav-link px-md-4" data-toggle="pill" href="#UserGuide"  style="border-radius: 0px; border-right: 1px solid #203038;opacity: 1;padding:16px;">User Guide</a>-->
+                <!--          </li>-->
+                <li class="nav-item">
+                    <a class="nav-link px-md-4 list-group-item-beta-dark list-group-item-action" data-toggle="pill"
+                       href="#FAQ" style="border-radius: 0px;opacity: 1;padding:16px;">FAQ's</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Tab panes -->
+        <div class="tab-content py-5">
+            <div class="tab-pane active" id="Features">
+                <div class="row">
+                    <div class="col-12 col-md-4">
+                        <ul class="nav o_tab_nav"
+                            style="text-transform: capitalize; font-size: 18px; border-radius: 6px 6px;background-color: transparent">
+                            <li class="nav-item w-100 mb-3">
+                                <a class="nav-link d-flex align-items-center px-3 py-2 list-group-item-beta-dark list-group-item-action active"
+                                   data-toggle="pill" href="#Advance1"
+                                   style="border-radius:30px; border: 1px solid #203038;opacity:1;letter-spacing: inherit;text-transform: capitalize;transition: 0.3s ease-in-out;"><i
+                                        class="fa fa-money mr-2" style="font-size: 20px;"></i>Universal Discount by Amount</a>
+                            </li>
+                            <li class="nav-item w-100 mb-3">
+                                <a class="nav-link d-flex align-items-center px-3 py-2 list-group-item-beta-dark list-group-item-action"
+                                   data-toggle="pill" href="#Advance2"
+                                   style="border-radius:30px; border: 1px solid #203038;opacity:1;letter-spacing: inherit;text-transform: capitalize;transition: 0.3s ease-in-out;"><i
+                                        class="fa fa-percent mr-2" style="font-size: 20px;"></i>Universal Discount by Percentage</a>
+                            </li>
+                            <li class="nav-item w-100 mb-3">
+                                <a class="nav-link d-flex align-items-center px-3 py-2 list-group-item-beta-dark list-group-item-action"
+                                   data-toggle="pill" href="#Advance3"
+                                   style="border-radius:30px; border: 1px solid #203038;opacity:1;letter-spacing: inherit;text-transform: capitalize;transition: 0.3s ease-in-out;"><i
+                                        class="fa fa-user  · mr-2" style="font-size: 20px;"></i>Separate Accounting Entry</a>
+                            </li>
+                            <li class="nav-item w-100 mb-3">
+                                <a class="nav-link d-flex align-items-center px-3 py-2 list-group-item-beta-dark list-group-item-action"
+                                   data-toggle="pill" href="#Advance4"
+                                   style="border-radius:30px; border: 1px solid #203038;opacity:1;letter-spacing: inherit;text-transform: capitalize;transition: 0.3s ease-in-out;"><i
+                                        class="fa fa-briefcase  · mr-2" style="font-size: 20px;"></i>Working</a>
+                            </li>
+                            <li class="nav-item w-100 mb-3">
+                                <a class="nav-link d-flex align-items-center px-3 py-2 list-group-item-beta-dark list-group-item-action"
+                                   data-toggle="pill" href="#Advance5"
+                                   style="border-radius:30px; border: 1px solid #203038;opacity:1;letter-spacing: inherit;text-transform: capitalize;transition: 0.3s ease-in-out;"><i
+                                        class="fa fa-cog   · mr-2" style="font-size: 20px;"></i>Setup</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="col-12 col-md-8 pt-4 pt-md-0">
+                        <div class="tab-content h-100">
+                            <div class="tab-pane active" id="Advance1">
+                                <h4>Universal Discount by Amount</h4>
+                                <div class="pb-4" style="font-size: 18px;">Now You Can Get Universal Discount by Amount
+                                </div>
+                                <div class="pb-1">
+                                    <img src="preview_images/img/img3.png" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="Advance2">
+                                <h4>Universal Discount by Percentage</h4>
+                                <div class="pb-4" style="font-size: 18px;">You can Calculate Universal Discount by Percentage.</div>
+                                <div class="pb-1">
+                                    <img src="preview_images/img/img2.png" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="Advance3">
+                                <h4>Separate Accounting Entry</h4>
+                                <div class="pb-4" style="font-size: 18px;">Universal Discount Creates a Separate Accounting Entry.
+                                </div>
+                                <div class="pb-1">
+                                    <img src="preview_images/img/img21.png" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="Advance4">
+                                <h4>UNIVERSAL DISCOUNT WORKING</h4>
+
+                                <div class="pb-4" style="font-size: 18px;">Calculate Discount value on total sale/purchase order in regular Odoo process.</div>
+                                <div class="pb-1">
+                                    <img src="preview_images/process/img1.png" alt="" class="img-fluid">
+                                </div>
+                                </br>
+                                <div class="pb-4" style="font-size: 18px;">Universal Discount can be given in percentage or amount value.</div>
+                                <div class="pb-1">
+                                    <img src="preview_images/process/img2.png" alt="" class="img-fluid">
+                                </div>
+                                </br>
+                                <div class="pb-4" style="font-size: 18px;">Universal Discount can be given by amount value.</div>
+                                <div class="pb-1">
+                                    <img src="preview_images/process/img3.png" alt="" class="img-fluid">
+                                </div>
+                                </br>
+                                <div class="pb-4" style="font-size: 18px;">Universal Discount is displayed in the report also.</div>
+                                <div class="pb-1">
+                                    <img src="preview_images/process/img12.png" alt="" class="img-fluid">
+                                </div>
+                                </br>
+                                <div class="pb-4" style="font-size: 18px;">Accounting entries corresponding to the Universal Discount.</div>
+                                <div class="pb-1">
+                                    <img src="preview_images/process/img14.png" alt="" class="img-fluid">
+                                </div>
+                                </br>
+                                <div class="pb-4" style="font-size: 18px;">Universal discount is fully compatible to the Ksolves' universal Tax. Here discount is calculated first and then the tax is calculated on the net amount.</div>
+                                <div class="pb-1">
+                                    <img src="preview_images/process/img17.png" alt="" class="img-fluid">
+                                </div>
+                                </br>
+                                <div class="pb-4" style="font-size: 18px;">Accounting entries with for the Universal Discount and Universal Tax.</div>
+                                <div class="pb-1">
+                                    <img src="preview_images/process/img19.png" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="Advance5">
+                                <h4>UNIVERSAL DISCOUNT INSTALLATION</h4>
+                                <div class="pb-4" style="font-size: 18px;">This application works fine for both community version as well as enterprise version.
+                                </div>
+
+                                <div class="pb-4" style="font-size: 18px;">Once you have bought this Application from the Odoo Apps store, you will notice that you have got a folder named "Universal Discount".
+                                    Please check the version before downloading.
+                                </div>
+
+                                <div class="pb-4" style="font-size: 18px;">You will be required to add this folder into your addons directory, followed by updating your App List and install it. Update App List option is enabled by
+                                    clicking on the Settings > General Settings > Developer Tools > Activate the developer mode
+                                </div>
+
+                                <div class="pb-1">
+                                    <img src="setup/img24.png" alt="" class="img-fluid">
+                                </div>
+
+                                <div class="pb-4" style="font-size: 18px;">Once this is done, go to:</div>
+
+                                <div class="pb-4" style="font-size: 18px;">Settings > invoicing > Universal DiscountSettings > invoicing > Universal Discount
+                                </div>
+
+                                <div class="pb-4" style="font-size: 18px;">Under Universal Discount heading, click on the check box for Activate Universal Discount.
+                                </div>
+                                <div class="pb-1">
+                                    <img src="setup/img28.png" alt="" class="img-fluid">
+                                </div>
+                                <div class="pb-4" style="font-size: 18px;">Click on the Purchase Discount Account and Sales Discount Account and save the settings.
+                                </div>
+                                <div class="pb-1">
+                                    <img src="setup/img29.png" alt="" class="img-fluid">
+                                </div>
+
+                                <div class="pb-4" style="font-size: 18px;">Click on Users and Companies and click on the checkbox for Show Full Accounting Features to show the accounting entries.
+                                </div>
+                                <div class="pb-1">
+                                    <img src="setup/img30.png" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="Release">
+                <section class="card mb-5" style="border: none;">
+                    <div class="card-body pb-5">
+                        <div class="text-center pb-5 pt-4">
+                            <h2 style="font-weight: 600; font-size: 2.5rem;">Our Releases</h2>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-sm-8" style="position: relative;">
+                                <div class="d-flex mb-4" style="position: relative;">
+                                    <div class="list-group-item-beta-dark list-group-item-action active w-auto"
+                                         style="min-width: 65px;left: 0;box-sizing: border-box;padding: 10px;text-align: center; color: #fff;border-top-left-radius: 5px;border-bottom-left-radius: 5px;border: 1px solid#203038;">
+                                        <span style="font-size: 20px; font-weight: 700;display: block;">10th</span>
+                                        <span style="display: block;font-size: 0.8em;text-transform: uppercase;">December, 2020 </span>
+                                    </div>
+                                    <div class="w-100"
+                                         style="padding: 1.5rem 2rem;border-top-right-radius: 10px;box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07);background-color: #fff;border-bottom-right-radius: 10px;border: 1px solid#203038;">
+                                        <div class="timeline__content">
+                                            <h3 style="font-weight: 400; margin-bottom:20px">Latest Release
+                                                1.2.1</h3>
+                                            <p style="color:#666; margin-bottom: 10px;">
+                                                <span
+                                                        style="font-size:12px;position:relative;">■</span>
+                                                <b>Fix</b> - Journal Items in Invoice, Credit and Debit balance on changing Payment Terms.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-8" style="position: relative;">
+                                <div class="d-flex mb-4" style="position: relative;">
+                                    <div class="list-group-item-beta-dark list-group-item-action active w-auto"
+                                         style="min-width: 65px;left: 0;box-sizing: border-box;padding: 10px;text-align: center; color: #fff;border-top-left-radius: 5px;border-bottom-left-radius: 5px;border: 1px solid#203038;">
+                                        <span style="font-size: 20px; font-weight: 700;display: block;">12th</span>
+                                        <span style="display: block;font-size: 0.8em;text-transform: uppercase;">March, 2019 </span>
+                                    </div>
+                                    <div class="w-100"
+                                         style="padding: 1.5rem 2rem;border-top-right-radius: 10px;box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07);background-color: #fff;border-bottom-right-radius: 10px;border: 1px solid#203038;">
+                                        <div class="timeline__content">
+                                            <h3 style="font-weight: 400; margin-bottom:20px">Release
+                                                1.2.0</h3>
+                                            <p style="color:#666; margin-bottom: 10px;">
+                                                <span
+                                                        style="font-size:12px;position:relative;">■</span>
+                                                <b>Enhancement</b> - Universal Discount now support Multi Companies.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="tab-pane fade" id="UserGuide">
+                User Guide
+            </div>
+            <div class="tab-pane fade" id="FAQ">
+                <div class="card-body p-0">
+                    <div class="text-center pb-5">
+                        <h2 style="color: #0b3b52; font-weight: 600; font-size: 2.5rem;">Frequently Asked Question</h2>
+                    </div>
+                    <div class="s_faq mx-2 mx-md-5 mb-5">
+                        <div id="accordion">
+                            <div class="card shadow mb-4" style="border: none; border-left: 10px solid #203038;">
+                                <div class="card-header py-4 pl-4 pr-5 bg-white position-relative d-flex justify-content-between"
+                                     style="border: none;">
+                                    <div class="pr-5" style="font-size: 1.6rem; font-weight: 600; color: #0b3b52;">Need
+                                        some customization in this app, whom to contact?
+                                    </div>
+                                    <a class="card-link" data-toggle="collapse" href="#faqOne" style="
+                                      width: 48px;
+                                      height: 40px;
+                                      line-height: 11px;
+                                      background-color: rgba(8, 101, 99, 0.1);
+                                      border-radius: 2px;
+                                      padding: 0;
+                                      font-size: 24px;"></a>
+                                </div>
+                                <div id="faqOne" class="collapse" data-parent="#accordion">
+                                    <div class="card-body pt-0 pl-4">
+                                        <div style="font-size: 1.4rem; color: #0b3b52;">
+                                            Please drop email at sales@ksolves.com or raise a ticket through Odoo store
+                                            itself.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card shadow mb-4" style="border: none; border-left: 10px solid #203038;">
+                                <div class="card-header py-4 pl-4 pr-5 bg-white position-relative d-flex justify-content-between"
+                                     style="border: none;">
+                                    <div class="pr-5" style="font-size: 1.6rem; font-weight: 600; color: #0b3b52;">Is this app compatible with Odoo Enterprise?
+                                    </div>
+                                    <a class="card-link collapsed" data-toggle="collapse" href="#faqThree" style="
+                                      width: 48px;
+                                      height: 40px;
+                                      line-height: 11px;
+                                      background-color: rgba(8, 101, 99, 0.1);
+                                      border-radius: 2px;
+                                      padding: 0;
+                                      font-size: 24px;"></a>
+                                </div>
+                                <div id="faqThree" class="collapse" data-parent="#accordion">
+                                    <div class="card-body pt-0 pl-4">
+                                        <div style="font-size: 1.4rem; color: #0b3b52;">
+                                            Yes, our app works with Odoo Enterprise as well as Community.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- tab view / end -->
+    </div>
+
+    <section class="mb-5">
+        <div class="text-center p-2 d-flex justify-content-center align-items-center col-lg-9"
+            style="background-color: #0b3b52;
+            box-shadow: 1px 2px 11px rgba(0, 0, 0, 0), 1px 11px 12px rgba(0, 0, 0, 0.22);margin: auto;">
+            <h3 class="font-weight-bold mb-0 mr-3 text-light">Note: </h3>
+            <h5 class="mb-0 text-light" style="margin-top: 2px;">
+                Extensively Tested on Odoo Vanilla with Ubuntu OS
+            </h5>
+        </div>
+    </section>
+    <section class="card shadow-sm mb-5">
+        <div class="card-body">
+            <h2 class="my-3 w-100 text-center" style="color: #0b3b52; font-weight: 400;">Ksolves Suggested Apps</h2>
+            <div class="text-center w-100 mb-4">
+                <img alt="ksolves" src="images/line.png">
+            </div>
+            <div id="demo" class="carousel slide pb-5 col-12 col-lg-8 mx-auto" data-ride="carousel">
+                <!-- Indicators -->
+                <ul class="carousel-indicators">
+                    <li data-target="#demo" style="background-color: #0b3b52;" data-slide-to="0" class="active"></li>
+                    <li data-target="#demo" style="background-color: #0b3b52;" data-slide-to="1"></li>
+                </ul>
+                <!-- The slideshow -->
+                <div class="carousel-inner pt-4 pt-lg-5 ">
+                    <div class="carousel-item px-4 active" style="min-height: 354px;">
+                        <div class="row pb-sm-4 no-lg-gutters">
+                            <div class="col-6 col-sm-3 text-center">
+                                <a href="https://apps.odoo.com/apps/modules/12.0/ks_dashboard_ninja/" class="d-block"
+                                   target="_blank" style="text-decoration: none;">
+                                    <img src="images/app-logo/dashboard-ninja.png" alt="dashboard-ninja">
+                                    <div class="card-body text-center p-0 mt-3 mb-3 mb-lg-0">
+                                        <h5 class="card-text m-0" style="font-size: 16px; font-weight: 600">Dashboard
+                                            <br> Ninja</h5>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-6 col-sm-3 text-center">
+                                <a href="https://apps.odoo.com/apps/modules/12.0/ks_list_view_manager/" target="_blank"
+                                   style="text-decoration: none;">
+                                    <img src="images/app-logo/list-view-manager.png" alt="list-view-manager">
+                                    <div class="card-body text-center p-0 mt-3 mb-3 mb-lg-0">
+                                        <h5 class="card-text m-0" style="font-size: 16px; font-weight: 600">List View
+                                            <br> Manager</h5>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-6 col-sm-3 text-center">
+                                <a href="https://apps.odoo.com/apps/modules/12.0/ks_sticky_pivot_view/" class="d-block"
+                                   target="_blank" style="text-decoration: none;">
+                                    <img src="images/app-logo/sticky-pivot-view.png" alt="sticky-pivot-view">
+                                    <div class="card-body text-center p-0 mt-3 mb-3 mb-lg-0">
+                                        <h5 class="card-text m-0" style="font-size: 16px; font-weight: 600">Sticky <br>Pivot
+                                            View</h5>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-6 col-sm-3 text-center">
+                                <a href="https://apps.odoo.com/apps/modules/11.0/ks_oneclick_sale_purchase/"
+                                   target="_blank" style="text-decoration: none;">
+                                    <img src="images/app-logo/one-click-sale.png" alt="list-view-manager">
+                                    <div class="card-body text-center p-0 mt-3 mb-3 mb-lg-0">
+                                        <h5 class="card-text m-0" style="font-size: 16px; font-weight: 600">One Click
+                                            <br>Sale/Purchase</h5>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row pt-3 pb-4 no-gutters">
+                            <div class="col-6 col-sm-3 text-center">
+                                <a href="https://apps.odoo.com/apps/modules/12.0/ks_theme_base/" target="_blank"
+                                   style="text-decoration: none;">
+                                    <img src="images/app-logo/ksolves-theme-base.png" alt="ksolves-theme-base">
+                                    <div class="card-body text-center p-0 mt-3 mb-3 mb-lg-0">
+                                        <h5 class="card-text m-0" style="font-size: 16px; font-weight: 600">Ksolves <br>Theme
+                                            Base</h5>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-6 col-sm-3 text-center">
+                                <a href="https://apps.odoo.com/apps/modules/12.0/ks_pos_order_notes/" class="d-block"
+                                   target="_blank" style="text-decoration: none;">
+                                    <img src="images/app-logo/pos-per-item.png" alt="pos-per-item">
+                                    <div class="card-body text-center p-0 mt-3 mb-3 mb-lg-0">
+                                        <h5 class="card-text m-0" style="font-size: 16px; font-weight: 600">POS Per Item
+                                            <br>&amp; Order Note</h5>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-6 col-sm-3 text-center">
+                                <a href="https://apps.odoo.com/apps/modules/12.0/ks_pos_dashboard_ninja/"
+                                   target="_blank" style="text-decoration: none;">
+                                    <img src="images/app-logo/pos_dashboard_ninja.png" alt="pos_dashboard_ninja">
+                                    <div class="card-body text-center p-0 mt-3 mb-3 mb-lg-0">
+                                        <h5 class="card-text m-0" style="font-size: 16px; font-weight: 600">POS <br>Dashboard
+                                            Ninja</h5>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-6 col-sm-3 text-center">
+                                <a href="https://apps.odoo.com/apps/modules/12.0/web_listview_sticky_header/"
+                                   class="d-block" target="_blank" style="text-decoration: none;">
+                                    <img src="images/app-logo/listview_sticky_header.png" alt="listview_sticky_header">
+                                    <div class="card-body text-center p-0 mt-3 mb-3 mb-lg-0">
+                                        <h5 class="card-text m-0" style="font-size: 16px; font-weight: 600">List View
+                                            <br>Sticky Header</h5>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item px-4" style="min-height: 354px;">
+                        <div class="row pb-sm-4 no-gutters">
+                            <div class="col-6 col-sm-3 text-center">
+                                <a href="https://apps.odoo.com/apps/modules/12.0/ks_pos_low_stock_alert/"
+                                   target="_blank" style="text-decoration: none;">
+                                    <img src="images/app-logo/pos_low_stock_alert.png" alt="POS Low Stock Alert">
+                                    <div class="card-body text-center p-0 mt-3 mb-3 mb-lg-0">
+                                        <h5 class="card-text m-0" style="font-size: 16px; font-weight: 600">POS Low<br>Stock
+                                            Alert</h5>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-6 col-sm-3 text-center">
+                                <a href="https://apps.odoo.com/apps/modules/12.0/ks_office365_calendar/" class="d-block"
+                                   target="_blank" style="text-decoration: none;">
+                                    <img src="images/app-logo/office365_calendar.png" alt="Office365 Calendar">
+                                    <div class="card-body text-center p-0 mt-3 mb-3 mb-lg-0">
+                                        <h5 class="card-text m-0" style="font-size: 16px; font-weight: 600">Office
+                                            365<br>Calendar</h5>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-6 col-sm-3 text-center">
+                                <a href="https://apps.odoo.com/apps/modules/12.0/ks_chat_edit_and_delete/"
+                                   target="_blank" style="text-decoration: none;">
+                                    <img src="images/app-logo/chat_edit_and_delete.png" alt="chat_edit_and_delete">
+                                    <div class="card-body text-center p-0 mt-3 mb-3 mb-lg-0">
+                                        <h5 class="card-text m-0" style="font-size: 16px; font-weight: 600">Odoo Chat
+                                            <br>Edit/Delete</h5>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-6 col-sm-3 text-center">
+                                <a href="https://apps.odoo.com/apps/modules/12.0/ks_office365_contacts/" class="d-block"
+                                   target="_blank" style="text-decoration: none;">
+                                    <img src="images/app-logo/office365_contact.png" alt="Office365 Contacts">
+                                    <div class="card-body text-center p-0 mt-3 mb-3 mb-lg-0">
+                                        <h5 class="card-text m-0" style="font-size: 16px; font-weight: 600">Office
+                                            365<br>Contacts</h5>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row pt-3 pb-4 no-gutters">
+                            <div class="col-6 col-sm-3 text-center">
+                                <a href="https://apps.odoo.com/apps/modules/13.0/ks_product_variant_extra_price/"
+                                   target="_blank" style="text-decoration: none;">
+                                    <img src="images/app-logo/pvep.png" alt="product_variant_extra_price">
+                                    <div class="card-body text-center p-0 mt-3 mb-3 mb-lg-0">
+                                        <h5 class="card-text m-0" style="font-size: 16px; font-weight: 600">Product
+                                            Variant <br>Extra Price</h5>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-6 col-sm-3 text-center">
+                                <a href="https://apps.odoo.com/apps/modules/12.0/ks_toggle_switch/" class="d-block"
+                                   target="_blank" style="text-decoration: none;">
+                                    <img src="images/app-logo/toggle_switch.png" alt="toggle_switch">
+                                    <div class="card-body text-center p-0 mt-3 mb-3 mb-lg-0">
+                                        <h5 class="card-text m-0" style="font-size: 16px; font-weight: 600">Toggle <br>Switch
+                                        </h5>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-6 col-sm-3 text-center">
+                                <a href="https://apps.odoo.com/apps/modules/12.0/odoo_paytm_gateway/" target="_blank"
+                                   style="text-decoration: none;">
+                                    <img src="images/app-logo/odoo_paytm_gateway.png" alt="odoo_paytm_gateway">
+                                    <div class="card-body text-center p-0 mt-3 mb-3 mb-lg-0">
+                                        <h5 class="card-text m-0" style="font-size: 16px; font-weight: 600">Odoo Paytm
+                                            <br>Gateway</h5>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-6 col-sm-3 text-center">
+                                <a href="https://apps.odoo.com/apps/modules/12.0/ks_low_stock_alert/" class="d-block"
+                                   target="_blank" style="text-decoration: none;">
+                                    <img src="images/app-logo/low_stock_alert.png" alt="low_stock_alert">
+                                    <div class="card-body text-center p-0 mt-3 mb-3 mb-lg-0">
+                                        <h5 class="card-text m-0" style="font-size: 16px; font-weight: 600">Low
+                                            Stock<br>Alert</h5>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Left and right controls -->
+                <a class="carousel-control-prev" href="#demo" data-slide="prev" style="left: -5%; width: 60px;">
+                    <i class="fa fa-angle-left" style="font-size: 5vw;color: #333;"></i>
+                </a>
+                <a class="carousel-control-next" href="#demo" data-slide="next" style="right: -5%; width: 60px;">
+                    <i class="fa fa-angle-right" style="font-size: 5vw;color: #333;"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ksolves Odoo Services -->
+    <div class="row pb-sm-5 px-1 pb-4">
+        <h2 class="w-100 text-center my-3" style="font-weight: 400;">Ksolves Odoo Services</h2>
+        <div class="text-center w-100 mb-4">
+            <img src="images/line.png" alt="ksolves">
+        </div>
+        <div class="col-12 col-sm-6 col-md-4" style="margin-bottom: 20px;">
+            <div class="card text-center bg-info" style="min-height: 90px;">
+                <div class="pt-4">
+                    <img src="images/support.png" alt="support">
+                </div>
+                <div class="px-3 pt-3 pb-2">
+                    <h5 class="card-title text-white" style="font-size: 19px; font-weight: 400;">Odoo Implementation</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4" style="margin-bottom: 20px;">
+            <div class="card text-center" style="min-height: 90px; background-color: #2ebeb4">
+                <div class="pt-4">
+                    <img src="images/apps.png" alt="apps">
+                </div>
+                <div class="px-3 pt-3 pb-2">
+                    <h5 class="card-title text-white" style="font-size: 19px; font-weight: 400;">Odoo Community Apps</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4" style="margin-bottom: 20px;">
+            <div class="card text-center" style="min-height: 90px;background-color: #00a393; background-color: #98b1c4; ">
+                <div class="pt-4">
+                    <img src="images/support2.png" alt="support2">
+                </div>
+                <div class="px-3 pt-3 pb-2">
+                    <h5 class="card-title text-white" style="font-size: 19px; font-weight: 400;">Odoo Support &amp; Maintenance</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4" style="margin-bottom: 20px;">
+            <div class="card text-center" style="min-height: 90px; background-color: #2f4e6f;">
+                <div class="pt-4">
+                    <img src="images/custom.png" alt="custom">
+                </div>
+                <div class="px-3 pt-3 pb-2">
+                    <h5 class="card-title text-white" style="font-size: 19px; font-weight: 400;">Odoo Customization</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4" style="margin-bottom: 20px;">
+            <div class="card text-center" style="min-height: 90px; background-color: #f89c24;">
+                <div class="pt-4">
+                    <img src="images/integrated.png" alt="integrated">
+                </div>
+                <div class="px-3 pt-3 pb-2">
+                    <h5 class="card-title text-white" style="font-size: 19px; font-weight: 400;">Odoo Integration Services</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4" style="margin-bottom: 20px;">
+            <div class="card text-center bg-primary" style="min-height: 90px;">
+                <div class="pt-4">
+                    <img src="images/develop.png" alt="develop">
+                </div>
+                <div class="px-3 pt-3 pb-2">
+                    <h5 class="card-title text-white" style="font-size: 19px; font-weight: 400;">Odoo Developer Outsourcing</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row no-gutters mx-0 justify-content-sm-between justify-content-center"
+         style="border-top: 1px solid black;">
+        <div class="mb-sm-0 mb-3 d-flex align-items-center">
+            <img src="images/letter.svg" style="width: 35px;height: 35px;margin-right: 20px">
+            <span style="font-size: 18px;">sales@ksolves.com</span>
+        </div>
+        <div class="d-flex align-items-center">
+            <span style="font-size: 18px;">+91 120-4299799‬</span>
+            <img src="images/smartphone.svg" style="width: 35px;height: 35px;margin-left: 20px;">
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+
+

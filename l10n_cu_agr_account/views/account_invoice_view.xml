@@ -1,0 +1,43 @@
+<odoo>
+    <record id="agr_move_form" model="ir.ui.view">
+        <field name="name">account.agr.invoice.form</field>
+        <field name="model">account.move</field>
+        <field name="inherit_id" ref="account.view_move_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//form/sheet/notebook/page[1]/field[@name='invoice_line_ids']/tree/field[@name='product_id']" position="before">
+                <field name="product_arancel_id" readonly="1" options="{'no_open': True, 'no_create': True}" class="oe_inline" string="Arancel"/>
+            </xpath>
+            <xpath expr="//form/sheet/notebook/page[1]/field[@name='invoice_line_ids']/tree/field[@name='quantity']" position="before">
+                <field name="bultos" string="Bultos"/>
+                <field name="weight" string="P/B"/>
+                <field name="net_weight" string="P/N"/>
+            </xpath>
+            <xpath expr="//form/sheet/notebook/page[1]/field[@name='invoice_line_ids']/tree/field[@name='price_subtotal']" position="after">
+                <field name="origen" class="oe_inline"/>
+            </xpath>
+
+            <xpath expr="//form/sheet/notebook/page[1]/field[1]" position="after">
+                <group class="oe_left">
+                    <field name="no_bultos"/>
+                    <field name="net_weight_total"/>
+                    <field name="weight_brute_total"/>
+                </group>
+            </xpath>
+        </field>
+    </record>
+    <record id="agr_view_move_line_form" model="ir.ui.view">
+        <field name="name">account.agr.invoice.line.form</field>
+        <field name="model">account.move.line</field>
+        <field name="inherit_id" ref="account.view_move_line_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//form/sheet/notebook/page[1]/group[1]/group[7]/field[@name='product_id']" position="after">
+                <field name="bultos" string="Bultos"/>
+                <field name="weight" string="P/B"/>
+                <field name="net_weight" string="P/N"/>
+            </xpath>
+            <xpath expr="//form/sheet/notebook/page[1]/group[1]/group[2]/field[1]" position="after">
+                <field name="origen" string="Origen" />
+            </xpath>
+        </field>
+    </record>
+</odoo>

@@ -1,0 +1,145 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* universal_discount
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-11-13 12:03+0000\n"
+"PO-Revision-Date: 2019-11-13 12:03+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: universal_discount
+#: model_terms:ir.ui.view,arch_db:universal_discount.ks_res_config_settings_view_form
+msgid "<span class=\"o_form_label\">Accounts</span>"
+msgstr ""
+
+#. module: universal_discount
+#: model_terms:ir.ui.view,arch_db:universal_discount.ks_global_discount_invoice_report
+#: model_terms:ir.ui.view,arch_db:universal_discount.ks_global_discount_purchase_report
+#: model_terms:ir.ui.view,arch_db:universal_discount.ks_global_discount_sale_report
+msgid "<span>Universal Discount </span>"
+msgstr ""
+
+#. module: universal_discount
+#: model:ir.model.fields,field_description:universal_discount.field_res_config_settings__ks_enable_discount
+msgid "Activate Universal Discount"
+msgstr ""
+
+#. module: universal_discount
+#: model_terms:ir.ui.view,arch_db:universal_discount.ks_res_config_settings_view_form
+msgid "Activate Universal discount on all modules."
+msgstr ""
+
+#. module: universal_discount
+#: model:ir.model.fields.selection,name:universal_discount.selection__account_move__ks_global_discount_type__amount
+#: model:ir.model.fields.selection,name:universal_discount.selection__purchase_order__ks_global_discount_type__amount
+#: model:ir.model.fields.selection,name:universal_discount.selection__sale_order__ks_global_discount_type__amount
+msgid "Amount"
+msgstr ""
+
+#. module: universal_discount
+#: model:ir.model,name:universal_discount.model_res_config_settings
+msgid "Config Settings"
+msgstr ""
+
+#. module: universal_discount
+#: model:ir.model,name:universal_discount.model_account_move
+msgid "Journal Entries"
+msgstr ""
+
+#. module: universal_discount
+#: model:ir.model.fields,field_description:universal_discount.field_res_config_settings__ks_accounting_present
+msgid "Ks Accounting Present"
+msgstr ""
+
+#. module: universal_discount
+#: model:ir.model.fields,field_description:universal_discount.field_account_move__ks_enable_discount
+#: model:ir.model.fields,field_description:universal_discount.field_purchase_order__ks_enable_discount
+#: model:ir.model.fields,field_description:universal_discount.field_sale_order__ks_enable_discount
+msgid "Ks Enable Discount"
+msgstr ""
+
+#. module: universal_discount
+#: model:ir.model.fields,field_description:universal_discount.field_account_move__ks_purchase_discount_account
+msgid "Ks Purchase Discount Account"
+msgstr ""
+
+#. module: universal_discount
+#: model:ir.model.fields,field_description:universal_discount.field_account_move__ks_sales_discount_account
+msgid "Ks Sales Discount Account"
+msgstr ""
+
+#. module: universal_discount
+#: model:ir.model.fields.selection,name:universal_discount.selection__account_move__ks_global_discount_type__percent
+#: model:ir.model.fields.selection,name:universal_discount.selection__purchase_order__ks_global_discount_type__percent
+#: model:ir.model.fields.selection,name:universal_discount.selection__sale_order__ks_global_discount_type__percent
+msgid "Percentage"
+msgstr ""
+
+#. module: universal_discount
+#: model:ir.model.fields,field_description:universal_discount.field_res_config_settings__ks_purchase_discount_account
+msgid "Purchase Discount Account"
+msgstr ""
+
+#. module: universal_discount
+#: model:ir.model,name:universal_discount.model_purchase_order
+msgid "Purchase Order"
+msgstr ""
+
+#. module: universal_discount
+#: model:ir.model.fields,field_description:universal_discount.field_res_config_settings__ks_sales_discount_account
+msgid "Sales Discount Account"
+msgstr ""
+
+#. module: universal_discount
+#: model:ir.model,name:universal_discount.model_sale_order
+msgid "Sales Order"
+msgstr ""
+
+#. module: universal_discount
+#: model_terms:ir.ui.view,arch_db:universal_discount.ks_res_config_settings_view_form
+msgid "Set default Universal discount accounts for sale and purchase order."
+msgstr ""
+
+#. module: universal_discount
+#: model:ir.model.fields,field_description:universal_discount.field_account_move__ks_amount_discount
+#: model:ir.model.fields,field_description:universal_discount.field_account_move__ks_global_discount_rate
+#: model:ir.model.fields,field_description:universal_discount.field_purchase_order__ks_amount_discount
+#: model:ir.model.fields,field_description:universal_discount.field_purchase_order__ks_global_discount_rate
+#: model:ir.model.fields,field_description:universal_discount.field_sale_order__ks_amount_discount
+#: model:ir.model.fields,field_description:universal_discount.field_sale_order__ks_global_discount_rate
+#: model_terms:ir.ui.view,arch_db:universal_discount.ks_res_config_settings_view_form
+msgid "Universal Discount"
+msgstr ""
+
+#. module: universal_discount
+#: model_terms:ir.ui.view,arch_db:universal_discount.ks_global_discount_invoice_view_form
+msgid "Universal Discount :"
+msgstr ""
+
+#. module: universal_discount
+#: model:ir.model.fields,field_description:universal_discount.field_account_move__ks_global_discount_type
+#: model:ir.model.fields,field_description:universal_discount.field_purchase_order__ks_global_discount_type
+#: model:ir.model.fields,field_description:universal_discount.field_sale_order__ks_global_discount_type
+msgid "Universal Discount Type"
+msgstr ""
+
+#. module: universal_discount
+#: model_terms:ir.ui.view,arch_db:universal_discount.ks_discount_sale_order_form_inherited
+#: model_terms:ir.ui.view,arch_db:universal_discount.ks_global_discount_invoice_view_form
+#: model_terms:ir.ui.view,arch_db:universal_discount.ks_global_discount_purchase_view_form
+msgid "Universal Discount Type:"
+msgstr ""
+
+#. module: universal_discount
+#: model_terms:ir.ui.view,arch_db:universal_discount.ks_discount_sale_order_form_inherited
+#: model_terms:ir.ui.view,arch_db:universal_discount.ks_global_discount_purchase_view_form
+msgid "Universal Discount:"
+msgstr ""

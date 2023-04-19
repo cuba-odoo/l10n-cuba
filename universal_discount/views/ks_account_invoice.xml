@@ -1,0 +1,33 @@
+<odoo>
+    <data>
+
+        <record id="ks_global_discount_invoice_view_form" model="ir.ui.view">
+            <field name="name">ks.global.discount.account.move.form</field>
+            <field name="model">account.move</field>
+            <field name="inherit_id" ref="account.view_move_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//form/sheet/notebook/page[1]/group" position="after">
+                    <div class="ks_container">
+                        <field name="ks_enable_discount" invisible="1"/>
+                        <field name="ks_amount_discount" invisible="1"/>
+                        <label for="ks_global_discount_type" string="Universal Discount Type:"
+                               attrs="{'invisible':[('ks_enable_discount','!=',True),('ks_amount_discount','=',0)]}"/>
+                        <field name="ks_global_discount_type" class="oe_inline"
+                               attrs="{'invisible':[('ks_enable_discount','!=',True),('ks_amount_discount','=',0)],'readonly':['|',('ks_enable_discount','!=',True),('state', 'in', ['posted', 'cancel'])]}"/>
+                    </div>
+                    <div class="ks_container">
+                        <label for="ks_global_discount_rate" string="Universal Discount :"
+                               attrs="{'invisible':[('ks_enable_discount','!=',True),('ks_amount_discount','=',0)]}"/>
+                        <field name="ks_global_discount_rate" class="oe_inline"
+                               attrs="{'invisible':[('ks_enable_discount','!=',True),('ks_amount_discount','=',0)],'readonly':['|','|',('ks_enable_discount','!=',True),('state', 'in', ['posted', 'cancel']), ('ks_global_discount_type', 'in', [None, False])]}"/>
+                    </div>
+                </xpath>
+                <xpath expr="//field[@name='tax_totals_json']" position="after">
+                    <field name="ks_amount_discount" attrs="{'invisible':[('ks_enable_discount','!=',True),('ks_amount_discount','=',0)]}" />
+                </xpath>
+            </field>
+        </record>
+
+    </data>
+</odoo>
+

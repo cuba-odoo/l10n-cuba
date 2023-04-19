@@ -1,0 +1,435 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* l10n_cu_agr_stock
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 15.0-20220520\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-03-31 18:31+0000\n"
+"PO-Revision-Date: 2023-03-31 21:35-0400\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"X-Generator: Poedit 3.2.2\n"
+
+#. module: l10n_cu_agr_stock
+#: model:ir.model.constraint,message:l10n_cu_agr_stock.constraint_stock_logistic_NoRemisionEntrada_uniq
+#, fuzzy
+msgid "A No Remision Entrada can only be assigned to one picking !"
+msgstr "¡Una Entrada Sin Remisión sólo puede asignarse a un picking!"
+
+#. module: l10n_cu_agr_stock
+#: model:ir.model.fields,field_description:l10n_cu_agr_stock.field_product_arancel__stock_move_ids
+#: model:ir.model.fields,field_description:l10n_cu_agr_stock.field_stock_move__product_arancel_id
+#: model_terms:ir.ui.view,arch_db:l10n_cu_agr_stock.view_logistic_picking_form
+msgid "Arancel"
+msgstr "Arancel"
+
+#. module: l10n_cu_agr_stock
+#: model:ir.model,name:l10n_cu_agr_stock.model_product_arancel
+msgid "Arancel of customs"
+msgstr "Arancel de Aduana"
+
+#. module: l10n_cu_agr_stock
+#: model:ir.model.fields,help:l10n_cu_agr_stock.field_stock_logistic__NoBultos
+#: model:ir.model.fields,help:l10n_cu_agr_stock.field_stock_reception_report__NoBultos
+msgid "Cantidad de Bultos recibidos"
+msgstr ""
+
+#. module: l10n_cu_agr_stock
+#: model_terms:ir.ui.view,arch_db:l10n_cu_agr_stock.view_company_form
+msgid "Cod. Depositante"
+msgstr ""
+
+#. module: l10n_cu_agr_stock
+#: model:ir.model.fields,field_description:l10n_cu_agr_stock.field_product_fam_recambio__code
+#: model:ir.model.fields,field_description:l10n_cu_agr_stock.field_product_material__code
+#: model:ir.model.fields,field_description:l10n_cu_agr_stock.field_res_partner_nfm__code
+msgid "Code"
+msgstr "Código"
+
+#. module: l10n_cu_agr_stock
+#: model_terms:ir.ui.view,arch_db:l10n_cu_agr_stock.view_product_fam_recambio_form
+#: model_terms:ir.ui.view,arch_db:l10n_cu_agr_stock.view_product_material_form
+msgid "Codigo"
+msgstr ""
+
+#. module: l10n_cu_agr_stock
+#: model:ir.model.fields,help:l10n_cu_agr_stock.field_res_company__cod_depositante
+msgid "Codigo del SUA"
+msgstr ""
+
+#. module: l10n_cu_agr_stock
+#: model:ir.model.fields,field_description:l10n_cu_agr_stock.field_res_company__cod_depositante
+msgid "Codigo depositante"
+msgstr ""
+
+#. module: l10n_cu_agr_stock
+#: model_terms:ir.ui.view,arch_db:l10n_cu_agr_stock.view_company_form
+msgid "Codigo segun SUA"
+msgstr ""
+
+#. module: l10n_cu_agr_stock
+#: model:ir.model,name:l10n_cu_agr_stock.model_res_company
+msgid "Companies"
+msgstr "Compañías"
+
+#. module: l10n_cu_agr_stock
+#: model:ir.model,name:l10n_cu_agr_stock.model_res_partner
+msgid "Contact"
+msgstr "Contacto"
+
+#. module: l10n_cu_agr_stock
+#: model:ir.model.fields,field_description:l10n_cu_agr_stock.field_product_fam_recambio__create_uid
+#: model:ir.model.fields,field_description:l10n_cu_agr_stock.field_product_material__create_uid
+#: model:ir.model.fields,field_description:l10n_cu_agr_stock.field_res_partner_nfm__create_uid
+#: model:ir.model.fields,field_description:l10n_cu_agr_stock.field_stock_logistic__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: l10n_cu_agr_stock
+#: model:ir.model.fields,field_description:l10n_cu_agr_stock.field_product_fam_recambio__create_date
+#: model:ir.model.fields,field_description:l10n_cu_agr_stock.field_product_material__create_date
+#: model:ir.model.fields,field_description:l10n_cu_agr_stock.field_res_partner_nfm__create_date
+#: model:ir.model.fields,field_description:l10n_cu_agr_stock.field_stock_logistic__create_date
+msgid "Created on"
+msgstr "Creado el"
+
+#. module: l10n_cu_agr_stock
+#: model:ir.model.fields,field_description:l10n_cu_agr_stock.field_stock_warehouse__code_num
+#: model_terms:ir.ui.view,arch_db:l10n_cu_agr_stock.cu_agr__view_warehouse
+msgid "Código"
+msgstr ""
+
+#. module: l10n_cu_agr_stock
+#: model:ir.model.fields,help:l10n_cu_agr_stock.field_stock_warehouse__code_num
+msgid "Código númerico del Depósito"
+msgstr ""
+
+#. module: l10n_cu_agr_stock
+#: model:ir.model.fields,field_description:l10n_cu_agr_stock.field_product_fam_recambio__display_name
+#: model:ir.model.fields,field_description:l10n_cu_agr_stock.field_product_material__display_name
+#: model:ir.model.fields,field_description:l10n_cu_agr_stock.field_res_partner_nfm__display_name
+#: model:ir.model.fields,field_description:l10n_cu_agr_stock.field_stock_logistic__display_name
+msgid "Display Name"
+msgstr "Nombre para Mostrar"
+
+#. module: l10n_cu_agr_stock
+#: model:ir.model.fields,field_description:l10n_cu_agr_stock.field_stock_logistic__FactProveedor
+#: model:ir.model.fields,field_description:l10n_cu_agr_stock.field_stock_reception_report__FactProveedor
+msgid "Fact. Proveedor"
+msgstr ""
+
+#. module: l10n_cu_agr_stock
+#: model:ir.actions.act_window,name:l10n_cu_agr_stock.product_fam_recambio_list_action
+#: model:ir.ui.menu,name:l10n_cu_agr_stock.product_fam_recambio_menu
+#: model_terms:ir.ui.view,arch_db:l10n_cu_agr_stock.product_fam_recambio_form_view
+#: model_terms:ir.ui.view,arch_db:l10n_cu_agr_stock.product_template_form_fam_recambio_add
+#: model_terms:ir.ui.view,arch_db:l10n_cu_agr_stock.view_product_fam_recambio_tree
+msgid "Fam. Recambio"
+msgstr ""
+
+#. module: l10n_cu_agr_stock
+#: model_terms:ir.ui.view,arch_db:l10n_cu_agr_stock.view_product_fam_recambio_tree
+msgid "Fam. Recambio List"
+msgstr ""
+
+#. module: l10n_cu_agr_stock
+#: model:ir.model.fields,field_description:l10n_cu_agr_stock.field_product_product__product_fam_recambio_id
+#: model:ir.model.fields,field_description:l10n_cu_agr_stock.field_product_template__product_fam_recambio_id
+#: model_terms:ir.ui.view,arch_db:l10n_cu_agr_stock.product_fam_recambio_form_view
+#: model_terms:ir.ui.view,arch_db:l10n_cu_agr_stock.product_template_form_fam_recambio_add
+msgid "Familia Recambio"
+msgstr ""
+
+#. module: l10n_cu_agr_stock
+#: model_terms:ir.ui.view,arch_db:l10n_cu_agr_stock.view_product_fam_recambio_form
+msgid "Familia Recambio (SAP)"
+msgstr ""
+
+#. module: l10n_cu_agr_stock
+#: model:ir.model,name:l10n_cu_agr_stock.model_product_fam_recambio
+#: model:ir.model.fields,field_description:l10n_cu_agr_stock.field_product_fam_recambio__product_ids
+msgid "Familia Recambio SAP"
+msgstr ""
+
+#. module: l10n_cu_agr_stock
+#: model_terms:ir.ui.view,arch_db:l10n_cu_agr_stock.view_product_fam_recambio_form
+msgid "Familia de Recambio"
+msgstr ""
+
+#. module: l10n_cu_agr_stock
+#: model_terms:ir.ui.view,arch_db:l10n_cu_agr_stock.view_logistic_picking_form
+msgid "Fecha Recepcion"
+msgstr ""
+
+#. module: l10n_cu_agr_stock
+#: model:ir.model.fields,field_description:l10n_cu_agr_stock.field_product_fam_recambio__id
+#: model:ir.model.fields,field_description:l10n_cu_agr_stock.field_product_material__id
+#: model:ir.model.fields,field_description:l10n_cu_agr_stock.field_res_partner_nfm__id
+#: model:ir.model.fields,field_description:l10n_cu_agr_stock.field_stock_logistic__id
+msgid "ID"
+msgstr "ID"
+
+#. module: l10n_cu_agr_stock
+#: model:ir.model.fields,field_description:l10n_cu_agr_stock.field_product_fam_recambio____last_update
+#: model:ir.model.fields,field_description:l10n_cu_agr_stock.field_product_material____last_update
+#: model:ir.model.fields,field_description:l10n_cu_agr_stock.field_res_partner_nfm____last_update
+#: model:ir.model.fields,field_description:l10n_cu_agr_stock.field_stock_logistic____last_update
+msgid "Last Modified on"
+msgstr "Última modificación el"
+
+#. module: l10n_cu_agr_stock
+#: model:ir.model.fields,field_description:l10n_cu_agr_stock.field_product_fam_recambio__write_uid
+#: model:ir.model.fields,field_description:l10n_cu_agr_stock.field_product_material__write_uid
+#: model:ir.model.fields,field_description:l10n_cu_agr_stock.field_res_partner_nfm__write_uid
+#: model:ir.model.fields,field_description:l10n_cu_agr_stock.field_stock_logistic__write_uid
+msgid "Last Updated by"
+msgstr "Última Actualiación por"
+
+#. module: l10n_cu_agr_stock
+#: model:ir.model.fields,field_description:l10n_cu_agr_stock.field_product_fam_recambio__write_date
+#: model:ir.model.fields,field_description:l10n_cu_agr_stock.field_product_material__write_date
+#: model:ir.model.fields,field_description:l10n_cu_agr_stock.field_res_partner_nfm__write_date
+#: model:ir.model.fields,field_description:l10n_cu_agr_stock.field_stock_logistic__write_date
+msgid "Last Updated on"
+msgstr "Última Actualización el"
+
+#. module: l10n_cu_agr_stock
+#: model:ir.model.fields,field_description:l10n_cu_agr_stock.field_stock_reception_report__logistic_id
+msgid "Logistic"
+msgstr "Logistica"
+
+#. module: l10n_cu_agr_stock
+#: model:ir.actions.act_window,name:l10n_cu_agr_stock.product_material_list_action
+#: model:ir.model.fields,field_description:l10n_cu_agr_stock.field_product_product__product_material_id
+#: model:ir.model.fields,field_description:l10n_cu_agr_stock.field_product_template__product_material_id
+#: model:ir.ui.menu,name:l10n_cu_agr_stock.product_material_menu
+#: model_terms:ir.ui.view,arch_db:l10n_cu_agr_stock.product_material_form_view
+#: model_terms:ir.ui.view,arch_db:l10n_cu_agr_stock.product_template_form_material_add
+#: model_terms:ir.ui.view,arch_db:l10n_cu_agr_stock.view_product_material_form
+#: model_terms:ir.ui.view,arch_db:l10n_cu_agr_stock.view_product_material_tree
+msgid "Material"
+msgstr "Material"
+
+#. module: l10n_cu_agr_stock
+#: model_terms:ir.ui.view,arch_db:l10n_cu_agr_stock.product_template_form_material_add
+#: model_terms:ir.ui.view,arch_db:l10n_cu_agr_stock.view_product_material_form
+msgid "Material (SAP)"
+msgstr "Material (SAP)"
+
+#. module: l10n_cu_agr_stock
+#: model_terms:ir.ui.view,arch_db:l10n_cu_agr_stock.view_product_material_tree
+msgid "Material List"
+msgstr "Lista de Material"
+
+#. module: l10n_cu_agr_stock
+#: model:ir.model,name:l10n_cu_agr_stock.model_product_material
+#: model:ir.model.fields,field_description:l10n_cu_agr_stock.field_product_material__product_ids
+msgid "Material SAP"
+msgstr "Material SAP"
+
+#. module: l10n_cu_agr_stock
+#: model:ir.model.fields,field_description:l10n_cu_agr_stock.field_res_partner_nfm__res_partner_ids
+#: model_terms:ir.ui.view,arch_db:l10n_cu_agr_stock.cu_agr__view_partner_form
+msgid "NFM"
+msgstr "NFM"
+
+#. module: l10n_cu_agr_stock
+#: model:ir.model,name:l10n_cu_agr_stock.model_res_partner_nfm
+msgid "Nacion mas favorecida"
+msgstr ""
+
+#. module: l10n_cu_agr_stock
+#: model_terms:ir.ui.view,arch_db:l10n_cu_agr_stock.cu_agr__view_partner_form
+msgid "Nación más favorecida SUA"
+msgstr ""
+
+#. module: l10n_cu_agr_stock
+#: model:ir.model.fields,field_description:l10n_cu_agr_stock.field_product_fam_recambio__name
+#: model:ir.model.fields,field_description:l10n_cu_agr_stock.field_product_material__name
+#: model:ir.model.fields,field_description:l10n_cu_agr_stock.field_res_partner_nfm__name
+msgid "Name"
+msgstr "Nombre"
+
+#. module: l10n_cu_agr_stock
+#: model:ir.model.fields,field_description:l10n_cu_agr_stock.field_res_partner__nfm_id
+#: model:ir.model.fields,field_description:l10n_cu_agr_stock.field_res_users__nfm_id
+#: model:ir.model.fields,help:l10n_cu_agr_stock.field_res_partner__nfm_id
+#: model:ir.model.fields,help:l10n_cu_agr_stock.field_res_users__nfm_id
+msgid "Nfm"
+msgstr "Nfm"
+
+#. module: l10n_cu_agr_stock
+#: model:ir.model.fields,help:l10n_cu_agr_stock.field_stock_logistic__NoGa
+#: model:ir.model.fields,help:l10n_cu_agr_stock.field_stock_reception_report__NoGa
+msgid "No  de Guia Aerea si aplica"
+msgstr ""
+
+#. module: l10n_cu_agr_stock
+#: model:ir.model.fields,field_description:l10n_cu_agr_stock.field_stock_logistic__NoBl
+#: model:ir.model.fields,field_description:l10n_cu_agr_stock.field_stock_reception_report__NoBl
+msgid "No BL"
+msgstr ""
+
+#. module: l10n_cu_agr_stock
+#: model:ir.model.fields,field_description:l10n_cu_agr_stock.field_stock_logistic__NoBultos
+#: model:ir.model.fields,field_description:l10n_cu_agr_stock.field_stock_reception_report__NoBultos
+msgid "No Bultos"
+msgstr ""
+
+#. module: l10n_cu_agr_stock
+#: model:ir.model.fields,field_description:l10n_cu_agr_stock.field_stock_logistic__NoContenedor
+#: model:ir.model.fields,field_description:l10n_cu_agr_stock.field_stock_reception_report__NoContenedor
+msgid "No Contenedor"
+msgstr ""
+
+#. module: l10n_cu_agr_stock
+#: model:ir.model.fields,help:l10n_cu_agr_stock.field_stock_logistic__FactProveedor
+#: model:ir.model.fields,help:l10n_cu_agr_stock.field_stock_reception_report__FactProveedor
+msgid "No Factura de Proveedor"
+msgstr ""
+
+#. module: l10n_cu_agr_stock
+#: model:ir.model.fields,field_description:l10n_cu_agr_stock.field_stock_logistic__NoGa
+#: model:ir.model.fields,field_description:l10n_cu_agr_stock.field_stock_reception_report__NoGa
+msgid "No GA"
+msgstr ""
+
+#. module: l10n_cu_agr_stock
+#: model:ir.model.fields,field_description:l10n_cu_agr_stock.field_stock_logistic__NoLevante
+#: model:ir.model.fields,field_description:l10n_cu_agr_stock.field_stock_reception_report__NoLevante
+msgid "No Levante"
+msgstr ""
+
+#. module: l10n_cu_agr_stock
+#: model:ir.model.fields,field_description:l10n_cu_agr_stock.field_stock_logistic__NoRemisionEntrada
+#: model:ir.model.fields,field_description:l10n_cu_agr_stock.field_stock_reception_report__NoRemisionEntrada
+msgid "No Remision Entrada"
+msgstr ""
+
+#. module: l10n_cu_agr_stock
+#: model:ir.model.fields,help:l10n_cu_agr_stock.field_stock_logistic__NoRemisionEntrada
+#: model:ir.model.fields,help:l10n_cu_agr_stock.field_stock_reception_report__NoRemisionEntrada
+msgid "No Remision de entrada"
+msgstr ""
+
+#. module: l10n_cu_agr_stock
+#: model:ir.model.fields,help:l10n_cu_agr_stock.field_stock_logistic__NoLevante
+#: model:ir.model.fields,help:l10n_cu_agr_stock.field_stock_reception_report__NoLevante
+msgid "No del levante que da la Aduana"
+msgstr ""
+
+#. module: l10n_cu_agr_stock
+#: model:ir.model.fields,field_description:l10n_cu_agr_stock.field_stock_logistic__NotaInfRecepcion
+#: model:ir.model.fields,field_description:l10n_cu_agr_stock.field_stock_reception_report__NotaInfRecepcion
+msgid "Nota"
+msgstr ""
+
+#. module: l10n_cu_agr_stock
+#: model:ir.model.fields,help:l10n_cu_agr_stock.field_stock_logistic__NotaInfRecepcion
+#: model:ir.model.fields,help:l10n_cu_agr_stock.field_stock_reception_report__NotaInfRecepcion
+msgid "Nota adicional para Informe de Recepcion"
+msgstr ""
+
+#. module: l10n_cu_agr_stock
+#: model:ir.actions.act_window,name:l10n_cu_agr_stock.open_product_fam_recambio_action
+msgid "Open Fam Recambio"
+msgstr ""
+
+#. module: l10n_cu_agr_stock
+#: model:ir.actions.act_window,name:l10n_cu_agr_stock.open_product_material_action
+msgid "Open Material"
+msgstr ""
+
+#. module: l10n_cu_agr_stock
+#: model:ir.model.fields.selection,name:l10n_cu_agr_stock.selection__stock_logistic__TipoDeclaracion__parcial
+msgid "Parcial"
+msgstr ""
+
+#. module: l10n_cu_agr_stock
+#: model_terms:ir.ui.view,arch_db:l10n_cu_agr_stock.product_famrecambio_search_form_view
+#: model_terms:ir.ui.view,arch_db:l10n_cu_agr_stock.view_product_fam_recambio_form
+msgid "Product Fam. Recambio"
+msgstr ""
+
+#. module: l10n_cu_agr_stock
+#: model_terms:ir.ui.view,arch_db:l10n_cu_agr_stock.product_material_search_form_view
+#: model_terms:ir.ui.view,arch_db:l10n_cu_agr_stock.view_product_material_form
+msgid "Product Material"
+msgstr ""
+
+#. module: l10n_cu_agr_stock
+#: model:ir.model,name:l10n_cu_agr_stock.model_product_template
+msgid "Product Template"
+msgstr "Plantilla de producto"
+
+#. module: l10n_cu_agr_stock
+#: model:ir.model,name:l10n_cu_agr_stock.model_stock_reception_report
+msgid "Reception Report"
+msgstr "Reporte de Recepción"
+
+#. module: l10n_cu_agr_stock
+#: model:ir.model.fields,field_description:l10n_cu_agr_stock.field_stock_logistic__receptionreport_ids
+#: model:ir.model.fields,field_description:l10n_cu_agr_stock.field_stock_reception_report__receptionreport_ids
+msgid "Reception Report ID"
+msgstr "ID de Reporte de Recepción"
+
+#. module: l10n_cu_agr_stock
+#: model:ir.model.fields,help:l10n_cu_agr_stock.field_stock_move__product_arancel_id
+msgid "Select arancel for this product"
+msgstr "Seleccionar Arancel para este Producto"
+
+#. module: l10n_cu_agr_stock
+#: model:ir.model.fields,help:l10n_cu_agr_stock.field_product_product__product_fam_recambio_id
+#: model:ir.model.fields,help:l10n_cu_agr_stock.field_product_template__product_fam_recambio_id
+msgid "Select fam recambio for this product"
+msgstr ""
+
+#. module: l10n_cu_agr_stock
+#: model:ir.model.fields,help:l10n_cu_agr_stock.field_stock_reception_report__logistic_id
+msgid "Select logistic data for this picking"
+msgstr "Seleccionar datos logísticos para este picking"
+
+#. module: l10n_cu_agr_stock
+#: model:ir.model.fields,help:l10n_cu_agr_stock.field_product_product__product_material_id
+#: model:ir.model.fields,help:l10n_cu_agr_stock.field_product_template__product_material_id
+msgid "Select material for this product"
+msgstr "Seleccionar material para este producto"
+
+#. module: l10n_cu_agr_stock
+#: model:ir.model,name:l10n_cu_agr_stock.model_stock_move
+msgid "Stock Move"
+msgstr "Movimiento de existencias"
+
+#. module: l10n_cu_agr_stock
+#: model:ir.model.fields,field_description:l10n_cu_agr_stock.field_stock_logistic__TipoDeclaracion
+#: model:ir.model.fields,field_description:l10n_cu_agr_stock.field_stock_reception_report__TipoDeclaracion
+msgid "Tipo Declaracion"
+msgstr ""
+
+#. module: l10n_cu_agr_stock
+#: model:ir.model.fields,help:l10n_cu_agr_stock.field_stock_logistic__TipoDeclaracion
+#: model:ir.model.fields,help:l10n_cu_agr_stock.field_stock_reception_report__TipoDeclaracion
+msgid "Tipo de Declaracion Parcial/Total"
+msgstr ""
+
+#. module: l10n_cu_agr_stock
+#: model:ir.model.fields.selection,name:l10n_cu_agr_stock.selection__stock_logistic__TipoDeclaracion__total
+msgid "Total"
+msgstr "Total"
+
+#. module: l10n_cu_agr_stock
+#: model:ir.model,name:l10n_cu_agr_stock.model_stock_warehouse
+msgid "Warehouse"
+msgstr "Almacén"
+
+#. module: l10n_cu_agr_stock
+#: model:ir.model,name:l10n_cu_agr_stock.model_stock_logistic
+msgid "stock.logistic"
+msgstr ""

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+
+    <record id="view_product_template_form" model="ir.ui.view">
+        <field name="name">agr.product.template.form.view</field>
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="product.product_template_form_view" />
+        <field name="arch" type="xml">
+            <field name="name" position="after">
+                <div class="d-flex align-items-center">
+                    <field name="product_brand_id" class="badge as-custom-brand badge-pill bg-light border ml-3" placeholder="Brand"/>
+                </div>
+            </field>
+            <field name="hs_code_id" position="before">
+                <field name="origin_country_id" attrs="{'invisible': [('type', '=', 'service')]}"/>
+            </field>
+            <xpath expr="//label[@for='weight']" position="before">
+                <label for="net_weight" attrs="{'invisible':[('product_variant_count', '&gt;', 1), ('is_product_variant', '=', False)]}"/>
+                <div class="o_row" name="net_weight" attrs="{'invisible':[('product_variant_count', '&gt;', 1), ('is_product_variant', '=', False)]}">
+                    <field name="net_weight" />
+                    <span>
+                        <field name="weight_uom_name" />
+                    </span>
+                </div>
+            </xpath>
+        </field>
+    </record>
+
+    <!-- Inherit product template kanban view for brand -->
+    <record id="view_product_template_kanban_brand" model="ir.ui.view">
+        <field name="name">product.template.kanban.view.brand</field>
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="product.product_template_kanban_view"/>
+        <field name="arch" type="xml">
+            <xpath expr="//div[@name='product_lst_price']" position="replace">
+                <div class="d-flex align-items-center flex-wrap">
+                    <div name="product_lst_price" class="mt-1">
+                        Price: <field name="list_price" widget="monetary" options="{'currency_field': 'currency_id', 'field_digits': True}"></field>
+                    </div>
+                    <a attrs="{'invisible':[('product_brand_id','==',False)]}" name="%(action_product_brand_kanban)d" class="badge badge-pill bg-primary text-white align-self-start ml-3 text-wrap text-left ml-auto" type="action">
+                        <span class="text-white h6">
+                            <field name="product_brand_id"/>
+                        </span>
+                    </a>
+                </div>
+            </xpath>
+        </field>
+    </record>
+
+
+    <!-- Inherit product template tree view for brand-->
+    <record id="view_product_template_tree_brand" model="ir.ui.view">
+        <field name="name">product.template.tree.view.brand</field>
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="product.product_template_tree_view"/>
+        <field name="arch" type="xml">
+            <field name="name" position="after">
+                <field name="product_brand_id"/>
+            </field>
+        </field>
+    </record>
+
+</odoo>

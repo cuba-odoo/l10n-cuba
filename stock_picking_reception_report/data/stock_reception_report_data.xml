@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- Reception Report related subtypes for messaging / Chatter -->
+    <record id="mt_reception_report_state" model="mail.message.subtype">
+        <field name="name">Stage Changed</field>
+        <field name="res_model">stock.picking.reception.report</field>
+        <field name="default" eval="False"/>
+        <field name="description">Stage Changed</field>
+    </record>
+
+    <record id="seq_picking_reception_report" model="ir.sequence">
+        <field name="name">Reception Report</field>
+        <field name="code">picking.reception.report</field>
+        <field name="prefix">IR%(year)s</field>
+        <field name="padding">5</field>
+        <field name="company_id" eval="False"/>
+    </record>
+</odoo>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Search view for H.S. code -->
+    <record id="hs_code_view_search" model="ir.ui.view">
+        <field name="name">hs.code.search</field>
+        <field name="model">hs.code</field>
+        <field name="arch" type="xml">
+            <search string="Search H.S. Codes">
+                <field name="code" filter_domain="['|', ('code', 'like', self), ('description', 'ilike', self)]" />
+                <filter string="Archived" name="inactive" domain="[('active', '=', False)]" />
+            </search>
+        </field>
+    </record>
+    <!-- Tree view for H.S. code -->
+    <record id="hs_code_view_tree" model="ir.ui.view">
+        <field name="name">hs.code.tree</field>
+        <field name="model">hs.code</field>
+        <field name="arch" type="xml">
+            <tree string="H.S. Codes">
+                <field name="code" />
+                <field name="description" />
+                <field name="company_id" groups="base.group_multi_company" />
+                <field name="type"/>
+                <field name="active"/>
+                <field name="UM"/>
+                <field name="general_duty"/>
+                <field name="nmf_duty"/>
+            </tree>
+        </field>
+    </record>
+    <!-- Action used in the form view for HS codes -->
+    <record id="product_categ_hs_code_action" model="ir.actions.act_window">
+        <field name="name">Product Categories</field>
+        <field name="res_model">product.category</field>
+        <field name="view_mode">tree,form</field>
+        <field name="domain">[('hs_code_id', '=', active_id)]</field>
+    </record>
+    <record id="product_template_hs_code_action" model="ir.actions.act_window">
+        <field name="name">Products</field>
+        <field name="res_model">product.template</field>
+        <field name="view_mode">kanban,tree,form</field>
+        <field name="domain">[('hs_code_id', '=', active_id)]</field>
+    </record>
+    <!-- Form view for H.S. code -->
+    <record id="hs_code_view_form" model="ir.ui.view">
+        <field name="name">hs.code.form</field>
+        <field name="model">hs.code</field>
+        <field name="arch" type="xml">
+            <form string="H.S. Code">
+                <sheet>
+                    <field name="active" invisible="1" />
+                    <widget name="web_ribbon" text="Archived" bg_color="bg-danger" attrs="{'invisible': [('active', '=', True)]}" />
+                    <div class="oe_button_box" name="button_box">
+                        <button class="oe_stat_button" name="%(product_categ_hs_code_action)d" icon="fa-th-list" type="action">
+                            <div class="o_field_widget o_stat_info">
+                                <span class="o_stat_value">
+                                    <field name="product_categ_count" />
+                                </span>
+                                <span class="o_stat_text">Product Categs</span>
+                            </div>
+                        </button>
+                        <button class="oe_stat_button" name="%(product_template_hs_code_action)d" icon="fa-th-list" type="action">
+                            <div class="o_field_widget o_stat_info">
+                                <span class="o_stat_value">
+                                    <field name="product_tmpl_count" />
+                                </span>
+                                <span class="o_stat_text">Products</span>
+                            </div>
+                        </button>
+                    </div>
+                    <group name="main">
+                        <field name="code" />
+                        <field name="description" />
+                        <field name="company_id" groups="base.group_multi_company" />
+                        <field name="type"/>
+                        <field name="active"/>
+                        <field name="UM"/>
+                        <field name="general_duty"/>
+                        <field name="nmf_duty"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <!-- Action for H.S. code -->
+    <record id="hs_code_action" model="ir.actions.act_window">
+        <field name="name">H.S. Codes</field>
+        <field name="res_model">hs.code</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+    <menuitem
+        id="hs_code_menu"
+        action="l10n_cu_stock_hs.hs_code_action"
+        parent="stock.menu_product_in_config_stock"
+        sequence="60"
+    />
+</odoo>

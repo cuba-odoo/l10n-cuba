@@ -1,0 +1,27 @@
+<odoo>
+    <data>
+        <record id="ks_discount_sale_order_form_inherited" model="ir.ui.view">
+            <field name="name">ks.discount.sale_order.form.inherited</field>
+            <field name="model">sale.order</field>
+            <field name="inherit_id" ref="sale.view_order_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//form/sheet/notebook/page/group" position="before">
+                    <div class="ks_container">
+                        <field name="ks_enable_discount" invisible="1"/>
+                        <label for="ks_global_discount_type" string="Universal Discount Type:" attrs="{'invisible':[('ks_enable_discount','!=',True),('ks_amount_discount','=',0)]}"/>
+                        <field name="ks_global_discount_type" class="oe_inline" attrs="{'invisible':[('ks_enable_discount','!=',True),('ks_amount_discount','=',0)],
+                                                                                         'readonly':[('ks_enable_discount','!=',True),('ks_amount_discount','!=',0)]}"/>
+                    </div>
+                    <div class="ks_container">
+                        <label for="ks_global_discount_rate" string="Universal Discount:" attrs="{'invisible':[('ks_enable_discount','!=',True),('ks_amount_discount','=',0)]}"/>
+                        <field name="ks_global_discount_rate" class="oe_inline" attrs="{'invisible':[('ks_enable_discount','!=',True),('ks_amount_discount','=',0)],'readonly':[('ks_enable_discount','!=',True),('ks_amount_discount','!=',0)]}"/>
+                    </div>
+                </xpath>
+<!--                <xpath expr="//field[@name='amount_tax']" position="after">-->
+                <xpath expr="//field[@name='tax_totals_json']" position="after">
+                    <field name="ks_amount_discount" attrs="{'invisible':[('ks_enable_discount','!=',True),('ks_amount_discount','=',0)]}"/>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

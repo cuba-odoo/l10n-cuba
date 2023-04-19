@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="view_logistic_picking_form" model="ir.ui.view">
+            <field name="name">stock.logistic.picking.form</field>
+            <field name="model">stock.picking</field>
+            <field name="inherit_id" ref="stock.view_picking_form"/>
+            <field name="arch" type="xml">
+                <data>
+                     <xpath expr="//form/sheet/notebook/page[3]" position="after" >
+                             <page name="logistica" string="Logistica" attrs="{'invisible':('picking_id.picking_type_id.code','=','incoming')}">
+                                 <group name="InformacionLogistica">
+                                   <group name="infLog_left">
+                                        <field name="NoBultos"/>
+                                        <field name="NoRemisionEntrada"/>
+                                        <field name="NoLevante"/>
+                                        <field name="TipoDeclaracion" />
+                                   </group>
+                                   <group name="InfLog_right">
+                                        <field name="NoBl"/>
+                                        <field name="NoGa"/>
+                                        <field name="NoContenedor"/>
+                                        <field name="FactProveedor"/>
+                                   </group>
+                                     <separator string="Nota"/>
+                                     <field name="NotaInfRecepcion"/>
+                                 </group>
+                            </page>
+                    </xpath>
+                </data>
+                <data>
+                    <xpath expr="//form/sheet/notebook/page[2]/field[@name='move_ids_without_package']/tree[1]/field[@name='is_locked']" position="after">
+                        <field name="product_arancel_id" readonly="1" options="{'no_open': True, 'no_create': True}" class="oe_inline" string="Arancel" />
+                    </xpath>
+                </data>
+               <!-- <data>
+                    <xpath expr="//form/sheet/notebook/page[2]/field[@name='move_lines']/tree[1]/field[@name='product_id']" position="after">
+                        <field name="weight" readonly="1" options="{'no_open': True, 'no_create': True}" class="oe_inline" string="Peso Bruto"/>
+                    </xpath>
+                </data>-->
+                <data>
+                    <xpath expr="//field[@name='scheduled_date']" position="after">
+                        <field name="date_done" readonly="1" string="Fecha Recepcion" />
+                    </xpath>
+                </data>
+            </field>
+         </record>
+    </data>
+</odoo>

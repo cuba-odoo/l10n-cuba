@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<odoo>
+    <record id="product_famrecambio_search_form_view" model="ir.ui.view">
+        <field name="name">product.famrecambio.search.form</field>
+        <field name="model">product.fam.recambio</field>
+        <field name="arch" type="xml">
+            <search string="Product Fam. Recambio">
+                <field name="code"/>
+                <field name="name"/>
+            </search>
+        </field>
+    </record>
+    <record id="product_material_search_form_view" model="ir.ui.view">
+        <field name="name">product.material.search.form</field>
+        <field name="model">product.material</field>
+        <field name="arch" type="xml">
+            <search string="Product Material">
+                <field name="code"/>
+                <field name="name"/>
+            </search>
+        </field>
+    </record>
+
+    <record id="product_template_form_fam_recambio_add" model="ir.ui.view">
+        <field name="name">product.template.famrecambio.product.form</field>
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="product.product_template_only_form_view" />
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='barcode']" position="after">
+                <field name="product_fam_recambio_id" string="Fam. Recambio" help="Familia Recambio" widget="many2one" attrs="{'invisible': ['|',['type','=','consu'],['type','=','service']]}" required="0"/>
+            </xpath>
+        </field>
+    </record>
+
+
+    <record id="product_fam_recambio_form_view" model="ir.ui.view">
+        <field name="name">product.famrecambio.product.form</field>
+        <field name="model">product.product</field>
+        <field name="inherit_id" ref="product.product_normal_form_view"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='barcode']" position="after">
+                <field name="product_fam_recambio_id" string="Fam. Recambio" help="Familia Recambio" widget="many2one" attrs="{'invisible': ['|',['type','=','consu'],['type','=','service']]}" required="0"/>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="product_template_form_material_add" model="ir.ui.view">
+        <field name="name">product.template.material.product.form</field>
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="product.product_template_only_form_view" />
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='barcode']" position="after">
+                <field name="product_material_id" string="Material" help="Material (SAP)" widget="many2one" attrs="{'invisible': ['|',['type','=','consu'],['type','=','service']]}" required="0"/>
+            </xpath>
+        </field>
+    </record>
+
+
+    <record id="product_material_form_view" model="ir.ui.view">
+        <field name="name">product.material.product.form</field>
+        <field name="model">product.product</field>
+        <field name="inherit_id" ref="product.product_normal_form_view"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='barcode']" position="after">
+                <field name="product_material_id" string="Material" help="Material" widget="many2one" attrs="{'invisible': ['|',['type','=','consu'],['type','=','service']]}" required="0"/>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="view_product_fam_recambio_tree" model="ir.ui.view">
+        <field name="name">product.fam_recambio.tree</field>
+        <field name="model">product.fam.recambio</field>
+        <field name="arch" type="xml">
+            <tree string="Fam. Recambio List" editable="bottom">
+                <field name="code"/>
+                <field name="name" string="Fam. Recambio"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_product_material_tree" model="ir.ui.view">
+        <field name="name">product.material.tree</field>
+        <field name="model">product.material</field>
+        <field name="arch" type="xml">
+            <tree string="Material List" editable="bottom">
+                <field name="code"/>
+                <field name="name" string="Material"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_product_fam_recambio_form" model="ir.ui.view">
+        <field name="name">product.fam.recambio.form</field>
+        <field name="model">product.fam.recambio</field>
+        <field name="arch" type="xml">
+            <form string="Product Fam. Recambio">
+                <sheet>
+                    <group>
+                        <div>
+                            <separator string="Codigo"/>
+                            <field name="code" string="Codigo"/>
+
+                            <separator string="Familia de Recambio" />
+                            <field name="name" string="Familia Recambio (SAP)"/>
+
+                        </div>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_product_material_form" model="ir.ui.view">
+        <field name="name">product.material.form</field>
+        <field name="model">product.material</field>
+        <field name="arch" type="xml">
+            <form string="Product Material">
+                <sheet>
+                    <group>
+                        <div>
+                            <separator string="Codigo"/>
+                            <field name="code" string="Codigo"/>
+
+                            <separator string="Material" />
+                            <field name="name" string="Material (SAP)"/>
+
+                        </div>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="open_product_fam_recambio_action" model="ir.actions.act_window">
+        <field name="name">Open Fam Recambio</field>
+        <field name="res_model">product.fam.recambio</field>
+        <field name="view_mode">form</field>
+    </record>
+
+    <record id="open_product_material_action" model="ir.actions.act_window">
+        <field name="name">Open Material</field>
+        <field name="res_model">product.material</field>
+        <field name="view_mode">form</field>
+    </record>
+
+    <record id="product_fam_recambio_list_action" model="ir.actions.act_window">
+        <field name="name">Fam. Recambio</field>
+        <field name="res_model">product.fam.recambio</field>
+        <field name="view_mode">tree,form</field>
+        <field name="target">main</field>
+    </record>
+
+    <record id="product_material_list_action" model="ir.actions.act_window">
+        <field name="name">Material</field>
+        <field name="res_model">product.material</field>
+        <field name="view_mode">tree,form</field>
+        <field name="target">main</field>
+    </record>
+
+
+    <menuitem
+                name = 'Fam. Recambio'
+                id = 'product_fam_recambio_menu' parent='stock.menu_stock_inventory_control' sequence='210'
+                action = 'product_fam_recambio_list_action'/>
+    <menuitem
+                name = 'Material'
+                id = 'product_material_menu' parent='stock.menu_stock_inventory_control' sequence='220'
+                action = 'product_material_list_action'/>
+
+</odoo>

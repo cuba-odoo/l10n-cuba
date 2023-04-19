@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="paperformat_report_agr_saleorder" model="report.paperformat">
+            <field name="name">A4 Sale Order AGR</field>
+            <field name="default" eval="True"/>
+            <field name="format">A4</field>
+            <field name="page_height">0</field>
+            <field name="page_width">0</field>
+            <field name="orientation">Landscape</field>            <!-- Landscape / Portrait -->
+            <field name="margin_top">16</field>
+            <field name="margin_bottom">20</field>
+            <field name="margin_left">7</field>
+            <field name="margin_right">7</field>
+            <field name="header_line" eval="False"/>
+            <field name="header_spacing">5</field>
+            <field name="dpi">96</field>
+        </record>
+
+        <record id="report_agr_saleorder_document" model="ir.actions.report">
+            <field name="name">Print AGR</field>
+            <field name="model">sale.order</field>
+            <field name="report_type">qweb-html</field>
+            <field name="report_name">l10n_cu_agr_sale.report_agr_saleorder_template</field>
+            <field name="binding_model_id" ref="sale.model_sale_order"/>
+            <field name="paperformat_id" ref="l10n_cu_agr_sale.paperformat_report_agr_saleorder" />
+            <field name="binding_type">report</field>
+        </record>
+
+    </data>
+</odoo>

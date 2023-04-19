@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="report_reception">
+            <t t-call="web.html_container">
+                <t t-foreach="docs" t-as="o">
+                    <!--<t t-call="web.external_layout">-->
+                    <t t-call="stock_picking_reception_report.reception_report_layout2">
+                        <t t-if="o and 'company_id' in o">
+                            <t t-set="company" t-value="o.company_id.sudo()"/>
+                        </t>
+                        <t t-if="not o or not 'company_id' in o">
+                            <t t-set="company" t-value="res_company"/>
+                        </t>
+                        <div class="page">
+                            <table class="table table-bordered">
+                                <tr>
+                                    <td style="text-align: left; border: 1px solid black;">
+                                        <div t-if="o.company_id.partner_id">
+                                            <strong>
+                                                <span t-field="o.company_id.partner_id" />
+                                            </strong>
+                                        </div>
+                                        <div t-field="o.company_id.partner_id" t-field-options='{"widget": "contact", "fields": ["email", "phone", "address"], "no_marker": true}'>
+                                        </div>
+                                        <div t-if="o.picking_type_id.code == 'incoming'">
+                                            <span>
+                                                <strong>DEPOSITO:</strong>
+                                            </span>
+                                            <span t-field="o.picking_type_id.warehouse_id.partner_id.name" />
+                                            <div>
+                                                <span>
+                                                    <strong>UBICACION:</strong>
+                                                </span>
+                                                <span t-field="o.picking_type_id.warehouse_id.partner_id" t-field-options='{"widget": "contact", "fields": ["address"], "no_marker": true}'/>
+                                            </div>
+                                            <div>
+                                                <span>
+                                                    <strong>CODIGO:</strong>
+                                                </span>
+                                                <span t-field="o.picking_type_id.warehouse_id.code_num"/>
+                                            </div>
+                                            <div>
+                                                <span>
+                                                    <strong>CODIGO DEPOSITANTE:</strong>
+                                                </span>
+                                                <span t-field="company.cod_depositante"/>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td style="text-align: left; border: 1px solid black;">
+                                        <div t-if="o.picking_type_id.code == 'incoming'">
+                                            <!--and (not o.move_lines or not o.move_lines[0].partner_id) and o.picking_type_id.warehouse_id.partner_id">-->
+                                            <div>
+                                                <span>
+                                                    <strong>
+                                                        <b></b>No.:</strong>
+                                                </span>
+                                                <strong>
+                                                    <span t-field="o.name" />
+                                                </strong>
+                                            </div>
+                                            <div>
+                                                <span>
+                                                    <strong>MONEDA:</strong>
+                                                </span>
+                                                <span> USD </span>
+                                            </div>
+                                            <div>
+                                                <span>
+                                                    <strong>FECHA:</strong>
+                                                </span>
+                                                <span t-field="o.FechaRecepcion" t-options='{"widget": "date"}'/>
+                                            </div>
+                                            <div>
+                                                <span>
+                                                    <strong>BULTOS:</strong>
+                                                </span>
+                                                <span t-field="o.logistic_id.NoBultos"/>
+                                            </div>
+                                            <!--<div class="text-muted">
+                                                    <strong>HOJA:</strong> <span class="page"/> / <span class="topage"/>
+                                                </div>-->
+                                        </div>
+                                    </td>
+                                    <td style="text-align: left; border: 1px solid black;">
+                                        <div t-if="o.picking_type_id.code == 'incoming'">
+                                            <div>
+                                                <span>
+                                                    <strong>No. LEVANTE:</strong>
+                                                </span>
+                                                <span t-field="o.logistic_id.NoLevante"/>
+                                            </div>
+                                            <div>
+                                                <span>
+                                                    <strong>TIPO DECLARACION:</strong>
+                                                </span>
+                                                <span t-field="o.logistic_id.TipoDeclaracion"/>
+                                            </div>
+                                            <div>
+                                                <span>
+                                                    <strong>No CONTENEDOR:</strong>
+                                                </span>
+                                                <span t-field="o.logistic_id.NoContenedor"/>
+                                            </div>
+                                            <div>
+                                                <span>
+                                                    <strong>PROVEEDOR:</strong>
+                                                </span>
+                                                <span t-field="o.partner_id.name" />
+                                            </div>
+                                            <div>
+                                                <span>
+                                                    <strong>FACTURA PROVEEDOR:</strong>
+                                                </span>
+                                                <span t-field="o.logistic_id.FactProveedor"/>
+                                            </div>
+                                            <div>
+                                                <span>
+                                                    <strong>No. BL:</strong>
+                                                </span>
+                                                <span t-field="o.logistic_id.NoBl"/>
+                                            </div>
+                                            <div>
+                                                <span>
+                                                    <strong>No. GA:</strong>
+                                                </span>
+                                                <span t-field="o.logistic_id.NoGa"/>
+                                            </div>
+                                            <div>
+                                                <span>
+                                                    <strong>No. REMISION ENTRADA:</strong>
+                                                </span>
+                                                <span t-field="o.logistic_id.NoRemisionEntrada"/>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <br/>
+
+                            <table class="table table-condensed table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th colspan="6"></th>
+                                        <!--<th colspan="2" style="text-align: center;"><strong>Costo</strong></th>-->
+                                        <th colspan="2" style="text-align: center;">
+                                            <strong>Recepcion</strong>
+                                        </th>
+                                        <th colspan="2" style="text-align: center;">
+                                            <strong>Sobrante</strong>
+                                        </th>
+                                        <th colspan="2" style="text-align: center;">
+                                            <strong>Faltante</strong>
+                                        </th>
+                                        <!--<th colspan="2" style="text-align: center;"><strong>Averia</strong></th>-->
+                                        <!--<th colspan="3"></th>-->
+                                        <th colspan="1"></th>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <strong>No</strong>
+                                        </th>
+                                        <th>
+                                            <strong>Codigo</strong>
+                                        </th>
+                                        <th>
+                                            <strong>Partida Arancel</strong>
+                                        </th>
+                                        <th>
+                                            <strong>Descripcion</strong>
+                                        </th>
+                                        <th>
+                                            <strong>UM</strong>
+                                        </th>
+                                        <!--<th><strong>PU Compra</strong></th>
+                                       <th class="col-sm-2 text-right">Cant.</th>
+                                       <th class="col-sm-2 text-right">Importe</th>-->
+                                        <th>
+                                            <strong>Precio Unitario</strong>
+                                        </th>
+                                        <th class="col-sm-2 text-right">Cant.</th>
+                                        <th class="col-sm-2 text-right">Importe</th>
+                                        <th class="col-sm-2 text-right">Cant.</th>
+                                        <th class="col-sm-2 text-right">Importe</th>
+                                        <th class="col-sm-2 text-right">Cant.</th>
+                                        <th class="col-sm-2 text-right">Importe</th>
+                                        <!--<th><strong>Existencia</strong></th>
+                                      <th><strong>Valor. Existencia</strong></th>-->
+                                        <th>
+                                            <strong>Origen</strong>
+                                        </th>
+                                    </tr>
+                                    <ty></ty>
+                                </thead>
+                                <tbody>
+                                    <t t-set="var_price_total_costo" t-value="0"/>
+                                    <t t-set="var_price_total_recepcion" t-value="0"/>
+                                    <t t-set="var_price_total_faltante" t-value="0"/>
+                                    <t t-set="var_price_total_sobrante" t-value="0"/>
+                                    <t t-set="var_price_total_averia" t-value="0"/>
+                                    <t t-set="var_price_subtotal_costo" t-value="0"/>
+                                    <t t-set="var_price_subtotal_recepcion" t-value="0"/>
+                                    <t t-set="var_price_subtotal_faltante" t-value="0"/>
+                                    <t t-set="var_price_subtotal_sobrante" t-value="0"/>
+                                    <t t-set="var_price_subtotal_averia" t-value="0"/>
+                                    <t t-set="var_num_line" t-value="0"/>
+                                    <!--<tr t-foreach="o.move_lines" t-as="move">-->
+
+                                    <tr t-foreach="o.picking_ids" t-as="id">
+                                        <tr t-foreach="id.move_lines.sorted(key=lambda m: m.product_id.id)" t-as="move">
+                                            <t t-if="(id.state != 'partially_available') or (move.reserved_availability > 0)">
+                                                <t t-set="var_num_line" t-value="var_num_line + 1" />
+
+                                                <t t-if="move.purchase_line_id">
+                                                    <t t-set="var_unit_price" t-value="move.purchase_line_id.price_unit"/>
+                                                    <t t-set="var_price_subtotal_po" t-value="move.purchase_line_id.price_subtotal"/>
+                                                    <t t-set="var_price_subtotal_mv" t-value="move.price_unit * move.product_uom_qty"/>
+                                                </t>
+                                                <t t-if="not move.purchase_line_id ">
+                                                    <t t-set="var_unit_price" t-value="move.price_unit"/>
+                                                    <t t-set="var_price_subtotal_mv" t-value="move.price_unit * move.product_uom_qty"/>
+                                                </t>
+                                                <td>
+                                                    <span t-esc="var_num_line"/>
+                                                </td>
+                                                <td>
+                                                    <span t-field="move.product_id.default_code"/>
+                                                </td>
+                                                <td>
+                                                    <span t-field="move.product_arancel_id.code"/>
+                                                </td>
+
+                                                <td>
+                                                    <span t-field="move.product_id.product_tmpl_id.name"/>
+                                                </td>
+                                                <td>
+                                                    <span t-field="move.product_id.uom_id" groups="product.group_uom"/>
+                                                </td>
+
+                                                <!--<td class="text-right">
+                                                <t t-esc="'%.3f' % var_unit_price"/>
+                                            </td>-->
+                                                <!-- Cantidad al Costo -->
+                                                <!--<td class="text-right">
+                                                 <t t-if="move.purchase_line_id">
+                                                   <span t-field="move.ordered_qty"/>
+                                                 </t>
+                                            </td>-->
+                                                <!-- Importe  al Costo -->
+                                                <!--<td class="text-right">
+                                                <t t-if="move.ordered_qty">
+                                                     <t t-set="var_price_subtotal_costo" t-value="move.ordered_qty * var_unit_price"/>
+                                                 </t>
+                                                <t t-esc="'%.2f' % var_price_subtotal_costo"/>
+                                            </td>-->
+                                                <!-- Cantidad Recepcionada -->
+                                                <td class="text-right">
+                                                    <span t-field="move.price_unit"/>
+                                                </td>
+                                                <td class="text-right">
+                                                    <!--<t t-if="(move.move_line_ids.ordered_qty &gt;= move.move_line_ids.qty_done)"> &lt;!&ndash; '>=' &ndash;&gt;
+                                                   <t t-esc="move.move_line_ids.qty_done"/>
+                                                 </t>
+                                                 <t t-if="(move.move_line_ids.ordered_qty &lt; move.move_line_ids.qty_done)"> &lt;!&ndash; '<' &ndash;&gt;
+                                                     <t t-esc="move.move_line_ids.ordered_qty"/>
+                                                 </t>-->
+                                                    <t t-if="o.state == 'partially_available'">
+                                                        <span t-field="'%.2f' % move.reserved_availability"/>
+                                                    </t>
+                                                    <t t-if="o.state != 'partially_available'">
+                                                        <span t-field="move.product_uom_qty"/>
+                                                    </t>
+                                                </td>
+                                                <!-- Importe  Recepcion -->
+                                                <td class="text-right">
+                                                    <t t-set="var_price_subtotal_recepcion" t-value="move.product_uom_qty * move.price_unit"/>
+                                                    <t t-esc="'%.2f' % var_price_subtotal_recepcion"/>
+
+                                                    <!-- Ver 1 <t t-esc="var_price_subtotal_mv" widget="monetary"/>-->
+
+                                                    <!-- <t t-if="(move.move_line_ids.ordered_qty &gt;= move.move_line_ids.qty_done)"> &lt;!&ndash; '>=' &ndash;&gt;
+                                                   <t t-set="var_price_subtotal_recepcion" t-value="move.move_line_ids.qty_done * move.price_unit"/>
+                                                 </t>
+                                                 <t t-if="(move.move_line_ids.ordered_qty &lt; move.move_line_ids.qty_done)"> &lt;!&ndash; '<' &ndash;&gt;
+                                                     <t t-set="var_price_subtotal_recepcion" t-value="move.move_line_ids.ordered_qty * move.price_unit"/>
+                                                 </t>
+                                                <t t-esc="'%.2f' % var_price_subtotal_recepcion"/>-->
+                                                </td>
+
+                                                <!-- Cantidad Sobrante -->
+                                                <td class="text-right">
+                                                    <t t-if="(move.move_line_ids.qty_done &lt;= move.ordered_qty)">                                                        <!-- <= -->
+                                                        <t t-esc="0.0"/>
+                                                    </t>
+                                                    <t t-if="(move.move_line_ids.qty_done &gt; move.ordered_qty)">                                                        <!-- > -->
+                                                        <t t-esc="move.move_line_ids.qty_done - move.ordered_qty"/>
+
+                                                    </t>
+                                                </td>
+                                                <!-- Importe Sobrante -->
+                                                <td class="text-right">
+                                                    <t t-if="(move.move_line_ids.qty_done &lt;= move.ordered_qty)">
+                                                        <t t-set="var_price_subtotal_sobrante" t-value="0.0"/>
+                                                    </t>
+                                                    <t t-if="(move.move_line_ids.qty_done &gt; move.ordered_qty)">
+                                                        <t t-set="var_price_subtotal_sobrante" t-value="(move.move_line_ids.qty_done - move.ordered_qty) * move.price_unit"/>
+                                                    </t>
+                                                    <t t-esc="'%.2f' % var_price_subtotal_sobrante"/>
+                                                </td>
+                                                <!--Cantidad Faltante-->
+                                                <td class="text-right">
+                                                    <t t-if="(move.move_line_ids.qty_done &gt;= move.ordered_qty)">
+                                                        <t t-esc="0.0"/>
+                                                    </t>
+                                                    <t t-if="(move.move_line_ids.qty_done &lt; move.ordered_qty)">
+                                                        <t t-esc="move.ordered_qty - move.move_line_ids.qty_done"/>
+                                                    </t>
+                                                </td>
+                                                <!--Importe Faltante-->
+                                                <td class="text-right">
+                                                    <t t-if="(move.move_line_ids.qty_done &gt;= move.ordered_qty)">
+                                                        <t t-set="var_price_subtotal_faltante" t-value="0.0"/>
+                                                    </t>
+                                                    <t t-if="(move.move_line_ids.qty_done &lt; move.ordered_qty)">
+                                                        <t t-set="var_price_subtotal_faltante" t-value="(move.ordered_qty - move.move_line_ids.qty_done) * move.price_unit"/>
+                                                    </t>
+                                                    <t t-esc="'%.2f' % var_price_subtotal_faltante"/>
+                                                </td>
+
+                                                <!--&lt;!&ndash;Averia&ndash;&gt;
+                                            <td class="text-right">
+                                                <t t-esc="move_size" />
+                                            </td>
+                                             <td class="text-right">
+                                                 <t t-set="var_price_subtotal_averia" t-value="0.0"/>
+                                                 <t t-esc="var_price_subtotal_averia"/>
+                                            </td>-->
+
+                                                <!--Existencia-->
+
+                                                <!--<td class="text-right">
+                                                <span t-field="move.product_id.qty_available" />
+                                            </td>
+                                            <td class="text-right">
+                                                <span widget="monetary" t-field="move.product_id.stock_value"/>
+                                            </td>-->
+                                                <td class="text-right">
+                                                    <span t-field="o.partner_id.nfm_id"/>
+                                                </td>
+                                            </t>
+                                            <!--<t t-set="var_price_total_costo" t-value="var_price_total_costo + var_price_subtotal_costo"/>-->
+                                            <t t-set="var_price_total_recepcion" t-value="var_price_total_recepcion + var_price_subtotal_recepcion"/>
+                                            <t t-set="var_price_total_sobrante" t-value="var_price_total_sobrante + var_price_subtotal_sobrante"/>
+                                            <t t-set="var_price_total_faltante" t-value="var_price_total_faltante + var_price_subtotal_faltante"/>
+
+                                            <!--<t t-set="var_price_total_averia" t-value="var_price_total_averia + var_price_subtotal_averia"/>-->
+                                        </tr>
+                                    </tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>
+                                        <strong>TOTALES:</strong>
+                                    </td>
+                                    <td></td>
+                                    <!--<td class="text-right">
+                                             <span style="font-weight: bold" t-esc="'%.2f' % var_price_total_costo" />
+                                         </td>-->
+                                    <td class="text-right">
+                                        <span style="text-align: right; font-weight: bold" t-esc="'%.2f' % var_price_total_recepcion" />
+                                    </td>
+                                    <td></td>
+                                    <td class="text-right">
+                                        <span style="font-weight: bold" t-esc="'%.2f' % var_price_total_sobrante" />
+                                    </td>
+                                    <td></td>
+                                    <td class="text-right">
+                                        <span style="font-weight: bold" t-esc="'%.2f' % var_price_total_faltante" />
+                                    </td>
+                                    <td></td>
+
+                                    <!--<td class="text-right">
+                                             <span style="font-weight: bold" t-esc="'%.2f' % var_price_total_averia" />
+                                         </td>-->
+                                </tbody>
+                            </table>
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <div style="text-align: left;">
+                                        <strong>OBSERVACIONES:</strong>
+                                        <span t-field="o.NotaInfRecepcion" />
+                                    </div>
+                                </div>
+                            </div>
+                            <table class="table table-bordered">
+                                <tr>
+                                    <th style="text-align: center; width: 20%;">
+                                        <strong>Confeccionado</strong>
+                                    </th>
+                                    <th style="text-align: center; width: 20%;">
+                                        <strong>Contabilizado</strong>
+                                    </th>
+                                    <th style="text-align: center; width: 20%;">
+                                        <strong>Aprobado</strong>
+                                    </th>
+                                    <th style="text-align: center; width: 20%;">
+                                        <strong>Transportador</strong>
+                                    </th>
+                                    <th style="text-align: center; width: 20%;">
+                                        <strong>Recibido en Aduana</strong>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <td>
+                                                <p class="text-left">
+                                                    <strong> Nombre: Guillermo González Izquierdo<br/>
+                                                                                Cargo: Jefe Almacen<br/>
+                                                                                Fecha: <span t-field="o.FechaRecepcion" t-options='{"widget": "date"}'/>
+                                            </strong>
+                                        </p>
+                                    </td>
+                                    <td>
+                                                <p class="text-left">
+                                                    <strong> Nombre: Danay González Chirino<br/>
+                                                                                                Cargo: Contadora<br/>
+                                                                                                Fecha: <span t-field="o.FechaRecepcion" t-options='{"widget": "date"}'/>
+                                            </strong>
+                                        </p>
+                                    </td>
+                                    <td>
+                                                <p class="text-left">
+                                                    <strong> Nombre: Guillermo González Izquierdo<br/>
+                                                                                                                Cargo: Jefe Almacen<br/>
+                                                                                                                Fecha: <span t-field="o.FechaRecepcion" t-options='{"widget": "date"}'/>
+                                            </strong>
+                                        </p>
+                                    </td>
+                                    <td>
+                                                <p class="text-left">
+                                                    <strong> Nombre:<br/>
+                                                                                                                                CI:<br/>
+                                                                                                                                Licencia:<br/>
+                                                                                                                                Chapa:</strong>
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p class="text-left">
+                                            <strong> Nombre:<br/>
+                                                                                                                                Cargo:<br/>
+                                                                                                                                Fecha:</strong>
+                                    </p>
+                                </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </t>
+                </t>
+            </t>
+        </template>
+    </data>
+</odoo>

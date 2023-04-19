@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="cu_agr__view_warehouse_tree" model="ir.ui.view">
+            <field name="name">stock.warehouse.cu_agr_.tree</field>
+            <field name="model">stock.warehouse</field>
+            <field name="inherit_id" ref="stock.view_warehouse_tree"/>
+            <field name="arch" type="xml">
+                <xpath expr="//tree/field[1]" position="before">
+                    <field name="code_num" />
+                </xpath>
+            </field>
+        </record>
+        <record id="cu_agr__view_warehouse" model="ir.ui.view">
+            <field name="name">stock.warehouse.cu_agr_</field>
+            <field name="model">stock.warehouse</field>
+            <field name="inherit_id" ref="stock.view_warehouse"/>
+            <field name="arch" type="xml">
+                <data>
+                    <xpath expr="//field[@name='code']" position="after">
+                        <field name="code_num" string="Código"/>
+                    </xpath>
+                </data>
+            </field>
+        </record>
+
+    </data>
+</odoo>

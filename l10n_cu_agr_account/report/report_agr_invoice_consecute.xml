@@ -1,0 +1,138 @@
+<odoo>
+    <data>
+        <template id="report_agr_invoice_consecute">
+            <t t-call="web.html_container">
+
+                <t t-call="l10n_cu_agr_account.agr_consecute_invoice_report_layout">
+
+                    <div class="page">
+                        <t t-set="date_ini" t-value="1/1/2019"/>
+                        <t t-set="date_end" t-value="31/12/2019"/>
+                        <div class="row">
+                            <br/>
+                        </div>
+                        <t t-foreach="docs.sorted(key=lambda r: (r.invoice_date, r.name))" t-as="l">
+                            <t t-if="l_index == 0">
+                                <t t-set="date_ini" t-value="l.invoice_date"/>
+                            </t>
+                            <t t-if="l_index == l_size-1">
+                                <t t-set="date_end" t-value="l.invoice_date"/>
+                            </t>
+                        </t>
+                        <div class="row">
+                            <div class="col-xs-4"/>
+                            <div class="col-xs-4">
+                                <strong>Fecha Inicial:</strong>
+                                <strong>
+                                    <span t-esc="date_ini" t-options='{"widget": "date"}'/>
+                                </strong>
+                            </div>
+                            <div class="col-xs-4">
+                                <strong>Fecha Final:</strong>
+                                <strong>
+                                    <span t-esc="date_end" t-options='{"widget": "date"}'/>
+                                </strong>
+                            </div>
+                            <br/>
+                            <br/>
+                        </div>
+                        <table class="table table-striped" name="invoice_consecute">
+                            <thead>
+                                <tr class="border-black" style="border-top:1px solid #dddddd;">
+                                    <th class="text-center">No</th>
+                                    <th class="text-center">Cliente</th>
+                                    <th class="text-right">Fecha Factura</th>
+                                    <th class="text-right">Número</th>
+                                    <th class="text-right">Comercial</th>
+                                    <th class="text-right">Fecha Vencimiento</th>
+                                    <th class="text-right">Total</th>
+                                    <th class="text-right">Saldo</th>
+                                    <th class="text-right">Estado</th>
+                                </tr>
+                                <tr class="border-black" style="border-bottom:1px solid #dddddd;">
+                                </tr>
+                            </thead>
+
+                            <tbody class="invoice_tbody">
+                                <t t-set="var_num_line" t-value="0"/>
+                                <t t-set="var_total_amount" t-value="0"/>
+                                <t t-set="var_total_residual" t-value="0"/>
+                                <t t-set="date_ini" t-value="1/1/2019"/>
+                                <t t-set="date_end" t-value="1/1/2019"/>
+                                <!--<tr t-foreach="docs" t-as="l">-->
+                                <tr t-foreach="docs.sorted(key=lambda r: (r.invoice_date, r.name))" t-as="l">
+                                    <t t-if="l_index == 0">
+                                        <t t-set="date_ini" t-value="l.invoice_date"/>
+                                    </t>
+                                    <t t-if="l_index == l_size-1">
+                                        <t t-set="date_end" t-value="l.invoice_date"/>
+                                    </t>
+                                    <td class="text-center">
+                                        <t t-set="var_num_line" t-value="var_num_line + 1"/>
+                                        <span class="text-center">
+                                            <t t-esc="var_num_line"/>
+                                        </span>
+                                    </td>
+                                    <td class="text-center">
+                                        <span t-field="l.partner_id"/>
+                                    </td>
+                                    <td class="text-right">
+                                        <span t-field="l.invoice_date"/>
+                                    </td>
+                                    <td class="text-right">
+                                        <span t-field="l.name"/>
+                                    </td>
+                                    <td class="text-right">
+                                        <span t-field="l.user_id"/>
+                                    </td>
+                                    <td class="text-right">
+                                        <span t-field="l.invoice_date"/>
+                                    </td>
+                                    <td class="text-right">
+                                        <t t-set="var_total_amount" t-value="var_total_amount + l.amount_total"/>
+                                        <span t-field="l.amount_total"/>
+                                    </td>
+                                    <td class="text-right">
+                                        <t t-set="var_total_residual" t-value="var_total_residual + l.amount_residual"/>
+                                        <span t-field="l.amount_residual"/>
+                                    </td>
+                                    <td class="text-right">
+                                        <span t-field="l.state"/>
+                                    </td>
+
+                                </tr>
+
+                                <tr class="border-black" style="border-top:1px solid #dddddd;">
+                                    <td/>
+                                    <td/>
+                                    <td/>
+                                    <td/>
+                                    <td class="text-right">
+                                        <strong>TOTALES:</strong>
+                                    </td>
+                                    <td/>
+                                    <td class="text-right">
+                                        <strong>
+                                            <span style="font-weight: bold" t-esc="'$'" />
+                                            <span style="font-weight: bold" t-esc="'{0:,.2f}'.format(var_total_amount)"/>
+                                        </strong>
+                                    </td>
+                                    <td class="text-right">
+                                        <span style="font-weight: bold" t-esc="'$'" />
+                                        <span style="font-weight: bold" t-esc="'{0:,.2f}'.format(var_total_residual)"/>
+                                        <br/>
+                                    </td>
+                                    <td/>
+
+
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </t>
+            </t>
+
+        </template>
+    </data>
+</odoo>

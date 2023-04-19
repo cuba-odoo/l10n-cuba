@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="agr_report_invoice_layouted_inherit" name="agr_report_invoice_layouted_inherit" inherit_id="account.report_invoice_document">
+        <xpath expr="//thead/tr/th[7]" position="after">
+            <th class="text-center">Origen</th>
+        </xpath>
+         <xpath expr="//thead/tr/th['Description']" position="replace">
+            <th class="text-center">No</th>
+            <th class="text-center">Partida Arancel</th>
+            <th class="text-center">Codigo</th>
+            <th class="text-center">Description</th>
+            <th class="text-right">Bultos</th>
+            <th class="text-right">P/N(Kg)</th>
+            <th class="text-right">P/B(Kg)</th>
+        </xpath>
+        <xpath expr="//t[@t-set='display_discount']" position="after">
+            <t t-set="var_num_line" t-value="0"/>
+        </xpath>
+
+        <xpath expr="//td[1]" position="replace">
+            <td>
+                <t t-set="var_num_line" t-value="var_num_line + 1"/>
+                <span class="text-right">
+                    <t t-esc="var_num_line"/>
+                </span>
+            </td>
+            <td>
+                <span t-field="line.product_arancel_id"/>
+            </td>
+            <td>
+                <span t-field="line.product_id.default_code"/>
+            </td>
+            <td>
+                <span t-field="line.product_id.product_tmpl_id.name"/>
+            </td>
+            <td>
+                <span t-field="line.bultos"/>
+            </td>
+            <td>
+                <span t-field="line.weight"/>
+            </td>
+            <td>
+                <span t-field="line.net_weight"/>
+            </td>
+        </xpath>
+         <xpath expr="//div[@class='clearfix']" position="before">
+            <div class="clearfix">
+                <div id="total_logistic" class="row">
+                    <div class="col-xs-4 pull-leftt">
+                        <strong>No Bultos: <span t-field="o.no_bultos"/>
+                        </strong>
+                        <br/>
+                        <strong>Peso Neto Total: <span t-field="o.net_weight_total"/> Kg</strong>
+                        <br/>
+                        <strong>Peso Bruto Total: <span t-field="o.weight_brute_total"/> Kg</strong>
+                    </div>
+                </div>
+            </div>
+        </xpath>
+</template>
+    
+
+</odoo>

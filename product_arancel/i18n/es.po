@@ -1,0 +1,224 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* product_arancel
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 15.0-20220520\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-03-31 14:10+0000\n"
+"PO-Revision-Date: 2023-03-31 13:07-0400\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.2.2\n"
+
+#. module: product_arancel
+#: model:ir.model.fields,field_description:product_arancel.field_product_arancel__type
+msgid " Arancel Type"
+msgstr " Tipo Arancel"
+
+#. module: product_arancel
+#: model_terms:ir.ui.view,arch_db:product_arancel.view_product_arancel_tree
+msgid "% General"
+msgstr "% General"
+
+#. module: product_arancel
+#: model_terms:ir.ui.view,arch_db:product_arancel.view_product_arancel_tree
+msgid "% NFM"
+msgstr "% NFM"
+
+#. module: product_arancel
+#: model:ir.actions.act_window,name:product_arancel.product_arancel_list_action
+#: model:ir.model.fields,field_description:product_arancel.field_product_product__product_arancel_id
+#: model:ir.model.fields,field_description:product_arancel.field_product_template__product_arancel_id
+#: model:ir.ui.menu,name:product_arancel.product_arancel_menu
+#: model_terms:ir.ui.view,arch_db:product_arancel.product_arancel_form_view
+#: model_terms:ir.ui.view,arch_db:product_arancel.product_template_form_arancel_add
+msgid "Arancel"
+msgstr "Arancel"
+
+#. module: product_arancel
+#: model_terms:ir.ui.view,arch_db:product_arancel.view_product_arancel_tree
+msgid "Arancel List"
+msgstr "Lista Arancel"
+
+#. module: product_arancel
+#: model:ir.model.fields,field_description:product_arancel.field_product_arancel__product_ids
+msgid "Arancel Products"
+msgstr "Productos Arancel"
+
+#. module: product_arancel
+#: model:ir.model,name:product_arancel.model_product_arancel
+msgid "Arancel of customs"
+msgstr "Arancel de aduanas"
+
+#. module: product_arancel
+#: model:ir.model.fields,field_description:product_arancel.field_product_arancel__child_ids
+msgid "Child Arancel"
+msgstr "Arancel Hijo"
+
+#. module: product_arancel
+#: model:ir.model.fields,field_description:product_arancel.field_product_arancel__code
+msgid "Code"
+msgstr "Código"
+
+#. module: product_arancel
+#: model:ir.model.fields,field_description:product_arancel.field_product_arancel__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: product_arancel
+#: model:ir.model.fields,field_description:product_arancel.field_product_arancel__create_date
+msgid "Created on"
+msgstr "Creado el"
+
+#. module: product_arancel
+#: model:ir.model.fields,field_description:product_arancel.field_product_arancel__derechos_general
+#: model_terms:ir.ui.view,arch_db:product_arancel.view_product_arancel_form
+msgid "General Right"
+msgstr "Derechos General"
+
+#. module: product_arancel
+#: model:ir.model.fields,field_description:product_arancel.field_product_arancel__derechos_NFM
+#: model_terms:ir.ui.view,arch_db:product_arancel.view_product_arancel_form
+msgid "NFM Right"
+msgstr "Derechos NFM"
+
+#. module: product_arancel
+#: model_terms:ir.ui.view,arch_db:product_arancel.view_product_arancel_form
+#: model_terms:ir.ui.view,arch_db:product_arancel.view_product_arancel_tree
+msgid "Designation of goods"
+msgstr "Designación de las mercancías"
+
+#. module: product_arancel
+#: model:ir.model.fields,field_description:product_arancel.field_product_arancel__display_name
+msgid "Display Name"
+msgstr "Nombre para Mostrar"
+
+#. module: product_arancel
+#: model_terms:ir.ui.view,arch_db:product_arancel.view_product_arancel_form
+msgid "General"
+msgstr "General"
+
+#. module: product_arancel
+#: model:ir.model.fields,field_description:product_arancel.field_product_arancel__id
+msgid "ID"
+msgstr "ID"
+
+#. module: product_arancel
+#: model:ir.model.fields,field_description:product_arancel.field_product_arancel____last_update
+msgid "Last Modified on"
+msgstr "Fecha de Última Modificación"
+
+#. module: product_arancel
+#: model:ir.model.fields,field_description:product_arancel.field_product_arancel__write_uid
+msgid "Last Updated by"
+msgstr "Última Modificación por"
+
+#. module: product_arancel
+#: model:ir.model.fields,field_description:product_arancel.field_product_arancel__write_date
+msgid "Last Updated on"
+msgstr "Fecha de Última Actualización"
+
+#. module: product_arancel
+#: model:ir.model.fields,field_description:product_arancel.field_product_arancel__parent_left
+msgid "Left Parent"
+msgstr "Padre Izquierdo"
+
+#. module: product_arancel
+#: model_terms:ir.ui.view,arch_db:product_arancel.view_product_arancel_form
+msgid "NFM"
+msgstr "NFM"
+
+#. module: product_arancel
+#: model:ir.model.fields,field_description:product_arancel.field_product_arancel__name
+msgid "Name"
+msgstr "Nombre"
+
+#. module: product_arancel
+#: model:ir.model.fields.selection,name:product_arancel.selection__product_arancel__type__normal
+msgid "Normal"
+msgstr "Normal"
+
+#. module: product_arancel
+#: model:ir.actions.act_window,name:product_arancel.open_product_arancel_action
+msgid "Open Arancel"
+msgstr "Arancel Abierto"
+
+#. module: product_arancel
+#: model:ir.model.fields,field_description:product_arancel.field_product_arancel__parent_id
+msgid "Parent Arancel"
+msgstr "Arancel Padre"
+
+#. module: product_arancel
+#: model:ir.model.fields,field_description:product_arancel.field_product_arancel__parent_path
+msgid "Parent Path"
+msgstr "Ruta padre"
+
+#. module: product_arancel
+#: model_terms:ir.ui.view,arch_db:product_arancel.view_product_arancel_form
+msgid "Heading"
+msgstr "Partida"
+
+#. module: product_arancel
+#: model_terms:ir.ui.view,arch_db:product_arancel.product_arancel_form_view
+#: model_terms:ir.ui.view,arch_db:product_arancel.product_template_form_arancel_add
+#: model_terms:ir.ui.view,arch_db:product_arancel.view_product_arancel_form
+msgid "Arancel Heading"
+msgstr "Partida Arancelaria"
+
+#. module: product_arancel
+#: model_terms:ir.ui.view,arch_db:product_arancel.product_arancel_search_form_view
+#: model_terms:ir.ui.view,arch_db:product_arancel.view_product_arancel_form
+msgid "Product Arancel"
+msgstr "Producto Arancel"
+
+#. module: product_arancel
+#: model:ir.model,name:product_arancel.model_product_template
+msgid "Product Template"
+msgstr "Plantilla de producto"
+
+#. module: product_arancel
+#: model:ir.model.fields,field_description:product_arancel.field_product_arancel__parent_right
+msgid "Right Parent"
+msgstr "Derechos Padre"
+
+#. module: product_arancel
+#: model:ir.model.fields,help:product_arancel.field_product_product__product_arancel_id
+#: model:ir.model.fields,help:product_arancel.field_product_template__product_arancel_id
+msgid "Select arancel for this product"
+msgstr "Selecciones el arancel para este producto"
+
+#. module: product_arancel
+#: model_terms:ir.ui.view,arch_db:product_arancel.view_product_arancel_form
+msgid "Subhea."
+msgstr "SubPart."
+
+#. module: product_arancel
+#: model_terms:ir.ui.view,arch_db:product_arancel.view_product_arancel_form
+msgid "Subheading"
+msgstr "Subpartida"
+
+#. module: product_arancel
+#: model_terms:ir.ui.view,arch_db:product_arancel.view_product_arancel_form
+msgid "Type"
+msgstr "Tipo"
+
+#. module: product_arancel
+#: model:ir.model.fields,field_description:product_arancel.field_product_arancel__uom_id
+msgid "UM"
+msgstr "UM"
+
+#. module: product_arancel
+#: model_terms:ir.ui.view,arch_db:product_arancel.view_product_arancel_form
+msgid "Unit of measurement"
+msgstr "Unidad de Medida"
+
+#. module: product_arancel
+#: model:ir.model.fields.selection,name:product_arancel.selection__product_arancel__type__view
+msgid "View"
+msgstr "Vista"

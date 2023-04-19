@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+        <record id="cu_agr__view_partner_form" model="ir.ui.view">
+            <field name="name">res.partner.sua</field>
+            <field name="model">res.partner</field>
+            <field name="inherit_id" ref="base.view_partner_form"/>
+            <field name="arch" type="xml">
+                <group name="purchase" position="inside">
+                    <field name="nfm_id" string="NFM" help="Nación más favorecida SUA"/>
+                </group>
+            </field>
+        </record>
+
+    <!-- NFM search view -->
+    <record id="partner_nfm_search_form_view" model="ir.ui.view">
+        <field name="name">res.partner.nfm.search.form</field>
+        <field name="model">res.partner.nfm</field>
+        <field name="arch" type="xml">
+            <search string="Partners NFM">
+                <field name="code"/>
+                <field name="name"/>
+            </search>
+        </field>
+    </record>
+
+    <!-- NFM product action view  -->
+    <record id="action_partner_nfm_kanban" model="ir.actions.act_window">
+        <field name="name">Product NFM</field>
+        <field name="res_model">res.partner.nfm</field>
+        <field name="view_mode">tree,form</field>
+        <field name="target">current</field>
+        <field name="domain">[('res_partner_ids', 'in', active_id)]</field>
+    </record>
+
+    <!-- NFM form view -->
+    <record id="view_partner_nfm_form" model="ir.ui.view">
+        <field name="name">res.partner.nfm.form</field>
+        <field name="model">res.partner.nfm</field>
+        <field name="arch" type="xml">
+            <form string="Product NFM">
+                <sheet>
+                    <group>
+                        <div>
+                            <separator string="Codigo"/>
+                            <field name="code" string="Codigo"/>
+
+                            <separator string="Name" />
+                            <field name="name" string="Name"/>
+
+                        </div>
+                    </group>
+                    <group>
+                        <notebook>
+                            <page name="partner_nfm" string="Partners NFM">
+                                <field name="res_partner_ids"/>
+                            </page>
+                        </notebook>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- NFM tree view -->
+    <record id="view_partner_nfm_tree" model="ir.ui.view">
+        <field name="name">res.partner.nfm.tree</field>
+        <field name="model">res.partner.nfm</field>
+        <field name="arch" type="xml">
+            <tree string="NFM">
+                <field name="code"/>
+                <field name="name"/>
+            </tree>
+        </field>
+    </record>
+
+
+    <!-- NFM action -->
+    <record id="action_partner_nfm" model="ir.actions.act_window">
+        <field name="name">NFM</field>
+        <field name="res_model">res.partner.nfm</field>
+        <field name="view_mode">tree,kanban,form</field>
+    </record>
+
+    <!-- NFM menu -->
+    <menuitem id="menu_partner_nfm" name="Partners NFM" action="action_partner_nfm" parent="stock.menu_product_in_config_stock" sequence="5"/>
+</odoo>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- add picking to reception report  -->
+    <record id="stock_picking_to_reception_report_form" model="ir.ui.view">
+        <field name="name">stock.picking.to.reception.report.form</field>
+        <field name="model">stock.picking.to.reception.report</field>
+        <field name="arch" type="xml">
+            <form string="Add pickings to reception report">
+                <separator string="Select a reception report"/>
+                <field name="receptionreport_id" class="oe_inline"/>
+                <footer>
+                    <button name="attach_pickings" type="object" string="Add to Reception Report" class="btn-primary"/>
+                    <button string="Cancel" class="btn-default" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <!--  add picking to reception report action -->
+    <record id="stock_picking_to_reception_report_action" model="ir.actions.act_window">
+        <field name="name">Add to Reception Report</field>
+        <field name="res_model">stock.picking.to.reception.report</field>
+        <!-- <field name="view_type">form</field> -->
+        <field name="view_mode">form</field>
+        <field name="view_id" ref="stock_picking_to_reception_report_form"/>
+        <field name="target">new</field>
+    </record>
+
+    <act_window id="stock_picking_to_reception_report_action_stock_picking" multi="True" key2="client_action_multi" name="Add to Reception Report" res_model="stock.picking.to.reception.report" src_model="stock.picking" view_mode="form" target="new" view_type="form" />
+
+</odoo>

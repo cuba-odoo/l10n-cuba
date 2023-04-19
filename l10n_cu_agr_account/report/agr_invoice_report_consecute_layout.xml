@@ -1,0 +1,65 @@
+<odoo>
+    <data>
+        <template id="agr_consecute_invoice_report_layout">
+            <!-- Multicompany -->
+            <t t-if="not o and doc">
+                <t t-set="o" t-value="doc"/>
+            </t>
+            <t t-if="o and 'company_id' in o">
+                <t t-set="company" t-value="o.company_id.sudo()"/>
+            </t>
+            <t t-if="not o or not 'company_id' in o">
+                <t t-set="company" t-value="res_company"/>
+            </t>
+            <t t-call="l10n_cu_agr_account.consecute_invoice_report_layout_custom">
+                <t t-raw ="0" />
+            </t>
+        </template>
+
+        <template id="consecute_invoice_report_layout_custom">
+            <div class="header">
+
+                <div class="row">
+                    <div class="col-xs-3 mb3">
+                        <img t-if="company.logo" t-att-src="'data:image/png;base64,%s' % to_text(company.logo)" style="max-height: 45px;"/>
+                    </div>
+                    <div class="col-xs-6 text-right">
+                        <h3 style="text-align: center; font-weight: bold;">CONSECUTIVO FACTURAS DE VENTA</h3>
+                    </div>
+                    <div class="col-xs-3 text-right">
+                       Hoja:
+                        <span class="page"/>
+                       /
+                        <span class="topage"/>
+                        <div>
+                            <strong>Fecha:</strong>
+                            <span t-esc="context_timestamp(datetime.datetime.now()).strftime('%Y-%m-%d')" t-options="{'widget': 'date'}"/>
+                        </div>
+                    </div>
+
+                </div>
+                <br/>
+                <div t-if="company.logo or company.report_header" class="row zero_min_height">
+                    <div class="col-xs-12">
+                        <div style="border-bottom: 1px solid black;"/>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="article">
+                <t t-raw="0"/>
+            </div>
+
+
+            <!--<div class="footer">
+                <div class="text-center" style="border-top: 1px solid black;">
+
+                    <div class="text-muted">
+                        Page: <span class="page"/> / <span class="topage"/>
+                    </div>
+                </div>
+            </div>-->
+        </template>
+    </data>
+</odoo>

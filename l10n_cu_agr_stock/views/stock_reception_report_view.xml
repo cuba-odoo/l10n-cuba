@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="view_logistic_reception_report_form" model="ir.ui.view">
+            <field name="name">stock.logistic.reception_report.form</field>
+            <field name="model">stock.reception.report</field>
+            <field name="inherit_id" ref="stock_picking_reception_report.stock_reception_report_form"/>
+            <field name="arch" type="xml">
+                <data>
+                    <xpath expr="//form/sheet/notebook/page[1]" position="before">
+                        <page name="logistica" string="Logistica">                            <!--attrs="{'invisible':('picking_id.picking_type_id.code','=','incoming')}"-->
+                            <group name="InformacionLogistica">
+                                <group name="infLog_left">
+                                    <field name="NoBultos"/>
+                                    <field name="NoRemisionEntrada"/>
+                                    <field name="NoLevante"/>
+                                    <field name="TipoDeclaracion" />
+                                </group>
+                                <group name="InfLog_right">
+                                    <field name="NoBl"/>
+                                    <field name="NoGa"/>
+                                    <field name="NoContenedor"/>
+                                    <field name="FactProveedor"/>
+                                </group>
+                                <separator string="Nota"/>
+                                <field name="NotaInfRecepcion"/>
+                            </group>
+                        </page>
+                    </xpath>
+                </data>
+
+            </field>
+        </record>
+    </data>
+</odoo>

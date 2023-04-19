@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<odoo>
+    <data>
+        <record id="product_arancel_search_form_view" model="ir.ui.view">
+            <field name="name">product.arancel.search.form</field>
+            <field name="model">product.arancel</field>
+            <field name="arch" type="xml">
+                <search string="Product Arancel">
+                    <field name="code"/>
+                    <field name="name"/>
+                </search>
+            </field>
+        </record>
+
+        <record id="product_template_form_arancel_add" model="ir.ui.view">
+            <field name="name">product.template.product.form</field>
+            <field name="model">product.template</field>
+            <field name="inherit_id" ref="product.product_template_only_form_view" />
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='barcode']" position="after">
+                    <field name="product_arancel_id" string="Arancel" help="Partida Arancelaria" widget="many2one" attrs="{'invisible': ['|',['type','=','consu'],['type','=','service']]}" required="0"/>
+                </xpath>
+            </field>
+        </record>
+
+
+        <record id="product_arancel_form_view" model="ir.ui.view">
+            <field name="name">product.arancel.product.form</field>
+            <field name="model">product.product</field>
+            <field name="inherit_id" ref="product.product_normal_form_view"/>
+            <field name="arch" type="xml">
+                <data>
+                    <xpath expr="//field[@name='barcode']" position="after">
+                        <field name="product_arancel_id" string="Arancel" help="Partida Arancelaria" widget="many2one" attrs="{'invisible': ['|',['type','=','consu'],['type','=','service']]}" required="0"/>
+                    </xpath>
+                </data>
+            </field>
+        </record>
+
+        <record id="view_product_arancel_tree" model="ir.ui.view">
+            <field name="name">product.arancel.tree</field>
+            <field name="model">product.arancel</field>
+            <field name="arch" type="xml">
+                <tree string="Arancel List">
+                    <field name="code"/>
+                    <field name="name" string="Designación de las mercancías"/>
+                    <field name="uom_id"/>
+                    <field name="derechos_general" string="% General"/>
+                    <field name="derechos_NFM" string="% NFM"/>
+                    <field name="type" invisible="1"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="view_product_arancel_form" model="ir.ui.view">
+            <field name="name">product.arancel.form</field>
+            <field name="model">product.arancel</field>
+            <field name="arch" type="xml">
+                <form string="Product Arancel">
+                    <sheet>
+                        <group>
+                            <!--<group col="1">-->
+                            <div>
+                                <separator string="Partida"/>
+                                <field name="parent_id" string="Partida Arancelaria"/>
+
+                                <separator string="SubPart."/>
+                                <field name="code" string="Subpartida"/>
+
+                                <separator string="Designación de las mercancías" />
+                                <field name="name" string="Designación de las mercancías"/>
+
+                                <separator string="Unidad de Medida" />
+                                <field name="uom_id" string="Unidad de Medida"/>
+                                <separator string="Derechos General"/>
+                                <field name="derechos_general" string=" General"/>
+                                <separator string=" Derechos NFM"/>
+                                <field name="derechos_NFM" string=" NFM"/>
+                                <separator string="Tipo"/>
+                                <field name="type" string="Tipo"/>
+                            </div>
+                            <!--</group>-->
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="open_product_arancel_action" model="ir.actions.act_window">
+            <field name="name">Open Arancel</field>
+            <field name="res_model">product.arancel</field>
+            <field name="view_mode">form</field>
+            <!-- <field name="view_id" ref="view_product_arancel_form"/> -->
+        </record>
+
+        <record id="product_arancel_list_action" model="ir.actions.act_window">
+            <field name="name">Arancel</field>
+            <field name="res_model">product.arancel</field>
+            <field name="view_mode">tree,form</field>
+            <field name="view_id" ref="view_product_arancel_tree"/>
+
+        </record>
+
+
+        <menuitem
+                name = 'Arancel'
+                id = 'product_arancel_menu' parent='stock.menu_stock_inventory_control' sequence='200'
+                action = 'product_arancel_list_action'/>
+
+    </data>
+</odoo>

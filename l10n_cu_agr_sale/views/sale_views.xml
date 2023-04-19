@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="agr_order_form" model="ir.ui.view">
+        <field name="name">sale.order.form.inherit.gcu</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.view_order_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='sequence']" position="after">
+                <field name="product_arancel_id" readonly="1" options="{'no_open': True, 'no_create': True}" class="oe_inline" string="Arancel"/>
+            </xpath>
+            <xpath expr="//field[@name='product_id']" position="after">
+                <field name="bultos" string="Bultos"/>
+                <field name="weight" string="P/B"/>
+                <field name="net_weight" string="P/N"/>
+            </xpath>
+            <xpath expr="//field[@name='order_line']/tree[1]/field[@name='name']" position="after">
+                <field name="bultos" string="Bultos"/>
+                <field name="weight" string="P/B"/>
+                <field name="net_weight" string="P/N"/>
+            </xpath>
+            <xpath expr="//field[@name='order_line']//field[@name='tax_id']" position="after">
+                <field name="origen" string="Origen"/>
+            </xpath>
+            <xpath expr="//field[@name='order_line']/tree[1]/field[@name='price_subtotal']" position="after">
+                <field name="origen" string="Origen"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>

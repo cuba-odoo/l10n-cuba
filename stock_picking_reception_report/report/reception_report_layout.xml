@@ -1,0 +1,60 @@
+<odoo>
+    <data>
+        <template id="reception_report_layout2">
+            <!-- Multicompany -->
+            <t t-if="not o and doc">
+                <t t-set="o" t-value="doc"/>
+            </t>
+            <t t-if="o and 'company_id' in o">
+                <t t-set="company" t-value="o.company_id.sudo()"/>
+            </t>
+            <t t-if="not o or not 'company_id' in o">
+                <t t-set="company" t-value="res_company"/>
+            </t>
+            <t t-call="stock_picking_reception_report.reception_report_layout_custom">
+                <t t-raw ="0" />
+            </t>
+        </template>
+
+        <template id="reception_report_layout_custom">
+            <div class = "header">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h3 style="text-align: center; font-weight: bold;">SC-2-04 INFORME DE RECEPCIÓN</h3>
+                    </div>
+                </div>
+                <div class="row zero_min_height">
+                    <div class="col-xs-12">
+                        <div style="border-bottom: 1px solid black;"/>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="article">
+                <t t-raw="0"/>
+            </div>
+
+
+            <div class="footer">
+                <div class="text-center" style="border-top: 1px solid black;">
+                    <!--<ul class="list-inline mb4">
+                        <li t-if="company.phone">Phone: <span t-field="company.phone"/></li>
+                     <li t-if="company.email">Email: <span t-field="company.email"/></li>
+                        <li t-if="company.website">Web: <span t-field="company.website"/></li>
+                        <li t-if="company.vat"><t t-esc="company.country_id.vat_label or 'TIN'"/>: <span t-field="company.vat"/></li>
+                     </ul>
+
+                    <div name="financial_infos">
+                        <span t-field="company.report_footer"/>
+                    </div>-->
+
+                    <div class="text-muted">
+                        Page: <span class="page"/>
+ /                    <span class="topage"/>
+                </div>
+            </div>
+        </div>
+    </template>
+</data>
+</odoo>
