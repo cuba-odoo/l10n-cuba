@@ -17,6 +17,9 @@
                     attrs="{'invisible': [('type', '=', 'service')]}"
                 />
             </field>
+            <field name="hs_code_id" position="before">
+                <field name="origin_country_id" attrs="{'invisible': [('type', '=', 'service')]}"/>
+            </field>
         </field>
     </record>
     <record id="product_template_search_view" model="ir.ui.view">

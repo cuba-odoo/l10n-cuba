@@ -1,6 +1,6 @@
 <odoo>
     <data>
-        <template id="agr_invoice_report_layout">
+        <template id="stock_inventory_report_layout">
             <!-- Multicompany -->
             <t t-if="not o and doc">
                 <t t-set="o" t-value="doc"/>
@@ -11,14 +11,12 @@
             <t t-if="not o or not 'company_id' in o">
                 <t t-set="company" t-value="res_company"/>
             </t>
-            <t t-call="l10n_cu_agr_account.invoice_report_layout_custom">
+            <t t-call="stock_inventory.stock_inventory_report_layout_custom">
                 <t t-raw ="0" />
             </t>
         </template>
 
-        <template id="invoice_report_layout_custom">
-            
-
+        <template id="stock_inventory_report_layout_custom">
 
             <div class="article">
                 <t t-raw="0"/>
@@ -27,17 +25,6 @@
 
             <div class="footer">
                 <div class="text-center" style="border-top: 1px solid black;">
-                    <ul class="list-inline mb4">
-                        <li t-if="company.phone">Phone: <span t-field="company.phone"/></li>
-                     <li t-if="company.email">Email: <span t-field="company.email"/></li>
-                        <li t-if="company.website">Web: <span t-field="company.website"/></li>
-                        <li t-if="company.vat"><t t-esc="company.country_id.vat_label or 'TIN'"/>: <span t-field="company.vat"/></li>
-                     </ul>
-
-                    <div name="financial_infos">
-                        <span t-field="company.report_footer"/>
-                    </div>
-
                     <div class="text-muted">
                         Page: <span class="page"/> / <span class="topage"/>
                     </div>

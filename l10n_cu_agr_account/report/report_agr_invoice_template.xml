@@ -8,12 +8,12 @@
             <field name="page_height">0</field>
             <field name="page_width">0</field>
             <field name="orientation">Landscape</field>            <!-- Landscape / Portrait -->
-            <field name="margin_top">20</field>
+            <field name="margin_top">60</field>
             <field name="margin_bottom">20</field>
             <field name="margin_left">7</field>
             <field name="margin_right">7</field>
             <field name="header_line" eval="False"/>
-            <field name="header_spacing">12</field>
+            <field name="header_spacing">50</field>
             <field name="dpi">96</field>
         </record>
         <report string="Factura Venta Almacen" id="action_agr_invoice_report" model="account.move" report_type="qweb-pdf" name="l10n_cu_agr_account.report_agr_invoice" file="l10n_cu_agr_account.report_agr_invoice" print_report_name="'Factura Venta - %s - %s' % (object.partner_id.name or '', object.name)" paperformat="paperformat_report_agr_invoice" menu="True" />

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    
+    <record model="ir.ui.view" id="stock_inventory_valuation_view">
+        <field name="name">stock.inventory.valuation.form</field>
+        <field name="model">stock.inventory.valuation</field>
+        <field name="type">form</field>
+        <field name="arch" type="xml">
+            <form string="Form to criterie of search">
+                
+                <group>
+                    <field name="company_id" string="Company"/>
+                    <field name="location_id"/>
+                </group>
+                <group>
+                    <field name="date_from"/>
+                    <field name="date_to"/>
+                </group>
+                <group>
+                     <field name="line_ids" nolabel="1">
+                            <tree editable="botttom" create='false' >
+                                <field name="product_id" string="Producto"/>
+                                <field name="categ_id"  string="Categoría"/>
+                                <field name="product_arancel_id" string="Partida arancelaria"/>
+                                <field name="uom_id" string="Unida de medida" />
+                                <field name="qty_started" string="Cantidad Inicial"/>
+                                <field name="unit_cost_started" string="Valor Inicial"/>
+                                 <field name="qty_in" string="Cantidad Entrada"/>
+                                <field name="unit_cost_in" string="Valor entrada"/>
+                                  <field name="qty_out" string="Cantidad Salida"/>
+                                <field name="unit_cost_out" string="Valor Salida"/>
+                                  <field name="qty_adjustment" string="Cantidad Ajustes"/>
+                                <field name="unit_cost_adjustment" string="Valor Ajustes"/>
+                                  <field name="qty_real" string="Cantidad Real"/>
+                                <field name="unit_cost_real" string="Valor Real"/>
+                            </tree>
+                        </field>
+                </group>
+                <footer>
+                    <button string="Build report"
+                            name="action_search_info_stock"
+                            type="object"
+                            class="oe_highlight"/>
+                    or
+                    <button string="Cancel"
+                            class="oe_link"
+                            special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+    
+    <record id="action_stock_inventory_valuation" model="ir.actions.act_window">
+        <field name="name">Stock valuation reports</field>
+        <field name="res_model">stock.inventory.valuation</field>
+        <field name="view_id" ref="stock_inventory_valuation_view" />
+        <field name="binding_view_types">form</field>
+        <field name="view_mode">form</field>
+    </record>
+
+    <menuitem id="stock_inventory_valuations_menu" name="Inventory report AGR" parent='stock.menu_warehouse_report' sequence="300" groups="stock.group_stock_manager" action="action_stock_inventory_valuation"/>
+
+</odoo>

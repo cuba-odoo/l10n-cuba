@@ -11,12 +11,21 @@
                         <t t-if="not o or not 'company_id' in o">
                             <t t-set="company" t-value="res_company"/>
                         </t>
-                        <div class="page">
-                            <div class="row mt32 mb32">
-                                <div class="col-xs-6">
+                         <div class="header">
+                            <div class="row">
+                                <div class="col-1 mb4">
+                                    <img t-if="company.logo" t-att-src="'data:image/png;base64,%s' % to_text(company.logo)" style="max-height: 45px;"/>
+                                </div>
+                                <div class="col-2 text-left">
+                                <span>Depósito: </span><span>_________________________</span>
+                                </div>
+                                <div class="col-6 text-left">
+                                    <span>5ta. Ave. No. 18407 e/ 184 y 186, Siboney, Playa, La Habana, Cuba<br/> Teléfonos: 72736612, 72736352<br/> Sitio Web: https: //www.dominio.com</span>
+                                </div>
+                                 <div class="col-2 text-left">
                                     <h3>
                                         <span t-if="o.move_type == 'out_invoice' and (o.state == 'open' or o.state == 'paid')">
-                                            Factura No.
+                                            Factura No.*
                                         </span>
                                         <span t-if="o.move_type == 'out_invoice' and o.state == 'draft'">Factura Borrador
                                         </span>
@@ -30,53 +39,60 @@
                                         <!-- <span t-field="o.number"/> -->
                                     </h3>
                                 </div>
-                                <div class="col-xs-6 pull-right text-right" t-if="o.invoice_date">
-                                    <strong>Fecha de Factura:</strong>
-                                    <span t-field="o.invoice_date"/>
+                                <div class="col-1 text-left" t-if="o.invoice_date">
+                                    <strong>Fecha:</strong> <span t-field="o.invoice_date"/>
                                 </div>
                             </div>
+
+                            <div t-if="company.logo or company.report_header" class="row zero_min_height">
+                                <div class="col-xs-12">
+                                    <div style="border-bottom: 1px solid black;"/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="page">
                             <div class="row mt32 mb32">
-                                <div class="col-xs-3">
+                                <div class="col-3 ">
                                     <strong>No. Contrato:</strong>
-                                    <p t-field="o.name"/>
+                                    <p t-field="o.contract_number"/>
                                     <br/>
                                     <br/>
                                     <strong>No. Bultos:</strong>
                                     <span t-field="o.no_bultos"/>
                                 </div>
-                                <div class="col-xs-3">
+                                <div class="col-3 ">
                                     <strong>Deposito:</strong>
-                                    <p>AUSA FILIAL COYULA
+                                    <p>Nombre del deposito
                                         <br/>
-                                        Autopista Nacional Km 2 1/2
+                                        Calle y numero
                                         <br/>
-                                        y Carretera Coyula. Guanabacoa
+                                        Entre calle
                                         <br/>
                                         <br/>
                                         <strong>Código: 1842</strong>
                                         <br/>
                                         <strong>Código Depositante:</strong>
-                                        <p>43000374120</p>
+                                        <p>00000000000</p>
                                     </p>
                                 </div>
-                                <div class="col-xs-3">
+                                <div class="col-3  pe-2">
                                     <strong>Proveedor:</strong>
                                     <p>
-                                        <strong>GIRBAU S.A</strong>
+                                        <strong>Nombre del proveedor</strong>
                                         <br/>
-                                        Carretera de Manlleu, KM 1
+                                        Calle
                                         <br/>
-                                        VIC. Barcelona
+                                        Ciudad
                                         <br/>
-                                        España
+                                        Pais
                                         <br/>
-                                        Tel.0034-938-860-785/
-                                            0034-838-861-100
+                                        Tel.00000000000
+                                            0000000000
                                         <br/>
-                                        email: girbau@girbau.com
+                                        email: ventas@dominio.cu
                                     </p>
                                 </div>
-                                <div class="col-xs-3">
+                                <div class="col-3  me-2">
                                     <strong>Importador:</strong>
                                     <p t-field="o.partner_id" t-options="{&quot;widget&quot;: &quot;contact&quot;,
                                         &quot;fields&quot;: [&quot;address&quot;, &quot;name&quot;],
@@ -92,7 +108,7 @@
                                 <div class="col-xs-12">
                                     <p>
                                         <strong>Cuenta Bancaria:</strong>
-                                        Banco Sabadell 0081 5197 5100 0108 1711
+                                        Banco Nombre 0000 0000 0000 0000 0000
                                     </p>
                                     <!--<p t-field="company.report_footer"/>-->
                                 </div>
@@ -200,7 +216,9 @@
                                         <td/>
                                         <td/>
                                         <td/>
-                                        <td class="text-right">
+                                       
+                                        <td/>
+                                         <td class="text-right">
                                             <strong>
                                                 <span>Descuento </span>
                                             </strong>
@@ -212,26 +230,26 @@
                                         <td/>
                                         <td/>
                                         <td/>
-                                        <td/>
-                                        <td/>
-                                        <td/>
-                                        <td class="text-right">
+                                         <td class="text-right">
                                             <strong>
                                                 <span t-esc="o.ks_amount_discount/Tasa" t-options="{&quot;widget&quot;: &quot;monetary&quot;, &quot;display_currency&quot;: o.currency_id}"/>
                                             </strong>
                                         </td>
+                                        <td/>
+                                        
+                                        <td/>
+                                       
                                         <td/>
                                     </tr>
                                     <tr>                                        <!--class="border-black" style="border-bottom:1px solid #dddddd;"-->
                                         <td/>
                                         <td/>
                                         <td/>
-                                        <td class="text-right">
+                                       
+                                        <td/>
+                                         <td class="text-right">
                                             <strong>Importe Total a Pagar en EUR:</strong>
                                         </td>
-                                        <td/>
-                                        <td/>
-                                        <td/>
                                         <td/>
                                         <td/>
                                         <td/>
@@ -240,6 +258,9 @@
                                                 <span t-esc="o.amount_total/Tasa" t-options="{&quot;widget&quot;: &quot;monetary&quot;, &quot;display_currency&quot;: o.currency_id}"/>
                                             </strong>
                                         </td>
+                                        <td/>
+                                        <td/>
+                                        
                                         <td/>
                                     </tr>
                                     <tr class="border-black" style="border-bottom:1px solid #dddddd;">

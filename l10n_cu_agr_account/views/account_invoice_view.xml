@@ -16,13 +16,11 @@
                 <field name="origen" class="oe_inline"/>
             </xpath>
 
-            <xpath expr="//form/sheet/notebook/page[1]/field[1]" position="after">
-                <group class="oe_left">
-                    <field name="no_bultos"/>
-                    <field name="net_weight_total"/>
-                    <field name="weight_brute_total"/>
-                </group>
-            </xpath>
+             <xpath expr="//field[@name='payment_reference']" position="after">
+                <field name="contract_number" attrs="{'invisible': [('move_type', 'not in', ('out_invoice', 'out_refund', 'in_invoice', 'in_refund', 'out_receipt', 'in_receipt'))], 'readonly': [('state', '!=', 'draft')]}"/>
+                <field name="importer_company_id" attrs="{'invisible': [('move_type', 'not in', ('out_invoice', 'out_refund', 'in_invoice', 'in_refund', 'out_receipt', 'in_receipt'))], 'readonly': [('state', '!=', 'draft')]}"/>
+             </xpath>
+            
         </field>
     </record>
     <record id="agr_view_move_line_form" model="ir.ui.view">

@@ -2,7 +2,7 @@
 <odoo>
 
 <template id="agr_report_invoice_layouted_inherit" name="agr_report_invoice_layouted_inherit" inherit_id="account.report_invoice_document">
-        <xpath expr="//thead/tr/th[7]" position="after">
+        <xpath expr="//thead/tr/th[6]" position="after">
             <th class="text-center">Origen</th>
         </xpath>
          <xpath expr="//thead/tr/th['Description']" position="replace">

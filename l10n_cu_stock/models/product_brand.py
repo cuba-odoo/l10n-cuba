@@ -4,7 +4,6 @@ from odoo import api, fields, models
 
 class ProductBrand(models.Model):
     _name = 'product.brand'
-    _inherit = ['website.multi.mixin']
     _description = 'Product Brands'
     _order = "sequence,id"
 

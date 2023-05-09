@@ -1,0 +1,141 @@
+<odoo>
+    <data>
+        <template id="report_stock_inventory">
+            <t t-call="web.html_container">
+                <t t-foreach="docs" t-as="o">
+                    <t t-call="stock_inventory.stock_inventory_report_layout">
+                        <t t-if="o and 'company_id' in o">
+                            <t t-set="company" t-value="o.company_id.sudo()"/>
+                        </t>
+                        <t t-if="not o or not 'company_id' in o">
+                            <t t-set="company" t-value="res_company"/>
+                        </t>
+                        <div class="header">
+                            <div class="row">
+                                <div class="col-2 mb4">
+                                    <img t-if="company.logo" t-att-src="'data:image/png;base64,%s' % to_text(company.logo)" style="max-height: 80px;"/>
+                                </div>
+                                <div class="col-3 text-left">
+                                    <span>Titular del Régimen: </span><span>GAMMA EXPORT S.R.L.</span>
+                                </div>
+                                <div class="col-4 text-left">
+                                    <span>5ta. Ave. No. 18407 e/ 184 y 186, Siboney, Playa, La Habana, Cuba<br/> Teléfonos: 72736612, 72736352<br/> Sitio Web: https: //www.gammaexportonline.com</span>
+                                </div>
+                                 <div class="col-3 text-left">
+                                    <h3>Reporte de inventario</h3>
+                                </div>
+
+                            </div>
+                            <div class="row">
+                                <div class="col-8 mb4">
+                                    <span class="bold">Periodo que abarca: </span> <span class="ml-2">Desde: </span> <span >Fecha desde</span> <span class="ml-2">Hasta: </span> <span >Fecha Hasta</span>
+                                </div>
+                            </div>
+
+
+                            <div t-if="company.logo or company.report_header" class="row zero_min_height">
+                                <div class="col-xs-12">
+                                    <div style="border-bottom: 1px solid black;"/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="page">
+                            <table class="table table-striped" name="invoice_line_table">
+                                <thead>
+                                    <tr class="border-black" style="border-top:1px solid #dddddd;background-color: ">
+                                        <th class="text-center">No</th>
+                                        <th class="text-center">Partida Arancelaria</th>
+                                        <th class="text-right">Referencia</th>
+                                        <th class="text-center">Producto</th>
+                                        <th class="text-right">UM</th>
+                                        <th class="text-right">Cantidad</th>
+                                        <th class="text-right">Valor</th>
+                                        <th class="text-right">Cantidad</th>
+                                        <th class="text-right">Valor</th>
+                                        <th class="text-right">Cantidad</th>
+                                        <th class="text-right">Valor</th>
+                                        <th class="text-right">Cantidad</th>
+                                        <th class="text-right">Valor</th>
+                                        <th class="text-right">Cantidad</th>
+                                        <th class="text-right">Valor</th>
+                                    </tr>
+                                    <tr class="border-black" style="border-bottom:1px solid #dddddd;">
+                                    </tr>
+                                </thead>
+                                <tbody class="invoice_tbody">
+                                    <t t-set="var_num_line" t-value="0"/>
+                                    <tr t-foreach="o.stock_move_ids" t-as="l">
+                                        <td class="text-center">
+                                            <t t-set="var_num_line" t-value="var_num_line + 1"/>
+                                            <span class="text-right">
+                                                <t t-esc="var_num_line"/>
+                                            </span>
+                                        </td>
+                                        <td/>
+                                        <td/>
+                                        <td/>
+                                        <td/>
+                                        <td/>
+                                        <td/>
+                                        <td/>
+                                        <td/>
+                                        <td/>
+                                        <td/>
+                                        <td/>
+                                        <td/>
+                                        <td/>
+
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                            <br/><br/><br/><br/><br/><br/>
+                            <table class="table table-bordered" style="border: 2px solid black;">
+
+                                <tr>
+                                    <td style="text-align: left; border: 1px solid black;">
+                                        <p class="text-left">
+                                            <strong>Elaborado por:
+                                                <br/>
+                                            </strong>
+                                        </p>
+                                    </td>
+                                    <td style="text-align: left; border: 1px solid black;">
+                                        <p class="text-left">
+                                            <strong>Recibido por:
+                                                <br/>
+                                            </strong>
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: left; border: 1px solid black;padding-left: 20px"><span>Nombre: </span>__________________________________________________</td>
+                                    <td style="text-align: left; border: 1px solid black;padding-left: 20px"><span>Nombre: </span>__________________________________________________</td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: left; border: 1px solid black;padding-left: 20px"><span>Cargo: </span>__________________________________________________</td>
+                                    <td style="text-align: left; border: 1px solid black;padding-left: 20px"><span>Nro: </span>__________________________________________________</td>
+
+                                </tr>
+                                <tr>
+                                    <td style="text-align: left; border: 1px solid black;padding-left: 20px"><span>Firma: </span>__________________________________________________</td>
+                                    <td style="text-align: left; border: 1px solid black;padding-left: 20px"><span>Firma: </span>__________________________________________________</td>
+
+                                </tr>
+                                <tr>
+                                    <td style="text-align: left; border: 1px solid black;padding-left: 20px"><span>Fecha: </span>__________________________________________________</td>
+                                    <td style="text-align: left; border: 1px solid black;padding-left: 20px"><span>Fecha: </span>__________________________________________________</td>
+
+                                </tr>
+                                <tr>
+                                    <td style="text-align: left; border: 1px solid black;"><span>Debe ponerse el cuño de la empresa</span> </td>
+                                    <td style="text-align: left; border: 1px solid black;"><span>Debe ponerse el cuño de la empresa</span> </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </t>
+                </t>
+            </t>
+        </template>
+    </data>
+</odoo>

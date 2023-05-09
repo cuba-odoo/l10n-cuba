@@ -29,6 +29,16 @@ class AccountInvoice(models.Model):
         'Peso Neto Total'), compute='_compute_amount_log', help='Peso neto total(Kg)', store=True)
     weight_brute_total = fields.Float('Total Peso Bruto (kg)', digits=dp.get_precision(
         'Peso Bruto Total'), compute='_compute_amount_log', help='Peso bruto total(Kg)', store=True)
+    
+    contract_number = fields.Char('Número de contrato')
+    
+    importer_company_id = fields.Many2one(
+        comodel_name="res.partner",
+        string="Importadora",
+        domain=[
+            ("company_is_importing", "=", True),
+        ],
+    )
 
 
 class AccountMoveLine(models.Model):

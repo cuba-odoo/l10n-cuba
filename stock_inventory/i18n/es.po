@@ -1,0 +1,224 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* stock_inventory
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 15.0-20220520\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-03-31 14:08+0000\n"
+"PO-Revision-Date: 2023-03-31 10:56-0400\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"X-Generator: Poedit 3.2.2\n"
+
+#. module: stock_inventory
+#: model:ir.model.fields,field_description:stock_inventory.field_stock_inventory__count_stock_quants
+#: model:ir.model.fields,field_description:stock_inventory.field_stock_inventory__count_stock_quants_string
+msgid "Adjustments"
+msgstr "Ajustes"
+
+#. module: stock_inventory
+#: model:ir.model.fields.selection,name:stock_inventory.selection__stock_inventory__product_selection__all
+msgid "All Products"
+msgstr "Todos los productos"
+
+#. module: stock_inventory
+#: model_terms:ir.ui.view,arch_db:stock_inventory.view_inventory_group_form
+msgid "Back to Draft"
+msgstr "Volver al Borrador"
+
+#. module: stock_inventory
+#: model_terms:ir.ui.view,arch_db:stock_inventory.view_inventory_group_form
+msgid "Begin Adjustments"
+msgstr "Comenzar Ajustes"
+
+#. module: stock_inventory
+#: model:ir.model.fields,field_description:stock_inventory.field_stock_inventory__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: stock_inventory
+#: model:ir.model.fields,field_description:stock_inventory.field_stock_inventory__create_date
+msgid "Created on"
+msgstr "Creado el"
+
+#. module: stock_inventory
+#: model:ir.model.fields,field_description:stock_inventory.field_stock_inventory__date
+msgid "Date"
+msgstr "Fecha"
+
+#. module: stock_inventory
+#: model:ir.model.fields,field_description:stock_inventory.field_stock_inventory__display_name
+msgid "Display Name"
+msgstr "Nombre para mostrar"
+
+#. module: stock_inventory
+#: model:ir.model.fields.selection,name:stock_inventory.selection__stock_inventory__state__done
+msgid "Done"
+msgstr "Hecho"
+
+#. module: stock_inventory
+#: model:ir.model.fields.selection,name:stock_inventory.selection__stock_inventory__state__draft
+msgid "Draft"
+msgstr "Borrador"
+
+#. module: stock_inventory
+#: model:ir.model.fields,field_description:stock_inventory.field_stock_inventory__id
+msgid "ID"
+msgstr "ID"
+
+#. module: stock_inventory
+#: model:ir.model.fields.selection,name:stock_inventory.selection__stock_inventory__state__in_progress
+msgid "In Progress"
+msgstr "En Progreso"
+
+#. module: stock_inventory
+#: model:ir.model.fields,field_description:stock_inventory.field_stock_inventory__stock_quant_ids
+#: model:ir.model.fields,field_description:stock_inventory.field_stock_move_line__inventory_adjustment_id
+msgid "New Inventory Adjustment"
+msgstr "Ajuste de Inventario para Aduana"
+
+#. module: stock_inventory
+#: model:ir.actions.act_window,name:stock_inventory.action_view_inventory_group_form
+#: model:ir.model,name:stock_inventory.model_stock_inventory
+msgid "Inventory Adjustment Group"
+msgstr "Grupo de Ajuste de Inventario"
+
+#. module: stock_inventory
+#: model:ir.ui.menu,name:stock_inventory.menu_action_inventory_tree
+msgid "Inventory Adjustments"
+msgstr "Ajustes de Inventario"
+
+#. module: stock_inventory
+#: model:ir.model.fields,field_description:stock_inventory.field_stock_inventory__stock_move_ids
+msgid "Inventory Adjustments Done"
+msgstr "Ajuste de Inventario Realizado"
+
+#. module: stock_inventory
+#: model:ir.model.fields,field_description:stock_inventory.field_stock_inventory__name
+msgid "Inventory Reference"
+msgstr "Referencia de Inventario"
+
+#. module: stock_inventory
+#: model:ir.model.fields,field_description:stock_inventory.field_stock_inventory____last_update
+msgid "Last Modified on"
+msgstr "Última Modificación el"
+
+#. module: stock_inventory
+#: model:ir.model.fields,field_description:stock_inventory.field_stock_inventory__write_uid
+msgid "Last Updated by"
+msgstr "Última Actualización por"
+
+#. module: stock_inventory
+#: model:ir.model.fields,field_description:stock_inventory.field_stock_inventory__write_date
+msgid "Last Updated on"
+msgstr "Última Actualización el"
+
+#. module: stock_inventory
+#: model:ir.model.fields,field_description:stock_inventory.field_stock_inventory__location_ids
+#: model_terms:ir.ui.view,arch_db:stock_inventory.view_inventory_group_form
+msgid "Locations"
+msgstr "Ubicaciones"
+
+#. module: stock_inventory
+#: model:ir.model.fields.selection,name:stock_inventory.selection__stock_inventory__product_selection__lot
+msgid "Lot/Serial Number"
+msgstr "Número de Serie/Lot"
+
+#. module: stock_inventory
+#: model:ir.model.fields,field_description:stock_inventory.field_stock_inventory__lot_ids
+msgid "Lot/Serial Numbers"
+msgstr "Números de Serie/Lot"
+
+#. module: stock_inventory
+#: model:ir.model.fields.selection,name:stock_inventory.selection__stock_inventory__product_selection__manual
+msgid "Manual Selection"
+msgstr "Selección Manual"
+
+#. module: stock_inventory
+#: model:ir.model.fields.selection,name:stock_inventory.selection__stock_inventory__product_selection__one
+msgid "One Product"
+msgstr "Un Producto"
+
+#. module: stock_inventory
+#: model:ir.model.fields,field_description:stock_inventory.field_stock_inventory__owner_id
+msgid "Owner"
+msgstr "Propietario"
+
+#. module: stock_inventory
+#: model:ir.model.fields.selection,name:stock_inventory.selection__stock_inventory__product_selection__percent
+msgid "Percent of products"
+msgstr "Porciento de productos"
+
+#. module: stock_inventory
+#: model:ir.model.fields,field_description:stock_inventory.field_stock_inventory__product_percent
+msgid "Percent products"
+msgstr "Porciento de producto"
+
+#. module: stock_inventory
+#: model:ir.model.fields,field_description:stock_inventory.field_stock_inventory__category_id
+#: model:ir.model.fields.selection,name:stock_inventory.selection__stock_inventory__product_selection__category
+msgid "Product Category"
+msgstr "Categoría de Producto"
+
+#. module: stock_inventory
+#: model:ir.model,name:stock_inventory.model_stock_move_line
+msgid "Product Moves (Stock Move Line)"
+msgstr "Movimientos de Producto (Líneas de movimiento de existencias)"
+
+#. module: stock_inventory
+#: model:ir.model.fields,field_description:stock_inventory.field_stock_inventory__product_selection
+msgid "Product Selection"
+msgstr "Selección de Productos"
+
+#. module: stock_inventory
+#: model:ir.model.fields,field_description:stock_inventory.field_stock_inventory__product_ids
+msgid "Products"
+msgstr "Productos"
+
+#. module: stock_inventory
+#: model:ir.model,name:stock_inventory.model_stock_quant
+msgid "Quants"
+msgstr "Cuantos"
+
+#. module: stock_inventory
+#: model_terms:ir.ui.view,arch_db:stock_inventory.view_inventory_group_form
+msgid "Set to Done"
+msgstr "Establecer como Hecho"
+
+#. module: stock_inventory
+#: model:ir.model.fields,field_description:stock_inventory.field_stock_inventory__state
+msgid "State"
+msgstr "Estado"
+
+#. module: stock_inventory
+#: model:ir.actions.act_window,name:stock_inventory.action_view_stock_move_line_inventory_tree
+msgid "Stock Move Lines"
+msgstr "Líneas de movimiento de existencias"
+
+#. module: stock_inventory
+#: model:ir.model.fields,field_description:stock_inventory.field_stock_inventory__count_stock_moves
+msgid "Stock Moves Lines"
+msgstr "Líneas de movimiento de existencias"
+
+#. module: stock_inventory
+#: model:ir.model.fields,help:stock_inventory.field_stock_inventory__owner_id
+msgid "This is the owner of the inventory adjustment"
+msgstr "Este es el propietario del ajuste de inventario"
+
+#. module: stock_inventory
+#: model:ir.model.fields,field_description:stock_inventory.field_stock_quant__to_do
+#: model_terms:ir.ui.view,arch_db:stock_inventory.view_stock_quant_search_not_done
+msgid "To Do"
+msgstr "Pendientes"
+
+#. module: stock_inventory
+#: model_terms:ir.ui.view,arch_db:stock_inventory.view_inventory_group_form
+msgid "e.g. Annual inventory"
+msgstr "Exp., Inventario Anual"

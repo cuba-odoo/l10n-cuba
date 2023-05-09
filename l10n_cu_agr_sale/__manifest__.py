@@ -6,7 +6,7 @@
     'version': '1.2',
     'category': 'Sales',
     'license': 'LGPL-3',
-    'author': 'TecKISA',
+    'author': "Ing. José Andrés Hernández Bustio, . Enrique ..., Ing. Orlando Martinez Bao (YYOGestiono)",
     'summary': '',
     'description': """
 This module contains all the common features of Sales Management and eCommerce. Personalización de la Oferta para AGR.

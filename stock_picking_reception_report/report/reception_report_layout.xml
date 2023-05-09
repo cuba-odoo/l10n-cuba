@@ -17,18 +17,7 @@
         </template>
 
         <template id="reception_report_layout_custom">
-            <div class = "header">
-                <div class="row">
-                    <div class="col-xs-12">
-                        <h3 style="text-align: center; font-weight: bold;">SC-2-04 INFORME DE RECEPCIÓN</h3>
-                    </div>
-                </div>
-                <div class="row zero_min_height">
-                    <div class="col-xs-12">
-                        <div style="border-bottom: 1px solid black;"/>
-                    </div>
-                </div>
-            </div>
+            
 
 
             <div class="article">

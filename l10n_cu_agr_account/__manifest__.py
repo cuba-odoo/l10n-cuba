@@ -6,12 +6,12 @@
     'version': '1.1',
     'category': 'Account',
     'license': 'LGPL-3',
-    'author': 'TecKISA',
+    'author': "Ing. José Andrés Hernández Bustio, . Enrique ..., Ing. Orlando Martinez Bao (YYOGestiono)",
     'summary': '',
     'description': """
 This module contains invoice AGR.
     """,
-    'depends': ['account', 'portal', 'product_arancel', 'universal_discount', 'l10n_cu_stock'],
+    'depends': ['account', 'portal', 'product_arancel', 'universal_discount', 'l10n_cu_stock', 'l10n_cu'],
     'data': [
         'views/account_invoice_view.xml',
         'report/report_invoice_view.xml',

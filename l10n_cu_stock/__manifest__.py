@@ -10,13 +10,13 @@
         Establecer los elementos necesarios para el manejo de los inventarios en cuba.
     """,
 
-    'author': "Ing. José Andrés Hernández Bustio, . Enrique ..., Orlando Martinez Bao",
+    'author': "Ing. José Andrés Hernández Bustio, . Enrique ..., Ing. Orlando Martinez Bao (YYOGestiono)",
     'website': "",
     'category': 'Inventory/Inventory',
     'version': '15.0.1.0.0',
 
     # any module necessary for this one to work correctly
-    'depends': ['base', 'l10n_cu_stock_hs'],
+    'depends': ['base', 'product'],
 
     # always loaded
     'data': [
