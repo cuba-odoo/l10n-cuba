@@ -353,7 +353,7 @@ odoo.define('checkout.checkout', require => {
                         let $selectMunicipalities = this.$("select[name='res_municipality_id']");
                         let $inputCity = this.$("input[name='city']");
                         if (data.country_code === 'CU') {
-                            //alert('hello');
+                            alert('hello');
                             $inputCity.val('').parent('div').hide();
                             $selectMunicipalities.parent('div').show();
                         }

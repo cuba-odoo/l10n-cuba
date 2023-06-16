@@ -37,6 +37,7 @@
     ],
     'assets': {
         'web.assets_frontend': [
+            '/l10n_cu_website_sale/static/src/lib/jquery.validate.min.js',
             '/l10n_cu_website_sale/static/src/js/checkout.js'
         ]
     }
