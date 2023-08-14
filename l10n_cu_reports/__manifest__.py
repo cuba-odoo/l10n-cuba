@@ -27,7 +27,6 @@
           "views/report_financial_evab_templates.xml",
           "views/report_financial_5927_00_templates.xml",
           "wizards/account_report.xml",
-          "wizards/report_partner_balance.xml",
           "security/ir.model.access.csv"
      ],
      'license': 'LGPL-3',
