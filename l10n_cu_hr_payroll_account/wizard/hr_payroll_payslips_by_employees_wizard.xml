@@ -5,7 +5,7 @@
 		<field name="model">hr.payslip.employees</field>
 		<field name="inherit_id" ref="om_hr_payroll.view_hr_payslip_by_employees"/>
 		<field name="arch" type="xml">
-			<xpath expr="//form/group[1]" position="replace">
+			<xpath expr="//sheet/div" position="replace">
 				<h2>Estructura salarial</h2>
 				<group name="struct">
 					<div class="text-muted">
