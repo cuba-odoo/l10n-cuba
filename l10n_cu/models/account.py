@@ -170,7 +170,7 @@ class AccountGroup(models.Model):
     def _compute_parent(self):
         record_parents=self.search([])
         for record in self.filtered('group_template_parent_id'):
-            parent=record_parents.filtered(lambda it: it.group_template_id==record.group_template_parent_id)
+            parent=record_parents.filtered(lambda it: it.group_template_id==record.group_template_parent_id and it.company_id == self.env.company)
             if parent:
                 record.parent_id= parent.id
 
