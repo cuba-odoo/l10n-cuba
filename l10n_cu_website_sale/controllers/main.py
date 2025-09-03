@@ -11,15 +11,18 @@ class L10nCuWebsiteSale(WebsiteSale):
         """ Provide the fields related to the country to render the website sale form """
 
         res = super()._get_country_related_render_values(kw, render_values)
+        values = render_values['checkout']
         mode = render_values['mode']
-        Partner = request.env['res.partner']
-        partner_id = render_values['partner_id']
+        order = render_values['website_sale_order']
 
-        if mode and partner_id != -1:
-            Partner = Partner.browse(int(render_values['partner_id']))
+        def_state_id = order.partner_id.state_id
+        state = 'state_id' in values and values['state_id'] != '' and request.env['res.country.state'].browse(int(values['state_id']))
+        state = state and state.exists() or def_state_id
 
-        res['state_id'] = Partner.state_id
-        res['municipalities'] = Partner.state_id.get_website_sale_municipalities(mode=mode[1])
+        res.update({
+            'state': state,
+            'municipalities': state.get_website_sale_municipalities(mode=mode[1]),
+        })
 
         return res
 
