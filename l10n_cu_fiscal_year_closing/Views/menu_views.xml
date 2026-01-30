@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_fiscal_year_closing_tree" model="ir.ui.view">
+        <field name="name">l10n_cu.fiscal.year.closing.tree</field>
+        <field name="model">l10n_cu.fiscal.year.closing</field>
+        <field name="arch" type="xml">
+            <tree string="Cierres de Ejercicio" create="false">
+                <field name="name"/>
+                <field name="fiscal_year"/>
+                <field name="closing_date"/>
+                <field name="net_result" sum="Total"/>
+                <field name="state"/>
+                <field name="company_id" groups="base.group_multi_company"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_fiscal_year_closing_form" model="ir.ui.view">
+        <field name="name">l10n_cu.fiscal.year.closing.form</field>
+        <field name="model">l10n_cu.fiscal.year.closing</field>
+        <field name="arch" type="xml">
+            <form string="Cierre de Ejercicio">
+                <header>
+                    <button name="action_compute_balances" string="Calcular saldos" type="object" 
+                            class="btn-primary" states="draft"/>
+                    <button name="action_create_closing_entry" string="Crear asiento de cierre" type="object" 
+                            class="btn-success" states="draft"/>
+                    <button name="action_cancel" string="Cancelar cierre" type="object" 
+                            class="btn-danger" states="posted"/>
+                    <field name="state" widget="statusbar" statusbar_visible="draft,posted"/>
+                </header>
+                <sheet>
+                    <div class="oe_title">
+                        <h1><field name="name"/></h1>
+                    </div>
+                    <group>
+                        <group>
+                            <field name="fiscal_year"/>
+                            <field name="closing_date"/>
+                            <field name="company_id" groups="base.group_multi_company"/>
+                        </group>
+                        <group>
+                            <field name="total_income" widget="monetary"/>
+                            <field name="total_expense" widget="monetary"/>
+                            <field name="net_result" widget="monetary" 
+                                   decoration-success="net_result &gt; 0"
+                                   decoration-danger="net_result &lt; 0"/>
+                        </group>
+                    </group>
+                    <group attrs="{'invisible': [('move_id', '=', False)]}">
+                        <field name="move_id" string="Asiento generado"/>
+                    </group>
+                </sheet>
+                <div class="oe_chatter">
+                    <field name="message_follower_ids"/>
+                    <field name="activity_ids"/>
+                    <field name="message_ids"/>
+                </div>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_fiscal_year_closing" model="ir.actions.act_window">
+        <field name="name">Cierres de Ejercicio</field>
+        <field name="res_model">l10n_cu.fiscal.year.closing</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem id="menu_fiscal_year_closing"
+              name="Cierres de Ejercicio"
+              parent="account.account_account_menu"
+              action="action_fiscal_year_closing"
+              sequence="100"
+              groups="account.group_account_manager"/>
+</odoo>

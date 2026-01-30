@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Vista formulario del wizard principal -->
+    <record id="view_wizard_fiscal_year_closing" model="ir.ui.view">
+        <field name="name">l10n_cu.fiscal.year.closing.wizard.form</field>
+        <field name="model">l10n_cu.fiscal.year.closing.wizard</field>
+        <field name="arch" type="xml">
+            <form>
+                <group string="Configuración del Cierre">
+                    <group>
+                        <field name="fiscal_year" placeholder="Ej: 2025"/>
+                        <field name="closing_date"/>
+                    </group>
+                    <group>
+                        <field name="company_id" groups="base.group_multi_company"/>
+                    </group>
+                </group>
+                <footer>
+                    <button name="action_create_closing" string="Iniciar Cierre" type="object" class="btn-primary"/>
+                    <button string="Cancelar" class="btn-secondary" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <!-- Acción para abrir el wizard de agregar cuentas -->
+    <record id="action_add_accounts_wizard" model="ir.actions.act_window">
+        <field name="name">Agregar Cuentas al Cierre</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">l10n_cu.add.accounts.wizard</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+        <field name="context">{'default_closing_id': active_id}</field>
+    </record>
+
+    <!-- Vista formulario del cierre (PRINCIPAL) - CON CHATTER -->
+    <record id="view_fiscal_year_closing_form" model="ir.ui.view">
+        <field name="name">l10n_cu.fiscal.year.closing.form</field>
+        <field name="model">l10n_cu.fiscal.year.closing</field>
+        <field name="arch" type="xml">
+            <form string="Cierre de Ejercicio Fiscal">
+                <header>
+                    <button name="action_load_suggested_accounts" string="Cargar Cuentas Sugeridas" type="object" class="btn-primary" states="draft"/>
+                    <button name="action_calculate_balances" string="Calcular Saldos" type="object" class="btn-default" states="draft"/>
+                    <button name="action_create_closing_entry" string="Crear Asiento de Cierre" type="object" class="btn-success" states="draft"/>
+                    <button name="action_cancel" string="Cancelar Cierre" type="object" class="btn-danger" states="posted"/>
+                    <field name="state" widget="statusbar" statusbar_visible="draft,posted"/>
+                </header>
+                
+                <sheet>
+                    <div class="oe_title">
+                        <h1><field name="name"/></h1>
+                    </div>
+                    
+                    <group>
+                        <group>
+                            <field name="fiscal_year"/>
+                            <field name="closing_date"/>
+                            <field name="company_id" groups="base.group_multi_company"/>
+                        </group>
+                        <group>
+                            <field name="total_accounts" string="Total Cuentas"/>
+                            <field name="selected_accounts" string="Cuentas Seleccionadas"/>
+                            <field name="net_result" widget="monetary" 
+                                   decoration-success="net_result &gt; 0"
+                                   decoration-danger="net_result &lt; 0"
+                                   string="Resultado Neto"/>
+                        </group>
+                    </group>
+                    
+                    <notebook>
+                        <!-- Pestaña: Cuentas para el Cierre -->
+                        <page string="Cuentas para el Cierre" name="accounts">
+                            <group col="3">
+                                <button name="action_load_suggested_accounts" string="Cargar Cuentas Sugeridas" type="object" class="btn-primary"/>
+                                <button name="l10n_cu_fiscal_year_closing.action_add_accounts_wizard" string="Agregar Cuentas" type="action" class="btn-default"/>
+                                <button name="action_calculate_balances" string="Calcular Saldos" type="object" class="btn-default"/>
+                            </group>
+                            
+                            <field name="account_ids" nolabel="1">
+                                <tree editable="bottom" create="false" delete="true">
+                                    <field name="include_in_closing" widget="boolean_toggle" string="Incluir"/>
+                                    <field name="account_code" readonly="1" string="Código"/>
+                                    <field name="account_name" readonly="1" string="Nombre"/>
+                                    <field name="account_type" readonly="1" string="Tipo"/>
+                                    <field name="balance" widget="monetary" readonly="1" sum="Total"/>
+                                </tree>
+                            </field>
+                            
+                            <div class="alert alert-info" attrs="{'invisible': [('total_accounts', '&gt;', 0)]}">
+                                <i class="fa fa-info-circle"/> No hay cuentas agregadas.
+                                <br/>
+                                Haga clic en "Cargar Cuentas Sugeridas" para buscar automáticamente,
+                                o "Agregar Cuentas" para seleccionar varias cuentas a la vez.
+                            </div>
+                        </page>
+                        
+                        <!-- Pestaña: Resumen -->
+                        <page string="Resumen" name="summary">
+                            <group>
+                                <group string="Totales">
+                                    <field name="total_income" widget="monetary" readonly="1"/>
+                                    <field name="total_expense" widget="monetary" readonly="1"/>
+                                    <field name="net_result" widget="monetary" readonly="1" 
+                                           decoration-success="net_result &gt; 0"
+                                           decoration-danger="net_result &lt; 0"/>
+                                </group>
+                                <group string="Información">
+                                    <field name="move_id" string="Asiento Generado" readonly="1" attrs="{'invisible': [('state', '!=', 'posted')]}"/>
+                                    <field name="state" readonly="1"/>
+                                </group>
+                            </group>
+                        </page>
+                    </notebook>
+                </sheet>
+                
+                <!-- ✅ CHATTER HABILITADO (ahora compatible gracias a _inherit) -->
+                <div class="oe_chatter">
+                    <field name="message_follower_ids"/>
+                    <field name="activity_ids"/>
+                    <field name="message_ids"/>
+                </div>
+            </form>
+        </field>
+    </record>
+
+    <!-- Vista tree del cierre -->
+    <record id="view_fiscal_year_closing_tree" model="ir.ui.view">
+        <field name="name">l10n_cu.fiscal.year.closing.tree</field>
+        <field name="model">l10n_cu.fiscal.year.closing</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="fiscal_year"/>
+                <field name="closing_date"/>
+                <field name="total_income" sum="Total Ingresos"/>
+                <field name="total_expense" sum="Total Gastos"/>
+                <field name="net_result" sum="Resultado Neto"/>
+                <field name="state"/>
+                <field name="company_id" groups="base.group_multi_company"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- Acción para abrir el wizard principal -->
+    <record id="action_wizard_fiscal_year_closing" model="ir.actions.act_window">
+        <field name="name">Cierre de Ejercicio Fiscal</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">l10n_cu.fiscal.year.closing.wizard</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+    </record>
+
+    <!-- Acción para ver historial de cierres -->
+    <record id="action_fiscal_year_closing" model="ir.actions.act_window">
+        <field name="name">Cierres de Ejercicio</field>
+        <field name="res_model">l10n_cu.fiscal.year.closing</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- Menú visible en todas las instalaciones -->
+    <menuitem id="menu_fiscal_year_closing_wizard"
+              name="Cierre de Ejercicio Fiscal"
+              parent="account.menu_finance_configuration"
+              action="action_wizard_fiscal_year_closing"
+              sequence="99"
+              groups="account.group_account_manager"/>
+              
+    <!-- Menú para historial de cierres -->
+    <menuitem id="menu_fiscal_year_closing_history"
+              name="Historial de Cierres"
+              parent="account.menu_finance_configuration"
+              action="action_fiscal_year_closing"
+              sequence="100"
+              groups="account.group_account_manager"/>
+</odoo>

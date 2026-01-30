@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Vista formulario del wizard para agregar cuenta -->
+    <record id="view_add_account_wizard" model="ir.ui.view">
+        <field name="name">l10n_cu.add.account.wizard.form</field>
+        <field name="model">l10n_cu.add.account.wizard</field>
+        <field name="arch" type="xml">
+            <form>
+                <group string="Seleccionar Cuenta">
+                    <field name="closing_id" invisible="1"/>
+                    <field name="company_id" invisible="1"/>
+                    <field name="account_id" domain="[('company_id', '=', company_id), ('deprecated', '=', False)]" required="1"/>
+                    <field name="account_type" required="1"/>
+                </group>
+                <footer>
+                    <button name="action_add_account" string="Agregar" type="object" class="btn-primary"/>
+                    <button string="Cancelar" class="btn-secondary" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+</odoo>

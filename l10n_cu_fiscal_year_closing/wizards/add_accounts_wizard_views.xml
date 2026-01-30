@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Vista formulario del wizard para agregar múltiples cuentas -->
+    <record id="view_add_accounts_wizard" model="ir.ui.view">
+        <field name="name">l10n_cu.add.accounts.wizard.form</field>
+        <field name="model">l10n_cu.add.accounts.wizard</field>
+        <field name="arch" type="xml">
+            <form>
+                <group string="Seleccionar Cuentas">
+                    <field name="closing_id" invisible="1"/>
+                    <field name="company_id" invisible="1"/>
+                    <field name="account_ids" widget="many2many_tags" 
+                           domain="[('company_id', '=', company_id), ('deprecated', '=', False)]" 
+                           options="{'no_create': True}"
+                           required="1"/>
+                    <field name="account_type" required="1"/>
+                </group>
+                <footer>
+                    <button name="action_add_accounts" string="Agregar Seleccionadas" type="object" class="btn-primary"/>
+                    <button string="Cancelar" class="btn-secondary" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+</odoo>

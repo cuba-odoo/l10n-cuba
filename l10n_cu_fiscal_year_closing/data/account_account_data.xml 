@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Plantilla para crear cuenta 999 Resultados Acumulados si no existe -->
+    <record id="account_999_retained_earnings" model="account.account.template">
+        <field name="name">Resultados Acumulados</field>
+        <field name="code">999</field>
+        <field name="account_type">equity</field>
+        <field name="reconcile" eval="False"/>
+    </record>
+</odoo>
