@@ -7,10 +7,10 @@
 Módulo para cierre de ejercicio fiscal en Cuba.
 - Calcula automáticamente saldos de ingresos y gastos
 - Genera asiento único de cierre a cuenta 999000000 (Resultados)
-- Compatible con plan de cuentas cubano NC-04
+- Compatible con plan de cuentas cubano LC de la CCO 
 - Totalmente funcional en Odoo Community Edition
 """,
-    'author': 'Comunidad Cubana de Odoo',
+    'author': 'HcalvoFernadez - Comunidad Cubana de Odoo',
     'website': 'https://github.com/cuba-odoo/l10n-cu',
     'license': 'LGPL-3',
     'depends': ['account', 'mail'],

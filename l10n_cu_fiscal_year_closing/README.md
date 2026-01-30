@@ -1,6 +1,6 @@
 # Cierre de Ejercicio Fiscal - Localización Cubana (Odoo 15 CE)
 
-Módulo para automatizar el cierre contable anual según normas cubanas (Plan de Cuentas NC-04).
+Módulo para automatizar el cierre contable anual según normas cubanas (Plan de Cuentas LC CCO).
 
 ## ✨ Características
 
@@ -42,6 +42,7 @@ Al ejecutar el cierre contable con este módulo, obtendrás:
 |--------|------------------|---------------------|--------|
 | **Cuentas de ingresos**<br>(900.xxxx / 900xxxx) | Saldo acumulado del año | **0.00 CUP** | ✅ Cerradas |
 | **Cuentas de gastos**<br>(822.xxxx / 822xxxx) | Saldo acumulado del año | **0.00 CUP** | ✅ Cerradas |
+| **Cuentas de gastos**<br>(855.xxxx / 855xxxx) | Saldo acumulado del año | **0.00 CUP** | ✅ Cerradas |
 | **Cuenta de resultados**<br>(999.000000 / 999000000) | 0.00 CUP | **Utilidad/Pérdida neta** | ✅ Actualizada |
 
 ### 💡 Beneficios prácticos para contadores cubanos
@@ -96,7 +97,7 @@ El módulo busca automáticamente cuentas con estos patrones:
 ## 🌐 Compatibilidad
 
 - ✅ Odoo 15 Community Edition
-- ✅ Plan de cuentas cubano NC-04
+- ✅ Plan de cuentas cubano LC de la CCO
 - ✅ Cualquier configuración de cuentas (flexible)
 - ✅ Multi-compañía
 - ✅ Multi-moneda
@@ -127,8 +128,8 @@ Si encuentras algún problema o tienes sugerencias de mejora, por favor:
 ## 📞 Soporte
 
 Para soporte técnico o consultas:
-- Email: comunidad@cuba-odoo.org
-- Telegram: @cuba_odoo_comunidad
+- Email: scnetisla@gmail.com
+- Telegram: https://t.me/odoodevcubacuba_odoo_comunidad @hcalvofernandez
 - GitHub Discussions: https://github.com/cuba-odoo/l10n-cu/discussions
 
 ## 📱 Capturas de pantalla
@@ -142,7 +143,7 @@ Para soporte técnico o consultas:
 ### Asiento de cierre generado
 ![Asiento generado](https://i.imgur.com/placeholder3.png)
 
-## 📚 Documentación adicional
+## 📚 Documentación adicional  ( en proceso)
 
 - [Guía rápida de uso](docs/GUÍA_RÁPIDA.md)
 - [Manual para contadores](docs/MANUAL_CONTADORES.md)
@@ -153,10 +154,10 @@ Para soporte técnico o consultas:
 
 Este módulo fue desarrollado gracias a la colaboración de:
 - Comunidad Cubana de Odoo
-- Desoft - Empresa de Aplicaciones Informáticas
+- ConLeyet SRL - Empresa de Privada, de Aplicaciones Informáticas y Servicios de Contabilidad
 - Todos los contribuidores del proyecto l10n-cu
 
-## 🇨🇺 Hecho con ❤️ para la comunidad contable cubana
+## 🇨🇺 Hecho con ❤️ para la comunidad cubana de Odoo
 
 ---
 
