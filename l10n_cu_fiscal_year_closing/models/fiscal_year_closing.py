@@ -2,6 +2,7 @@
 from odoo import models, fields, api, _
 from odoo.exceptions import UserError
 from datetime import date
+from odoo.tools import formatLang
 
 
 class FiscalYearClosing(models.Model):
@@ -22,28 +23,33 @@ class FiscalYearClosing(models.Model):
     ], string='Estado', default='draft', readonly=True)
     
     # Cuentas seleccionadas para el cierre
-    account_ids = fields.One2many('l10n_cu.fiscal.year.closing.account', 'closing_id', string='Cuentas para Cierre')
+    account_ids = fields.One2many('l10n_cu.fiscal.year.closing.account', 'closing_id', string='Cuentas para Cierre', copy=False)
     
-    # Resúmenes
-    total_income = fields.Monetary(string='Total Ingresos', currency_field='currency_id', readonly=True, compute='_compute_totals')
-    total_expense = fields.Monetary(string='Total Gastos', currency_field='currency_id', readonly=True, compute='_compute_totals')
-    net_result = fields.Monetary(string='Resultado Neto', currency_field='currency_id', readonly=True, compute='_compute_totals', 
+    # Resúmenes - ¡IMPORTANTE: store=True para que se guarden en DB!
+    total_income = fields.Monetary(string='Total Ingresos', currency_field='currency_id', readonly=True, compute='_compute_totals', store=True)
+    total_expense = fields.Monetary(string='Total Gastos', currency_field='currency_id', readonly=True, compute='_compute_totals', store=True)
+    net_result = fields.Monetary(string='Resultado Neto', currency_field='currency_id', readonly=True, compute='_compute_totals', store=True,
                                 help='Positivo = Utilidad, Negativo = Pérdida')
     currency_id = fields.Many2one('res.currency', related='company_id.currency_id', readonly=True)
     
     # Contadores
-    total_accounts = fields.Integer(string='Total Cuentas', compute='_compute_counters')
-    selected_accounts = fields.Integer(string='Cuentas Seleccionadas', compute='_compute_counters')
+    total_accounts = fields.Integer(string='Total Cuentas', compute='_compute_counters', store=True)
+    selected_accounts = fields.Integer(string='Cuentas Seleccionadas', compute='_compute_counters', store=True)
 
     @api.depends('account_ids.balance', 'account_ids.account_type', 'account_ids.include_in_closing')
     def _compute_totals(self):
         """Calcula los totales basados en las cuentas seleccionadas"""
         for record in self:
-            income = sum(acc.balance for acc in record.account_ids if acc.account_type == 'income' and acc.include_in_closing)
-            expense = sum(acc.balance for acc in record.account_ids if acc.account_type == 'expense' and acc.include_in_closing)
-            record.total_income = income
-            record.total_expense = expense
-            record.net_result = income - expense
+            if record.account_ids:
+                income = sum(acc.balance for acc in record.account_ids if acc.account_type == 'income' and acc.include_in_closing)
+                expense = sum(acc.balance for acc in record.account_ids if acc.account_type == 'expense' and acc.include_in_closing)
+                record.total_income = income
+                record.total_expense = expense
+                record.net_result = income - expense
+            else:
+                record.total_income = 0.0
+                record.total_expense = 0.0
+                record.net_result = 0.0
 
     @api.depends('account_ids')
     def _compute_counters(self):
@@ -53,7 +59,7 @@ class FiscalYearClosing(models.Model):
             record.selected_accounts = len(record.account_ids.filtered(lambda x: x.include_in_closing))
 
     def action_load_suggested_accounts(self):
-        """Carga automáticamente las cuentas sugeridas según patrones comunes"""
+        """Carga automáticamente TODAS las cuentas nominales según NC-04 cubano oficial"""
         self.ensure_one()
         
         if self.state != 'draft':
@@ -68,75 +74,86 @@ class FiscalYearClosing(models.Model):
         except:
             raise UserError(_('El ejercicio fiscal debe ser un año válido (ej: 2025)'))
         
-        # 🔑 Buscar cuentas según patrones comunes
+        # 🔑 Buscar cuentas nominales según NC-04 cubano COMPLETO
         suggested_accounts = []
         suggested_account_ids = set()  # Para evitar duplicados
         
-        # Patrón 1: Plan cubano NC-04 (sin puntos) - Ingresos 900xxxx
-        accounts_900 = self.env['account.account'].search([
-            ('company_id', '=', self.company_id.id),
-            ('code', '=like', '900%'),
-            ('deprecated', '=', False)
-        ])
-        for acc in accounts_900:
-            if acc.id not in suggested_account_ids:
-                suggested_accounts.append({
-                    'closing_id': self.id,
-                    'account_id': acc.id,
-                    'account_type': 'income',
-                    'include_in_closing': True,
-                })
-                suggested_account_ids.add(acc.id)
+        # ========================================================================
+        # PATRÓN 1: INGRESOS - Grupo 900.xxxx completo (NC-04)
+        # ========================================================================
+        income_patterns = [
+            '900%', '900.%',  # Ingresos generales
+            '901%', '901.%',  # Ventas de mercancías
+            '902%', '902.%',  # Ventas de servicios
+            '903%', '903.%',  # Otros ingresos operacionales
+            '904%', '904.%',  # Ingresos financieros
+            '905%', '905.%',  # Ingresos extraordinarios
+        ]
         
-        # Patrón 2: Plan cubano NC-04 (sin puntos) - Gastos 822xxxx
-        accounts_822 = self.env['account.account'].search([
-            ('company_id', '=', self.company_id.id),
-            ('code', '=like', '822%'),
-            ('deprecated', '=', False)
-        ])
-        for acc in accounts_822:
-            if acc.id not in suggested_account_ids:
-                suggested_accounts.append({
-                    'closing_id': self.id,
-                    'account_id': acc.id,
-                    'account_type': 'expense',
-                    'include_in_closing': True,
-                })
-                suggested_account_ids.add(acc.id)
+        for pattern in income_patterns:
+            accounts = self.env['account.account'].search([
+                ('company_id', '=', self.company_id.id),
+                ('code', '=like', pattern),
+                ('deprecated', '=', False)
+            ])
+            for acc in accounts:
+                if acc.id not in suggested_account_ids:
+                    suggested_accounts.append({
+                        'closing_id': self.id,
+                        'account_id': acc.id,
+                        'account_type': 'income',
+                        'include_in_closing': True,
+                    })
+                    suggested_account_ids.add(acc.id)
         
-        # Patrón 3: Plan cubano con puntos - Ingresos 900.xxxx
-        accounts_900_dot = self.env['account.account'].search([
-            ('company_id', '=', self.company_id.id),
-            ('code', '=like', '900.%'),
-            ('deprecated', '=', False)
-        ])
-        for acc in accounts_900_dot:
-            if acc.id not in suggested_account_ids:
-                suggested_accounts.append({
-                    'closing_id': self.id,
-                    'account_id': acc.id,
-                    'account_type': 'income',
-                    'include_in_closing': True,
-                })
-                suggested_account_ids.add(acc.id)
+        # ========================================================================
+        # PATRÓN 2: GASTOS - TODOS los grupos 8xx.xxxx del NC-04
+        # ========================================================================
+        expense_patterns = [
+            # Grupo 800: Gastos generales
+            '800%', '800.%',
+            '801%', '801.%',  # Costo de ventas
+            '802%', '802.%',  # Gastos de explotación
+            '803%', '803.%',  # Gastos administrativos
+            '804%', '804.%',  # Gastos de ventas
+            '805%', '805.%',  # Otros gastos operacionales
+            
+            # Grupo 814: Gastos financieros específicos
+            '814%', '814.%',
+            
+            # Grupos adicionales de gastos (822, 826, 835, 855)
+            '822%', '822.%',  # Gastos operacionales
+            '826%', '826.%',  # Gastos financieros
+            '835%', '835.%',  # Gastos extraordinarios
+            '855%', '855.%',  # Otros gastos
+            
+            # Otros grupos de gastos NC-04
+            '860%', '860.%',  # Depreciaciones y amortizaciones
+            '861%', '861.%',  # Provisiones
+            '870%', '870.%',  # Impuestos sobre resultados
+            '899%', '899.%',  # Ajustes de gastos
+        ]
         
-        # Patrón 4: Plan cubano con puntos - Gastos 822.xxxx
-        accounts_822_dot = self.env['account.account'].search([
-            ('company_id', '=', self.company_id.id),
-            ('code', '=like', '822.%'),
-            ('deprecated', '=', False)
-        ])
-        for acc in accounts_822_dot:
-            if acc.id not in suggested_account_ids:
-                suggested_accounts.append({
-                    'closing_id': self.id,
-                    'account_id': acc.id,
-                    'account_type': 'expense',
-                    'include_in_closing': True,
-                })
-                suggested_account_ids.add(acc.id)
+        for pattern in expense_patterns:
+            accounts = self.env['account.account'].search([
+                ('company_id', '=', self.company_id.id),
+                ('code', '=like', pattern),
+                ('deprecated', '=', False)
+            ])
+            for acc in accounts:
+                if acc.id not in suggested_account_ids:
+                    suggested_accounts.append({
+                        'closing_id': self.id,
+                        'account_id': acc.id,
+                        'account_type': 'expense',
+                        'include_in_closing': True,
+                    })
+                    suggested_account_ids.add(acc.id)
         
-        # Patrón 5: Cuentas estándar de Odoo - Ingresos
+        # ========================================================================
+        # PATRÓN 3: Fallback por tipo de cuenta (Odoo 15 - user_type_id.type)
+        # ========================================================================
+        # Ingresos por tipo de cuenta (Odoo 15)
         accounts_income = self.env['account.account'].search([
             ('company_id', '=', self.company_id.id),
             ('user_type_id.type', '=', 'income'),
@@ -152,7 +169,7 @@ class FiscalYearClosing(models.Model):
             })
             suggested_account_ids.add(acc.id)
         
-        # Patrón 6: Cuentas estándar de Odoo - Gastos
+        # Gastos por tipo de cuenta (Odoo 15)
         accounts_expense = self.env['account.account'].search([
             ('company_id', '=', self.company_id.id),
             ('user_type_id.type', '=', 'expense'),
@@ -172,12 +189,21 @@ class FiscalYearClosing(models.Model):
         if suggested_accounts:
             self.env['l10n_cu.fiscal.year.closing.account'].create(suggested_accounts)
             
+            # Contar por tipo para mensaje informativo
+            income_count = sum(1 for acc in suggested_accounts if acc['account_type'] == 'income')
+            expense_count = sum(1 for acc in suggested_accounts if acc['account_type'] == 'expense')
+            
             return {
                 'type': 'ir.actions.client',
                 'tag': 'display_notification',
                 'params': {
-                    'title': _('Cuentas cargadas'),
-                    'message': _('Se encontraron %s cuentas sugeridas.\nRevise y ajuste las cuentas antes de crear el asiento.') % len(suggested_accounts),
+                    'title': _('✓ Cuentas cargadas'),
+                    'message': _(
+                        'Se cargaron %s cuentas nominales según NC-04:\n'
+                        '• Ingresos (900-905.xxxx): %s cuentas\n'
+                        '• Gastos (800-899.xxxx): %s cuentas\n\n'
+                        'ℹ️ Haga clic en "Actualizar Lista" para ver las cuentas.'
+                    ) % (len(suggested_accounts), income_count, expense_count),
                     'type': 'success',
                     'sticky': False,
                 }
@@ -188,11 +214,34 @@ class FiscalYearClosing(models.Model):
                 'tag': 'display_notification',
                 'params': {
                     'title': _('No se encontraron cuentas'),
-                    'message': _('No se encontraron cuentas con los patrones comunes.\nPuede agregar cuentas manualmente usando el botón "Agregar Cuentas".'),
+                    'message': _(
+                        'No se encontraron cuentas nominales con los patrones NC-04.\n\n'
+                        'Patrones buscados:\n'
+                        '• Ingresos: 900.xxxx a 905.xxxx\n'
+                        '• Gastos: 800.xxxx a 899.xxxx\n\n'
+                        'Verifique que su plan de cuentas esté configurado según NC-04.\n'
+                        'O agregue cuentas manualmente con el botón "Agregar Cuentas".'
+                    ),
                     'type': 'warning',
                     'sticky': False,
                 }
             }
+
+    def action_refresh_accounts_list(self):
+        """Recarga la lista de cuentas en la vista - ¡NUEVO BOTÓN!"""
+        self.ensure_one()
+        
+        # Forzar recálculo de saldos para cuentas existentes
+        for account_line in self.account_ids:
+            account_line._compute_balance()
+        
+        self._compute_totals()
+        self._compute_counters()
+        
+        return {
+            'type': 'ir.actions.client',
+            'tag': 'reload',
+        }
 
     def action_add_accounts(self):
         """Abre wizard para agregar cuentas manualmente (múltiples)"""
@@ -210,8 +259,21 @@ class FiscalYearClosing(models.Model):
         }
 
     def action_calculate_balances(self):
-        """Recalcula los saldos de todas las cuentas"""
+        """Recalcula los saldos de todas las cuentas - ¡CORREGIDO FORMATO MONEDA!"""
         self.ensure_one()
+        
+        if not self.account_ids:
+            return {
+                'type': 'ir.actions.client',
+                'tag': 'display_notification',
+                'params': {
+                    'title': _('⚠️ Sin cuentas'),
+                    'message': _('No hay cuentas agregadas para calcular saldos.\n'
+                               'Use "Cargar Cuentas Sugeridas" o "Agregar Cuentas" primero.'),
+                    'type': 'warning',
+                    'sticky': False,
+                }
+            }
         
         # Recalcular balances de cada cuenta
         for account_line in self.account_ids:
@@ -219,13 +281,22 @@ class FiscalYearClosing(models.Model):
         
         # Recalcular totales
         self._compute_totals()
+        self._compute_counters()
         
+        # ✅ CORRECCIÓN: Usar formatLang en lugar de currency_id.format()
         return {
             'type': 'ir.actions.client',
             'tag': 'display_notification',
             'params': {
-                'title': _('Saldos actualizados'),
-                'message': _('Se recalculó el saldo de %s cuentas.') % len(self.account_ids),
+                'title': _('✓ Saldos calculados'),
+                'message': _('Totales actualizados:\n'
+                           '• Ingresos: %s\n'
+                           '• Gastos: %s\n'
+                           '• Resultado: %s') % (
+                    formatLang(self.env, self.total_income, currency_obj=self.currency_id),
+                    formatLang(self.env, self.total_expense, currency_obj=self.currency_id),
+                    formatLang(self.env, self.net_result, currency_obj=self.currency_id)
+                ),
                 'type': 'info',
                 'sticky': False,
             }
@@ -240,6 +311,20 @@ class FiscalYearClosing(models.Model):
         
         if not self.account_ids.filtered(lambda x: x.include_in_closing):
             raise UserError(_('No hay cuentas seleccionadas para el cierre.\nPor favor, seleccione al menos una cuenta o cargue las cuentas sugeridas.'))
+        
+        # Validar que los saldos estén calculados
+        if self.total_income == 0.0 and self.total_expense == 0.0:
+            return {
+                'type': 'ir.actions.client',
+                'tag': 'display_notification',
+                'params': {
+                    'title': _('⚠️ Saldos no calculados'),
+                    'message': _('Los saldos de las cuentas no han sido calculados.\n'
+                               'Haga clic en "Calcular Saldos" antes de crear el asiento.'),
+                    'type': 'warning',
+                    'sticky': False,
+                }
+            }
         
         if abs(self.total_income) < 0.01 and abs(self.total_expense) < 0.1:
             raise UserError(_('No hay movimientos en las cuentas seleccionadas para el período.\nVerifique la fecha de cierre y el ejercicio fiscal.'))
@@ -262,6 +347,7 @@ class FiscalYearClosing(models.Model):
                 ('company_id', '=', self.company_id.id)
             ], limit=1)
 
+        # Fallback Odoo 15
         if not retained_earnings_account:
             retained_earnings_account = self.env['account.account'].search([
                 ('user_type_id.type', '=', 'equity'),
@@ -273,7 +359,7 @@ class FiscalYearClosing(models.Model):
                 'No se encontró la cuenta de "Resultados" (999000000).\n\n'
                 'Solución:\n'
                 '1. Cree manualmente una cuenta con código 999000000\n'
-                '2. O vaya a Contabilidad > Configuración > Plan de cuentas y busque "999"\n'
+                '2. O vaya a Contabilidad → Configuración → Plan de cuentas y busque "999"\n'
                 '3. Asegúrese de que la cuenta exista y esté activa'
             ))
 
@@ -340,7 +426,7 @@ class FiscalYearClosing(models.Model):
             'date': self.closing_date,
             'journal_id': journal.id,
             'move_type': 'entry',
-            'ref': move_ref,  # ✅ NOMBRE MEJORADO
+            'ref': move_ref,
             'line_ids': move_lines,
             'company_id': self.company_id.id,
         })

@@ -69,48 +69,32 @@
                     </group>
                     
                     <notebook>
-                        <!-- Pestaña: Cuentas para el Cierre -->
-                        <page string="Cuentas para el Cierre" name="accounts">
-                            <group col="3">
-                                <button name="action_load_suggested_accounts" string="Cargar Cuentas Sugeridas" type="object" class="btn-primary"/>
-                                <button name="l10n_cu_fiscal_year_closing.action_add_accounts_wizard" string="Agregar Cuentas" type="action" class="btn-default"/>
-                                <button name="action_calculate_balances" string="Calcular Saldos" type="object" class="btn-default"/>
-                            </group>
-                            
-                            <field name="account_ids" nolabel="1">
-                                <tree editable="bottom" create="false" delete="true">
-                                    <field name="include_in_closing" widget="boolean_toggle" string="Incluir"/>
-                                    <field name="account_code" readonly="1" string="Código"/>
-                                    <field name="account_name" readonly="1" string="Nombre"/>
-                                    <field name="account_type" readonly="1" string="Tipo"/>
-                                    <field name="balance" widget="monetary" readonly="1" sum="Total"/>
-                                </tree>
-                            </field>
-                            
-                            <div class="alert alert-info" attrs="{'invisible': [('total_accounts', '&gt;', 0)]}">
-                                <i class="fa fa-info-circle"/> No hay cuentas agregadas.
-                                <br/>
-                                Haga clic en "Cargar Cuentas Sugeridas" para buscar automáticamente,
-                                o "Agregar Cuentas" para seleccionar varias cuentas a la vez.
-                            </div>
-                        </page>
+                    <!-- Pestaña: Cuentas para el Cierre -->
+                    <page string="Cuentas para el Cierre" name="accounts">
+                        <group col="4">
+                            <button name="action_load_suggested_accounts" string="Cargar Cuentas Sugeridas" type="object" class="btn-primary"/>
+                            <button name="l10n_cu_fiscal_year_closing.action_add_accounts_wizard" string="Agregar Cuentas" type="action" class="btn-default"/>
+                            <button name="action_refresh_accounts_list" string="Actualizar Lista" type="object" class="btn-secondary"/>
+                            <button name="action_calculate_balances" string="Calcular Saldos" type="object" class="btn-default"/>
+                        </group>
                         
-                        <!-- Pestaña: Resumen -->
-                        <page string="Resumen" name="summary">
-                            <group>
-                                <group string="Totales">
-                                    <field name="total_income" widget="monetary" readonly="1"/>
-                                    <field name="total_expense" widget="monetary" readonly="1"/>
-                                    <field name="net_result" widget="monetary" readonly="1" 
-                                           decoration-success="net_result &gt; 0"
-                                           decoration-danger="net_result &lt; 0"/>
-                                </group>
-                                <group string="Información">
-                                    <field name="move_id" string="Asiento Generado" readonly="1" attrs="{'invisible': [('state', '!=', 'posted')]}"/>
-                                    <field name="state" readonly="1"/>
-                                </group>
-                            </group>
-                        </page>
+                        <field name="account_ids" nolabel="1">
+                            <tree editable="bottom" create="false" delete="true">
+                                <field name="include_in_closing" widget="boolean_toggle" string="Incluir"/>
+                                <field name="account_code" readonly="1" string="Código"/>
+                                <field name="account_name" readonly="1" string="Nombre"/>
+                                <field name="account_type" readonly="1" string="Tipo"/>
+                                <field name="balance" widget="monetary" readonly="1" sum="Total"/>
+                            </tree>
+                        </field>
+                        
+                        <div class="alert alert-info" attrs="{'invisible': [('total_accounts', '&gt;', 0)]}">
+                            <i class="fa fa-info-circle"/> No hay cuentas agregadas.
+                            <br/>
+                            Haga clic en "Cargar Cuentas Sugeridas" para buscar automáticamente,
+                            o "Agregar Cuentas" para seleccionar varias cuentas a la vez.
+                        </div>
+                    </page>
                     </notebook>
                 </sheet>
                 
@@ -153,7 +137,7 @@
 
     <!-- Acción para ver historial de cierres -->
     <record id="action_fiscal_year_closing" model="ir.actions.act_window">
-        <field name="name">Cierres de Ejercicio</field>
+        <field name="name">Historial de Cierres</field>
         <field name="res_model">l10n_cu.fiscal.year.closing</field>
         <field name="view_mode">tree,form</field>
     </record>
