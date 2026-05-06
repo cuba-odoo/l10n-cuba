@@ -18,7 +18,7 @@
     "license": "AGPL-3",
     "data" : [
         'security/ir.model.access.csv',
-        'data/res_country_data.xml'
+        'data/res_country_data.xml',
         'data/res_country_state_data.xml',
         'data/res_municipality_data.xml',
         'views/res_municipality_views.xml',

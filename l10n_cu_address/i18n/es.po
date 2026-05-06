@@ -1,0 +1,147 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* l10n_cu_address
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0-20260326\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-06 21:34+0000\n"
+"PO-Revision-Date: 2026-05-06 17:37-0400\n"
+"Last-Translator: "
+"Language-Team: \n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"X-Generator: Poedit 3.2.2\n"
+
+#. module: l10n_cu_address
+#: model:ir.model.fields,field_description:l10n_cu_address.field_res_municipality__code
+msgid "Code"
+msgstr "Código"
+
+#. module: l10n_cu_address
+#: model:ir.model,name:l10n_cu_address.model_res_partner
+msgid "Contact"
+msgstr "Contacto"
+
+#. module: l10n_cu_address
+#: model:ir.model.fields,field_description:l10n_cu_address.field_res_municipality__country_id
+msgid "Country"
+msgstr "País"
+
+#. module: l10n_cu_address
+#: model:ir.model,name:l10n_cu_address.model_res_country_state
+msgid "Country state"
+msgstr "Provincia del país"
+
+#. module: l10n_cu_address
+#: model_terms:ir.actions.act_window,help:l10n_cu_address.action_list_municipalities
+msgid "Crear un municipio"
+msgstr ""
+
+#. module: l10n_cu_address
+#: model:ir.model,website_form_label:l10n_cu_address.model_res_partner
+msgid "Create a Customer"
+msgstr "Crear un cliente"
+
+#. module: l10n_cu_address
+#: model:ir.model.fields,field_description:l10n_cu_address.field_res_municipality__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: l10n_cu_address
+#: model:ir.model.fields,field_description:l10n_cu_address.field_res_municipality__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: l10n_cu_address
+#: model:ir.model.fields,field_description:l10n_cu_address.field_res_country_state__display_name
+#: model:ir.model.fields,field_description:l10n_cu_address.field_res_municipality__display_name
+#: model:ir.model.fields,field_description:l10n_cu_address.field_res_partner__display_name
+msgid "Display Name"
+msgstr "Nombre para mostrar"
+
+#. module: l10n_cu_address
+#: model:ir.model.fields,field_description:l10n_cu_address.field_res_country_state__id
+#: model:ir.model.fields,field_description:l10n_cu_address.field_res_municipality__id
+#: model:ir.model.fields,field_description:l10n_cu_address.field_res_partner__id
+msgid "ID"
+msgstr ""
+
+#. module: l10n_cu_address
+#: model:ir.model.fields,field_description:l10n_cu_address.field_res_municipality__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: l10n_cu_address
+#: model:ir.model.fields,field_description:l10n_cu_address.field_res_municipality__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: l10n_cu_address
+#: model_terms:ir.actions.act_window,help:l10n_cu_address.action_list_municipalities
+msgid ""
+"Los municipios pertenecen a los estados/provincias y forman parte de las direcciones de tus\n"
+"                    contactos."
+msgstr ""
+
+#. module: l10n_cu_address
+#: model:ir.actions.act_window,name:l10n_cu_address.action_list_municipalities
+#: model:ir.ui.menu,name:l10n_cu_address.menu_res_municipality
+#: model_terms:ir.ui.view,arch_db:l10n_cu_address.res_municipality_view_list
+msgid "Municipalities"
+msgstr "Municipios"
+
+#. module: l10n_cu_address
+#: model:ir.model,name:l10n_cu_address.model_res_municipality
+#: model_terms:ir.ui.view,arch_db:l10n_cu_address.view_state_municipality_search
+msgid "Municipality"
+msgstr "Municipio"
+
+#. module: l10n_cu_address
+#: model:ir.model.fields,field_description:l10n_cu_address.field_res_country_state__res_municipality_ids
+#: model:ir.model.fields,field_description:l10n_cu_address.field_res_partner__res_municipality_id
+#: model:ir.model.fields,field_description:l10n_cu_address.field_res_users__res_municipality_id
+msgid "Municipio"
+msgstr ""
+
+#. module: l10n_cu_address
+#: model_terms:ir.ui.view,arch_db:l10n_cu_address.view_form_partner_inherited
+msgid "Municipio..."
+msgstr ""
+
+#. module: l10n_cu_address
+#: model:ir.model.fields,help:l10n_cu_address.field_res_country_state__res_municipality_ids
+#: model:ir.model.fields,help:l10n_cu_address.field_res_partner__res_municipality_id
+#: model:ir.model.fields,help:l10n_cu_address.field_res_users__res_municipality_id
+msgid "Municipios de Cuba"
+msgstr ""
+
+#. module: l10n_cu_address
+#: model:ir.model.fields,field_description:l10n_cu_address.field_res_municipality__name
+msgid "Name"
+msgstr "Nombre"
+
+#. module: l10n_cu_address
+#: model:ir.model.fields,field_description:l10n_cu_address.field_res_partner__municipality_name
+#: model:ir.model.fields,field_description:l10n_cu_address.field_res_users__municipality_name
+msgid "Nombre del Municipio"
+msgstr ""
+
+#. module: l10n_cu_address
+#: model:ir.model.fields,field_description:l10n_cu_address.field_res_municipality__state_id
+msgid "State"
+msgstr "Provincia"
+
+#. module: l10n_cu_address
+#: model:ir.model.constraint,message:l10n_cu_address.constraint_res_municipality_name_code_uniq
+msgid "The municipality code must be unique per state!"
+msgstr "El código del municipio debe ser único por provincia!"
+
+#. module: l10n_cu_address
+#: model:ir.model.fields,help:l10n_cu_address.field_res_municipality__code
+msgid "The municipality code."
+msgstr "Código del municipio."
