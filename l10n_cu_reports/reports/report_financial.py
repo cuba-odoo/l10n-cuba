@@ -22,7 +22,8 @@ class ReportFinancial(models.AbstractModel):
                         res[report.id][field] += value.get(field)
             elif report.type == 'account_type':
                 # it's the sum the leaf accounts with such an account type
-                accounts = self.env['account.account'].search([('user_type_id', 'in', report.account_type_ids.ids)])
+                accounts = self.env['account.account'].search(
+                                    [('account_type', 'in', report.account_type_ids.mapped('type'))])
                 res[report.id]['account'] = self._compute_account_balance(accounts)
                 for value in res[report.id]['account'].values():
                     for field in fields:
@@ -97,14 +98,14 @@ class ReportFinancial(models.AbstractModel):
                         'apertura': report.apertura,
                         # 'level': (report.display_detail == 'detail_with_hierarchy' or data.get('display_detail') == 'detail_with_hierarchy') and 4,
                         'level': data.get('display_detail') == 'detail_with_hierarchy' and 4,
-                        'account_type': account.internal_type,
+                        'account_type': account.account_type,
                     }
                     if data['debit_credit']:
                         vals['debit'] = value['debit']
                         vals['credit'] = value['credit']
-                        if not account.company_id.currency_id.is_zero(vals['debit']) or not account.company_id.currency_id.is_zero(vals['credit']):
+                        if not account.company_ids[0].currency_id.is_zero(vals['debit']) or not account.company_ids[0].currency_id.is_zero(vals['credit']):
                             flag = True
-                    if not account.company_id.currency_id.is_zero(vals['balance']):
+                    if not account.company_ids[0].currency_id.is_zero(vals['balance']):
                         flag = True
                     if flag:
                         sub_lines.append(vals)
@@ -224,7 +225,7 @@ def layout_header(self, workbook, worksheet, data):
 
     worksheet.write('A8', '', corganismo)
     worksheet.write('B8', '', corganismo)
-    worksheet.write('C8', active_company[0].company_registry, corganismo)
+    worksheet.write('C8', active_company[0].company_registry or '', corganismo)
     worksheet.merge_range('D8:E8', '', corganismo)
     worksheet.write('F8', '', corganismo)
     worksheet.write('G8', active_company[0].partner_id.state_id and active_company[0].partner_id.state_id.code or '', corganismo)
@@ -503,4 +504,66 @@ class ReportFinancialXlsxEVAB(models.AbstractModel):
                 sheet.write(row, 7, line.get('balance'), cnumber)
                 row += 1
 
+        layout_footer(self, workbook, sheet, data, row)
+
+class ReportFinancialXlsx_5927_00(models.AbstractModel):
+    _name = 'report.l10n_cu_reports_xlsx.report_financial_xls_5927_00'
+    _inherit = ['report.report_xlsx.abstract', 'report.accounting_pdf_reports.report_financial']
+    _description = 'Report Financial XLSX 5927-00'
+
+    def generate_xlsx_report(self, workbook, data, financial_report):
+        # Obtener las líneas contables del reporte (mismo método que el EVAB)
+        account_lines = self.get_account_lines(data.get('form'))
+
+        # Crear hoja
+        sheet = workbook.add_worksheet('Estado de Pagos (5927-00)')
+        sheet.set_margins(0.3, 0.3)
+        sheet.center_horizontally()
+
+        layout_header(self, workbook, sheet, data)
+
+        cconcepto = workbook.add_format({
+            'bold': True,
+            'border': 1,
+            'align': 'vcenter',
+        })
+        cconcepto.set_align('center')
+        cconcepto.set_font_size(10)
+        sheet.set_row(8, 30)
+
+        # Columnas según el HTML: CONCEPTOS | Filas | N | Plan Anual | Plan hasta la fecha | Real hasta la fecha
+        sheet.merge_range('A9:C9', "CONCEPTOS", cconcepto)
+        sheet.write('D9', "Filas", cconcepto)
+        sheet.write('E9', "N", cconcepto)
+        sheet.write('F9', "Plan Anual", cconcepto)
+        sheet.write('G9', "Plan hasta la fecha", cconcepto)
+        sheet.write('H9', "Real hasta la fecha", cconcepto)
+
+        # ---------- Formatos para el cuerpo ----------
+        cconcepto_body = workbook.add_format({
+            'bold': True,
+            'border': 1,
+            'align': 'left',
+        })
+        cconcepto_body.set_font_size(10)
+        cconcepto_body.set_text_wrap()
+
+        cnumber = workbook.add_format({
+            'bold': True,
+            'border': 1,
+            'align': 'right',
+        })
+        cnumber.set_font_size(10)
+        row = 9
+        for line in account_lines:
+            if line['visible'] and line['level'] != 0:
+                sheet.merge_range(row, 0, row, 2, line.get('name'), cconcepto_body)
+                sheet.write(row, 3, line.get('sequence'), cnumber)
+                sheet.write(row, 4, '', cnumber)          # columna N con puntos
+                sheet.write(row, 5, line.get('plan_anual', 0), cnumber)
+                sheet.write(row, 6, line.get('apertura', ''), cnumber)   # Plan hasta la fecha
+                sheet.write(row, 7, line.get('balance'), cnumber)        # Real hasta la fecha
+                row += 1
+
+        # Pie de página estándar (certificación, firmas, fecha)
         layout_footer(self, workbook, sheet, data, row)
