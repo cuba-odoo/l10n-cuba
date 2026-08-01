@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+
+    <template id="l10n_cu_website_sale_address" name="Address Details for Cuba Localization" inherit_id="portal.address_form_fields">
+        <xpath expr="//div[@id='div_state']" position="after">
+            <div
+                id="div_municipality"
+                class="col-lg-6 mb-2"
+                t-att-style="not state_municipalities and 'display: none'"
+            >
+                <label class="col-form-label label-optional" for="o_municipality_id">
+                    Municipality
+                </label>
+                <select
+                    id="o_municipality_id"
+                    name="municipality_id"
+                    class="form-select"
+                >
+                    <option value="">Municipality...</option>
+                    <option
+                        t-foreach="state_municipalities"
+                        t-as="m"
+                        t-att-value="m.id"
+                        t-att-selected="m.id == (int(municipality_id) if municipality_id else partner_sudo.municipality_id.id)"
+                        t-out="m.name"
+                    />
+                </select>
+            </div>
+        </xpath>
+
+    </template>
+
+
+</odoo>
