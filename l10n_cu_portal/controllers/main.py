@@ -2,10 +2,10 @@
 from odoo import http
 from odoo.http import request
 
-from odoo.addons.website_sale.controllers.main import WebsiteSale
+from odoo.addons.portal.controllers.portal import CustomerPortal
 
 
-class L10nCuWebsiteSale(WebsiteSale):
+class L10nCuPortal(CustomerPortal):
 
     def _l10n_cu_validate_fiscal_country(self):
         """Devuelve el parámetro de configuración que controla si la lógica de campos
@@ -68,9 +68,11 @@ class L10nCuWebsiteSale(WebsiteSale):
 
         return mandatory_fields
 
-    def _prepare_address_form_values(self, order_sudo, partner_sudo, *args, address_type, **kwargs):
+    def _prepare_address_form_values(
+        self, partner_sudo, address_type='billing', use_delivery_as_billing=False, callback='', **kwargs
+    ):
         rendering_values = super()._prepare_address_form_values(
-            order_sudo, partner_sudo, *args, address_type=address_type, **kwargs
+            partner_sudo, address_type=address_type, use_delivery_as_billing=use_delivery_as_billing, callback=callback, **kwargs
         )
         rendering_values.update({
             'municipality_id': partner_sudo.municipality_id.id,
@@ -78,7 +80,7 @@ class L10nCuWebsiteSale(WebsiteSale):
         })
         return rendering_values
 
-    @http.route(['/shop/l10n_cu/state_infos/<model("res.country.state"):state>'], type="json", auth="public", methods=["POST"], website=True, )
+    @http.route(['/shop/l10n_cu/state_infos/<model("res.country.state"):state>'], type="jsonrpc", auth="public", methods=["POST"], website=True, )
     def l10n_cu_state_infos(self, state, **kw):
         municipalities = request.env['res.municipality'].sudo().search([('state_id', '=', state.id)])
         return {'municipalities': [(c.id, c.name, c.code) for c in municipalities]}

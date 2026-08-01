@@ -17,15 +17,8 @@
     'data': [
         'data/ir_model_fields.xml',
         'views/delivery_carrier_views.xml',
-        'views/templates.xml',
     ],
-    "assets": {
-        'web.assets_frontend': [
-            'l10n_cu_website_sale/static/src/**/*',
-        ],
-    },
-    "auto_install": False,
-    "application": False,
+    'installable': True,
+    "auto_install": ['l10n_cu_address', 'website_sale'],
     "license": "AGPL-3",
-
 }

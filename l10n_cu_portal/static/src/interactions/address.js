@@ -1,11 +1,12 @@
 /** @odoo-module **/
 
-import websiteSaleAddress from "@website_sale/js/address";
+import { CustomerAddress } from "@portal/interactions/address";
 import { rpc } from "@web/core/network/rpc";
+import { patch } from "@web/core/utils/patch";
 
-websiteSaleAddress.include({
-    start: function () {
-        this._super.apply(this, arguments);
+patch(CustomerAddress.prototype, {
+    setup() {
+        super.setup();
 
         this.elementCountry = this.addressForm.country_id;
         this.elementState = this.addressForm.state_id;
@@ -25,15 +26,15 @@ websiteSaleAddress.include({
         }
     },
 
-    async _onChangeState() {
-        await this._super(...arguments);
+    async onChangeState() {
+        await this.waitFor(super.onChangeState());
         let selectedCountry = this.elementCountry.value ?
             this.elementCountry.selectedOptions[0].getAttribute('code') : '';
         if (selectedCountry === "CU") {
             const stateId = this.elementState.value;
             let choices = [];
             if (stateId)  {
-                const data = await rpc(`/shop/l10n_cu/state_infos/${stateId}`, {});
+                const data = await this.waitFor(rpc(`/shop/l10n_cu/state_infos/${stateId}`, {}));
                 choices = data.municipalities;
             }
             this._changeOption(this.elementMunicipalities, choices);
@@ -41,8 +42,8 @@ websiteSaleAddress.include({
     },
 
 
-    async _changeCountry(init=false) {
-        await this._super(...arguments);
+    async _onChangeCountry(init=false) {
+        await this.waitFor(super._onChangeCountry(...arguments));
         let selectedCountry = this.elementCountry.value ?
             this.elementCountry.selectedOptions[0].getAttribute('code') : '';
         if (selectedCountry === 'CU') {
