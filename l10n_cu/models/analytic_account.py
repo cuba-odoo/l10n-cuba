@@ -13,7 +13,7 @@ class ExpenseElement(models.Model):
     name = fields.Char(required=True)
     code = fields.Char(required=True)
     parent_id = fields.Many2one('expense.element',  index=True, ondelete='set null', readonly=False, store=True)
-    parent_path = fields.Char(index=True, unaccent=False)
+    parent_path = fields.Char(index=True)
     child_ids = fields.One2many('expense.element', 'parent_id')
     company_id = fields.Many2one('res.company', required=True, readonly=True, default=lambda self: self.env.company)    
     

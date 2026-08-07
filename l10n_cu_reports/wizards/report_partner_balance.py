@@ -25,7 +25,7 @@ class PartnerBalanceWizard(models.TransientModel):
         active_ids = self._context.get('active_ids', [])
 
         if active_model == 'account.account' and active_ids and len(active_ids) == 1:
-            internal_type = self.env[active_model].browse(active_ids).internal_type
+            internal_type = self.env[active_model].browse(active_ids).account_type
             if internal_type == 'receivable':
                 res['result_selection'] = 'customer'
             elif internal_type == 'payable':
