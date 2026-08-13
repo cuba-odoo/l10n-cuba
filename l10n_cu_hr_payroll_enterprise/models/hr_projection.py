@@ -63,7 +63,7 @@ class HrPayslipProjectionLine(models.Model):
 
     payslip_projection_id = fields.Many2one("hr.payslip.projection", "Payslip Projection")
     sequence = fields.Integer("Sequence")
-    code = fields.Char("Code", required="True")
+    code = fields.Char("Code", required=True)
     enero = fields.Float("Enero")
     febrero = fields.Float("Febrero")
     marzo = fields.Float("Marzo")
