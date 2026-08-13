@@ -10,7 +10,7 @@
      """,
      'description': 'Contratos de trabajadores - Cuba.',
      'author': 'Comunidad Cubana de Odoo',
-     'depends': ['hr_contract', 'l10n_cu_hr_payroll_enterprise'],
+     'depends': ['hr_contract'],
      'auto_install': True,
      'data': [
           'views/hr_contract_views.xml',
