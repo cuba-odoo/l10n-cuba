@@ -14,9 +14,8 @@ class HrPayslipProjectionWizard(models.TransientModel):
                             default=lambda self: fields.Date.to_string(date.today().replace(day=1)))
     date_to = fields.Date(string='Date To', required=True, help="End date",
                           default=lambda self: fields.Date.to_string(
-                              (datetime.now() + relativedelta(months=+1, day=1, days=-1)).date()),
-                          states={'draft': [('readonly', False)]})
-
+                              (datetime.now() + relativedelta(months=+1, day=1, days=-1)).date()))
+                            #  states={'draft': [('readonly', False)]}
     def action_projection(self):
         self.ensure_one()
         payslip_lines_obj = self.env["hr.payslip.line"]

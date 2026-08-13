@@ -10,7 +10,7 @@
                     <page name="hr_other_input" string="Otras entradas" groups="hr.group_hr_user">
                         <field name="other_input_id">
                             <list editable="bottom">
-                                <field name="rule_input_id"/>
+                                <field name="input_type_id"/>
                                 <field name="amount" sum="Total"/>
                                 <field name="start_date"/>
                                 <field name="end_date"/>
