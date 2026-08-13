@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="res_config_settings_view_form_inherit" model="ir.ui.view">
+        <field name="name">res_config.settings.view.form.inherit</field>
+        <field name="model">res.config.settings</field>
+        <field name="priority" eval="45"/>
+        <field name="inherit_id" ref="om_hr_payroll.res_config_settings_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//div[@id='om_hr_payroll_account']" position="after">
+                <h2>Nómina Cuba</h2>
+                <div class="row mt16 o_settings_container" id="l10n_cu_payroll">
+                    <div class="col-lg-6 col-12 o_setting_box">
+                        <div class="o_setting_left_pane"/>
+                        <div class="o_setting_right_pane">
+                            <label for="min_salary" string="Salario minimo"/>
+                            <div class="text-muted">
+                                Salario minimo aprobado en el pais
+                            </div>
+                            <div class="content-group">
+                                <field name="min_salary" class="o_light_label mt16"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </xpath>
+        </field>
+    </record>
+
+    <!--    <record id="action_hr_payroll_configuration" model="ir.actions.act_window">-->
+    <!--        <field name="name">Settings</field>-->
+    <!--        <field name="type">ir.actions.act_window</field>-->
+    <!--        <field name="res_model">res.config.settings</field>-->
+    <!--        <field name="view_mode">form</field>-->
+    <!--        <field name="target">inline</field>-->
+    <!--        <field name="context">{'module' : 'om_hr_payroll'}</field>-->
+    <!--    </record>-->
+
+    <!--    <menuitem id="menu_hr_payroll_global_settings"-->
+    <!--              name="Settings"-->
+    <!--              parent="menu_hr_payroll_configuration"-->
+    <!--              sequence="0"-->
+    <!--              action="action_hr_payroll_configuration"-->
+    <!--              groups="base.group_system"/>-->
+
+</odoo>
