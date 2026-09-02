@@ -97,7 +97,7 @@ class ReportFinancial(models.AbstractModel):
                         'apertura': report.apertura,
                         # 'level': (report.display_detail == 'detail_with_hierarchy' or data.get('display_detail') == 'detail_with_hierarchy') and 4,
                         'level': data.get('display_detail') == 'detail_with_hierarchy' and 4,
-                        'account_type': account.user_type_id.code,
+                        'account_type': account.account_type,
                     }
                     if data['debit_credit']:
                         vals['debit'] = value['debit']
