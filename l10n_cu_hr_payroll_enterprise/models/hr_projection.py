@@ -7,7 +7,7 @@ class HrPayslipProjection(models.Model):
     _name = 'hr.payslip.projection'
     _description = "Payslip Projection"
 
-    _sql_constraints = [
+    models.Constraint = [
         (
             "employee_id_unique",
             "unique(employee_id)",
