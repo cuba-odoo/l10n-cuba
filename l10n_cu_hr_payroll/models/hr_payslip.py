@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-from odoo import api, fields, models, tools, _
+from odoo import api, fields, models
 
 class HrPayslip(models.Model):
     _inherit = 'hr.payslip'
@@ -43,8 +43,6 @@ class HrPayslip(models.Model):
                 slip.total_on_payable = True
             else:
                 slip.total_on_payable = False
-            # if slip.state == 'draft':
-            #     slip.state = 'calculate'
         return res
 
     @api.model
@@ -102,8 +100,6 @@ class HrPayslipRun(models.Model):
                 if line.total:
                     sheet.total += line.total
 
-            # if sheet.state == 'draft':
-            #     sheet.state = 'calculate'
 
 class HrPayrollOtherInput(models.Model):
     _name = 'hr.payroll.other.input'

@@ -1,7 +1,8 @@
 from datetime import date, datetime
 from dateutil.relativedelta import relativedelta
 
-from odoo import fields, models, api,_
+from odoo import fields, models
+
 
 class HrAssistanceCardsWizard(models.TransientModel):
     _name = 'hr.assistance.cards.wizard'

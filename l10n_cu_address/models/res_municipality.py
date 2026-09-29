@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
-from odoo import api, models, fields
-from odoo.osv import expression
+from odoo import models, fields
+
 
 class Municipality(models.Model):
     _name = 'res.municipality'

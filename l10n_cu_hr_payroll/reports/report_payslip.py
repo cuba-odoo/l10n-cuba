@@ -80,6 +80,3 @@ class ReportPayslip(models.AbstractModel):
             'get_amount_by_cat_code': self._get_amount_by_cat_code,
         }
         return docargs    
-    
-
-

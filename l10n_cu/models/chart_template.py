@@ -1,4 +1,6 @@
 # -*- coding: utf-8 -*-
+import logging
+import re
 
 from odoo.exceptions import AccessError
 from odoo import api, fields, models, Command, _, osv
@@ -7,9 +9,6 @@ from odoo.exceptions import UserError, ValidationError
 from odoo.http import request
 from odoo.addons.account.models.account_tax import TYPE_TAX_USE
 from odoo.addons.account.models.account_account import ACCOUNT_CODE_REGEX
-
-import logging
-import re
 
 _logger = logging.getLogger(__name__)
 
