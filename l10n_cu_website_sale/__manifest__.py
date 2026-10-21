@@ -13,7 +13,7 @@
     "author": "Idola Odoo Team, Comunidad cubana de Odoo",
     'category': 'Website/Website',
     'version': '2.0',
-    'depends': ['base', 'website_sale', 'l10n_cu_address'],
+    'depends': ['base', 'website_sale', 'l10n_cu_address', 'delivery'],
     'data': [
         'data/res_country_data.xml',
         'data/ir_model_fields.xml',
