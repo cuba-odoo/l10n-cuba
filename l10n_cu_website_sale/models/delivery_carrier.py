@@ -1,4 +1,4 @@
-from odoo import api, fields, models, _, Command
+from odoo import api, fields, models
 
 
 class DeliveryCarrier(models.Model):

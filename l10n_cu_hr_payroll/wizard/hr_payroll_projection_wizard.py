@@ -1,10 +1,11 @@
 # -*- coding: utf-8 -*-
 # Part of Odoo. See LICENSE file for full copyright and licensing details.
+import babel
 
-from odoo import api, fields, models, tools
+from odoo import fields, models, tools
 from datetime import date, datetime, time
 from dateutil.relativedelta import relativedelta
-import babel
+
 
 class HrPayslipProjectionWizard(models.TransientModel):
     _name = 'hr.payslip.projection.wizard'

@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-from odoo import fields, models, api, _
+from odoo import fields, models
 from datetime import datetime
 
 class AccountingReport(models.TransientModel):
@@ -15,7 +15,6 @@ class AccountingReport(models.TransientModel):
                                        string='Display Accounts', required=True, default='all')
     display_detail = fields.Selection(selection=[
         ('no_detail', 'No detail'),
-        # ('detail_flat', 'Display children flat'),
         ('detail_with_hierarchy', 'Display children with hierarchy')
     ], string='Display details', default='no_detail')
 

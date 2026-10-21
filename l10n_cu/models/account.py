@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
-from odoo import fields, models, api, _
-from odoo.exceptions import UserError, ValidationError
-
+from odoo import fields, models, api
 
 
 class AccountAccount(models.Model):
