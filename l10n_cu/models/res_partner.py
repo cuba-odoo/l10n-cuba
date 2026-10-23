@@ -29,10 +29,10 @@ class ResCnaeLine(models.Model):
     _name = 'res.cnae.line'
     _description = "CNAE Line"
 
-    models.Constraint = [
-        ('check_cnae_id', 'unique(partner_id, cnae_id)',
-         'Las actividades economicas deben ser unicas.!')
-    ]
+    _check_cnae_id = models.Constraint(
+        'UNIQUE(partner_id, cnae_id)',
+        'Las actividades económicas deben ser únicas!',
+    )
 
     sequence = fields.Integer('Sequence', default=1,
                               help="Usado para organizar las actividades. La Actividad Principal será la de primer orden.")
