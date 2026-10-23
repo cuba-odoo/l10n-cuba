@@ -13,6 +13,7 @@ class Municipality(models.Model):
     country_id = fields.Many2one('res.country', string='Country', required=True)
     state_id = fields.Many2one('res.country.state', 'State', domain="[('country_id', '=', country_id)]")
 
-    models.Constraint = [
-        ('name_code_uniq', 'unique(state_id, code)', '¡El código del municipio debe ser único por provincia!')
-    ]
+    _name_code_uniq = models.Constraint(
+        'UNIQUE(state_id, code)',
+        '¡El código del municipio debe ser único por provincia!',
+    )

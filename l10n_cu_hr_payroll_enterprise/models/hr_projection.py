@@ -7,13 +7,10 @@ class HrPayslipProjection(models.Model):
     _name = 'hr.payslip.projection'
     _description = "Payslip Projection"
 
-    models.Constraint = [
-        (
-            "employee_id_unique",
-            "unique(employee_id)",
-            "This employee is already used!",
-        )
-    ]
+    _employee_id_unique = models.Constraint(
+        'UNIQUE(employee_id)',
+        'This employee is already used!',
+    )
 
     name = fields.Char('Name', compute="_compute_name", store=True)
     employee_id = fields.Many2one("hr.employee", required=True)
