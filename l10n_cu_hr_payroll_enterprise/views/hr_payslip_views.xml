@@ -9,7 +9,7 @@
                 <attribute name="decoration-danger">total_on_payable == True</attribute>
             </list>
             <xpath expr="//field[@name='date_to']" position="after">
-                <field name="total"/>
+                <field name="total_ps"/>
                 <field name="total_on_payable" invisible="1"/>
             </xpath>
         </field>
@@ -30,7 +30,7 @@
         <field name="inherit_id" ref="hr_payroll.view_hr_payslip_form"/>
         <field name="arch" type="xml">
             <xpath expr="//field[@name='credit_note']" position="before">
-                <field name="total" readonly="1"/>
+                <field name="total_ps" readonly="1"/>
             </xpath>
             <xpath expr="//button[@name='action_payslip_cancel']" position="attributes">
                 <attribute name="invisible">1</attribute>
@@ -50,24 +50,22 @@
                         invisible="state not in ('draft', 'verify')"
                         class="oe_highlight"/>
             </xpath>
-            <xpath expr="/form/sheet/label[@for='name']" position="before">
-                <div name="button_box" class="oe_button_box">
-                    <button class="oe_stat_button"
-                            type="action" icon="fa-tasks"
-                            name="%(hr_payroll.action_view_hr_payslip_form)d"
-                            context="{'search_default_payslip_run_id': active_id,
-					'default_payslip_run_id': active_id}" help="Nóminas del procesamiento">
-                        <field string="Payslips" name="qty_payslip"
-                               widget="statinfo"/>
-                    </button>
-                </div>
+            <xpath expr="//div[@name='button_box']" position="inside">
+                <button class="oe_stat_button"
+                        type="action" icon="fa-tasks"
+                        name="%(hr_payroll.action_view_hr_payslip_form)d"
+                        context="{'search_default_payslip_run_id': id, 'default_payslip_run_id': id}"
+                        help="Nóminas del procesamiento">
+                    <field string="Payslips" name="qty_payslip"
+                            widget="statinfo"/>
+                </button>
             </xpath>
-            <field name="credit_note" position="after">
+            <field name="payment_report" position="after">
                 <field name="total" readonly="1"/>
             </field>
-            <field name="slip_ids" position="replace">
+            <!-- <field name="slip_ids" position="replace">
                 <field name="slip_ids" readonly="1"/>
-            </field>
+            </field> -->
         </field>
     </record>
     <record id="hr_payslip_line_view_tree" model="ir.ui.view">

@@ -18,7 +18,7 @@
 			<t t-foreach="docs" t-as="doc">
 				<t t-call="web.internal_layout">
 					<div class="page">
-						<t t-call="l10n_cu_hr_payroll.report_header_payroll"/>
+						<t t-call="l10n_cu_hr_payroll_enterprise.report_header_payroll"/>
 						<t t-set="total_colspan" t-value="3"/>
 						<table class="table table-sm">
 							<thead>
