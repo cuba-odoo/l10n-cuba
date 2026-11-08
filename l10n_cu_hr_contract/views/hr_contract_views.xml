@@ -6,7 +6,7 @@
         <field name="arch" type="xml">
             <xpath expr="//group[@name='top_info_left']" position="inside">
                 <field name="multi_job"/>
-                <field name="regimen_contribution" attrs="{'invisible': [('multi_job', '=', True)]}"/>
+                <field name="regimen_contribution" invisible="multi_job == True"/>
             </xpath>
        </field>
     </record>
