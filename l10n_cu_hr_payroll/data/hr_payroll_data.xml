@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<odoo>
-    <data noupdate="1">
-        <!--    Reglas salariales comunes para cualquier actor economico.-->
+<odoo noupdate="1">
+
+        <!-- Regla salario mínimo -->
         <record id="hr_payroll_rules_salario_minimo" model="hr.salary.rule">
             <field name="category_id" ref="om_hr_payroll.BASIC"/>
             <field name="name">Salario Mínimo</field>
@@ -10,14 +10,15 @@
             <field name="amount_select">code</field>
             <field name="amount_python_compute">
 try:
-    result = payslip.env['ir.config_parameter'].sudo().get_param('l10n_cu_hr_payroll.default_min_salary')
-except:
-    result = 0
+    param = payslip.env['ir.config_parameter'].sudo().get_param('l10n_cu_hr_payroll.default_min_salary')
+    result = float(param) if param else 0.0
+except Exception:
+    result = 0.0
             </field>
             <field name="appears_on_payslip" eval="False"/>
         </record>
 
-        <!-- Registro de contribución MIPIME-->
+        <!-- Registro de contribución MIPIME -->
         <record id="contrib_register_mipyme" model="hr.contribution.register">
             <field name="name">Empresa</field>
             <field name="partner_id" eval="False"/>
@@ -27,7 +28,7 @@ except:
             <field name="partner_id" eval="False"/>
         </record>
 
-        <!-- Categorías salariales MIPIME-->
+        <!-- Categorías salariales -->
         <record id="hr_salary_rule_category_otros" model="hr.salary.rule.category">
             <field name="name">Otros</field>
             <field name="code">OTROS</field>
@@ -49,32 +50,34 @@ except:
             <field name="code">ASIGN</field>
         </record>
 
-        <!-- Reglas salariales MYPIME-->
+        <!-- BASIC -->
         <record id="om_hr_payroll.hr_rule_basic" model="hr.salary.rule">
             <field name="name">SALARIO BASICO</field>
-            <field name="amount_select">code</field>
             <field name="amount_select">code</field>
             <field name="amount_python_compute">
 try:
     result = contract.wage
-except:
+except Exception:
     result = 0
             </field>
         </record>
+
+        <!-- WORK100 -->
         <record id="hr_payroll_rules_work100" model="hr.salary.rule">
             <field name="category_id" ref="hr_salary_rule_category_otros"/>
             <field name="name">Días trabajados</field>
             <field name="code">WORK100</field>
             <field name="sequence">2</field>
             <field name="amount_select">code</field>
-            <field name="amount_select">code</field>
             <field name="amount_python_compute">
 try:
     result = worked_days.WORK100.number_of_days
-except:
+except Exception:
     result = 0
             </field>
         </record>
+
+        <!-- Base impositiva SS -->
         <record id="hr_payroll_rules_base_impositiva_ss" model="hr.salary.rule">
             <field name="category_id" ref="om_hr_payroll.BASIC"/>
             <field name="name">Base Impositiva SS</field>
@@ -85,11 +88,16 @@ except:
 if contract.multi_job:
     result = 0
 else:
-    gross = contract.regimen_contribution and int(contract.regimen_contribution) or GROSS
+    try:
+        regimen = contract.regimen_contribution and int(contract.regimen_contribution)
+    except (AttributeError, TypeError, ValueError):
+        regimen = False
+    gross = regimen or GROSS
     result = gross + categories.ALW
             </field>
             <field name="appears_on_payslip" eval="False"/>
         </record>
+
         <record id="om_hr_payroll.hr_rule_taxable" model="hr.salary.rule">
             <field name="sequence">6</field>
             <field name="amount_select">code</field>
@@ -97,6 +105,8 @@ else:
 result = (BASIC / 24) * WORK100
             </field>
         </record>
+
+        <!-- FTE -->
         <record id="hr_payroll_rules_ft" model="hr.salary.rule">
             <field name="category_id" ref="om_hr_payroll.COMP"/>
             <field name="name">Utilización fuerza de trabajo</field>
@@ -105,13 +115,15 @@ result = (BASIC / 24) * WORK100
             <field name="amount_select">code</field>
             <field name="amount_python_compute">
 if GROSS:
-    result = GROSS &lt;= SALARIO_MINIMO and (SALARIO_MINIMO * 0.05) or (GROSS * 0.05)
+    result = (SALARIO_MINIMO if GROSS &lt;= SALARIO_MINIMO else GROSS) * 0.05
 else:
     result = 0
             </field>
             <field name="appears_on_payslip" eval="True"/>
             <field name="register_id" ref="contrib_register_mipyme"/>
         </record>
+
+        <!-- IPT -->
         <record id="hr_payroll_rules_impuesto_ingresos_personales_trabajador" model="hr.salary.rule">
             <field name="category_id" ref="om_hr_payroll.DED"/>
             <field name="name">Impuesto sobre ingresos</field>
@@ -139,8 +151,9 @@ result = ret
             </field>
             <field name="appears_on_payslip" eval="True"/>
             <field name="register_id" ref="om_hr_payroll.contrib_register_employees"/>
-            <field name="note">Se paga dentro de lo 10 primeros dias habiles de cada mes.</field>
+            <field name="note">Se paga dentro de los 10 primeros días hábiles de cada mes.</field>
         </record>
+
         <record id="hr_payroll_rules_09_vacaciones" model="hr.salary.rule">
             <field name="category_id" ref="hr_salary_rule_category_provisiones_prestaciones_company"/>
             <field name="name">Provisiones vacaciones</field>
@@ -153,6 +166,7 @@ result = GROSS and (GROSS * 0.0909) or 0
             <field name="appears_on_payslip" eval="True"/>
             <field name="register_id" ref="contrib_register_mipyme"/>
         </record>
+
         <record id="hr_payroll_rules_ss_presupuesto_estado" model="hr.salary.rule">
             <field name="category_id" ref="om_hr_payroll.COMP"/>
             <field name="name">Seguridad Social Empresa</field>
@@ -165,6 +179,7 @@ result = GROSS and (GROSS * 0.125) or 0
             <field name="appears_on_payslip" eval="True"/>
             <field name="register_id" ref="contrib_register_mipyme"/>
         </record>
+
         <record id="hr_payroll_rules_ss_prestaciones_sociales_corto_plazo" model="hr.salary.rule">
             <field name="category_id" ref="hr_salary_rule_category_provisiones_prestaciones_company"/>
             <field name="name">Prestaciones sociales</field>
@@ -178,6 +193,7 @@ result = GROSS and (GROSS * 0.015) or 0
             <field name="register_id" ref="contrib_register_mipyme"/>
             <field name="note">Seguridad Social a corto plazo de los empleados.</field>
         </record>
+
         <record id="hr_payroll_rules_ss_especial" model="hr.salary.rule">
             <field name="category_id" ref="om_hr_payroll.DED"/>
             <field name="name">Seguridad Social Especial</field>
@@ -189,10 +205,9 @@ result = BASE_IMPOSITIVA_SS and (BASE_IMPOSITIVA_SS * 0.05) or 0
             </field>
             <field name="appears_on_payslip" eval="True"/>
             <field name="register_id" ref="om_hr_payroll.contrib_register_employees"/>
-            <field name="note">Construbución Especial a la Seguridad Social de los empleados. Se paga dentro de lo 10
-                primeros dias habiles de cada mes.
-            </field>
+            <field name="note">Contribución Especial a la Seguridad Social de los empleados.</field>
         </record>
+
         <record id="hr_payroll_rules_asig_vacaciones" model="hr.salary.rule">
             <field name="category_id" ref="om_hr_payroll.ALW"/>
             <field name="name">Asignación de vacaciones</field>
@@ -214,6 +229,7 @@ result = inputs.ASIG_VACACIONES and inputs.ASIG_VACACIONES.amount or 0
                 })
             ]"/>
         </record>
+
         <record id="hr_payroll_rules_asig_prov" model="hr.salary.rule">
             <field name="category_id" ref="om_hr_payroll.ALW"/>
             <field name="name">Asignación de provisiones</field>
@@ -235,6 +251,7 @@ result = inputs.ASIG_PROVISIONES and inputs.ASIG_PROVISIONES.amount or 0
                 })
             ]"/>
         </record>
+
         <record id="hr_payroll_rules_utilidad" model="hr.salary.rule">
             <field name="category_id" ref="om_hr_payroll.ALW"/>
             <field name="name">Utilidad</field>
@@ -257,7 +274,7 @@ result = inputs.UTILIDAD and inputs.UTILIDAD.amount or 0
             ]"/>
         </record>
 
-        <!--    Socios-->
+        <!-- Socios -->
         <record id="hr_rule_socio_taxable" model="hr.salary.rule">
             <field name="category_id" ref="om_hr_payroll.GROSS"/>
             <field name="name">Salario bruto socios</field>
@@ -267,11 +284,12 @@ result = inputs.UTILIDAD and inputs.UTILIDAD.amount or 0
             <field name="amount_python_compute">
 try:
     result = contract.wage
-except:
+except Exception:
     result = 0
             </field>
             <field name="appears_on_payslip" eval="True"/>
         </record>
+
         <record id="hr_payroll_rules_socios_impuesto_dividendos_anticipados" model="hr.salary.rule">
             <field name="category_id" ref="om_hr_payroll.DED"/>
             <field name="name">Impuesto dividendos anticipados</field>
@@ -281,13 +299,14 @@ except:
             <field name="amount_python_compute">
 try:
     result = GROSS and (GROSS * 0.05) or 0
-except:
+except Exception:
     result = 0
             </field>
             <field name="appears_on_payslip" eval="True"/>
             <field name="register_id" ref="contrib_register_socio"/>
             <field name="note">Socios. Impuesto dividendos anticipados. Exento en el primer año.</field>
         </record>
+
         <record id="hr_payroll_rules_socios_contribucion_especial" model="hr.salary.rule">
             <field name="category_id" ref="om_hr_payroll.DED"/>
             <field name="name">Contribución especial SS</field>
@@ -299,9 +318,9 @@ result = BASE_IMPOSITIVA_SS and (BASE_IMPOSITIVA_SS * 0.20) or 0
             </field>
             <field name="appears_on_payslip" eval="True"/>
             <field name="register_id" ref="contrib_register_socio"/>
-            <field name="note">Contribución especial SS para los socios. Esto se emplea como una tarifa fija mensual.
-            </field>
+            <field name="note">Contribución especial SS para los socios (tarifa fija mensual).</field>
         </record>
+
         <record id="hr_payroll_rules_socios_contribucion_especial_corto_plazo" model="hr.salary.rule">
             <field name="category_id" ref="om_hr_payroll.DED"/>
             <field name="name">Contribución especial SS Corto Plazo</field>
@@ -313,10 +332,10 @@ result = CE_SS and (CE_SS * 0.015) or 0
             </field>
             <field name="appears_on_payslip" eval="True"/>
             <field name="register_id" ref="contrib_register_socio"/>
-            <field name="note">Contribución especial SS Corto Plazo para los socios. Esto se emplea como una tarifa fija
-                mensual.
-            </field>
+            <field name="note">Contribución especial SS Corto Plazo para los socios.</field>
         </record>
+
+        <!-- TPCD -->
         <record id="hr_payroll_rules_socios_pago_cuenta_dividendos" model="hr.salary.rule">
             <field name="category_id" ref="hr_salary_rule_category_otros"/>
             <field name="name">Total de retiros a cuenta de dividendos</field>
@@ -324,16 +343,19 @@ result = CE_SS and (CE_SS * 0.015) or 0
             <field name="sequence">50</field>
             <field name="amount_select">code</field>
             <field name="amount_python_compute">
-obj = payslip.env['hr.payslip.line']
-total_pago_cuenta_dividendo = 0
 try:
-    total_pago_cuenta_dividendo = obj.get_rule_balance('GROSS', employee)
-except:
+    yf = str(payslip.date_from.year) + '-01-01'
+    yt = str(payslip.date_from.year) + '-12-31'
+    result = payslip.env['hr.payslip.line'].get_rule_balance(
+        'GROSS', employee, yf, yt
+    )
+except Exception:
     result = 0
-result = total_pago_cuenta_dividendo
             </field>
             <field name="appears_on_payslip" eval="True"/>
         </record>
+
+        <!-- TPAIP -->
         <record id="hr_payroll_rules_socios_trubutos_anticipados" model="hr.salary.rule">
             <field name="category_id" ref="hr_salary_rule_category_otros"/>
             <field name="name">Total de tributos pagados anticipados a ingresos personales</field>
@@ -341,16 +363,20 @@ result = total_pago_cuenta_dividendo
             <field name="sequence">51</field>
             <field name="amount_select">code</field>
             <field name="amount_python_compute">
-obj = payslip.env['hr.payslip.line']
-tributos_anticipado = 0
 try:
-    tributos_anticipado = obj.get_rule_balance('IMPUESTO_DA', employee)
-except:
+    yf = str(payslip.date_from.year) + '-01-01'
+    yt = str(payslip.date_from.year) + '-12-31'
+    result = payslip.env['hr.payslip.line'].get_rule_balance(
+        'IMPUESTO_DA', employee, yf, yt
+    )
+except Exception:
     result = 0
-result = tributos_anticipado
             </field>
             <field name="appears_on_payslip" eval="True"/>
         </record>
+
+        <!-- ESCALA PROGRESIVA -->
+
         <record id="hr_payroll_rules_socios_ipa_tram1" model="hr.salary.rule">
             <field name="category_id" ref="hr_salary_rule_category_escala_progresiva"/>
             <field name="name">Tramo 1. Socios</field>
@@ -360,23 +386,17 @@ result = tributos_anticipado
             <field name="amount_python_compute">
 try:
     MIN_EXENTO = 39120
-    total_pago_cuenta_dividendo = TPCD
-    base_anual = 0
-    tram1 = 0
-
-    if total_pago_cuenta_dividendo &lt;= MIN_EXENTO:
-        base_anual = 0
-    elif total_pago_cuenta_dividendo &lt;= 75000:
-        base_imponible = total_pago_cuenta_dividendo - MIN_EXENTO
-        tram1 = base_imponible * 0.03
-        base_anual = tram1
-
-    result = base_anual
-except:
+    total = TPCD
+    result = 0
+    if total &gt; MIN_EXENTO:
+        base = min(total, 75000) - MIN_EXENTO
+        result = base * 0.03
+except Exception:
     result = 0
             </field>
             <field name="appears_on_payslip" eval="True"/>
         </record>
+
         <record id="hr_payroll_rules_socios_ipa_tram2" model="hr.salary.rule">
             <field name="category_id" ref="hr_salary_rule_category_escala_progresiva"/>
             <field name="name">Tramo 2. Socios</field>
@@ -385,22 +405,17 @@ except:
             <field name="amount_select">code</field>
             <field name="amount_python_compute">
 try:
-    total_pago_cuenta_dividendo = TPCD
-    base_anual = 0
-    tram2 = 0
-
-    if total_pago_cuenta_dividendo &gt; 75000 and total_pago_cuenta_dividendo &lt;= 150000:
-        tram1 = T1S
-        base_imponible2 = total_pago_cuenta_dividendo - 75000
-        tram2 = base_imponible2 * 0.05
-        base_anual = tram1 + tram2
-
-    result = base_anual
-except:
+    total = TPCD
+    result = 0
+    if total &gt; 75000:
+        base = min(total, 150000) - 75000
+        result = base * 0.05
+except Exception:
     result = 0
             </field>
             <field name="appears_on_payslip" eval="True"/>
         </record>
+
         <record id="hr_payroll_rules_socios_ipa_tram3" model="hr.salary.rule">
             <field name="category_id" ref="hr_salary_rule_category_escala_progresiva"/>
             <field name="name">Tramo 3. Socios</field>
@@ -409,23 +424,17 @@ except:
             <field name="amount_select">code</field>
             <field name="amount_python_compute">
 try:
-    total_pago_cuenta_dividendo = TPCD
-    base_anual = 0
-    tram3 = 0
-
-    if total_pago_cuenta_dividendo &gt; 150000 and total_pago_cuenta_dividendo &lt;= 250000:
-        tram1 = T1S
-        tram2 = T2S
-        base_imponible3 = total_pago_cuenta_dividendo - 150000
-        tram3 = base_imponible3 * 0.10
-        base_anual = tram1 + tram2 + tram3
-
-    result = base_anual
-except:
+    total = TPCD
+    result = 0
+    if total &gt; 150000:
+        base = min(total, 250000) - 150000
+        result = base * 0.10
+except Exception:
     result = 0
             </field>
             <field name="appears_on_payslip" eval="True"/>
         </record>
+
         <record id="hr_payroll_rules_socios_ipa_tram4" model="hr.salary.rule">
             <field name="category_id" ref="hr_salary_rule_category_escala_progresiva"/>
             <field name="name">Tramo 4. Socios</field>
@@ -434,24 +443,17 @@ except:
             <field name="amount_select">code</field>
             <field name="amount_python_compute">
 try:
-    total_pago_cuenta_dividendo = TPCD
-    base_anual = 0
-    tram4 = 0
-
-    if total_pago_cuenta_dividendo &gt; 250000 and total_pago_cuenta_dividendo &lt;= 350000:
-        tram1 = T1S
-        tram2 = T2S
-        tram3 = T3S
-        base_imponible4 = total_pago_cuenta_dividendo - 250000
-        tram4 = base_imponible4 * 0.15
-        base_anual = tram1 + tram2 + tram3 + tram4
-
-    result = base_anual
-except:
+    total = TPCD
+    result = 0
+    if total &gt; 250000:
+        base = min(total, 350000) - 250000
+        result = base * 0.15
+except Exception:
     result = 0
             </field>
             <field name="appears_on_payslip" eval="True"/>
         </record>
+
         <record id="hr_payroll_rules_socios_ipa_tram5" model="hr.salary.rule">
             <field name="category_id" ref="hr_salary_rule_category_escala_progresiva"/>
             <field name="name">Tramo 5. Socios</field>
@@ -460,25 +462,17 @@ except:
             <field name="amount_select">code</field>
             <field name="amount_python_compute">
 try:
-    total_pago_cuenta_dividendo = TPCD
-    base_anual = 0
-    tram5 = 0
-
-    if total_pago_cuenta_dividendo &gt; 350000:
-        tram1 = T1S
-        tram2 = T2S
-        tram3 = T3S
-        tram4 = T4S
-        base_imponible5 = total_pago_cuenta_dividendo - 350000
-        tram5 = base_imponible5 * 0.20
-        base_anual = tram1 + tram2 + tram3 + tram4 + tram5
-
-    result = base_anual
-except:
+    total = TPCD
+    result = 0
+    if total &gt; 350000:
+        base = total - 350000
+        result = base * 0.20
+except Exception:
     result = 0
             </field>
             <field name="appears_on_payslip" eval="True"/>
         </record>
+
         <record id="hr_payroll_rules_socios_ingresos_personales_anuales" model="hr.salary.rule">
             <field name="category_id" ref="om_hr_payroll.DED"/>
             <field name="name">Impuesto sobre ingresos personales anuales. Socios</field>
@@ -487,15 +481,8 @@ except:
             <field name="amount_select">code</field>
             <field name="amount_python_compute">
 try:
-    tributos_anticipado = TPAIP
-    tram1 = T1S
-    tram2 = T1S
-    tram3 = T1S
-    tram4 = T1S
-    tram5 = T1S
-
-    result = (tram1 + tram2 + tram3 + tram4 + tram5) - tributos_anticipado
-except:
+    result = (T1S + T2S + T3S + T4S + T5S) - TPAIP
+except Exception:
     result = 0
             </field>
             <field name="appears_on_payslip" eval="True"/>
@@ -514,24 +501,24 @@ result = categories.DED
             <field name="appears_on_payslip" eval="True"/>
         </record>
 
-        <!--Neto-->
         <record id="om_hr_payroll.hr_rule_net" model="hr.salary.rule">
             <field name="amount_python_compute">
 try:
     result = categories.GROSS + categories.ALW - categories.DED
-except:
+except Exception:
     result = 0
             </field>
             <field name="register_id" eval="False"/>
         </record>
 
-        <!-- Estructuras salariales MYPIME-->
+        <!-- Estructuras salariales -->
         <record id="om_hr_payroll.structure_base" model="hr.payroll.structure">
             <field name="rule_ids" eval="[(6, 0, [
                 ref('hr_payroll_rules_work100'),
                 ref('om_hr_payroll.hr_rule_net'),
             ])]"/>
         </record>
+
         <record id="hr_payroll_salary_structure_operating" model="hr.payroll.structure">
             <field name="name">Operativos determinados</field>
             <field name="code">OPERATIVAS</field>
@@ -551,6 +538,7 @@ except:
             ])]"/>
             <field name="company_id" ref="base.main_company"/>
         </record>
+
         <record id="hr_payroll_salary_structure_admon" model="hr.payroll.structure">
             <field name="name">Administrativos determinados</field>
             <field name="code">ADMINISTRATIVAS</field>
@@ -570,6 +558,7 @@ except:
             ])]"/>
             <field name="company_id" ref="base.main_company"/>
         </record>
+
         <record id="hr_payroll_salary_structure_socio" model="hr.payroll.structure">
             <field name="name">Nóminas ejecutivas</field>
             <field name="code">EJECUTIVAS</field>
@@ -584,6 +573,7 @@ except:
             ])]"/>
             <field name="company_id" ref="base.main_company"/>
         </record>
+
         <record id="hr_payroll_salary_structure_socio_anual" model="hr.payroll.structure">
             <field name="name">Nóminas ejecutivas anual</field>
             <field name="code">EJECUTIVAS ANUAL</field>
@@ -601,6 +591,7 @@ except:
             ])]"/>
             <field name="company_id" ref="base.main_company"/>
         </record>
+
         <record id="hr_payroll_salary_structure_operating_indeterminado" model="hr.payroll.structure">
             <field name="name">Operativas indeterminados</field>
             <field name="code">OPERATIVAS_INDETERMINADOS</field>
@@ -611,6 +602,7 @@ except:
             ])]"/>
             <field name="company_id" ref="base.main_company"/>
         </record>
+
         <record id="hr_payroll_salary_structure_admon_indeterminado" model="hr.payroll.structure">
             <field name="name">Administrativas indeterminados</field>
             <field name="code">ADMINISTRATIVAS_INDETERMINADOS</field>
@@ -621,6 +613,7 @@ except:
             ])]"/>
             <field name="company_id" ref="base.main_company"/>
         </record>
+
         <record id="hr_payroll_salary_structure_utility" model="hr.payroll.structure">
             <field name="name">Utilidad</field>
             <field name="code">UTILIDAD</field>
@@ -629,5 +622,5 @@ except:
             ])]"/>
             <field name="company_id" ref="base.main_company"/>
         </record>
-    </data>
+
 </odoo>

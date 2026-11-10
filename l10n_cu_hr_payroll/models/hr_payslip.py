@@ -1,54 +1,72 @@
 # -*- coding: utf-8 -*-
+from odoo import api, fields, models, _
 
-from odoo import api, fields, models, tools, _
 
 class HrPayslip(models.Model):
     _inherit = 'hr.payslip'
 
-#        This field respond to the necessity of see the value of the net rule to pay in the slip
+    # Necesidad: ver el valor de la regla NET a pagar en la nómina
     total = fields.Float(string='Total')
-#        This field respond to the necessity of obtain a domain who registry the slip who value is <= 0.0
+    # Necesidad: dominios para registrar nóminas con valor <= 0.0
     total_on_payable = fields.Boolean(string='Not Payable', store=True)
 
     def refund_sheet(self):
-        """Se cancela la nomina origen para que no sea tomada en cuenta (el origen y la rectificativa.)."""
-        res = super(HrPayslip, self).compute_sheet()
+        """Cancela la nómina origen (la rectificativa también se cancela)."""
+        res = super().refund_sheet()
         self.write({'state': 'cancel'})
         return res
 
     def action_payslip_done(self):
-        """No es necesario hacer un cron porque estamos hablando de dias trabajados, que es algo irrelevante
-        desde el punto de visa contable.
-        """
-        res = super(HrPayslip, self).action_payslip_done()
-        salary_rule_09 = self.env.ref('l10n_cu_hr_payroll.hr_payroll_rules_09_dias')
-        for line in self.line_ids:
-            if line.code == salary_rule_09.code:
-                holiday_status_cl = self.env.ref('hr_holidays.holiday_status_cl')
-                res = {'name': "Asignando vacaciones a %s" % line.employee_id.name, 'number_of_days': line.total,
-                           'employee_id': line.employee_id.id, 'holiday_status_id': holiday_status_cl.id}
-                allocation = self.env["hr.leave.allocation"].create(res)
-                allocation.action_validate()
+        """Asigna días de vacaciones según la regla 09 (días acumulados).
 
+        Solo se asigna en nóminas regulares, NO en rectificativas
+        (`credit_note=True`), donde los importes son negativos.
+        """
+        res = super().action_payslip_done()
+
+        salary_rule_09 = self.env.ref(
+            'l10n_cu_hr_payroll.hr_payroll_rules_09_dias', raise_if_not_found=False
+        )
+        holiday_status_cl = self.env.ref(
+            'hr_holidays.holiday_status_cl', raise_if_not_found=False
+        )
+        if not (salary_rule_09 and holiday_status_cl):
+            return res
+
+        for slip in self.filtered(lambda s: not s.credit_note):
+            for line in slip.line_ids:
+                if line.code == salary_rule_09.code and line.total > 0:
+                    self.env["hr.leave.allocation"].create({
+                        'name': "Asignando vacaciones a %s" % line.employee_id.name,
+                        'number_of_days': line.total,
+                        'employee_id': line.employee_id.id,
+                        'holiday_status_id': holiday_status_cl.id,
+                    }).action_validate()
         return res
 
     def compute_sheet(self):
-        res = super(HrPayslip, self).compute_sheet()
+        res = super().compute_sheet()
         for slip in self:
+            net_total = 0.0
             for line in slip.line_ids:
-                if line.salary_rule_id.code == 'NET':
-                    slip.total = line.total
-            if slip.total <= 0.0:
-                slip.total_on_payable = True
-            else:
-                slip.total_on_payable = False
-            # if slip.state == 'draft':
-            #     slip.state = 'calculate'
+                if line.code == 'NET':
+                    net_total = line.total
+            slip.total = net_total
+            slip.total_on_payable = net_total <= 0.0
         return res
 
     @api.model
     def get_inputs(self, contracts, date_from, date_to):
-        # Override
+        # Normalizamos a `date` (nunca `None`). Si los datos llegan
+        # corruptos, preferimos fallar explícito antes que enmascarar
+        # el bug sustituyéndolos por `date.today()`.
+        from_d = fields.Date.to_date(date_from)
+        to_d = fields.Date.to_date(date_to)
+        if not from_d or not to_d:
+            raise ValueError(_(
+                "Rango de fechas inválido en get_inputs: %s - %s"
+            ) % (date_from, date_to))
+
         res = []
         structure_ids = contracts.get_all_structures()
         rule_ids = self.env['hr.payroll.structure'].browse(structure_ids).get_all_rules()
@@ -57,57 +75,24 @@ class HrPayslip(models.Model):
 
         for contract in contracts:
             for input in inputs:
-                amount = 0
-                domain = [
-                    ('rule_input_id.code', '=', input.code), ('employee_id', '=', contract.employee_id.id)]
+                amount = 0.0
+                # Delegamos el filtro de fechas al `search` de Odoo. Los
+                # campos Date vacíos valen `False`, NO `None`, por lo que
+                # comparar con `is None` explota con TypeError. El operador
+                # `|` + `= False` de Odoo maneja correctamente los vacíos.
+                other_input = self.env["hr.payroll.other.input"].search([
+                    ('rule_input_id.code', '=', input.code),
+                    ('employee_id', '=', contract.employee_id.id),
+                    '|', ('start_date', '=', False), ('start_date', '<=', to_d),
+                    '|', ('end_date', '=', False), ('end_date', '>=', from_d),
+                ], limit=1)
+                if other_input:
+                    amount = other_input.amount
 
-                other_inputs = self.env["hr.payroll.other.input"].search(domain, limit=1)
-                if other_inputs:
-                    if other_inputs.start_date:
-                        domain.append(('start_date', '<=', date_from))
-                    if other_inputs.end_date:
-                        domain.append(('end_date', '<=', date_to))
-
-                    other_inputs = self.env["hr.payroll.other.input"].search(domain, limit=1)
-                    amount = other_inputs.amount
-
-                input_data = {
+                res.append({
                     'name': input.name,
                     'code': input.code,
                     'contract_id': contract.id,
-                    'amount': amount
-                }
-                res += [input_data]
+                    'amount': amount,
+                })
         return res
-
-class HrPayslipRun(models.Model):
-    _inherit = "hr.payslip.run"
-    _order = "date_start desc"
-
-    qty_payslip = fields.Integer('Quantity Prepayslip', compute="_compute_qty_payslip", store=False, translate=True)
-    total = fields.Float(string='Total', store=True)
-
-    def _compute_qty_payslip(self):
-        self.ensure_one()
-        self.qty_payslip = len(self.slip_ids)
-
-    def calculate_slips_total(self):
-        for sheet in self:
-            sheet.total = 0.0
-            for line in sheet.slip_ids:
-                line.compute_sheet()
-                if line.total:
-                    sheet.total += line.total
-
-            # if sheet.state == 'draft':
-            #     sheet.state = 'calculate'
-
-class HrPayrollOtherInput(models.Model):
-    _name = 'hr.payroll.other.input'
-    _description = "Payroll Other Input"
-
-    employee_id = fields.Many2one("hr.employee", "Employee")
-    rule_input_id = fields.Many2one("hr.rule.input", "Code", required=True)
-    amount = fields.Float("Amount", required=True)
-    start_date = fields.Date("Start Date")
-    end_date = fields.Date("End Date")

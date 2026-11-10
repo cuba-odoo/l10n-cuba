@@ -1,2 +1,0 @@
-id,name,code,category_id/id,appears_on_payslip,amount_python_compute,note,parent_rule_id/id,sequence,amount_select
-hr_payroll_rules_09_dias,Acumulado dias,ACUMULADO_DIAS,l10n_cu_hr_payroll.hr_salary_rule_category_asign,1,result = WORK100 and (WORK100 * 0.0909) or 0,Asignar vacaciones,l10n_cu_hr_payroll.hr_payroll_rules_09_vacaciones,9,code

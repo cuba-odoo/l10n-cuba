@@ -16,7 +16,7 @@
      ],
      'data': [
           "data/hr_payroll_data.xml",
-          "data/hr.salary.rule.csv",
+          "data/hr_salary_rule.xml",
           "security/ir.model.access.csv",
           "views/hr_payslip_views.xml",
           "views/hr_employee_views.xml",

@@ -45,8 +45,8 @@
         <field name="inherit_id" ref="om_hr_payroll.hr_payslip_run_form"/>
         <field name="arch" type="xml">
             <xpath expr="//button[@type='action']" position="after">
-                <button string="Calcular Hoja" name="calculate_slips_total" type="object" readonly="state not in ('draft', 'calculate')"
-                        class="oe_highlight"/>
+                <button string="Calcular Hoja" name="calculate_slips_total" type="object"
+                        invisible="state != 'draft'" class="oe_highlight"/>
             </xpath>
             <xpath expr="/form/sheet/label[@for='name']" position="before">
                 <div name="button_box" class="oe_button_box">
@@ -107,5 +107,4 @@
     <menuitem id="menu_hr_payslip_line"
               action="hr_payslip_line_action"
               parent="menu_hr_payslip_line_report"/>
-
 </odoo>
