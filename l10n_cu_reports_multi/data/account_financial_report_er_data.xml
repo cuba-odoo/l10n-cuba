@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <record
+        id="l10n_cu_reports.ncc_financial_report_er_01"
+        model="account.financial.report"
+    >
+        <field name="account_domain">['|', '|', '|', '|',
+            ('code', '=like', '90%'), ('code', '=like', '910%'),
+            ('code', '=like', '911%'), ('code', '=like', '912%'),
+            ('code', '=like', '913%')]</field>
+    </record>
+    <record
+        id="l10n_cu_reports.ncc_financial_report_er_02"
+        model="account.financial.report"
+    >
+        <field name="account_domain">[('code', '=like', '914%')]</field>
+    </record>
+    <record
+        id="l10n_cu_reports.ncc_financial_report_er_03"
+        model="account.financial.report"
+    >
+        <field name="account_domain">[('code', '=like', '915%')]</field>
+    </record>
+    <record
+        id="l10n_cu_reports.ncc_financial_report_er_04"
+        model="account.financial.report"
+    >
+        <field name="account_domain">['|', '|', '|',
+            ('code', '=like', '916%'), ('code', '=like', '917%'),
+            ('code', '=like', '918%'), ('code', '=like', '919%')]</field>
+    </record>
+    <record
+        id="l10n_cu_reports.ncc_financial_report_er_05"
+        model="account.financial.report"
+    >
+        <field name="account_domain">['|', '|', '|','|',
+            ('code', '=like', '800%'), ('code', '=like', '801%'),
+            ('code', '=like', '802%'), ('code', '=like', '803%'),
+            ('code', '=like', '804%')]</field>
+    </record>
+    <record
+        id="l10n_cu_reports.ncc_financial_report_er_06"
+        model="account.financial.report"
+    >
+        <field name="account_domain">['|', '|', '|','|',
+            ('code', '=like', '805%'), ('code', '=like', '806%'),
+            ('code', '=like', '807%'), ('code', '=like', '808%'),
+            ('code', '=like', '809%')]</field>
+    </record>
+    <record
+        id="l10n_cu_reports.ncc_financial_report_er_07"
+        model="account.financial.report"
+    >
+        <field name="account_domain">['|', '|',
+            ('code', '=like', '900%'), ('code', '=like', '800%'),
+            ('code', '=like', '805%')]</field>
+    </record>
+    <record
+        id="l10n_cu_reports.ncc_financial_report_er_08"
+        model="account.financial.report"
+    >
+        <field name="account_domain">['|', '|', '|',
+            ('code', '=like', '810%'), ('code', '=like', '811%'),
+            ('code', '=like', '812%'), ('code', '=like', '813%')]</field>
+    </record>
+    <record
+        id="l10n_cu_reports.ncc_financial_report_er_09"
+        model="account.financial.report"
+    >
+        <field name="account_domain">['|', '|', '|',
+            ('code', '=like', '814%'), ('code', '=like', '815%'),
+            ('code', '=like', '816%'), ('code', '=like', '817%')]</field>
+    </record>
+    <record
+        id="l10n_cu_reports.ncc_financial_report_er_10"
+        model="account.financial.report"
+    >
+        <field name="account_domain">[('code', '=like', '818%')]</field>
+    </record>
+    <record
+        id="l10n_cu_reports.ncc_financial_report_er_11"
+        model="account.financial.report"
+    >
+        <field name="account_domain">['|','|','|','|','|', '|','|','|','|','|','|',
+            ('code', '=like', '90%'), ('code', '=like', '91%'),
+            ('code', '=like', '80%'), ('code', '=like', '810%'),
+            ('code', '=like', '811%'), ('code', '=like', '812%'),
+            ('code', '=like', '813%'), ('code', '=like', '814%'),
+            ('code', '=like', '815%'), ('code', '=like', '816%'),
+            ('code', '=like', '817%'), ('code', '=like', '818%')]</field>
+    </record>
+    <record
+        id="l10n_cu_reports.ncc_financial_report_er_12"
+        model="account.financial.report"
+    >
+        <field name="account_domain">['|', '|',
+            ('code', '=like', '819%'), ('code', '=like', '820%'),
+            ('code', '=like', '821%')]</field>
+    </record>
+    <record
+        id="l10n_cu_reports.ncc_financial_report_er_13"
+        model="account.financial.report"
+    >
+        <field name="account_domain">['|','|','|','|','|','|',
+            ('code', '=like', '900%'), ('code', '=like', '800%'),
+            ('code', '=like', '805%'), ('code', '=like', '810%'),
+            ('code', '=like', '814%'), ('code', '=like', '818%'),
+            ('code', '=like', '819%')]</field>
+    </record>
+    <record
+        id="l10n_cu_reports.ncc_financial_report_er_14"
+        model="account.financial.report"
+    >
+        <field name="account_domain">['|', '|',
+            ('code', '=like', '822%'), ('code', '=like', '823%'),
+            ('code', '=like', '824%')]</field>
+    </record>
+    <record
+        id="l10n_cu_reports.ncc_financial_report_er_15"
+        model="account.financial.report"
+    >
+        <field name="account_domain">['|', '|', '|', '|', '|', '|', '|',
+            ('code', '=like', '826%'), ('code', '=like', '827%'),
+            ('code', '=like', '828%'), ('code', '=like', '829%'),
+            ('code', '=like', '830%'), ('code', '=like', '831%'),
+            ('code', '=like', '832%'), ('code', '=like', '833%')]</field>
+    </record>
+    <record
+        id="l10n_cu_reports.ncc_financial_report_er_17"
+        model="account.financial.report"
+    >
+        <field name="account_domain">['|','|','|','|','|','|','|','|',
+            ('code', '=like', '900%'), ('code', '=like', '800%'),
+            ('code', '=like', '805%'), ('code', '=like', '810%'),
+            ('code', '=like', '814%'), ('code', '=like', '818%'),
+            ('code', '=like', '819%'), ('code', '=like', '822%'),
+            ('code', '=like', '826%')]</field>
+    </record>
+    <record
+        id="l10n_cu_reports.ncc_financial_report_er_18"
+        model="account.financial.report"
+    >
+        <field name="account_domain">[('code', '=like', '825%')]</field>
+    </record>
+    <record
+        id="l10n_cu_reports.ncc_financial_report_er_19"
+        model="account.financial.report"
+    >
+        <field name="account_domain">['|', '|', '|',
+            ('code', '=like', '835%'), ('code', '=like', '836%'),
+            ('code', '=like', '837%'), ('code', '=like', '838%')]</field>
+    </record>
+    <record
+        id="l10n_cu_reports.ncc_financial_report_er_20"
+        model="account.financial.report"
+    >
+        <field name="account_domain">[('code', '=like', '839%')]</field>
+    </record>
+    <record
+        id="l10n_cu_reports.ncc_financial_report_er_22"
+        model="account.financial.report"
+    >
+        <field name="account_domain">[('code', '=like', '841%')]</field>
+    </record>
+    <record
+        id="l10n_cu_reports.ncc_financial_report_er_23"
+        model="account.financial.report"
+    >
+        <field name="account_domain">[('code', '=like', '843%')]</field>
+    </record>
+    <record
+        id="l10n_cu_reports.ncc_financial_report_er_24"
+        model="account.financial.report"
+    >
+        <field name="account_domain">['|', '|', '|',
+            ('code', '=like', '845%'), ('code', '=like', '846%'),
+            ('code', '=like', '847%'), ('code', '=like', '848%')]</field>
+    </record>
+    <record
+        id="l10n_cu_reports.ncc_financial_report_er_25"
+        model="account.financial.report"
+    >
+        <field name="account_domain">[('code', '=like', '849%')]</field>
+    </record>
+    <record
+        id="l10n_cu_reports.ncc_financial_report_er_26"
+        model="account.financial.report"
+    >
+        <field name="account_domain">['|', '|', '|', '|',
+            ('code', '=like', '850%'), ('code', '=like', '851%'),
+            ('code', '=like', '852%'), ('code', '=like', '853%'),
+            ('code', '=like', '854%')]</field>
+    </record>
+    <record
+        id="l10n_cu_reports.ncc_financial_report_er_27"
+        model="account.financial.report"
+    >
+        <field name="account_domain">['|', '|', '|', '|','|', '|', '|', '|',
+            ('code', '=like', '855%'), ('code', '=like', '856%'),
+            ('code', '=like', '857%'), ('code', '=like', '858%'),
+            ('code', '=like', '859%'), ('code', '=like', '860%'),
+            ('code', '=like', '861%'), ('code', '=like', '862%'),
+            ('code', '=like', '863%'), ('code', '=like', '864%')]</field>
+    </record>
+    <record
+        id="l10n_cu_reports.ncc_financial_report_er_28"
+        model="account.financial.report"
+    >
+        <field name="account_domain">['|',
+            ('code', '=like', '865%'), ('code', '=like', '866%')]</field>
+    </record>
+    <record
+        id="l10n_cu_reports.ncc_financial_report_er_29"
+        model="account.financial.report"
+    >
+        <field name="account_domain">[('code', '=like', '867%')]</field>
+    </record>
+    <record
+        id="l10n_cu_reports.ncc_financial_report_er_30"
+        model="account.financial.report"
+    >
+        <field name="account_domain">[('code', '=like', '873%')]</field>
+    </record>
+    <record
+        id="l10n_cu_reports.ncc_financial_report_er_31"
+        model="account.financial.report"
+    >
+        <field name="account_domain">['|', '|',
+            ('code', '=like', '920%'), ('code', '=like', '921%'),
+            ('code', '=like', '922%')]</field>
+    </record>
+    <record
+        id="l10n_cu_reports.ncc_financial_report_er_32"
+        model="account.financial.report"
+    >
+        <field name="account_domain">[('code', '=like', '923%')]</field>
+    </record>
+    <record
+        id="l10n_cu_reports.ncc_financial_report_er_33"
+        model="account.financial.report"
+    >
+        <field name="account_domain">[('code', '=like', '924%')]</field>
+    </record>
+    <record
+        id="l10n_cu_reports.ncc_financial_report_er_34"
+        model="account.financial.report"
+    >
+        <field name="account_domain">[('code', '=like', '925%')]</field>
+    </record>
+    <record
+        id="l10n_cu_reports.ncc_financial_report_er_35"
+        model="account.financial.report"
+    >
+        <field name="account_domain">['|',
+            ('code', '=like', '926%'), ('code', '=like', '927%')]</field>
+    </record>
+    <record
+        id="l10n_cu_reports.ncc_financial_report_er_36"
+        model="account.financial.report"
+    >
+        <field name="account_domain">['|',
+            ('code', '=like', '928%'), ('code', '=like', '929%')]</field>
+    </record>
+    <record
+        id="l10n_cu_reports.ncc_financial_report_er_37"
+        model="account.financial.report"
+    >
+        <field name="account_domain">[('code', '=like', '93%')]</field>
+    </record>
+    <record
+        id="l10n_cu_reports.ncc_financial_report_er_38"
+        model="account.financial.report"
+    >
+        <field name="account_domain">['|', '|',
+            ('code', '=like', '950%'), ('code', '=like', '951%'),
+            ('code', '=like', '952%')]</field>
+    </record>
+    <record
+        id="l10n_cu_reports.ncc_financial_report_er_39"
+        model="account.financial.report"
+    >
+        <field name="account_domain">[('code', '=like', '953%')]</field>
+    </record>
+    <record
+        id="l10n_cu_reports.ncc_financial_report_er_40"
+        model="account.financial.report"
+    >
+        <field
+            name="account_domain"
+        >['|','|','|','|','|','|','|','|','|','|','|','|','|','|','|','|','|','|','|','|','|','|',
+            ('code', 'like', '900%'), ('code', 'like', '920%'),
+            ('code', 'like', '923%'), ('code', 'like', '925%'),
+            ('code', 'like', '930%'), ('code', 'like', '950%'),
+            ('code', 'like', '953%'),
+            ('code', 'like', '800%'), ('code', 'like', '805%'),
+            ('code', 'like', '810%'), ('code', 'like', '814%'),
+            ('code', 'like', '818%'), ('code', 'like', '819%'),
+            ('code', 'like', '822%'), ('code', 'like', '826%'),
+            ('code', 'like', '839%'), ('code', 'like', '835%'),
+            ('code', 'like', '845%'), ('code', 'like', '849%'),
+            ('code', 'like', '850%'), ('code', 'like', '855%'),
+            ('code', 'like', '865%'), ('code', 'like', '867%'),
+            ('code', 'like', '873%')]</field>
+    </record>
+</odoo>
