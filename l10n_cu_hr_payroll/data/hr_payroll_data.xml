@@ -1,38 +1,74 @@
 <?xml version="1.0" encoding="utf-8"?>
-<odoo noupdate="1">
+<odoo>
 
-        <!-- Regla salario mínimo -->
-        <record id="hr_payroll_rules_salario_minimo" model="hr.salary.rule">
-            <field name="category_id" ref="om_hr_payroll.BASIC"/>
-            <field name="name">Salario Mínimo</field>
-            <field name="code">SALARIO_MINIMO</field>
-            <field name="sequence">3</field>
-            <field name="amount_select">code</field>
-            <field name="amount_python_compute">
-try:
-    param = payslip.env['ir.config_parameter'].sudo().get_param('l10n_cu_hr_payroll.default_min_salary')
-    result = float(param) if param else 0.0
-except Exception:
-    result = 0.0
-            </field>
-            <field name="appears_on_payslip" eval="False"/>
-        </record>
+    <data noupdate="0">
 
-        <!-- Registro de contribución MIPIME -->
-        <record id="contrib_register_mipyme" model="hr.contribution.register">
-            <field name="name">Empresa</field>
-            <field name="partner_id" eval="False"/>
-        </record>
-        <record id="contrib_register_socio" model="hr.contribution.register">
-            <field name="name">Socios</field>
-            <field name="partner_id" eval="False"/>
-        </record>
-
-        <!-- Categorías salariales -->
+        <!-- Categoría usada por WORK100 (necesaria antes de la regla) -->
         <record id="hr_salary_rule_category_otros" model="hr.salary.rule.category">
             <field name="name">Otros</field>
             <field name="code">OTROS</field>
         </record>
+
+        <!-- WORK100 (referenciada por structure_base) -->
+        <record id="hr_payroll_rules_work100" model="hr.salary.rule">
+            <field name="category_id" ref="hr_salary_rule_category_otros"/>
+            <field name="name">Días trabajados</field>
+            <field name="code">WORK100</field>
+            <field name="sequence">2</field>
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute">
+try:
+    result = worked_days.WORK100.number_of_days
+except Exception:
+    result = 0
+            </field>
+        </record>
+
+        <!-- Override: BASIC -->
+        <record id="om_hr_payroll.hr_rule_basic" model="hr.salary.rule">
+            <field name="name">SALARIO BASICO</field>
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute">
+try:
+    result = contract.wage
+except Exception:
+    result = 0
+            </field>
+        </record>
+
+        <!-- Override: GROSS (seq 100 → 6, fórmula cubana) -->
+        <record id="om_hr_payroll.hr_rule_taxable" model="hr.salary.rule">
+            <field name="sequence">6</field>
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute">
+result = (BASIC / 24) * WORK100
+            </field>
+        </record>
+
+        <!-- Override: NET (wrapper defensivo) -->
+        <record id="om_hr_payroll.hr_rule_net" model="hr.salary.rule">
+            <field name="amount_python_compute">
+try:
+    result = categories.GROSS + categories.ALW - categories.DED
+except Exception:
+    result = 0
+            </field>
+            <field name="register_id" eval="False"/>
+        </record>
+
+        <!-- Override: structure_base = WORK100 + NET -->
+        <record id="om_hr_payroll.structure_base" model="hr.payroll.structure">
+            <field name="rule_ids" eval="[(6, 0, [
+                ref('hr_payroll_rules_work100'),
+                ref('om_hr_payroll.hr_rule_net'),
+            ])]"/>
+        </record>
+
+    </data>
+
+    <data noupdate="1">
+
+        <!-- Categorías salariales restantes -->
         <record id="hr_salary_rule_category_provisiones_prestaciones_company" model="hr.salary.rule.category">
             <field name="name">Provisiones compañía</field>
             <field name="code">PROV_PRESTACIONES_COMP</field>
@@ -50,34 +86,34 @@ except Exception:
             <field name="code">ASIGN</field>
         </record>
 
-        <!-- BASIC -->
-        <record id="om_hr_payroll.hr_rule_basic" model="hr.salary.rule">
-            <field name="name">SALARIO BASICO</field>
+        <!-- Registros de contribución MIPIME -->
+        <record id="contrib_register_mipyme" model="hr.contribution.register">
+            <field name="name">Empresa</field>
+            <field name="partner_id" eval="False"/>
+        </record>
+        <record id="contrib_register_socio" model="hr.contribution.register">
+            <field name="name">Socios</field>
+            <field name="partner_id" eval="False"/>
+        </record>
+
+        <!-- Salario mínimo (parámetro configurable, fallback 3210) -->
+        <record id="hr_payroll_rules_salario_minimo" model="hr.salary.rule">
+            <field name="category_id" ref="om_hr_payroll.BASIC"/>
+            <field name="name">Salario Mínimo</field>
+            <field name="code">SALARIO_MINIMO</field>
+            <field name="sequence">3</field>
             <field name="amount_select">code</field>
             <field name="amount_python_compute">
 try:
-    result = contract.wage
+    param = payslip.env['ir.config_parameter'].sudo().get_param('l10n_cu_hr_payroll.default_min_salary')
+    result = float(param) if param else 3210.0
 except Exception:
-    result = 0
+    result = 3210.0
             </field>
+            <field name="appears_on_payslip" eval="False"/>
         </record>
 
-        <!-- WORK100 -->
-        <record id="hr_payroll_rules_work100" model="hr.salary.rule">
-            <field name="category_id" ref="hr_salary_rule_category_otros"/>
-            <field name="name">Días trabajados</field>
-            <field name="code">WORK100</field>
-            <field name="sequence">2</field>
-            <field name="amount_select">code</field>
-            <field name="amount_python_compute">
-try:
-    result = worked_days.WORK100.number_of_days
-except Exception:
-    result = 0
-            </field>
-        </record>
-
-        <!-- Base impositiva SS -->
+        <!-- Base imponible SS -->
         <record id="hr_payroll_rules_base_impositiva_ss" model="hr.salary.rule">
             <field name="category_id" ref="om_hr_payroll.BASIC"/>
             <field name="name">Base Impositiva SS</field>
@@ -96,14 +132,6 @@ else:
     result = gross + categories.ALW
             </field>
             <field name="appears_on_payslip" eval="False"/>
-        </record>
-
-        <record id="om_hr_payroll.hr_rule_taxable" model="hr.salary.rule">
-            <field name="sequence">6</field>
-            <field name="amount_select">code</field>
-            <field name="amount_python_compute">
-result = (BASIC / 24) * WORK100
-            </field>
         </record>
 
         <!-- FTE -->
@@ -154,6 +182,7 @@ result = ret
             <field name="note">Se paga dentro de los 10 primeros días hábiles de cada mes.</field>
         </record>
 
+        <!-- Provisiones vacaciones -->
         <record id="hr_payroll_rules_09_vacaciones" model="hr.salary.rule">
             <field name="category_id" ref="hr_salary_rule_category_provisiones_prestaciones_company"/>
             <field name="name">Provisiones vacaciones</field>
@@ -167,6 +196,21 @@ result = GROSS and (GROSS * 0.0909) or 0
             <field name="register_id" ref="contrib_register_mipyme"/>
         </record>
 
+        <record id="hr_payroll_rules_09_dias" model="hr.salary.rule">
+            <field name="name">Acumulado dias</field>
+            <field name="code">ACUMULADO_DIAS</field>
+            <field name="category_id" ref="hr_salary_rule_category_asign"/>
+            <field name="appears_on_payslip" eval="True"/>
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute">
+result = WORK100 and (WORK100 * 0.0909) or 0
+            </field>
+            <field name="note">Asignar vacaciones</field>
+            <field name="parent_rule_id" ref="hr_payroll_rules_09_vacaciones"/>
+            <field name="sequence">9</field>
+        </record>
+
+        <!-- Seguridad Social Empresa -->
         <record id="hr_payroll_rules_ss_presupuesto_estado" model="hr.salary.rule">
             <field name="category_id" ref="om_hr_payroll.COMP"/>
             <field name="name">Seguridad Social Empresa</field>
@@ -180,6 +224,7 @@ result = GROSS and (GROSS * 0.125) or 0
             <field name="register_id" ref="contrib_register_mipyme"/>
         </record>
 
+        <!-- Prestaciones sociales corto plazo -->
         <record id="hr_payroll_rules_ss_prestaciones_sociales_corto_plazo" model="hr.salary.rule">
             <field name="category_id" ref="hr_salary_rule_category_provisiones_prestaciones_company"/>
             <field name="name">Prestaciones sociales</field>
@@ -194,6 +239,7 @@ result = GROSS and (GROSS * 0.015) or 0
             <field name="note">Seguridad Social a corto plazo de los empleados.</field>
         </record>
 
+        <!-- Seguridad Social Especial (deducción al trabajador) -->
         <record id="hr_payroll_rules_ss_especial" model="hr.salary.rule">
             <field name="category_id" ref="om_hr_payroll.DED"/>
             <field name="name">Seguridad Social Especial</field>
@@ -208,6 +254,7 @@ result = BASE_IMPOSITIVA_SS and (BASE_IMPOSITIVA_SS * 0.05) or 0
             <field name="note">Contribución Especial a la Seguridad Social de los empleados.</field>
         </record>
 
+        <!-- Asignación vacaciones (input manual) -->
         <record id="hr_payroll_rules_asig_vacaciones" model="hr.salary.rule">
             <field name="category_id" ref="om_hr_payroll.ALW"/>
             <field name="name">Asignación de vacaciones</field>
@@ -230,6 +277,7 @@ result = inputs.ASIG_VACACIONES and inputs.ASIG_VACACIONES.amount or 0
             ]"/>
         </record>
 
+        <!-- Asignación provisiones (input manual) -->
         <record id="hr_payroll_rules_asig_prov" model="hr.salary.rule">
             <field name="category_id" ref="om_hr_payroll.ALW"/>
             <field name="name">Asignación de provisiones</field>
@@ -252,6 +300,7 @@ result = inputs.ASIG_PROVISIONES and inputs.ASIG_PROVISIONES.amount or 0
             ]"/>
         </record>
 
+        <!-- Utilidad (input manual) -->
         <record id="hr_payroll_rules_utilidad" model="hr.salary.rule">
             <field name="category_id" ref="om_hr_payroll.ALW"/>
             <field name="name">Utilidad</field>
@@ -274,7 +323,8 @@ result = inputs.UTILIDAD and inputs.UTILIDAD.amount or 0
             ]"/>
         </record>
 
-        <!-- Socios -->
+        <!-- ================== Socios ================== -->
+
         <record id="hr_rule_socio_taxable" model="hr.salary.rule">
             <field name="category_id" ref="om_hr_payroll.GROSS"/>
             <field name="name">Salario bruto socios</field>
@@ -375,8 +425,7 @@ except Exception:
             <field name="appears_on_payslip" eval="True"/>
         </record>
 
-        <!-- ESCALA PROGRESIVA -->
-
+        <!-- Escala progresiva socios (incremental por tramo) -->
         <record id="hr_payroll_rules_socios_ipa_tram1" model="hr.salary.rule">
             <field name="category_id" ref="hr_salary_rule_category_escala_progresiva"/>
             <field name="name">Tramo 1. Socios</field>
@@ -473,6 +522,7 @@ except Exception:
             <field name="appears_on_payslip" eval="True"/>
         </record>
 
+        <!-- IPAS -->
         <record id="hr_payroll_rules_socios_ingresos_personales_anuales" model="hr.salary.rule">
             <field name="category_id" ref="om_hr_payroll.DED"/>
             <field name="name">Impuesto sobre ingresos personales anuales. Socios</field>
@@ -489,6 +539,7 @@ except Exception:
             <field name="register_id" ref="contrib_register_socio"/>
         </record>
 
+        <!-- Total deducciones -->
         <record id="hr_payroll_rules_total_deduction" model="hr.salary.rule">
             <field name="category_id" ref="hr_salary_rule_category_total_ded"/>
             <field name="name">Total deducciones</field>
@@ -501,23 +552,7 @@ result = categories.DED
             <field name="appears_on_payslip" eval="True"/>
         </record>
 
-        <record id="om_hr_payroll.hr_rule_net" model="hr.salary.rule">
-            <field name="amount_python_compute">
-try:
-    result = categories.GROSS + categories.ALW - categories.DED
-except Exception:
-    result = 0
-            </field>
-            <field name="register_id" eval="False"/>
-        </record>
-
-        <!-- Estructuras salariales -->
-        <record id="om_hr_payroll.structure_base" model="hr.payroll.structure">
-            <field name="rule_ids" eval="[(6, 0, [
-                ref('hr_payroll_rules_work100'),
-                ref('om_hr_payroll.hr_rule_net'),
-            ])]"/>
-        </record>
+        <!-- ================== Estructuras salariales ================== -->
 
         <record id="hr_payroll_salary_structure_operating" model="hr.payroll.structure">
             <field name="name">Operativos determinados</field>
@@ -622,5 +657,7 @@ except Exception:
             ])]"/>
             <field name="company_id" ref="base.main_company"/>
         </record>
+
+    </data>
 
 </odoo>
