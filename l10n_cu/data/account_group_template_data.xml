@@ -4,7 +4,6 @@
    <record id="account_group_template_activos_circulantes" model="account.group.template">
         <field name="chart_template_id" ref="l10n_cu_chart_template_common"/>
         <field name="name">ACTIVOS CIRCULANTES</field>
-        <field name="name">ACTIVOS CIRCULANTES</field>
         <field name="code_prefix_start">101</field>
         <field name="code_prefix_end">211</field>
         <field eval="0" name="reconcile"/>
@@ -14,7 +13,7 @@
      <record id="account_group_template_101_108" model="account.group.template">
 		<field name="chart_template_id" ref="l10n_cu_chart_template_common"/>
 		<field name="parent_id" ref="account_group_template_activos_circulantes"/>		
-          <field name="name">Efectivo en Caja</field>
+		<field name="name">Efectivo en Caja</field>
 		<field name="code_prefix_start">101</field>
 		<field name="code_prefix_end">108</field>
 		<field eval="0" name="reconcile"/>
@@ -24,7 +23,7 @@
 	</record>
 
 
-		<record id="account_group_template_109_119" model="account.group.template">
+	<record id="account_group_template_109_119" model="account.group.template">
 		<field name="chart_template_id" ref="l10n_cu_chart_template_common"/>
 		<field name="parent_id" ref="account_group_template_activos_circulantes"/>
 		<field name="name">Efectivo en Banco y en Otras Instituciones</field>

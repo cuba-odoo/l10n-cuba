@@ -34,7 +34,7 @@
             <field name="arch" type="xml">
                 <field name="plan_id" position="after">
                     <field name="element_id" invisible="True" />
-                    <field name="element_detailed" attrs="{'invisible': [('element_id', '=', 'True')]}" widget="boolean_toggle"/>
+                    <field name="element_detailed" attrs="{'invisible': [('element_id', '!=', False)]}" widget="boolean_toggle"/>
                 </field>
             </field>
         </record>
