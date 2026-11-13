@@ -19,7 +19,7 @@ class FiscalYearClosingAccount(models.Model):
     ], string='Tipo', required=True, default='other')
     
     # Saldos - ¡IMPORTANTE: store=True para que se guarde en DB!
-    balance = fields.Monetary(string='Saldo', currency_field='currency_id', readonly=True, compute='_compute_balance', store=True, digits='Account')
+    balance = fields.Monetary(string='Saldo', currency_field='currency_id', readonly=True, compute='_compute_balance', store=True)
     currency_id = fields.Many2one('res.currency', related='closing_id.currency_id', readonly=True)
     
     # Selección
@@ -28,7 +28,7 @@ class FiscalYearClosingAccount(models.Model):
     # Estado
     state = fields.Selection(related='closing_id.state', string='Estado', readonly=True)
 
-    @api.depends('account_id', 'closing_id.fiscal_year', 'closing_id.closing_date')
+    @api.depends('account_id', 'account_type', 'closing_id.fiscal_year', 'closing_id.closing_date')
     def _compute_balance(self):
         """Calcula el saldo de la cuenta para el período del cierre - ¡CORREGIDO Y OPTIMIZADO!"""
         for record in self:

@@ -92,7 +92,7 @@ class FiscalYearClosing(models.Model):
         
         for pattern in income_patterns:
             accounts = self.env['account.account'].search([
-                ('company_id', '=', self.company_id.id),
+                ('company_ids', '=', self.company_id.id),
                 ('code', '=like', pattern),
                 ('deprecated', '=', False)
             ])
@@ -136,7 +136,7 @@ class FiscalYearClosing(models.Model):
         
         for pattern in expense_patterns:
             accounts = self.env['account.account'].search([
-                ('company_id', '=', self.company_id.id),
+                ('company_ids', '=', self.company_id.id),
                 ('code', '=like', pattern),
                 ('deprecated', '=', False)
             ])
@@ -155,8 +155,8 @@ class FiscalYearClosing(models.Model):
         # ========================================================================
         # Ingresos por tipo de cuenta (Odoo 15)
         accounts_income = self.env['account.account'].search([
-            ('company_id', '=', self.company_id.id),
-            ('user_type_id.type', '=', 'income'),
+            ('company_ids', '=', self.company_id.id),
+            ('account_type', 'in', ['income', 'income_other']),
             ('deprecated', '=', False),
             ('id', 'not in', list(suggested_account_ids))
         ])
@@ -171,8 +171,8 @@ class FiscalYearClosing(models.Model):
         
         # Gastos por tipo de cuenta (Odoo 15)
         accounts_expense = self.env['account.account'].search([
-            ('company_id', '=', self.company_id.id),
-            ('user_type_id.type', '=', 'expense'),
+            ('company_ids', '=', self.company_id.id),
+            ('account_type', 'in', ['expense', 'expense_direct_cost', 'expense_depreciation']),
             ('deprecated', '=', False),
             ('id', 'not in', list(suggested_account_ids))
         ])
@@ -326,32 +326,32 @@ class FiscalYearClosing(models.Model):
                 }
             }
         
-        if abs(self.total_income) < 0.01 and abs(self.total_expense) < 0.1:
+        if abs(self.total_income) < 0.01 and abs(self.total_expense) < 0.01:
             raise UserError(_('No hay movimientos en las cuentas seleccionadas para el período.\nVerifique la fecha de cierre y el ejercicio fiscal.'))
 
         # 🔑 Buscar cuenta de resultados
         retained_earnings_account = self.env['account.account'].search([
             ('code', '=', '999000000'),
-            ('company_id', '=', self.company_id.id)
+            ('company_ids', '=', self.company_id.id)
         ], limit=1)
 
         if not retained_earnings_account:
             retained_earnings_account = self.env['account.account'].search([
                 ('code', '=like', '999%'),
-                ('company_id', '=', self.company_id.id)
+                ('company_ids', '=', self.company_id.id)
             ], limit=1)
 
         if not retained_earnings_account:
             retained_earnings_account = self.env['account.account'].search([
                 ('name', 'ilike', '%resultados%'),
-                ('company_id', '=', self.company_id.id)
+                ('company_ids', '=', self.company_id.id)
             ], limit=1)
 
         # Fallback Odoo 15
         if not retained_earnings_account:
             retained_earnings_account = self.env['account.account'].search([
-                ('user_type_id.type', '=', 'equity'),
-                ('company_id', '=', self.company_id.id)
+                ('account_type', '=', 'equity'),
+                ('company_ids', '=', self.company_id.id)
             ], limit=1)
 
         if not retained_earnings_account:

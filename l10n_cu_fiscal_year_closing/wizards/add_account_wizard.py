@@ -8,7 +8,7 @@ class AddAccountWizard(models.TransientModel):
     _description = 'Agregar Cuenta Manualmente al Cierre'
 
     closing_id = fields.Many2one('l10n_cu.fiscal.year.closing', string='Cierre', required=True)
-    account_id = fields.Many2one('account.account', string='Cuenta', required=True, domain="[('company_id', '=', company_id), ('deprecated', '=', False)]")
+    account_id = fields.Many2one('account.account', string='Cuenta', required=True, domain="[('company_ids', '=', company_id), ('deprecated', '=', False)]")
     account_type = fields.Selection([
         ('income', 'Ingreso'),
         ('expense', 'Gasto'),
