@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <record
+        id="l10n_cu_reports.financial_report_evab_02"
+        model="account.financial.report"
+    >
+        <field name="account_domain">[('code', '=like', '923%')]</field>
+    </record>
+    <record
+        id="l10n_cu_reports.financial_report_evab_04"
+        model="account.financial.report"
+    >
+        <field name="account_domain">[('code', '=like', '700.001%')]</field>
+    </record>
+    <record
+        id="l10n_cu_reports.financial_report_evab_06"
+        model="account.financial.report"
+    >
+        <field name="account_domain">[('code', '=like', '188.001%')]</field>
+    </record>
+    <record
+        id="l10n_cu_reports.financial_report_evab_07"
+        model="account.financial.report"
+    >
+        <field name="account_domain">[('code', '=like', '188.004%')]</field>
+    </record>
+    <record
+        id="l10n_cu_reports.financial_report_evab_08"
+        model="account.financial.report"
+    >
+        <field name="account_domain">[('code', '=like', '188.005%')]</field>
+    </record>
+    <record
+        id="l10n_cu_reports.financial_report_evab_09"
+        model="account.financial.report"
+    >
+        <field name="account_domain">[('code', '=like', '300.002%')]</field>
+    </record>
+    <record
+        id="l10n_cu_reports.financial_report_evab_10"
+        model="account.financial.report"
+    >
+        <field name="account_domain">[('code', '=like', '725.002%')]</field>
+    </record>
+    <record
+        id="l10n_cu_reports.financial_report_evab_12"
+        model="account.financial.report"
+    >
+        <field name="account_domain">[('code', '=like', '196.003%')]</field>
+    </record>
+    <record
+        id="l10n_cu_reports.financial_report_evab_13"
+        model="account.financial.report"
+    >
+        <field name="account_domain">[('code', '=like', '726.002%')]</field>
+    </record>
+    <record
+        id="l10n_cu_reports.financial_report_evab_14"
+        model="account.financial.report"
+    >
+        <field name="account_domain">[('code', '=like', '727.002%')]</field>
+    </record>
+    <record
+        id="l10n_cu_reports.financial_report_evab_15"
+        model="account.financial.report"
+    >
+        <field name="account_domain">[('code', '=like', '728.002%')]</field>
+    </record>
+</odoo>
