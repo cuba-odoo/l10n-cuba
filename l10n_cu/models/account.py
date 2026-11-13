@@ -14,7 +14,7 @@ class AccountAccount(models.Model):
         for record in self:
             record.expense_element_detailed=record.group_id.expense_element_detailed   
     
-    @api.depends('code','group_id','group_id.account_type','group_id.expense_element_detailed')
+    @api.depends('code','group_id','group_id.account_type','group_id.reconcile','group_id.expense_element_detailed')
     def _compute_account_type(self):
         for record in self:
             super(AccountAccount, record)._compute_account_type()
@@ -168,7 +168,7 @@ class AccountGroup(models.Model):
     def _compute_parent(self):
         record_parents=self.search([])
         for record in self.filtered('group_template_parent_id'):
-            parent=record_parents.filtered(lambda it: it.group_template_id==record.group_template_parent_id and it.company_id == self.env.company)
+            parent=record_parents.filtered(lambda it: it.group_template_id==record.group_template_parent_id and it.company_id == record.company_id)
             if parent:
                 record.parent_id= parent.id
 
@@ -183,8 +183,8 @@ class AccountGroup(models.Model):
         result = super(AccountGroup, self).unlink()        
         return result
 
-    def _adapt_parent_account_group(self):
-       pass
+    # def _adapt_parent_account_group(self):
+    #    pass
 
     def _adapt_accounts_for_account_groups(self, account_ids=None):
         """Ensure consistency between accounts and account groups.

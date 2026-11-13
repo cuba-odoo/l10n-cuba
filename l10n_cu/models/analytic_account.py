@@ -20,7 +20,7 @@ class ExpenseElement(models.Model):
     def create(self, vals_list):
         res = super().create(vals_list)
         # aqui tengo que verificar las cuentas analiticas que referencian elementos, y desactivar las que no sean hojas    
-        res2 = self._create_aa_childs()
+        self._create_aa_childs()
         return res
 
     def _create_aa_childs(self):
@@ -31,11 +31,11 @@ class ExpenseElement(models.Model):
         """
         expense_elements=  self.search([('child_ids', '=', False)])
         current_accounts= self.env['account.analytic.account'].search([('element_id','in',expense_elements.ids)])
-        pending_elements= expense_elements - current_accounts.element_id
-        elements_to_delete= self.env['account.analytic.account'].search([('element_id','not in',expense_elements.ids)])
+        elements_to_delete= self.env['account.analytic.account'].search([('element_id','!=',False),('element_id','not in',expense_elements.ids)])
         #raise ValidationError(str(pending_elements))
         elements_tocreate =[]
-        for record in self.env['account.analytic.account'].search([]).filtered('element_detailed'):
+        for record in self.env['account.analytic.account'].search([('element_detailed','=',True),('element_id','=',False)]):
+            pending_elements = expense_elements - self.env['account.analytic.account'].search([('parent_id','=',record.id),('element_id','in',expense_elements.ids)]).element_id
             for element in pending_elements:
                 elements_tocreate.append({
                                 'name': '%s-%s' % (record.name , element.name),
@@ -47,7 +47,7 @@ class ExpenseElement(models.Model):
         if elements_tocreate:
             self.env['account.analytic.account'].create(elements_tocreate)
         for element in elements_to_delete:
-            element.toggle_active()
+             element.write({'active': False})
         return elements_tocreate
 
 class AnalyticAccount(models.Model):
