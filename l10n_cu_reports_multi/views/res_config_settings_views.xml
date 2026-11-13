@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <record id="res_config_settings_view_form_cu_reports_multi" model="ir.ui.view">
+        <field name="name">res.config.settings.form.cu.reports.multi</field>
+        <field name="model">res.config.settings</field>
+        <field name="inherit_id" ref="account.res_config_settings_view_form" />
+        <field name="arch" type="xml">
+            <xpath
+                expr="//div[@name='fiscal_localization_setting_container']"
+                position="inside"
+            >
+                <div class="col-12 o_setting_box mt8">
+                    <div class="o_setting_left_pane"/>
+                    <div class="o_setting_right_pane">
+                        <button
+                            name="action_refresh_all_financial_reports"
+                            string="Recargar cuentas de los estados financieros cubanos"
+                            type="object"
+                            class="btn-secondary"
+                            icon="fa-refresh"
+                        />
+                        <div class="text-muted mt-1">
+                            Recalcula <code>account_ids</code> en todos los
+                            <code>account.financial.report</code> de tipo
+                            <em>accounts</em> para todas las compañías del usuario.
+                        </div>
+                    </div>
+                </div>
+            </xpath>
+        </field>
+    </record>
+</odoo>
