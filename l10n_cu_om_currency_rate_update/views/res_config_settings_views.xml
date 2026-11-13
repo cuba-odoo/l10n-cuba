@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <record id="res_config_settings_view_form_rate_update_cuba" model="ir.ui.view">
+        <field name="name">res.config.settings.view.form.rate.update.cuba</field>
+        <field name="model">res.config.settings</field>
+        <field
+            name="inherit_id"
+            ref="om_currency_rate_update.res_config_settings_view_form_rate_update"
+        />
+        <field name="arch" type="xml">
+            <xpath
+                expr="//setting[@id='om_update_exchange_rates']//field[@name='rate_fallback_provider']/.."
+                position="after"
+            >
+                <div
+                    class="row"
+                    invisible="'bcc' not in (rate_provider, rate_fallback_provider)"
+                >
+                    <label
+                        for="rate_bcc_tasa"
+                        string="Tasa BCC"
+                        class="col-lg-4 o_light_label"
+                    />
+                    <field name="rate_bcc_tasa" required="1" />
+                </div>
+
+                <div
+                    class="row"
+                    groups="base.group_system"
+                    invisible="'eltoque' not in (rate_provider, rate_fallback_provider)"
+                >
+                    <label
+                        for="rate_eltoque_token"
+                        string="Token El Toque"
+                        class="col-lg-4 o_light_label"
+                    />
+                    <field name="rate_eltoque_token" password="True" />
+                </div>
+            </xpath>
+        </field>
+    </record>
+</odoo>
