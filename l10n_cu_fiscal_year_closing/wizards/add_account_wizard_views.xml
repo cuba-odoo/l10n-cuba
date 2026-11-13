@@ -9,7 +9,7 @@
                 <group string="Seleccionar Cuenta">
                     <field name="closing_id" invisible="1"/>
                     <field name="company_id" invisible="1"/>
-                    <field name="account_id" domain="[('company_id', '=', company_id), ('deprecated', '=', False)]" required="1"/>
+                    <field name="account_id" domain="[('company_ids', '=', company_id), ('deprecated', '=', False)]" required="1"/>
                     <field name="account_type" required="1"/>
                 </group>
                 <footer>
