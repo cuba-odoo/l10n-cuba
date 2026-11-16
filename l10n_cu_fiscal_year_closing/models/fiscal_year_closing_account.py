@@ -11,7 +11,7 @@ class FiscalYearClosingAccount(models.Model):
     closing_id = fields.Many2one('l10n_cu.fiscal.year.closing', string='Cierre', required=True, ondelete='cascade')
     account_id = fields.Many2one('account.account', string='Cuenta', required=True, ondelete='cascade')
     account_code = fields.Char(related='account_id.code', string='Código', readonly=True, store=True)
-    account_name = fields.Char(related='account_id.name', string='Nombre', readonly=True, store=True)
+    account_name = fields.Char(related='account_id.name', string='Nombre', readonly=True)
     account_type = fields.Selection([
         ('income', 'Ingreso'),
         ('expense', 'Gasto'),
