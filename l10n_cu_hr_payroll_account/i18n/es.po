@@ -4,7 +4,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 15.0\n"
+"Project-Id-Version: Odoo Server 18.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-02-28 16:45+0000\n"
 "PO-Revision-Date: 2022-02-28 11:47-0500\n"
@@ -30,12 +30,30 @@ msgstr "Estructura salarial"
 #. module: l10n_cu_hr_payroll_account
 #: model:ir.model.fields,help:l10n_cu_hr_payroll_account.field_hr_payslip_employees__struct_id
 msgid ""
-"Si lo que desea es relizar una nómina por días trabajados seleccione "
-"(operativa o administrativa)."
+"To compute a payslip by worked days, select the operational or "
+"administrative structure."
 msgstr ""
+"Si desea realizar una nómina por días trabajados, seleccione la estructura "
+"operativa o administrativa."
 
 #. module: l10n_cu_hr_payroll_account
+#. odoo-python
 #: code:addons/l10n_cu_hr_payroll_account/wizard/hr_payroll_payslips_by_employees.py:0
-#, python-format
 msgid "You must select employee(s) to generate payslip(s)."
 msgstr "Debe seleccionar un trabajador para generar la nómina."
+
+#. module: l10n_cu_hr_payroll_account
+#. odoo-python
+#: code:addons/l10n_cu_hr_payroll_account/wizard/hr_payroll_payslips_by_employees.py:0
+msgid "Generate the payslips from a payslip batch."
+msgstr "Genere las nóminas desde un lote de nóminas."
+
+#. module: l10n_cu_hr_payroll_account
+#. odoo-python
+#: code:addons/l10n_cu_hr_payroll_account/wizard/hr_payroll_payslips_by_employees.py:0
+msgid ""
+"The employee %(employee)s has no contract with the selected salary "
+"structure."
+msgstr ""
+"El empleado %(employee)s no tiene ningún contrato con la estructura salarial "
+"seleccionada."
