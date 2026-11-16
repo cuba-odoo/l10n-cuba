@@ -17,7 +17,7 @@ class AccountAnalyticLine(models.Model):
         for record in self:
             record.analytic_account_parent_id = record.account_id.parent_id.id
 
-    @api.depends('account_id')
+    @api.depends('account_id', 'account_id.element_id')
     def _compute_analytic_expense_element_id(self):
         for record in self:
             record.analytic_element_id = record.account_id.element_id.id       
