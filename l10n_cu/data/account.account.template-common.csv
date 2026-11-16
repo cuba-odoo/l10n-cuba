@@ -34,7 +34,7 @@ account_common_1500050,Pagos Anticipados del Proceso Inversionista - Sector Coop
 account_common_1500060,Pagos Anticipados del Proceso Inversionista - Personas Naturales,150.0060,asset_prepayments,l10n_cu_chart_template_common,0,Activo Circulante
 account_common_161,Anticipos a Justificar,161,asset_prepayments,l10n_cu_chart_template_common,0,Activo Circulante
 account_common_1640001,Adeudos del Presupuesto del Estado - Impuesto sobre Ventas,164.0001,asset_current,l10n_cu_chart_template_common,0,Activo Circulante
-account_common_1640002,Adeudos del Presupuesto del Estado - Impuesto sobre los Servicios PО“ОЉblicos,164.0002,asset_current,l10n_cu_chart_template_common,0,Activo Circulante
+account_common_1640002,Adeudos del Presupuesto del Estado - Impuesto sobre los Servicios Públicos,164.0002,asset_current,l10n_cu_chart_template_common,0,Activo Circulante
 account_common_1640003,Adeudos del Presupuesto del Estado - Aranceles de Aduana,164.0003,asset_current,l10n_cu_chart_template_common,0,Activo Circulante
 account_common_1640004,Adeudos del Presupuesto del Estado - Impuesto sobre Utilidades,164.0004,asset_current,l10n_cu_chart_template_common,0,Activo Circulante
 account_common_1640005,Adeudos del Presupuesto del Estado - Impuesto sobre Ingresos Personales,164.0005,asset_current,l10n_cu_chart_template_common,0,Activo Circulante
