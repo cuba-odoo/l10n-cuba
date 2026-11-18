@@ -1,4 +1,5 @@
-from datetime import datetime, timezone
+from datetime import datetime
+from zoneinfo import ZoneInfo
 from urllib.parse import quote
 
 import requests
@@ -65,7 +66,7 @@ class BccProvider(RateProvider):
                     "%(p)s sin tasas para %(v)s.", p=self.name, v=variant
                 )
             )
-        return day or datetime.now(timezone.utc).date(), "CUP", rates
+        return day or datetime.now(ZoneInfo("America/Havana")).date(), "CUP", rates
 
 
 # ---------------------------------------------------------------------------
@@ -129,7 +130,7 @@ class ElToqueProvider(RateProvider):
                 self.company.env._("Introduce el token de El Toque en los ajustes.")
             )
 
-        today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+        today = datetime.now(ZoneInfo("America/Havana")).strftime("%Y-%m-%d")
         date_from = quote(f"{today} 00:00:01", safe="")
         date_to = quote(f"{today} 23:59:01", safe="")
         url = f"{self.url}?date_from={date_from}&date_to={date_to}"
@@ -162,9 +163,9 @@ class ElToqueProvider(RateProvider):
         if data.get("date"):
             try:
                 day = datetime.strptime(data["date"], "%Y-%m-%d").date()
-            except ValueError:
-                return
-        return day or datetime.now(timezone.utc).date(), "CUP", rates
+            except (TypeError, ValueError):
+                day = None
+        return day or datetime.now(ZoneInfo("America/Havana")).date(), "CUP", rates
 
 
 # ---------------------------------------------------------------------------
