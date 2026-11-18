@@ -1,6 +1,7 @@
 import ast
 
 from odoo import fields, models
+from odoo.osv import expression
 
 
 class AccountFinancialReport(models.Model):
@@ -46,21 +47,19 @@ class AccountFinancialReport(models.Model):
                     domain.insert(0, "|")
                 domain.append(("code", "=", code))
 
-        # 3) Filtro por compañías
-        if "company_ids" in Account._fields:  # Odoo 18
-            domain = domain + [("company_ids", "in", companies.ids)]
-        elif "company_id" in Account._fields:  # Odoo <= 17
-            domain = domain + [
-                "|",
-                ("company_id", "=", False),
-                ("company_id", "in", companies.ids),
-            ]
-
-        return Account.search(domain)
+        accounts = Account.browse()
+        for company in companies:
+            company_accounts = Account.with_context(allowed_company_ids=[company.id])
+            if "company_ids" in Account._fields:
+                company_domain = [("company_ids", "in", company.ids)]
+            else:
+                company_domain = [("company_id", "in", [False, company.id])]
+            accounts |= company_accounts.search(expression.AND([domain, company_domain]))
+        return accounts
 
     def action_refresh_accounts(self):
         """Botón individual (en la ficha del reporte)."""
         for report in self:
             if report.type == "accounts":
-                report.account_ids = [(6, 0, report._get_dynamic_accounts().ids)]
+                report.account_ids = [(6, 0, report._get_dynamic_accounts(companies=self.env.user.company_ids).ids)]
         return True
