@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="hr_payslip_asig_vacation_view_form" model="ir.ui.view">
+        <field name="name">Payslip Projection Wizard</field>
+        <field name="model">hr.payslip.projection.wizard</field>
+        <field name="arch" type="xml">
+            <form string="Proyección de Nómina">
+                <group col="2">
+                    <field name="date_from"/>
+                    <field name="date_to"/>
+                </group>
+                <footer>
+                    <button name="action_projection" string="Generar" type="object"
+                            default_focus="1" class="oe_highlight"/>
+                    <button string="Cancelar" class="btn btn-secondary" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+    <record id="hr_payslip_asig_vacation_view_action" model="ir.actions.act_window">
+        <field name="name">Ejecutar Proyecciones</field>
+        <field name="res_model">hr.payslip.projection.wizard</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+    </record>
+    <menuitem id="menu_hr_payslip_asig_vacation"
+              action="hr_payslip_asig_vacation_view_action"
+              parent="menu_hr_payslip_line_report"/>
+</odoo>
