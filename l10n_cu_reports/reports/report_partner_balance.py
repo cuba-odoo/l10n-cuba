@@ -7,6 +7,9 @@ class PartnerBalance(models.AbstractModel):
     _description = 'Partner Balance'
 
     def _lines(self, data):
+        if not data['ids']:
+            return []
+
         tables_where_params = self.env['account.move.line'].with_context(data['form'].get('used_context', {}))._query_get()
         params = [tuple(data['ids']), tuple(data['computed']['result_selection'])] + tables_where_params[2]
 
@@ -16,7 +19,7 @@ class PartnerBalance(models.AbstractModel):
         # print(tables_where_params[1])
         # print(tables_where_params[2])
         query = """
-                    SELECT p.ref,account_move_line.account_id,ac.name AS account_name,ac.code AS code,p.name, sum(debit) AS debit, sum(credit) AS credit,
+                    SELECT p.ref,account_move_line.account_id,p.name, sum(debit) AS debit, sum(credit) AS credit,
                     CASE WHEN sum(debit) > sum(credit)
                         THEN sum(debit) - sum(credit)
                         ELSE 0
@@ -30,9 +33,9 @@ class PartnerBalance(models.AbstractModel):
             account_move_line LEFT JOIN res_partner p ON (account_move_line.partner_id=p.id)
             JOIN account_account ac ON (account_move_line.account_id = ac.id)
             JOIN account_move as account_move_line__move_id ON (account_move_line__move_id.id = account_move_line.move_id)
-            WHERE (ac.id in %s) and (ac.internal_type IN %s)       
+            WHERE (ac.id in %s) and (ac.account_type IN %s)
             AND """ + tables_where_params[1] + """
-            GROUP BY p.id, p.ref, p.name,account_move_line.account_id,ac.name,ac.code
+            GROUP BY p.id, p.ref, p.name,account_move_line.account_id
             ORDER BY account_move_line.account_id,p.name """
 
         # print(tables_where_params[2])
@@ -43,6 +46,11 @@ class PartnerBalance(models.AbstractModel):
 
         self.env.cr.execute(query, tuple(params))
         res = self.env.cr.dictfetchall()
+        # code and name are company dependent / translated in 18.0: read them through the ORM
+        accounts = self.env['account.account'].browse({r['account_id'] for r in res})
+        names = {account.id: (account.code, account.name) for account in accounts}
+        for r in res:
+            r['code'], r['account_name'] = names[r['account_id']]
 
         if data['form']['display_partner'] == 'non-zero_balance':
             full_account = [r for r in res if r['sdebit'] > 0 or r['scredit'] > 0]
@@ -187,11 +195,11 @@ class PartnerBalance(models.AbstractModel):
 
         # target_move = data['form'].get('target_move', 'all')
         if data['form']['result_selection'] == 'customer':
-            data['computed']['result_selection'] = ['receivable']
+            data['computed']['result_selection'] = ['asset_receivable']
         elif data['form']['result_selection'] == 'supplier':
-            data['computed']['result_selection'] = ['payable']
+            data['computed']['result_selection'] = ['liability_payable']
         else:
-            data['computed']['result_selection'] = ['payable', 'receivable']
+            data['computed']['result_selection'] = ['liability_payable', 'asset_receivable']
 
 
         report_obj = self.env['ir.actions.report']

@@ -9,7 +9,7 @@
         Proformas Estados Financieros (Sector Empresarial) - Cuba.
      """,
      'author': 'Comunidad Cubana de Odoo',
-     'depends': ["accounting_pdf_reports", "report_xlsx", "l10n_cu"],
+     'depends': ["accounting_pdf_reports", "report_xlsx", "l10n_cu", "l10n_cu_address"],
      'data': [
           "data/account_financial_report_es.xml",
           "data/account_financial_report_er.xml",
