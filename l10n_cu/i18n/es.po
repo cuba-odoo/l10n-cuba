@@ -1,0 +1,279 @@
+# Spanish translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* l10n_cu
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-16 18:06+0000\n"
+"PO-Revision-Date: 2026-11-16 18:06+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. module: l10n_cu
+#. odoo-python
+#: code:addons/l10n_cu/models/analytic_account.py:0
+msgid ""
+"A combined analytic account must belong to a container account with 'element"
+" detailed' enabled."
+msgstr ""
+"Una cuenta analítica combinada debe pertenecer a una cuenta contenedora con "
+"'Elemento detallado' activado."
+
+#. module: l10n_cu
+#: model_terms:ir.ui.view,arch_db:l10n_cu.view_exense_element_form
+msgid "Account"
+msgstr "Cuenta"
+
+#. module: l10n_cu
+#: model:ir.model,name:l10n_cu.model_account_chart_template
+msgid "Account Chart Template"
+msgstr "Plantilla de plan contable"
+
+#. module: l10n_cu
+#. odoo-python
+#: code:addons/l10n_cu/models/analytic_account.py:0
+msgid ""
+"An analytic account cannot be 'element detailed' and be linked to an expense"
+" element at the same time."
+msgstr ""
+"Una cuenta analítica no puede tener 'Elemento detallado' activado y estar "
+"vinculada a un elemento de gasto al mismo tiempo."
+
+#. module: l10n_cu
+#: model:ir.model,name:l10n_cu.model_account_analytic_account
+msgid "Analytic Account"
+msgstr "Cuenta analítica"
+
+#. module: l10n_cu
+#: model:ir.model.fields,field_description:l10n_cu.field_account_analytic_line__analytic_account_parent_id
+msgid "Analytic Account Parent"
+msgstr "Cuenta analítica padre"
+
+#. module: l10n_cu
+#: model:ir.model.fields,field_description:l10n_cu.field_account_analytic_line__analytic_element_id
+msgid "Analytic Element"
+msgstr "Elemento analítico"
+
+#. module: l10n_cu
+#: model:ir.model,name:l10n_cu.model_account_analytic_line
+msgid "Analytic Line"
+msgstr "Línea analítica"
+
+#. module: l10n_cu
+#: model:ir.model,name:l10n_cu.model_res_cnae
+msgid "CNAE"
+msgstr "CNAE"
+
+#. module: l10n_cu
+#: model:ir.model,name:l10n_cu.model_res_cnae_line
+msgid "CNAE Line"
+msgstr "Línea CNAE"
+
+#. module: l10n_cu
+#: model:ir.model.fields,field_description:l10n_cu.field_expense_element__child_ids
+msgid "Child"
+msgstr "Hijo"
+
+#. module: l10n_cu
+#: model:ir.model.fields,field_description:l10n_cu.field_res_partner__l10n_cu_cnae_ids
+#: model:ir.model.fields,field_description:l10n_cu.field_res_users__l10n_cu_cnae_ids
+msgid "Clase económica a la que pertenece (CNAE)"
+msgstr "Clase económica a la que pertenece (CNAE)"
+
+#. module: l10n_cu
+#: model:ir.model.fields,field_description:l10n_cu.field_res_cnae_line__cnae_id
+msgid "Clasificador Nacional de Activdades Económicas"
+msgstr "Clasificador Nacional de Actividades Económicas"
+
+#. module: l10n_cu
+#: model:ir.model.fields,field_description:l10n_cu.field_expense_element__code
+#: model:ir.model.fields,field_description:l10n_cu.field_res_cnae__code
+#: model_terms:ir.ui.view,arch_db:l10n_cu.view_exense_element_form
+msgid "Code"
+msgstr "Código"
+
+#. module: l10n_cu
+#: model:ir.model.fields,field_description:l10n_cu.field_expense_element__company_id
+msgid "Company"
+msgstr "Compañía"
+
+#. module: l10n_cu
+#: model:ir.model.fields,field_description:l10n_cu.field_res_cnae__complete_name
+msgid "Complete Name"
+msgstr "Nombre completo"
+
+#. module: l10n_cu
+#: model:ir.model,name:l10n_cu.model_res_partner
+msgid "Contact"
+msgstr "Contacto"
+
+#. module: l10n_cu
+#: model:ir.model.fields,field_description:l10n_cu.field_expense_element__create_uid
+#: model:ir.model.fields,field_description:l10n_cu.field_res_cnae__create_uid
+#: model:ir.model.fields,field_description:l10n_cu.field_res_cnae_line__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: l10n_cu
+#: model:ir.model.fields,field_description:l10n_cu.field_expense_element__create_date
+#: model:ir.model.fields,field_description:l10n_cu.field_res_cnae__create_date
+#: model:ir.model.fields,field_description:l10n_cu.field_res_cnae_line__create_date
+msgid "Created on"
+msgstr "Creado el"
+
+#. module: l10n_cu
+#. odoo-python
+#: code:addons/l10n_cu/models/template_cu_common.py:0
+msgid "Cuba - Plan Contable Común"
+msgstr "Cuba - Plan Contable Común"
+
+#. module: l10n_cu
+#. odoo-python
+#: code:addons/l10n_cu/models/template_cu_public.py:0
+msgid "Cuba - Plan Contable Empresas Públicas"
+msgstr "Cuba - Plan Contable Empresas Públicas"
+
+#. module: l10n_cu
+#. odoo-python
+#: code:addons/l10n_cu/models/template_cu_private.py:0
+msgid "Cuba - Plan Contable Sector Privado y Cooperativo"
+msgstr "Cuba - Plan Contable Sector Privado y Cooperativo"
+
+#. module: l10n_cu
+#. odoo-python
+#: code:addons/l10n_cu/models/template_cu_tcp.py:0
+msgid "Cuba - Plan Contable TCP (Trabajadores por Cuenta Propia)"
+msgstr "Cuba - Plan Contable TCP (Trabajadores por Cuenta Propia)"
+
+#. module: l10n_cu
+#: model:ir.model.fields,field_description:l10n_cu.field_expense_element__display_name
+#: model:ir.model.fields,field_description:l10n_cu.field_res_cnae__display_name
+#: model:ir.model.fields,field_description:l10n_cu.field_res_cnae_line__display_name
+msgid "Display Name"
+msgstr "Nombre mostrado"
+
+#. module: l10n_cu
+#: model:ir.model.fields,field_description:l10n_cu.field_account_analytic_account__element_id
+#: model:ir.model.fields,field_description:l10n_cu.field_account_analytic_line__element_id
+msgid "Element"
+msgstr "Elemento"
+
+#. module: l10n_cu
+#: model_terms:ir.ui.view,arch_db:l10n_cu.view_exense_element_list
+msgid "Element list"
+msgstr "Lista de elementos"
+
+#. module: l10n_cu
+#: model_terms:ir.ui.view,arch_db:l10n_cu.view_exense_element_form
+msgid "Element name"
+msgstr "Nombre del elemento"
+
+#. module: l10n_cu
+#: model:ir.model.fields,field_description:l10n_cu.field_account_analytic_account__element_detailed
+msgid "Element_detailed"
+msgstr "Elemento detallado"
+
+#. module: l10n_cu
+#: model:ir.actions.act_window,name:l10n_cu.action_account_expense_element_form
+#: model:ir.ui.menu,name:l10n_cu.sale_menu_config_account_expense_element
+msgid "Expense Elements"
+msgstr "Elementos de gasto"
+
+#. module: l10n_cu
+#: model:ir.model,name:l10n_cu.model_expense_element
+msgid "Expense element"
+msgstr "Elemento de gasto"
+
+#. module: l10n_cu
+#: model:ir.model.fields,field_description:l10n_cu.field_expense_element__id
+#: model:ir.model.fields,field_description:l10n_cu.field_res_cnae__id
+#: model:ir.model.fields,field_description:l10n_cu.field_res_cnae_line__id
+msgid "ID"
+msgstr "ID"
+
+#. module: l10n_cu
+#: model:ir.model.constraint,message:l10n_cu.constraint_res_cnae_line_check_cnae_id
+msgid "Las actividades economicas deben ser unicas.!"
+msgstr "¡Las actividades económicas deben ser únicas!"
+
+#. module: l10n_cu
+#: model:ir.model.fields,field_description:l10n_cu.field_expense_element__write_uid
+#: model:ir.model.fields,field_description:l10n_cu.field_res_cnae__write_uid
+#: model:ir.model.fields,field_description:l10n_cu.field_res_cnae_line__write_uid
+msgid "Last Updated by"
+msgstr "Última actualización por"
+
+#. module: l10n_cu
+#: model:ir.model.fields,field_description:l10n_cu.field_expense_element__write_date
+#: model:ir.model.fields,field_description:l10n_cu.field_res_cnae__write_date
+#: model:ir.model.fields,field_description:l10n_cu.field_res_cnae_line__write_date
+msgid "Last Updated on"
+msgstr "Última actualización el"
+
+#. module: l10n_cu
+#: model:ir.model.fields,field_description:l10n_cu.field_expense_element__name
+#: model:ir.model.fields,field_description:l10n_cu.field_res_cnae__name
+msgid "Name"
+msgstr "Nombre"
+
+#. module: l10n_cu
+#: model:ir.model.fields,field_description:l10n_cu.field_account_analytic_account__parent_id
+#: model:ir.model.fields,field_description:l10n_cu.field_expense_element__parent_id
+msgid "Parent"
+msgstr "Padre"
+
+#. module: l10n_cu
+#: model:ir.model.fields,field_description:l10n_cu.field_expense_element__parent_path
+msgid "Parent Path"
+msgstr "Ruta del padre"
+
+#. module: l10n_cu
+#: model:ir.model.fields,field_description:l10n_cu.field_res_cnae_line__partner_id
+msgid "Partner"
+msgstr "Contacto"
+
+#. module: l10n_cu
+#: model:ir.model.fields,field_description:l10n_cu.field_res_cnae__industry_id
+msgid "Sector"
+msgstr "Sector"
+
+#. module: l10n_cu
+#: model:ir.model.fields,field_description:l10n_cu.field_res_cnae_line__sequence
+msgid "Sequence"
+msgstr "Secuencia"
+
+#. module: l10n_cu
+#. odoo-python
+#: code:addons/l10n_cu/models/analytic_account.py:0
+msgid ""
+"The analytic account '%s' cannot be archived because it has analytic lines. "
+"Reassign or delete those lines first."
+msgstr ""
+"La cuenta analítica '%s' no se puede archivar porque tiene líneas "
+"analíticas. Reasigne o elimine esas líneas primero."
+
+#. module: l10n_cu
+#: model:ir.model.fields,help:l10n_cu.field_res_cnae_line__sequence
+msgid ""
+"Usado para organizar las actividades. La Actividad Principal será la de "
+"primer orden."
+msgstr ""
+"Usado para organizar las actividades. La Actividad Principal será la de "
+"primer orden."
+
+#. module: l10n_cu
+#: model_terms:ir.ui.view,arch_db:l10n_cu.view_exense_element_form
+msgid "ej. 10000"
+msgstr "ej. 10000"
+
+#. module: l10n_cu
+#: model_terms:ir.ui.view,arch_db:l10n_cu.view_exense_element_form
+msgid "ej. Materias Primas y Materiales"
+msgstr "ej. Materias Primas y Materiales"
