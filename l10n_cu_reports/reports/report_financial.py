@@ -89,7 +89,7 @@ class ReportFinancial(models.AbstractModel):
                     flag = False
                     account = self.env['account.account'].browse(account_id)
                     vals = {
-                        'name': account.code + ' ' + account.name,
+                        'name': ' '.join(filter(None, (account.code, account.name))),
                         'visible': report.visible,
                         'balance': value['balance'] * float(report.sign) or 0.0,
                         'type': 'account',
@@ -103,9 +103,9 @@ class ReportFinancial(models.AbstractModel):
                     if data['debit_credit']:
                         vals['debit'] = value['debit']
                         vals['credit'] = value['credit']
-                        if not account.company_ids[0].currency_id.is_zero(vals['debit']) or not account.company_ids[0].currency_id.is_zero(vals['credit']):
+                        if not self.env.company.currency_id.is_zero(vals['debit']) or not self.env.company.currency_id.is_zero(vals['credit']):
                             flag = True
-                    if not account.company_ids[0].currency_id.is_zero(vals['balance']):
+                    if not self.env.company.currency_id.is_zero(vals['balance']):
                         flag = True
                     if flag:
                         sub_lines.append(vals)
@@ -175,7 +175,7 @@ def layout_header(self, workbook, worksheet, data):
                                          })
     cpaginado_efe.set_font_size(10)
     cpaginado_efe.set_text_wrap()
-    worksheet.merge_range('H1:H2', '(%s)' % data['context']['efe'], cpaginado_efe)
+    worksheet.merge_range('H1:H2', '(%s)' % self.env.context.get('efe') or (data.get('context') or {}).get('efe', ''), cpaginado_efe)
 
     cmep = workbook.add_format({'bold': False})
     cmep.set_font_size(10)
@@ -193,14 +193,13 @@ def layout_header(self, workbook, worksheet, data):
     worksheet.merge_range('A4:D4', data['form']['date_to'], normal)
     worksheet.merge_range('E4:H4', 'Pesos cubanos con dos decimales', normal)
 
-    context = data.get('context')
-    active_company = self.env["res.company"].browse(context.get('allowed_company_ids'))
+    active_company = self.env.company
 
     centidad = workbook.add_format({
         'border': 1,
     })
     centidad.set_font_size(10)
-    worksheet.merge_range('A5:H5', 'Entidad: %s' % active_company[0].name, centidad)
+    worksheet.merge_range('A5:H5', 'Entidad: %s' % active_company.name, centidad)
 
     ccodigo_entidad = workbook.add_format({
         'border': 1,
@@ -225,11 +224,11 @@ def layout_header(self, workbook, worksheet, data):
 
     worksheet.write('A8', '', corganismo)
     worksheet.write('B8', '', corganismo)
-    worksheet.write('C8', active_company[0].company_registry or '', corganismo)
+    worksheet.write('C8', active_company.company_registry or '', corganismo)
     worksheet.merge_range('D8:E8', '', corganismo)
     worksheet.write('F8', '', corganismo)
-    worksheet.write('G8', active_company[0].partner_id.state_id and active_company[0].partner_id.state_id.code or '', corganismo)
-    worksheet.write('H8', active_company[0].partner_id.res_municipality_id and active_company[0].partner_id.res_municipality_id.code or '', corganismo)
+    worksheet.write('G8', active_company.partner_id.state_id and active_company.partner_id.state_id.code or '', corganismo)
+    worksheet.write('H8', active_company.partner_id.municipality_id and active_company.partner_id.municipality_id.code or '', corganismo)
 
 
 def layout_footer(self, workbook, worksheet, data, row):
