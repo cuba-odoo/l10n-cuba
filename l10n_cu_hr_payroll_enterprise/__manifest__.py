@@ -3,13 +3,13 @@
 
 {
      'name': 'Cuba - Nóminas',
-     'version': '18.0',
+     'version': '18.0.1.0.0',
      'category': 'Human Resources',
      'summary': """
         Estructuras y reglas salariales, proyecciones de salarios.
      """,
      'author': 'Comunidad Cubana de Odoo',
-     'depends': ["l10n_cu_hr", "hr_payroll"],
+     'depends': ["l10n_cu_hr", "l10n_cu_hr_contract", "hr_payroll"],
      'data': [
           "data/hr_payroll_data.xml",
           "data/hr.salary.rule.csv",

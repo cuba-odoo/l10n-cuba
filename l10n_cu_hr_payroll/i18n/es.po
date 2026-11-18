@@ -1,0 +1,670 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* l10n_cu_hr_payroll
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-10 20:24+0000\n"
+"PO-Revision-Date: 2026-11-10 20:24+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: l10n_cu_hr_payroll
+#: model_terms:ir.ui.view,arch_db:l10n_cu_hr_payroll.report_payslip_projection
+msgid "<strong>Abril</strong>"
+msgstr "<strong>Abril</strong>"
+
+#. module: l10n_cu_hr_payroll
+#: model_terms:ir.ui.view,arch_db:l10n_cu_hr_payroll.report_payslip_projection
+msgid "<strong>Agosto</strong>"
+msgstr "<strong>Agosto</strong>"
+
+#. module: l10n_cu_hr_payroll
+#: model_terms:ir.ui.view,arch_db:l10n_cu_hr_payroll.report_payslip
+msgid "<strong>BRUTO</strong>"
+msgstr "<strong>BRUTO</strong>"
+
+#. module: l10n_cu_hr_payroll
+#: model_terms:ir.ui.view,arch_db:l10n_cu_hr_payroll.report_payslip
+msgid "<strong>CI</strong>"
+msgstr "<strong>CI</strong>"
+
+#. module: l10n_cu_hr_payroll
+#: model_terms:ir.ui.view,arch_db:l10n_cu_hr_payroll.report_payslip_projection
+msgid "<strong>Código</strong>"
+msgstr "<strong>Código</strong>"
+
+#. module: l10n_cu_hr_payroll
+#: model_terms:ir.ui.view,arch_db:l10n_cu_hr_payroll.report_payslip_projection
+msgid "<strong>Diciembre</strong>"
+msgstr "<strong>Diciembre</strong>"
+
+#. module: l10n_cu_hr_payroll
+#: model_terms:ir.ui.view,arch_db:l10n_cu_hr_payroll.report_payslip
+msgid "<strong>DÍAS TRABAJADOS</strong>"
+msgstr "<strong>DÍAS TRABAJADOS</strong>"
+
+#. module: l10n_cu_hr_payroll
+#: model_terms:ir.ui.view,arch_db:l10n_cu_hr_payroll.report_payslip_projection
+msgid "<strong>Empleado: </strong> <br/>"
+msgstr "<strong>Empleado: </strong> <br/>"
+
+#. module: l10n_cu_hr_payroll
+#: model_terms:ir.ui.view,arch_db:l10n_cu_hr_payroll.report_payslip_projection
+msgid "<strong>Enero</strong>"
+msgstr "<strong>Enero</strong>"
+
+#. module: l10n_cu_hr_payroll
+#: model_terms:ir.ui.view,arch_db:l10n_cu_hr_payroll.report_payslip_projection
+msgid "<strong>Febrero</strong>"
+msgstr "<strong>Febrero</strong>"
+
+#. module: l10n_cu_hr_payroll
+#: model_terms:ir.ui.view,arch_db:l10n_cu_hr_payroll.report_payslip_projection
+msgid "<strong>Julio</strong>"
+msgstr "<strong>Julio</strong>"
+
+#. module: l10n_cu_hr_payroll
+#: model_terms:ir.ui.view,arch_db:l10n_cu_hr_payroll.report_payslip_projection
+msgid "<strong>Junio</strong>"
+msgstr "<strong>Junio</strong>"
+
+#. module: l10n_cu_hr_payroll
+#: model_terms:ir.ui.view,arch_db:l10n_cu_hr_payroll.report_payslip_projection
+msgid "<strong>Marzo</strong>"
+msgstr "<strong>Marzo</strong>"
+
+#. module: l10n_cu_hr_payroll
+#: model_terms:ir.ui.view,arch_db:l10n_cu_hr_payroll.report_payslip_projection
+msgid "<strong>Mayo</strong>"
+msgstr "<strong>Mayo</strong>"
+
+#. module: l10n_cu_hr_payroll
+#: model_terms:ir.ui.view,arch_db:l10n_cu_hr_payroll.report_payslip
+msgid "<strong>NET</strong>"
+msgstr "<strong>NETO</strong>"
+
+#. module: l10n_cu_hr_payroll
+#: model_terms:ir.ui.view,arch_db:l10n_cu_hr_payroll.report_payslip
+msgid "<strong>NO.</strong>"
+msgstr "<strong>NO.</strong>"
+
+#. module: l10n_cu_hr_payroll
+#: model_terms:ir.ui.view,arch_db:l10n_cu_hr_payroll.report_payslip
+msgid "<strong>NOMBRES Y APELLIDOS</strong>"
+msgstr "<strong>NOMBRES Y APELLIDOS</strong>"
+
+#. module: l10n_cu_hr_payroll
+#: model_terms:ir.ui.view,arch_db:l10n_cu_hr_payroll.report_header_payroll
+msgid "<strong>Nombre:</strong>"
+msgstr "<strong>Nombre:</strong>"
+
+#. module: l10n_cu_hr_payroll
+#: model_terms:ir.ui.view,arch_db:l10n_cu_hr_payroll.report_payslip_projection
+msgid "<strong>Noviembre</strong>"
+msgstr "<strong>Noviembre</strong>"
+
+#. module: l10n_cu_hr_payroll
+#: model_terms:ir.ui.view,arch_db:l10n_cu_hr_payroll.report_payslip_projection
+msgid "<strong>Octubre</strong>"
+msgstr "<strong>Octubre</strong>"
+
+#. module: l10n_cu_hr_payroll
+#: model_terms:ir.ui.view,arch_db:l10n_cu_hr_payroll.report_payslip_projection
+msgid "<strong>Período: </strong> <br/>"
+msgstr "<strong>Período: </strong> <br/>"
+
+#. module: l10n_cu_hr_payroll
+#: model_terms:ir.ui.view,arch_db:l10n_cu_hr_payroll.report_payslip_projection
+msgid "<strong>Septiembre</strong>"
+msgstr "<strong>Septiembre</strong>"
+
+#. module: l10n_cu_hr_payroll
+#: model_terms:ir.ui.view,arch_db:l10n_cu_hr_payroll.report_payslip
+msgid "<strong>TOTAL DED.</strong>"
+msgstr "<strong>TOTAL DED.</strong>"
+
+#. module: l10n_cu_hr_payroll
+#: model_terms:ir.ui.view,arch_db:l10n_cu_hr_payroll.report_payslip_projection
+msgid "<strong>Total</strong>"
+msgstr "<strong>Total</strong>"
+
+#. module: l10n_cu_hr_payroll
+#: model:ir.model.fields,field_description:l10n_cu_hr_payroll.field_hr_payslip_projection_line__abril
+msgid "Abril"
+msgstr "Abril"
+
+#. module: l10n_cu_hr_payroll
+#: model:ir.model.fields,field_description:l10n_cu_hr_payroll.field_hr_payslip_projection__active
+msgid "Active"
+msgstr "Activo"
+
+#. module: l10n_cu_hr_payroll
+#: model:hr.salary.rule,name:l10n_cu_hr_payroll.hr_payroll_rules_09_dias
+msgid "Acumulado dias"
+msgstr "Acumulado días"
+
+#. module: l10n_cu_hr_payroll
+#: model:ir.model.fields,field_description:l10n_cu_hr_payroll.field_hr_payslip_projection_line__agosto
+msgid "Agosto"
+msgstr "Agosto"
+
+#. module: l10n_cu_hr_payroll
+#: model:ir.model.fields,field_description:l10n_cu_hr_payroll.field_hr_payroll_other_input__amount
+msgid "Amount"
+msgstr "Importe"
+
+#. module: l10n_cu_hr_payroll
+#: model:hr.salary.rule.category,name:l10n_cu_hr_payroll.hr_salary_rule_category_asign
+msgid "Asignaciones"
+msgstr "Asignaciones"
+
+#. module: l10n_cu_hr_payroll
+#: model:hr.salary.rule,name:l10n_cu_hr_payroll.hr_payroll_rules_asig_prov
+msgid "Asignación de provisiones"
+msgstr "Asignación de provisiones"
+
+#. module: l10n_cu_hr_payroll
+#: model:hr.salary.rule,name:l10n_cu_hr_payroll.hr_payroll_rules_asig_vacaciones
+msgid "Asignación de vacaciones"
+msgstr "Asignación de vacaciones"
+
+#. module: l10n_cu_hr_payroll
+#: model:hr.salary.rule,name:l10n_cu_hr_payroll.hr_payroll_rules_base_impositiva_ss
+msgid "Base Impositiva SS"
+msgstr "Base Impositiva SS"
+
+#. module: l10n_cu_hr_payroll
+#: model_terms:ir.ui.view,arch_db:l10n_cu_hr_payroll.hr_payslip_run_form_inherit
+msgid "Calcular Hoja"
+msgstr "Calcular Hoja"
+
+#. module: l10n_cu_hr_payroll
+#: model_terms:ir.ui.view,arch_db:l10n_cu_hr_payroll.hr_payslip_asig_vacation_view_form
+msgid "Cancelar"
+msgstr "Cancelar"
+
+#. module: l10n_cu_hr_payroll
+#: model:ir.model.fields,field_description:l10n_cu_hr_payroll.field_hr_payroll_other_input__rule_input_id
+#: model:ir.model.fields,field_description:l10n_cu_hr_payroll.field_hr_payslip_projection_line__code
+msgid "Code"
+msgstr "Código"
+
+#. module: l10n_cu_hr_payroll
+#: model:ir.model,name:l10n_cu_hr_payroll.model_res_config_settings
+msgid "Config Settings"
+msgstr "Ajustes de configuración"
+
+#. module: l10n_cu_hr_payroll
+#: model:hr.salary.rule,name:l10n_cu_hr_payroll.hr_payroll_rules_socios_contribucion_especial
+msgid "Contribución especial SS"
+msgstr "Contribución especial SS"
+
+#. module: l10n_cu_hr_payroll
+#: model:hr.salary.rule,name:l10n_cu_hr_payroll.hr_payroll_rules_socios_contribucion_especial_corto_plazo
+msgid "Contribución especial SS Corto Plazo"
+msgstr "Contribución especial SS Corto Plazo"
+
+#. module: l10n_cu_hr_payroll
+#: model:ir.model.fields,field_description:l10n_cu_hr_payroll.field_hr_payroll_other_input__create_uid
+#: model:ir.model.fields,field_description:l10n_cu_hr_payroll.field_hr_payslip_projection__create_uid
+#: model:ir.model.fields,field_description:l10n_cu_hr_payroll.field_hr_payslip_projection_line__create_uid
+#: model:ir.model.fields,field_description:l10n_cu_hr_payroll.field_hr_payslip_projection_wizard__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: l10n_cu_hr_payroll
+#: model:ir.model.fields,field_description:l10n_cu_hr_payroll.field_hr_payroll_other_input__create_date
+#: model:ir.model.fields,field_description:l10n_cu_hr_payroll.field_hr_payslip_projection__create_date
+#: model:ir.model.fields,field_description:l10n_cu_hr_payroll.field_hr_payslip_projection_line__create_date
+#: model:ir.model.fields,field_description:l10n_cu_hr_payroll.field_hr_payslip_projection_wizard__create_date
+msgid "Created on"
+msgstr "Creado el"
+
+#. module: l10n_cu_hr_payroll
+#: model:ir.model.fields,field_description:l10n_cu_hr_payroll.field_hr_payslip_projection_wizard__date_from
+msgid "Date From"
+msgstr "Fecha inicio"
+
+#. module: l10n_cu_hr_payroll
+#: model:ir.model.fields,field_description:l10n_cu_hr_payroll.field_hr_payslip_projection_wizard__date_to
+msgid "Date To"
+msgstr "Fecha fin"
+
+#. module: l10n_cu_hr_payroll
+#: model:ir.model.fields,field_description:l10n_cu_hr_payroll.field_hr_payslip_projection_line__diciembre
+msgid "Diciembre"
+msgstr "Diciembre"
+
+#. module: l10n_cu_hr_payroll
+#: model:ir.model.fields,field_description:l10n_cu_hr_payroll.field_hr_payroll_other_input__display_name
+#: model:ir.model.fields,field_description:l10n_cu_hr_payroll.field_hr_payslip_projection__display_name
+#: model:ir.model.fields,field_description:l10n_cu_hr_payroll.field_hr_payslip_projection_line__display_name
+#: model:ir.model.fields,field_description:l10n_cu_hr_payroll.field_hr_payslip_projection_wizard__display_name
+msgid "Display Name"
+msgstr "Nombre mostrado"
+
+#. module: l10n_cu_hr_payroll
+#: model:hr.salary.rule,name:l10n_cu_hr_payroll.hr_payroll_rules_work100
+msgid "Días trabajados"
+msgstr "Días trabajados"
+
+#. module: l10n_cu_hr_payroll
+#: model:ir.actions.act_window,name:l10n_cu_hr_payroll.hr_payslip_asig_vacation_view_action
+#: model:ir.ui.menu,name:l10n_cu_hr_payroll.menu_hr_payslip_asig_vacation
+msgid "Ejecutar Proyecciones"
+msgstr "Ejecutar Proyecciones"
+
+#. module: l10n_cu_hr_payroll
+#: model:ir.model,name:l10n_cu_hr_payroll.model_hr_employee
+#: model:ir.model.fields,field_description:l10n_cu_hr_payroll.field_hr_payroll_other_input__employee_id
+#: model:ir.model.fields,field_description:l10n_cu_hr_payroll.field_hr_payslip_projection__employee_id
+msgid "Employee"
+msgstr "Empleado"
+
+#. module: l10n_cu_hr_payroll
+#: model:ir.model.fields,field_description:l10n_cu_hr_payroll.field_hr_payroll_other_input__end_date
+#: model:ir.model.fields,field_description:l10n_cu_hr_payroll.field_hr_payslip_projection__end_date
+msgid "End Date"
+msgstr "Fecha fin"
+
+#. module: l10n_cu_hr_payroll
+#: model:ir.model.fields,help:l10n_cu_hr_payroll.field_hr_payslip_projection_wizard__date_to
+msgid "End date"
+msgstr "Fecha fin"
+
+#. module: l10n_cu_hr_payroll
+#: model:ir.model.fields,field_description:l10n_cu_hr_payroll.field_hr_payslip_projection_line__enero
+msgid "Enero"
+msgstr "Enero"
+
+#. module: l10n_cu_hr_payroll
+#: model:ir.model.fields,help:l10n_cu_hr_payroll.field_hr_employee__other_input_id
+msgid ""
+"Entradas específicas al trabajador. Ej. Para pagarle vacaciones acumuladas o"
+" prestaciones sociales. Descuentos o retenciones al trabajador."
+msgstr ""
+"Entradas específicas al trabajador. Ej. Para pagarle vacaciones acumuladas o"
+" prestaciones sociales. Descuentos o retenciones al trabajador."
+
+#. module: l10n_cu_hr_payroll
+#: model:hr.salary.rule.category,name:l10n_cu_hr_payroll.hr_salary_rule_category_escala_progresiva
+msgid "Escala progresiva"
+msgstr "Escala progresiva"
+
+#. module: l10n_cu_hr_payroll
+#: model:ir.model.constraint,message:l10n_cu_hr_payroll.constraint_hr_payslip_projection_employee_period_unique
+msgid "Este empleado ya tiene una proyección para este período."
+msgstr "Este empleado ya tiene una proyección para este período."
+
+#. module: l10n_cu_hr_payroll
+#: model:ir.model.fields,field_description:l10n_cu_hr_payroll.field_hr_payslip_projection_line__febrero
+msgid "Febrero"
+msgstr "Febrero"
+
+#. module: l10n_cu_hr_payroll
+#: model_terms:ir.ui.view,arch_db:l10n_cu_hr_payroll.hr_payslip_asig_vacation_view_form
+msgid "Generar"
+msgstr "Generar"
+
+#. module: l10n_cu_hr_payroll
+#: model:ir.model.fields,field_description:l10n_cu_hr_payroll.field_hr_payroll_other_input__id
+#: model:ir.model.fields,field_description:l10n_cu_hr_payroll.field_hr_payslip_projection__id
+#: model:ir.model.fields,field_description:l10n_cu_hr_payroll.field_hr_payslip_projection_line__id
+#: model:ir.model.fields,field_description:l10n_cu_hr_payroll.field_hr_payslip_projection_wizard__id
+msgid "ID"
+msgstr "ID"
+
+#. module: l10n_cu_hr_payroll
+#: model:hr.salary.rule,name:l10n_cu_hr_payroll.hr_payroll_rules_socios_impuesto_dividendos_anticipados
+msgid "Impuesto dividendos anticipados"
+msgstr "Impuesto dividendos anticipados"
+
+#. module: l10n_cu_hr_payroll
+#: model:hr.salary.rule,name:l10n_cu_hr_payroll.hr_payroll_rules_impuesto_ingresos_personales_trabajador
+msgid "Impuesto sobre ingresos"
+msgstr "Impuesto sobre ingresos"
+
+#. module: l10n_cu_hr_payroll
+#: model:hr.salary.rule,name:l10n_cu_hr_payroll.hr_payroll_rules_socios_ingresos_personales_anuales
+msgid "Impuesto sobre ingresos personales anuales. Socios"
+msgstr "Impuesto sobre ingresos personales anuales. Socios"
+
+#. module: l10n_cu_hr_payroll
+#: model:ir.model.fields,field_description:l10n_cu_hr_payroll.field_hr_payslip_projection_line__julio
+msgid "Julio"
+msgstr "Julio"
+
+#. module: l10n_cu_hr_payroll
+#: model:ir.model.fields,field_description:l10n_cu_hr_payroll.field_hr_payslip_projection_line__junio
+msgid "Junio"
+msgstr "Junio"
+
+#. module: l10n_cu_hr_payroll
+#: model:ir.model.fields,field_description:l10n_cu_hr_payroll.field_hr_payroll_other_input__write_uid
+#: model:ir.model.fields,field_description:l10n_cu_hr_payroll.field_hr_payslip_projection__write_uid
+#: model:ir.model.fields,field_description:l10n_cu_hr_payroll.field_hr_payslip_projection_line__write_uid
+#: model:ir.model.fields,field_description:l10n_cu_hr_payroll.field_hr_payslip_projection_wizard__write_uid
+msgid "Last Updated by"
+msgstr "Última actualización por"
+
+#. module: l10n_cu_hr_payroll
+#: model:ir.model.fields,field_description:l10n_cu_hr_payroll.field_hr_payroll_other_input__write_date
+#: model:ir.model.fields,field_description:l10n_cu_hr_payroll.field_hr_payslip_projection__write_date
+#: model:ir.model.fields,field_description:l10n_cu_hr_payroll.field_hr_payslip_projection_line__write_date
+#: model:ir.model.fields,field_description:l10n_cu_hr_payroll.field_hr_payslip_projection_wizard__write_date
+msgid "Last Updated on"
+msgstr "Última actualización el"
+
+#. module: l10n_cu_hr_payroll
+#: model:ir.model.fields,field_description:l10n_cu_hr_payroll.field_hr_payslip_projection_line__marzo
+msgid "Marzo"
+msgstr "Marzo"
+
+#. module: l10n_cu_hr_payroll
+#: model:ir.model.fields,field_description:l10n_cu_hr_payroll.field_hr_payslip_projection_line__mayo
+msgid "Mayo"
+msgstr "Mayo"
+
+#. module: l10n_cu_hr_payroll
+#: model:ir.model.fields,field_description:l10n_cu_hr_payroll.field_hr_payslip_projection__name
+msgid "Name"
+msgstr "Nombre"
+
+#. module: l10n_cu_hr_payroll
+#: model:ir.model.fields,field_description:l10n_cu_hr_payroll.field_hr_payslip__total_on_payable
+msgid "Not Payable"
+msgstr "No pagable"
+
+#. module: l10n_cu_hr_payroll
+#: model:ir.model.fields,field_description:l10n_cu_hr_payroll.field_hr_payslip_projection_line__noviembre
+msgid "Noviembre"
+msgstr "Noviembre"
+
+#. module: l10n_cu_hr_payroll
+#: model:ir.actions.report,name:l10n_cu_hr_payroll.action_report_payslip_run
+msgid "Nóminas"
+msgstr "Nóminas"
+
+#. module: l10n_cu_hr_payroll
+#: model_terms:ir.ui.view,arch_db:l10n_cu_hr_payroll.hr_payslip_run_form_inherit
+msgid "Nóminas del procesamiento"
+msgstr "Nóminas del procesamiento"
+
+#. module: l10n_cu_hr_payroll
+#: model:ir.model.fields,field_description:l10n_cu_hr_payroll.field_hr_payslip_projection_line__octubre
+msgid "Octubre"
+msgstr "Octubre"
+
+#. module: l10n_cu_hr_payroll
+#: model:ir.model.fields,field_description:l10n_cu_hr_payroll.field_hr_employee__other_input_id
+msgid "Other Inputs"
+msgstr "Otras entradas"
+
+#. module: l10n_cu_hr_payroll
+#: model_terms:ir.ui.view,arch_db:l10n_cu_hr_payroll.view_employee_form_inherit
+msgid "Otras entradas"
+msgstr "Otras entradas"
+
+#. module: l10n_cu_hr_payroll
+#: model:hr.salary.rule.category,name:l10n_cu_hr_payroll.hr_salary_rule_category_otros
+msgid "Otros"
+msgstr "Otros"
+
+#. module: l10n_cu_hr_payroll
+#: model:ir.model,name:l10n_cu_hr_payroll.model_hr_payslip
+msgid "Pay Slip"
+msgstr "Nómina"
+
+#. module: l10n_cu_hr_payroll
+#: model_terms:ir.ui.view,arch_db:l10n_cu_hr_payroll.view_hr_payslip_filter_inherit
+msgid "PaySlip Batch"
+msgstr "Lote de nóminas"
+
+#. module: l10n_cu_hr_payroll
+#: model:ir.model,name:l10n_cu_hr_payroll.model_hr_payroll_other_input
+msgid "Payroll Other Input"
+msgstr "Otras entradas de nómina"
+
+#. module: l10n_cu_hr_payroll
+#: model:ir.model,name:l10n_cu_hr_payroll.model_hr_payslip_run
+msgid "Payslip Batches"
+msgstr "Procesamientos de nóminas"
+
+#. module: l10n_cu_hr_payroll
+#: model:ir.model,name:l10n_cu_hr_payroll.model_hr_payslip_line
+#: model_terms:ir.ui.view,arch_db:l10n_cu_hr_payroll.hr_payslip_line_view_pivot
+msgid "Payslip Line"
+msgstr "Línea de nómina"
+
+#. module: l10n_cu_hr_payroll
+#: model_terms:ir.ui.view,arch_db:l10n_cu_hr_payroll.hr_payslip_line_view_list
+msgid "Payslip Lines"
+msgstr "Líneas de nómina"
+
+#. module: l10n_cu_hr_payroll
+#: model:ir.model,name:l10n_cu_hr_payroll.model_hr_payslip_projection
+#: model:ir.model.fields,field_description:l10n_cu_hr_payroll.field_hr_payslip_projection_line__payslip_projection_id
+#: model_terms:ir.ui.view,arch_db:l10n_cu_hr_payroll.hr_payslip_projection_view_form
+msgid "Payslip Projection"
+msgstr "Proyección"
+
+#. module: l10n_cu_hr_payroll
+#: model:ir.model,name:l10n_cu_hr_payroll.model_hr_payslip_projection_line
+#: model:ir.model.fields,field_description:l10n_cu_hr_payroll.field_hr_payslip_projection__payslip_projection_line_ids
+msgid "Payslip Projection Line"
+msgstr "Línea de proyección"
+
+#. module: l10n_cu_hr_payroll
+#: model:ir.model,name:l10n_cu_hr_payroll.model_hr_payslip_projection_wizard
+msgid "Payslip Projection Wizard"
+msgstr "Asistente de proyección de nómina"
+
+#. module: l10n_cu_hr_payroll
+#: model_terms:ir.ui.view,arch_db:l10n_cu_hr_payroll.hr_payslip_run_form_inherit
+msgid "Payslips"
+msgstr "Nóminas"
+
+#. module: l10n_cu_hr_payroll
+#: model:ir.actions.act_window,name:l10n_cu_hr_payroll.hr_payslip_line_action
+#: model:ir.ui.menu,name:l10n_cu_hr_payroll.menu_hr_payslip_line
+msgid "Payslips Line"
+msgstr "Líneas de nóminas"
+
+#. module: l10n_cu_hr_payroll
+#: model:ir.actions.act_window,name:l10n_cu_hr_payroll.hr_payslip_projection_action
+#: model:ir.ui.menu,name:l10n_cu_hr_payroll.menu_hr_payslip_projection
+msgid "Payslips Projection"
+msgstr "Proyecciones"
+
+#. module: l10n_cu_hr_payroll
+#: model:hr.salary.rule,name:l10n_cu_hr_payroll.hr_payroll_rules_ss_prestaciones_sociales_corto_plazo
+msgid "Prestaciones sociales"
+msgstr "Prestaciones sociales"
+
+#. module: l10n_cu_hr_payroll
+#: model:hr.salary.rule.category,name:l10n_cu_hr_payroll.hr_salary_rule_category_provisiones_prestaciones_company
+msgid "Provisiones compañía"
+msgstr "Provisiones compañía"
+
+#. module: l10n_cu_hr_payroll
+#: model:hr.salary.rule,name:l10n_cu_hr_payroll.hr_payroll_rules_09_vacaciones
+msgid "Provisiones vacaciones"
+msgstr "Provisiones vacaciones"
+
+#. module: l10n_cu_hr_payroll
+#: model:ir.actions.report,name:l10n_cu_hr_payroll.action_report_projection
+msgid "Proyecciones"
+msgstr "Proyecciones"
+
+#. module: l10n_cu_hr_payroll
+#: model_terms:ir.ui.view,arch_db:l10n_cu_hr_payroll.hr_payslip_asig_vacation_view_form
+msgid "Proyección de Nómina"
+msgstr "Proyección de Nómina"
+
+#. module: l10n_cu_hr_payroll
+#: model:ir.model.fields,field_description:l10n_cu_hr_payroll.field_hr_payslip_run__qty_payslip
+msgid "Quantity Prepayslip"
+msgstr "Cantidad de nóminas"
+
+#. module: l10n_cu_hr_payroll
+#: model_terms:ir.ui.view,arch_db:l10n_cu_hr_payroll.report_payslip_projection
+msgid "REGISTRO DE SALARIOS Y TIEMPO DE SERVICIOS"
+msgstr "REGISTRO DE SALARIOS Y TIEMPO DE SERVICIOS"
+
+#. module: l10n_cu_hr_payroll
+#. odoo-python
+#: code:addons/l10n_cu_hr_payroll/models/hr_payslip.py:0
+msgid "Rango de fechas inválido en get_inputs: %s - %s"
+msgstr "Rango de fechas inválido en get_inputs: %s - %s"
+
+#. module: l10n_cu_hr_payroll
+#: model:ir.model,name:l10n_cu_hr_payroll.model_report_l10n_cu_hr_payroll_report_payslip
+msgid "Report Payslip"
+msgstr "Reporte de nómina"
+
+#. module: l10n_cu_hr_payroll
+#: model:ir.ui.menu,name:l10n_cu_hr_payroll.menu_hr_payslip_line_report
+msgid "Reportes"
+msgstr "Reportes"
+
+#. module: l10n_cu_hr_payroll
+#: model:hr.salary.rule,name:l10n_cu_hr_payroll.hr_payroll_rules_salario_minimo
+msgid "Salario Mínimo"
+msgstr "Salario Mínimo"
+
+#. module: l10n_cu_hr_payroll
+#: model:hr.salary.rule,name:l10n_cu_hr_payroll.hr_rule_socio_taxable
+msgid "Salario bruto socios"
+msgstr "Salario bruto socios"
+
+#. module: l10n_cu_hr_payroll
+#: model_terms:ir.ui.view,arch_db:l10n_cu_hr_payroll.res_config_settings_view_form_inherit
+msgid "Salario minimo"
+msgstr "Salario mínimo"
+
+#. module: l10n_cu_hr_payroll
+#: model_terms:ir.ui.view,arch_db:l10n_cu_hr_payroll.res_config_settings_view_form_inherit
+msgid "Salario minimo aprobado en el pais"
+msgstr "Salario mínimo aprobado en el país"
+
+#. module: l10n_cu_hr_payroll
+#: model:ir.model.fields,field_description:l10n_cu_hr_payroll.field_res_config_settings__min_salary
+msgid "Salario mínimo"
+msgstr "Salario mínimo"
+
+#. module: l10n_cu_hr_payroll
+#: model:hr.salary.rule,name:l10n_cu_hr_payroll.hr_payroll_rules_ss_presupuesto_estado
+msgid "Seguridad Social Empresa"
+msgstr "Seguridad Social Empresa"
+
+#. module: l10n_cu_hr_payroll
+#: model:hr.salary.rule,name:l10n_cu_hr_payroll.hr_payroll_rules_ss_especial
+msgid "Seguridad Social Especial"
+msgstr "Seguridad Social Especial"
+
+#. module: l10n_cu_hr_payroll
+#: model:ir.model.fields,field_description:l10n_cu_hr_payroll.field_hr_payslip_projection_line__septiembre
+msgid "Septiembre"
+msgstr "Septiembre"
+
+#. module: l10n_cu_hr_payroll
+#: model:ir.model.fields,field_description:l10n_cu_hr_payroll.field_hr_payslip_projection_line__sequence
+msgid "Sequence"
+msgstr "Secuencia"
+
+#. module: l10n_cu_hr_payroll
+#: model_terms:ir.actions.act_window,help:l10n_cu_hr_payroll.hr_payslip_projection_action
+msgid ""
+"Si desea hacer una proyeccion general de un periodo, seleccione traer todas las reglas\n"
+"            salariales.\n"
+"            Si desea realizar una proyeccion especifica puede borrar las reglas que no quiere que aparezcan. Luego\n"
+"            tendrá\n"
+"            que ejecutar la acción de Ejecutar Proyecciones."
+msgstr ""
+"Si desea hacer una proyección general de un período, seleccione traer todas las reglas\n"
+"            salariales.\n"
+"            Si desea realizar una proyección específica puede borrar las reglas que no quiere que aparezcan. Luego\n"
+"            tendrá\n"
+"            que ejecutar la acción de Ejecutar Proyecciones."
+
+#. module: l10n_cu_hr_payroll
+#: model:ir.model.fields,field_description:l10n_cu_hr_payroll.field_hr_payroll_other_input__start_date
+#: model:ir.model.fields,field_description:l10n_cu_hr_payroll.field_hr_payslip_projection__start_date
+msgid "Start Date"
+msgstr "Fecha inicio"
+
+#. module: l10n_cu_hr_payroll
+#: model:ir.model.fields,help:l10n_cu_hr_payroll.field_hr_payslip_projection_wizard__date_from
+msgid "Start date"
+msgstr "Fecha inicio"
+
+#. module: l10n_cu_hr_payroll
+#: model:ir.model.fields,field_description:l10n_cu_hr_payroll.field_hr_payslip__total
+#: model:ir.model.fields,field_description:l10n_cu_hr_payroll.field_hr_payslip_projection_line__total
+#: model:ir.model.fields,field_description:l10n_cu_hr_payroll.field_hr_payslip_run__total
+#: model_terms:ir.ui.view,arch_db:l10n_cu_hr_payroll.view_employee_form_inherit
+msgid "Total"
+msgstr "Total"
+
+#. module: l10n_cu_hr_payroll
+#: model:hr.salary.rule,name:l10n_cu_hr_payroll.hr_payroll_rules_socios_pago_cuenta_dividendos
+msgid "Total de retiros a cuenta de dividendos"
+msgstr "Total de retiros a cuenta de dividendos"
+
+#. module: l10n_cu_hr_payroll
+#: model:hr.salary.rule,name:l10n_cu_hr_payroll.hr_payroll_rules_socios_trubutos_anticipados
+msgid "Total de tributos pagados anticipados a ingresos personales"
+msgstr "Total de tributos pagados anticipados a ingresos personales"
+
+#. module: l10n_cu_hr_payroll
+#: model:hr.salary.rule,name:l10n_cu_hr_payroll.hr_payroll_rules_total_deduction
+#: model:hr.salary.rule.category,name:l10n_cu_hr_payroll.hr_salary_rule_category_total_ded
+msgid "Total deducciones"
+msgstr "Total deducciones"
+
+#. module: l10n_cu_hr_payroll
+#: model_terms:ir.ui.view,arch_db:l10n_cu_hr_payroll.hr_payslip_projection_view_form
+msgid "Traer reglas"
+msgstr "Traer reglas"
+
+#. module: l10n_cu_hr_payroll
+#: model:hr.salary.rule,name:l10n_cu_hr_payroll.hr_payroll_rules_socios_ipa_tram1
+msgid "Tramo 1. Socios"
+msgstr "Tramo 1. Socios"
+
+#. module: l10n_cu_hr_payroll
+#: model:hr.salary.rule,name:l10n_cu_hr_payroll.hr_payroll_rules_socios_ipa_tram2
+msgid "Tramo 2. Socios"
+msgstr "Tramo 2. Socios"
+
+#. module: l10n_cu_hr_payroll
+#: model:hr.salary.rule,name:l10n_cu_hr_payroll.hr_payroll_rules_socios_ipa_tram3
+msgid "Tramo 3. Socios"
+msgstr "Tramo 3. Socios"
+
+#. module: l10n_cu_hr_payroll
+#: model:hr.salary.rule,name:l10n_cu_hr_payroll.hr_payroll_rules_socios_ipa_tram4
+msgid "Tramo 4. Socios"
+msgstr "Tramo 4. Socios"
+
+#. module: l10n_cu_hr_payroll
+#: model:hr.salary.rule,name:l10n_cu_hr_payroll.hr_payroll_rules_socios_ipa_tram5
+msgid "Tramo 5. Socios"
+msgstr "Tramo 5. Socios"
+
+#. module: l10n_cu_hr_payroll
+#: model:hr.salary.rule,name:l10n_cu_hr_payroll.hr_payroll_rules_utilidad
+msgid "Utilidad"
+msgstr "Utilidad"
+
+#. module: l10n_cu_hr_payroll
+#: model:hr.salary.rule,name:l10n_cu_hr_payroll.hr_payroll_rules_ft
+msgid "Utilización fuerza de trabajo"
+msgstr "Utilización fuerza de trabajo"

@@ -6,11 +6,11 @@ def migrate(cr, version):
 
     env.cr.execute("""
         UPDATE res_partner
-        SET res_municipality_id = NULL
-        WHERE res_municipality_id IS NOT NULL
+        SET municipality_id = NULL
+        WHERE municipality_id IS NOT NULL
           AND (
               state_id IS NULL
-              OR res_municipality_id NOT IN (
+              OR municipality_id NOT IN (
                   SELECT id
                   FROM res_municipality
                   WHERE state_id = res_partner.state_id

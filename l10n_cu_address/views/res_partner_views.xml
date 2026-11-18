@@ -7,13 +7,13 @@
         <field name="arch" type="xml">
 
             <xpath expr="//field[@name='street2']" position="after">
-                <field name="res_municipality_id"
+                <field name="municipality_id"
                        options="{'no_create': True, 'no_edit': True, 'no_quick_create': True}"
                        placeholder="Municipio..." context="{'state_id': state_id, 'default_state_id': state_id}"/>
             </xpath>
             <xpath expr="//page[@name='contact_addresses']//div[hasclass('o_address_format')]//field[@name='street2']"
                    position="after">
-                <field name="res_municipality_id"
+                <field name="municipality_id"
                        options="{'no_create': True, 'no_edit': True, 'no_quick_create': True}"
                        placeholder="Municipio..." context="{'state_id': state_id, 'default_state_id': state_id}"/>
             </xpath>
