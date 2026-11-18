@@ -15,10 +15,10 @@
                 </page>
             </xpath>
             <xpath expr="//notebook" position="attributes">
-                <attribute name="attrs">{'invisible': [('type','not in',['accounts','account_type', 'account_report', 'account_reports'])]}</attribute>
+                <attribute name="invisible">type not in ['accounts', 'account_type', 'account_report', 'account_reports']</attribute>
             </xpath>
             <xpath expr="//notebook/page/group" position="inside">
-                <field name="account_report_ids" attrs="{'invisible': [('type', '!=', 'account_reports')]}"/>
+                <field name="account_report_ids" invisible="type != 'account_reports'"/>
             </xpath>
         </field>
     </record>
