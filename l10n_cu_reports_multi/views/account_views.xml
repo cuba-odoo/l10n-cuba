@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <record id="view_account_financial_report_form_multi" model="ir.ui.view">
+        <field name="name">account.financial.report.form.multi</field>
+        <field name="model">account.financial.report</field>
+        <field
+            name="inherit_id"
+            ref="accounting_pdf_reports.view_account_financial_report_form"
+        />
+        <field name="arch" type="xml">
+            <xpath expr="//notebook/page/group" position="inside">
+                <field
+                    name="account_domain"
+                    attrs="{'invisible': [('type', '!=', 'accounts')]}"
+                    placeholder="[('code', '=like', '90%')]"
+                />
+            </xpath>
+        </field>
+    </record>
+</odoo>
