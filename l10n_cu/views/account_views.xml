@@ -15,7 +15,7 @@
         <field name="model">account.account</field>
         <field name="inherit_id" ref="account.view_account_search"/>
         <field name="arch" type="xml">
-            <xpath expr="//searchpanel[@class='account_root']" position="replace">
+            <xpath expr="//searchpanel[hasclass('account_root')]" position="replace">
                 <searchpanel>
                     <field name="group_id" icon="fa-filter"/>
                 </searchpanel>
@@ -34,7 +34,7 @@
             <field name="arch" type="xml">
                 <field name="plan_id" position="after">
                     <field name="element_id" invisible="True" />
-                    <field name="element_detailed" attrs="{'invisible': [('element_id', '=', 'True')]}" widget="boolean_toggle"/>
+                    <field name="element_detailed" attrs="{'invisible': [('element_id', '!=', False)]}" widget="boolean_toggle"/>
                 </field>
             </field>
         </record>

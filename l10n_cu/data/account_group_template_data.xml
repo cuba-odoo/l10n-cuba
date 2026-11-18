@@ -4,7 +4,6 @@
    <record id="account_group_template_activos_circulantes" model="account.group.template">
         <field name="chart_template_id" ref="l10n_cu_chart_template_common"/>
         <field name="name">ACTIVOS CIRCULANTES</field>
-        <field name="name">ACTIVOS CIRCULANTES</field>
         <field name="code_prefix_start">101</field>
         <field name="code_prefix_end">211</field>
         <field eval="0" name="reconcile"/>
@@ -14,7 +13,7 @@
      <record id="account_group_template_101_108" model="account.group.template">
 		<field name="chart_template_id" ref="l10n_cu_chart_template_common"/>
 		<field name="parent_id" ref="account_group_template_activos_circulantes"/>		
-          <field name="name">Efectivo en Caja</field>
+		<field name="name">Efectivo en Caja</field>
 		<field name="code_prefix_start">101</field>
 		<field name="code_prefix_end">108</field>
 		<field eval="0" name="reconcile"/>
@@ -24,7 +23,7 @@
 	</record>
 
 
-		<record id="account_group_template_109_119" model="account.group.template">
+	<record id="account_group_template_109_119" model="account.group.template">
 		<field name="chart_template_id" ref="l10n_cu_chart_template_common"/>
 		<field name="parent_id" ref="account_group_template_activos_circulantes"/>
 		<field name="name">Efectivo en Banco y en Otras Instituciones</field>
@@ -586,7 +585,7 @@
 	    <field eval="0" name="expense_element_detailed"/>
 	</record>
 
-	<record id="account_group_template_255_255" model="account.group.template">
+	<record id="account_group_template_255_263" model="account.group.template">
 		<field name="chart_template_id" ref="l10n_cu_chart_template_common"/>
 		<field name="parent_id" ref="account_group_template_activos_fijos"/>
 		<field name="name">Activos Fijos Intangibles</field>
@@ -610,7 +609,7 @@
 	    <field eval="0" name="expense_element_detailed"/>
 	</record>
 
-	<record id="account_group_template_265_268" model="account.group.template">
+	<record id="account_group_template_265_278" model="account.group.template">
 		<field name="chart_template_id" ref="l10n_cu_chart_template_common"/>
 		<field name="parent_id" ref="account_group_template_activos_fijos"/>
 		<field name="name">Inversiones en Proceso</field>
@@ -634,7 +633,7 @@
 	    <field eval="0" name="expense_element_detailed"/>
 	</record>
 
-	<record id="account_group_template_280-289" model="account.group.template">
+	<record id="account_group_template_280_289" model="account.group.template">
 		<field name="chart_template_id" ref="l10n_cu_chart_template_common"/>
 		<field name="parent_id" ref="account_group_template_activos_fijos"/>
 		<field name="name">Equipos por Instalar y Materiales para el Proceso Inversionista</field>
@@ -692,7 +691,7 @@
 	    <field eval="0" name="expense_element_detailed"/>
 	</record>
 
-	<record id="account_group_template_300-305" model="account.group.template">
+	<record id="account_group_template_300_305" model="account.group.template">
 		<field name="chart_template_id" ref="l10n_cu_chart_template_common"/>
 		<field name="parent_id" ref="account_group_template_activos_diferidos"/>		
 		<field name="name">Saldo al Inicio del Año</field>
@@ -2263,7 +2262,7 @@
 		<field eval="0" name="reconcile"/>
 	    <field eval="0" name="expense_element_detailed"/>
 	</record>
-		<record id="aaccount_group_template_999_999" model="account.group.template">
+		<record id="account_group_template_999_999" model="account.group.template">
 		<field name="chart_template_id" ref="l10n_cu_chart_template_common"/>
 		<field name="parent_id" ref="account_group_template_cuenta_cierre"/>
 		<field name="name">Resultado</field>

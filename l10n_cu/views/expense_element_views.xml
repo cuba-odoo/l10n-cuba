@@ -7,7 +7,6 @@
             <field name="arch" type="xml">
                 <form string="Account">              
                         
-                        <field name="company_id" invisible="1"/>
                         <div>
                             <h1 style="font-size: 1.9rem;">
                                 <div class="row">

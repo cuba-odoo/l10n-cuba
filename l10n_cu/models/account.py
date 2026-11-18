@@ -1,27 +1,37 @@
 # -*- coding: utf-8 -*-
-from odoo import fields, models, api
+from collections import defaultdict
+from typing import Optional, Tuple
+
+from odoo import fields, models, api, _
+from odoo.exceptions import ValidationError
 
 
 class AccountAccount(models.Model):
     _inherit = 'account.account'
     
-    account_type = fields.Selection(readonly=False, compute='_compute_account_type')
+    account_type = fields.Selection(readonly=False, compute='_compute_account_type', precompute=False)
     expense_element_detailed = fields.Boolean(string='Expense element detailed?', 
         compute='_compute_expense_element_detailed',readonly=False )
     
-    @api.depends('code','group_id','group_id.account_type','group_id.expense_element_detailed')
+    @api.depends('group_id', 'group_id.expense_element_detailed')
     def _compute_expense_element_detailed(self):
         for record in self:
             record.expense_element_detailed=record.group_id.expense_element_detailed   
     
-    @api.depends('code','group_id','group_id.account_type','group_id.expense_element_detailed')
+    @api.depends('code', 'group_id', 'group_id.account_type')
     def _compute_account_type(self):
+        super()._compute_account_type()
         for record in self:
-            super(AccountAccount, record)._compute_account_type()
             if record.group_id.account_type:
-                record.account_type = record.group_id.account_type  
-                record.reconcile= record.group_id.reconcile 
-                record.expense_element_detailed=record.group_id.expense_element_detailed
+                record.account_type = record.group_id.account_type
+
+    @api.depends('account_type', 'group_id', 'group_id.reconcile', 'group_id.account_type')
+    def _compute_reconcile(self):
+        grouped   = self.filtered(lambda a: a.group_id.account_type)
+        ungrouped = self - grouped
+        super(AccountAccount, ungrouped)._compute_reconcile()
+        for account in grouped:
+            account.reconcile = account.group_id.reconcile
 
 
 class AccountAccountTag(models.Model):
@@ -43,6 +53,7 @@ class AccountChartTemplate(models.Model):
                 vallist["reconcile"] = record.reconcile 
                 vallist["expense_element_detailed"] = record.expense_element_detailed 
                 vallist["group_template_id"] = record.get_external_id().get(record.id)
+                vallist["chart_template_id"] = record.chart_template_id.id
                 if record.parent_id:
                     vallist["group_template_parent_id"] = record.parent_id.get_external_id().get(record.parent_id.id)
 
@@ -128,8 +139,12 @@ class AccountGroupTemplate(models.Model):
 class AccountGroup(models.Model):
     _inherit = "account.group"
 
+    chart_template_id = fields.Many2one('account.chart.template', string='Chart Template', index=True, ondelete='set null')
     parent_id = fields.Many2one('account.group', compute='_compute_parent', index=True, ondelete='set null', readonly=False, store=True)
-    reconcile = fields.Boolean(string='Allow Reconciliation', help="Check this box if accounts belonging this account group allows invoices & payments matching of journal items.")
+    reconcile = fields.Boolean(string='Allow Reconciliation',
+        compute='_compute_reconcile', store=True, readonly=False,
+        help="Check this box if accounts belonging this account group allows invoices & payments matching of journal items."
+    )
     expense_element_detailed = fields.Boolean(string='Expense element detailed?')
     active = fields.Boolean(default=True)
     account_type = fields.Selection(
@@ -159,18 +174,142 @@ class AccountGroup(models.Model):
     group_template_id = fields.Char()
     group_template_parent_id = fields.Char()
 
-    @api.constrains('code_prefix_start', 'code_prefix_end')   
-    def _constraint_prefix_overlap(self):
-        pass
+    def init(self):
+        self.env.cr.execute("""
+            CREATE INDEX IF NOT EXISTS account_group_company_template_idx
+            ON account_group (company_id, chart_template_id);
+        """)
 
+    def _parent_store_update(self):
+        """Override intencional del mixin ``_parent_store``.
+
+        PyDev marca este método con ``method-hidden`` porque sobreescribe un
+        método "privado" del mixin. Es intencional: el mixin asume un único
+        ``parent_id`` en el recordset y la carga del plan contable crea grupos
+        con padres mixtos (padres e hijos en el mismo ``create``). Agrupamos
+        por padre antes de delegar.
+        """
+        if not self:
+            return
+        by_parent = defaultdict(lambda: self.env['account.group'])
+        for record in self:
+            by_parent[record.parent_id.id] |= record
+        for records in by_parent.values():
+            if records:
+                super(AccountGroup, records)._parent_store_update()
+
+    @api.constrains('code_prefix_start', 'code_prefix_end',
+                'chart_template_id', 'company_id')
+    def _constraint_prefix_overlap(self):
+        self.flush_model()
+        if not self:
+            return
+
+        # Agrupar por (company, chart_template): 1 búsqueda por scope
+        by_scope = defaultdict(lambda: self.env['account.group'])
+        for group in self:
+            if not group.code_prefix_start or not group.code_prefix_end:
+                continue
+            by_scope[(group.company_id.id, group.chart_template_id.id)] |= group
+
+        for (company_id, template_id), groups in by_scope.items():
+            scope = self.search([
+                ('company_id', '=', company_id),
+                ('chart_template_id', '=', template_id),
+                ('code_prefix_start', '!=', False),
+                ('code_prefix_end', '!=', False),
+            ])
+            for group in groups:
+                for other in scope:
+                    if other.id == group.id:
+                        continue
+                    if self._ranges_overlap_partially(group, other):
+                        raise ValidationError(_(
+                            "Los grupos de cuentas '%(a)s' y '%(b)s' se solapan "
+                            "parcialmente. Deben ser disjuntos o estar uno "
+                            "contenido en el otro.",
+                            a=group.display_name,
+                            b=other.display_name,
+                        ))
+
+    @api.constrains('code_prefix_start', 'code_prefix_end')
+    def _constraint_prefix_numeric(self):
+        """Exige que los prefijos sean numéricos.
+
+        `_adapt_accounts_for_account_groups` usa `cast(code_prefix_end as int)`
+        en SQL. Un prefijo no numérico ('130.', 'A01') hace fallar el cast
+        en PostgreSQL y rompe el recálculo de group_id en todas las cuentas.
+        Esta validación cierra esa clase de fallos en el origen.
+        """
+        for group in self:
+            for field_name in ('code_prefix_start', 'code_prefix_end'):
+                value = getattr(group, field_name)
+                if value and not value.isdigit():
+                    raise ValidationError(_(
+                        "El prefijo '%(value)s' del campo %(field)s debe ser numérico. "
+                        "El grupo '%(name)s' no puede tener prefijos no numéricos porque "
+                        "el cálculo de asignación cuenta→grupo usa comparación numérica.",
+                        value=value,
+                        field=field_name,
+                        name=group.display_name,
+                    ))
+
+    @staticmethod
+    def _to_interval(start, end) -> Optional[Tuple[int, int]]:
+        DEPTH = 10
+        if not isinstance(start, str) or not isinstance(end, str):
+            return None
+        if not start or not end:
+            return None
+        if not (start.isdigit() and end.isdigit()):
+            return None
+        return (
+            int(start.ljust(DEPTH, '0')),
+            int(end.ljust(DEPTH, '9')),
+        )
+
+    @classmethod
+    def _ranges_overlap_partially(cls, a, b) -> bool:
+        a_iv = cls._to_interval(a.code_prefix_start, a.code_prefix_end)
+        b_iv = cls._to_interval(b.code_prefix_start, b.code_prefix_end)
+        if a_iv is None or b_iv is None:
+            return False
+
+        a_start, a_end = a_iv
+        b_start, b_end = b_iv
+
+        if (a_start <= b_start and a_end >= b_end) or \
+           (b_start <= a_start and b_end >= a_end):
+            return False
+        if a_end < b_start or b_end < a_start:
+            return False
+        return True
 
     @api.depends('group_template_parent_id')
     def _compute_parent(self):
-        record_parents=self.search([])
+        if not self.filtered('group_template_parent_id'):
+            return
+        company_ids = self.company_id.ids
+        if not company_ids:
+            return
+        relevant_templates = set(self.mapped('group_template_parent_id')) - {False}
+        if not relevant_templates:
+            return
+        record_parents = self.search([
+            ('company_id', 'in', company_ids),
+            ('group_template_id', 'in', list(relevant_templates)),
+        ])
+        # Índice O(n): clave (group_template_id, company_id) → registro padre
+        parent_map = {
+            (it.group_template_id, it.company_id.id): it
+            for it in record_parents
+        }
         for record in self.filtered('group_template_parent_id'):
-            parent=record_parents.filtered(lambda it: it.group_template_id==record.group_template_parent_id and it.company_id == self.env.company)
-            if parent:
-                record.parent_id= parent.id
+            parent = parent_map.get(
+                (record.group_template_parent_id, record.company_id.id)
+            )
+            if parent and record.parent_id != parent:
+                record.parent_id = parent.id
 
     @api.depends('account_type')
     def _compute_reconcile(self):
@@ -178,13 +317,50 @@ class AccountGroup(models.Model):
             group.reconcile = group.account_type in ('asset_receivable', 'liability_payable')
 
     def unlink(self):
-        for record in self:
-            record.parent_id = False
-        result = super(AccountGroup, self).unlink()        
-        return result
-
+        if self:
+            self.write({'parent_id': False})
+        return super(AccountGroup, self).unlink()
+ 
     def _adapt_parent_account_group(self):
-       pass
+        if not self:
+            return
+        super()._adapt_parent_account_group()
+        self.flush_model()
+        company_ids = self.company_id.ids
+        if not company_ids:
+            return
+
+        all_groups = self.search([('company_id', 'in', company_ids)])
+        parent_map = {
+            (it.group_template_id, it.company_id.id): it
+            for it in all_groups if it.group_template_id
+        }
+        self_templates = set(self.mapped('group_template_id')) - {False}
+        to_reassign = all_groups.filtered(
+            lambda g: g in self
+            or (g.group_template_parent_id and g.group_template_parent_id in self_templates)
+        )
+
+        # 1) Reasignar padre por lote (1 write por padre, no por registro)
+        by_parent_id = defaultdict(list)
+        for record in to_reassign.filtered('group_template_parent_id'):
+            parent = parent_map.get(
+                (record.group_template_parent_id, record.company_id.id)
+            )
+            if parent and record.parent_id != parent:
+                by_parent_id[parent.id].append(record.id)
+
+        for parent_id, record_ids in by_parent_id.items():
+            self.browse(record_ids).write({'parent_id': parent_id})
+
+        # 2) Refrescar parent_path agrupando por padre
+        self.invalidate_model(['parent_id'])
+        by_parent = defaultdict(lambda: self.env['account.group'])
+        for record in to_reassign:
+            by_parent[record.parent_id.id] |= record
+        for records in by_parent.values():
+            if records:
+                records._parent_store_update()
 
     def _adapt_accounts_for_account_groups(self, account_ids=None):
         """Ensure consistency between accounts and account groups.
@@ -224,4 +400,5 @@ class AccountGroup(models.Model):
             FROM candidates_account_groups rel
             WHERE account_account.id = rel.account_id
         ''', where_params)
-        self.env['account.account'].invalidate_model(['group_id'])    
+        self.env['account.account'].invalidate_model(['group_id'])
+        self.env['account.account'].modified(['group_id'])   
