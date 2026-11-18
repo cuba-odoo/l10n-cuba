@@ -1,6 +1,6 @@
-================================
+====================================
 Cuba - Proformas Estados Financieros
-================================
+====================================
 
 Configuración
 =============
@@ -25,7 +25,7 @@ Bug Tracker
 ===========
 
 Dependencias de terceros
-=============
+========================
 Odoo Mates: https://github.com/odoomates/odooapps
 OCA: https://github.com/OCA/reporting-engine
 

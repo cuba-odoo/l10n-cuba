@@ -105,8 +105,8 @@
                               t-esc="res_company.partner_id.state_id and res_company.state_id.code or '.'"/>
                     </td>
                     <td style="border: 1px solid black !important;">
-                        <span t-att-style="not res_company.partner_id.res_municipality_id and 'color: white;'"
-                              t-esc="res_company.partner_id.res_municipality_id and res_company.partner_id.res_municipality_id.code or '.'"/>
+                        <span t-att-style="not res_company.partner_id.municipality_id and 'color: white;'"
+                              t-esc="res_company.partner_id.municipality_id and res_company.partner_id.municipality_id.code or '.'"/>
                     </td>
                 </tr>
             </thead>

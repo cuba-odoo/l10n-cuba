@@ -82,7 +82,7 @@
                                         type="object" class="btn btn-secondary btn-sm"/>
                             </div>
 
-                            <div class="alert alert-info" invisible="total_accounts > 0">
+                            <div class="alert alert-info" role="status" invisible="total_accounts > 0">
                                 No hay cuentas. Use "Cargar Cuentas Sugeridas" o "Agregar Cuentas".
                             </div>
 
@@ -99,11 +99,7 @@
                     </notebook>
                 </sheet>
 
-                <div class="oe_chatter">
-                    <field name="message_follower_ids"/>
-                    <field name="activity_ids"/>
-                    <field name="message_ids"/>
-                </div>
+                <chatter />
             </form>
         </field>
     </record>

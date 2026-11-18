@@ -2,8 +2,8 @@
 from odoo import models, fields, api, _
 from odoo.exceptions import UserError
 
-_INCOME_TYPES = {'income', 'other_income'}
-_EXPENSE_TYPES = {'expense', 'direct_cost', 'other_expense'}
+_INCOME_TYPES = {'income', 'income_other'}
+_EXPENSE_TYPES = {'expense', 'expense_direct_cost', 'expense_depreciation'}
 
 
 class AddAccountsWizard(models.TransientModel):
@@ -13,7 +13,7 @@ class AddAccountsWizard(models.TransientModel):
     closing_id = fields.Many2one('l10n_cu.fiscal.year.closing', string='Cierre', required=True)
     account_ids = fields.Many2many(
         'account.account', string='Cuentas',
-        domain="[('company_id', '=', company_id), ('deprecated', '=', False)]"
+        domain="[('company_ids', '=', company_id), ('deprecated', '=', False)]"
     )
     account_type = fields.Selection([
         ('income', 'Ingreso'),
