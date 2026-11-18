@@ -22,7 +22,7 @@ class ReportFinancial(models.AbstractModel):
                         res[report.id][field] += value.get(field)
             elif report.type == 'account_type':
                 # it's the sum the leaf accounts with such an account type
-                accounts = self.env['account.account'].search([('user_type_id', 'in', report.account_type_ids.ids)])
+                accounts = self.env['account.account'].search([('account_type', 'in', report.account_type_ids.mapped('type'))])
                 res[report.id]['account'] = self._compute_account_balance(accounts)
                 for value in res[report.id]['account'].values():
                     for field in fields:
@@ -88,7 +88,7 @@ class ReportFinancial(models.AbstractModel):
                     flag = False
                     account = self.env['account.account'].browse(account_id)
                     vals = {
-                        'name': account.code + ' ' + account.name,
+                        'name': ' '.join(filter(None, (account.code, account.name))),
                         'visible': report.visible,
                         'balance': value['balance'] * float(report.sign) or 0.0,
                         'type': 'account',
