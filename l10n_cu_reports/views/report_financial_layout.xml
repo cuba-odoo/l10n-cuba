@@ -47,7 +47,8 @@
                     <td colspan="4" style="border: 1px solid black !important;">
                         <strong>UNIDAD DE MEDIDA:</strong>
                         <br/>
-                        Pesos cubanos con dos decimales
+                        <t t-if="res_company.currency_id.name == 'CUP'">Pesos cubanos con dos decimales</t>
+                        <t t-else="" t-out="res_company.currency_id.name"/>
                     </td>
                 </tr>
                 <tr>
