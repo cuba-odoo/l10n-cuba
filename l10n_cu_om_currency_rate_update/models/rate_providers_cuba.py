@@ -1,8 +1,10 @@
-from datetime import datetime, timezone
+from datetime import datetime
+from zoneinfo import ZoneInfo
 from urllib.parse import quote
 
 import requests
 
+from odoo import _
 from odoo.exceptions import UserError
 
 from odoo.addons.om_currency_rate_update.models.rate_providers import (
@@ -32,7 +34,7 @@ class BccProvider(RateProvider):
         tasas = data.get("tasas") if isinstance(data, dict) else None
         if not tasas:
             raise UserError(
-                self.company.env._(
+                _(
                     "%(provider)s no devolvió tasas.", provider=self.name
                 )
             )
@@ -61,11 +63,11 @@ class BccProvider(RateProvider):
 
         if not rates:
             raise UserError(
-                self.company.env._(
+                _(
                     "%(p)s sin tasas para %(v)s.", p=self.name, v=variant
                 )
             )
-        return day or datetime.now(timezone.utc).date(), "CUP", rates
+        return day or datetime.now(ZoneInfo("America/Havana")).date(), "CUP", rates
 
 
 # ---------------------------------------------------------------------------
@@ -98,7 +100,7 @@ class ElToqueProvider(RateProvider):
             )
         except requests.RequestException as error:
             raise UserError(
-                self.company.env._(
+                _(
                     "%(provider)s could not be reached: %(error)s",
                     provider=self.name,
                     error=self._hide_key(str(error)),
@@ -107,14 +109,14 @@ class ElToqueProvider(RateProvider):
 
         if response.status_code == 401:
             raise UserError(
-                self.company.env._("El Toque: token inválido o caducado (HTTP 401).")
+                _("El Toque: token inválido o caducado (HTTP 401).")
             )
 
         try:
             return response.json()
         except ValueError as error:
             raise UserError(
-                self.company.env._(
+                _(
                     "%(provider)s answered with an unexpected"
                     " response (HTTP %(status)s).",
                     provider=self.name,
@@ -126,10 +128,10 @@ class ElToqueProvider(RateProvider):
         token = self._get_key()
         if not token:
             raise UserError(
-                self.company.env._("Introduce el token de El Toque en los ajustes.")
+                _("Introduce el token de El Toque en los ajustes.")
             )
 
-        today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+        today = datetime.now(ZoneInfo("America/Havana")).strftime("%Y-%m-%d")
         date_from = quote(f"{today} 00:00:01", safe="")
         date_to = quote(f"{today} 23:59:01", safe="")
         url = f"{self.url}?date_from={date_from}&date_to={date_to}"
@@ -142,7 +144,7 @@ class ElToqueProvider(RateProvider):
         tasas = data.get("tasas") if isinstance(data, dict) else None
         if not tasas:
             raise UserError(
-                self.company.env._(
+                _(
                     "%(provider)s no devolvió tasas.", provider=self.name
                 )
             )
@@ -162,9 +164,9 @@ class ElToqueProvider(RateProvider):
         if data.get("date"):
             try:
                 day = datetime.strptime(data["date"], "%Y-%m-%d").date()
-            except ValueError:
-                return
-        return day or datetime.now(timezone.utc).date(), "CUP", rates
+            except (TypeError, ValueError):
+                day = None
+        return day or datetime.now(ZoneInfo("America/Havana")).date(), "CUP", rates
 
 
 # ---------------------------------------------------------------------------
