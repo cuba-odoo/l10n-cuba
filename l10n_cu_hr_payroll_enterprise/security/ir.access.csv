@@ -1,0 +1,4 @@
+id,name,model_id,group_id/id,operation,domain
+access_payslip_projection,access.payslip.projection,hr.payslip.projection,base.group_user,crud,
+access_payslip_projection_line,access.payslip.projection.line,hr.payslip.projection.line,base.group_user,crud,
+access_hr_payslip_projection_wizard,access.hr.payslip.projection.wizard,hr.payslip.projection.wizard,base.group_user,crud,

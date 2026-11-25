@@ -3,7 +3,7 @@
 
 {
      'name': 'Cuba - RRHH',
-     'version': '19.0.1',
+     'version': '20.0.1.0.0',
      'category': 'Human Resources',
      'summary': """
         Empleados, tarjetas de asistencias.
@@ -17,7 +17,7 @@
           "views/assistance_cards_template.xml",
           "reports/report_assistance_cards.xml",
           "wizards/assistance_cards_wizard.xml",
-          "security/ir.model.access.csv"
+          "security/ir.access.csv"
      ],
      'license': 'LGPL-3',
 }

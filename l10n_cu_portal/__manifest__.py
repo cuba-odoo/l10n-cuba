@@ -18,7 +18,7 @@
     """,
     "author": "Idola Odoo Team, Comunidad cubana de Odoo",
     'category': '',
-    'version': '1.0',
+    'version': '20.0.1.0.0',
     'depends': ['base', 'portal', 'l10n_cu_address'],
     'data': [
         'views/portal_templates.xml',

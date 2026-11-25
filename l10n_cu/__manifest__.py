@@ -11,7 +11,7 @@
 
 {
     'name': 'Cuba - Contabilidad',
-    'version': '19.0.1',
+    'version': '20.0.1.0.0',
     'countries': ['cu'],
     'author': 'Idola Odoo Team, Comunidad cubana de Odoo ',
     'category': 'Accounting/Localizations/Account Charts',
@@ -30,7 +30,7 @@
         "data/res_cnae_data.xml",
         "views/res_company_views.xml",
         "views/expense_element_views.xml",
-        "security/ir.model.access.csv"
+        "security/ir.access.csv"
     ],
     'license': 'LGPL-3',
 }

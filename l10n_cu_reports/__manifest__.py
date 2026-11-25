@@ -3,7 +3,7 @@
 
 {
      'name': 'Cuba - Contabilidad Reportes',
-     'version': '19.0.1',
+     'version': '20.0.1.0.0',
      'category': 'Generic Modules/Reporting',
      'summary': """
         Proformas Estados Financieros (Sector Empresarial) - Cuba.
@@ -27,7 +27,7 @@
           'views/report_financial_evab_templates.xml',
           'views/report_financial_5927_00_templates.xml',
           'wizards/account_report.xml',
-          'security/ir.model.access.csv',
+          'security/ir.access.csv',
      ],
      'license': 'LGPL-3',
 }

@@ -64,29 +64,29 @@
               name="Estado de Situación (5920-04)"
               sequence="5"
               action="accounting_pdf_reports.action_account_report_bs"
-              parent="accounting_pdf_reports.menu_finance_legal_statement"
+              parent="account.account_reports_legal_statements_menu"
               groups="account.group_account_user,account.group_account_manager"/>
     <delete id="accounting_pdf_reports.menu_account_report_pl" model="ir.ui.menu"/>
     <menuitem id="accounting_pdf_reports.menu_account_report_pl"
               name="Estado de Rendimiento Financiero (5921-04)"
               sequence="6"
               action="accounting_pdf_reports.action_account_report_pl"
-              parent="accounting_pdf_reports.menu_finance_legal_statement"
+              parent="account.account_reports_legal_statements_menu"
               groups="account.group_account_user,account.group_account_manager"/>
 
     <menuitem id="menu_account_report_ege"
               action="action_account_report_ege"
-              parent="accounting_pdf_reports.menu_finance_legal_statement"
+              parent="account.account_reports_legal_statements_menu"
               groups="account.group_account_user"/>
 
     <menuitem id="menu_account_report_evab"
               action="action_account_report_evab"
-              parent="accounting_pdf_reports.menu_finance_legal_statement"
+              parent="account.account_reports_legal_statements_menu"
               groups="account.group_account_user"/>
 
     <menuitem id="menu_account_report_5927_00"
               action="action_account_report_5927_00"
-              parent="accounting_pdf_reports.menu_finance_legal_statement"
+              parent="account.account_reports_legal_statements_menu"
               groups="account.group_account_user"/>
 
     <menuitem id="accounting_pdf_reports.menu_finance_partner_reports"

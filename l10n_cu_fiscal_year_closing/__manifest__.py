@@ -1,6 +1,6 @@
 {
     'name': 'Cierre de Ejercicio Fiscal - Localización Cubana',
-    'version': '19.0.1.1.0',
+    'version': '20.0.1.1.0',
     'category': 'Accounting/Localizations',
     'summary': 'Automatiza el cierre contable anual según normas cubanas (NC-04)',
     'description': """
@@ -15,7 +15,7 @@ Módulo para cierre de ejercicio fiscal en Cuba.
     'license': 'LGPL-3',
     'depends': ['account', 'mail'],
     'data': [
-        'security/ir.model.access.csv',
+        'security/ir.access.csv',
         'wizards/fiscal_year_closing_wizard_views.xml',
         'wizards/add_account_wizard_views.xml',
         'wizards/add_accounts_wizard_views.xml',

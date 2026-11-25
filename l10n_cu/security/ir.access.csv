@@ -1,0 +1,5 @@
+id,name,model_id,group_id/id,operation,domain
+l10n_cu.access_res_cnae,access_res_cnae,res.cnae,base.group_user,crud,
+l10n_cu.access_res_cnae_line,access_res_cnae_line,res.cnae.line,base.group_user,crud,
+l10n_cu.access_expense_element,access_expense_element,expense.element,account.group_account_user,crud,
+l10n_cu.access_expense_element_manager,access_expense_element_manager,expense.element,account.group_account_manager,crud,
