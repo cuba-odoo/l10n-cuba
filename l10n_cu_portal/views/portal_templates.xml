@@ -6,7 +6,7 @@
             <div
                 id="div_municipality"
                 class="col-lg-6 mb-2"
-                t-att-style="not state_municipalities and 'display: none'"
+                t-att-style="country.code != 'CU' or not state_municipalities and 'display: none'"
             >
                 <label class="col-form-label label-optional" for="o_municipality_id">
                     Municipality
@@ -14,6 +14,8 @@
                 <select
                     id="o_municipality_id"
                     name="municipality_id"
+                    data-country-code="CU"
+                    t-att-disabled="country.code != 'CU'"
                     class="form-select"
                 >
                     <option value="">Municipality...</option>

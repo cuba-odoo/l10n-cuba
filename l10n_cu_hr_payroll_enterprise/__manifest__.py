@@ -3,7 +3,7 @@
 
 {
      'name': 'Cuba - Nóminas',
-     'version': '19.0.1.1',
+     'version': '20.0.1.1.0',
      'category': 'Human Resources',
      'summary': """
         Estructuras y reglas salariales, proyecciones de salarios.
@@ -13,7 +13,7 @@
      'data': [
           "data/hr_payroll_data.xml",
           "data/hr.salary.rule.csv",
-          "security/ir.model.access.csv",
+          "security/ir.access.csv",
           "views/hr_payslip_views.xml",
           "views/hr_projection_views.xml",
           "views/report_projection_template.xml",

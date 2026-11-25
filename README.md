@@ -1,8 +1,10 @@
 
 # l10n-cuba
-## Localización cubana para odoo V18
+## Localización cubana para Odoo 20.0
 
-### Esta Rama  aun está en fase de desarrollos y pruebas. no es liberada aun.
+### Migración en desarrollo
+
+Se verificó la instalación de ocho módulos en una base nueva de Odoo 20. La actualización desde Odoo 19 y la generación de informes PDF y XLSX con datos contables siguen pendientes. El módulo de bancos requiere adaptar el catálogo a la API bancaria de Odoo 20. Contratos, ausencias y nómina requieren resolver las dependencias `hr_contract` y `hr_payroll`.
 
 Repositorio de código del proyecto de localización cubana para el software de gestión integral Odoo. 
 
@@ -18,27 +20,27 @@ Addons disponibles
 ----------------
 addon | versión | resumen
 --- | --- | ---
-[l10n_cu](l10n_cu/) | 18.0.1.0.0 | Módulo Base de la localización cubana.
-[l10n_cu_address](l10n_cu_address/) | 18.0.1.0.0 | Topónimos cubanos.
-[l10n_cu_banks](l10n_cu_banks/) | 18.0.1.0.0 | Define las sucursales bancarias.
-[l10n_cu_hr](l10n_cu_hr/) |18.0.1.0.0 | Módulo de RRHH.
-[l10n_cu_hr_contract](l10n_cu_hr_contract/) |18.0.1.0.0| Módulo de contratos de empleados. 
-[l10n_cu_hr_holidays](l10n_cu_hr_holidays/) |18.0.1.0.0| Módulo de control de ausencias. 
-[l10n_cu_hr_payroll](l10n_cu_hr_payroll/) |18.0.1.0.0| Módulo de nóminas.
-[l10n_cu_hr_payroll_account](l10n_cu_hr_payroll_account/) |18.0.1.0.0| Módulo de nóminas con contabilidad.
-[l10n_cu_reports](l10n_cu_reports/) |18.0.1.0.0| Módulo para las proformas de los reportes de estados financieros según las Normas Cubanas de Información Financiera.
-[web_documentation](web_documentation/) |18.0.1.0.0| Documentación funcional de la Localización Cubana.
-
-
-[Addons complementarios]
-
-Odoo Mates (https://github.com/odoomates/odooapps)
-
-OCA (https://github.com/OCA/reporting-engine)  Para los módulos de los reportes financieros
+[l10n_cu](l10n_cu/) | 20.0.1.0.0 | Contabilidad y localización base.
+[l10n_cu_address](l10n_cu_address/) | 20.0.1.0.0 | Provincias y municipios cubanos.
+[l10n_cu_banks](l10n_cu_banks/) | 20.0.1.0.0 | Catálogo de sucursales bancarias.
+[l10n_cu_fiscal_year_closing](l10n_cu_fiscal_year_closing/) | 20.0.1.1.0 | Cierre de ejercicio fiscal.
+[l10n_cu_hr](l10n_cu_hr/) | 20.0.1.0.0 | Recursos humanos.
+[l10n_cu_hr_contract](l10n_cu_hr_contract/) | 20.0.1.0.0 | Contratos de empleados.
+[l10n_cu_hr_holidays](l10n_cu_hr_holidays/) | 20.0.1.0.0 | Control de ausencias.
+[l10n_cu_hr_payroll_enterprise](l10n_cu_hr_payroll_enterprise/) | 20.0.1.1.0 | Nómina cubana para Odoo Enterprise.
+[l10n_cu_portal](l10n_cu_portal/) | 20.0.1.0.0 | Direcciones cubanas en el portal.
+[l10n_cu_pos](l10n_cu_pos/) | 20.0.1.0.0 | Adaptaciones del punto de venta.
+[l10n_cu_reports](l10n_cu_reports/) | 20.0.1.0.0 | Estados financieros según las Normas Cubanas de Información Financiera.
+[l10n_cu_website_sale](l10n_cu_website_sale/) | 20.0.2.0.0 | Direcciones y municipios en la tienda.
 
 [//]: # (end addons)
 
 <!-- prettier-ignore-end -->
+
+## Dependencias de informes
+
+- `accounting_pdf_reports` de [Odoo Mates](https://github.com/odoomates/odooapps).
+- `report_xlsx` de [OCA reporting-engine](https://github.com/OCA/reporting-engine).
 
 ## Licencias
 

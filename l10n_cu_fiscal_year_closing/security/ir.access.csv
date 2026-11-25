@@ -1,0 +1,7 @@
+id,name,model_id,group_id/id,operation,domain
+access_l10n_cu_fiscal_year_closing_user,access.l10n_cu.fiscal.year.closing.user,l10n_cu.fiscal.year.closing,account.group_account_user,cru,
+access_l10n_cu_fiscal_year_closing_manager,access.l10n_cu.fiscal.year.closing.manager,l10n_cu.fiscal.year.closing,account.group_account_manager,crud,
+access_l10n_cu_fiscal_year_closing_wizard_user,access.l10n_cu.fiscal.year.closing.wizard.user,l10n_cu.fiscal.year.closing.wizard,account.group_account_user,cru,
+access_l10n_cu_fiscal_year_closing_account_user,access.l10n_cu.fiscal.year.closing.account.user,l10n_cu.fiscal.year.closing.account,account.group_account_user,crud,
+access_l10n_cu_add_account_wizard_user,access.l10n_cu.add.account.wizard.user,l10n_cu.add.account.wizard,account.group_account_user,cru,
+access_l10n_cu_add_accounts_wizard_user,access.l10n_cu.add.accounts.wizard.user,l10n_cu.add.accounts.wizard,account.group_account_user,cru,

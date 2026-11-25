@@ -7,52 +7,60 @@ import { patch } from "@web/core/utils/patch";
 patch(CustomerAddress.prototype, {
     setup() {
         super.setup();
-
-        this.elementCountry = this.addressForm.country_id;
-        this.elementState = this.addressForm.state_id;
-        this.elementMunicipalities = this.addressForm.municipality_id;
-
+        this._updateCubanCityFields();
     },
 
-    _changeOption(selectElement, choices) {
-        // empty existing options, only keep the placeholder.
-        selectElement.options.length = 1;
-        if (choices.length) {
-            choices.forEach((item) => {
-                let option = new Option(item[1], item[0]);
-                option.setAttribute('data-code', item[2]);
-                selectElement.appendChild(option);
-            });
+    async onChangeCountry() {
+        const countryId = this.addressForm.country_id.value;
+        const data = await this.waitFor(super.onChangeCountry(...arguments));
+        if (this.addressForm.country_id.value === countryId && this.addressForm.municipality_id) {
+            this._updateCubanCityFields();
+            await this.waitFor(this._updateMunicipalities());
         }
+        return data;
     },
 
     async onChangeState() {
-        await this.waitFor(super.onChangeState());
-        let selectedCountry = this.elementCountry.value ?
-            this.elementCountry.selectedOptions[0].getAttribute('code') : '';
-        if (selectedCountry === "CU") {
-            const stateId = this.elementState.value;
-            let choices = [];
-            if (stateId)  {
-                const data = await this.waitFor(rpc(`/shop/l10n_cu/state_infos/${stateId}`, {}));
-                choices = data.municipalities;
-            }
-            this._changeOption(this.elementMunicipalities, choices);
+        const data = await this.waitFor(super.onChangeState(...arguments));
+        await this.waitFor(this._updateMunicipalities());
+        return data;
+    },
+
+    _updateCubanCityFields() {
+        if (
+            this.addressForm.municipality_id &&
+            this._getSelectedCountryCode() === "CU" &&
+            this.requiredFields.includes("municipality_id")
+        ) {
+            this._hideInput("city");
+            this._hideInput("city_id");
         }
     },
 
-
-    async _onChangeCountry(init=false) {
-        await this.waitFor(super._onChangeCountry(...arguments));
-        let selectedCountry = this.elementCountry.value ?
-            this.elementCountry.selectedOptions[0].getAttribute('code') : '';
-        if (selectedCountry === 'CU') {
-            this._showInput('municipality_id');
-        } else {
-            // empty existing options, only keep the placeholder.
-            this.elementMunicipalities.options.length = 1;
-            this._hideInput('municipality_id');
+    async _updateMunicipalities() {
+        const municipality = this.addressForm.municipality_id;
+        if (!municipality) {
+            return;
+        }
+        const stateId = this.addressForm.state_id.value;
+        const selectedId = municipality.value;
+        this._setFieldChoices("municipality_id", []);
+        if (this._getSelectedCountryCode() !== "CU" || !stateId) {
+            return;
         }
 
+        const { municipalities } = await this.waitFor(
+            rpc(`/shop/l10n_cu/state_infos/${stateId}`, {})
+        );
+        if (this._getSelectedCountryCode() !== "CU" || this.addressForm.state_id.value !== stateId) {
+            return;
+        }
+        this._setFieldChoices(
+            "municipality_id",
+            municipalities.map(([id, name, code]) => ({ id, name, code }))
+        );
+        if (municipalities.some(([id]) => String(id) === selectedId)) {
+            municipality.value = selectedId;
+        }
     },
 });

@@ -1,102 +1,116 @@
 <?xml version="1.0" encoding="utf-8"?>
-<odoo>
-	<data noupdate="1">
-
-	<!-- res.country.states -->
-	<record id="state_23" model="res.country.state">
-		<field name="code">23</field>
-		<field name="name">La Habana</field>
-		<field name="country_id" ref="base.cu"/>
-	</record>
-
-	<record id="state_22" model="res.country.state">
-		<field name="code">22</field>
-		<field name="name">Artemisa</field>
-		<field name="country_id" ref="base.cu"/>
-	</record>
-
-	<record id="state_24" model="res.country.state">
-		<field name="code">24</field>
-		<field name="name">Mayabeque</field>
-		<field name="country_id" ref="base.cu"/>
-	</record>
-
-	<record id="state_21" model="res.country.state">
-		<field name="code">21</field>
-		<field name="name">Pinar del Río</field>
-		<field name="country_id" ref="base.cu"/>
-	</record>
-
-	<record id="state_25" model="res.country.state">
-		<field name="code">25</field>
-		<field name="name">Matanzas</field>
-		<field name="country_id" ref="base.cu"/>
-	</record>
-
-	<record id="state_27" model="res.country.state">
-		<field name="code">27</field>
-		<field name="name">Cienfuegos</field>
-		<field name="country_id" ref="base.cu"/>
-	</record>
-
-	<record id="state_26" model="res.country.state">
-		<field name="code">26</field>
-		<field name="name">Villa Clara</field>
-		<field name="country_id" ref="base.cu"/>
-	</record>
-
-	<record id="state_28" model="res.country.state">
-		<field name="code">28</field>
-		<field name="name">Santi Spiritus</field>
-		<field name="country_id" ref="base.cu"/>
-	</record>
-
-	<record id="state_29" model="res.country.state">
-		<field name="code">29</field>
-		<field name="name">Ciego de Avila</field>
-		<field name="country_id" ref="base.cu"/>
-	</record>
-
-	<record id="state_30" model="res.country.state">
-		<field name="code">30</field>
-		<field name="name">Camagϋey</field>
-		<field name="country_id" ref="base.cu"/>
-	</record>
-
-	<record id="state_31" model="res.country.state">
-		<field name="code">31</field>
-		<field name="name">Las Tunas</field>
-		<field name="country_id" ref="base.cu"/>
-	</record>
-
-	<record id="state_32" model="res.country.state">
-		<field name="code">32</field>
-		<field name="name">Holguín</field>
-		<field name="country_id" ref="base.cu"/>
-	</record>
-
-	<record id="state_33" model="res.country.state">
-		<field name="code">33</field>
-		<field name="name">Granma</field>
-		<field name="country_id" ref="base.cu"/>
-	</record>
-
-	<record id="state_34" model="res.country.state">
-		<field name="code">34</field>
-		<field name="name">Santiago de Cuba</field>
-		<field name="country_id" ref="base.cu"/>
-	</record>
-
-	<record id="state_35" model="res.country.state">
-		<field name="code">35</field>
-		<field name="name">Guantánamo</field>
-		<field name="country_id" ref="base.cu"/>
-	</record>
-
-	<record id="state_40" model="res.country.state">
-		<field name="code">36</field>
-		<field name="name">Isla de la Juventud</field>
-		<field name="country_id" ref="base.cu"/>
-	</record>
-	</data>
+<odoo noupdate="1">
+    <!-- Keep existing external IDs as aliases for the provinces supplied by Odoo. -->
+    <record id="state_23_alias" model="ir.model.data">
+        <field name="module">l10n_cu_address</field>
+        <field name="name">state_23</field>
+        <field name="model">res.country.state</field>
+        <field name="res_id" eval="ref('base.state_cu_23')"/>
+        <field name="noupdate" eval="True"/>
+    </record>
+    <record id="state_22_alias" model="ir.model.data">
+        <field name="module">l10n_cu_address</field>
+        <field name="name">state_22</field>
+        <field name="model">res.country.state</field>
+        <field name="res_id" eval="ref('base.state_cu_22')"/>
+        <field name="noupdate" eval="True"/>
+    </record>
+    <record id="state_24_alias" model="ir.model.data">
+        <field name="module">l10n_cu_address</field>
+        <field name="name">state_24</field>
+        <field name="model">res.country.state</field>
+        <field name="res_id" eval="ref('base.state_cu_24')"/>
+        <field name="noupdate" eval="True"/>
+    </record>
+    <record id="state_21_alias" model="ir.model.data">
+        <field name="module">l10n_cu_address</field>
+        <field name="name">state_21</field>
+        <field name="model">res.country.state</field>
+        <field name="res_id" eval="ref('base.state_cu_21')"/>
+        <field name="noupdate" eval="True"/>
+    </record>
+    <record id="state_25_alias" model="ir.model.data">
+        <field name="module">l10n_cu_address</field>
+        <field name="name">state_25</field>
+        <field name="model">res.country.state</field>
+        <field name="res_id" eval="ref('base.state_cu_25')"/>
+        <field name="noupdate" eval="True"/>
+    </record>
+    <record id="state_27_alias" model="ir.model.data">
+        <field name="module">l10n_cu_address</field>
+        <field name="name">state_27</field>
+        <field name="model">res.country.state</field>
+        <field name="res_id" eval="ref('base.state_cu_27')"/>
+        <field name="noupdate" eval="True"/>
+    </record>
+    <record id="state_26_alias" model="ir.model.data">
+        <field name="module">l10n_cu_address</field>
+        <field name="name">state_26</field>
+        <field name="model">res.country.state</field>
+        <field name="res_id" eval="ref('base.state_cu_26')"/>
+        <field name="noupdate" eval="True"/>
+    </record>
+    <record id="state_28_alias" model="ir.model.data">
+        <field name="module">l10n_cu_address</field>
+        <field name="name">state_28</field>
+        <field name="model">res.country.state</field>
+        <field name="res_id" eval="ref('base.state_cu_28')"/>
+        <field name="noupdate" eval="True"/>
+    </record>
+    <record id="state_29_alias" model="ir.model.data">
+        <field name="module">l10n_cu_address</field>
+        <field name="name">state_29</field>
+        <field name="model">res.country.state</field>
+        <field name="res_id" eval="ref('base.state_cu_29')"/>
+        <field name="noupdate" eval="True"/>
+    </record>
+    <record id="state_30_alias" model="ir.model.data">
+        <field name="module">l10n_cu_address</field>
+        <field name="name">state_30</field>
+        <field name="model">res.country.state</field>
+        <field name="res_id" eval="ref('base.state_cu_30')"/>
+        <field name="noupdate" eval="True"/>
+    </record>
+    <record id="state_31_alias" model="ir.model.data">
+        <field name="module">l10n_cu_address</field>
+        <field name="name">state_31</field>
+        <field name="model">res.country.state</field>
+        <field name="res_id" eval="ref('base.state_cu_31')"/>
+        <field name="noupdate" eval="True"/>
+    </record>
+    <record id="state_32_alias" model="ir.model.data">
+        <field name="module">l10n_cu_address</field>
+        <field name="name">state_32</field>
+        <field name="model">res.country.state</field>
+        <field name="res_id" eval="ref('base.state_cu_32')"/>
+        <field name="noupdate" eval="True"/>
+    </record>
+    <record id="state_33_alias" model="ir.model.data">
+        <field name="module">l10n_cu_address</field>
+        <field name="name">state_33</field>
+        <field name="model">res.country.state</field>
+        <field name="res_id" eval="ref('base.state_cu_33')"/>
+        <field name="noupdate" eval="True"/>
+    </record>
+    <record id="state_34_alias" model="ir.model.data">
+        <field name="module">l10n_cu_address</field>
+        <field name="name">state_34</field>
+        <field name="model">res.country.state</field>
+        <field name="res_id" eval="ref('base.state_cu_34')"/>
+        <field name="noupdate" eval="True"/>
+    </record>
+    <record id="state_35_alias" model="ir.model.data">
+        <field name="module">l10n_cu_address</field>
+        <field name="name">state_35</field>
+        <field name="model">res.country.state</field>
+        <field name="res_id" eval="ref('base.state_cu_35')"/>
+        <field name="noupdate" eval="True"/>
+    </record>
+    <record id="state_40_alias" model="ir.model.data">
+        <field name="module">l10n_cu_address</field>
+        <field name="name">state_40</field>
+        <field name="model">res.country.state</field>
+        <field name="res_id" eval="ref('base.state_cu_40')"/>
+        <field name="noupdate" eval="True"/>
+    </record>
 </odoo>

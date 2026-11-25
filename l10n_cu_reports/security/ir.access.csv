@@ -1,0 +1,3 @@
+id,name,model_id,group_id/id,operation,domain
+access_accounting_report_user,access.accounting.report.user,accounting.report,account.group_account_user,crud,
+access_account_partner_balance_user,access.account.partner.balance.user,account.partner.balance,account.group_account_user,crud,
